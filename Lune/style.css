@@ -365,7 +365,7 @@ article.ax > p, article.dfn > p, article.prp > p, article.thm > p, article.lem >
 	margin: 0 1rem;
 }
 
-dl.ax, dl.dfn, article.prp dl, article.thm dl, article.lem dl, article.cor dl, article.pblm dl, article.proof  dl {
+dl {
 	> dt {
 		font-weight: bold;
 	}
