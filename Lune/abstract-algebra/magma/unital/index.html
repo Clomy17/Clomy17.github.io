@@ -1,0 +1,1256 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<link rel="stylesheet" href="../../../style.css"/>
+		<meta charset="utf-8"/>
+		<meta name="description" content="単位的マグマ"/>
+		<title>単位的マグマ</title>
+	</head>
+	<body>
+		<h1>単位的マグマ</h1>
+		<section>
+			<h2>定義</h2>
+			<article id="単位的マグマ" class="dfn">
+				<h3>単位的マグマ</h3>
+				<p>（左/右）<dfn>単位的マグマ</dfn>((left/right) unital magma)とは，以下のデータからなる．</p>
+				<ul>
+					<li>集合<math><mi>𝑆</mi></math></li>
+					<li>
+						<dfn>積</dfn>と呼ばれる<math><mi>𝑆</mi></math>上の2項演算
+						<math>
+							<mo>⋅</mo>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>×</mo>
+									<mi>𝑆</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝑆</mi>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+				<div>
+					<p><dfn>左単位的マグマ</dfn>(left unital magma)は，以下を満たす．</p>
+					<dl>
+						<dt>左単位元の存在</dt>
+						<dd>
+							<math display="block">
+								<mrow>
+									<mo>∃!</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑒</mi>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>∈</mo>
+											<mi>𝑆</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑒</mi>
+											<mo>⋅</mo>
+											<mi>𝑎</mi>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑎</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</dd>
+					</dl>
+				</div>
+				<div>
+					<p><dfn>右単位的マグマ</dfn>(right unital magma)は，以下を満たす．</p>
+					<dl>
+						<dt>右単位元の存在</dt>
+						<dd>
+							<math display="block">
+								<mrow>
+									<mo>∃!</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑒</mi>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>∈</mo>
+											<mi>𝑆</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>⋅</mo>
+											<mi>𝑒</mi>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑎</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</dd>
+					</dl>
+				</div>
+				<div>
+					<p><dfn>単位的マグマ</dfn>(unital magma)は，以下を満たす．</p>
+					<dl>
+						<dt>単位元の存在</dt>
+						<dd>
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑒</mi>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>∈</mo>
+											<mi>𝑆</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑒</mi>
+											<mo>⋅</mo>
+											<mi>𝑎</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>⋅</mo>
+											<mi>𝑒</mi>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑎</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</dd>
+					</dl>
+				</div>
+			</article>
+			<p>以下，基本的に<a href="#単位的マグマ">左単位的マグマ</a>を考えるが，<a href="../index.html#反対">反対マグマ</a>を考えれば，<a href="#単位的マグマ">右単位的マグマ</a>も同様．</p>
+			<article id="準同型" class="dfn">
+				<h3 class="dfn-t">準同型</h3>
+				<p>
+					<a href="#単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math>を与える．
+					写像
+					<math>
+						<mi>𝑓</mi>
+						<mo>:</mo>
+						<mrow>
+							<mi>𝑆</mi>
+							<mo>→</mo>
+							<mi>𝑇</mi>
+						</mrow>
+					</math>
+					で以下を満たすものを，<dfn>（左単位的マグマ）準同型</dfn>と呼ぶ．
+				</p>
+				<p>
+					<math display="block">
+						<mrow>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>,</mo>
+									<mi>𝑦</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝑆</mi>
+							</mrow>
+						</mrow>
+						<mo>,</mo>
+						<mrow>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&it;</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑦</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</mrow>
+					</math>
+				</p>
+			</article>
+			<article id="準同型の性質" class="thm">
+				<h3>準同型の性質</h3>
+				<p>
+					<a href="#単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math>，<a href="#準同型">準同型</a>
+					<math>
+						<mi>𝑓</mi>
+						<mo>:</mo>
+						<mrow>
+							<mi>𝑆</mi>
+							<mo>→</mo>
+							<mi>𝑇</mi>
+						</mrow>
+					</math>を与えると，以下を満たす．
+				</p>
+				<dl>
+					<dt>左単位元の保存</dt>
+					<dd>
+						<math display="block">
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msub>
+										<mn>1</mn>
+										<mi>𝑆</mi>
+									</msub>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<msub>
+								<mn>1</mn>
+								<mi>𝑇</mi>
+							</msub>
+						</math>
+					</dd>
+				</dl>
+			</article>
+			<article id="同型" class="dfn">
+				<h3 class="dfn-t">同型</h3>
+				<p>全単射な<a href="#準同型">準同型</a>を<dfn>同型</dfn>(isomorphism)と呼ぶ．</p>
+				<p>同型の<a href="../../../set/index.html#写像">始域</a>と<a href="../../../set/index.html#写像">終域</a>の（組の）ことも<dfn>同型</dfn>(isomorphism)と呼ぶ．</p>
+			</article>
+			<article id="左単位的マグマの圏" class="dfn">
+				<h3>左単位的マグマの圏</h3>
+				<p><a href="../../../category/index.html#対象">対象</a>を全ての<a href="#単位的マグマ">左単位的マグマ</a>，<a href="../../../category/index.html#射">射</a>を全ての<a href="#準同型">左単位的マグマ準同型</a>とする<a href="../../../category/index.html#圏">圏</a>を<dfn>左単位的マグマの圏</dfn>と呼ぶ．</p>
+			</article>
+			<section>
+				<h3>同型定理</h3>
+				<p><a href="#左単位的マグマの圏">左単位的マグマの圏</a>の部分対象，正規対象，商対象を確認し，同型定理を示す．</p>
+				<article id="部分左単位的マグマ" class="dfn">
+					<h4>部分左単位的マグマ</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p><math><mi>𝑆</mi></math>の部分集合<math><mi>𝑇</mi><mo>⊂</mo><mi>𝑆</mi></math>が，<math><mi>𝑆</mi></math>の積に関して<a href="#左単位的マグマ">左単位的マグマ</a>になる，つまり以下を満たすとき，<math><mi>𝑇</mi></math>を<math><mi>𝑇</mi></math>の<dfn>部分左単位的マグマ</dfn>と呼ぶ．</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mi>𝑇</mi>
+									<mo>&it;</mo>
+									<mi>𝑇</mi>
+								</mrow>
+								<mo>⊂</mo>
+								<mi>𝑇</mi>
+							</math>
+						</li>
+						<li>
+							<math display="block">
+								<mn>1</mn>
+								<mo>∈</mo>
+								<mi>𝑇</mi>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="自明な部分左単位的マグマ" class="dfn">
+					<h4>自明な部分左単位的マグマ</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p><math><mi>𝑆<mi></mi></mi></math>自身，及び単位元のみからなる集合は，<math><mi>𝑆</mi></math>の<a href="#部分左単位的マグマ">部分左単位的マグマ</a>となる．これらを<math><mi>𝑆</mi></math>の<dfn>自明な部分左単位的マグマ</dfn>と呼ぶ．</p>
+					<p>それ以外の<a href="#部分左単位的マグマ">部分左単位的マグマ</a>を<dfn>非自明</dfn>と呼ぶ．</p>
+				</article>
+				<article id="生成系" class="dfn">
+					<h4>生成系</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>と部分集合<math><mi>𝑇</mi><mo>⊂</mo><mi>𝑆</mi></math>を与える．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝑇</mi>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msup>
+									<mi>𝑇</mi>
+									<mi>𝑛</mi>
+								</msup>
+							</mrow>
+						</math>
+						は<math><mi>𝑇</mi></math>を含む最小の<math><mi>𝑆</mi></math>の<a href="#部分左単位的マグマ">部分左単位的マグマ</a>となる．これを<dfn><math><mi>𝑇</mi></math>で生成される部分左単位的マグマ</dfn>と呼ぶ．
+					</p>
+					<p>
+						特に，
+						<math>
+							<mi>𝑆</mi>
+							<mo>=</mo>
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝑇</mi>
+								<mo>⟩</mo>
+							</mrow>
+						</math>
+						を満たすとき，<math><mi>𝑇</mi></math>を<math><mi>𝑆</mi></math>の<dfn>生成系</dfn>と呼ぶ．
+					</p>
+				</article>
+				<p><a href="../index.html#合同">合同</a>（<a href="../index.html#合同">正規関係</a>）に関しては，<a href="../index.html#マグマ">マグマ</a>と同様に考えられる．</p>
+				<p>ただし<a href="../index.html#マグマ">マグマ</a>と異なり，単位元の<a href="../../../set/index.html#商集合">同値類</a>を考えることで別の考え方ができる．</p>
+				<p>以下モノイドのコピペなので真偽不明</p>
+				<article id="正規部分左単位的マグマ" class="dfn">
+					<h4>正規部分左単位的マグマ</h4>
+					<p>
+						<a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>を与える．<a href="#部分左単位的マグマ">部分左単位的マグマ</a><math><mi>𝑇</mi></math>で，以下を満たすものを<dfn>正規部分左単位的マグマ</dfn>と呼ぶ．
+					</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>∈</mo>
+										<mi>𝑇</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑦</mi>
+											<mo>∈</mo>
+											<mi>𝑆</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mo>{</mo>
+										<mtable intent=":system-of-equations">
+											<mtr>
+												<mtd>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>&it;</mo>
+														<mi>𝑦</mi>
+													</mrow>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mtd>
+												<mtd><mo>⇒</mo></mtd>
+												<mtd>
+													<mi>𝑦</mi>
+													<mo>∈</mo>
+													<mi>𝑇</mi>
+												</mtd>
+											</mtr>
+											<mtr>
+												<mtd>
+													<mrow>
+														<mi>𝑦</mi>
+														<mo>&it;</mo>
+														<mi>𝑥</mi>
+													</mrow>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mtd>
+												<mtd><mo>⇒</mo></mtd>
+												<mtd>
+													<mi>𝑦</mi>
+													<mo>∈</mo>
+													<mi>𝑇</mi>
+												</mtd>
+											</mtr>
+										</mtable>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mrow>
+												<mi>𝑥</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑇</mi>
+														<mo>&it;</mo>
+														<mi>𝑦</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>∩</mo>
+											<mi>𝑇</mi>
+										</mrow>
+										<mo>≠</mo>
+										<mi>∅</mi>
+									</mrow>
+									<mo>⇒</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑇</mi>
+													<mo>&it;</mo>
+													<mi>𝑦</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>⊂</mo>
+										<mi>𝑇</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="正規部分左単位的マグマの性質" class="thm">
+					<h4>正規部分左単位的マグマの性質</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>，<math><mi>𝑆</mi></math>の<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a><math><mi>𝑇</mi></math>を与えると，以下が成り立つ．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑇</mi>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑇</mi>
+												<mo>&it;</mo>
+												<mi>𝑦</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>⊂</mo>
+									<mi>𝑇</mi>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑇</mi>
+													<mo>&it;</mo>
+													<mi>𝑦</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>∩</mo>
+										<mi>𝑇</mi>
+									</mrow>
+									<mo>≠</mo>
+									<mi>∅</mi>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article id="自明な正規部分左単位的マグマ" class="dfn">
+					<h4>自明な正規部分左単位的マグマ</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p><math><mi>𝑆</mi></math>自身，及び単位元のみからなる集合は，<math><mi>𝑆</mi></math>の<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a>となる．これらを<math><mi>𝑆</mi></math>の<dfn>自明な正規部分左単位的マグマ</dfn>(trivial normal submonoid)と呼ぶ．</p>
+					<p>それ以外の<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a>を<dfn>非自明</dfn>と呼ぶ．</p>
+				</article>
+				<article id="正規閉包" class="dfn">
+					<h4>左単位的マグマの正規閉包</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p>
+						また，部分集合<math><mi>𝐴</mi><mo>⊂</mo><mi>𝑆</mi></math>に対し，
+						<math display="block">
+							<mtable intent=":system-of-equations">
+								<mtr>
+									<mtd>
+										<msup>
+											<mi>𝐴</mi>
+											<mo>′</mo>
+										</msup>
+									</mtd>
+									<mtd><mo>≔</mo></mtd>
+									<mtd>
+										<mrow>
+											<mi>𝐴</mi>
+											<mo>∪</mo>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mi>𝑦</mi>
+													<mo>∈</mo>
+													<mi>𝑆</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mo>∃</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑥</mi>
+															<mo>∈</mo>
+															<mi>𝐴</mi>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mrow>
+															<mi>𝑦</mi>
+															<mo>&it;</mo>
+															<mi>𝑥</mi>
+														</mrow>
+														<mo>=</mo>
+														<mn>1</mn>
+													</mrow>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mo>∪</mo>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mi>𝑦</mi>
+													<mo>∈</mo>
+													<mi>𝑆</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mo>∃</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑥</mi>
+															<mo>∈</mo>
+															<mi>𝐴</mi>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mrow>
+															<mi>𝑥</mi>
+															<mo>&it;</mo>
+															<mi>𝑦</mi>
+														</mrow>
+														<mo>=</mo>
+														<mn>1</mn>
+													</mrow>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+										</mrow>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd>
+										<msub>
+											<mi>𝑋</mi>
+											<mi>𝐴</mi>
+										</msub>
+									</mtd>
+									<mtd><mo>≔</mo></mtd>
+									<mtd>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>,</mo>
+														<mi>𝑦</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>∈</mo>
+												<mrow>
+													<mi>𝑆</mi>
+													<mo>×</mo>
+													<mi>𝑆</mi>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+											<mrow>
+												<mrow>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>&it;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mi>𝐴</mi>
+																<mo>&it;</mo>
+																<mi>𝑦</mi>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>∩</mo>
+													<mi>𝐴</mi>
+												</mrow>
+												<mo>≠</mo>
+												<mi>∅</mi>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</mtd>
+								</mtr>
+							</mtable>
+						</math>
+						<math display="block">
+							<mtable intent=":system-of-equations">
+								<mtr>
+									<mtd>
+										<msub>
+											<mi>𝐴</mi>
+											<mn>1</mn>
+										</msub>
+									</mtd>
+									<mtd><mo>≔</mo></mtd>
+									<mtd>
+										<msup>
+											<mrow>
+												<mo>⟨</mo>
+												<mi>𝐴</mi>
+												<mo>⟩</mo>
+											</mrow>
+											<mo>′</mo>
+										</msup>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd>
+										<msub>
+											<mi>𝐴</mi>
+											<mrow>
+												<mi>𝑛</mi>
+												<mo>+</mo>
+												<mn>1</mn>
+											</mrow>
+										</msub>
+									</mtd>
+									<mtd><mo>≔</mo></mtd>
+									<mtd>
+										<msup>
+											<mrow>
+												<mo>⟨</mo>
+												<mrow>
+													<munder intent=":largeop">
+														<mo>⋃</mo>
+														<mrow>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<mi>𝑥</mi>
+																	<mo>,</mo>
+																	<mi>𝑦</mi>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+															<mo>∈</mo>
+															<msub>
+																<mi>𝑋</mi>
+																<msub>
+																	<mi>𝐴</mi>
+																	<mi>𝑛</mi>
+																</msub>
+															</msub>
+														</mrow>
+													</munder>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>&it;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msub>
+																	<mi>𝐴</mi>
+																	<mi>𝑛</mi>
+																</msub>
+																<mo>&it;</mo>
+																<mi>𝑦</mi>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>⟩</mo>
+											</mrow>
+											<mo>′</mo>
+										</msup>
+									</mtd>
+								</mtr>
+							</mtable>
+						</math>
+						と定める．
+					</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mi>ncl</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝐴</mi>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>1</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msub>
+									<mi>𝐴</mi>
+									<mi>𝑛</mi>
+								</msub>
+							</mrow>
+						</math>
+						を<math><mi>𝐴</mi></math>の<dfn>正規閉包</dfn>(normal closure)と呼ぶ．
+					</p>
+				</article>
+				<article id="正規部分左単位的マグマが誘導する合同" class="dfn">
+					<h4>正規部分左単位的マグマが誘導する合同</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>，<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a><math><mi>𝑇</mi></math>与える．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mo>{</mo>
+									<mn>1</mn>
+									<mo>}</mo>
+								</mrow>
+								<mo>×</mo>
+								<mi>𝑇</mi>
+							</mrow>
+							<mo>⊂</mo>
+							<mrow>
+								<mi>𝑆</mi>
+								<mo>×</mo>
+								<mi>𝑆</mi>
+							</mrow>
+						</math>
+						を<a href="../../../set/index.html#関係">グラフ</a>とする<a href="../../../set/index.html#関係">関係</a>の<a href="#関係の正規閉包">正規閉包</a>を，<dfn><math><mi>𝑇</mi></math>が誘導する合同</dfn>と呼ぶ．
+					</p>
+				</article>
+				<article id="正規部分左単位的マグマと合同の関係" class="thm">
+					<h4>正規部分左単位的マグマと合同の関係</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>を与えると，以下が成り立つ．</p>
+					<ul>
+						<li>
+							<math><mi>𝑆</mi></math>の<a href="#部分左単位的マグマ">部分左単位的マグマ</a><math><mi>𝑇</mi></math>に対し，
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>{</mo>
+										<mn>1</mn>
+										<mo>}</mo>
+									</mrow>
+									<mo>×</mo>
+									<mi>𝑇</mi>
+								</mrow>
+								<mo>⊂</mo>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>×</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</math>
+							<a href="../../../set/index.html#関係">グラフ</a>とする<a href="../../../set/index.html#関係">関係</a>の<a href="#関係の正規閉包">正規閉包</a>は，
+							<math>
+								<mi>ncl</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑇</mi>
+									<mo>)</mo>
+								</mrow>
+							</math>
+							の<a href="#正規部分左単位的マグマが誘導する合同">誘導する合同</a>に等しい．
+						</li>
+						<li>
+							任意の<a href="../index.html#合同">合同</a>（<a href="../index.html#合同">正規関係</a>）に対し，<math><mi>𝑆</mi></math>の単位元<math><mn>1</mn></math>の<a href="../../../set/index.html#商集合">同値類</a>は<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a>．
+						</li>
+					</ul>
+				</article>
+				<p>これにより，<a href="../index.html#合同">合同</a>を与えることと，<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a>を与えることは等価であるとわかる．</p>
+				<article id="商左単位的マグマ" class="dfn">
+					<h4>商左単位的マグマ</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑆</mi></math>の<a href="../index.html#合同">誘導する合同</a><math><mo>≡</mo></math>に対し，
+							<math display="block">
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>∕</mo>
+									<mo>≡</mo>
+								</mrow>
+							</math>
+							は自然な積
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mi>𝑥</mi>
+											<mo>]</mo>
+										</mrow>
+										<mo>⋅</mo>
+										<mrow>
+											<mo>[</mo>
+											<mi>𝑦</mi>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>≔</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>⋅</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+							に対して<a href="#左単位的マグマ">左単位的マグマ</a>をなす．これを<math><mo>≡</mo></math>による<dfn>商左単位的マグマ</dfn>と呼ぶ．
+						</li>
+						<li>
+							<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a><math><mi>𝑇</mi></math>に対し，<math><mi>𝑇</mi></math>が<a href="#正規部分左単位的マグマが誘導する合同">誘導する合同</a><math><mo>∼</mo></math>による商左単位的マグマが，上の意味で定義できる．これを<math><mi>𝑇</mi></math>による<dfn>商左単位的マグマ</dfn>と呼び，
+							<math display="block">
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>∕</mo>
+									<mi>𝑇</mi>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>∕</mo>
+									<mo>∼</mo>
+								</mrow>
+							</math>
+							と表す．
+						</li>
+					</ul>
+				</article>
+				
+				<article id="核" class="dfn">
+					<h4>核</h4>
+					<p>
+						<a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math>と<a href="#準同型">準同型</a>
+						<math>
+							<mi>𝑓</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝑆</mi>
+								<mo>→</mo>
+								<mi>𝑇</mi>
+							</mrow>
+						</math>
+						を与える．
+					</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mi>ker</mi>
+								<mo>&af;</mo>
+								<mi>𝑓</mi>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<msup>
+									<mi>𝑓</mi>
+									<mrow>
+										<mo>−</mo>
+										<mn>1</mn>
+									</mrow>
+								</msup>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msub>
+										<mn>1</mn>
+										<mi>𝑇</mi>
+									</msub>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+						を<math><mi>𝑓</mi></math>の<dfn>核</dfn>と呼ぶ．
+					</p>
+				</article>
+				<article id="同型定理" class="thm">
+					<h3>同型定理</h3>
+					<dl>
+						<dt>第一同型定理</dt>
+						<dd>
+							<a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math>と<a href="#準同型">準同型</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>→</mo>
+									<mi>𝑇</mi>
+								</mrow>
+							</math>
+							を与えると，以下が成り立つ．
+							<ul>
+								<li>
+									<math><mi>𝑓</mi></math>の<a href="#核">核</a>
+									<math>
+										<msup>
+											<mi>𝑓</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mn>1</mn>
+												<mi>𝑇</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝑆</mi></math>の<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a></li>
+								<li>
+									<math><mi>𝑓</mi></math>の<a href="../../../set/index.html#像">像</a>
+									<math>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑆</mi>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝑇</mi></math>の<a href="#部分左単位的マグマ">部分左単位的マグマ</a></li>
+								<li>
+									<math><mi>𝑓</mi></math>の<a href="../../../set/index.html#像">像</a>
+									<math>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑆</mi>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									と<a href="#商左単位的マグマ">商左単位的マグマ</a>
+									<math>
+										<mi>𝑇</mi>
+										<mo>∕</mo>
+										<mrow>
+											<msup>
+												<mi>𝑓</mi>
+												<mrow>
+													<mo>−</mo>
+													<mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mn>1</mn>
+													<mi>𝑇</mi>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									は<a href="#同型">同型</a>
+								</li>
+							</ul>
+						</dd>
+						<dt>第二同型定理</dt>
+						<dd>
+							<a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>，<math><mi>𝑆</mi></math>の<a href="#部分左単位的マグマ">部分左単位的マグマ</a><math><mi>𝑆</mi></math>，<math><mi>𝑆</mi></math>の<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a><math><mi>𝑇</mi></math>を与えると，以下が成り立つ．
+							<ul>
+								<li><math><mi>𝑆</mi><mo>&it;</mo><mi>𝑇</mi></math>は<math><mi>𝑆</mi></math>の<a href="#部分左単位的マグマ">部分左単位的マグマ</a></li>
+								<li><math><mi>𝑆</mi><mo>∩</mo><mi>𝑇</mi></math>は<math><mi>𝑆</mi></math>の<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a></li>
+								<li>
+									<a href="#商左単位的マグマ">商左単位的マグマ</a>
+									<math>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>&it;</mo>
+												<mi>𝑇</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>∕</mo>
+										<mi>𝑇</mi>
+									</math>
+									と
+									<math>
+										<mi>𝑆</mi>
+										<mo>∕</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>∩</mo>
+												<mi>𝑇</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<a href="#同型">同型</a>．
+								</li>
+							</ul>
+						</dd>
+						<dt>第三同型定理</dt>
+						<dd>
+							<a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>，<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a><math><mi>𝑇</mi><mo>,</mo><mi>𝑂</mi></math>を与え，<math><mi>𝑂</mi><mo>⊂</mo><mi>𝑇</mi><mo>⊂</mo><mi>𝑆</mi></math>を満たすとすると，以下が成り立つ．
+							<ul>
+								<li><math><mi>𝑂</mi></math>は<math><mi>𝑇</mi></math>の<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a></li>
+								<li><a href="#商左単位的マグマ">商左単位的マグマ</a><math><mi>𝑇</mi><mo>∕</mo><mi>𝑂</mi></math>は<math><mi>𝑆</mi><mo>∕</mo><mi>𝑂</mi></math>の<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a></li>
+								<li>
+									<a href="#商左単位的マグマ">商左単位的マグマ</a>
+									<math>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>∕</mo>
+												<mi>𝑂</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>∕</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑇</mi>
+												<mo>∕</mo>
+												<mi>𝑂</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝑆</mi><mo>∕</mo><mi>𝑇</mi></math>に<a href="#同型">同型</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</article>
+			</section>
+			<section>
+				<h3>性質</h3>
+				<article id="零" class="dfn">
+					<h4>零左単位的マグマ</h4>
+					<p>
+						<dfn>零左単位的マグマ</dfn>(zero monoid)（または<dfn>自明な左単位的マグマ</dfn>(trivial monoid)）とは，一元集合
+						<math>
+							<msub>
+								<mi>ℤ</mi>
+								<mn>1</mn>
+							</msub>
+							<mo>≔</mo>
+							<mrow>
+								<mo>{</mo>
+								<mn>0</mn>
+								<mo>}</mo>
+							</mrow>
+						</math>
+						に積を
+						<math>
+							<mrow>
+								<mn>0</mn>
+								<mo>+</mo>
+								<mn>0</mn>
+							</mrow>
+							<mo>≔</mo>
+							<mn>0</mn>
+						</math>
+						と定めたもので，明らかに<a href="#左単位的マグマ">左単位的マグマ</a>となる．
+					</p>
+				</article>
+				<article id="零対象" class="thm">
+					<h4>零対象</h4>
+					<p><a href="#零左単位的マグマ">零左単位的マグマ</a>は<a href="#左単位的マグマの圏">左単位的マグマの圏</a>の零対象．つまり以下が成り立つ．</p>
+					<p>
+						任意の<a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>に対し，
+						<ul>
+							<li><a href="#零">零左単位的マグマ</a>から<math><mi>𝑆</mi></math>への<a href="#準同型">準同型</a>は唯一．</li>
+							<li><math><mi>𝑆</mi></math>から<a href="#零">零左単位的マグマ</a>への<a href="#準同型">準同型</a>は唯一．</li>
+						</ul>
+					</p>
+				</article>
+				<article id="単純" class="dfn">
+					<h4>単純左単位的マグマ</h4>
+					<p><a href="#零">零</a>でない<a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p><math><mi>𝑆</mi></math>が<a href="#自明な正規部分左単位的マグマ">非自明</a>な<a href="#正規部分左単位的マグマ">正規部分左単位的マグマ</a>を持たないとき，<dfn>単純</dfn>(simple)と呼ぶ．</p>
+					<p>単純左単位的マグマの<a href="#直和">直和</a>で書ける<a href="#左単位的マグマ">左単位的マグマ</a>を，<dfn>半単純</dfn>(semisimple)と呼ぶ．</p>
+				</article>
+				<article id="既約" class="dfn">
+					<h4>既約左単位的マグマ</h4>
+					<p><a href="#左単位的マグマ">左単位的マグマ</a><math><mi>𝑆</mi></math>が<a href="#自明な部分左単位的マグマ">非自明</a>な<a href="#部分左単位的マグマ">部分左単位的マグマ</a>の直和の形で書けないとき，<dfn>既約</dfn>(reducible)と呼ぶ．</p>
+					<p>既約でないとき，<dfn>可約</dfn>(irreducible)と呼ぶ．</p>
+				</article>
+				<article id="単純ならば既約" class="thm">
+					<h4>単純<math><mo>⇒</mo></math>既約</h4>
+					<ul>
+						<li><a href="#単純">単純左単位的マグマ</a>は<a href="#既約">既約</a></li>
+						<li><a href="#単純">半単純左単位的マグマ</a>は<a href="#既約">可約</a></li>
+					</ul>
+				</article>
+			</section>
+		</section>
+		<section>
+			<h2>参考文献</h2>
+			<dl>
+				<dt>正規部分左単位的マグマに関して</dt>
+				<dd>J. ELGUETA, “<a href="https://doi.org/10.1017/S1446788723000204">Normal Submonoids And Congruences On A Monoid</a>,” Journal of the Australian Mathematical Society, vol. 116, no. 3, pp. 331–362, 2024. doi:10.1017/S1446788723000204</dd>
+			</dl>
+		</section>
+	</body>
+</html>

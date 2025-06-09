@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<link rel="stylesheet" href="../../../style.css"/>
+		<meta charset="utf-8" content="フュージョン圏"/>
+		<title>フュージョン圏</title>
+	</head>
+	<body>
+		<h1>フュージョン圏</h1>
+		<section>
+			<h2>公理</h2>
+			<article id="多重テンソル圏" class="dfn">
+				<h3>多重テンソル圏</h3>
+				<p>
+					<math><mi>𝕂</mi></math>を体とする．圏<math><mi>𝒞</mi></math>が<dfn>多重テンソル圏</dfn>であるとは，以下を満たすこと：
+				</p>
+				<ul>
+					<li>圏<math><mi>𝒞</mi></math>はrigidなモノイダル圏</li>
+					<li>圏<math><mi>𝒞</mi></math>は局所有限な<mi>𝕂</mi>-線型Abel圏</li>
+					<li>函手<math><mo>⊗</mo><mo>:</mo><mrow><mi>𝒞</mi><mo>×</mo><mi>𝒞</mi><mo>→</mo><mi>𝒞</mi></mrow></math>が</li>
+				</ul>
+			</article>
+			<article id="テンソル圏" class="dfn">
+				<h3>多重テンソル圏，テンソル圏</h3>
+				<p>
+					<dfn>テンソル圏</dfn>と呼ぶ．
+				</p>
+				<ul>
+					<li>圏<math><mi>𝒞</mi></math>は多重テンソル圏</li>
+					<li>
+						<math>
+							<mrow>
+								<msub>
+									<mo>Hom</mo>
+									<mi>𝒞</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+										<mrow>
+											<mn>1</mn>
+											<mo>,</mo>
+											<mn>1</mn>
+										</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>≅</mo>
+							<mi>𝕂</mi>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<article id="多重フュージョン圏" class="dfn">
+				<h3>多重フュージョン圏</h3>
+				<p>
+					<math><mi>𝕂</mi></math>を体とする．圏<math><mi>𝒞</mi></math>が<dfn>多重フュージョン圏</dfn>と呼ぶ．
+				</p>
+				<ul>
+					<li>圏<math><mi>𝒞</mi></math>は多重テンソル圏</li>
+					<li>圏<math><mi>𝒞</mi></math>は<mi>𝕂</mi>-線型Abel圏として有限かつ単純．</li>
+				</ul>
+			</article>
+			<article id="フュージョン圏" class="dfn">
+				<h3>フュージョン圏</h3>
+				<p>
+					<math><mi>𝕂</mi></math>を体とする．圏<math><mi>𝒞</mi></math>が<dfn>フュージョン圏</dfn>と呼ぶ．
+				</p>
+				<ul>
+					<li>圏<math><mi>𝒞</mi></math>はテンソル圏</li>
+					<li>圏<math><mi>𝒞</mi></math>は<mi>𝕂</mi>-線型Abel圏として有限かつ単純．</li>
+				</ul>
+			</article>
+			<article id="多重テンソル圏のテンソル積は双完全" class="prp">
+				<h3 class="prp-t">多重テンソル圏のテンソル積は双完全</h3>
+				<p class="prp-d">多重テンソル圏の函手<math><mo>⊗</mo><mo>:</mo><mrow><mi>𝒞</mi><mo>×</mo><mi>𝒞</mi><mo>→</mo><mi>𝒞</mi></mrow></math>は双完全</p>
+			</article>
+			<p><a href="#多重テンソル圏のテンソル積は双完全">この命題</a>と<a href="#多重環圏">多重環圏の定義</a>より，</p>
+			<article id="多重テンソル圏は多重環圏" class="prp">
+				<h3>多重テンソル圏は多重環圏．</h3>
+				<p>多重テンソル圏は多重環圏．テンソル圏は環圏</p>
+			</article>
+			<p>以下<math><mi>𝕂</mi></math>は標数0の代数閉体とする．</p>
+		</section>
+		<section>
+			<h2>有名な結果</h2>
+			<article id="フュージョン圏の二重双対" class="prp">
+				<h3>フュージョン圏の単純対象は二重双対に同型</h3>
+				<p>フュージョン圏の任意の単純対象<math><mi>𝑉</mi></math>は二重双対<math><msup><mi>𝑉</mi><mo>**</mo></msup></math>に同型．</p>
+			</article>
+			<article id="大域次元" class="dfn">
+				<h3>大域次元</h3>
+				<p>フュージョン圏<math><mi>𝒞</mi></math>の単純対象の2乗ノルムを<dfn>大域次元</dfn>(global dimension)と呼び，<math><mi>dim</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝒞</mi><mo>)</mo></mrow></math>と書く．</p>
+			</article>
+		</section>
+	</body>
+</html>
