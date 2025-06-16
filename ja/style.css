@@ -79,7 +79,7 @@ section > p {
 	margin: 0 2rem;
 }
 
-hgroup > h1 ~ p {
+h1 ~ p {
 	font-weight: bold;
 	text-align: center;
 }
@@ -154,8 +154,6 @@ svg {
 }
 
 foreignObject {
-	font-size: 0.5px;
-	text-anchor: middle;
 }
 
 line, polyline {
@@ -169,8 +167,8 @@ line.auxiliary, polyline.auxiliary {
 }
 
 text {
-	font-size: 1px;
 	text-anchor: middle;
+	dominant-baseline: central;
 }
 
 math {

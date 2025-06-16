@@ -299,7 +299,7 @@
 				<h3>準同型</h3>
 				<ul>
 					<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-					<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+					<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi><mo>,</mo><mi>𝔥</mi></math></li>
 				</ul>
 				<p>を与える．</p>
 				<p>
@@ -388,10 +388,6 @@
 			<article id="同型の逆射" class="thm">
 				<h3>同型の逆射</h3>
 				<p><a href="#同型">Lie代数同型</a>の逆写像も<a href="#同型">Lie代数同型</a>．</p>
-			</article>
-			<article id="自己同型" class="dfn">
-				<h3>自己同型</h3>
-				<p><dfn>自己同型</dfn><span lang="en">(automorphism)</span>と呼ぶ．</p>
 			</article>
 			<article id="Lie代数の圏" class="dfn">
 				<h3>Lie代数の圏</h3>
@@ -701,6 +697,218 @@
 						は<math><mi>𝔤</mi></math>の<a href="#イデアル">イデアル</a>となる．これらを<math><mi>𝔤</mi></math>の<dfn>自明なイデアル</dfn><span lang="en">(trivial ideal)</span>と呼ぶ．
 					</p>
 					<p>それ以外を<dfn>非自明</dfn><span lang="en">(nontrivial)</span>と呼ぶ．</p>
+				</article>
+				<article id="同型定理" class="thm">
+					<h4>同型定理</h4>
+					<p></p>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与えると，以下が成り立つ．</p>
+					<ul>
+						<li>
+							<ul>	
+								<li>任意の<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔥</mi></math></li>
+								<li>
+									任意の<a href="#準同型">準同型</a>
+									<math>
+										<mi>𝑓</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>→</mo>
+											<mi>𝔥</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							に対し，
+							<ul>	
+								<li>
+									<math><mi>𝑓</mi></math>の核
+									<math>
+										<msup>
+											<mi>𝑓</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mn>0</mn>
+												<mi>𝔥</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝔤</mi></math>の<a href="#イデアル">イデアル</a>
+								</li>
+								<li>
+									<math><mi>𝑓</mi></math>の像
+									<math>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝔤</mi>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝔥</mi></math>の<a href="#部分Lie代数">部分Lie代数</a>
+								</li>
+								<li>
+									任意の<math><mi>𝔤</mi></math>の<a href="#イデアル">イデアル</a><math><mi>𝔦</mi></math>に対し，
+									<math>
+										<mi>𝔦</mi>
+										<mo>⊂</mo>
+										<mrow>
+											<mi>ker</mi>
+											<mo>&af;</mo>
+											<mi>𝑓</mi>
+										</mrow>
+									</math>
+									を満たすとき，以下を満たす：
+									<math display="block">
+										<mrow>
+											<mo>∃!</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mover>
+													<mi>𝑓</mi>
+													<mo>‾</mo>
+												</mover>
+												<mo>:</mo>
+												<mrow>
+													<mrow>
+														<mi>𝔤</mi>
+														<mo>∕</mo>
+														<mi>𝔦</mi>
+													</mrow>
+													<mo>→</mo>
+													<mi>𝔥</mi>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mover>
+													<mi>𝑓</mi>
+													<mo>‾</mo>
+												</mover>
+												<mo>∘</mo>
+												<mi>𝑝</mi>
+											</mrow>
+											<mo>=</mo>
+											<mi>𝑓</mi>
+										</mrow>
+									</math>
+									つまり以下の図式を可換にする．
+									特に，自然な<a href="#同型">同型</a>
+									<math>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>∕</mo>
+											<mrow>
+												<mi>ker</mi>
+												<mo>&af;</mo>
+												<mi>𝑓</mi>
+											</mrow>
+										</mrow>
+										<mo>≅</mo>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mi>𝔤</mi>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									が存在する．
+								</li>
+							</ul>
+						</li>
+						<li>
+						</li>
+						<li>
+						</li>
+					</ul>
+				</article>
+			</section>
+			<section>
+				<h3>自己準同型</h3>
+				<article id="自己準同型" class="dfn">
+					<h4>自己準同型・同型</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li><math><mi>𝔤</mi></math>上の<a href="#準同型">準同型</a>のことを，<dfn>自己準同型</dfn><span lang="en">(endomorphism)</span>と呼ぶ．自己準同型の集合を<math><mi>end</mi><mo>&af;</mo><mi>𝔤</mi></math>と書く．</li>
+						<li><math><mi>𝔤</mi></math>上の<a href="#同型">同型</a>のことを，<dfn>自己同型</dfn><span lang="en">(automorphism)</span>と呼ぶ．自己同型の集合を<math><mi>aut</mi><mo>&af;</mo><mi>𝔤</mi></math>と書く．</li>
+					</ul>
+				</article>
+				<article id="微分代数はLie代数準同型" class="thm">
+					<h4>微分代数はLie代数準同型</h4>
+					<p><a href="#微分多元環">微分代数</a>は単位的結合代数だったから，<a href="#交換子">交換子</a>を<a href="#Lie代数">Lie括弧</a>とする<a href="#Lie代数">Lie代数</a>をなす．つまり，
+						<math display="block">
+							<mrow>
+								<mi>der</mi>
+								<mo>&af;</mo>
+								<mi>𝔤</mi>
+							</mrow>
+							<mo>⊂</mo>
+							<mrow>
+								<mi>end</mi>
+								<mo>&af;</mo>
+								<mi>𝔤</mi>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article id="内部微分" class="dfn">
+					<h4>内部微分</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi></math>に対し，
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mi>ad</mi>
+									<mo>&af;</mo>
+									<mi>𝑥</mi>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>-</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</mrow>
+							<mo>∈</mo>
+							<mrow>
+								<mi>der</mi>
+								<mo>&af;</mo>
+								<mi>𝔤</mi>
+							</mrow>
+						</math>
+						を<math><mi>𝔤</mi></math>の<dfn>内部微分</dfn><span lang="en">(inner derivation)</span>と呼ぶ．
+					</p>
 				</article>
 			</section>
 			<section>
