@@ -15,10 +15,11 @@
 			<h2>定義</h2>
 			<article id="群" class="ax">
 				<h3>群</h3>
-				<p><dfn class="ax">群</dfn>(group)とは，以下の2つのデータからなる．</p>
+				<p><dfn class="ax">群</dfn>(group)とは，以下の4つのデータからなる．</p>
 				<ul class="ax">
 					<li><a href="../../../set/index.html#集合">集合</a><math><mi>𝐺</mi></math></li>
-					<li><dfn>積</dfn>と呼ばれる<math><mi>𝐺</mi></math>の2項演算
+					<li>
+						<dfn>積</dfn>と呼ばれる<math><mi>𝐺</mi></math>の2項演算
 						<math>
 							<mo>⋅</mo>
 							<mo>:</mo>
@@ -33,11 +34,52 @@
 							</mrow>
 						</math>
 					</li>
+					<li>
+						<dfn>単位元</dfn>
+						<math>
+							<mi>𝑒</mi>
+							<mo>∈</mo>
+							<mi>𝐺</mi>
+						</math>
+					</li>
+					<li>
+						<dfn>逆元</dfn>を取る操作（<math><mi>𝐺</mi></math>上の変換
+						<math>
+							<msup>
+								<mi>-</mi>
+								<mrow>
+									<mo>−</mo>
+									<mn>1</mn>
+								</mrow>
+							</msup>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝐺</mi>
+									<mo>→</mo>
+									<mi>𝐺</mi>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>↦</mo>
+									<msup>
+										<mi>𝑔</mi>
+										<mrow>
+											<mo>−</mo>
+											<mn>1</mn>
+										</mrow>
+									</msup>
+								</mrow>
+							</mrow>
+						</math>
+						）
+					</li>
 				</ul>
 				<p>これらは以下の条件を満たす．</p>
-				<dl>
-					<dt><a href="../index.html#結合則">結合則</a></dt>
-					<dd>
+				<ul>
+					<li>
+						積は<a href="../index.html#結合則">結合的</a>．つまり，
 						<math display="block">
 							<mrow>
 								<mo>∀</mo>
@@ -85,9 +127,9 @@
 								</mrow>
 							</mrow>
 						</math>
-					</dd>
-					<dt><a href="../index.html#単位元">両側単位元</a><math><mi>𝑒</mi><mo>∈</mo><mi>𝐺</mi></math>の存在</dt>
-					<dd>
+					</li>
+					<li>
+						<math><mi>𝑒</mi><mo>∈</mo><mi>𝐺</mi></math>は<math><mi>𝐺</mi></math>の<a href="../index.html#単位元">両側単位元</a>．つまり，
 						<math display="block">
 							<mrow>
 								<mo>∀</mo>
@@ -115,8 +157,8 @@
 								<mi>𝑔</mi>
 							</mrow>
 						</math>
-					</dd>
-					<dt>
+					</li>
+					<li>
 						<math>
 							<mo>∀</mo>
 							<mo>&af;</mo>
@@ -126,9 +168,17 @@
 								<mi>𝐺</mi>
 							</mrow>
 						</math>
-						に対する<a href="../index.html#逆元">両側逆元</a>の存在
-					</dt>
-					<dd>
+						に対し，
+						<math>
+							<msup>
+								<mi>𝑔</mi>
+								<mrow>
+									<mo>−</mo>
+									<mn>1</mn>
+								</mrow>
+							</msup>
+						</math>
+						は<math><mi>𝑔</mi></math>の<a href="../index.html#逆元">両側逆元</a>．つまり，
 						<math display="block">
 							<mrow>
 								<mo>∃</mo>
@@ -156,12 +206,13 @@
 								<mi>𝑒</mi>
 							</mrow>
 						</math>
-					</dd>
+					</li>
 				</ul>
 			</article>
 			<article id="準同型" class="dfn">
 				<h3>準同型</h3>
 				<p>
+					<a href="#群">群</a>
 					<math>
 						<mi>𝐺</mi>
 						<mo>,</mo>
@@ -170,7 +221,10 @@
 							<mo>′</mo>
 						</msup>
 					</math>
-					を<a href="#群">群</a>とする．写像
+					を与える．
+				</p>
+				<p>
+					写像
 					<math>
 						<mi>𝑓</mi>
 						<mo>:</mo>
@@ -183,9 +237,7 @@
 							</msup>
 						</mrow>
 					</math>
-					が以下を満たすとき，<dfn>（群）準同型</dfn>と呼ぶ．
-				</p>
-				<p>
+					が以下を満たすとき，<dfn>（群）準同型</dfn>と呼ぶ：
 					<math display="block">
 						<mrow>
 							<mo>∀</mo>
@@ -241,18 +293,237 @@
 					</math>
 				</p>
 			</article>
+			<article id="準同型が暗に示す公理" class="thm">
+				<h3>準同型が暗に示す公理</h3>
+				<ul>
+					<li>
+						<a href="#群">群</a>
+						<math>
+							<mi>𝐺</mi>
+							<mo>,</mo>
+							<msup>
+								<mi>𝐺</mi>
+								<mo>′</mo>
+							</msup>
+						</math>
+					</li>
+					<li>
+						<a href="#準同型">準同型</a>
+						<math>
+							<mi>𝑓</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝐺</mi>
+								<mo>→</mo>
+								<msup>
+									<mi>𝐺</mi>
+									<mo>′</mo>
+								</msup>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+				<p>を与えると，以下を満たす．</p>
+				<ul>
+					<li>
+						<math display="block">
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msub>
+										<mn>1</mn>
+										<mi>𝐺</mi>
+									</msub>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<msub>
+								<mn>1</mn>
+								<msup>
+									<mi>𝐺</mi>
+									<mo>′</mo>
+								</msup>
+							</msub>
+						</math>
+					</li>
+					<li>
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>∈</mo>
+									<mi>𝐺</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msup>
+											<mi>𝑔</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<msup>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑔</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mrow>
+										<mo>−</mo>
+										<mn>1</mn>
+									</mrow>
+								</msup>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<article class="proof">
+				<h3>証明</h3>
+				<p>
+					<math display="block">
+						<mrow>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑔</mi>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msup>
+										<mi>𝑔</mi>
+										<mrow>
+											<mo>−</mo>
+											<mn>1</mn>
+										</mrow>
+									</msup>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+						</mrow>
+						<mo>=</mo>
+						<mrow>
+							<mi>𝑓</mi>
+							<mo>&af;</mo>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝑔</mi>
+										<mrow>
+											<mo>−</mo>
+											<mn>1</mn>
+										</mrow>
+									</msup>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+						</mrow>
+						<mo>=</mo>
+						<msub>
+							<mn>1</mn>
+							<msup>
+								<mi>𝐺</mi>
+								<mo>′</mo>
+							</msup>
+						</msub>
+					</math>
+					を満たすので，<a href="#群">逆元</a>の一意性より，
+					<math>
+						<mi>𝑓</mi>
+						<mo>&af;</mo>
+						<mrow>
+							<mo>(</mo>
+							<msup>
+								<mi>𝑔</mi>
+								<mrow>
+									<mo>−</mo>
+									<mn>1</mn>
+								</mrow>
+							</msup>
+							<mo>)</mo>
+						</mrow>
+					</math>
+					は
+					<math>
+						<mi>𝑓</mi>
+						<mo>&af;</mo>
+						<mrow>
+							<mo>(</mo>
+							<mi>𝑔</mi>
+							<mo>)</mo>
+						</mrow>
+					</math>
+					の<a href="#群">逆元</a>．
+					<math>
+						<mi>𝑔</mi>
+						<mo>=</mo>
+						<msub>
+							<mn>1</mn>
+							<mi>𝐺</mi>
+						</msub>
+					</math>
+					とすると，<a href="#群">単位元</a>の<a href="#群">逆元</a>は<a href="#群">単位元</a>であったから，
+					<math>
+						<mi>𝑓</mi>
+						<mo>&af;</mo>
+						<mrow>
+							<mo>(</mo>
+							<msub>
+								<mn>1</mn>
+								<mi>𝐺</mi>
+							</msub>
+							<mo>)</mo>
+						</mrow>
+					</math>
+					は
+					<math>
+						<msup>
+							<mi>𝐺</mi>
+							<mo>′</mo>
+						</msup>
+					</math>
+					の<a href="#群">単位元</a>．
+				</p>
+			</article>
 			<article id="同型" class="dfn">
 				<h3>同型</h3>
-				<p>
-					全単射な<a href="#準同型">準同型</a>を<dfn>同型</dfn>と呼ぶ．
-				</p>
+				<p>全単射な<a href="#準同型">準同型</a>を<dfn>同型</dfn>と呼ぶ．</p>
 			</article>
 			<article id="群の圏" class="dfn">
 				<h3>群の圏</h3>
 				<p><a href="../../../category/index.html#圏">対象</a>を全ての<a href="#群">群</a>，<a href="../../../category/index.html#圏">射</a>を全ての<a href="#準同型">準同型</a>とする<a href="../../../category/index.html#圏">圏</a>を<dfn>群の圏</dfn>と呼び，<math><mi>𝐆𝐫𝐩</mi></math>と表す．</p>
 			</article>
-			
-			
+	
 
 			<article id="群と単一対象圏" class="thm">
 				<h3>群と対象が単一の圏</h3>
