@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<link rel="stylesheet" href="../../style.css"/>
+		<meta charset="utf-8"/>
+		<meta name="description" content="マグマ"/>
+		<title>マグマ</title>
+	</head>
+	<body>
+		<hgroup>
+			<h1>マグマ</h1>
+			<p>語源不明</p>
+		</hgroup>
+		<section>
+			<h2>定義</h2>
+			<article id="マグマ" class="ax">
+				<h3>マグマ</h3>
+				<p><dfn class="ax">マグマ</dfn><span lang="en">(magma)</span>とは，以下の2つのデータからなる．</p>
+				<ul>
+					<li><a href="../../set/index.html#集合">集合</a><math><mi>𝑆</mi></math></li>
+					<li><dfn>積</dfn>と呼ばれる<math><mi>𝑆</mi></math>上の2項演算
+						<math>
+							<mo>⋅</mo>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>×</mo>
+									<mi>𝑆</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝑆</mi>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<p>ちなみに，マグマのことを亜群と呼ぶ文献もあるが，現代ではoidificationと呼ばれる操作で群から作られる構造のことを呼ぶのでやめた方が良い．</p>
+			<p><math><mo>⋅</mo></math>の終域が自分自身（<math><mi>𝑆</mi></math>）であることを<dfn>閉じる</dfn>と呼ぶ．</p>
+			<article id="準同型" class="dfn">
+				<h3>準同型</h3>
+				<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math>を与える．</p>
+				<p>
+					<a href="../../set/index.html#写像">写像</a>
+					<math>
+						<mi>𝑓</mi>
+						<mo>:</mo>
+						<mrow>
+							<mi>𝑆</mi>
+							<mo>→</mo>
+							<mi>𝑇</mi>
+						</mrow>
+					</math>
+					で以下を満たすものを，<dfn>（マグマ）準同型</dfn>と呼ぶ．
+				</p>
+				<p>
+					<math display="block">
+						<mrow>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>,</mo>
+									<mi>𝑦</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝑆</mi>
+							</mrow>
+						</mrow>
+						<mo>,</mo>
+						<mrow>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&it;</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑦</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</mrow>
+					</math>
+				</p>
+			</article>
+			<p>積の記号を省略しているためわかりづらいが，<a href="#準同型">準同型</a>は<math><mi>𝑆</mi></math>の元を<math><mi>𝑇</mi></math>の元へ送るだけでなく，<math><mi>𝑆</mi></math>の積を<math><mi>𝑇</mi></math>の積へ送る．</p>
+			<article id="同型" class="dfn">
+				<h3>同型</h3>
+				<p>全単射な<a href="#準同型">準同型</a>を<dfn>同型</dfn>と呼ぶ．</p>
+				<p>同型の<a href="../../set/index.html#写像">始域</a>と<a href="../../set/index.html#写像">終域</a>の（組の）ことも<dfn>同型</dfn><span lang="en">(isomorphic)</span>と呼ぶ．</p>
+			</article>
+			<article id="マグマの圏" class="dfn">
+				<h3>マグマの圏</h3>
+				<ul>
+					<li><a href="../../category/index.html#圏">対象</a>を全ての<a href="#マグマ">マグマ</a></li>
+					<li><a href="../../category/index.html#圏">射</a>を全ての<a href="#準同型">マグマ準同型</a></li>
+				</ul>
+				<p>とする<a href="../../category/index.html#圏">圏</a>を<dfn>マグマの圏</dfn><span lang="en">(category of magmas)</span>と呼び<math><mi>𝐌𝐚𝐠</mi></math>と表す．</p>
+			</article>
+			<section>
+				<h3>同型定理</h3>
+				<p><a href="#マグマの圏">マグマの圏</a><math><mi>𝐌𝐚𝐠</mi></math>の<a href="../../category/index.html#部分対象">部分対象</a>と<a href="../../category/index.html#部分対象">商対象</a>を確認し，同型定理を示す．</p>
+				<article id="部分マグマ" class="dfn">
+					<h4>部分マグマ</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p>
+						部分集合<math><mi>𝑇</mi><mo>⊂</mo><mi>𝑆</mi></math>で，<math><mi>𝑆</mi></math>の<a href="#マグマ">積</a>に関して<a href="#マグマ">マグマ</a>をなす，つまり
+						<math display="block">
+							<mrow>
+								<mi>𝑇</mi>
+								<mo>⋅</mo>
+								<mi>𝑇</mi>
+							</mrow>
+							<mo>⊂</mo>
+							<mi>𝑇</mi>
+						</math>
+						を満たすものを<math><mi>𝑆</mi></math>の<dfn>部分マグマ</dfn><span lang="en">(submagma)</span>と呼ぶ．
+					</p>
+				</article>
+				<p>商マグマを定義する準備をする．</p>
+				<article id="マグマと関係の積" class="dfn">
+					<h4>マグマと関係の積</h4>
+					<ul>
+						<li><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math></li>
+						<li><math><mi>𝑆</mi></math>上の<a href="../../set/index.html#関係">関係</a><math><mo>∼</mo></math></li>
+						<li>
+							<math><mo>∼</mo></math>の<a href="../../set/index.html#関係">グラフ</a>
+							<math>
+								<mi>𝐺</mi>
+								<mo>⊂</mo>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>×</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>
+						を与える．
+					</p>
+					<p>
+						<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>と<math><mi>𝐺</mi></math>には自然な積は
+						<math display="block">
+							<mrow>
+								<mi>𝑥</mi>
+								<mo>⋅</mo>
+								<mi>𝐺</mi>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<mo>{</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑥</mi>
+												<mo>⋅</mo>
+												<mi>𝑎</mi>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝑥</mi>
+												<mo>⋅</mo>
+												<mi>𝑏</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>∈</mo>
+									<mrow>
+										<mi>𝑆</mi>
+										<mo>×</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>|</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>,</mo>
+											<mi>𝑏</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝐺</mi>
+								</mrow>
+								<mo>}</mo>
+							</mrow>
+						</math>
+						が定まる．<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>と<math><mo>∼</mo></math>の積を，<a href="../../set/index.html#関係">グラフ</a>
+						<math>
+							<mi>𝑥</mi>
+							<mo>⋅</mo>
+							<mi>𝐺</mi>
+						</math>
+						の誘導する関係として定義し，それを
+						<math display="block">
+							<mi>𝑥</mi>
+							<mo>⋅</mo>
+							<mo>∼</mo>
+						</math>
+						と表す．
+					</p>
+					<p>部分集合<math><mi>𝑇</mi><mo>⊂</mo><mi>𝑆</mi></math>と<math><mo>∼</mo></math>の積も同様に定まり，<math><mi>𝑇</mi><mo>⋅</mo><mo>∼</mo></math>と表す．</p>
+				</article>
+				<article id="マグマと等号の積" class="thm">
+					<h4>マグマと等号の積</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与えると，以下が成り立つ．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>⋅</mo>
+									<mo>=</mo>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+							<mo>⊂</mo>
+							<mo>=</mo>
+						</math>
+					</p>
+				</article>
+				<article id="安定関係" class="dfn">
+					<h4>安定関係</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p>
+						<math><mi>𝑆</mi></math>の<a href="../../set/index.html#関係">関係</a><math><mo>∼</mo></math>で，以下を満たすものを，<dfn><math><mi>𝑆</mi></math>-（両側）安定関係</dfn><span lang="en">(stable relation)</span>と呼ぶ．
+					</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>⋅</mo>
+									<mo>∼</mo>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mo>∼</mo>
+									<mo>⋅</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>⊂</mo>
+							<mo>∼</mo>
+						</math>
+					</p>
+				</article>
+				<p>忘れないうちに，<a href="../../set/index.html#閉包">閉包</a>を定義しておく．</p>
+				<article id="関係の安定閉包" class="dfn">
+					<h4>関係の安定閉包</h4>
+					<ul>
+						<li><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math></li>
+						<li><math><mi>𝑆</mi></math>上の<a href="../../set/index.html#関係">関係</a><math><mo>∼</mo></math></li>
+					</ul>
+					<p>
+						を与え，
+						<math display="block">
+							<mrow>
+								<msub>
+									<mi>𝑓</mi>
+									<mi>𝑆</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mo>∼</mo>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>⋅</mo>
+									<mo>∼</mo>
+								</mrow>
+								<mo>∪</mo>
+								<mrow>
+									<mo>∼</mo>
+									<mo>⋅</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+						</math>
+						と定める．
+					</p>
+					<p>
+						<math display="block">
+							<munderover intent=":largeop">
+								<mo>⋃</mo>
+								<mrow>
+									<mi>𝑛</mi>
+									<mo>=</mo>
+									<mn>0</mn>
+								</mrow>
+								<mi>∞</mi>
+							</munderover>
+							<mrow>
+								<msup>
+									<msub>
+										<mi>𝑓</mi>
+										<mi>𝑆</mi>
+									</msub>
+									<mi>𝑛</mi>
+								</msup>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mo>∼</mo>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+						で定義される<a href="../../set/index.html#関係">関係</a>を<math><mo>∼</mo></math>の<dfn><math><mi>𝑆</mi></math>-安定閉包</dfn><span lang="en">(stable closure)</span>と呼ぶ．
+					</p>
+				</article>
+				<article id="関係の正規閉包" class="dfn">
+					<h4>関係の正規閉包</h4>
+					<ul>
+						<li><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math></li>
+						<li><math><mi>𝑆</mi></math>上の<a href="../../set/index.html#関係">関係</a><math><mo>∼</mo></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mo>∼</mo></math>の<a href="#関係の安定閉包">安定閉包</a>の<a href="../../set/index.html#同値閉包">同値閉包</a>，明示的には<math><mo>∼</mo></math>の<a href="#関係の安定閉包">安定閉包</a>を
+						<math>
+							<msup>
+								<mo>∼</mo>
+								<mo>′</mo>
+							</msup>
+						</math>
+						としたときの
+						<math display="block">
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msup>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msup>
+												<mo>∼</mo>
+												<mo>′</mo>
+											</msup>
+											<mo>∪</mo>
+											<msup>
+												<msup>
+													<mo>∼</mo>
+													<mo>′</mo>
+												</msup>
+												<mi>op</mi>
+											</msup>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mrow>
+										<mo>∘</mo>
+										<mi>𝑛</mi>
+									</mrow>
+								</msup>
+							</mrow>
+						</math>
+						を<dfn>正規閉包</dfn><span lang="en">(normal closure)</span>と呼ぶ．
+					</p>
+				</article>
+				<article id="合同" class="dfn">
+					<h4>合同</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p><math><mi>𝑆</mi></math>上の<a href="../../set/index.html#同値関係">同値関係</a><math><mo>∼</mo></math>が，以下の同値な条件のいずれか（よって全て）を満たすとき，<math><mo>∼</mo></math>を<dfn>合同</dfn><span lang="en">(congruence)</span>（または<dfn>正規関係</dfn><span lang="en">(normal relation)</span>）と呼び，しばしば<math><mo>≡</mo></math>と表す．</p>
+					<ul>
+						<li><math><mo>∼</mo></math>は<a href="#安定関係">安定関係</a></li>
+						<li>
+							<a href="../../set/index.html#商集合">商集合</a><math><mi>𝑆</mi><mo>∕</mo><mo>∼</mo></math>に関して，	
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mi>𝑥</mi>
+											<mo>]</mo>
+										</mrow>
+										<mo>⋅</mo>
+										<mrow>
+											<mo>[</mo>
+											<mi>𝑦</mi>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>⊂</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>⋅</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>条件の同値性の証明</h4>
+					<p>
+						<a href="../../set/index.html#同値関係">同値関係</a>の<a href="../../set/index.html#同値関係">反射律</a>
+						<math>
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>∈</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mi>𝑥</mi>
+								<mo>∼</mo>
+								<mi>𝑥</mi>
+							</mrow>
+						</math>
+						に注意すると，どちらの合同の定義でも
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑎</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+										<mo>,</mo>
+										<mi>𝑏</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>∼</mo>
+										<mi>𝑎</mi>
+									</mrow>
+									<mo>∩</mo>
+									<mrow>
+										<mi>𝑦</mi>
+										<mo>∼</mo>
+										<mi>𝑏</mi>
+									</mrow>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>⋅</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∼</mo>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>⋅</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∼</mo>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>⋅</mo>
+										<mi>𝑏</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+						が成り立つ．2つの<math><mo>∼</mo></math>より<a href="#安定関係">安定関係</a>となり，<math><mi>𝑥</mi><mo>⋅</mo><mi>𝑦</mi></math>と<math><mi>𝑎</mi><mo>⋅</mo><mi>𝑏</mi></math>が<a href="../../set/index.html#関係">関係がある</a>から
+						<math>
+							<mrow>
+								<mrow>
+									<mo>[</mo>
+									<mi>𝑥</mi>
+									<mo>]</mo>
+								</mrow>
+								<mo>⋅</mo>
+								<mrow>
+									<mo>[</mo>
+									<mi>𝑦</mi>
+									<mo>]</mo>
+								</mrow>
+							</mrow>
+							<mo>⊂</mo>
+							<mrow>
+								<mo>[</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>⋅</mo>
+									<mi>𝑦</mi>
+								</mrow>
+								<mo>]</mo>
+							</mrow>
+						</math>
+						が成り立つ．
+					</p>
+				</article>
+				<article id="商マグマ" class="dfn">
+					<h4>商マグマ</h4>
+					<ul>
+						<li><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math></li>
+						<li><math><mi>𝑆</mi></math>上の<a href="#合同">合同</a><math><mo>≡</mo></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						このとき<a href="../../set/index.html#商集合">商集合</a>
+						<math>
+							<mi>𝑆</mi>
+							<mo>∕</mo>
+							<mo>≡</mo>
+						</math>
+						上に自然な積
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mo>[</mo>
+										<mi>𝑥</mi>
+										<mo>]</mo>
+									</mrow>
+									<mo>⋅</mo>
+									<mrow>
+										<mo>[</mo>
+										<mi>𝑦</mi>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>⋅</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</mrow>
+						</math>
+						が定まり，<a href="#マグマ">マグマ</a>をなす．これを<dfn>商マグマ</dfn>と呼ぶ．
+					</p>
+				</article>
+				<article id="同型定理" class="thm">
+					<h4>同型定理</h4>
+					<p>
+						<a href="#マグマ">マグマ</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math>と<a href="#準同型">マグマ準同型</a>
+						<math>
+							<mi>𝑓</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝑆</mi>
+								<mo>→</mo>
+								<mi>𝑇</mi>
+							</mrow>
+						</math>
+						に対し，以下が成り立つ．
+					</p>
+					<ul>
+						<li>
+							<math>
+								<mo>∼</mo>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑥</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑦</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							で定義される<a href="../../set/index.html#関係">関係</a>は<a href="#合同">合同</a>．
+						</li>
+						<li>
+							<math><mi>𝑓</mi></math>の<a href="../../set/index.html#像">像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑆</mi>
+									<mo>)</mo>
+								</mrow>
+							</math>
+							は<math><mi>𝑇</mi></math>の<a href="#部分マグマ">部分マグマ</a>．
+						</li>
+						<li>
+							<a href="#商マグマ">商マグマ</a>
+							<math>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>∕</mo>
+									<mo>∼</mo>
+								</mrow>
+							</math>
+							と<math><mi>𝑓</mi></math>の像
+							<math>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑆</mi>
+									<mo>)</mo>
+								</mrow>
+							</math>
+							は<a href="#同型">同型</a>．
+						</li>
+					</ul>
+				</article>
+				
+				
+			</section>
+			<section>
+				<h3>マグマの圏</h3>
+				<article id="反対" class="dfn">
+					<h4>反対マグマ</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p>
+						集合<math><mi>𝑆</mi></math>に積を
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>⋅</mo>
+									<mi>𝑦</mi>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mi>𝑦</mi>
+									<msub>
+										<mo>⋅</mo>
+										<mi>𝑆</mi>
+									</msub>
+									<mi>𝑥</mi>
+								</mrow>
+							</mrow>
+						</math>
+						により定義したものを，<math><mi>𝑆</mi></math>の<dfn>反対マグマ</dfn>と呼び，
+						<math>
+							<msup>
+								<mi>𝑆</mi>
+								<mi>op</mi>
+							</msup>
+						</math>
+						と表す．
+					</p>
+				</article>
+			</section>
+			<section>
+				<h3>特殊な元</h3>
+				<p>二項演算の特殊な結果に対し，名前がついているのでひたすら紹介．</p>
+				<article id="単位元" class="dfn">
+					<h4>単位元・単位的マグマ</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑒</mi>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>∈</mo>
+											<mi>𝑆</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑒</mi>
+											<mo>⋅</mo>
+											<mi>𝑥</mi>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑥</mi>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすとき，<math><mi>𝑒</mi></math>を<dfn>左単位元</dfn><span lang="en">(left identy element)</span>と呼ぶ．
+						</li>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑒</mi>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>∈</mo>
+											<mi>𝑆</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>⋅</mo>
+											<mi>𝑒</mi>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑥</mi>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすとき，<math><mi>𝑒</mi></math>を<dfn>右単位元</dfn><span lang="en">(right identy element)</span>と呼ぶ．
+						</li>
+						<li>左単位的かつ右単位的な元を<dfn>両側単位元</dfn>，または単に<dfn>単位元</dfn><span lang="en">(identy element)</span>と呼ぶ．</li>
+						<li><p>(左/右)単位元を一意的にもつマグマを<dfn>(左/右)単位的</dfn><span lang="en">((left/right) unital)と</span>呼ぶ．</p></li>
+					</ul>
+				</article>
+				<article id="単位元の一意性" class="thm">
+					<h4>単位元の一意性</h4>
+					<p><a href="#単位元">両側単位元</a>は一意．</p>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						任意の<a href="#単位元">左単位元</a><math><mi>𝑒</mi></math>と任意の<a href="#単位元">右単位元</a>
+						<math>
+							<msup>
+								<mi>𝑒</mi><mo>′</mo>
+							</msup>
+						</math>
+						に対し，
+						<math display="block">
+							<mi>𝑒</mi>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑒</mi>
+								<mo>&it;</mo>
+								<msup>
+									<mi>𝑒</mi>
+									<mo>′</mo>
+								</msup>
+							</mrow>
+							<mo>=</mo>
+							<msup>
+								<mi>𝑒</mi>
+								<mo>′</mo>
+							</msup>
+						</math>
+						となるから，全ての<a href="#単位元">左/右単位元</a><math><mi>𝑒</mi></math>は<a href="#単位元">（両側）右単位元</a>．再びこの等式より単位元は全て等しい，つまり一意．
+					</p>
+				</article>
+				<article id="逆元" class="dfn">
+					<h4>逆元</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑆</mi></math>が唯一の<a href="#単位元">左単位元</a><math><mi>𝑒</mi></math>を持ち，<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>に対し，
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑦</mi>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑦</mi>
+										<mo>⋅</mo>
+										<mi>𝑥</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑒</mi>
+								</mrow>
+							</math>
+							を満たすとき，<math><mi>𝑦</mi></math>を<math><mi>𝑥</mi></math>の<dfn>左逆元</dfn><span lang="en">(left inverse)</span>と呼ぶ．
+						</li>
+						<li>
+							<math><mi>𝑆</mi></math>が唯一の<a href="#単位元">右単位元</a><math><mi>𝑒</mi></math>を持ち，<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>に対し，
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑦</mi>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>⋅</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑒</mi>
+								</mrow>
+							</math>
+							を満たすとき，<math><mi>𝑦</mi></math>を<math><mi>𝑥</mi></math>の<dfn>右逆元</dfn><span lang="en">(right inverse)</span>と呼ぶ．
+						</li>
+						<li><math><mi>𝑥</mi></math>が左逆元と右逆元をもつとき<dfn>可逆</dfn><span lang="en">(invertible)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+				<article id="結合則" class="dfn">
+					<h4>結合則</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>,</mo>
+										<mi>𝑏</mi>
+										<mo>,</mo>
+										<mi>𝑐</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>⋅</mo>
+											<mi>𝑏</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>⋅</mo>
+									<mi>𝑐</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>⋅</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>⋅</mo>
+											<mi>𝑐</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+						を満たすとき，<math><mi>𝑆</mi></math>を<dfn>結合的</dfn><span lang="en">(associative)</span>と呼ぶ．
+					</p>
+				</article>
+				<p>結合的マグマを<a href="./semigroup/index.html">半群</a>とも呼ぶ．</p>
+				<article id="可換性" class="dfn">
+					<h4>可換性</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>⋅</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑦</mi>
+										<mo>⋅</mo>
+										<mi>𝑥</mi>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすとき，<math><mi>𝑥</mi><mo>,</mo><mi>𝑦</mi></math>は互いに<dfn>可換</dfn><span lang="en">(commutative)</span>と呼ぶ．
+						</li>
+						<li>
+							<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>が，
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑦</mi>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>⋅</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑦</mi>
+										<mo>⋅</mo>
+										<mi>𝑥</mi>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすとき，<math><mi>𝑥</mi></math>を<math><mi>𝑆</mi></math>の<dfn>可換元</dfn><span lang="en">(commutative element)</span>と呼ぶ．
+						</li>
+						<li>
+							全ての可換元の集合のことを<dfn>中心</dfn><span lang="en">(centre)</span>と呼び，
+							<math>
+								<mi>𝑍</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑆</mi>
+									<mo>)</mo>
+								</mrow>
+							</math>
+							と表す．
+						</li>
+						<li>全ての元が可換，同じことだが中心が自分自身となる<a href="#マグマ">マグマ</a>を<dfn>可換マグマ</dfn>と呼ぶ．</li>
+					</ul>
+				</article>
+
+				<article id="冪等" class="dfn">
+					<h4>冪等</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p>
+						<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>が
+						<math display="block">
+							<mrow>
+								<mi>𝑥</mi>
+								<mo>⋅</mo>
+								<mi>𝑥</mi>
+							</mrow>
+							<mo>=</mo>
+							<mi>𝑥</mi>
+						</math>
+						を満たすとき，<math><mi>𝑥</mi></math>を<dfn>冪等</dfn><span lang="en">(idempotent)</span>と呼ぶ．
+					</p>
+				</article>
+				<article id="冪等性の保存" class="thm">
+					<h4>冪等性の保存</h4>
+					<ul>
+						<li><a href="#マグマ">マグマ</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math></li>
+						<li><a href="#準同型">準同型</a><math><mi>𝑓</mi><mo>:</mo><mrow><mi>𝑆</mi><mo>→</mo><mi>𝑇</mi></mrow></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>が<a href="#冪等">冪等元</a>なら，
+						<math>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑥</mi>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>∈</mo>
+							<mi>𝑇</mi>
+						</math>
+						も<a href="#冪等">冪等元</a>．
+					</p>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&it;</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑥</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑥</mi>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article id="消約" class="dfn">
+					<h4>消約</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p><math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>が</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>,</mo>
+											<mi>𝑏</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>⋅</mo>
+											<mi>𝑎</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>⋅</mo>
+											<mi>𝑏</mi>
+										</mrow>
+									</mrow>
+									<mo>⇒</mo>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>=</mo>
+										<mi>𝑏</mi>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすとき，<dfn>左消約的</dfn><span lang="en">(left cancellative)</span>と呼ぶ．同様に
+						</li>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>,</mo>
+											<mi>𝑏</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>⋅</mo>
+											<mi>𝑥</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>⋅</mo>
+											<mi>𝑥</mi>
+										</mrow>
+									</mrow>
+									<mo>⇒</mo>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>=</mo>
+										<mi>𝑏</mi>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすとき，<dfn>右消約的</dfn><span lang="en">(right cancellative)</span>と呼ぶ．
+						</li>
+						<li>左消約的かつ右消約的であれば，単に<dfn>消約的</dfn><span lang="en">(cancellative)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+				
+				<article id="吸収元" class="dfn">
+					<h4>吸収元</h4>
+					<p><a href="#マグマ">マグマ</a><math><mi>𝑆</mi></math>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>が
+							<math display="block">
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>⋅</mo>
+									<mi>𝑆</mi>
+								</mrow>
+								<mo>=</mo>
+								<mi>𝑥</mi>
+							</math>
+							を満たすとき，<math><mi>𝑥</mi></math>を<dfn>左吸収元</dfn><span lang="en">(left absorbing element)</span>または<dfn>左零元</dfn><span lang="en">(left zero)</span>と呼ぶ．
+						</li>
+						<li>
+							<math><mi>𝑥</mi><mo>∈</mo><mi>𝑆</mi></math>が
+							<math display="block">
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>⋅</mo>
+									<mi>𝑥</mi>
+								</mrow>
+								<mo>=</mo>
+								<mi>𝑥</mi>
+							</math>
+							を満たすとき，<math><mi>𝑥</mi></math>を<dfn>右吸収元</dfn><span lang="en">(right absorbing element)</span>または<dfn>左零元</dfn><span lang="en">(right zero)</span>と呼ぶ．
+						</li>
+						<li>左吸収元かつ右吸収元であるとき，単に<dfn>吸収元</dfn><span lang="en">(absorbing element)</span>または<dfn>零元</dfn><span lang="en">(zero element)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+			</section>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<link rel="stylesheet" href="../../../style.css"/>
+		<meta charset="utf-8"/>
+		<meta name="description" content="半群"/>
+		<title>半群</title>
+	</head>
+	<body>
+		<h1>半群</h1>
+		<section>
+			<h2>定義</h2>
+			<article id="半群" class="ax">
+				<h3>半群</h3>
+				<p><dfn class="ax">半群</dfn>(semigroup)とは，以下の2つのデータからなる．</p>
+				<ul>
+					<li><a href="../../../set/index.html#集合">集合</a><math><mi>𝑆</mi></math></li>
+					<li><dfn>積</dfn>と呼ばれる<math><mi>𝑆</mi></math>上の2項演算
+						<math>
+							<mo>⋅</mo>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>×</mo>
+									<mi>𝑆</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝑆</mi>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+				<p>これらは以下を満たす．</p>
+				<dl class="ax">
+					<dt><a href="../index.html#結合則">結合律</a></dt>
+					<dd>
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>,</mo>
+										<mi>𝑏</mi>
+										<mo>,</mo>
+										<mi>𝑐</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>⋅</mo>
+											<mi>𝑏</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>⋅</mo>
+									<mi>𝑐</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>⋅</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>⋅</mo>
+											<mi>𝑐</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</dd>
+				</dl>
+			</article>
+			<article id="準同型" class="dfn">
+				<h3 class="dfn-t">準同型</h3>
+				<p>
+					<a href="#半群">半群</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math>を与える．
+					<a href="../../../set/index.html#写像">写像</a>
+					<math>
+						<mi>𝑓</mi>
+						<mo>:</mo>
+						<mrow>
+							<mi>𝑆</mi>
+							<mo>→</mo>
+							<mi>𝑇</mi>
+						</mrow>
+					</math>
+					で以下を満たすものを，<dfn>（半群）準同型</dfn>と呼ぶ．
+				</p>
+				<p>
+					<math display="block">
+						<mrow>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>,</mo>
+									<mi>𝑦</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝑆</mi>
+							</mrow>
+						</mrow>
+						<mo>,</mo>
+						<mrow>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&it;</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑦</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</mrow>
+					</math>
+				</p>
+			</article>
+			<p>積の記号を省略しているためわかりづらいが，<a href="#準同型">準同型</a>は<math><mi>𝑆</mi></math>の元を<math><mi>𝑇</mi></math>の元へ送るだけでなく，<math><mi>𝑆</mi></math>の積を<math><mi>𝑇</mi></math>の積へ送る．</p>
+			<article id="同型" class="dfn">
+				<h3>同型</h3>
+				<p>全単射な<a href="#準同型">準同型</a>を<dfn>同型</dfn>と呼ぶ．</p>
+				<p>同型の<a href="../../../set/index.html#写像">始域</a>と<a href="../../../set/index.html#写像">終域</a>の（組の）ことも<dfn>同型</dfn>(isomorphic)と呼ぶ．</p>
+			</article>
+			<article id="半群の圏" class="dfn">
+				<h3 class="dfn-t">半群の圏</h3>
+				<p class="dfn-d"><a href="../../category/index.html#対象">対象</a>を全ての<a href="#半群">半群</a>，<a href="../../category/index.html#射">射</a>を全ての<a href="#準同型">半群準同型</a>とする<a href="../../category/index.html#圏">圏</a>を<dfn>半群の圏</dfn>(category of semigroups)と呼び<math><mi>𝐒𝐞𝐦𝐢𝐆𝐫𝐩</mi></math>と表す．</p>
+			</article>
+			<section>
+				<h3>同型定理</h3>
+				<p><a href="#半群の圏">半群の圏</a>の部分対象，商対象を確認し，同型定理を示す．</p>
+				<article id="部分半群" class="dfn">
+					<h4>部分半群</h4>
+					<p><a href="#半群">半群</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p><math><mi>𝑆</mi></math>の部分集合<math><mi>𝑇</mi><mo>⊂</mo><mi>𝑆</mi></math>が，<math><mi>𝑆</mi></math>の積に関して<a href="#半群">半群</a>になる，つまり以下を満たすとき，<math><mi>𝑇</mi></math>を<math><mi>𝑆</mi></math>の<dfn>部分半群</dfn>と呼ぶ．
+					</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mi>𝑇</mi>
+									<mo>&it;</mo>
+									<mi>𝑇</mi>
+								</mrow>
+								<mo>⊂</mo>
+								<mi>𝑇</mi>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="自明な部分半群" class="dfn">
+					<h4>自明な部分半群</h4>
+					<p><a href="#半群">半群</a><math><mi>𝑆</mi></math>を与える．</p>
+					<p><math><mi>𝑆</mi></math>自身は<math><mi>𝑆</mi></math>の<a href="#部分半群">部分半群</a>となる．これを<math><mi>𝑆</mi></math>の<dfn>自明な部分半群</dfn>(trivial subsemigroup)と呼ぶ．</p>
+					<p>それ以外の<a href="#部分半群">部分半群</a>を<dfn>非自明</dfn>と呼ぶ．</p>
+				</article>
+				<article id="生成系" class="dfn">
+					<h4>生成系</h4>
+					<p><a href="#半群">半群</a><math><mi>𝑆</mi></math>と部分集合<math><mi>𝑇</mi><mo>⊂</mo><mi>𝑆</mi></math>を与える．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝑇</mi>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msup>
+									<mi>𝑇</mi>
+									<mi>𝑛</mi>
+								</msup>
+							</mrow>
+						</math>
+						は<math><mi>𝑇</mi></math>を含む最小の<math><mi>𝑆</mi></math>の<a href="#部分半群">部分半群</a>となる．これを<dfn><math><mi>𝑇</mi></math>で生成される部分半群</dfn>と呼ぶ．
+					</p>
+					<p>
+						特に，
+						<math>
+							<mi>𝑆</mi>
+							<mo>=</mo>
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝑇</mi>
+								<mo>⟩</mo>
+							</mrow>
+						</math>
+						を満たすとき，<math><mi>𝑇</mi></math>を<math><mi>𝑆</mi></math>の<dfn>生成系</dfn>と呼ぶ．
+					</p>
+				</article>
+				<p>商半群を定義する準備をしよう．<a href="../index.html#安定関係">安定関係</a>に関しては<a href="../index.html#マグマ">マグマ</a>に同じ．</p>
+				<article id="関係の安定閉包" class="thm">
+					<h4>安定閉包</h4>
+					<p>
+						<a href="#半群">半群</a><math><mi>𝑆</mi></math>と<math><mi>𝑆</mi></math>上の<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math>を与える．
+					</p>
+					<p>
+						<math><mo>∼</mo></math>の<a href="../index.html#関係の安定閉包">安定閉包</a>は，以下に等しい．
+						<math display="block">
+							<mo>∼</mo>
+							<mo>∪</mo>
+							<mrow>
+								<mi>𝑆</mi>
+								<mo>⋅</mo>
+								<mo>∼</mo>
+							</mrow>
+							<mo>∪</mo>
+							<mrow>
+								<mo>∼</mo>
+								<mo>⋅</mo>
+								<mi>𝑆</mi>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article id="関係の正規閉包" class="thm">
+					<h4>関係の正規閉包</h4>
+					<p><a href="#半群">半群</a><math><mi>𝑆</mi></math>と<math><mi>𝑆</mi></math>上の<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math>を与える．</p>
+					<p>
+						<math><mo>∼</mo></math>の<a href="../index.html#関係の正規閉包">正規閉包</a>
+						<math>
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+						</math>
+						に関して，以下が成り立つ．
+						<math display="block">
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+							<mo>=</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msup>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mo>∼</mo>
+											<mo>∪</mo>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>⋅</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mo>∼</mo>
+														<mo>∪</mo>
+														<msup>
+															<mo>∼</mo>
+															<mi>op</mi>
+														</msup>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>∪</mo>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mo>∼</mo>
+														<mo>∪</mo>
+														<msup>
+															<mo>∼</mo>
+															<mi>op</mi>
+														</msup>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>⋅</mo>
+												<mi>𝑆</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mrow>
+										<mo>∘</mo>
+										<mi>𝑛</mi>
+									</mrow>
+								</msup>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<p><a href="../index.html#合同">合同</a>（<a href="../index.html#合同">正規関係</a>）に関しては<a href="../index.html#マグマ">マグマ</a>に同じ．</p>
+				<article id="商半群" class="dfn">
+					<h4>商半群</h4>
+					<p><a href="#半群">半群</a><math><mi>𝑆</mi></math>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑆</mi></math>の<a href="../index.html#合同">誘導する合同</a><math><mo>≡</mo></math>に対し，
+							<math display="block">
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>∕</mo>
+									<mo>≡</mo>
+								</mrow>
+							</math>
+							は自然な積
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mi>𝑥</mi>
+											<mo>]</mo>
+										</mrow>
+										<mo>⋅</mo>
+										<mrow>
+											<mo>[</mo>
+											<mi>𝑦</mi>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>≔</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>⋅</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+							に対して<a href="#半群">半群</a>をなす．これを<math><mo>≡</mo></math>による<dfn>商半群</dfn>と呼ぶ．
+						</li>
+					</ul>
+				</article>
+				
+				<article id="同型定理" class="thm">
+					<h3>同型定理</h3>
+					<dl>
+						<dt>第一同型定理</dt>
+						<dd>
+							<a href="#半群">半群</a><math><mi>𝑆</mi><mo>,</mo><mi>𝑇</mi></math>と<a href="#準同型">準同型</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑆</mi>
+									<mo>→</mo>
+									<mi>𝑇</mi>
+								</mrow>
+							</math>
+							を与えると，以下が成り立つ．
+							<ul>
+								<li>
+									<math>
+										<mo>∼</mo>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mi>𝑥</mi>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mi>𝑦</mi>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+									で定義される<a href="../../../set/index.html#関係">関係</a>は<a href="../index.html#合同">合同</a>．
+								</li>
+								<li>
+									<math><mi>𝑓</mi></math>の<a href="../../../set/index.html#像">像</a>
+									<math>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑆</mi>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝑇</mi></math>の<a href="#部分半群">部分半群</a></li>
+								<li>
+									<math><mi>𝑓</mi></math>の<a href="../../../set/index.html#像">像</a>
+									<math>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑆</mi>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									と<a href="#商半群">商半群</a>
+									<math>
+										<mi>𝑇</mi>
+										<mo>∕</mo>
+										<mo>∼</mo>
+									</math>
+									は<a href="#同型">同型</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</article>
+			</section>
+			<section>
+				<h3>半群の圏</h3>
+				<article id="反対" class="dfn">
+					<h4 class="dfn-t">反対半群</h4>
+					<p class="dfn-d"><a href="#半群">半群</a><math><mi>𝑆</mi></math>を与える．
+						集合<math><mi>𝑆</mi></math>に積を
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑆</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>⋅</mo>
+									<mi>𝑦</mi>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mi>𝑦</mi>
+									<msub>
+										<mo>⋅</mo>
+										<mi>𝑆</mi>
+									</msub>
+									<mi>𝑥</mi>
+								</mrow>
+							</mrow>
+						</math>
+						により定義したものを，<math><mi>𝑆</mi></math>の<dfn>反対半群</dfn>と呼び，
+						<math>
+							<msup>
+								<mi>𝑆</mi>
+								<mi>op</mi>
+							</msup>
+						</math>
+						と表す．
+					</p>
+				</article>
+			</section>
+		</section>
+		<section>
+			<h2>自由半群</h2>
+			<article id="自由半群" class="ax">
+				<h3>自由半群</h3>
+				<p>（文字の）集合<math><mi>𝐴</mi></math>を与える．</p>
+				<p>（集合）<math><mi>𝐴</mi></math>上の<dfn class="ax">自由半群</dfn>(free semigroup)とは，以下のデータからなる．</p>
+				<ul>
+					<li>
+						<dfn class="ax">語</dfn>(word)と呼ばれる（文字列の）集合
+						<math display="block">
+							<msub>
+								<mi>𝛺</mi>
+								<mi>𝐴</mi>
+							</msub>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>1</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msup>
+									<mi>𝐴</mi>
+									<mi>𝑛</mi>
+								</msup>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						2文字列の結合（
+						<math>
+							<msub>
+								<mi>𝛺</mi>
+								<mi>𝐴</mi>
+							</msub>
+						</math>
+						上の二項演算）
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>=</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑎</mi>
+														<mn>1</mn>
+													</msub>
+													<mo>,</mo>
+													<mo>…</mo>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑎</mi>
+														<mi>𝑚</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>=</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑏</mi>
+														<mn>1</mn>
+													</msub>
+													<mo>,</mo>
+													<mo>…</mo>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑏</mi>
+														<mi>𝑛</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>∈</mo>
+									<msub>
+										<mi>𝛺</mi>
+										<mi>𝐴</mi>
+									</msub>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>&it;</mo>
+									<mi>𝑏</mi>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝑎</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>,</mo>
+										<mo>…</mo>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑎</mi>
+											<mi>𝑚</mi>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑏</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>,</mo>
+										<mo>…</mo>
+										<mi>,</mi>
+										<msub>
+											<mi>𝑏</mi>
+											<mi>𝑛</mi>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<p>
+				形式的には上のようになるが，語（文字列）を数学的な列というより，「普通の」文字列として<math><mi>𝑠𝑒𝑚𝑖𝑔𝑟𝑜𝑢𝑝</mi></math>のように書く慣習である．
+			</p>
+			<article id="自由半群は半群" class="thm">
+				<h3>自由半群は半群</h3>
+				<p>集合上の<a href="#自由半群">自由半群</a>は<a href="#半群">半群</a>をなす．</p>
+			</article>
+			<article id="半群の表示" class="dfn">
+				<h3>半群の表示</h3>
+				<p>
+					集合<math><mi>𝐴</mi></math>，<math><mi>𝐴</mi></math>上の<a href="#自由半群">自由半群</a>
+					<math>
+						<msub>
+							<mi>𝛺</mi>
+							<mi>𝐴</mi>
+						</msub>
+					</math>
+					を与える．
+				</p>
+				<p>以下の方法で表される<a href="#半群">半群</a>を，<dfn>半群の表示</dfn>と呼ぶ．</p>
+				<ul>
+					<li>
+						<math>
+							<msub>
+								<mi>𝛺</mi>
+								<mi>𝐴</mi>
+							</msub>
+						</math>
+						上の<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math>に対し，<math><mo>∼</mo></math>の<a href="#関係の正規閉包">正規閉包</a>
+						<math>
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+						</math>
+						による<a href="#商半群">商半群</a>
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝐴</mi>
+								<mo>|</mo>
+								<mo>∼</mo>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<msub>
+									<mi>𝛺</mi>
+									<mi>𝐴</mi>
+								</msub>
+								<mo>∕</mo>
+								<msub>
+									<mo>∼</mo>
+									<mi>ncl</mi>
+								</msub>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+				<p>このとき（<a href="#生成系">半群の生成系</a>と同じ意味で）<math><mi>𝑋</mi></math>を<dfn>生成系</dfn>(generators)と呼ぶ．また，<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math>またはその正規閉包のことを<dfn>関係（式）</dfn>(relation)と呼ぶことがある．</p>
+			</article>
+			<article id="非自明な関係" class="dfn">
+				<h4>非自明な関係</h4>
+				<p>集合<math><mi>𝐴</mi></math>，<math><mi>𝐴</mi></math>上の<a href="#自由半群">自由半群</a>
+					<math>
+						<msub>
+							<mi>𝛺</mi>
+							<mi>𝐴</mi>
+						</msub>
+					</math>
+					を与える．
+				</p>
+				<p><a href="#半群の表示">半群の表示</a>に対する以下の<a href="#半群の表示">関係</a>のことを<dfn>非自明な関係</dfn>と呼ぶ．</p>
+				<ul>
+					<li>
+						<math>
+							<msub>
+								<mi>𝛺</mi>
+								<mi>𝐴</mi>
+							</msub>
+						</math>
+						上の<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math>に対し，<math><mo>∼</mo></math>の<a href="#関係の正規閉包">正規閉包</a>
+						<math>
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+						</math>
+						と<math><mo>∼</mo></math>の<a href="#関係の安定閉包">安定閉包</a>の<a href="../../../set/index.html#反射閉包">反射閉包</a>の<a href="../../../set/index.html#対称閉包">対称閉包</a>
+						<math>
+							<mrow>
+								<msub>
+									<mi>𝛺</mi>
+									<mi>𝐴</mi>
+								</msub>
+								<mo>⋅</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mo>∼</mo>
+										<mo>∪</mo>
+										<msup>
+											<mo>∼</mo>
+											<mi>op</mi>
+										</msup>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>⋅</mo>
+								<msub>
+									<mi>𝛺</mi>
+									<mi>𝐴</mi>
+								</msub>
+							</mrow>
+							<mo>∪</mo>
+							<mo>=</mo>
+						</math>
+						の<a href="../../../set/index.html#関係の差">差</a>
+						<math display="block">
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+							<mo>∖</mo>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<mo>∼</mo>
+									<mo>∪</mo>
+									<msup>
+										<mo>∼</mo>
+										<mi>op</mi>
+									</msup>
+									<mo>∪</mo>
+									<mrow>
+										<msub>
+											<mi>𝛺</mi>
+											<mi>𝐴</mi>
+										</msub>
+										<mo>⋅</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mo>∼</mo>
+												<mo>∪</mo>
+												<msup>
+													<mo>∼</mo>
+													<mi>op</mi>
+												</msup>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>∪</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mo>∼</mo>
+												<mo>∪</mo>
+												<msup>
+													<mo>∼</mo>
+													<mi>op</mi>
+												</msup>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>⋅</mo>
+										<msub>
+											<mi>𝛺</mi>
+											<mi>𝐴</mi>
+										</msub>
+									</mrow>
+									<mo>∪</mo>
+									<mo>=</mo>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+						</math>
+					</li>
+			</article>
+			<article id="有限表示" class="dfn">
+				<h4>有限表示</h4>
+				<p><a href="#半群の表示">生成系</a>が有限な<a href="#半群の表示">半群の表示</a>を<dfn>有限表示</dfn>と呼ぶ．</p>
+			</article>
+			<article id="半群の表示の性質" class="thm">
+				<h4>半群の表示の性質</h4>
+				<ul>
+					<li>任意の<a href="#半群">半群</a>は，（無限個の）<a href="#半群の表示">半群の表示</a>を持つ．</li>
+					<li>異なる<a href="#有限表示">有限表示</a>を持つ<a href="#半群">半群</a>が等しいかは，（計算可能性の意味で）決定不能．（群の表示がそうだから，そのはず…）</li>
+				</ul>
+			</article>
+			
+			
+		</section>
+	</body>
+</html>

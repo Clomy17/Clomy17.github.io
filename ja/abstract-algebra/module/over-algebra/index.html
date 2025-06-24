@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<link rel="stylesheet" href="../../../style.css"/>
+		<meta charset="utf-8"/>
+		<meta name="description" content="代数上の加群"/>
+		<title>多元環・代数上の加群</title>
+	</head>
+	<body>
+		<h1>多元環・代数上の加群</h1>
+		<section>
+			<h2>定義</h2>
+			<article id="左加群" class="ax">
+				<h3>多元環上の左加群</h3>
+				<ul>
+					<li><a href="../../algebra/index.html#環">環</a><math><mi>𝑅</mi></math></li>
+					<li><math><mi>𝑅</mi></math>上の<a href="../../algebra/index.html#多元環">多元環</a><math><mi>𝐴</mi></math></li>
+				</ul>
+				<p>を与える．</p>
+				<p><dfn class="ax">代数上の左<math><mi>𝐴</mi></math>-加群</dfn><span lang="en">(left <math><mi>𝐺</mi></math>-module)</span>とは，以下のデータからなる．</p>
+				<ul>
+					<li><a href="#../../magma/group/index.html#可換群">可換群</a><math><mi>𝑀</mi></math></li>
+					<li>
+						<dfn>スカラー乗法</dfn>と呼ばれる演算
+						<math>
+							<mrow>
+								<mi>𝐴</mi>
+								<mo>×</mo>
+								<mi>𝑀</mi>
+							</mrow>
+							<mo>→</mo>
+							<mi>𝑀</mi>
+						</math>
+					</li>
+				</ul>
+				<p>これらは以下を満たす．</p>
+			</article>
+			<article id="右加群" class="ax">
+				<h3>多元環上の右加群</h3>
+				<ul>
+					<li><a href="../../algebra/index.html#環">環</a><math><mi>𝑅</mi></math></li>
+					<li><math><mi>𝑅</mi></math>上の<a href="../../algebra/index.html#多元環">多元環</a><math><mi>𝐴</mi></math></li>
+				</ul>
+				<p>を与える．</p>
+				<p><dfn class="ax">代数上の右<math><mi>𝐴</mi></math>-加群</dfn><span lang="en">(right <math><mi>𝐺</mi></math>-module)</span>とは，以下のデータからなる．</p>
+				<ul>
+					<li><a href="#../../magma/group/index.html#可換群">可換群</a><math><mi>𝑀</mi></math></li>
+					<li>
+						<dfn>スカラー乗法</dfn>と呼ばれる演算
+						<math>
+							<mrow>
+								<mi>𝐴</mi>
+								<mo>×</mo>
+								<mi>𝑀</mi>
+							</mrow>
+							<mo>→</mo>
+							<mi>𝑀</mi>
+						</math>
+					</li>
+				</ul>
+				<p>これらは以下を満たす．</p>
+			</article>
+			<p>
+				<a href="../../algebra/index.html#多元環">多元環</a><math><mi>𝐴</mi></math>上の<a href="#左加群">左加群</a>とその<a href="../../algebra/index.html#反対多元環">反対多元環</a>
+				<math>
+					<msup>
+						<mi>𝐴</mi>
+						<mi>op</mi>
+					</msup>
+				</math>
+				上の<a href="#右加群">右加群</a>は一対一に対応する．よって以下では基本的に左加群を考える．
+			</p>
+			<article id="代数上の加群の圏" class="dfn">
+				<h4>代数上の加群の圏</h4>
+				<ul>
+					<li><a href="../../algebra/index.html#環">環</a><math><mi>𝑅</mi></math></li>
+					<li><math><mi>𝑅</mi></math>上の<a href="../../algebra/index.html#多元環">多元環</a><math><mi>𝐴</mi></math></li>
+				</ul>
+				<p>を与える．</p>
+				<ul>
+					<li>全ての<a href="#左加群">左<math><mi>𝐴</mi></math>-加群</a>を<a href="../../../category/index.html#圏">対象</a></li>
+					<li>全ての<a href="#準同型">左<math><mi>𝐴</mi></math>-加群準同型</a>を<a href="../../../category/index.html#圏">射</a></li>
+				</ul>
+				<p>とする<a href="../../../category/index.html#圏">圏</a>を<dfn>左<math><mi>𝐴</mi></math>-加群の圏</dfn><span lang="en">(category of <math><mi>𝑅</mi></math>-modules)</span>と呼び，<math><mi>𝑅-𝐌𝐨𝐝</mi></math>と書く．</p>
+			</article>
+		</section>
+	</body>
+</html>

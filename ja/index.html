@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<link rel="stylesheet" href="./style.css"/>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Luneのメインページ"/>
+		<title>Luneのメインページ</title>
+		<style>
+			h2::before {
+				content: counter(h2)". ";
+			}
+			h3::before, h4::before, h5::before, h6::before {
+				content: "";
+			}
+		</style>
+	</head>
+	<body>
+		<hgroup>
+			<h1>Lune</h1>
+			<p>数学・物理のメモ</p>
+		</hgroup>
+		<p>教科書的な（とまで言わないがそれに近い）もの……を目指したつもりがどちらかと言ったら辞書になってたメモ書き．</p>
+		<p>書きかけの放置が多いです．内容の保証は致しませんので，利用は自由ですが，自己責任でお願いします．</p>
+		<section>
+			<h2>目次</h2>
+			<p>リンクが貼って無いのは，そもそもページが存在しないか，ほとんど手がついてないものです．</p>
+			<section>
+				<h3>数学</h3>
+				<dl>
+					<dt><a href="./set/index.html">集合と関係</a></dt>
+					<dt><a href="./category/index.html">圏論</a></dt>
+					<dd>
+						<ul>
+							<li>モノイダル圏</li>
+							<ul>
+								<li>フュージョン圏</li>
+							</ul>
+						</ul>
+					</dd>
+					<dt>代数学</dt>
+					<dd>
+						<ul>
+							<li>
+								<a href="./abstract-algebra/magma/index.html">マグマ</a>
+								<ul>
+									<li>半群</li>
+									<li>単位的マグマ</li>
+									<li>準群</li>
+									<li>モノイド</li>
+									<li>
+										群
+										<ul>
+											<li>Coxeter群</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="./abstract-algebra/ring/index.html">環</a>
+								<ul>
+									<li>可換環</li>
+									<li>斜体</li>
+									<li>体</li>
+								</ul>
+							</li>
+							<li>
+								代数
+								<ul>
+									<li>結合代数</li>
+									<li>Lie代数</li>
+								</ul>
+							</li>
+							<li><a href="./abstract-algebra/action/index.html">作用</a></li>
+							<li>
+								加群
+								<ul>
+									<li>環上の加群</li>
+									<li>線型代数</li>
+								</ul>
+							</li>
+						</ul>
+					</dd>
+					<dt>幾何学</dt>
+				</dl>
+			</section>
+			<section>
+				<h3>物理</h3>
+				<dl>
+					<dt>場の理論</dt>
+					<dd>共形場理論</dd>
+					<dd>位相場理論</dd>
+				</dl>
+			</section>
+		</section>
+		<section>
+			<h2>Q&amp;A</h2>
+			<dl>
+				<dt>Luneって何?</dt>
+				<dd>FF1のGBAリメイクで追加された「ルーンの杖」が元ネタ．全体回復大好き．あっちはRuneだけど．いい名前募集中．</dd>
+				<dt>jaって他の言語も書くの?</dt>
+				<dd>あるとしても，かなり未来の話になると思われる</dd>
+			</dl>
+		</section>
+		<section>
+			<h2>執筆に協力していただける方へ</h2>
+			<p>いないと思うけど．</p>
+			<p>全てHTMLで書いており，数式のもMathMLなので，HTML+MathMLで書くことが前提です．</p>
+			<p>HTMLについては<a href="https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Structuring_content">MDNのドキュメント</a>等を参考にしてください．（自分も勉強中ですが……）</p>
+			<p>MathMLについては<a href="https://developer.mozilla.org/ja/docs/Web/MathML">MDNのドキュメント</a>や過去に書いた<a href="https://qiita.com/Clomy17/items/083aa771a4f7c6eb12d7">Qiitaの記事</a>を参考にしてください．ちなみにスニペットなしではとても書けたもんではないので，<a href="https://qiita.com/Clomy17/items/4d389a61a471ca74ec77">Qiitaの記事</a>などを参考に設定することを強く推奨します（LaTeX等からの変換でもいいですが，不可視の演算子の確認をするとなると二度手間かなと思います）．</p>
+			<p>グローバル属性<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Global_attributes/class">class</a>の使い方については，<a href="style.css">style.css</a>を見ればわかるとは思いますが，一応マニュアルを作ろうかなと思います．</p>
+			<p>CSSの変更についてはごちゃごちゃしなければ歓迎です．フォントもいいのがあれば教えてください．あと誤字とかも適当に教えてください．</p>
+		</section>
+	</body>
+</html>

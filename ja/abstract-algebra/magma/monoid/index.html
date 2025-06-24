@@ -1,0 +1,1619 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<link rel="stylesheet" href="../../../style.css"/>
+		<meta charset="utf-8"/>
+		<meta name="description" content="モノイド"/>
+		<title>モノイド</title>
+	</head>
+	<body>
+		<h1>モノイド</h1>
+		<section>
+			<h2>定義</h2>
+			<article id="モノイド" class="ax">
+				<h3>モノイド</h3>
+				<p><dfn class="ax">モノイド</dfn><span lang="en">(monoid)</span>とは，以下の3つのデータからなる．</p>
+				<ul>
+					<li><a href="../../../set/index.html#集合">集合</a><math><mi>𝑀</mi></math></li>
+					<li>
+						<dfn>積</dfn>と呼ばれる<math><mi>𝑀</mi></math>上の2項演算
+						<math>
+							<mo>⋅</mo>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>×</mo>
+									<mi>𝑀</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝑀</mi>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						<dfn>単位元</dfn>
+						<math>
+							<mi>𝑒</mi>
+							<mo>∈</mo>
+							<mi>𝐺</mi>
+						</math>
+					</li>
+				</ul>
+				<p>これらは以下を満たす．</p>
+				<ul>
+					<li>
+						積は<a href="../index.html#結合則">結合的</a>．つまり，
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>,</mo>
+										<mi>𝑏</mi>
+										<mo>,</mo>
+										<mi>𝑐</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑀</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>&it;</mo>
+											<mi>𝑐</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>&it;</mo>
+											<mi>𝑏</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<mi>𝑐</mi>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						<math><mi>𝑒</mi><mo>∈</mo><mi>𝐺</mi></math>は<math><mi>𝐺</mi></math>の<a href="../index.html#単位元">両側単位元</a>．つまり，
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>∈</mo>
+									<mi>𝑀</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑒</mi>
+									<mo>&it;</mo>
+									<mi>𝑎</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>&it;</mo>
+									<mi>𝑒</mi>
+								</mrow>
+								<mo>=</mo>
+								<mi>𝑎</mi>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<article id="準同型" class="dfn">
+				<h3>準同型</h3>
+				<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi><mo>,</mo><mi>𝑁</mi></math>を与える．</p>
+				<p>
+					<a href="../../../set/index.html#写像">写像</a>
+					<math>
+						<mi>𝑓</mi>
+						<mo>:</mo>
+						<mrow>
+							<mi>𝑀</mi>
+							<mo>→</mo>
+							<mi>𝑁</mi>
+						</mrow>
+					</math>
+					で以下を満たすものを，<dfn>（モノイド）準同型</dfn>と呼ぶ．
+				</p>
+				<ul>
+					<li>
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑀</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>&it;</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑥</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑦</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						<math display="block">
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msub>
+										<mn>1</mn>
+										<mi>𝑀</mi>
+									</msub>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<msub>
+								<mn>1</mn>
+								<mi>𝑁</mi>
+							</msub>
+						</math>
+					</li>
+				</ul>
+			</article>
+			
+			<article id="同型" class="dfn">
+				<h3>同型</h3>
+				<p>全単射な<a href="#準同型">準同型</a>を<dfn>同型</dfn><span lang="en">(isomorphism)</span>と呼ぶ．</p>
+				<p>同型の<a href="../../../set/index.html#写像">始域</a>と<a href="../../../set/index.html#写像">終域</a>の（組の）ことも<dfn>同型</dfn><span lang="en">(isomorphic)</span>と呼ぶ．</p>
+			</article>
+			<article id="モノイドの圏" class="dfn">
+				<h3>モノイドの圏</h3>
+				<ul>
+					<li><a href="../../../category/index.html#圏">対象</a>を全ての<a href="#モノイド">モノイド</a></li>
+					<li><a href="../../../category/index.html#圏">射</a>を全ての<a href="#準同型">モノイド準同型</a></li>
+				</ul>
+				<p>とする<a href="../../../category/index.html#圏">圏</a>を<dfn>モノイドの圏</dfn><span lang="en">(category of monoids)</span>と呼び<math><mi>𝐌𝐨𝐧</mi></math>と表す．</p>
+			</article>
+			<p>モノイドは写像とその合成は，結合則さえ満たせば，恒等写像を単位元として<a href="#モノイド">モノイド</a>をなす．その表れっぽいのが次．</p>
+			<article id="モノイドと単一対象圏" class="thm">
+				<h3>モノイドと単一対象圏</h3>
+				<p>モノイドは対象が単一の圏と対応関係にある（後日ちゃんと書く）．</p>
+			</article>
+			<p>以下一般の<a href="#モノイド">モノイド</a>の性質を見ていくが，当然<a href="../semigroup/index.html#半群">半群</a>と単位的マグマの性質を合わせたものである．</p>
+			<section>
+				<h3>同型定理</h3>
+				<p><a href="#モノイドの圏">モノイドの圏</a>の部分対象，正規対象，商対象を確認し，同型定理を示す．</p>
+				<article id="部分モノイド" class="dfn">
+					<h4>部分モノイド</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与える．</p>
+					<p><math><mi>𝑀</mi></math>の部分集合<math><mi>𝑁</mi><mo>⊂</mo><mi>𝑀</mi></math>が，<math><mi>𝑀</mi></math>の<a href="#モノイド">積</a>に関して<a href="#モノイド">モノイド</a>になる，つまり以下を満たすとき，<math><mi>𝑁</mi></math>を<math><mi>𝑀</mi></math>の<dfn>部分モノイド</dfn>と呼ぶ．
+					</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mi>𝑁</mi>
+									<mo>&it;</mo>
+									<mi>𝑁</mi>
+								</mrow>
+								<mo>⊂</mo>
+								<mi>𝑁</mi>
+							</math>
+						</li>
+						<li>
+							<math display="block">
+								<mn>1</mn>
+								<mo>∈</mo>
+								<mi>𝑁</mi>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="自明な部分モノイド" class="dfn">
+					<h4>自明な部分モノイド</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与える．</p>
+					<p><math><mi>𝑀</mi></math>と，<a href="#モノイド">単位元</a>のみからなる集合<math><mo>{</mo><mn>1</mn><mo>}</mo></math>は，<math><mi>𝑀</mi></math>の<a href="#部分モノイド">部分モノイド</a>となる．これらを<math><mi>𝑀</mi></math>の<dfn>自明な部分モノイド</dfn><span lang="en">(trivial submonoid)</span>と呼ぶ．</p>
+					<p>それ以外の<a href="#部分モノイド">部分モノイド</a>を<dfn>非自明</dfn>と呼ぶ．</p>
+				</article>
+				<article id="生成系" class="dfn">
+					<h4>生成系</h4>
+					<ul>
+						<li><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math></li>
+						<li>部分集合<math><mi>𝑁</mi><mo>⊂</mo><mi>𝑀</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝑁</mi>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msup>
+									<mi>𝑁</mi>
+									<mi>𝑛</mi>
+								</msup>
+							</mrow>
+						</math>
+						は<math><mi>𝑁</mi></math>を含む最小の<math><mi>𝑀</mi></math>の<a href="#部分モノイド">部分モノイド</a>となる．これを<dfn><math><mi>𝑁</mi></math>で生成される部分モノイド</dfn>と呼ぶ．
+					</p>
+					<p>
+						特に，
+						<math>
+							<mi>𝑀</mi>
+							<mo>=</mo>
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝑁</mi>
+								<mo>⟩</mo>
+							</mrow>
+						</math>
+						を満たすとき，<math><mi>𝑁</mi></math>を<math><mi>𝑀</mi></math>の<dfn>生成系</dfn>と呼ぶ．
+					</p>
+				</article>
+				<p>正規・商モノイドを定義する準備をしよう．</p>
+				<article id="安定閉係" class="thm">
+					<h4>安定関係</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与える．</p>
+					<p>
+						<math><mi>𝑀</mi></math>の<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math>が，<a href="../index.html#安定関係">安定関係</a>である必要十分条件は，
+						<math display="block">
+							<mrow>
+								<mi>𝑀</mi>
+								<mo>⋅</mo>
+								<mo>∼</mo>
+								<mo>⋅</mo>
+								<mi>𝑀</mi>
+							</mrow>
+							<mo>⊂</mo>
+							<mo>∼</mo>
+						</math>
+					</p>
+				</article>
+				<article id="関係の安定閉包" class="thm">
+					<h4>安定閉包</h4>
+					<ul>
+						<li><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math></li>
+						<li><math><mi>𝑀</mi></math>上の<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mo>∼</mo></math>の<a href="../index.html#関係の安定閉包">安定閉包</a>は，以下に等しい．
+						<math display="block">
+							<mrow>
+								<mi>𝑀</mi>
+								<mo>⋅</mo>
+								<mo>∼</mo>
+								<mo>⋅</mo>
+								<mi>𝑀</mi>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article id="関係の正規閉包" class="thm">
+					<h4>関係の正規閉包</h4>
+					<ul>
+						<li><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math></li>
+						<li><math><mi>𝑀</mi></math>上の<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mo>∼</mo></math>の<a href="../index.html#関係の正規閉包">正規閉包</a>
+						<math>
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+						</math>
+						に関して，以下が成り立つ．
+						<math display="block">
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+							<mo>=</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msup>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑀</mi>
+											<mo>⋅</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>∼</mo>
+													<mo>∪</mo>
+													<msup>
+														<mo>∼</mo>
+														<mi>op</mi>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>⋅</mo>
+											<mi>𝑀</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mrow>
+										<mo>∘</mo>
+										<mi>𝑛</mi>
+									</mrow>
+								</msup>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<p><a href="../index.html#合同">合同</a>（<a href="../index.html#合同">正規関係</a>）に関しては，<a href="../index.html#マグマ">マグマ</a>に同じ．</p>
+				<p>（左）単位的マグマと同様，<a href="../index.html#合同">合同</a>に対する<a href="#モノイド">単位元</a>の<a href="../../../set/index.html#商集合">同値類</a>を考えることが有用である．</p>
+				<article id="正規部分モノイド" class="dfn">
+					<h4>正規部分モノイド</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与える．</p>
+					<p><a href="#部分モノイド">部分モノイド</a><math><mi>𝑁</mi></math>で，以下を満たすものを<dfn>正規部分モノイド</dfn>と呼ぶ．</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>∈</mo>
+										<mi>𝑁</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑦</mi>
+											<mo>∈</mo>
+											<mi>𝑀</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mo>{</mo>
+										<mtable intent=":system-of-equations">
+											<mtr>
+												<mtd>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>&it;</mo>
+														<mi>𝑦</mi>
+													</mrow>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mtd>
+												<mtd><mo>⇒</mo></mtd>
+												<mtd>
+													<mi>𝑦</mi>
+													<mo>∈</mo>
+													<mi>𝑁</mi>
+												</mtd>
+											</mtr>
+											<mtr>
+												<mtd>
+													<mrow>
+														<mi>𝑦</mi>
+														<mo>&it;</mo>
+														<mi>𝑥</mi>
+													</mrow>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mtd>
+												<mtd><mo>⇒</mo></mtd>
+												<mtd>
+													<mi>𝑦</mi>
+													<mo>∈</mo>
+													<mi>𝑁</mi>
+												</mtd>
+											</mtr>
+										</mtable>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑀</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mrow>
+												<mi>𝑥</mi>
+												<mo>&it;</mo>
+												<mi>𝑁</mi>
+												<mo>&it;</mo>
+												<mi>𝑦</mi>
+											</mrow>
+											<mo>∩</mo>
+											<mi>𝑁</mi>
+										</mrow>
+										<mo>≠</mo>
+										<mi>∅</mi>
+									</mrow>
+									<mo>⇒</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>&it;</mo>
+											<mi>𝑁</mi>
+											<mo>&it;</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>⊂</mo>
+										<mi>𝑁</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="正規部分モノイドの性質" class="thm">
+					<h4>正規部分モノイドの性質</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>，<math><mi>𝑀</mi></math>の<a href="#正規部分モノイド">正規部分モノイド</a><math><mi>𝑁</mi></math>を与えると，以下が成り立つ．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑀</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑁</mi>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑁</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>⊂</mo>
+									<mi>𝑁</mi>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>&it;</mo>
+											<mi>𝑁</mi>
+											<mo>&it;</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∩</mo>
+										<mi>𝑁</mi>
+									</mrow>
+									<mo>≠</mo>
+									<mi>∅</mi>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						<math>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑁</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∩</mo>
+									<mi>𝑁</mi>
+								</mrow>
+								<mo>≠</mo>
+								<mi>∅</mi>
+							</mrow>
+						</math>
+						のとき，
+						<math>
+							<mrow>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>&it;</mo>
+									<mi>𝑁</mi>
+									<mo>&it;</mo>
+									<mi>𝑦</mi>
+								</mrow>
+								<mo>⊂</mo>
+								<mi>𝑁</mi>
+							</mrow>
+						</math>
+						だが，<math><mn>1</mn><mo>∈</mo><mi>𝑁</mi></math>より，
+						<math>
+							<mrow>
+								<mi>𝑥</mi>
+								<mo>&it;</mo>
+								<mi>𝑦</mi>
+							</mrow>
+							<mo>∈</mo>
+							<mi>𝑁</mi>
+						</math>．
+					</p>
+					<p>
+						また，
+						<math>
+							<mrow>
+								<mi>𝑥</mi>
+								<mo>&it;</mo>
+								<mi>𝑦</mi>
+							</mrow>
+							<mo>∈</mo>
+							<mi>𝑁</mi>
+						</math>
+						のとき，再び<math><mn>1</mn><mo>∈</mo><mi>𝑁</mi></math>より，
+						<math>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&it;</mo>
+										<mi>𝑁</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∩</mo>
+									<mi>𝑁</mi>
+								</mrow>
+								<mo>≠</mo>
+								<mi>∅</mi>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article id="自明な正規部分モノイド" class="dfn">
+					<h4>自明な正規部分モノイド</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与える．</p>
+					<p><math><mi>𝑀</mi></math>と，<a href="#モノイド">単位元</a>のみからなる集合<math><mo>{</mo><mn>1</mn><mo>}</mo></math>は，<math><mi>𝑀</mi></math>の<a href="#正規部分モノイド">正規部分モノイド</a>となる．これらを<math><mi>𝑀</mi></math>の<dfn>自明な正規部分モノイド</dfn><span lang="en">(trivial normal submonoid)</span>と呼ぶ．</p>
+					<p>それ以外の<a href="#正規部分モノイド">正規部分モノイド</a>を<dfn>非自明</dfn>と呼ぶ．</p>
+				</article>
+				<article id="正規閉包" class="dfn">
+					<h4>モノイドの正規閉包</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与える．</p>
+					<p>
+						また，部分集合<math><mi>𝐴</mi><mo>⊂</mo><mi>𝑀</mi></math>に対し，
+						<math display="block">
+							<mtable intent=":system-of-equations">
+								<mtr>
+									<mtd>
+										<msup>
+											<mi>𝐴</mi>
+											<mo>′</mo>
+										</msup>
+									</mtd>
+									<mtd><mo>≔</mo></mtd>
+									<mtd>
+										<mrow>
+											<mi>𝐴</mi>
+											<mo>∪</mo>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mi>𝑦</mi>
+													<mo>∈</mo>
+													<mi>𝑀</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mo>∃</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑥</mi>
+															<mo>∈</mo>
+															<mi>𝐴</mi>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mrow>
+															<mi>𝑦</mi>
+															<mo>&it;</mo>
+															<mi>𝑥</mi>
+														</mrow>
+														<mo>=</mo>
+														<mn>1</mn>
+													</mrow>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mo>∪</mo>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mi>𝑦</mi>
+													<mo>∈</mo>
+													<mi>𝑀</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mo>∃</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑥</mi>
+															<mo>∈</mo>
+															<mi>𝐴</mi>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mrow>
+															<mi>𝑥</mi>
+															<mo>&it;</mo>
+															<mi>𝑦</mi>
+														</mrow>
+														<mo>=</mo>
+														<mn>1</mn>
+													</mrow>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+										</mrow>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd>
+										<msub>
+											<mi>𝑋</mi>
+											<mi>𝐴</mi>
+										</msub>
+									</mtd>
+									<mtd><mo>≔</mo></mtd>
+									<mtd>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>,</mo>
+														<mi>𝑦</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>∈</mo>
+												<mrow>
+													<mi>𝑀</mi>
+													<mo>×</mo>
+													<mi>𝑀</mi>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+											<mrow>
+												<mrow>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>&it;</mo>
+														<mi>𝐴</mi>
+														<mo>&it;</mo>
+														<mi>𝑦</mi>
+													</mrow>
+													<mo>∩</mo>
+													<mi>𝐴</mi>
+												</mrow>
+												<mo>≠</mo>
+												<mi>∅</mi>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</mtd>
+								</mtr>
+							</mtable>
+						</math>
+						<math display="block">
+							<mtable intent=":system-of-equations">
+								<mtr>
+									<mtd>
+										<msub>
+											<mi>𝐴</mi>
+											<mn>1</mn>
+										</msub>
+									</mtd>
+									<mtd><mo>≔</mo></mtd>
+									<mtd>
+										<msup>
+											<mrow>
+												<mo>⟨</mo>
+												<mi>𝐴</mi>
+												<mo>⟩</mo>
+											</mrow>
+											<mo>′</mo>
+										</msup>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd>
+										<msub>
+											<mi>𝐴</mi>
+											<mrow>
+												<mi>𝑛</mi>
+												<mo>+</mo>
+												<mn>1</mn>
+											</mrow>
+										</msub>
+									</mtd>
+									<mtd><mo>≔</mo></mtd>
+									<mtd>
+										<msup>
+											<mrow>
+												<mo>⟨</mo>
+												<mrow>
+													<munder intent=":largeop">
+														<mo>⋃</mo>
+														<mrow>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<mi>𝑥</mi>
+																	<mo>,</mo>
+																	<mi>𝑦</mi>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+															<mo>∈</mo>
+															<msub>
+																<mi>𝑋</mi>
+																<msub>
+																	<mi>𝐴</mi>
+																	<mi>𝑛</mi>
+																</msub>
+															</msub>
+														</mrow>
+													</munder>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝐴</mi>
+															<mi>𝑛</mi>
+														</msub>
+														<mo>&it;</mo>
+														<mi>𝑦</mi>
+													</mrow>
+												</mrow>
+												<mo>⟩</mo>
+											</mrow>
+											<mo>′</mo>
+										</msup>
+									</mtd>
+								</mtr>
+							</mtable>
+						</math>
+						と定める．
+					</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mi>ncl</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝐴</mi>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>1</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msub>
+									<mi>𝐴</mi>
+									<mi>𝑛</mi>
+								</msub>
+							</mrow>
+						</math>
+						を<math><mi>𝐴</mi></math>の<dfn>正規閉包</dfn><span lang="en">(normal closure)</span>と呼ぶ．
+					</p>
+				</article>
+				<article id="正規部分モノイドが誘導する合同" class="dfn">
+					<h4>正規部分モノイドが誘導する合同</h4>
+					<ul>
+						<li><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math></li>
+						<li><a href="#正規部分モノイド">正規部分モノイド</a><math><mi>𝑁</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mo>{</mo>
+									<mn>1</mn>
+									<mo>}</mo>
+								</mrow>
+								<mo>×</mo>
+								<mi>𝑁</mi>
+							</mrow>
+							<mo>⊂</mo>
+							<mrow>
+								<mi>𝑀</mi>
+								<mo>×</mo>
+								<mi>𝑀</mi>
+							</mrow>
+						</math>
+						を<a href="../../../set/index.html#関係">グラフ</a>とする<a href="../../../set/index.html#関係">関係</a>の<a href="#関係の正規閉包">正規閉包</a>を，<dfn><math><mi>𝑁</mi></math>が誘導する合同</dfn>と呼ぶ．
+					</p>
+				</article>
+				<article id="正規部分モノイドと合同の関係" class="thm">
+					<h4>正規部分モノイドと合同の関係</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与えると，以下が成り立つ．</p>
+					<ul>
+						<li>
+							<math><mi>𝑀</mi></math>の部分集合<math><mi>𝑁</mi></math>に対し，
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>{</mo>
+										<mn>1</mn>
+										<mo>}</mo>
+									</mrow>
+									<mo>×</mo>
+									<mi>𝑁</mi>
+								</mrow>
+								<mo>⊂</mo>
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>×</mo>
+									<mi>𝑀</mi>
+								</mrow>
+							</math>
+							<a href="../../../set/index.html#関係">グラフ</a>とする<a href="../../../set/index.html#関係">関係</a>の<a href="#関係の正規閉包">正規閉包</a>は，
+							<math>
+								<mi>ncl</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑁</mi>
+									<mo>)</mo>
+								</mrow>
+							</math>
+							の<a href="#正規部分モノイドが誘導する合同">誘導する合同</a>に等しい．
+						</li>
+						<li>
+							任意の<a href="../index.html#合同">合同</a>（<a href="../index.html#合同">正規関係</a>）に対し，<math><mi>𝑀</mi></math>の<a href="#モノイド">単位元</a><math><mn>1</mn></math>の<a href="../../../set/index.html#商集合">同値類</a>は<a href="#正規部分モノイド">正規部分モノイド</a>．
+						</li>
+					</ul>
+				</article>
+				<p>これにより，<a href="../index.html#合同">合同</a>を与えることと，<a href="#正規部分モノイド">正規部分モノイド</a>を与えることは等価であるとわかる．</p>
+				<article id="商モノイド" class="dfn">
+					<h4>商モノイド</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑀</mi></math>の<a href="#正規部分モノイドが誘導する合同">誘導する合同</a><math><mo>≡</mo></math>に対し，
+							<math display="block">
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>∕</mo>
+									<mo>≡</mo>
+								</mrow>
+							</math>
+							は自然な積
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑀</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mi>𝑥</mi>
+											<mo>]</mo>
+										</mrow>
+										<mo>⋅</mo>
+										<mrow>
+											<mo>[</mo>
+											<mi>𝑦</mi>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>≔</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>⋅</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+							に対して<a href="#モノイド">モノイド</a>をなす．これを<math><mo>≡</mo></math>による<dfn>商モノイド</dfn>と呼ぶ．
+						</li>
+						<li>
+							<a href="#正規部分モノイド">正規部分モノイド</a><math><mi>𝑁</mi></math>に対し，<math><mi>𝑁</mi></math>が<a href="#正規部分モノイドが誘導する合同">誘導する合同</a><math><mo>∼</mo></math>による商モノイドが，上の意味で定義できる．これを<math><mi>𝑁</mi></math>による<dfn>商モノイド</dfn>と呼び，
+							<math display="block">
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>∕</mo>
+									<mi>𝑁</mi>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>∕</mo>
+									<mo>∼</mo>
+								</mrow>
+							</math>
+							と表す．
+						</li>
+					</ul>
+				</article>
+				<article id="核" class="dfn">
+					<h4>核</h4>
+					<ul>
+						<li><a href="#モノイド">モノイド</a><math><mi>𝑀</mi><mo>,</mo><mi>𝑁</mi></math></li>
+						<li>
+							<a href="#準同型">準同型</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>→</mo>
+									<mi>𝑁</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math display="block">
+							<mrow>
+								<mi>ker</mi>
+								<mo>&af;</mo>
+								<mi>𝑓</mi>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<msup>
+									<mi>𝑓</mi>
+									<mrow>
+										<mo>−</mo>
+										<mn>1</mn>
+									</mrow>
+								</msup>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msub>
+										<mn>1</mn>
+										<mi>𝑁</mi>
+									</msub>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+						を<math><mi>𝑓</mi></math>の<dfn>核</dfn>と呼ぶ．
+					</p>
+				</article>
+				<article id="同型定理" class="thm">
+					<h3>同型定理</h3>
+					<dl>
+						<dt>第一同型定理</dt>
+						<dd>
+							<a href="#モノイド">モノイド</a><math><mi>𝑀</mi><mo>,</mo><mi>𝑁</mi></math>と<a href="#準同型">準同型</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>→</mo>
+									<mi>𝑁</mi>
+								</mrow>
+							</math>
+							を与えると，以下が成り立つ．
+							<ul>
+								<li>
+									<math><mi>𝑓</mi></math>の<a href="#核">核</a>
+									<math>
+										<msup>
+											<mi>𝑓</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mn>1</mn>
+												<mi>𝑁</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝑀</mi></math>の<a href="#正規部分モノイド">正規部分モノイド</a>
+								</li>
+								<li>
+									<math><mi>𝑓</mi></math>の<a href="../../../set/index.html#像">像</a>
+									<math>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑀</mi>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝑁</mi></math>の<a href="#部分モノイド">部分モノイド</a></li>
+								<li>
+									<math><mi>𝑓</mi></math>の<a href="../../../set/index.html#像">像</a>
+									<math>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑀</mi>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									と<a href="#商モノイド">商モノイド</a>
+									<math>
+										<mi>𝑁</mi>
+										<mo>∕</mo>
+										<mrow>
+											<msup>
+												<mi>𝑓</mi>
+												<mrow>
+													<mo>−</mo>
+													<mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mn>1</mn>
+													<mi>𝑁</mi>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									は<a href="#同型">同型</a>
+								</li>
+							</ul>
+						</dd>
+						<dt>第二同型定理</dt>
+						<dd>
+							<a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>，<math><mi>𝑀</mi></math>の<a href="#部分モノイド">部分モノイド</a><math><mi>𝑆</mi></math>，<math><mi>𝑀</mi></math>の<a href="#正規部分モノイド">正規部分モノイド</a><math><mi>𝑁</mi></math>を与えると，以下が成り立つ．
+							<ul>
+								<li><math><mi>𝑆</mi><mo>&it;</mo><mi>𝑁</mi></math>は<math><mi>𝑀</mi></math>の<a href="#部分モノイド">部分モノイド</a></li>
+								<li><math><mi>𝑆</mi><mo>∩</mo><mi>𝑁</mi></math>は<math><mi>𝑀</mi></math>の<a href="#正規部分モノイド">正規部分モノイド</a></li>
+								<li>
+									<a href="#商モノイド">商モノイド</a>
+									<math>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>&it;</mo>
+												<mi>𝑁</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>∕</mo>
+										<mi>𝑁</mi>
+									</math>
+									と
+									<math>
+										<mi>𝑆</mi>
+										<mo>∕</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>∩</mo>
+												<mi>𝑁</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<a href="#同型">同型</a>．
+								</li>
+							</ul>
+						</dd>
+						<dt>第三同型定理</dt>
+						<dd>
+							<a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>，<a href="#正規部分モノイド">正規部分モノイド</a><math><mi>𝑁</mi><mo>,</mo><mi>𝑂</mi></math>を与え，<math><mi>𝑂</mi><mo>⊂</mo><mi>𝑁</mi><mo>⊂</mo><mi>𝑀</mi></math>を満たすとすると，以下が成り立つ．
+							<ul>
+								<li><math><mi>𝑂</mi></math>は<math><mi>𝑁</mi></math>の<a href="#正規部分モノイド">正規部分モノイド</a></li>
+								<li><a href="#商モノイド">商モノイド</a><math><mi>𝑁</mi><mo>∕</mo><mi>𝑂</mi></math>は<math><mi>𝑀</mi><mo>∕</mo><mi>𝑂</mi></math>の<a href="#正規部分モノイド">正規部分モノイド</a></li>
+								<li>
+									<a href="#商モノイド">商モノイド</a>
+									<math>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑀</mi>
+												<mo>∕</mo>
+												<mi>𝑂</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>∕</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑁</mi>
+												<mo>∕</mo>
+												<mi>𝑂</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は<math><mi>𝑀</mi><mo>∕</mo><mi>𝑁</mi></math>に<a href="#同型">同型</a>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</article>
+			</section>
+			<section>
+				<h3>性質</h3>
+				<article id="零" class="dfn">
+					<h4>零モノイド</h4>
+					<p>
+						<dfn>零モノイド</dfn><span lang="en">(zero monoid)</span>（または<dfn>自明なモノイド</dfn><span lang="en">(trivial monoid)</span>）とは，一元集合
+						<math>
+							<msub>
+								<mi>ℤ</mi>
+								<mn>1</mn>
+							</msub>
+							<mo>≔</mo>
+							<mrow>
+								<mo>{</mo>
+								<mn>0</mn>
+								<mo>}</mo>
+							</mrow>
+						</math>
+						に積を
+						<math>
+							<mrow>
+								<mn>0</mn>
+								<mo>+</mo>
+								<mn>0</mn>
+							</mrow>
+							<mo>≔</mo>
+							<mn>0</mn>
+						</math>
+						と定めたもので，明らかに<a href="#モノイド">モノイド</a>となる．
+					</p>
+				</article>
+				<article id="零対象" class="thm">
+					<h4>零対象</h4>
+					<p><a href="#零モノイド">零モノイド</a>は<a href="#モノイドの圏">モノイドの圏</a>の零対象．つまり以下が成り立つ．</p>
+					<p>
+						任意の<a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>に対し，
+						<ul>
+							<li><a href="#零">零モノイド</a>から<math><mi>𝑀</mi></math>への<a href="#準同型">準同型</a>は唯一．</li>
+							<li><math><mi>𝑀</mi></math>から<a href="#零">零モノイド</a>への<a href="#準同型">準同型</a>は唯一．</li>
+						</ul>
+					</p>
+				</article>
+				<article id="単純" class="dfn">
+					<h4>単純モノイド</h4>
+					<p><a href="#零">零</a>でない<a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>を与える．</p>
+					<p><math><mi>𝑀</mi></math>が<a href="#自明な正規部分モノイド">非自明</a>な<a href="#正規部分モノイド">正規部分モノイド</a>を持たないとき，<dfn>単純</dfn><span lang="en">(simple)</span>と呼ぶ．</p>
+					<p>単純モノイドの<a href="#直和">直和</a>で書ける<a href="#モノイド">モノイド</a>を，<dfn>半単純</dfn><span lang="en">(semisimple)</span>と呼ぶ．</p>
+				</article>
+				<article id="既約" class="dfn">
+					<h4>既約モノイド</h4>
+					<p><a href="#モノイド">モノイド</a><math><mi>𝑀</mi></math>が<a href="#自明な部分モノイド">非自明</a>な<a href="#部分モノイド">部分モノイド</a>の直和の形で書けないとき，<dfn>既約</dfn><span lang="en">(reducible)</span>と呼ぶ．</p>
+					<p>既約でないとき，<dfn>可約</dfn><span lang="en">(irreducible)</span>と呼ぶ．</p>
+				</article>
+				<article id="単純ならば既約" class="thm">
+					<h4>単純<math><mo>⇒</mo></math>既約</h4>
+					<ul>
+						<li><a href="#単純">単純モノイド</a>は<a href="#既約">既約</a></li>
+						<li><a href="#単純">半単純モノイド</a>は<a href="#既約">可約</a></li>
+					</ul>
+				</article>
+			</section>
+		</section>
+		<section>
+			<h2>自由モノイド</h2>
+			<article id="自由モノイド" class="ax">
+				<h3>自由モノイド</h3>
+				<p>（文字の）集合<math><mi>𝐴</mi></math>を与える．</p>
+				<p>（集合）<math><mi>𝐴</mi></math>上の<dfn class="ax">自由モノイド</dfn><span lang="en">(free monoid)</span>とは，以下のデータからなる．</p>
+				<ul>
+					<li>
+						<dfn class="ax">語</dfn><span lang="en">(word)</span>と呼ばれる（文字列の）集合
+						<math display="block">
+							<msub>
+								<mi>𝛺</mi>
+								<mi>𝐴</mi>
+							</msub>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>⋃</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mi>∞</mi>
+								</munderover>
+								<msup>
+									<mi>𝐴</mi>
+									<mi>𝑛</mi>
+								</msup>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						2文字列の結合（
+						<math>
+							<msub>
+								<mi>𝛺</mi>
+								<mi>𝐴</mi>
+							</msub>
+						</math>
+						上の二項演算）
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>=</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑎</mi>
+														<mn>1</mn>
+													</msub>
+													<mo>,</mo>
+													<mo>…</mo>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑎</mi>
+														<mi>𝑚</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>=</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑏</mi>
+														<mn>1</mn>
+													</msub>
+													<mo>,</mo>
+													<mo>…</mo>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑏</mi>
+														<mi>𝑛</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>∈</mo>
+									<msub>
+										<mi>𝛺</mi>
+										<mi>𝐴</mi>
+									</msub>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>&it;</mo>
+									<mi>𝑏</mi>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝑎</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>,</mo>
+										<mo>…</mo>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑎</mi>
+											<mi>𝑚</mi>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑏</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>,</mo>
+										<mo>…</mo>
+										<mi>,</mi>
+										<msub>
+											<mi>𝑏</mi>
+											<mi>𝑛</mi>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<p>形式的には上のようになるが，語（文字列）を数学的な列というより，「普通の」文字列として<math><mi>𝑚𝑜𝑛𝑜𝑖𝑑</mi></math>のように書く慣習である．</p>
+			<article id="自由モノイドはモノイド" class="thm">
+				<h3>自由モノイドはモノイド</h3>
+				<p>集合上の<a href="#自由モノイド">自由モノイド</a>は，空文字列<math><mi>∅</mi></math>を<a href="#モノイド">単位元</a>とする<a href="#モノイド">モノイド</a>をなす．</p>
+			</article>
+			<article id="モノイドの表示" class="dfn">
+				<h3>モノイドの表示</h3>
+				<ul>
+					<li>集合<math><mi>𝐴</mi></math></li>
+					<li>
+					<math><mi>𝐴</mi></math>上の<a href="#自由モノイド">自由モノイド</a>
+					<math>
+						<msub>
+							<mi>𝛺</mi>
+							<mi>𝐴</mi>
+						</msub>
+					</math>
+					</li>
+				</ul>
+				<p>を与える．</p>
+				<p>以下の（本質的に等価な）いずれかの方法で表される<a href="#モノイド">モノイド</a>を，<dfn>モノイドの表示</dfn>と呼ぶ．</p>
+				<ul>
+					<li>
+						<math>
+							<msub>
+								<mi>𝛺</mi>
+								<mi>𝐴</mi>
+							</msub>
+						</math>
+						上の<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math>に対し，<math><mo>∼</mo></math>の<a href="#関係の正規閉包">正規閉包</a>
+						<math>
+							<msub>
+								<mo>∼</mo>
+								<mi>ncl</mi>
+							</msub>
+						</math>
+						による<a href="#商モノイド">商モノイド</a>
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝐴</mi>
+								<mo>|</mo>
+								<mo>∼</mo>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<msub>
+									<mi>𝛺</mi>
+									<mi>𝐴</mi>
+								</msub>
+								<mo>∕</mo>
+								<msub>
+									<mo>∼</mo>
+									<mi>ncl</mi>
+								</msub>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						部分集合
+						<math>
+							<mi>𝑅</mi>
+							<mo>⊂</mo>
+							<msub>
+								<mi>𝛺</mi>
+								<mi>𝐴</mi>
+							</msub>
+						</math>
+						に対し，<math><mi>𝑅</mi></math>の<a href="#正規閉包">正規閉包</a>による<a href="#商モノイド">商モノイド</a>
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mi>𝐴</mi>
+								<mo>|</mo>
+								<mi>𝑅</mi>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<msub>
+									<mi>𝛺</mi>
+									<mi>𝐴</mi>
+								</msub>
+								<mo>∕</mo>
+								<mrow>
+									<mi>ncl</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑅</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+				<p>このとき（<a href="#生成系">モノイドの生成系</a>と同じ意味で）<math><mi>𝑋</mi></math>を<dfn>生成系</dfn><span lang="en">(generators)</span>と呼ぶ．また，<a href="../../../set/index.html#関係">関係</a><math><mo>∼</mo></math>や<math><mi>𝑅</mi></math>，またはその正規閉包のことを<dfn>関係（式）</dfn><span lang="en">(relation)</span>と呼ぶことがある．</p>
+			</article>
+			<article id="有限表示" class="dfn">
+				<h4>有限表示</h4>
+				<p><a href="#モノイドの表示">生成系</a>が有限な<a href="#モノイドの表示">モノイドの表示</a>を<dfn>有限表示</dfn>と呼ぶ．</p>
+			</article>
+			<article id="モノイドの表示の性質" class="thm">
+				<h4>モノイドの表示の性質</h4>
+				<ul>
+					<li>任意の<a href="#モノイド">モノイド</a>は，（無限個の）<a href="#モノイドの表示">モノイドの表示</a>を持つ．</li>
+					<li>異なる<a href="#有限表示">有限表示</a>を持つ<a href="#モノイド">モノイド</a>が等しいかは，（計算可能性の意味で）決定不能．（群の表示がそうだから，そのはず…）</li>
+				</ul>
+			</article>
+			
+			
+		</section>
+		<section>
+			<h2>参考文献</h2>
+			<dl>
+				<dt>正規部分モノイドに関して</dt>
+				<dd>J. ELGUETA, “<a href="https://doi.org/10.1017/S1446788723000204">Normal Submonoids And Congruences On A Monoid</a>,” Journal of the Australian Mathematical Society, vol. 116, no. 3, pp. 331–362, 2024. doi:10.1017/S1446788723000204</dd>
+			</dl>
+		</section>
+	</body>
+</html>

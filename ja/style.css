@@ -1,0 +1,394 @@
+/* Box sizing rules reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #220;
+	color: #eee;
+	/* reset */
+	margin: 0;
+	/* Set core body defaults */
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	counter-reset: h2;
+}
+
+/* Remove default margin */
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+dd {
+	margin-left: 1em;
+}
+
+p, mtext {
+	font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+	font-size: 3em;
+	font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothiic Pro", HiraginoSans-W3, "Hiragino Sans W3", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "MS Gothic", "ＭＳ ゴシック", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+	text-align: center;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0.25em auto 1em;
+	counter-reset: h3 ax dfn prp thm lem cor pblm;
+}
+
+h3 {
+	margin: 0.5em auto;
+	padding: 0.25em;
+	border-bottom: solid white 2px;
+	border-left: solid red 6px;
+	counter-reset: h4;
+}
+
+h4 {
+	margin: 0.5rem;
+	border-bottom: solid white 2px;
+	counter-reset: h5;
+}
+
+h5 {
+	margin: 0 0.5rem;
+	counter-reset: h6;
+}
+
+h6 {
+	margin: 0;
+}
+
+section > p {
+	margin: 0 2rem;
+}
+
+h1 ~ p {
+	font-weight: bold;
+	text-align: center;
+}
+
+li > ul, li > ol {
+	padding-left: 20px;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+/* hrefを持つもの．a以外にMathML要素も含む */
+:any-link {
+	color: #88a3e8;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	text-indent: center;
+	margin: 0 auto;
+}
+
+caption {
+	caption-side: bottom;
+}
+
+th,
+td {
+	border: 1px solid #888;
+	padding: 8px 10px;
+	text-align: center;
+}
+
+b.color-1 {
+	color: red;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+dfn {
+	font-style: normal;
+	font-weight: bold;
+}
+
+svg {
+	display: block;
+	margin: 0 auto;
+}
+
+foreignObject {
+}
+
+line, polyline {
+	stroke: white;
+	stroke-width: 1%;
+	fill: transparent;
+}
+
+line.auxiliary, polyline.auxiliary {
+	stroke-dasharray: 2.5%;
+}
+
+text {
+	text-anchor: middle;
+	dominant-baseline: central;
+}
+
+math {
+	overflow-x: scroll;
+	overflow-wrap: break-word;
+}
+
+mi {
+	mathvariant: normal;
+}
+
+mtable {
+	math-style: normal;
+}
+
+/* 式変形, 連立方程式 */
+mtable[intent=":lines"], mtable[intent=":system-of-equations"] {
+	> mtr { 
+		> mtd {
+			padding-left: 1px;
+			padding-right: 1px;
+		}
+		> mtd:first-child {
+			text-align: end;
+		}
+		> mtd:last-child {
+			text-align: start;
+		}
+	}
+}
+
+/* 連番*/
+h2::before {
+	counter-increment: h2;
+	content: "第"counter(h2)"章  ";
+}
+
+h3::before {
+	counter-increment: h3;
+	content: counter(h2)"."counter(h3)"  ";
+}
+
+h4::before {
+	counter-increment: h4;
+	content: counter(h2)"."counter(h3)"."counter(h4)"  ";
+}
+
+h5::before {
+	counter-increment: h5;
+	content: counter(h2)"."counter(h3)"."counter(h4)"."counter(h5)"  ";
+}
+
+h6::before {
+	counter-increment: h6;
+	content: counter(h2)"."counter(h3)"."counter(h4)"."counter(h5)"."counter(h6)"  ";
+}
+
+
+
+
+/* 公理，定義，命題，定理，補題，問題環境 */
+
+article.ax, article.dfn, article.prp, article.thm, article.lem, article.cor, article.pblm {
+	border: 2px solid;
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+	margin: 0.25rem 1rem;
+	> * {
+		margin: 0 0 0 1em;
+	}
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		font-size: 1em;
+		border: 2px solid;
+		border-radius: 0.25rem;
+		margin: 0;
+		padding: 0.25rem;
+		font-weight: bold;
+		display: inline-block;
+	}
+}
+
+article.ax, article.ax > h1, article.ax > h2, article.ax > h3, article.ax > h4, article.ax > h5, article.ax > h6 {
+	border-color: blue;
+}
+article.dfn, article.dfn > h1, article.dfn > h2, article.dfn > h3, article.dfn > h4, article.dfn > h5, article.dfn > h6 {
+	border-color: green;
+}
+article.prp, article.prp > h1, article.prp > h2, article.prp > h3, article.prp > h4, article.prp > h5, article.prp > h6 {
+	border-color: red;
+}
+article.thm, article.thm > h1, article.thm > h2, article.thm > h3, article.thm > h4, article.thm > h5, article.thm > h6 {
+	border-color: red;
+}
+article.lem, article.lem > h1, article.lem > h2, article.lem > h3, article.lem > h4, article.lem > h5, article.lem > h6 {
+	border-color: red;
+}
+article.cor, article.cor > h1, article.corc > h2, article.cor > h3, article.cor > h4, article.cor > h5, article.cor > h6 {
+	border-color: red;
+}
+article.pblm, article.pblm > h1, article.pblm > h2, article.pblm > h3, article.pblm > h4, article.pblm > h5, article.pblm > h6 {
+	border-color: #444;
+}
+
+article.ax {
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		background-color: darkblue;
+	}
+	> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+		counter-increment: ax;
+		content: "公理"counter(h2)"."counter(ax)": ";
+	}
+}
+article.dfn {
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		background-color: darkgreen;
+	}
+	> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+		counter-increment: dfn;
+		content: "定義"counter(h2)"."counter(dfn)": ";
+	}
+}
+article.prp {
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		background-color: darkred;
+	}
+	> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+		counter-increment: prp;
+		content: "命題"counter(h2)"."counter(prp)": ";
+	}
+}
+article.thm {
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		background-color: darkred;
+	}
+	> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+		counter-increment: thm;
+		content: "定理"counter(h2)"."counter(thm)": ";
+	}
+}
+article.lem {
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		background-color: darkred;
+	}
+	> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+		counter-increment: lem;
+		content: "補題"counter(h2)"."counter(lem)": ";
+	}
+}
+article.cor {
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		background-color: darkred;
+	}
+	> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+		counter-increment: cor;
+		content: "系"counter(h2)"."counter(cor)": ";
+	}
+}
+article.pblm {
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		background-color: #000;
+	}
+	> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+		counter-increment: pblm;
+		content: "問題"counter(h2)"."counter(pblm)": ";
+	}
+}
+
+article.proof {
+	padding: 0 0.25rem;
+	margin: 0.25rem 1rem;
+	> *:last-child::after {
+		content: "∎";
+	}
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		font-size: 1em;
+		border: none;
+		margin: 0;
+		padding: 0.25rem;
+		font-weight: bold;
+		display: inline-block;
+	}
+	> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+		counter-increment: none;
+		content: "(";
+	}
+	> h1::after, > h2::after, > h3::after, > h4::after, > h5::after, > h6::after {
+		content: ")";
+	}
+}
+
+article.ax > p, article.dfn > p, article.prp > p, article.thm > p, article.lem > p, article.cor > p, article.pblm > p, article.proof > p {
+	margin: 0 1rem;
+}
+
+dl {
+	> dt {
+		font-weight: bold;
+	}
+	dt:before {
+		font-weight: bold;
+		content: "(";
+	}
+	dt:after {
+		font-weight: bold;
+		content: ")";
+	}
+}
+
+/* Media Queries */
+/* (Reset) Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
