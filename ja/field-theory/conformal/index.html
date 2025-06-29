@@ -16375,7 +16375,7 @@
 						</p>
 					</section>
 					<section>
-						<h5>密度演算子・粒子数演算子</h5>
+						<h5>密度演算子・粒子数演算子・Klein因子</h5>
 						<p>
 							密度演算子は
 							<math display="block">
@@ -17357,10 +17357,10 @@
 										<mi>𝐿</mi>
 									</mfrac>
 									<mo>&it;</mo>
-									<msub>
+									<msup>
 										<mi>𝑁</mi>
 										<mi>𝜂</mi>
-									</msub>
+									</msup>
 								</mrow>
 							</math>
 							の粒子が全て存在し，波数
@@ -17373,10 +17373,10 @@
 										<mi>𝐿</mi>
 									</mfrac>
 									<mo>&it;</mo>
-									<msub>
+									<msup>
 										<mi>𝑁</mi>
 										<mi>𝜂</mi>
-									</msub>
+									</msup>
 								</mrow>
 							</math>
 							の状態が埋まっていない状態と定義する：
@@ -17402,10 +17402,7 @@
 												<mrow>
 													<mi>𝜂</mi>
 													<mo>,</mo>
-													<msub>
-														<mi>𝑁</mi>
-														<mi>𝜂</mi>
-													</msub>
+													<mi>𝑁</mi>
 												</mrow>
 											</msub>
 										</mrow>
@@ -17428,10 +17425,7 @@
 											<mrow>
 												<mi>𝜂</mi>
 												<mo>,</mo>
-												<msub>
-													<mi>𝑁</mi>
-													<mi>𝜂</mi>
-												</msub>
+												<mi>𝑁</mi>
 											</mrow>
 										</msub>
 										<mo>≔</mo>
@@ -17443,10 +17437,10 @@
 														<msubsup>
 															<mi>𝑎</mi>
 															<mrow>
-																<msub>
+																<msup>
 																	<mi>𝑁</mi>
 																	<mi>𝜂</mi>
-																</msub>
+																</msup>
 																<mo>,</mo>
 																<mi>𝜂</mi>
 															</mrow>
@@ -17468,10 +17462,10 @@
 													<mtd>
 														<mo>(</mo>
 														<mrow>
-															<msub>
+															<msup>
 																<mi>𝑁</mi>
 																<mi>𝜂</mi>
-															</msub>
+															</msup>
 															<mo>&gt;</mo>
 															<mn>0</mn>
 														</mrow>
@@ -17483,10 +17477,10 @@
 													<mtd>
 														<mo>(</mo>
 														<mrow>
-															<msub>
+															<msup>
 																<mi>𝑁</mi>
 																<mi>𝜂</mi>
-															</msub>
+															</msup>
 															<mo>=</mo>
 															<mn>0</mn>
 														</mrow>
@@ -17499,10 +17493,10 @@
 															<mi>𝑎</mi>
 															<mrow>
 																<mrow>
-																	<msub>
+																	<msup>
 																		<mi>𝑁</mi>
 																		<mi>𝜂</mi>
-																	</msub>
+																	</msup>
 																	<mo>+</mo>
 																	<mn>1</mn>
 																</mrow>
@@ -17525,10 +17519,10 @@
 													<mtd>
 														<mo>(</mo>
 														<mrow>
-															<msub>
+															<msup>
 																<mi>𝑁</mi>
 																<mi>𝜂</mi>
-															</msub>
+															</msup>
 															<mo>&lt;</mo>
 															<mn>0</mn>
 														</mrow>
@@ -17541,6 +17535,468 @@
 									<mo>)</mo>
 								</mrow>
 							</math>
+						</p>
+						<p>
+							最後にKlein因子と呼ばれるユニタリ演算子を定義する：
+							<math id="Klein因子" display="block">
+								<msub>
+									<mi>𝐹</mi>
+									<mi>𝜂</mi>
+								</msub>
+								<mo>≔</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∑</mo>
+										<mrow>
+											<mi>𝑘</mi>
+											<mo>∈</mo>
+											<mrow>
+												<mfrac>
+													<mn>1</mn>
+													<mi>𝐿</mi>
+												</mfrac>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>ℤ</mi>
+														<mo>−</mo>
+														<msub>
+															<mi>𝛿</mi>
+															<mi mathvariant="normal">b</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</munder>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>∑</mo>
+													<mrow>
+														<msub>
+															<mi>𝑚</mi>
+															<mi>𝑘</mi>
+														</msub>
+														<mo>∈</mo>
+														<mrow>
+															<mo>{</mo>
+															<mrow>
+																<mn>0</mn>
+																<mo>,</mo>
+																<mn>1</mn>
+															</mrow>
+															<mo>}</mo>
+														</mrow>
+													</mrow>
+												</munder>
+												<mrow>
+													<munderover intent=":largeop">
+														<mo>∏</mo>
+														<mrow>
+															<msup>
+																<mi>𝑘</mi>
+																<mo>′</mo>
+															</msup>
+															<mo>=</mo>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>+</mo>
+																<mfrac>
+																	<mn>1</mn>
+																	<mi>𝐿</mi>
+																</mfrac>
+															</mrow>
+														</mrow>
+														<mi>∞</mi>
+													</munderover>
+													<msup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>−</mo>
+																			<mfrac>
+																				<mn>1</mn>
+																				<mi>𝐿</mi>
+																			</mfrac>
+																		</mrow>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<msub>
+															<mi>𝑚</mi>
+															<mi>𝑘</mi>
+														</msub>
+													</msup>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑘</mi>
+													<mo>,</mo>
+													<mi>𝜂</mi>
+												</mrow>
+											</msub>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∏</mo>
+												<mrow>
+													<msub>
+														<mi>𝑛</mi>
+														<msup>
+															<mi>𝑘</mi>
+															<mo>′</mo>
+														</msup>
+													</msub>
+													<mo>=</mo>
+													<mrow>
+														<mo>−</mo>
+														<mi>∞</mi>
+													</mrow>
+												</mrow>
+												<mrow>
+													<msub>
+														<mi>𝑛</mi>
+														<mi>𝑘</mi>
+													</msub>
+													<mo>−</mo>
+													<mn>1</mn>
+												</mrow>
+											</munderover>
+											<mrow>
+												<msubsup>
+													<mi>𝑎</mi>
+													<mrow>
+														<msup>
+															<mi>𝑘</mi>
+															<mo>′</mo>
+														</msup>
+														<mo>,</mo>
+														<mi>𝜂</mi>
+													</mrow>
+													<mo>†</mo>
+												</msubsup>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<msup>
+															<mi>𝑘</mi>
+															<mo>′</mo>
+														</msup>
+														<mo>,</mo>
+														<mi>𝜂</mi>
+													</mrow>
+												</msub>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							これらは以下を満たす：
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msub>
+												<mi>𝐽</mi>
+												<mrow>
+													<mrow>
+														<mo>±</mo>
+														<mi>𝑞</mi>
+													</mrow>
+													<mo>,</mo>
+													<mi>𝜂</mi>
+												</mrow>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</msub>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msub>
+												<mi>𝐽</mi>
+												<mrow>
+													<mrow>
+														<mo>±</mo>
+														<mi>𝑞</mi>
+													</mrow>
+													<mo>,</mo>
+													<mi>𝜂</mi>
+												</mrow>
+											</msub>
+											<mo>,</mo>
+											<msubsup>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+												<mo>†</mo>
+											</msubsup>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</mrow>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑞</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mfrac>
+												<mn>1</mn>
+												<mi>𝐿</mi>
+											</mfrac>
+											<mo>&it;</mo>
+											<mi>ℕ</mi>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math>
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msub>
+												<mi>𝑁</mi>
+												<mi>𝜂</mi>
+											</msub>
+											<mo>,</mo>
+											<msubsup>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+												<mo>†</mo>
+											</msubsup>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝛿</mi>
+											<mrow>
+												<mi>𝜂</mi>
+												<mo>,</mo>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</mrow>
+										</msub>
+										<mo>&it;</mo>
+										<msubsup>
+											<mi>𝐹</mi>
+											<msup>
+												<mi>𝜂</mi>
+												<mo>′</mo>
+											</msup>
+											<mo>†</mo>
+										</msubsup>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msub>
+												<mi>𝑁</mi>
+												<mi>𝜂</mi>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</msub>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>−</mo>
+										<mrow>
+											<msub>
+												<mi>𝛿</mi>
+												<mrow>
+													<mi>𝜂</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝜂</mi>
+														<mo>′</mo>
+													</msup>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</msub>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							特に
+							<math>
+								<msub>
+									<mi>ℋ</mi>
+									<mi>𝑁</mi>
+								</msub>
+							</math>
+							の真空
+							<math>
+								<msub>
+									<mrow>
+										<mo>|</mo>
+										<mi>𝑁</mi>
+										<mo>⟩</mo>
+									</mrow>
+									<mn>0</mn>
+								</msub>
+							</math>
+							どうしを写り合う：
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝐹</mi>
+										<mi>𝜂</mi>
+									</msub>
+									<mo>&af;</mo>
+									<msub>
+										<mrow>
+											<mo>|</mo>
+											<mi>𝑁</mi>
+											<mo>⟩</mo>
+										</mrow>
+										<mn>0</mn>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<msup>
+														<mi>𝜂</mi>
+														<mo>′</mo>
+													</msup>
+													<mo>=</mo>
+													<mrow>
+														<mi>𝜂</mi>
+														<mo>+</mo>
+														<mn>1</mn>
+													</mrow>
+												</mrow>
+												<mrow>
+													<msub>
+														<mi>𝑀</mi>
+														<mo>+</mo>
+													</msub>
+													<mo>+</mo>
+													<msub>
+														<mi>𝑀</mi>
+														<mo>−</mo>
+													</msub>
+												</mrow>
+											</munderover>
+											<msub>
+												<mi>𝑁</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</msub>
+										</mrow>
+									</msup>
+									<mo>&af;</mo>
+									<msub>
+										<mrow>
+											<mo>|</mo>
+											<mrow>
+												<mi>𝑁</mi>
+												<mo>−</mo>
+												<msup>
+													<mi>𝑒</mi>
+													<mi>𝜂</mi>
+												</msup>
+											</mrow>
+											<mo>⟩</mo>
+										</mrow>
+										<mn>0</mn>
+									</msub>
+								</mrow>
+							</math>
+							一般の作用については，ボゾン化後の方がわかりやすいので後に回す．
 						</p>
 					</section>
 				</section>
@@ -17561,10 +18017,7 @@
 								<mo>≔</mo>
 								<mrow>
 									<mfrac>
-										<mrow>
-											<mo>−</mo>
-											<mi>𝑖</mi>
-										</mrow>
+										<mn>1</mn>
 										<msqrt><mi>𝑞</mi></msqrt>
 									</mfrac>
 									<mo>&it;</mo>
@@ -17580,10 +18033,7 @@
 								<mo>=</mo>
 								<mrow>
 									<mfrac>
-										<mrow>
-											<mo>−</mo>
-											<mi>𝑖</mi>
-										</mrow>
+										<mn>1</mn>
 										<msqrt>
 											<msub>
 												<mi>𝑛</mi>
@@ -17659,7 +18109,7 @@
 								<mo>≔</mo>
 								<mrow>
 									<mfrac>
-										<mi>𝑖</mi>
+										<mn>1</mn>
 										<msqrt><mi>𝑞</mi></msqrt>
 									</mfrac>
 									<mo>&it;</mo>
@@ -17678,7 +18128,7 @@
 								<mo>=</mo>
 								<mrow>
 									<mfrac>
-										<mi>𝑖</mi>
+										<mn>1</mn>
 										<msqrt>
 											<msub>
 												<mi>𝑛</mi>
@@ -17895,6 +18345,7 @@
 										<mi>𝛿</mi>
 										<mrow>
 											<mi>𝑞</mi>
+											<mo>,</mo>
 											<msup>
 												<mi>𝑞</mi>
 												<mo>′</mo>
@@ -17906,6 +18357,7 @@
 										<mi>𝛿</mi>
 										<mrow>
 											<mi>𝜂</mi>
+											<mo>,</mo>
 											<msup>
 												<mi>𝜂</mi>
 												<mo>′</mo>
@@ -17915,7 +18367,7 @@
 								</mrow>
 							</mrow>
 						</math>
-						ただし現時点では，全Hilbert空間<math><mi>ℋ</mi></math>はこれらの演算子によるFock空間として表されることは非自明なので，それを確認していこう．
+						ただし現時点では，全Hilbert空間<math><mi>ℋ</mi></math>がこれらの演算子によるFock空間として表されることは非自明なので，それを確認していこう．
 					</p>
 					<article id="ボゾン化の完全性" class="thm">
 						<h5>ボゾン化の完全性</h5>
@@ -17927,7 +18379,7 @@
 									<mi>𝑁</mi>
 								</msub>
 							</math>
-							は，先ほど定義した真空
+							は，
 							<math>
 								<msub>
 									<mrow>
@@ -17938,7 +18390,7 @@
 									<mn>0</mn>
 								</msub>
 							</math>
-							とし，
+							を真空とし，
 							<math>
 								<msub>
 									<mi>𝑏</mi>
@@ -17968,6 +18420,126 @@
 					</article>
 					<section>
 						<h5>Klein因子</h5>
+						<p>
+							<a href="#ボゾン化の完全性">ボゾン化の完全性</a>より，各部分Hilert空間
+							<math>
+								<msub>
+									<mi>ℋ</mi>
+									<mi>𝑁</mi>
+								</msub>
+							</math>
+							の真空
+							<math>
+								<msub>
+									<mrow>
+										<mo>|</mo>
+										<mi>𝑁</mi>
+										<mo>⟩</mo>
+									</mrow>
+									<mn>0</mn>
+								</msub>
+							</math>
+							どうしを関連づける演算子を追加すれば，フェルミオン場が表現できそうである．それが<a href="#Klein因子">Klein因子</a>．
+							<math display="block">
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<msub>
+											<mi>𝑏</mi>
+											<mrow>
+												<mi>𝑞</mi>
+												<mo>,</mo>
+												<mi>𝜂</mi>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝐹</mi>
+											<msup>
+												<mi>𝜂</mi>
+												<mo>′</mo>
+											</msup>
+										</msub>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<msub>
+											<mi>𝑏</mi>
+											<mrow>
+												<mi>𝑞</mi>
+												<mo>,</mo>
+												<mi>𝜂</mi>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<msubsup>
+											<mi>𝐹</mi>
+											<msup>
+												<mi>𝜂</mi>
+												<mo>′</mo>
+											</msup>
+											<mo>†</mo>
+										</msubsup>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<msubsup>
+											<mi>𝑏</mi>
+											<mrow>
+												<mi>𝑞</mi>
+												<mo>,</mo>
+												<mi>𝜂</mi>
+											</mrow>
+											<mo>†</mo>
+										</msubsup>
+										<mo>,</mo>
+										<msub>
+											<mi>𝐹</mi>
+											<msup>
+												<mi>𝜂</mi>
+												<mo>′</mo>
+											</msup>
+										</msub>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<msubsup>
+											<mi>𝑏</mi>
+											<mrow>
+												<mi>𝑞</mi>
+												<mo>,</mo>
+												<mi>𝜂</mi>
+											</mrow>
+											<mo>†</mo>
+										</msubsup>
+										<mo>,</mo>
+										<msubsup>
+											<mi>𝐹</mi>
+											<msup>
+												<mi>𝜂</mi>
+												<mo>′</mo>
+											</msup>
+											<mo>†</mo>
+										</msubsup>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math>
+						</p>
 					</section>
 					<section>
 						<h5>ボゾン場によるフェルミオン場との表現</h5>
@@ -17976,12 +18548,22 @@
 			</section>
 			<section>
 				<hgroup>
-					<h3>相互作用がない場合</h3>
-					<p>自由場と言おうと思ったが，ちょっと違うのでまどろっこしいタイトルに…</p>
+					<h3>自由朝永・Luttinger液体</h3>
+					<p>
+					</p>
 				</hgroup>
 			</section>
 			<section>
 				<h3>相互作用がある場合</h3>
 			</section>
+		</section>
+		<section>
+			<h2>参考文献</h2>
+			<ul>
+				<li>疋田泰章「共形場理論入門」講談社</li>
+				<li>川上則雄・梁成吉「共形場理論と1次元量子系」岩波書店</li>
+				<li>Philippe Di Francesco, Pierre Mathieu, David Sénéchal, "Conformal Field Theory", Springer</li>
+				<li>Jan von Delft, Herbert Schoeller, "Bosonization for Beginners --- Refermionization for Experts", <a href="https://doi.org/10.48550/arXiv.cond-mat/9805275">arXiv:cond-mat/9805275</a></li>
+			</ul>
 		</section>
 	</body>
