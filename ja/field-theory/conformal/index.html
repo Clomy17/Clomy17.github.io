@@ -15408,9 +15408,26 @@
 								</msub>
 							</math>
 						</li>
+						<li>
+							<math>
+								<mi>𝑀</mi>
+								<mo>≔</mo>
+								<mrow>
+									<msub>
+										<mi>𝑀</mi>
+										<mo>+</mo>
+									</msub>
+									<mo>+</mo>
+									<msub>
+										<mi>𝑀</mi>
+										<mo>−</mo>
+									</msub>
+								</mrow>
+							</math>
+						</li>
 					</ul>
 					<p>を与える．</p>
-					<p><dfn class="ax">ボゾン化</dfn><span lang="en">(bosonization)</span>が可能なは以下：</p>
+					<p><dfn class="ax">ボゾン化</dfn><span lang="en">(bosonization)</span>が可能な理論は以下：</p>
 					<ul>
 						<li>
 							波数<math><mi>𝑘</mi></math>は離散的で非有界：
@@ -15458,6 +15475,14 @@
 							<math>
 								<mi>𝜂</mi>
 								<mo>∈</mo>
+								<msub>
+									<mi>ℕ</mi>
+									<mrow>
+										<mo>≤</mo>
+										<mi>𝑀</mi>
+									</mrow>
+								</msub>
+								<mo>≃</mo>
 								<mrow>
 									<mrow>
 										<mrow>
@@ -17316,17 +17341,7 @@
 													<mo>(</mo>
 													<msup>
 														<mi>ℤ</mi>
-														<mrow>
-															<msub>
-																<mi>𝑀</mi>
-																<mo>+</mo>
-															</msub>
-															<mo>+</mo>
-															<msub>
-																<mi>𝑀</mi>
-																<mo>−</mo>
-															</msub>
-														</mrow>
+														<mi>𝑀</mi>
 													</msup>
 													<mo>)</mo>
 												</mrow>
@@ -17393,10 +17408,15 @@
 									<mo>≔</mo>
 									<mrow>
 										<mrow>
-											<munder intent=":largeop">
+											<munderover intent=":largeop">
 												<mo>∏</mo>
-												<mi>𝜂</mi>
-											</munder>
+												<mrow>
+													<mi>𝜂</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mrow>
+												<mi>𝑀</mi>
+											</munderover>
 											<msub>
 												<mi>𝐴</mi>
 												<mrow>
@@ -17677,13 +17697,10 @@
 											<munderover intent=":largeop">
 												<mo>∏</mo>
 												<mrow>
-													<msub>
-														<mi>𝑛</mi>
-														<msup>
-															<mi>𝑘</mi>
-															<mo>′</mo>
-														</msup>
-													</msub>
+													<msup>
+														<mi>𝑘</mi>
+														<mo>′</mo>
+													</msup>
 													<mo>=</mo>
 													<mrow>
 														<mo>−</mo>
@@ -17691,12 +17708,12 @@
 													</mrow>
 												</mrow>
 												<mrow>
-													<msub>
-														<mi>𝑛</mi>
-														<mi>𝑘</mi>
-													</msub>
+													<mi>𝑘</mi>
 													<mo>−</mo>
-													<mn>1</mn>
+													<mfrac>
+														<mn>1</mn>
+														<mi>𝐿</mi>
+													</mfrac>
 												</mrow>
 											</munderover>
 											<mrow>
@@ -17730,6 +17747,89 @@
 								</mrow>
 							</math>
 							これらは以下を満たす：
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝐹</mi>
+												<mi>𝜂</mi>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</msub>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msubsup>
+												<mi>𝐹</mi>
+												<mi>𝜂</mi>
+												<mo>†</mo>
+											</msubsup>
+											<mo>,</mo>
+											<msubsup>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+												<mo>†</mo>
+											</msubsup>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝐹</mi>
+												<mi>𝜂</mi>
+											</msub>
+											<mo>,</mo>
+											<msubsup>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+												<mo>†</mo>
+											</msubsup>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝛿</mi>
+											<mrow>
+												<mi>𝜂</mi>
+												<mo>,</mo>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</mrow>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
 							<math display="block">
 								<mrow>
 									<mrow>
@@ -17957,17 +18057,7 @@
 														<mn>1</mn>
 													</mrow>
 												</mrow>
-												<mrow>
-													<msub>
-														<mi>𝑀</mi>
-														<mo>+</mo>
-													</msub>
-													<mo>+</mo>
-													<msub>
-														<mi>𝑀</mi>
-														<mo>−</mo>
-													</msub>
-												</mrow>
+												<mi>𝑀</mi>
 											</munderover>
 											<msub>
 												<mi>𝑁</mi>
