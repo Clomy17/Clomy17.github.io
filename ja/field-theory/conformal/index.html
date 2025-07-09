@@ -16400,13 +16400,13 @@
 						</p>
 					</section>
 					<section>
-						<h5>密度演算子・粒子数演算子・Klein因子</h5>
+						<h5>粒子数演算子</h5>
 						<p>
-							密度演算子は
+							粒子数演算子は
 							<math display="block">
 								<mrow>
 									<msub>
-										<mi>𝐽</mi>
+										<mi>𝑁</mi>
 										<mi>𝜂</mi>
 									</msub>
 									<mo>&af;</mo>
@@ -16551,7 +16551,7 @@
 								<mrow>
 									<mfrac>
 										<mn>1</mn>
-										<msqrt><mi>𝐿</mi></msqrt>
+										<mi>𝐿</mi>
 									</mfrac>
 									<mo>&it;</mo>
 									<mrow>
@@ -16563,7 +16563,7 @@
 												<mrow>
 													<mfrac>
 														<mn>1</mn>
-														<msqrt><mi>𝐿</mi></msqrt>
+														<mi>𝐿</mi>
 													</mfrac>
 													<mo>&it;</mo>
 													<mi>ℤ</mi>
@@ -16587,7 +16587,7 @@
 											</msup>
 											<mo>&it;</mo>
 											<msub>
-												<mi>𝐽</mi>
+												<mi>𝑁</mi>
 												<mrow>
 													<mi>𝑞</mi>
 													<mo>,</mo>
@@ -16600,7 +16600,7 @@
 							</math>
 							<math display="block">
 								<msub>
-									<mi>𝐽</mi>
+									<mi>𝑁</mi>
 									<mrow>
 										<mi>𝑞</mi>
 										<mo>,</mo>
@@ -16609,66 +16609,59 @@
 								</msub>
 								<mo>≔</mo>
 								<mrow>
-									<mfrac>
-										<mn>1</mn>
-										<msqrt><mi>𝐿</mi></msqrt>
-									</mfrac>
-									<mo>&it;</mo>
-									<mrow>
-										<munder intent=":largeop">
-											<mo>∑</mo>
+									<munder intent=":largeop">
+										<mo>∑</mo>
+										<mrow>
+											<mi>𝑘</mi>
+											<mo>∈</mo>
 											<mrow>
-												<mi>𝑘</mi>
-												<mo>∈</mo>
+												<mfrac>
+													<mn>1</mn>
+													<mi>𝐿</mi>
+												</mfrac>
+												<mo>&it;</mo>
 												<mrow>
-													<mfrac>
-														<mn>1</mn>
-														<mi>𝐿</mi>
-													</mfrac>
-													<mo>&it;</mo>
+													<mo>(</mo>
 													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mi>ℤ</mi>
-															<mo>−</mo>
-															<msub>
-																<mi>𝛿</mi>
-																<mi mathvariant="normal">b</mi>
-															</msub>
-														</mrow>
-														<mo>)</mo>
+														<mi>ℤ</mi>
+														<mo>−</mo>
+														<msub>
+															<mi>𝛿</mi>
+															<mi mathvariant="normal">b</mi>
+														</msub>
 													</mrow>
+													<mo>)</mo>
 												</mrow>
 											</mrow>
-										</munder>
+										</mrow>
+									</munder>
+									<mrow>
+										<mo>:</mo>
 										<mrow>
-											<mo>:</mo>
-											<mrow>
-												<msubsup>
-													<mi>𝑎</mi>
-													<mrow>
-														<mrow>
-															<mi>𝑘</mi>
-															<mo>−</mo>
-															<mi>𝑞</mi>
-														</mrow>
-														<mo>,</mo>
-														<mi>𝜂</mi>
-													</mrow>
-													<mo>†</mo>
-												</msubsup>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝑎</mi>
+											<msubsup>
+												<mi>𝑎</mi>
+												<mrow>
 													<mrow>
 														<mi>𝑘</mi>
-														<mo>,</mo>
-														<mi>𝜂</mi>
+														<mo>−</mo>
+														<mi>𝑞</mi>
 													</mrow>
-												</msub>
-											</mrow>
-											<mo>:</mo>
+													<mo>,</mo>
+													<mi>𝜂</mi>
+												</mrow>
+												<mo>†</mo>
+											</msubsup>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑘</mi>
+													<mo>,</mo>
+													<mi>𝜂</mi>
+												</mrow>
+											</msub>
 										</mrow>
+										<mo>:</mo>
 									</mrow>
 								</mrow>
 							</math>
@@ -16680,7 +16673,7 @@
 											<mo>[</mo>
 											<mrow>
 												<msub>
-													<mi>𝐽</mi>
+													<mi>𝑁</mi>
 													<mrow>
 														<mi>𝑞</mi>
 														<mo>,</mo>
@@ -16689,15 +16682,12 @@
 												</msub>
 												<mo>,</mo>
 												<msub>
-													<mi>𝐽</mi>
+													<mi>𝑁</mi>
 													<mrow>
-														<mrow>
-															<mo>−</mo>
-															<msup>
-																<mi>𝑞</mi>
-																<mo>′</mo>
-															</msup>
-														</mrow>
+														<msup>
+															<mi>𝑞</mi>
+															<mo>′</mo>
+														</msup>
 														<mo>,</mo>
 														<msup>
 															<mi>𝜂</mi>
@@ -16721,11 +16711,6 @@
 													</msup>
 												</mrow>
 											</msub>
-											<mo>&it;</mo>
-											<mfrac>
-												<mn>1</mn>
-												<mi>𝐿</mi>
-											</mfrac>
 											<mo>&it;</mo>
 											<mrow>
 												<munder intent=":largeop">
@@ -16840,11 +16825,6 @@
 												</mrow>
 											</msub>
 											<mo>&it;</mo>
-											<mfrac>
-												<mn>1</mn>
-												<mi>𝐿</mi>
-											</mfrac>
-											<mo>&it;</mo>
 											<mrow>
 												<munder intent=":largeop">
 													<mo>∑</mo>
@@ -16955,11 +16935,6 @@
 										<mtd />
 										<mtd><mo>=</mo></mtd>
 										<mtd>
-											<mfrac>
-												<mn>1</mn>
-												<mi>𝐿</mi>
-											</mfrac>
-											<mo>&it;</mo>
 											<msub>
 												<mi>𝛿</mi>
 												<mrow>
@@ -17037,6 +17012,8 @@
 										<mtd />
 										<mtd><mo>=</mo></mtd>
 										<mtd>
+											<mi>𝐿</mi>
+											<mo>&it;</mo>
 											<mi>𝑞</mi>
 											<mo>&it;</mo>
 											<msub>
@@ -17072,7 +17049,7 @@
 									<mrow>
 										<mrow>
 											<msub>
-												<mi>𝐽</mi>
+												<mi>𝑁</mi>
 												<mi>𝜂</mi>
 											</msub>
 											<mo>&af;</mo>
@@ -17085,7 +17062,7 @@
 										<mo>,</mo>
 										<mrow>
 											<msub>
-												<mi>𝐽</mi>
+												<mi>𝑁</mi>
 												<msup>
 													<mi>𝜂</mi>
 													<mo>′</mo>
@@ -17244,80 +17221,22 @@
 							</math>
 						</p>
 						<p>
-							特に，各<math><mi>𝜂</mi></math>に対する粒子数演算子は
-							<math display="block">
+							<math>
 								<msub>
 									<mi>𝑁</mi>
 									<mi>𝜂</mi>
 								</msub>
 								<mo>≔</mo>
-								<mrow>
-									<munder intent=":largeop">
-										<mo>∑</mo>
-										<mrow>
-											<mi>𝑘</mi>
-											<mo>∈</mo>
-											<mrow>
-												<mfrac>
-													<mn>1</mn>
-													<mi>𝐿</mi>
-												</mfrac>
-												<mo>&it;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>ℤ</mi>
-														<mo>−</mo>
-														<msub>
-															<mi>𝛿</mi>
-															<mi mathvariant="normal">b</mi>
-														</msub>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-									</munder>
+								<msub>
+									<mi>𝑁</mi>
 									<mrow>
-										<mo>:</mo>
-										<mrow>
-											<msubsup>
-												<mi>𝑎</mi>
-												<mrow>
-													<mi>𝑘</mi>
-													<mo>,</mo>
-													<mi>𝜂</mi>
-												</mrow>
-												<mo>†</mo>
-											</msubsup>
-											<mo>&it;</mo>
-											<msub>
-												<mi>𝑎</mi>
-												<mrow>
-													<mi>𝑘</mi>
-													<mo>,</mo>
-													<mi>𝜂</mi>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>:</mo>
+										<mn>0</mn>
+										<mo>,</mo>
+										<mi>𝜂</mi>
 									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<msqrt><mi>𝐿</mi></msqrt>
-									<mo>&it;</mo>
-									<msub>
-										<mi>𝐽</mi>
-										<mrow>
-											<mn>0</mn>
-											<mo>,</mo>
-											<mi>𝜂</mi>
-										</mrow>
-									</msub>
-								</mrow>
+								</msub>
 							</math>
-							となる．
+							とする．
 							<math>
 								<mo>{</mo>
 								<msub>
@@ -17556,14 +17475,20 @@
 								</mrow>
 							</math>
 						</p>
+					</section>
+					<section>
+						<h5>位相演算子</h5>
 						<p>
 							Diracの海状態を仮定したことにより，粒子数差演算子<math><mi>𝑁</mi></math>と共役な位相演算子<math><mi>𝜃</mi></math>が定義できる．
 							<math display="block">
-								<mrow>
-									<mo>|</mo>
-									<mi>𝜃</mi>
-									<mo>⟩</mo>
-								</mrow>
+								<msub>
+									<mrow>
+										<mo>|</mo>
+										<mi>𝜃</mi>
+										<mo>⟩</mo>
+									</mrow>
+									<mn>0</mn>
+								</msub>
 								<mo>≔</mo>
 								<mrow>
 									<munder intent=":largeop">
@@ -17584,46 +17509,29 @@
 										<msup>
 											<mi>𝑒</mi>
 											<mrow>
-												<mn>2</mn>
-												<mo>&it;</mo>
-												<mi>𝜋</mi>
-												<mo>&it;</mo>
-												<mi>𝑖</mi>
-												<mo>&it;</mo>
-												<msub>
+												<mo>−</mo>
+												<mrow>
+													<mn>2</mn>
+													<mo>&it;</mo>
+													<mi>𝜋</mi>
+													<mo>&it;</mo>
+													<mi>𝑖</mi>
+													<mo>&it;</mo>
 													<mi>𝑁</mi>
-													<mi>𝜂</mi>
-												</msub>
-												<mo>&it;</mo>
-												<msub>
+													<mo>⋅</mo>
 													<mi>𝜃</mi>
-													<mi>𝜂</mi>
-												</msub>
+												</mrow>
 											</mrow>
 										</msup>
 										<mo>&it;</mo>
-										<mrow>
-											<munder intent=":largeop">
-												<mo>∑</mo>
-												<mrow>
-													<mrow>
-														<mo>|</mo>
-														<mi>𝑁</mi>
-														<mo>⟩</mo>
-													</mrow>
-													<mo>∈</mo>
-													<msub>
-														<mi>ℋ</mi>
-														<mi>𝑁</mi>
-													</msub>
-												</mrow>
-											</munder>
+										<msub>
 											<mrow>
 												<mo>|</mo>
 												<mi>𝑁</mi>
 												<mo>⟩</mo>
 											</mrow>
-										</mrow>
+											<mn>0</mn>
+										</msub>
 									</mrow>
 								</mrow>
 							</math>
@@ -17674,7 +17582,42 @@
 									</mrow>
 								</mrow>
 							</math>
+							実際これは
+							<math display="block">
+								<mrow>
+									<mn>2</mn>
+									<mo>&it;</mo>
+									<mi>𝜋</mi>
+									<mo>&it;</mo>
+									<mi>𝑖</mi>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msub>
+												<mi>𝑁</mi>
+												<mi>𝜂</mi>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝜃</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</msub>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mn>1</mn>
+							</math>
+							を満たす．
 						</p>
+					</section>
+					<section>
+						<h5>Klein因子</h5>
 						<p>
 							最後にKlein因子と呼ばれるユニタリ演算子を定義する：
 							<math id="Klein因子" display="block">
@@ -17684,29 +17627,14 @@
 								</msub>
 								<mo>≔</mo>
 								<mrow>
-									<munder intent=":largeop">
-										<mo>∑</mo>
+									<munder>
+										<mi>lim</mi>
 										<mrow>
 											<mi>𝑘</mi>
-											<mo>∈</mo>
+											<mo>→</mo>
 											<mrow>
-												<mfrac>
-													<mn>1</mn>
-													<mi>𝐿</mi>
-												</mfrac>
-												<mo>&it;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>ℤ</mi>
-														<mo>−</mo>
-														<msub>
-															<mi>𝛿</mi>
-															<mi mathvariant="normal">b</mi>
-														</msub>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
+												<mo>−</mo>
+												<mi>∞</mi>
 											</mrow>
 										</mrow>
 									</munder>
@@ -17714,57 +17642,1124 @@
 										<mrow>
 											<mo>(</mo>
 											<mrow>
-												<munder intent=":largeop">
-													<mo>∑</mo>
+												<munderover intent=":largeop">
+													<mo>∏</mo>
 													<mrow>
-														<msub>
-															<mi>𝑚</mi>
+														<msup>
 															<mi>𝑘</mi>
-														</msub>
-														<mo>∈</mo>
+															<mo>′</mo>
+														</msup>
+														<mo>=</mo>
 														<mrow>
-															<mo>{</mo>
-															<mrow>
-																<mn>0</mn>
-																<mo>,</mo>
+															<mi>𝑘</mi>
+															<mo>+</mo>
+															<mfrac>
 																<mn>1</mn>
-															</mrow>
-															<mo>}</mo>
+																<mi>𝐿</mi>
+															</mfrac>
 														</mrow>
 													</mrow>
-												</munder>
+													<mi>∞</mi>
+												</munderover>
 												<mrow>
-													<munderover intent=":largeop">
-														<mo>∏</mo>
+													<msub>
+														<mi>𝑎</mi>
 														<mrow>
 															<msup>
 																<mi>𝑘</mi>
 																<mo>′</mo>
 															</msup>
-															<mo>=</mo>
-															<mrow>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<msubsup>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+																<mo>†</mo>
+															</msubsup>
+															<mo>+</mo>
+															<msubsup>
+																<mi>𝑎</mi>
+																<mrow>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>−</mo>
+																		<mfrac>
+																			<mn>1</mn>
+																			<mi>𝐿</mi>
+																		</mfrac>
+																	</mrow>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+																<mo>†</mo>
+															</msubsup>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑎</mi>
+											<mi>𝑘</mi>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<munder>
+										<mi>lim</mi>
+										<mrow>
+											<mi>𝑘</mi>
+											<mo>→</mo>
+											<mi>∞</mi>
+										</mrow>
+									</munder>
+									<mrow>
+										<msub>
+											<mi>𝑎</mi>
+											<mi>𝑘</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<munderover intent=":largeop">
+													<mo>∏</mo>
+													<mrow>
+														<msup>
+															<mi>𝑘</mi>
+															<mo>′</mo>
+														</msup>
+														<mo>=</mo>
+														<mrow>
+															<mo>−</mo>
+															<mi>∞</mi>
+														</mrow>
+													</mrow>
+													<mrow>
+														<mi>𝑘</mi>
+														<mo>−</mo>
+														<mfrac>
+															<mn>1</mn>
+															<mi>𝐿</mi>
+														</mfrac>
+													</mrow>
+												</munderover>
+												<mrow>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<msubsup>
+																<mi>𝑎</mi>
+																<mrow>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>+</mo>
+																		<mfrac>
+																			<mn>1</mn>
+																			<mi>𝐿</mi>
+																		</mfrac>
+																	</mrow>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+																<mo>†</mo>
+															</msubsup>
+															<mo>+</mo>
+															<msubsup>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+																<mo>†</mo>
+															</msubsup>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi>
+														<mrow>
+															<msup>
 																<mi>𝑘</mi>
-																<mo>+</mo>
-																<mfrac>
-																	<mn>1</mn>
-																	<mi>𝐿</mi>
-																</mfrac>
+																<mo>′</mo>
+															</msup>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							ユニタリ性は
+							<math display="block">
+								<mtable intent=":lines">
+									<mtr>
+										<mtd>
+											<msub>
+												<mi>𝐹</mi>
+												<mi>𝜂</mi>
+											</msub>
+											<mo>&it;</mo>
+											<msubsup>
+												<mi>𝐹</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+												<mo>†</mo>
+											</msubsup>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<msub>
+												<mi>𝛿</mi>
+												<mrow>
+													<mi>𝜂</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝜂</mi>
+														<mo>′</mo>
+													</msup>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<mrow>
+												<munder>
+													<mi>lim</mi>
+													<mrow>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>,</mo>
+															<mi>𝑙</mi>
+														</mrow>
+														<mo>→</mo>
+														<mrow>
+															<mo>−</mo>
+															<mi>∞</mi>
+														</mrow>
+													</mrow>
+												</munder>
+												<mrow>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<munderover intent=":largeop">
+																<mo>∏</mo>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>+</mo>
+																		<mfrac>
+																			<mn>1</mn>
+																			<mi>𝐿</mi>
+																		</mfrac>
+																	</mrow>
+																</mrow>
+																<mi>∞</mi>
+															</munderover>
+															<mrow>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																		<mo>+</mo>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>−</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
 															</mrow>
 														</mrow>
-														<mi>∞</mi>
-													</munderover>
-													<msup>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi>
 														<mrow>
-															<mo>(</mo>
+															<mi>𝑘</mi>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+													<mo>&it;</mo>
+													<msubsup>
+														<mi>𝑎</mi>
+														<mrow>
+															<mi>𝑙</mi>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+														<mo>†</mo>
+													</msubsup>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<munderover intent=":largeop">
+																<msup>
+																	<mo>∏</mo>
+																	<mi mathvariant="normal">T</mi>
+																</msup>
+																<mrow>
+																	<msup>
+																		<mi>𝑙</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑙</mi>
+																		<mo>+</mo>
+																		<mfrac>
+																			<mn>1</mn>
+																			<mi>𝐿</mi>
+																		</mfrac>
+																	</mrow>
+																</mrow>
+																<mi>∞</mi>
+															</munderover>
 															<mrow>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<msub>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<msup>
+																					<mi>𝑙</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																		</msub>
+																		<mo>+</mo>
+																		<msub>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<mrow>
+																					<msup>
+																						<mi>𝑙</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>−</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																		</msub>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&it;</mo>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑙</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+															</mrow>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd />
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<msub>
+												<mi>𝛿</mi>
+												<mrow>
+													<mi>𝜂</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝜂</mi>
+														<mo>′</mo>
+													</msup>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<mrow>
+												<munder>
+													<mi>lim</mi>
+													<mrow>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>,</mo>
+															<mi>𝑙</mi>
+														</mrow>
+														<mo>→</mo>
+														<mrow>
+															<mo>−</mo>
+															<mi>∞</mi>
+														</mrow>
+													</mrow>
+												</munder>
+												<mrow>
+													<mo>{</mo>
+													<mtable intent=":piecewise">
+														<mtr>
+															<mtd>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mi>𝑙</mi>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<munderover intent=":largeop">
+																			<msup>
+																				<mo>∏</mo>
+																				<mi mathvariant="normal">T</mi>
+																			</msup>
+																			<mrow>
+																				<msup>
+																					<mi>𝑙</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>=</mo>
+																				<mrow>
+																					<mi>𝑙</mi>
+																					<mo>+</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																			</mrow>
+																			<mrow>
+																				<mrow>
+																					<mi>𝑘</mi>
+																					<mo>−</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																			</mrow>
+																		</munderover>
+																		<mrow>
+																			<mrow>
+																				<mo>(</mo>
+																				<mrow>
+																					<msub>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<msup>
+																								<mi>𝑙</mi>
+																								<mo>′</mo>
+																							</msup>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																					</msub>
+																					<mo>+</mo>
+																					<msub>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<mrow>
+																								<msup>
+																									<mi>𝑙</mi>
+																									<mo>′</mo>
+																								</msup>
+																								<mo>−</mo>
+																								<mfrac>
+																									<mn>1</mn>
+																									<mi>𝐿</mi>
+																								</mfrac>
+																							</mrow>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																					</msub>
+																				</mrow>
+																				<mo>)</mo>
+																			</mrow>
+																			<mo>&it;</mo>
+																			<msubsup>
+																				<mi>𝑎</mi>
+																				<mrow>
+																					<msup>
+																						<mi>𝑙</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>,</mo>
+																					<mi>𝜂</mi>
+																				</mrow>
+																				<mo>†</mo>
+																			</msubsup>
+																		</mrow>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mrow>
+																			<mi>𝑘</mi>
+																			<mo>−</mo>
+																			<mfrac>
+																				<mn>1</mn>
+																				<mi>𝐿</mi>
+																			</mfrac>
+																		</mrow>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<munderover intent=":largeop">
+																			<mo>∏</mo>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>=</mo>
+																				<mrow>
+																					<mi>𝑘</mi>
+																					<mo>+</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																			</mrow>
+																			<mi>∞</mi>
+																		</munderover>
+																		<mrow>
+																			<msub>
+																				<mi>𝑎</mi>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>,</mo>
+																					<mi>𝜂</mi>
+																				</mrow>
+																			</msub>
+																			<mo>&it;</mo>
+																			<mrow>
+																				<mo>(</mo>
+																				<mrow>
+																					<msubsup>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<msup>
+																								<mi>𝑘</mi>
+																								<mo>′</mo>
+																							</msup>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																						<mo>†</mo>
+																					</msubsup>
+																					<mo>+</mo>
+																					<msubsup>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<mrow>
+																								<msup>
+																									<mi>𝑘</mi>
+																									<mo>′</mo>
+																								</msup>
+																								<mo>−</mo>
+																								<mfrac>
+																									<mn>1</mn>
+																									<mi>𝐿</mi>
+																								</mfrac>
+																							</mrow>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																						<mo>†</mo>
+																					</msubsup>
+																				</mrow>
+																				<mo>)</mo>
+																			</mrow>
+																		</mrow>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<munderover intent=":largeop">
+																			<msup>
+																				<mo>∏</mo>
+																				<mi mathvariant="normal">T</mi>
+																			</msup>
+																			<mrow>
+																				<msup>
+																					<mi>𝑙</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>=</mo>
+																				<mrow>
+																					<mi>𝑘</mi>
+																					<mo>+</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																			</mrow>
+																			<mi>∞</mi>
+																		</munderover>
+																		<mrow>
+																			<mrow>
+																				<mo>(</mo>
+																				<mrow>
+																					<msub>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<msup>
+																								<mi>𝑙</mi>
+																								<mo>′</mo>
+																							</msup>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																					</msub>
+																					<mo>+</mo>
+																					<msub>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<mrow>
+																								<msup>
+																									<mi>𝑙</mi>
+																									<mo>′</mo>
+																								</msup>
+																								<mo>−</mo>
+																								<mfrac>
+																									<mn>1</mn>
+																									<mi>𝐿</mi>
+																								</mfrac>
+																							</mrow>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																					</msub>
+																				</mrow>
+																				<mo>)</mo>
+																			</mrow>
+																			<mo>&it;</mo>
+																			<msubsup>
+																				<mi>𝑎</mi>
+																				<mrow>
+																					<msup>
+																						<mi>𝑙</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>,</mo>
+																					<mi>𝜂</mi>
+																				</mrow>
+																				<mo>†</mo>
+																			</msubsup>
+																		</mrow>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+															</mtd>
+															<mtd>
+																<mo>(</mo>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>&gt;</mo>
+																	<mi>𝑙</mi>
+																</mrow>
+																<mo>)</mo>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<munderover intent=":largeop">
+																			<mo>∏</mo>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>=</mo>
+																				<mrow>
+																					<mi>𝑘</mi>
+																					<mo>+</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																			</mrow>
+																			<mi>∞</mi>
+																		</munderover>
+																		<mrow>
+																			<msub>
+																				<mi>𝑎</mi>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>,</mo>
+																					<mi>𝜂</mi>
+																				</mrow>
+																			</msub>
+																			<mo>&it;</mo>
+																			<mrow>
+																				<mo>(</mo>
+																				<mrow>
+																					<msubsup>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<msup>
+																								<mi>𝑘</mi>
+																								<mo>′</mo>
+																							</msup>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																						<mo>†</mo>
+																					</msubsup>
+																					<mo>+</mo>
+																					<msubsup>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<mrow>
+																								<msup>
+																									<mi>𝑘</mi>
+																									<mo>′</mo>
+																								</msup>
+																								<mo>−</mo>
+																								<mfrac>
+																									<mn>1</mn>
+																									<mi>𝐿</mi>
+																								</mfrac>
+																							</mrow>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																						<mo>†</mo>
+																					</msubsup>
+																				</mrow>
+																				<mo>)</mo>
+																			</mrow>
+																		</mrow>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+																<mo>&it;</mo>
+																<mrow>
+																	<munderover intent=":largeop">
+																		<msup>
+																			<mo>∏</mo>
+																			<mi mathvariant="normal">T</mi>
+																		</msup>
+																		<mrow>
+																			<msup>
+																				<mi>𝑙</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>=</mo>
+																			<mrow>
+																				<mi>𝑘</mi>
+																				<mo>+</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																		</mrow>
+																		<mi>∞</mi>
+																	</munderover>
+																	<mrow>
+																		<mrow>
+																			<mo>(</mo>
+																			<mrow>
+																				<msub>
+																					<mi>𝑎</mi>
+																					<mrow>
+																						<msup>
+																							<mi>𝑙</mi>
+																							<mo>′</mo>
+																						</msup>
+																						<mo>,</mo>
+																						<mi>𝜂</mi>
+																					</mrow>
+																				</msub>
+																				<mo>+</mo>
+																				<msub>
+																					<mi>𝑎</mi>
+																					<mrow>
+																						<mrow>
+																							<msup>
+																								<mi>𝑙</mi>
+																								<mo>′</mo>
+																							</msup>
+																							<mo>−</mo>
+																							<mfrac>
+																								<mn>1</mn>
+																								<mi>𝐿</mi>
+																							</mfrac>
+																						</mrow>
+																						<mo>,</mo>
+																						<mi>𝜂</mi>
+																					</mrow>
+																				</msub>
+																			</mrow>
+																			<mo>)</mo>
+																		</mrow>
+																		<mo>&it;</mo>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<msup>
+																					<mi>𝑙</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																	</mrow>
+																</mrow>
+															</mtd>
+															<mtd>
+																<mo>(</mo>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>=</mo>
+																	<mi>𝑙</mi>
+																</mrow>
+																<mo>)</mo>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<munderover intent=":largeop">
+																			<mo>∏</mo>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>=</mo>
+																				<mrow>
+																					<mi>𝑙</mi>
+																					<mo>+</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																			</mrow>
+																			<mi>∞</mi>
+																		</munderover>
+																		<mrow>
+																			<msub>
+																				<mi>𝑎</mi>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>,</mo>
+																					<mi>𝜂</mi>
+																				</mrow>
+																			</msub>
+																			<mo>&it;</mo>
+																			<mrow>
+																				<mo>(</mo>
+																				<mrow>
+																					<msubsup>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<msup>
+																								<mi>𝑘</mi>
+																								<mo>′</mo>
+																							</msup>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																						<mo>†</mo>
+																					</msubsup>
+																					<mo>+</mo>
+																					<msubsup>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<mrow>
+																								<msup>
+																									<mi>𝑘</mi>
+																									<mo>′</mo>
+																								</msup>
+																								<mo>−</mo>
+																								<mfrac>
+																									<mn>1</mn>
+																									<mi>𝐿</mi>
+																								</mfrac>
+																							</mrow>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																						<mo>†</mo>
+																					</msubsup>
+																				</mrow>
+																				<mo>)</mo>
+																			</mrow>
+																		</mrow>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mi>𝑙</mi>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mi>𝑙</mi>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<munderover intent=":largeop">
+																			<msup>
+																				<mo>∏</mo>
+																				<mi mathvariant="normal">T</mi>
+																			</msup>
+																			<mrow>
+																				<msup>
+																					<mi>𝑙</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>=</mo>
+																				<mrow>
+																					<mi>𝑙</mi>
+																					<mo>+</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																			</mrow>
+																			<mi>∞</mi>
+																		</munderover>
+																		<mrow>
+																			<mrow>
+																				<mo>(</mo>
+																				<mrow>
+																					<msub>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<msup>
+																								<mi>𝑙</mi>
+																								<mo>′</mo>
+																							</msup>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																					</msub>
+																					<mo>+</mo>
+																					<msub>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<mrow>
+																								<msup>
+																									<mi>𝑙</mi>
+																									<mo>′</mo>
+																								</msup>
+																								<mo>−</mo>
+																								<mfrac>
+																									<mn>1</mn>
+																									<mi>𝐿</mi>
+																								</mfrac>
+																							</mrow>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																					</msub>
+																				</mrow>
+																				<mo>)</mo>
+																			</mrow>
+																			<mo>&it;</mo>
+																			<msubsup>
+																				<mi>𝑎</mi>
+																				<mrow>
+																					<msup>
+																						<mi>𝑙</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>,</mo>
+																					<mi>𝜂</mi>
+																				</mrow>
+																				<mo>†</mo>
+																			</msubsup>
+																		</mrow>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&it;</mo>
 																<msubsup>
 																	<mi>𝑎</mi>
 																	<mrow>
 																		<mrow>
-																			<msup>
-																				<mi>𝑘</mi>
-																				<mo>′</mo>
-																			</msup>
+																			<mi>𝑙</mi>
 																			<mo>−</mo>
 																			<mfrac>
 																				<mn>1</mn>
@@ -17777,6 +18772,167 @@
 																	<mo>†</mo>
 																</msubsup>
 																<mo>&it;</mo>
+																<mrow>
+																<mo>(</mo>
+																	<mrow>
+																		<munderover intent=":largeop">
+																			<mo>∏</mo>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>=</mo>
+																				<mrow>
+																					<mi>𝑘</mi>
+																					<mo>+</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																			</mrow>
+																			<mrow>
+																				<mi>𝑙</mi>
+																				<mo>−</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																		</munderover>
+																		<mrow>
+																			<msub>
+																				<mi>𝑎</mi>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>,</mo>
+																					<mi>𝜂</mi>
+																				</mrow>
+																			</msub>
+																			<mo>&it;</mo>
+																			<mrow>
+																				<mo>(</mo>
+																				<mrow>
+																					<msubsup>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<msup>
+																								<mi>𝑘</mi>
+																								<mo>′</mo>
+																							</msup>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																						<mo>†</mo>
+																					</msubsup>
+																					<mo>+</mo>
+																					<msubsup>
+																						<mi>𝑎</mi>
+																						<mrow>
+																							<mrow>
+																								<msup>
+																									<mi>𝑘</mi>
+																									<mo>′</mo>
+																								</msup>
+																								<mo>−</mo>
+																								<mfrac>
+																									<mn>1</mn>
+																									<mi>𝐿</mi>
+																								</mfrac>
+																							</mrow>
+																							<mo>,</mo>
+																							<mi>𝜂</mi>
+																						</mrow>
+																						<mo>†</mo>
+																					</msubsup>
+																				</mrow>
+																				<mo>)</mo>
+																			</mrow>
+																		</mrow>
+																	</mrow>
+																<mo>)</mo>
+																</mrow>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+															</mtd>
+															<mtd>
+																<mo>(</mo>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>&lt;</mo>
+																	<mi>𝑙</mi>
+																</mrow>
+																<mo>)</mo>
+															</mtd>
+														</mtr>
+													</mtable>
+												</mrow>
+											</mrow>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd />
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<msub>
+												<mi>𝛿</mi>
+												<mrow>
+													<mi>𝜂</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝜂</mi>
+														<mo>′</mo>
+													</msup>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<mrow>
+												<munder>
+													<mi>lim</mi>
+													<mrow>
+														<mi>𝑘</mi>
+														<mo>→</mo>
+														<mrow>
+															<mo>−</mo>
+															<mi>∞</mi>
+														</mrow>
+													</mrow>
+												</munder>
+												<mrow>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<munderover intent=":largeop">
+																<mo>∏</mo>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>+</mo>
+																		<mfrac>
+																			<mn>2</mn>
+																			<mi>𝐿</mi>
+																		</mfrac>
+																	</mrow>
+																</mrow>
+																<mi>∞</mi>
+															</munderover>
+															<mrow>
 																<msub>
 																	<mi>𝑎</mi>
 																	<mrow>
@@ -17788,84 +18944,239 @@
 																		<mi>𝜂</mi>
 																	</mrow>
 																</msub>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																		<mo>+</mo>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>−</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
 															</mrow>
-															<mo>)</mo>
 														</mrow>
-														<msub>
-															<mi>𝑚</mi>
-															<mi>𝑘</mi>
-														</msub>
-													</msup>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi>
+														<mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>+</mo>
+																<mfrac>
+																	<mn>1</mn>
+																	<mi>𝐿</mi>
+																</mfrac>
+															</mrow>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+													<mo>&it;</mo>
+													<msubsup>
+														<mi>𝑎</mi>
+														<mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>+</mo>
+																<mfrac>
+																	<mn>1</mn>
+																	<mi>𝐿</mi>
+																</mfrac>
+															</mrow>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+														<mo>†</mo>
+													</msubsup>
+													<mo>&it;</mo>
+													<mrow>
+														<munderover intent=":largeop">
+															<msup>
+																<mo>∏</mo>
+																<mi mathvariant="normal">T</mi>
+															</msup>
+															<mrow>
+																<msup>
+																	<mi>𝑙</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>=</mo>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>+</mo>
+																	<mfrac>
+																		<mn>2</mn>
+																		<mi>𝐿</mi>
+																	</mfrac>
+																</mrow>
+															</mrow>
+															<mi>∞</mi>
+														</munderover>
+														<mrow>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<msub>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<msup>
+																				<mi>𝑙</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																	</msub>
+																	<mo>+</mo>
+																	<msub>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<mrow>
+																				<msup>
+																					<mi>𝑙</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>−</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																	</msub>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+															<mo>&it;</mo>
+															<msubsup>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑙</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+																<mo>†</mo>
+															</msubsup>
+														</mrow>
+													</mrow>
 												</mrow>
 											</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd />
+										<mtd><mo>=</mo></mtd>
+										<mtd>
 											<msub>
-												<mi>𝑎</mi>
+												<mi>𝛿</mi>
 												<mrow>
-													<mi>𝑘</mi>
-													<mo>,</mo>
 													<mi>𝜂</mi>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<munderover intent=":largeop">
-												<mo>∏</mo>
-												<mrow>
+													<mo>,</mo>
 													<msup>
-														<mi>𝑘</mi>
+														<mi>𝜂</mi>
 														<mo>′</mo>
 													</msup>
-													<mo>=</mo>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<mrow>
+												<munder>
+													<mi>lim</mi>
 													<mrow>
-														<mo>−</mo>
+														<msup>
+															<mi>𝑘</mi>
+															<mo>′</mo>
+														</msup>
+														<mo>→</mo>
 														<mi>∞</mi>
 													</mrow>
-												</mrow>
+												</munder>
 												<mrow>
-													<mi>𝑘</mi>
-													<mo>−</mo>
-													<mfrac>
-														<mn>1</mn>
-														<mi>𝐿</mi>
-													</mfrac>
+													<msub>
+														<mi>𝑎</mi>
+														<mrow>
+															<msup>
+																<mi>𝑘</mi>
+																<mo>′</mo>
+															</msup>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+													<mo>&it;</mo>
+													<msubsup>
+														<mi>𝑎</mi>
+														<mrow>
+															<msup>
+																<mi>𝑘</mi>
+																<mo>′</mo>
+															</msup>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+														<mo>†</mo>
+													</msubsup>
 												</mrow>
-											</munderover>
-											<mrow>
-												<msubsup>
-													<mi>𝑎</mi>
-													<mrow>
-														<msup>
-															<mi>𝑘</mi>
-															<mo>′</mo>
-														</msup>
-														<mo>,</mo>
-														<mi>𝜂</mi>
-													</mrow>
-													<mo>†</mo>
-												</msubsup>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝑎</mi>
-													<mrow>
-														<msup>
-															<mi>𝑘</mi>
-															<mo>′</mo>
-														</msup>
-														<mo>,</mo>
-														<mi>𝜂</mi>
-													</mrow>
-												</msub>
 											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd />
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<msub>
+												<mi>𝛿</mi>
+												<mrow>
+													<mi>𝜂</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝜂</mi>
+														<mo>′</mo>
+													</msup>
+												</mrow>
+											</msub>
+										</mtd>
+									</mtr>
+								</mtable>
 							</math>
-							これらは以下を満たす：
+							などと確認できる．他に以下を満たす：
 							<math display="block">
 								<mrow>
 									<mrow>
@@ -17888,6 +19199,32 @@
 									</mrow>
 									<mo>=</mo>
 									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝛿</mi>
+											<mrow>
+												<mi>𝜂</mi>
+												<mo>,</mo>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</mrow>
+										</msub>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>𝐹</mi>
+												<mi>𝜂</mi>
+											</msub>
+											<mn>2</mn>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
 										<mo>{</mo>
 										<mrow>
 											<msubsup>
@@ -17908,7 +19245,30 @@
 										<mo>}</mo>
 									</mrow>
 									<mo>=</mo>
-									<mn>0</mn>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝛿</mi>
+											<mrow>
+												<mi>𝜂</mi>
+												<mo>,</mo>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</mrow>
+										</msub>
+										<mo>&it;</mo>
+										<msup>
+											<msubsup>
+												<mi>𝐹</mi>
+												<mi>𝜂</mi>
+												<mo>†</mo>
+											</msubsup>
+											<mn>2</mn>
+										</msup>
+									</mrow>
 								</mrow>
 								<mo>,</mo>
 								<mrow>
@@ -18009,7 +19369,7 @@
 								<mrow>
 									<mo>(</mo>
 									<mrow>
-										<mi>𝑞</mi>
+										<mi>𝑙</mi>
 										<mo>∈</mo>
 										<mrow>
 											<mfrac>
@@ -18152,6 +19512,47 @@
 								</mrow>
 								<mo>=</mo>
 								<mrow>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mrow>
+												<mfrac>
+													<mn>1</mn>
+													<mi>𝐿</mi>
+												</mfrac>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝑁</mi>
+															<mi>𝜂</mi>
+														</msub>
+														<mo>−</mo>
+														<msub>
+															<mi>𝛿</mi>
+															<mi mathvariant="normal">b</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜂</mi>
+										</mrow>
+									</msub>
+									<mo>&af;</mo>
+									<msub>
+										<mrow>
+											<mo>|</mo>
+											<mi>𝑁</mi>
+											<mo>⟩</mo>
+										</mrow>
+										<mn>0</mn>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
 									<msup>
 										<mrow>
 											<mo>(</mo>
@@ -18205,7 +19606,1346 @@
 									</msub>
 								</mrow>
 							</math>
-							一般の作用については，ボゾン化後の方がわかりやすいので後に回す．
+							<math display="block">
+								<mrow>
+									<msubsup>
+										<mi>𝐹</mi>
+										<mi>𝜂</mi>
+										<mo>†</mo>
+									</msubsup>
+									<mo>&af;</mo>
+									<msub>
+										<mrow>
+											<mo>|</mo>
+											<mi>𝑁</mi>
+											<mo>⟩</mo>
+										</mrow>
+										<mn>0</mn>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msubsup>
+										<mi>𝑎</mi>
+										<mrow>
+											<mrow>
+												<mfrac>
+													<mn>1</mn>
+													<mi>𝐿</mi>
+												</mfrac>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝑁</mi>
+															<mi>𝜂</mi>
+														</msub>
+														<mo>+</mo>
+														<mn>1</mn>
+														<mo>−</mo>
+														<msub>
+															<mi>𝛿</mi>
+															<mi mathvariant="normal">b</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜂</mi>
+										</mrow>
+										<mo>†</mo>
+									</msubsup>
+									<mo>&af;</mo>
+									<msub>
+										<mrow>
+											<mo>|</mo>
+											<mi>𝑁</mi>
+											<mo>⟩</mo>
+										</mrow>
+										<mn>0</mn>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<msup>
+														<mi>𝜂</mi>
+														<mo>′</mo>
+													</msup>
+													<mo>=</mo>
+													<mrow>
+														<mi>𝜂</mi>
+														<mo>+</mo>
+														<mn>1</mn>
+													</mrow>
+												</mrow>
+												<mi>𝑀</mi>
+											</munderover>
+											<msub>
+												<mi>𝑁</mi>
+												<msup>
+													<mi>𝜂</mi>
+													<mo>′</mo>
+												</msup>
+											</msub>
+										</mrow>
+									</msup>
+									<mo>&af;</mo>
+									<msub>
+										<mrow>
+											<mo>|</mo>
+											<mrow>
+												<mi>𝑁</mi>
+												<mo>+</mo>
+												<msup>
+													<mi>𝑒</mi>
+													<mi>𝜂</mi>
+												</msup>
+											</mrow>
+											<mo>⟩</mo>
+										</mrow>
+										<mn>0</mn>
+									</msub>
+								</mrow>
+							</math>
+							計算の詳細：
+							<math display="block">
+								<mrow>
+									<msubsup>
+										<mi>𝑎</mi>
+										<mrow>
+											<mrow>
+												<mi>𝑘</mi>
+												<mo>−</mo>
+												<mi>𝑞</mi>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜂</mi>
+										</mrow>
+										<mo>†</mo>
+									</msubsup>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝑘</mi>
+											<mo>,</mo>
+											<mi>𝜂</mi>
+										</mrow>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝐹</mi>
+										<mi>𝜂</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo>
+									<mtable intent=":piecewise">
+										<mtr>
+											<mtd>
+												<mo>−</mo>
+												<mrow>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<munderover intent=":largeop">
+																<mo>∏</mo>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>+</mo>
+																		<mfrac>
+																			<mn>2</mn>
+																			<mi>𝐿</mi>
+																		</mfrac>
+																	</mrow>
+																</mrow>
+																<mi>∞</mi>
+															</munderover>
+															<mrow>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																		<mo>+</mo>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>−</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+															</mrow>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<munderover intent=":largeop">
+																<mo>∏</mo>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>−</mo>
+																		<mi>𝑞</mi>
+																		<mo>+</mo>
+																		<mfrac>
+																			<mn>1</mn>
+																			<mi>𝐿</mi>
+																		</mfrac>
+																	</mrow>
+																</mrow>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>+</mo>
+																	<mfrac>
+																		<mn>1</mn>
+																		<mi>𝐿</mi>
+																	</mfrac>
+																</mrow>
+															</munderover>
+															<mrow>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																		<mo>+</mo>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>−</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+															</mrow>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<msubsup>
+														<mi>𝑎</mi>
+														<mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>−</mo>
+																<mi>𝑞</mi>
+															</mrow>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+														<mo>†</mo>
+													</msubsup>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi>
+														<mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>−</mo>
+																<mi>𝑞</mi>
+															</mrow>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+													<mo>&it;</mo>
+													<mrow>
+														<munderover intent=":largeop">
+															<mo>∏</mo>
+															<mrow>
+																<msup>
+																	<mi>𝑘</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>=</mo>
+																<mrow>
+																	<mo>−</mo>
+																	<mi>∞</mi>
+																</mrow>
+															</mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>−</mo>
+																<mi>𝑞</mi>
+																<mo>−</mo>
+																<mfrac>
+																	<mn>1</mn>
+																	<mi>𝐿</mi>
+																</mfrac>
+															</mrow>
+														</munderover>
+														<mrow>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>+</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																	<mo>+</mo>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+															<mo>&it;</mo>
+															<msub>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+															</msub>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mtd>
+											<mtd>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑞</mi>
+													<mo>&gt;</mo>
+													<mn>0</mn>
+												</mrow>
+												<mo>)</mo>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<munderover intent=":largeop">
+															<mo>∏</mo>
+															<mrow>
+																<msup>
+																	<mi>𝑘</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>=</mo>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>−</mo>
+																	<mi>𝑞</mi>
+																	<mo>+</mo>
+																	<mfrac>
+																		<mn>1</mn>
+																		<mi>𝐿</mi>
+																	</mfrac>
+																</mrow>
+															</mrow>
+															<mi>∞</mi>
+														</munderover>
+														<mrow>
+															<msub>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+															</msub>
+															<mo>&it;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																	<mo>+</mo>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>−</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>&it;</mo>
+												<msubsup>
+													<mi>𝑎</mi>
+													<mrow>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>−</mo>
+															<mi>𝑞</mi>
+														</mrow>
+														<mo>,</mo>
+														<mi>𝜂</mi>
+													</mrow>
+													<mo>†</mo>
+												</msubsup>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<munderover intent=":largeop">
+															<mo>∏</mo>
+															<mrow>
+																<msup>
+																	<mi>𝑘</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>=</mo>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>+</mo>
+																	<mfrac>
+																		<mn>2</mn>
+																		<mi>𝐿</mi>
+																	</mfrac>
+																</mrow>
+															</mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>−</mo>
+																<mi>𝑞</mi>
+															</mrow>
+														</munderover>
+														<mrow>
+															<msub>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+															</msub>
+															<mo>&it;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																	<mo>+</mo>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>−</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑘</mi>
+														<mo>,</mo>
+														<mi>𝜂</mi>
+													</mrow>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>+</mo>
+															<mfrac>
+																<mn>1</mn>
+																<mi>𝐿</mi>
+															</mfrac>
+														</mrow>
+														<mo>,</mo>
+														<mi>𝜂</mi>
+													</mrow>
+												</msub>
+												<mo>&it;</mo>
+												<mrow>
+													<munderover intent=":largeop">
+														<mo>∏</mo>
+														<mrow>
+															<msup>
+																<mi>𝑘</mi>
+																<mo>′</mo>
+															</msup>
+															<mo>=</mo>
+															<mrow>
+																<mo>−</mo>
+																<mi>∞</mi>
+															</mrow>
+														</mrow>
+														<mi>𝑘</mi>
+													</munderover>
+													<mrow>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>+</mo>
+																			<mfrac>
+																				<mn>1</mn>
+																				<mi>𝐿</mi>
+																			</mfrac>
+																		</mrow>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+																<mo>+</mo>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝑎</mi>
+															<mrow>
+																<msup>
+																	<mi>𝑘</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>,</mo>
+																<mi>𝜂</mi>
+															</mrow>
+														</msub>
+													</mrow>
+												</mrow>
+											</mtd>
+											<mtd>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑞</mi>
+													<mo>&lt;</mo>
+													<mn>0</mn>
+												</mrow>
+												<mo>)</mo>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</math>
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝐹</mi>
+										<mi>𝜂</mi>
+									</msub>
+									<mo>&it;</mo>
+									<msubsup>
+										<mi>𝑎</mi>
+										<mrow>
+											<mrow>
+												<mi>𝑘</mi>
+												<mo>−</mo>
+												<mi>𝑞</mi>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜂</mi>
+										</mrow>
+										<mo>†</mo>
+									</msubsup>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝑘</mi>
+											<mo>,</mo>
+											<mi>𝜂</mi>
+										</mrow>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo>
+									<mtable intent=":piecewise">
+										<mtr>
+											<mtd>
+												<mo>−</mo>
+												<mrow>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<munderover intent=":largeop">
+																<mo>∏</mo>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>=</mo>
+																	<mi>𝑘</mi>
+																</mrow>
+																<mi>∞</mi>
+															</munderover>
+															<mrow>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																		<mo>+</mo>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>−</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+															</mrow>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<munderover intent=":largeop">
+																<mo>∏</mo>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>−</mo>
+																		<mi>𝑞</mi>
+																	</mrow>
+																</mrow>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>−</mo>
+																	<mfrac>
+																		<mn>1</mn>
+																		<mi>𝐿</mi>
+																	</mfrac>
+																</mrow>
+															</munderover>
+															<mrow>
+																<msub>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																</msub>
+																<mo>&it;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																		<mo>+</mo>
+																		<msubsup>
+																			<mi>𝑎</mi>
+																			<mrow>
+																				<mrow>
+																					<msup>
+																						<mi>𝑘</mi>
+																						<mo>′</mo>
+																					</msup>
+																					<mo>−</mo>
+																					<mfrac>
+																						<mn>1</mn>
+																						<mi>𝐿</mi>
+																					</mfrac>
+																				</mrow>
+																				<mo>,</mo>
+																				<mi>𝜂</mi>
+																			</mrow>
+																			<mo>†</mo>
+																		</msubsup>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+															</mrow>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<msubsup>
+														<mi>𝑎</mi>
+														<mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>−</mo>
+																<mi>𝑞</mi>
+															</mrow>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+														<mo>†</mo>
+													</msubsup>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi>
+														<mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>−</mo>
+																<mi>𝑞</mi>
+																<mo>−</mo>
+																<mfrac>
+																	<mn>1</mn>
+																	<mi>𝐿</mi>
+																</mfrac>
+															</mrow>
+															<mo>,</mo>
+															<mi>𝜂</mi>
+														</mrow>
+													</msub>
+													<mo>&it;</mo>
+													<mrow>
+														<munderover intent=":largeop">
+															<mo>∏</mo>
+															<mrow>
+																<msup>
+																	<mi>𝑘</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>=</mo>
+																<mrow>
+																	<mo>−</mo>
+																	<mi>∞</mi>
+																</mrow>
+															</mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>−</mo>
+																<mi>𝑞</mi>
+																<mo>−</mo>
+																<mfrac>
+																	<mn>2</mn>
+																	<mi>𝐿</mi>
+																</mfrac>
+															</mrow>
+														</munderover>
+														<mrow>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>+</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																	<mo>+</mo>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+															<mo>&it;</mo>
+															<msub>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+															</msub>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mtd>
+											<mtd>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑞</mi>
+													<mo>&gt;</mo>
+													<mn>0</mn>
+												</mrow>
+												<mo>)</mo>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<munderover intent=":largeop">
+															<mo>∏</mo>
+															<mrow>
+																<msup>
+																	<mi>𝑘</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>=</mo>
+																<mrow>
+																	<mi>𝑘</mi>
+																	<mo>−</mo>
+																	<mi>𝑞</mi>
+																</mrow>
+															</mrow>
+															<mi>∞</mi>
+														</munderover>
+														<mrow>
+															<msub>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+															</msub>
+															<mo>&it;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																	<mo>+</mo>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>−</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>&it;</mo>
+												<msubsup>
+													<mi>𝑎</mi>
+													<mrow>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>−</mo>
+															<mi>𝑞</mi>
+														</mrow>
+														<mo>,</mo>
+														<mi>𝜂</mi>
+													</mrow>
+													<mo>†</mo>
+												</msubsup>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<munderover intent=":largeop">
+															<mo>∏</mo>
+															<mrow>
+																<msup>
+																	<mi>𝑘</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>=</mo>
+																<mi>𝑘</mi>
+															</mrow>
+															<mrow>
+																<mi>𝑘</mi>
+																<mo>−</mo>
+																<mi>𝑞</mi>
+																<mo>−</mo>
+																<mfrac>
+																	<mn>1</mn>
+																	<mi>𝐿</mi>
+																</mfrac>
+															</mrow>
+														</munderover>
+														<mrow>
+															<msub>
+																<mi>𝑎</mi>
+																<mrow>
+																	<msup>
+																		<mi>𝑘</mi>
+																		<mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝜂</mi>
+																</mrow>
+															</msub>
+															<mo>&it;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																	<mo>+</mo>
+																	<msubsup>
+																		<mi>𝑎</mi>
+																		<mrow>
+																			<mrow>
+																				<msup>
+																					<mi>𝑘</mi>
+																					<mo>′</mo>
+																				</msup>
+																				<mo>−</mo>
+																				<mfrac>
+																					<mn>1</mn>
+																					<mi>𝐿</mi>
+																				</mfrac>
+																			</mrow>
+																			<mo>,</mo>
+																			<mi>𝜂</mi>
+																		</mrow>
+																		<mo>†</mo>
+																	</msubsup>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑘</mi>
+														<mo>,</mo>
+														<mi>𝜂</mi>
+													</mrow>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>−</mo>
+															<mfrac>
+																<mn>1</mn>
+																<mi>𝐿</mi>
+															</mfrac>
+														</mrow>
+														<mo>,</mo>
+														<mi>𝜂</mi>
+													</mrow>
+												</msub>
+												<mo>&it;</mo>
+												<mrow>
+													<munderover intent=":largeop">
+														<mo>∏</mo>
+														<mrow>
+															<msup>
+																<mi>𝑘</mi>
+																<mo>′</mo>
+															</msup>
+															<mo>=</mo>
+															<mrow>
+																<mo>−</mo>
+																<mi>∞</mi>
+															</mrow>
+														</mrow>
+														<mrow>
+															<mi>𝑘</mi>
+															<mo>−</mo>
+															<mfrac>
+																<mn>2</mn>
+																<mi>𝐿</mi>
+															</mfrac>
+														</mrow>
+													</munderover>
+													<mrow>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<mrow>
+																			<msup>
+																				<mi>𝑘</mi>
+																				<mo>′</mo>
+																			</msup>
+																			<mo>+</mo>
+																			<mfrac>
+																				<mn>1</mn>
+																				<mi>𝐿</mi>
+																			</mfrac>
+																		</mrow>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+																<mo>+</mo>
+																<msubsup>
+																	<mi>𝑎</mi>
+																	<mrow>
+																		<msup>
+																			<mi>𝑘</mi>
+																			<mo>′</mo>
+																		</msup>
+																		<mo>,</mo>
+																		<mi>𝜂</mi>
+																	</mrow>
+																	<mo>†</mo>
+																</msubsup>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝑎</mi>
+															<mrow>
+																<msup>
+																	<mi>𝑘</mi>
+																	<mo>′</mo>
+																</msup>
+																<mo>,</mo>
+																<mi>𝜂</mi>
+															</mrow>
+														</msub>
+													</mrow>
+												</mrow>
+											</mtd>
+											<mtd>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑞</mi>
+													<mo>&lt;</mo>
+													<mn>0</mn>
+												</mrow>
+												<mo>)</mo>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</math>
 						</p>
 					</section>
 				</section>
@@ -18227,11 +20967,11 @@
 								<mrow>
 									<mfrac>
 										<mn>1</mn>
-										<msqrt><mi>𝑞</mi></msqrt>
+										<msqrt><mi>𝐿</mi><mo>&it;</mo><mi>𝑞</mi></msqrt>
 									</mfrac>
 									<mo>&it;</mo>
 									<msub>
-										<mi>𝐽</mi>
+										<mi>𝑁</mi>
 										<mrow>
 											<mi>𝑞</mi>
 											<mo>,</mo>
@@ -18319,11 +21059,11 @@
 								<mrow>
 									<mfrac>
 										<mn>1</mn>
-										<msqrt><mi>𝑞</mi></msqrt>
+										<msqrt><mi>𝐿</mi><mo>&it;</mo><mi>𝑞</mi></msqrt>
 									</mfrac>
 									<mo>&it;</mo>
 									<msub>
-										<mi>𝐽</mi>
+										<mi>𝑁</mi>
 										<mrow>
 											<mrow>
 												<mo>−</mo>
@@ -18752,6 +21492,147 @@
 					</section>
 					<section>
 						<h5>ボゾン場によるフェルミオン場との表現</h5>
+						<p>
+							ボゾン場は以下のように定義される：
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝜑</mi>
+										<mi>𝜂</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑞</mi>
+												<mo>∈</mo>
+												<mrow>
+													<mfrac>
+														<mn>1</mn>
+														<mi>𝐿</mi>
+													</mfrac>
+													<mo>&it;</mo>
+													<mi>ℤ</mi>
+												</mrow>
+											</mrow>
+										</munder>
+										<mrow>
+											<mfrac>
+												<mn>1</mn>
+												<mrow>
+													<mn>2</mn>
+													<mo>&it;</mo>
+													<mi>𝜋</mi>
+													<mo>&it;</mo>
+													<mi>𝑖</mi>
+													<mo>&it;</mo>
+													<mi>𝑞</mi>
+													<mo>&it;</mo>
+													<mi>𝐿</mi>
+												</mrow>
+											</mfrac>
+											<mo>&it;</mo>
+											<msup>
+												<mi>𝑒</mi>
+												<mrow>
+													<mn>2</mn>
+													<mo>&it;</mo>
+													<mi>𝜋</mi>
+													<mo>&it;</mo>
+													<mi>𝑖</mi>
+													<mo>&it;</mo>
+													<mi>𝑞</mi>
+													<mo>&it;</mo>
+													<mi>𝑥</mi>
+												</mrow>
+											</msup>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑁</mi>
+												<mrow>
+													<mi>𝑞</mi>
+													<mo>,</mo>
+													<mi>𝜂</mi>
+												</mrow>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mfrac>
+											<mi>𝑥</mi>
+											<mi>𝐿</mi>
+										</mfrac>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑁</mi>
+													<mi>𝜂</mi>
+												</msub>
+												<mo>+</mo>
+												<mfrac>
+													<mn>1</mn>
+													<mn>2</mn>
+												</mfrac>
+												<mo>−</mo>
+												<msub>
+													<mi>𝛿</mi>
+													<mi mathvariant="normal">b</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<msub>
+										<mi>𝜃</mi>
+										<mi>𝜂</mi>
+									</msub>
+								</mrow>
+							</math>
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝑁</mi>
+										<mi>𝜂</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mo>∂</mo>
+										<mo>&af;</mo>
+										<msub>
+											<mi>𝜑</mi>
+											<mi>𝜂</mi>
+										</msub>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</p>
 					</section>
 				</section>
 			</section>
