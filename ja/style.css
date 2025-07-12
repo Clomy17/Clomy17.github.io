@@ -67,6 +67,7 @@ h4 {
 }
 
 h5 {
+	font-size: 16px;
 	margin: 0 0.5rem;
 	counter-reset: h6;
 }
