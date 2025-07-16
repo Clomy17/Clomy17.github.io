@@ -15,7 +15,7 @@
 			<h2>定義</h2>
 			<article id="Lie代数" class="ax">
 				<h3>Lie代数</h3>
-				<p><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
+				<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
 				<p><math><mi>𝕂</mi></math>上の<dfn class="ax">Lie代数</dfn><span lang="en">(Lie algebra)</span>とは，以下のデータからなる．</p>
 				<ul>
 					<li><math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝔤</mi></math></li>
@@ -157,7 +157,7 @@
 			<article id="Lie括弧の反交換律" class="thm">
 				<h3>Lie括弧の反交換律</h3>
 				<ul>
-					<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+					<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 					<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 				</ul>
 				<p>
@@ -298,7 +298,7 @@
 			<article id="準同型" class="dfn">
 				<h3>準同型</h3>
 				<ul>
-					<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+					<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 					<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi><mo>,</mo><mi>𝔥</mi></math></li>
 				</ul>
 				<p>を与える．</p>
@@ -392,14 +392,34 @@
 			<article id="Lie代数の圏" class="dfn">
 				<h3>Lie代数の圏</h3>
 				<p>
-					<a href="../#対象">対象</a>を全ての<a href="#Lie代数">Lie代数</a>の集まり，<a href="#射">射</a>を全ての<a href="#準同型">準同型</a>とする<a href="#圏">圏</a>を<dfn>Lie代数の圏</dfn>と呼び，（多分）
+					<a href="../#対象">対象</a>を全ての<a href="#Lie代数">Lie代数</a>の集まり，<a href="#射">射</a>を全ての<a href="#準同型">準同型</a>とする<a href="#圏">圏</a>を<dfn>Lie代数の圏</dfn>と呼び，
 					<math>
 						<msub>
-							<mi>𝐋𝐢𝐞</mi>
+							<mi>𝐋𝐢𝐞𝐀𝐥𝐠</mi>
 							<mi>𝕂</mi>
 						</msub>
 					</math>
 					と表す．
+				</p>
+			</article>
+			<article id="自明Lie代数" class="dfn">
+				<h3>自明Lie代数</h3>
+				<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
+				<p>零線型空間<math><mo>{</mo><mn>0</mn><mo>}</mo></math>は，<a href="#Lie代数">Lie括弧</a>として唯一
+					<math display="block">
+						<mrow>
+							<mo>[</mo>
+							<mrow>
+								<mn>0</mn>
+								<mo>,</mo>
+								<mn>0</mn>
+							</mrow>
+							<mo>]</mo>
+						</mrow>
+						<mo>=</mo>
+						<mn>0</mn>
+					</math>
+					を持ち得る．これを定義とする<a href="#Lie代数">Lie代数</a><math><mo>{</mo><mn>0</mn><mo>}</mo></math>を<dfn>自明なLie代数</dfn><span lang="en">(trivial Lie algebra)</span>や<dfn>零Lie代数</dfn><span lang="en">(zero Lie algebra)</span>と呼ぶ．
 				</p>
 			</article>
 			<section>
@@ -407,7 +427,7 @@
 				<article id="交換子" class="dfn">
 					<h4>交換子</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="../associative/index.html#結合代数">結合代数</a><math><mi>𝐴</mi></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -442,11 +462,11 @@
 					</p>
 				</article>
 				<p>このとき，<a href="../associative/index.html#準同型">結合代数準同型</a>は<a href="#準同型">Lie代数準同型</a>に写るから，<a href="../associative/index.html#結合代数の圏">結合代数の圏</a>から<a href="#Lie代数の圏">Lie代数の圏</a>への<a href="../../../category/index.html#函手">函手</a>をなす．</p>
-				<p>実は，この函手は<a href="../../../category/index.html#随伴">左随伴</a>を持つ．これにより，任意の<a href="#Lie代数">Lie代数</a>に対し，結合代数的な積を定めることができる．</p>
+				<p>特にこの函手は<a href="../../../category/index.html#随伴">左随伴</a>を持つ．これにより任意の<a href="#Lie代数">Lie代数</a>に対し，結合代数的な積を（同型を除いて）一意的に定めることができる：</p>
 				<article id="包絡代数" class="dfn">
 					<h4>包絡代数</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -611,7 +631,7 @@
 				<article id="部分Lie代数" class="dfn">
 					<h4>部分Lie代数</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -646,10 +666,21 @@
 						</math>
 					</p>
 				</article>
+				<article id="生成系" class="dfn">
+					<h4>生成系</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝔤</mi></math>の部分集合<math><mi>𝑋</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>は<math><mi>𝑋</mi></math>を含む<math><mi>𝔤</mi></math>の<a href="#部分Lie代数">部分Lie代数</a>のなかで最小．これを<dfn><math><mi>𝑋</mi></math>で生成される部分Lie代数</dfn>と呼ぶ．</p>
+					<p>特に<math><mi>𝔤</mi></math>に一致するとき，<math><mi>𝑋</mi></math>を<math><mi>𝔤</mi></math>の<dfn>生成系</dfn><span lang="en">(generator)</span>と呼ぶ．</p>
+				</article>
 				<article id="イデアル" class="dfn">
 					<h4>イデアル</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -676,7 +707,7 @@
 				<article id="自明なイデアル" class="dfn">
 					<h4>自明なイデアル</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -698,11 +729,88 @@
 					</p>
 					<p>それ以外を<dfn>非自明</dfn><span lang="en">(nontrivial)</span>と呼ぶ．</p>
 				</article>
+				<article id="正規閉包" class="dfn">
+					<h4>正規閉包</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝔤</mi></math>の部分集合<math><mi>𝑋</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						を<dfn>正規閉包</dfn><span lang="en">(normal closure)</span>と呼ぶ．
+					</p>
+				</article>
+				<article id="正規化代数" class="dfn">
+					<h4>正規化代数</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝔤</mi></math>の部分集合<math><mi>𝑋</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<a href="#生成系"><math><mi>𝑋</mi></math>で生成される部分Lie代数</a>を<math><mi>𝔥</mi></math>としたときの
+						<math display="block">
+							<mrow>
+								<msub>
+									<mi>𝑁</mi>
+									<mi>𝔤</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mi>𝑋</mi>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>≔</mo>
+							<mrow>
+								<mo>{</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>∈</mo>
+									<mi>𝔤</mi>
+								</mrow>
+								<mo>|</mo>
+								<mrow>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝔥</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>⊂</mo>
+									<mi>𝔥</mi>
+								</mrow>
+								<mo>}</mo>
+							</mrow>
+						</math>
+						を<math><mi>𝑋</mi></math>の<dfn>正規化Lie代数</dfn><span lang="en">(normalizer)</span>と呼ぶ．
+					</p>
+					<p>
+						<math>
+							<msub>
+								<mi>𝑁</mi>
+								<mi>𝔤</mi>
+							</msub>
+							<mo>&af;</mo>
+							<mrow>
+								<mo>(</mo>
+								<mi>𝑋</mi>
+								<mo>)</mo>
+							</mrow>
+						</math>
+						は，<math><mi>𝔥</mi></math>が<a href="#イデアル">イデアル</a>となるようなもののうち，最大なもの．
+					</p>
+				</article>
 				<article id="同型定理" class="thm">
 					<h4>同型定理</h4>
-					<p></p>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与えると，以下が成り立つ．</p>
@@ -842,7 +950,11 @@
 				</article>
 				<article id="可換" class="dfn">
 					<h4>可換</h4>
-					<p><a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math>を与える．</p>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与える．</p>
 					<ul>
 						<li>
 							<math>
@@ -884,49 +996,174 @@
 								<mo>=</mo>
 								<mn>0</mn>
 							</math>
-							を満たすとき，<math><mi>𝔤</mi></math>は互いに<dfn>可換</dfn><span lang="en">(Abelian)</span>と呼ぶ．
+							を満たすとき，<math><mi>𝔤</mi></math>を<dfn>可換</dfn><span lang="en">(Abelian)</span>と呼ぶ．
 						</li>
 					</ul>
 				</article>
-				<article id="トーラス" class="dfn">
-					<h4>トーラス</h4>
-					<p><a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math>を与える．</p>
+				<p>任意の<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝔤</mi></math>は，<a href="#可換">可換</a>な<a href="#Lie代数">Lie括弧</a>をあたえることで<a href="#Lie代数">Lie代数</a>になる．</p>
+				<article id="中心" class="dfn">
+					<h4>中心化代数・中心</h4>
 					<ul>
-						<li><math><mi>𝔤</mi></math>の<a href="#部分Lie代数">部分Lie代数</a>が，有限次元（?）かつ<a href="#可換">可換</a>であるとき，<dfn>トーラス</dfn><span lang="en">(torus)</span>と呼ぶ．</li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝔤</mi></math>の部分集合<math><mi>𝑋</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
 						<li>
-							トーラスのうち極大なもの，つまり
 							<math display="block">
 								<mrow>
-									<mo>∀</mo>
+									<msub>
+										<mi>𝑍</mi>
+										<mi>𝔤</mi>
+									</msub>
 									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑋</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mo>{</mo>
 									<mrow>
 										<mi>𝑥</mi>
 										<mo>∈</mo>
 										<mi>𝔤</mi>
 									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
+									<mo>|</mo>
 									<mrow>
 										<mrow>
 											<mo>[</mo>
 											<mrow>
 												<mi>𝑥</mi>
 												<mo>,</mo>
-												<mi>𝔥</mi>
+												<mi>𝑋</mi>
 											</mrow>
 											<mo>]</mo>
 										</mrow>
 										<mo>=</mo>
-										<mn>0</mn>
+										<mrow>
+											<mo>{</mo>
+											<mn>0</mn>
+											<mo>}</mo>
+										</mrow>
 									</mrow>
-									<mo>⇒</mo>
+									<mo>}</mo>
+								</mrow>
+							</math>
+							を<dfn>中心化代数</dfn><span lang="en">(centralizer)</span>と呼び，<math><mi>𝔤</mi></math>の<a href="#部分Lie代数">部分Lie代数</a>をなす．
+						</li>
+						<li>
+							<math display="block">
+								<mrow>
+									<mi>𝑍</mi>
+									<mo>&af;</mo>
 									<mrow>
-										<mi>𝑥</mi>
-										<mo>∈</mo>
-										<mi>𝔥</mi>
+										<mo>(</mo>
+										<mi>𝔤</mi>
+										<mo>)</mo>
 									</mrow>
 								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<msub>
+										<mi>𝑍</mi>
+										<mi>𝔤</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝔤</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑧</mi>
+											<mo>∈</mo>
+											<mi>𝔤</mi>
+										</mrow>
+										<mo>|</mo>
+										<mrow>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝑧</mi>
+													<mo>,</mo>
+													<mi>𝔤</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mo>{</mo>
+												<mn>0</mn>
+												<mo>}</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+							</math>
+							を<math><mi>𝔤</mi></math>の<dfn>中心</dfn><span lang="en">(center)</span>と呼び，<math><mi>𝔤</mi></math>の<a href="#イデアル">イデアル</a>をなす．
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>部分Lie代数，イデアルになることの証明</h4>
+					<p></p>
+				</article>
+				<article id="トーラス" class="dfn">
+					<h4>トーラス</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p><math><mi>𝔤</mi></math>の有限次元(?)<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a><math><mi>𝔥</mi></math>が</p>
+					<ul>
+						<li>
+							<math><mi>𝔤</mi></math>の<a href="#可換">可換</a>な<a href="#部分Lie代数">部分Lie代数</a>，あるいは同じことだが自分自身を<math><mi>𝔥</mi></math>の<a href="#中心">中心</a>とする，つまり
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝑍</mi>
+										<mi>𝔥</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝔥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mi>𝔥</mi>
+							</math>
+							を満たすものを<dfn>トーラス</dfn><span lang="en">(torus)</span>と呼ぶ．
+						</li>
+						<li>
+							トーラスのうち極大，あるいは同じことだが<math><mi>𝔥</mi></math>の<a href="#中心化代数">中心化代数</a>が<math><mi>𝔥</mi></math>に一致するもの，つまり
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝑍</mi>
+										<mi>𝔤</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝔥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mi>𝔥</mi>
 							</math>
 							を満たすものを<dfn>極大トーラス</dfn><span lang="en">(maximal torus)</span>と呼ぶ．
 						</li>
@@ -1099,7 +1336,7 @@
 				<article id="自己準同型" class="dfn">
 					<h4>自己準同型・同型</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -1129,7 +1366,7 @@
 				<article id="内部微分" class="dfn">
 					<h4>内部微分</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -1169,7 +1406,7 @@
 				<article id="三角分解" class="dfn">
 					<h4>三角分解</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -1199,7 +1436,7 @@
 							</math>
 						</li>
 					</ul>
-					これらは以下を満たす．
+					<p>これらは以下を満たす．</p>
 					<ul>
 						<li>
 							<math display="block">
@@ -1241,6 +1478,17 @@
 		</section>
 		<section>
 			<h2>半単純Lie代数</h2>
+			<section>
+				<h3>定義と基本性質</h3>
+				<article id="単純Lie代数" class="dfn">
+					<h4>単純Lie代数</h4>
+					<ul>
+						<li><a href="#Lie代数">Lie代数</a>のうち，（<a href="#自明なイデアル">自明な</a>）<a href="#イデアル">イデアル</a>をちょうど2つ持ち，かつ<a href="#可換">可換</a>でないものを，<dfn>単純</dfn><span lang="en">(simple)</span>と呼ぶ．</li>
+						<li>単純Lie代数の直和で表されるものを，<dfn>半単純</dfn><span lang="en">(semisimple)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+				<p><a href="#Lie代数の圏">Lie代数の圏</a>の単純対象のうち，一次元<a href="#可換">可換Lie代数</a>のみ除かれていることに注意．</p>
+			</section>
 		</section>
 	</body>
 </html>

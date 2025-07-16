@@ -3,74 +3,136 @@
 	<head>
 		<link rel="stylesheet" href="../../style.css"/>
 		<meta charset="utf-8"/>
-		<meta name="description" content="加群"/>
-		<title>加群</title>
+		<meta name="description" content="可換群・加群"/>
+		<title>可換群・加群</title>
 	</head>
 	<body>
-		<hgroup>
-			<h1>加群</h1>
-			<p><a href="../action/index.html#作用">作用</a>される側を単なる集合から，<a href="#../magma/group/index.html#可換群">可換群</a>に特殊化したもの．もしくは線型空間の一般化．</p>
-		</hgroup>
+		<h1>可換群・加群</h1>
 		<section>
-			<h2>集合上の加群</h2>
-			<article id="集合上の左加群" class="ax">
-				<h3>集合上の左加群</h3>
-				<p><math><mi>𝐺</mi></math>を集合とする．<dfn class="ax">左<math><mi>𝐺</mi></math>-加群</dfn><span lang="en">(left <math><mi>𝐺</mi></math>-module)</span>は，以下の2つのデータからなる．</p>
-				<ul>
-					<li><a href="#../magma/group/index.html#可換群">可換群</a><math><mi>𝑀</mi></math></li>
+			<h2>可換群の定義と加群</h2>
+			<article id="可換群" class="ax">
+				<h3>可換群</h3>
+				<p><dfn class="ax">可換群</dfn><span><span lang="en">(commutative group)</span>または<dfn class="ax">Abel群</dfn><span lang="en">(abelian group)</span>とは，以下の4つのデータからなる．</p>
+				<ul class="ax">
+					<li><a href="../../set/index.html#集合">集合</a><math><mi>𝑀</mi></math></li>
 					<li>
-						<dfn>スカラー乗法</dfn>と呼ばれる演算
+						<dfn>和</dfn>（または<dfn>積</dfn>）と呼ばれる<math><mi>𝑀</mi></math>の2項演算
 						<math>
+							<mo>+</mo>
+							<mo>:</mo>
 							<mrow>
-								<mi>𝐺</mi>
-								<mo>×</mo>
+								<mrow>
+									<mi>𝑀</mi>
+									<mo>×</mo>
+									<mi>𝑀</mi>
+								</mrow>
+								<mo>→</mo>
 								<mi>𝑀</mi>
 							</mrow>
-							<mo>→</mo>
+						</math>
+					</li>
+					<li>
+						<dfn>単位元</dfn>
+						<math>
+							<mn>0</mn>
+							<mo>∈</mo>
 							<mi>𝑀</mi>
 						</math>
 					</li>
-				</ul>
-				<p>これらは以下を満たす．</p>
-				<ul>
 					<li>
-						<math display="block">
+						<dfn>逆元</dfn>を取る操作（<math><mi>𝐺</mi></math>上の変換
+						<math>
+							<msup>
+								<mi>-</mi>
+								<mrow>
+									<mo>−</mo>
+									<mn>1</mn>
+								</mrow>
+							</msup>
+							<mo>:</mo>
 							<mrow>
 								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>∈</mo>
-										<mi>𝐺</mi>
-									</mrow>
+									<mi>𝑀</mi>
+									<mo>→</mo>
+									<mi>𝑀</mi>
 								</mrow>
 								<mo>,</mo>
 								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
+									<mi>𝑥</mi>
+									<mo>↦</mo>
 									<mrow>
-										<mrow>
-											<mi>𝑥</mi>
-											<mo>,</mo>
-											<mi>𝑦</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝑀</mi>
+										<mo>−</mo>
+										<mi>𝑥</mi>
 									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+						）
+					</li>
+				</ul>
+				<p>これらは以下の条件を満たす．</p>
+				<ul>
+					<li>
+						積は<a href="../magma/index.html#可換性">可換</a>．つまり，
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑀</mi>
 								</mrow>
 							</mrow>
 							<mo>,</mo>
 							<mrow>
 								<mrow>
-									<mi>𝑔</mi>
+									<mi>𝑥</mi>
 									<mo>&it;</mo>
+									<mi>𝑦</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑦</mi>
+									<mo>&it;</mo>
+									<mi>𝑥</mi>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						積は<a href="../index.html#結合則">結合的</a>．つまり，
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+										<mo>,</mo>
+										<mi>𝑧</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑀</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>+</mo>
 									<mrow>
 										<mo>(</mo>
 										<mrow>
-											<mi>𝑥</mi>
-											<mo>+</mo>
 											<mi>𝑦</mi>
+											<mo>+</mo>
+											<mi>𝑧</mi>
 										</mrow>
 										<mo>)</mo>
 									</mrow>
@@ -78,254 +140,166 @@
 								<mo>=</mo>
 								<mrow>
 									<mrow>
-										<mi>𝑔</mi>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>+</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>)</mo>
 									</mrow>
 									<mo>+</mo>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>&it;</mo>
-										<mi>𝑦</mi>
-									</mrow>
+									<mi>𝑧</mi>
 								</mrow>
 							</mrow>
 						</math>
 					</li>
-				</ul>
-			</article>
-			<p>右加群も定義できるが，<a href="../action/index.html#作用">作用</a>と同様，基本的に左加群を考える．</p>
-			<article class="thm">
-				<h3>加群が暗に満たす公理</h3>
-				<p>
-					<math><mi>𝐺</mi></math>を集合，<math><mi>𝑀</mi></math>を<a href="#集合上の加群">左<math><mi>𝐺</mi></math>-加群</a>とする．<a href="../magma/index.html#単位元">単位元</a>
-					<math>
-						<msub>
-							<mn>0</mn>
-							<mi>𝑀</mi>
-						</msub>
-						<mo>∈</mo>
-						<mi>𝑀</mi>
-					</math>
-					に対し，
-					<math display="block">
-						<mrow>
-							<mi>𝐺</mi>
-							<mo>&it;</mo>
-							<msub>
-								<mn>0</mn>
-								<mi>𝑀</mi>
-							</msub>
-						</mrow>
-						<mo>=</mo>
-						<msub>
-							<mn>0</mn>
-							<mi>𝑀</mi>
-						</msub>
-					</math>
-				</p>
-			</article>
-			<article class="proof">
-				<h3>証明</h3>
-				<p>
-					<math display="block">
-						<mrow>
+					<li>
+						<math><mi>𝑒</mi><mo>∈</mo><mi>𝐺</mi></math>は<math><mi>𝐺</mi></math>の<a href="../index.html#単位元">両側単位元</a>．つまり，
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>∈</mo>
+									<mi>𝑀</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mn>0</mn>
+									<mo>+</mo>
+									<mi>𝑥</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>+</mo>
+									<mn>0</mn>
+								</mrow>
+								<mo>=</mo>
+								<mi>𝑥</mi>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						<math>
 							<mo>∀</mo>
 							<mo>&af;</mo>
 							<mrow>
-								<mi>𝑔</mi>
+								<mi>𝑥</mi>
 								<mo>∈</mo>
-								<mi>𝐺</mi>
-							</mrow>
-						</mrow>
-						<mo>,</mo>
-						<mrow>
-							<mrow>
-								<mi>𝑔</mi>
-								<mo>&it;</mo>
-								<msub>
-									<mn>0</mn>
-									<mi>𝑀</mi>
-								</msub>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mn>0</mn>
-										<mi>𝑀</mi>
-									</msub>
-								</mrow>
-								<mo>+</mo>
-								<msub>
-									<mn>0</mn>
-									<mi>𝑀</mi>
-								</msub>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mn>0</mn>
-										<mi>𝑀</mi>
-									</msub>
-								</mrow>
-								<mo>+</mo>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mn>0</mn>
-										<mi>𝑀</mi>
-									</msub>
-								</mrow>
-								<mo>−</mo>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mn>0</mn>
-										<mi>𝑀</mi>
-									</msub>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<msub>
-												<mn>0</mn>
-												<mi>𝑀</mi>
-											</msub>
-											<mo>+</mo>
-											<msub>
-												<mn>0</mn>
-												<mi>𝑀</mi>
-											</msub>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>−</mo>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mn>0</mn>
-										<mi>𝑀</mi>
-									</msub>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mn>0</mn>
-										<mi>𝑀</mi>
-									</msub>
-								</mrow>
-								<mo>−</mo>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mn>0</mn>
-										<mi>𝑀</mi>
-									</msub>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<msub>
-								<mn>0</mn>
 								<mi>𝑀</mi>
-							</msub>
-						</mrow>
-					</math>
-				</p>
-			</article>
-			<article id="集合上の加群準同型" class="dfn">
-				<h3>準同型</h3>
-				<p>
-					<math><mi>𝐺</mi></math>を集合，<math><mi>𝑀</mi><mo>,</mo><mi>𝑁</mi></math>を<a href="#集合上の左加群">左<math><mi>𝐺</mi></math>-加群</a>とする．群準同型
-					<math>
-						<mi>𝑓</mi>
-						<mo>:</mo>
-						<mrow>
-							<mi>𝑀</mi>
-							<mo>→</mo>
-							<mi>𝑁</mi>
-						</mrow>
-					</math>
-					が
-					<math display="block">
-						<mrow>
-							<mi>𝑓</mi>
-							<mo>&af;</mo>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<mi>𝑥</mi>
-								</mrow>
-								<mo>)</mo>
 							</mrow>
-						</mrow>
-						<mo>=</mo>
-						<mrow>
-							<mi>𝑔</mi>
-							<mo>&it;</mo>
+						</math>
+						に対し，
+						<math>
+							<mo>−</mo>
+							<mi>𝑥</mi>
+						</math>
+						は<math><mi>𝑥</mi></math>の<a href="../index.html#逆元">両側逆元</a>．つまり，
+						<math display="block">
 							<mrow>
-								<mi>𝑓</mi>
-								<mo>&af;</mo>
+								<mi>𝑥</mi>
+								<mo>+</mo>
 								<mrow>
 									<mo>(</mo>
-									<mi>𝑥</mi>
+									<mrow>
+										<mo>−</mo>
+										<mi>𝑥</mi>
+									</mrow>
 									<mo>)</mo>
 								</mrow>
 							</mrow>
-						</mrow>
-					</math>
-					を満たすとき，<dfn>（左<math><mi>𝐺</mi></math>-加群）準同型</dfn><span lang="en">((left <math><mi>𝐺</mi></math>-module)homomorphism)</span>と呼ぶ．
-				</p>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mo>−</mo>
+										<mi>𝑥</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>+</mo>
+								<mi>𝑥</mi>
+							</mrow>
+							<mo>=</mo>
+							<mn>0</mn>
+						</math>
+					</li>
+				</ul>
 			</article>
-			<p>積の記号を省略しているためわかりづらいが，<math><mi>𝑓</mi></math>は単に<math><mi>𝑀</mi></math>の元を<math><mi>𝑁</mi></math>に送るだけで無く，<math><mi>𝑀</mi></math>の<a href="#集合上の左加群">スカラー乗法</a>も，<math><mi>𝑁</mi></math>の<a href="#集合上の左加群">スカラー乗法</a>に送っている．</p>
-			<article id="集合上の加群同型" class="dfn">
-				<h3>同型</h3>
-				<p>
-					全単射な<a href="#集合上の左加群準同型">集合上の左加群準同型</a>を<dfn>（左<math><mi>𝐺</mi></math>-加群）同型</dfn><span lang="en">((left <math><mi>𝐺</mi></math>-module) isomorphism)</span>と呼ぶ．
-				</p>
-			</article>
-			<article id="集合上の部分加群" class="dfn">
-				<h3>部分加群</h3>
-				<p>
-					<math><mi>𝐺</mi></math>を集合，<math><mi>𝑀</mi></math>を<a href="#集合上の左加群">左<math><mi>𝐺</mi></math>-加群</a>とする．<math><mi>𝑀</mi></math>の部分群<math><mi>𝑁</mi></math>が，
-					<math display="block">
-						<mrow>
-							<mi>𝐺</mi>
+			<article id="和" class="dfn">
+				<h3>和</h3>
+				<p><a href="#可換群">可換群</a><math><mi>𝐺</mi></math>を与える．</p>
+				<ul>
+					<li>
+						<math><mi>𝑀</mi></math>上の有限列に対し
+						<math display="block">
+							<munderover intent=":largeop">
+								<mo>∑</mo>
+								<mrow>
+									<mi>𝑖</mi>
+									<mo>=</mo>
+									<mn>1</mn>
+								</mrow>
+								<mi>𝑛</mi>
+							</munderover>
+							<msub>
+								<mi>𝑥</mi>
+								<mi>𝑖</mi>
+							</msub>
+						</math>
+						……
+					</li>
+					<li>
+						特に，<math><mi>𝑥</mi></math>または<math><mo>−</mo><mi>𝑥</mi></math>の<math><mi>𝑛</mi><mo>∈</mo><msub><mi>ℤ</mi><mrow><mo>≥</mo><mn>0</mn></mrow></msub></math>個のコピー
+						<math>
+							<msup>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mo>±</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+								<mrow>
+									<mo>⨿</mo>
+									<mi>𝑛</mi>
+								</mrow>
+							</msup>
+						</math>
+						を有限列とみなしたものは，<a href="../magma/group/index.html#群">群</a><math><mi>𝑀</mi></math>としての<math><mi>𝑥</mi></math>の<a href="../magma/group/index.html#冪">冪</a>に等しい．それを
+						<math>
+							<msup>
+								<mi>𝑥</mi>
+								<mi>𝑛</mi>
+							</msup>
+						</math>
+						の代わりに，
+						<math display="block">
+							<mi>𝑛</mi>
 							<mo>&it;</mo>
-							<mi>𝑁</mi>
-						</mrow>
-						<mo>⊂</mo>
-						<mi>𝑁</mi>
-					</math>
-					を満たす（つまり終域の制限により<a href="#集合上の左加群">左<math><mi>𝐺</mi></math>-加群</a>となる）とき，<dfn>部分左<math><mi>𝐺</mi></math>-加群</dfn><span lang="en">((left <math><mi>𝐺</mi></math>-)submodule)</span>と呼ぶ．
-				</p>
+							<mi>𝑥</mi>
+						</math>
+						と表す．これを<dfn><math><mi>𝑥</mi></math>の<math><mi>𝑛</mi></math>個の和</dfn>と呼ぶ．
+					</li>
+				</ul>
 			</article>
-			<article id="集合上の商加群" class="dfn">
-				<h3>商加群</h3>
+			<p><a href="#可換群">可換群</a>の構造を調べる準備として，加群を導入する．</p>
+			<article id="可換群への作用の分配律" class="ax">
+				<h3>可換群への作用の分配律</h3>
+				<ul>
+					<li>集合<math><mi>𝐺</mi></math></li>
+					<li><a href="#可換群">可換群</a><math><mi>𝑀</mi></math></li>
+					<li><math><mi>𝑀</mi></math>への<a href="../action/index.html#集合上の左作用">左<math><mi>𝐺</mi></math>-作用</a></li>
+				</ul>
+				<p>を与える．</p>
 				<p>
-					<math><mi>𝐺</mi></math>を集合，<math><mi>𝑀</mi></math>を<a href="#集合上の左加群">左<math><mi>𝐺</mi></math>-加群</a>，<math><mi>𝑁</mi></math>をその<a href="#部分加群">部分加群</a>とする．商群<math><mi>𝑀</mi><mo>∕</mo><mi>𝑁</mi></math>は，
+					以下を満たすとき，左<math><mi>𝐺</mi></math>-作用は<dfn class="ax">分配的</dfn>と呼ばれる：
 					<math display="block">
 						<mrow>
 							<mrow>
@@ -342,7 +316,11 @@
 								<mo>∀</mo>
 								<mo>&af;</mo>
 								<mrow>
-									<mi>𝑥</mi>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
 									<mo>∈</mo>
 									<mi>𝑀</mi>
 								</mrow>
@@ -358,7 +336,7 @@
 									<mrow>
 										<mi>𝑥</mi>
 										<mo>+</mo>
-										<mi>𝑁</mi>
+										<mi>𝑦</mi>
 									</mrow>
 									<mo>)</mo>
 								</mrow>
@@ -371,584 +349,339 @@
 									<mi>𝑥</mi>
 								</mrow>
 								<mo>+</mo>
-								<mi>𝑁</mi>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>&it;</mo>
+									<mi>𝑦</mi>
+								</mrow>
 							</mrow>
 						</mrow>
 					</math>
-					をスカラー乗法とする左<math><mi>𝐺</mi></math>-加群をなす．これを<dfn>商左<math><mi>𝐺</mi></math>-加群</dfn>と呼ぶ．
 				</p>
 			</article>
-			<article id="集合上の商加群の標準射影" class="thm">
-				<h3>商加群の標準射影は準同型</h3>
-				<p><math><mi>𝐺</mi></math>を集合とする．<a href="#集合上の商加群">商左<math><mi>𝐺</mi></math>-加群</a>の標準射影は<a href="#集合上の加群準同型">左<math><mi>𝐺</mi></math>-加群準同型</a>．</p>
-			</article>
-			<section>
-				<h3>同型定理</h3>
-				<p>群の同型定理を引き継いで，加群の準同型定理が成り立つ．</p>
-				<article id="準同型定理" class="thm">
-					<h4>準同型定理</h4>
-					<p>
-						<math><mi>𝐺</mi></math>を集合，<math><mi>𝑀</mi><mo>,</mo><mi>𝑁</mi></math>を<a href="#集合上の左加群">左<math><mi>𝐺</mi></math>-加群</a>，
-						<math>
-							<mi>𝑓</mi>
-							<mo>:</mo>
-							<mrow>
-								<mi>𝑀</mi>
-								<mo>→</mo>
-								<mi>𝑁</mi>
-							</mrow>
-						</math>
-						を<a href="#集合上の加群準同型">準同型</a>とする．
-						<math>
-							<mi>𝐿</mi>
-							<mo>⊂</mo>
-							<mrow>
-								<mi>ker</mi>
-								<mo>&af;</mo>
-								<mi>𝑓</mi>
-							</mrow>
-						</math>
-						を満たす<math><mi>𝑀</mi></math>の<a href="#集合上の部分加群">左<math><mi>𝐺</mi></math>-部分加群</a><math><mi>𝐿</mi></math>と<a href="#集合上の商加群">商加群</a>への<a href="#集合上の商加群の標準射影">標準射影</a>
-						<math>
-							<mi>𝑝</mi>
-							<mo>:</mo>
-							<mrow>
-								<mi>𝑀</mi>
-								<mo>→</mo>
-								<mrow>
-									<mi>𝑀</mi>
-									<mo>∕</mo>
-									<mi>𝐿</mi>
-								</mrow>
-							</mrow>
-						</math>
-						に対し，<a href="#集合上の加群準同型">左<math><mi>𝐺</mi></math>-加群準同型</a>
-						<math>
-							<mi>ℎ</mi>
-							<mo>:</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑀</mi>
-									<mo>∕</mo>
-									<mi>𝐿</mi>
-								</mrow>
-								<mo>→</mo>
-								<mi>𝑁</mi>
-							</mrow>
-						</math>
-						が存在し，
-						<math>
-							<mi>𝑓</mi>
-							<mo>=</mo>
-							<mrow>
-								<mi>ℎ</mi>
-								<mo>∘</mo>
-								<mi>𝑝</mi>
-							</mrow>
-						</math>
-						を満たす．
-					</p>
-				</article>
-					<p>
-						群準同型定理を満たす<math><mi>ℎ</mi></math>に対して，
-						<math>
-							<mrow>
-								<mi>ℎ</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝐺</mi>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mi>𝐺</mi>
-								<mo>&it;</mo>
-								<mrow>
-									<mi>ℎ</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mi>𝑥</mi>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-						を満たすので，示された．
-					</p>
-				<article id="同型定理" class="thm">
-					<h4>同型定理</h4>
-					<p></p>
-				</article>
-			</section>
-			<section>
-				<h3>用語</h3>
-				<article id="単純" class="dfn">
-					<h4>単純</h4>
-					<p><dfn>単純</dfn>と呼ぶ．</p>
-				</article>
-			</section>
-		</section>
-		<section>
-			<h2>マグマ上の加群</h2>
-			<p><a href="../action/index.html#作用">作用</a>と同じく応用上大切なのは，<math><mi>𝐺</mi></math>が何らかの代数的構造を持っている場合．</p>
-			<article id="マグマ上の加群" class="ax">
-				<h3>マグマ上の左加群</h3>
-				<p><math><mi>𝐺</mi></math>を<a href="../magma/index.html#マグマ">マグマ</a>とする．<dfn class="ax">マグマ上の左<math><mi>𝐺</mi></math>-加群</dfn>とは，以下の2つのデータからなる．</p>
+			<p><a href="#可換群">可換群</a>の<math><mi>𝑛</mi></math>個の<a href="#和">和</a>は<a href="../action/index.html#集合上の左作用">左<math><mi>ℤ</mi></math>-作用</a>と見做せることに注意して，次を確認しよう：</p>
+			<article id="可換群の和の性質" class="thm">
+				<h3>可換群の和の性質</h3>
 				<ul>
-					<li><a href="#../magma/group/index.html#可換群">可換群</a><math><mi>𝑀</mi></math></li>
+					<li><a href="#可換群">可換群</a><math><mi>𝑀</mi></math></li>
+					<li>集合<math><mi>𝐺</mi></math></li>
+					<li><math><mi>𝑀</mi></math>への上の<a href="#可換群への作用の分配律">分配的</a>な<a href="../action/index.html#集合上の左作用">左<math><mi>𝐺</mi></math>-作用</a></li>
+				</ul>
+				<p>を与えると，以下が成り立つ：</p>
+				<ul>
 					<li>
-						<dfn>スカラー乗法</dfn>と呼ばれる演算
+						<math><mi>𝑀</mi></math>の<a href="#和">和</a>
 						<math>
 							<mrow>
-								<mi>𝐺</mi>
+								<mi>ℤ</mi>
 								<mo>×</mo>
 								<mi>𝑀</mi>
 							</mrow>
 							<mo>→</mo>
 							<mi>𝑀</mi>
 						</math>
-					</li>
-				</ul>
-				<p>これらは以下を満たす．</p>
-				<ul>
-					<li>
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>∈</mo>
-										<mi>𝐺</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑥</mi>
-											<mo>,</mo>
-											<mi>𝑦</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝑀</mi>
-									</mrow>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑥</mi>
-											<mo>+</mo>
-											<mi>𝑦</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-									<mo>+</mo>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>&it;</mo>
-										<mi>𝑦</mi>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
+						は<a href="#可換群への作用の分配律">分配的</a>
 					</li>
 					<li>
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑔</mi>
-											<mo>,</mo>
-											<mi>ℎ</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝐺</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑥</mi>
-										<mo>∈</mo>
-										<mi>𝑀</mi>
-									</mrow>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>ℎ</mi>
-											<mo>&it;</mo>
-											<mi>𝑥</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑔</mi>
-											<mo>&it;</mo>
-											<mi>ℎ</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-									<mo>&it;</mo>
-									<mi>𝑥</mi>
-								</mrow>
-							</mrow>
-						</math>
-					</li>
-				</ul>
-			</article>
-			<p>つまり，<a href="#集合上の加群">集合上の<math><mi>𝐺</mi></math>-加群</a>かつ<a href="#マグマ上の作用">マグマ上の<math><mi>𝐺</mi></math>-作用</a>である．</p>
-			<p>このように，<a href="../action/index.html#作用">作用</a>同様<math><mi>𝐺</mi></math>の代数的構造をスカラー乗法に写すことが可能．ただし，それだけでなく<math><mi>𝑀</mi></math>の代数的構造に写すことも可能になる．</p>
-			<article id="可換マグマ上の加群" class="ax">
-				<h3>可換マグマ上の左加群</h3>
-				<p><math><mi>𝐺</mi></math>を<a href="../magma/index.html#可換性">可換マグマ</a>とする．<dfn>可換マグマ上の左<math><mi>𝐺</mi></math>-加群</dfn>とは，以下の2つのデータからなる．</p>
-				<ul>
-					<li><a href="#../magma/group/index.html#可換群">可換群</a><math><mi>𝑀</mi></math></li>
-					<li>
-						<dfn>スカラー乗法</dfn>と呼ばれる演算
-						<math>
-							<mrow>
-								<mi>𝐺</mi>
-								<mo>×</mo>
-								<mi>𝑀</mi>
-							</mrow>
-							<mo>→</mo>
-							<mi>𝑀</mi>
-						</math>
-					</li>
-				</ul>
-				<p>これらは以下を満たす．</p>．
-				<ul>
-					<li>
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>∈</mo>
-										<mi>𝐺</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑥</mi>
-											<mo>,</mo>
-											<mi>𝑦</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝑀</mi>
-									</mrow>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑥</mi>
-											<mo>+</mo>
-											<mi>𝑦</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-									<mo>+</mo>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>&it;</mo>
-										<mi>𝑦</mi>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-					</li>
-					<li>
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑔</mi>
-											<mo>,</mo>
-											<mi>ℎ</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝐺</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑥</mi>
-										<mo>∈</mo>
-										<mi>𝑀</mi>
-									</mrow>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑔</mi>
-											<mo>+</mo>
-											<mi>ℎ</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-									<mo>&it;</mo>
-									<mi>𝑥</mi>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-									<mo>+</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-					</li>
-				</ul>
-			</article>
-			<p>
-				<a href="../magma/index.html#可換性">可換マグマ</a>の積
-				<math>
-					<msub>
-						<mo>+</mo>
-						<mi>𝐺</mi>
-					</msub>
-				</math>
-				が可換群の積
-				<math>
-					<msub>
-						<mo>+</mo>
-						<mi>𝑀</mi>
-					</msub>
-				</math>
-				に写される．
-			</p>
-			<section>
-				<h3>性質</h3>
-				<p>特に<math><mi>𝐺</mi></math>が可換群になる場合の性質を見ていこう．</p>
-				<article class="thm">
-					<h4></h4>
-					<p>
-						<math><mi>𝐺</mi></math>を<a href="../magma/index.html#可換性">可換マグマ</a>，<math><mi>𝑀</mi></math>を<a href="#可換マグマ上の加群">左<math><mi>𝐺</mi></math>-加群</a>とする．
-						<math><mi>𝐺</mi></math>が<a href="../magma/index.html#単位元">単位元</a>
-						<math>
-							<msub>
-								<mn>0</mn>
-								<mi>𝐺</mi>
-							</msub>
-						</math>
-						をもつとき，<math><mi>𝑀</mi></math>の<a href="../magma/index.html#単位元">単位元</a>
-						<math>
-							<msub>
-								<mn>0</mn>
-								<mi>𝑀</mi>
-							</msub>
-						</math>
-						に対し，
-						<math display="block">
-							<mrow>
-								<msub>
-									<mn>0</mn>
-									<mi>𝐺</mi>
-								</msub>
-								<mo>&it;</mo>
-								<mi>𝑀</mi>
-							</mrow>
-							<mo>=</mo>
-							<msub>
-								<mn>0</mn>
-								<mi>𝑀</mi>
-							</msub>
-						</math>
-					</p>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p>
+						<math><mi>𝑀</mi></math>がをもつとき，<math><mi>𝐺</mi></math>上の作用と<a href="#和">和</a>は可換：
 						<math display="block">
 							<mrow>
 								<mo>∀</mo>
 								<mo>&af;</mo>
 								<mrow>
-									<mi>𝑥</mi>
+									<mi>𝑔</mi>
 									<mo>∈</mo>
-									<mi>𝑀</mi>
+									<mi>𝐺</mi>
 								</mrow>
 							</mrow>
 							<mo>,</mo>
 							<mrow>
 								<mrow>
-									<msub>
-										<mn>0</mn>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>∈</mo>
+										<mi>ℕ</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>∈</mo>
+											<mi>𝑀</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑛</mi>
+													<mo>&it;</mo>
+													<mi>𝑥</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑛</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑔</mi>
+													<mo>&it;</mo>
+													<mi>𝑥</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<article class="proof">
+				<h3>証明</h3>
+				<p>……</p>
+			</article>
+			<p><a href="#可換群">可換群</a>の<a href="#可換群">和</a>に関して分配的な<a href="../action/index.html#集合上の左作用">（左）作用</a>のことを（左）加群と呼ぶ．</p>
+			<p>しかし<a href="#可換群への作用の分配律">今見た</a>ように，任意の<a href="#可換群">可換群</a>は<a href="#可換群">和</a>に関する<math><mi>ℤ</mi></math>-加群となり，任意の<a href="#可換群への作用の分配律">分配的</a>な<a href="../action/index.html#集合上の左作用">左<math><mi>𝐺</mi></math>-作用</a>と可換だから，より一般に次の構造を考えることができる：</p>
+			<article id="左加群" class="ax">
+				<h3>左加群</h3>
+				<ul>
+					<li>集合<math><mi>𝐺</mi></math></li>
+					<li><a href="../ring-like/commutative-ring/index.html#環">環</a><math><mi>𝑅</mi></math></li>
+				</ul>
+				<p>を与える．</p>
+				<p><dfn class="ax">左加群</dfn><span lang="en">(left G-module)</span>とは以下のデータからなる：</p>
+				<ul>
+					<li><a href="#可換群">可換群</a><math><mi>𝑀</mi></math></li>
+					<li><a href="#可換群">可換群</a><math><mi>𝑀</mi></math>への<a href="../action/index.html#集合上の左作用">左<math><mi>𝐺</mi></math>-作用</a></li>
+					<li><dfn class="ax">スカラー乗法</dfn>と呼ばれる<a href="#可換群">可換群</a><math><mi>𝑀</mi></math>への<a href="../action/index.html#集合上の左作用">左<math><mi>𝑅</mi></math>-作用</a></li>
+				</ul>
+				<p>これらは以下を満たす：</p>
+				<ul>
+					<li>
+						左<math><mi>𝐺</mi></math>-作用は<a href="#可換群への作用の分配律">分配的</a>：
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑔</mi>
+										<mo>∈</mo>
 										<mi>𝐺</mi>
-									</msub>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑀</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑔</mi>
 									<mo>&it;</mo>
-									<mi>𝑥</mi>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>+</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
 								</mrow>
 								<mo>=</mo>
 								<mrow>
 									<mrow>
-										<msub>
-											<mn>0</mn>
-											<mi>𝐺</mi>
-										</msub>
+										<mi>𝑔</mi>
 										<mo>&it;</mo>
 										<mi>𝑥</mi>
 									</mrow>
 									<mo>+</mo>
 									<mrow>
-										<msub>
-											<mn>0</mn>
-											<mi>𝐺</mi>
-										</msub>
+										<mi>𝑔</mi>
 										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-									<mo>−</mo>
-									<mrow>
-										<msub>
-											<mn>0</mn>
-											<mi>𝐺</mi>
-										</msub>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
+										<mi>𝑦</mi>
 									</mrow>
 								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<msub>
-													<mn>0</mn>
-													<mi>𝐺</mi>
-												</msub>
-												<mo>+</mo>
-												<msub>
-													<mn>0</mn>
-													<mi>𝐺</mi>
-												</msub>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-									<mo>−</mo>
-									<mrow>
-										<msub>
-											<mn>0</mn>
-											<mi>𝐺</mi>
-										</msub>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<msub>
-											<mn>0</mn>
-											<mi>𝐺</mi>
-										</msub>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-									<mo>−</mo>
-									<mrow>
-										<msub>
-											<mn>0</mn>
-											<mi>𝐺</mi>
-										</msub>
-										<mo>&it;</mo>
-										<mi>𝑥</mi>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<msub>
-									<mn>0</mn>
-									<mi>𝑀</mi>
-								</msub>
 							</mrow>
 						</math>
-					</p>
-				</article>
-			</section>
+					</li>
+					<li>
+						左<math><mi>𝑅</mi></math>-作用は<a href="#可換群への作用の分配律">分配的</a>：
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑟</mi>
+										<mo>∈</mo>
+										<mi>𝑅</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>,</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑀</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑟</mi>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>+</mo>
+											<mi>𝑦</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑟</mi>
+										<mo>&it;</mo>
+										<mi>𝑥</mi>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑟</mi>
+										<mo>&it;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						左<math><mi>𝐺</mi></math>-作用と左<math><mi>𝑅</mi></math>-作用は可換：
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>∈</mo>
+									<mi>𝐺</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑟</mi>
+										<mo>∈</mo>
+										<mi>𝑅</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>∈</mo>
+											<mi>𝑀</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑟</mi>
+													<mo>&it;</mo>
+													<mi>𝑥</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑟</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑔</mi>
+													<mo>&it;</mo>
+													<mi>𝑥</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<p>右加群も同様に定義できる．</p>
+			<article id="可換群は整数環上の加群" class="thm">
+				<h3>可換群は<math><mi>ℤ</mi></math>-加群</h3>
+				<p><a href="#可換群">可換群</a>は<a href="#和">和</a>を<a href="over-ring/index.html#左加群">スカラー乗法</a>とする<a href="over-ring/index.html#左加群">左<math><mi>ℤ</mi></math>-加群</a>．</p>
+			</article>
+			<article class="proof">
+				<h3>証明</h3>
+				<p><a href="#可換群の和の性質">可換群の和の性質</a>より明らか．</p>
+			</article>
+			<p>一般の<a href="#左加群">左加群</a>を考える準備として，<math><mi>𝐺</mi></math>が一般の<a href="../ring-like/ring/index.html#環">環</a>で，<a href="#和">和</a>を<a href="#左加群">スカラー乗法</a>とする場合を考えるべきだろう．それらについては，<a href="../ring-like/ring/index.html#環">環</a>の付加的な構造ごとに分けて以下で取り扱う：</p>
+			<ul>
+				<li><a href="over-ring/index.html#左加群">環上の左加群</a></li>
+				<li><a href="linear-algebra/index.html#線型空間">線型空間</a></li>
+			</ul>
+			<p><math><mi>𝐺</mi><mo>≠</mo><mi>𝑅</mi></math>の場合の<a href="#左加群">左<math><mi>𝐺</mi></math>-加群</a>は，<a href="#左加群">左<math><mi>𝑅</mi></math>-加群</a>にさらに付加的な構造を持っている場合を考えていることに対応する．このときの<a href="#左加群">左<math><mi>𝐺</mi></math>-加群</a>を<dfn><math><mi>𝐺</mi></math>の表現</dfn>と読んだりする．<math><mi>𝐺</mi></math>については，単なる集合を含めた任意の代数的構造でもよく，非常に多くの場合が考えられる．そのため，詳しいことは<math><mi>𝐺</mi></math>の構造ごとのページにまとめることにする．</p>
+		</section>
+		<section>
+			<h2>可換群の性質</h2>
+			<p><a href="#可換群は整数環上の加群">可換群は<math><mi>ℤ</mi></math>-加群</a>なので，可換群の性質のかなり多くは一般の<a href="over-ring/index.html#左加群">左<math><mi>𝑅</mi></math>-加群</a>から受け継がれる．そのため，証明等の詳細はしばしばそちらに依存する．</p>
 		</section>
 	</body>
 </html>

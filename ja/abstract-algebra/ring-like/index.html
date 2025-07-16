@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<link rel="stylesheet" href="../../style.css"/>
+		<meta charset="utf-8"/>
+		<meta name="description" content="環に似た代数系"/>
+		<title>環に似た代数系</title>
+	</head>
+	<body>
+		<hgroup>
+			<h1>環に似た代数系</h1>
+			<p>分配律を持つ数学的構造</p>
+		</hgroup>
+		<section>
+			<h2>概要</h2>
+			<article class="ax">
+				<h3>環に似た代数系</h3>
+				<p><dfn class="ax">環に似た代数系</dfn><span lang="en">(ring-like structure)</span>とは，以下の3つのデータからなる．</p>
+				<ul>
+					<li>集合<math><mi>𝑅</mi></math></li>
+					<li><dfn>和</dfn>と呼ばれる<math><mi>𝑅</mi></math>上の2項演算
+						<math>
+							<mo>+</mo>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>×</mo>
+									<mi>𝑅</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝑅</mi>
+							</mrow>
+						</math>
+					</li>
+					<li><dfn>積</dfn>と呼ばれる<math><mi>𝑅</mi></math>上の2項演算
+						<math>
+							<mo>⋅</mo>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>×</mo>
+									<mi>𝑅</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝑅</mi>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+				<p>これらは以下の条件を満たす．</p>
+				<ul>
+					<li><math><mi>𝑅</mi></math>は<math><mo>+</mo></math>を積とする<a href="#マグマ">マグマ</a>．</li>
+					<li><math><mi>𝑅</mi></math>は<math><mo>⋅</mo></math>を積とする<a href="#マグマ">マグマ</a>．</li>
+					<li>
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>,</mo>
+										<mi>𝑏</mi>
+										<mo>,</mo>
+										<mi>𝑐</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑅</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mo>{</mo>
+								<mtable intent=":system-of-equations">
+									<mtr>
+										<mtd>
+											<mi>𝑎</mi>
+											<mo>⋅</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑏</mi>
+													<mo>+</mo>
+													<mi>𝑐</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<mrow>
+												<mi>𝑎</mi>
+												<mo>⋅</mo>
+												<mi>𝑏</mi>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑎</mi>
+												<mo>⋅</mo>
+												<mi>𝑐</mi>
+											</mrow>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi>
+													<mo>+</mo>
+													<mi>𝑏</mi>
+												<mo>)</mo>
+											</mrow>
+											<mo>⋅</mo>
+											<mi>𝑐</mi>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<mrow>
+												<mi>𝑎</mi>
+												<mo>⋅</mo>
+												<mi>𝑐</mi>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑏</mi>
+												<mo>⋅</mo>
+												<mi>𝑐</mi>
+											</mrow>
+										</mtd>
+									</mtr>
+								</mtable>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<p>実際によく使うのは，和も積も追加の公理を満たすもの．このとき，和の方がより多くの公理を満たすようにすることが普通．</p>
+			<ul>
+				<li><a href="rng/index.html">擬環</a></li>
+				<li><a href="ring/index.html">環</a></li>
+				<li><a href="commutative-ring/index.html">可換環</a></li>
+				<li><a href="skew-field/index.html">斜体</a></li>
+				<li><a href="field/index.html">体</a></li>
+			</ul>
+		</section>
+	</body>
+</html>
