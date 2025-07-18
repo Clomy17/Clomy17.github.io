@@ -48,7 +48,7 @@ h1 {
 
 h2 {
 	font-size: 2em;
-	margin: 0.25em auto 1em;
+	margin: 3em auto 0.25em;
 	counter-reset: h3 ax dfn prp thm lem cor pblm;
 }
 
