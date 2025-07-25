@@ -15876,7 +15876,7 @@
 								</mrow>
 							</mrow>
 						</math>
-						境界条件は，
+						位相演算子<math><msub><mi>𝜃</mi><mi>𝜆</mi></msub></math>が<math><mi>ℝ</mi><mo>∕</mo><mi>ℤ</mi></math>を値に持つので，このボゾン場は<math><mi>ℝ</mi><mo>∕</mo><mi>ℤ</mi></math>でコンパクト化されたボゾン．境界条件は，
 						<math display="block">
 							<mrow>
 								<msub>
@@ -16466,13 +16466,13 @@
 					</p>
 				</section>
 				<section>
-					<h4>粒子数演算子</h4>
+					<h4>密度演算子・粒子数演算子</h4>
 					<p>
-						各<math><mi>𝜆</mi></math>に対する粒子数演算子は
+						各<math><mi>𝜆</mi></math>に対する密度演算子と粒子数演算子のFourier変換は
 						<math display="block">
 							<mrow>
 								<msub>
-									<mi>𝑁</mi>
+									<mi>𝜌</mi>
 									<mi>𝜆</mi>
 								</msub>
 								<mo>&af;</mo>
@@ -17143,7 +17143,7 @@
 						<math display="block">
 							<mrow>
 								<msub>
-									<mi>𝑁</mi>
+									<mi>𝜌</mi>
 									<mi>𝜆</mi>
 								</msub>
 								<mo>&af;</mo>
@@ -17673,7 +17673,7 @@
 								<mrow>
 									<mrow>
 										<msub>
-											<mi>𝑁</mi>
+											<mi>𝜌</mi>
 											<mi>𝜆</mi>
 										</msub>
 										<mo>&af;</mo>
@@ -17686,7 +17686,7 @@
 									<mo>,</mo>
 									<mrow>
 										<msub>
-											<mi>𝑁</mi>
+											<mi>𝜌</mi>
 											<msup>
 												<mi>𝜆</mi>
 												<mo>′</mo>
@@ -18375,7 +18375,7 @@
 								<mrow>
 									<mrow>
 										<msub>
-											<mi>𝐽</mi>
+											<mi>𝑁</mi>
 											<mrow>
 												<mi>𝑞</mi>
 												<mo>,</mo>
@@ -18730,7 +18730,7 @@
 				<section>
 					<h4>Klein因子</h4>
 					<p>
-						最後にKlein因子と呼ばれるユニタリ演算子を定義する：
+						最後にKlein因子と呼ばれるユニタリ演算子を定義する（合ってるかは自信無し）：
 						<math id="Klein因子" display="block">
 							<msub>
 								<mi>𝐹</mi>
@@ -22083,7 +22083,7 @@
 					</p>
 				</section>
 				<section>
-					<h4>ボゾン場の定義とフェルミオン場の表現</h4>
+					<h4>ボゾン場の定義</h4>
 					<p>
 						ボゾン場は以下のように定義される：
 						<math display="block">
@@ -22193,31 +22193,16 @@
 												</mrow>
 												<mo>)</mo>
 											</mrow>
+											<mo>&it;</mo>
 											<mfrac>
 												<mi>𝑥</mi>
 												<mi>𝐿</mi>
 											</mfrac>
 											<mo>&it;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<msub>
-														<mi>𝑁</mi>
-														<mi>𝜆</mi>
-													</msub>
-													<mo>+</mo>
-													<mfrac>
-														<mn>1</mn>
-														<mn>2</mn>
-													</mfrac>
-													<mo>−</mo>
-													<msub>
-														<mi>𝛿</mi>
-														<mi mathvariant="normal">b</mi>
-													</msub>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
+											<msub>
+												<mi>𝑁</mi>
+												<mi>𝜆</mi>
+											</msub>
 										</mrow>
 										<mo>−</mo>
 										<msub>
@@ -22295,38 +22280,6 @@
 														<mi>𝜆</mi>
 													</mrow>
 												</msub>
-											</mrow>
-										</mrow>
-										<mo>+</mo>
-										<mrow>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>sgn</mi>
-													<mo>&af;</mo>
-													<mi>𝜆</mi>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-											<mfrac>
-												<mi>𝑥</mi>
-												<mi>𝐿</mi>
-											</mfrac>
-											<mo>&it;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mfrac>
-														<mn>1</mn>
-														<mn>2</mn>
-													</mfrac>
-													<mo>−</mo>
-													<msub>
-														<mi>𝛿</mi>
-														<mi mathvariant="normal">b</mi>
-													</msub>
-												</mrow>
-												<mo>)</mo>
 											</mrow>
 										</mrow>
 										<mo>−</mo>
@@ -22413,11 +22366,62 @@
 								</mrow>
 							</mrow>
 						</math>
-						としたものを定義とすることもあるが，粒子数演算子で見たように，正規順序をとる限りは無くてよい．また，
+						としたものを定義とすることもあるが，粒子数演算子で見たように，正規順序をとる限りは無くてよい．境界条件は
 						<math display="block">
 							<mrow>
 								<msub>
-									<mi>𝑁</mi>
+									<mi>𝜑</mi>
+									<mi>𝜆</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>+</mo>
+										<mi>𝐿</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<msub>
+										<mi>𝜑</mi>
+										<mi>𝜆</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mi>𝑥</mi>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>sgn</mi>
+											<mo>&af;</mo>
+											<mi>𝜆</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑁</mi>
+										<mi>𝜆</mi>
+									</msub>
+								</mrow>
+							</mrow>
+						</math>
+						また，
+						<math display="block">
+							<mrow>
+								<msub>
+									<mi>𝜌</mi>
 									<mi>𝜆</mi>
 								</msub>
 								<mo>&af;</mo>
@@ -22430,43 +22434,18 @@
 							<mo>=</mo>
 							<mrow>
 								<mrow>
-									<mrow>
-										<mo>∂</mo>
-										<mo>&af;</mo>
-										<msub>
-											<mi>𝜑</mi>
-											<mi>𝜆</mi>
-										</msub>
-									</mrow>
+									<mo>∂</mo>
 									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mi>𝑥</mi>
-										<mo>)</mo>
-									</mrow>
+									<msub>
+										<mi>𝜑</mi>
+										<mi>𝜆</mi>
+									</msub>
 								</mrow>
-								<mo>−</mo>
+								<mo>&af;</mo>
 								<mrow>
-									<mfrac>
-										<mn>1</mn>
-										<mi>𝐿</mi>
-									</mfrac>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mfrac>
-												<mn>1</mn>
-												<mn>2</mn>
-											</mfrac>
-											<mo>−</mo>
-											<msub>
-												<mi>𝛿</mi>
-												<mi mathvariant="normal">b</mi>
-											</msub>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
+									<mo>(</mo>
+									<mi>𝑥</mi>
+									<mo>)</mo>
 								</mrow>
 							</mrow>
 						</math>
@@ -22660,31 +22639,16 @@
 												</mrow>
 												<mo>)</mo>
 											</mrow>
+											<mo>&it;</mo>
 											<mfrac>
 												<mi>𝑥</mi>
 												<mi>𝐿</mi>
 											</mfrac>
 											<mo>&it;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<msub>
-														<mi>𝑁</mi>
-														<mi>𝜆</mi>
-													</msub>
-													<mo>+</mo>
-													<mfrac>
-														<mn>1</mn>
-														<mn>2</mn>
-													</mfrac>
-													<mo>−</mo>
-													<msub>
-														<mi>𝛿</mi>
-														<mi mathvariant="normal">b</mi>
-													</msub>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
+											<msub>
+												<mi>𝑁</mi>
+												<mi>𝜆</mi>
+											</msub>
 										</mrow>
 										<mo>−</mo>
 										<msub>
@@ -23335,6 +23299,9 @@
 						</math>
 						を用いた）．
 					</p>
+				</section>
+				<section>
+					<h4>フェルミオン場とボゾン場の関係</h4>
 					<p>
 						フェルミオン場をボゾン場を用いて表す方法を考える．まず<math><mi>𝑞</mi><mo>≠</mo><mn>0</mn></math>
 						に対し，
@@ -23917,44 +23884,54 @@
 								</mrow>
 							</msub>
 						</math>
-						のボゾン的真空（と等価な状態）は
+						のボゾン的真空は
 						<math>
-							<mrow>
-								<msub>
-									<mi>𝜂</mi>
-									<mi>𝜆</mi>
-								</msub>
-								<mo>&it;</mo>
-								<msup>
-									<mi>𝑒</mi>
-									<mrow>
-										<mo>−</mo>
-										<mrow>
-											<mn>2</mn>
-											<mo>&it;</mo>
-											<mi>𝜋</mi>
-											<mo>&it;</mo>
-											<mi>𝑖</mi>
-											<mo>&it;</mo>
-											<msub>
-												<mi>𝜃</mi>
-												<mi>𝜆</mi>
-											</msub>
-										</mrow>
-									</mrow>
-								</msup>
-							</mrow>
-							<mo>&af;</mo>
 							<msub>
 								<mrow>
 									<mo>|</mo>
-									<mi>𝑁</mi>
+									<mrow>
+										<mi>𝑁</mi>
+										<mo>−</mo>
+										<mn>1</mn>
+									</mrow>
 									<mo>⟩</mo>
 								</mrow>
 								<mn>0</mn>
 							</msub>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<msup>
+										<mi>𝑒</mi>
+										<mrow>
+											<mo>−</mo>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mi>𝜋</mi>
+												<mo>&it;</mo>
+												<mi>𝑖</mi>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝜃</mi>
+													<mi>𝜆</mi>
+												</msub>
+											</mrow>
+										</mrow>
+									</msup>
+								</mrow>
+								<mo>&af;</mo>
+								<msub>
+									<mrow>
+										<mo>|</mo>
+										<mi>𝑁</mi>
+										<mo>⟩</mo>
+									</mrow>
+									<mn>0</mn>
+								</msub>
+							</mrow>
 						</math>
-						と書けたから，コヒーレント状態の一般論（いつか書く）より
+						とだから，コヒーレント状態の一般論（いつか書く）より
 						<math display="block">
 							<mrow>
 								<mrow>
@@ -24071,11 +24048,6 @@
 										</mrow>
 									</msup>
 									<mo>&it;</mo>
-									<msub>
-										<mi>𝜂</mi>
-										<mi>𝜆</mi>
-									</msub>
-									<mo>&it;</mo>
 									<msup>
 										<mi>𝑒</mi>
 										<mrow>
@@ -24108,11 +24080,6 @@
 							<mo>=</mo>
 							<mrow>
 								<mrow>
-									<msub>
-										<mi>𝜂</mi>
-										<mi>𝜆</mi>
-									</msub>
-									<mo>&it;</mo>
 									<mrow>
 										<msub>
 											<mi>𝑓</mi>
@@ -24136,32 +24103,40 @@
 											<mi>𝑖</mi>
 											<mo>&it;</mo>
 											<mrow>
-												<mo>(</mo>
-												<mrow>
+												<msubsup>
+													<mi>𝜑</mi>
+													<mi>𝜆</mi>
 													<mrow>
-														<msubsup>
-															<mi>𝜑</mi>
-															<mi>𝜆</mi>
-															<mrow>
-																<mo>(</mo>
-																<mi>−</mi>
-																<mo>)</mo>
-															</mrow>
-														</msubsup>
-														<mo>&af;</mo>
-														<mrow>
-															<mo>(</mo>
-															<mi>𝑥</mi>
-															<mo>)</mo>
-														</mrow>
+														<mo>(</mo>
+														<mi>−</mi>
+														<mo>)</mo>
 													</mrow>
-													<mo>−</mo>
-													<msub>
-														<mi>𝜃</mi>
-														<mi>𝜆</mi>
-													</msub>
+												</msubsup>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mi>𝑥</mi>
+													<mo>)</mo>
 												</mrow>
-												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</msup>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝑒</mi>
+										<mrow>
+											<mo>−</mo>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mi>𝜋</mi>
+												<mo>&it;</mo>
+												<mi>𝑖</mi>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝜃</mi>
+													<mi>𝜆</mi>
+												</msub>
 											</mrow>
 										</mrow>
 									</msup>
@@ -24220,9 +24195,23 @@
 									<msqrt><mi>𝐿</mi></msqrt>
 								</mfrac>
 								<mo>&it;</mo>
+								<msub>
+									<mi>𝜂</mi>
+									<mi>𝜆</mi>
+								</msub>
+								<mo>&it;</mo>
 								<msup>
 									<mi>𝑒</mi>
 									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>sgn</mi>
+												<mo>&af;</mo>
+												<mi>𝜆</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
 										<mn>2</mn>
 										<mo>&it;</mo>
 										<mi>𝜋</mi>
@@ -24298,6 +24287,47 @@
 										<mi>𝜂</mi>
 										<mi>𝜆</mi>
 									</msub>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝑒</mi>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>sgn</mi>
+													<mo>&af;</mo>
+													<mi>𝜆</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mn>2</mn>
+											<mo>&it;</mo>
+											<mi>𝜋</mi>
+											<mo>&it;</mo>
+											<mi>𝑖</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mfrac>
+														<mn>1</mn>
+														<mn>2</mn>
+													</mfrac>
+													<mo>−</mo>
+													<msub>
+														<mi>𝛿</mi>
+														<mi mathvariant="normal">b</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<mfrac>
+												<mi>𝑥</mi>
+												<mi>𝐿</mi>
+											</mfrac>
+										</mrow>
+									</msup>
 									<mo>&it;</mo>
 									<mfrac>
 										<mrow>
@@ -24394,6 +24424,47 @@
 									<mi>𝜆</mi>
 								</msub>
 								<mo>&it;</mo>
+								<msup>
+									<mi>𝑒</mi>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>sgn</mi>
+												<mo>&af;</mo>
+												<mi>𝜆</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mi>𝜋</mi>
+										<mo>&it;</mo>
+										<mi>𝑖</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mfrac>
+													<mn>1</mn>
+													<mn>2</mn>
+												</mfrac>
+												<mo>−</mo>
+												<msub>
+													<mi>𝛿</mi>
+													<mi mathvariant="normal">b</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mfrac>
+											<mi>𝑥</mi>
+											<mi>𝐿</mi>
+										</mfrac>
+									</mrow>
+								</msup>
+								<mo>&it;</mo>
 								<mfrac>
 									<mrow>
 										<mo>:</mo>
@@ -24431,6 +24502,47 @@
 									<mi>𝜂</mi>
 									<mi>𝜆</mi>
 								</msub>
+								<mo>&it;</mo>
+								<msup>
+									<mi>𝑒</mi>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>sgn</mi>
+												<mo>&af;</mo>
+												<mi>𝜆</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mi>𝜋</mi>
+										<mo>&it;</mo>
+										<mi>𝑖</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mfrac>
+													<mn>1</mn>
+													<mn>2</mn>
+												</mfrac>
+												<mo>−</mo>
+												<msub>
+													<mi>𝛿</mi>
+													<mi mathvariant="normal">b</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mfrac>
+											<mi>𝑥</mi>
+											<mi>𝐿</mi>
+										</mfrac>
+									</mrow>
+								</msup>
 								<mo>&it;</mo>
 								<mrow>
 									<munder>
@@ -24491,7 +24603,53 @@
 								</mrow>
 							</mrow>
 						</math>
-						となる．境界条件については，
+						となる．ボゾン場以外の項のうち，<math><msub><mi>𝜂</mi><mi>𝜆</mi></msub></math>は異種のフェルミオン場を交換関係ではなく反交換関係にするため必要．また
+						<math>
+							<msup>
+								<mi>𝑒</mi>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>sgn</mi>
+											<mo>&af;</mo>
+											<mi>𝜆</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mn>2</mn>
+									<mo>&it;</mo>
+									<mi>𝜋</mi>
+									<mo>&it;</mo>
+									<mi>𝑖</mi>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mfrac>
+												<mn>1</mn>
+												<mn>2</mn>
+											</mfrac>
+											<mo>−</mo>
+											<msub>
+												<mi>𝛿</mi>
+												<mi mathvariant="normal">b</mi>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<mfrac>
+										<mi>𝑥</mi>
+										<mi>𝐿</mi>
+									</mfrac>
+								</mrow>
+							</msup>
+						</math>
+						は，境界条件の補正項．いずれもボゾン場の定義に含めることが可能なのだが，前者を含めると異種のボゾン場が交換しなくなり，後者を含めると境界条件がコンパクト化ボゾンのものではなくなってしまうので，やらない方が普通．
+					</p>
+					<p>
+						境界条件は
 						<math display="block">
 							<mrow>
 								<mo>:</mo>
@@ -24563,26 +24721,10 @@
 														<mo>)</mo>
 													</mrow>
 													<mo>&it;</mo>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<msub>
-																<mi>𝑁</mi>
-																<mi>𝜆</mi>
-															</msub>
-															<mo>+</mo>
-															<mfrac>
-																<mn>1</mn>
-																<mn>2</mn>
-															</mfrac>
-															<mo>−</mo>
-															<msub>
-																<mi>𝛿</mi>
-																<mi>𝑏</mi>
-															</msub>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
+													<msub>
+														<mi>𝑁</mi>
+														<mi>𝜆</mi>
+													</msub>
 												</mrow>
 											</mrow>
 											<mo>)</mo>
@@ -24614,41 +24756,25 @@
 											</mrow>
 											<mo>&it;</mo>
 											<mrow>
-												<mo>(</mo>
+												<mi>𝜋</mi>
+												<mo>&it;</mo>
+												<mi>𝑖</mi>
+												<mo>&it;</mo>
 												<mrow>
+													<mo>[</mo>
 													<mrow>
-														<mi>𝜋</mi>
-														<mo>&it;</mo>
-														<mi>𝑖</mi>
-														<mo>&it;</mo>
-														<mrow>
-															<mo>[</mo>
-															<mrow>
-																<msub>
-																	<mi>𝜃</mi>
-																	<mi>𝜆</mi>
-																</msub>
-																<mo>,</mo>
-																<msub>
-																	<mi>𝑁</mi>
-																	<mi>𝜆</mi>
-																</msub>
-															</mrow>
-															<mo>]</mo>
-														</mrow>
+														<msub>
+															<mi>𝜃</mi>
+															<mi>𝜆</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mi>𝑁</mi>
+															<mi>𝜆</mi>
+														</msub>
 													</mrow>
-													<mo>+</mo>
-													<mfrac>
-														<mn>1</mn>
-														<mn>2</mn>
-													</mfrac>
-													<mo>−</mo>
-													<msub>
-														<mi>𝛿</mi>
-														<mi>𝑏</mi>
-													</msub>
+													<mo>]</mo>
 												</mrow>
-												<mo>)</mo>
 											</mrow>
 										</mrow>
 									</mrow>
@@ -24684,35 +24810,7 @@
 							</mrow>
 							<mo>=</mo>
 							<mrow>
-								<msup>
-									<mi>𝑒</mi>
-									<mrow>
-										<mo>−</mo>
-										<mrow>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>sgn</mi>
-													<mo>&af;</mo>
-													<mi>𝜆</mi>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-											<mo>&it;</mo>
-											<mn>2</mn>
-											<mo>&it;</mo>
-											<mi>𝜋</mi>
-											<mo>&it;</mo>
-											<mi>𝑖</mi>
-											<mo>&it;</mo>
-											<msub>
-												<mi>𝛿</mi>
-												<mi>𝑏</mi>
-											</msub>
-										</mrow>
-									</mrow>
-								</msup>
-								<mo>&it;</mo>
+								<mo>−</mo>
 								<mrow>
 									<mo>:</mo>
 									<msup>
@@ -24742,7 +24840,80 @@
 								</mrow>
 							</mrow>
 						</math>
-						と正しく反映されている．
+						に注意すると，
+						<math>
+							<mrow>
+								<msub>
+									<mi>𝜓</mi>
+									<mi>𝜆</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>+</mo>
+										<mfrac>
+											<mi>𝐿</mi>
+											<mn>2</mn>
+										</mfrac>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msup>
+									<mi>𝑒</mi>
+									<mrow>
+										<mo>−</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>sgn</mi>
+													<mo>&af;</mo>
+													<mi>𝜆</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<mn>2</mn>
+											<mo>&it;</mo>
+											<mi>𝜋</mi>
+											<mo>&it;</mo>
+											<mi>𝑖</mi>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝛿</mi>
+												<mi mathvariant="normal">b</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</msup>
+								<mo>&it;</mo>
+								<mrow>
+									<msub>
+										<mi>𝜓</mi>
+										<mi>𝜆</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>−</mo>
+											<mfrac>
+												<mi>𝐿</mi>
+												<mn>2</mn>
+											</mfrac>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+						を正しく反映する．
 					</p>
 				</section>
 			</section>
@@ -24901,20 +25072,10 @@
 										</mfrac>
 										<mo>&it;</mo>
 										<mrow>
-											<msubsup>
+											<msub>
 												<mo>∫</mo>
-												<mrow>
-													<mo>−</mo>
-													<mfrac>
-														<mi>𝐿</mi>
-														<mn>2</mn>
-													</mfrac>
-												</mrow>
-												<mfrac>
-													<mi>𝐿</mi>
-													<mn>2</mn>
-												</mfrac>
-											</msubsup>
+												<mi>ℝ</mi>
+											</msub>
 											<mrow>
 												<mi>𝑑</mi>
 												<mo>&af;</mo>
@@ -24963,116 +25124,6 @@
 												</mrow>
 												<mo>:</mo>
 											</mrow>
-										</mrow>
-									</mrow>
-								</mtd>
-							</mtr>
-							<mtr>
-								<mtd />
-								<mo>=</mo>
-								<mtd>
-									<mrow>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>sgn</mi>
-												<mo>&af;</mo>
-												<mi>𝜆</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<mi>ℎ</mi>
-											<mo>&it;</mo>
-											<msub>
-												<mi>𝑣</mi>
-												<mrow>
-													<mi mathvariant="normal">F</mi>
-													<mo>,</mo>
-													<mi>𝜆</mi>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mrow>
-													<mfrac>
-														<mn>1</mn>
-														<mn>2</mn>
-													</mfrac>
-													<mo>&it;</mo>
-													<mrow>
-														<msubsup>
-															<mo>∫</mo>
-															<mrow>
-																<mo>−</mo>
-																<mfrac>
-																	<mi>𝐿</mi>
-																	<mn>2</mn>
-																</mfrac>
-															</mrow>
-															<mfrac>
-																<mi>𝐿</mi>
-																<mn>2</mn>
-															</mfrac>
-														</msubsup>
-														<mrow>
-															<mi>𝑑</mi>
-															<mo>&af;</mo>
-															<mi>𝑥</mi>
-														</mrow>
-														<mrow>
-															<mo>:</mo>
-															<msup>
-																<mrow>
-																	<msub>
-																		<mi>𝑁</mi>
-																		<mi>𝜆</mi>
-																	</msub>
-																	<mo>&af;</mo>
-																	<mrow>
-																		<mo>(</mo>
-																		<mi>𝑥</mi>
-																		<mo>)</mo>
-																	</mrow>
-																</mrow>
-																<mn>2</mn>
-															</msup>
-															<mo>:</mo>
-														</mrow>
-													</mrow>
-												</mrow>
-												<mo>+</mo>
-												<mrow>
-													<mfrac>
-														<msub>
-															<mi>𝑁</mi>
-															<mi>𝜆</mi>
-														</msub>
-														<mi>𝐿</mi>
-													</mfrac>
-													<mo>&it;</mo>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mfrac>
-																<mn>1</mn>
-																<mn>2</mn>
-															</mfrac>
-															<mo>−</mo>
-															<msub>
-																<mi>𝛿</mi>
-																<mi mathvariant="normal">b</mi>
-															</msub>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-												</mrow>
-											</mrow>
-											<mo>)</mo>
 										</mrow>
 									</mrow>
 								</mtd>
@@ -25206,20 +25257,100 @@
 													</mfrac>
 													<mo>&it;</mo>
 													<mrow>
-														<msubsup>
+														<msub>
 															<mo>∫</mo>
-															<mrow>
-																<mo>−</mo>
-																<mfrac>
-																	<mi>𝐿</mi>
-																	<mn>2</mn>
-																</mfrac>
-															</mrow>
+															<mi>ℝ</mi>
+														</msub>
+														<mrow>
+															<mi>𝑑</mi>
+															<mo>&af;</mo>
+															<mi>𝑥</mi>
+														</mrow>
+														<mrow>
+															<mo>:</mo>
+															<msup>
+																<mrow>
+																	<msub>
+																		<mi>𝑁</mi>
+																		<mi>𝜆</mi>
+																	</msub>
+																	<mo>&af;</mo>
+																	<mrow>
+																		<mo>(</mo>
+																		<mi>𝑥</mi>
+																		<mo>)</mo>
+																	</mrow>
+																</mrow>
+																<mn>2</mn>
+															</msup>
+															<mo>:</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>+</mo>
+												<mrow>
+													<mfrac>
+														<msub>
+															<mi>𝑁</mi>
+															<mi>𝜆</mi>
+														</msub>
+														<mi>𝐿</mi>
+													</mfrac>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
 															<mfrac>
-																<mi>𝐿</mi>
+																<mn>1</mn>
 																<mn>2</mn>
 															</mfrac>
-														</msubsup>
+															<mo>−</mo>
+															<msub>
+																<mi>𝛿</mi>
+																<mi mathvariant="normal">b</mi>
+															</msub>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mtd>
+							</mtr>
+							<mtr>
+								<mtd />
+								<mo>=</mo>
+								<mtd>
+									<mrow>
+										<mrow>
+											<mi>ℎ</mi>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑣</mi>
+												<mrow>
+													<mi mathvariant="normal">F</mi>
+													<mo>,</mo>
+													<mi>𝜆</mi>
+												</mrow>
+											</msub>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mfrac>
+														<mn>1</mn>
+														<mn>2</mn>
+													</mfrac>
+													<mo>&it;</mo>
+													<mrow>
+														<msub>
+															<mo>∫</mo>
+															<mi>ℝ</mi>
+														</msub>
 														<mrow>
 															<mi>𝑑</mi>
 															<mo>&af;</mo>
@@ -25232,14 +25363,7 @@
 																	<mo>(</mo>
 																	<mrow>
 																		<mrow>
-																			<mfrac>
-																				<mi>𝑑</mi>
-																				<mrow>
-																					<mi>𝑑</mi>
-																					<mo>&af;</mo>
-																					<mi>𝑥</mi>
-																				</mrow>
-																			</mfrac>
+																			<mo>∂</mo>
 																			<mo>&af;</mo>
 																			<msub>
 																				<mi>𝜑</mi>
@@ -25261,35 +25385,31 @@
 														</mrow>
 													</mrow>
 												</mrow>
-												<mo>−</mo>
+												<mo>+</mo>
 												<mrow>
 													<mfrac>
-														<mn>1</mn>
-														<mrow>
-															<mn>2</mn>
-															<mo>&it;</mo>
-															<mi>𝐿</mi>
-														</mrow>
+														<msub>
+															<mi>𝑁</mi>
+															<mi>𝜆</mi>
+														</msub>
+														<mi>𝐿</mi>
 													</mfrac>
 													<mo>&it;</mo>
-													<msup>
+													<mrow>
+														<mo>(</mo>
 														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mfrac>
-																	<mn>1</mn>
-																	<mn>2</mn>
-																</mfrac>
-																<mo>−</mo>
-																<msub>
-																	<mi>𝛿</mi>
-																	<mi mathvariant="normal">b</mi>
-																</msub>
-															</mrow>
-															<mo>)</mo>
+															<mfrac>
+																<mn>1</mn>
+																<mn>2</mn>
+															</mfrac>
+															<mo>−</mo>
+															<msub>
+																<mi>𝛿</mi>
+																<mi mathvariant="normal">b</mi>
+															</msub>
 														</mrow>
-														<mn>2</mn>
-													</msup>
+														<mo>)</mo>
+													</mrow>
 												</mrow>
 											</mrow>
 											<mo>)</mo>
