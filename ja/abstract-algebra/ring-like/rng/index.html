@@ -51,7 +51,7 @@
 				</ul>
 				<p>これらは以下の条件を満たす．</p>
 				<ul>
-					<li><math><mi>𝑅</mi></math>は<math><mo>+</mo></math>を積とする可換群．</li>
+					<li><math><mi>𝑅</mi></math>は<math><mo>+</mo></math>を積とする<a href="../../module/index.html#可換群">可換群</a>．</li>
 					<li><math><mi>𝑅</mi></math>は<math><mo>⋅</mo></math>を積とする<a href="../../magma/semigroup/index.html#半群">半群</a>．</li>
 					<li>
 						<math display="block">
@@ -137,6 +137,86 @@
 					</li>
 				</ul>
 			</article>
+			<article id="擬環が暗に示す公理" class="thm">
+				<h3>擬環が暗に示す公理</h3>
+				<p><a href="#擬環">擬環</a><math><mi>𝑅</mi></math>を与えると，以下が成り立つ：
+					<math display="block">
+						<mrow>
+							<mn>0</mn>
+							<mo>&it;</mo>
+							<mi>𝑅</mi>
+						</mrow>
+						<mo>=</mo>
+						<mrow>
+							<mo>{</mo>
+							<mn>0</mn>
+							<mo>}</mo>
+						</mrow>
+					</math>
+				</p>
+			</article>
+			<article class="proof">
+				<h3>証明</h3>
+				<p>
+					<math display="block">
+						<mrow>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mi>𝑥</mi>
+								<mo>∈</mo>
+								<mi>𝑅</mi>
+							</mrow>
+						</mrow>
+						<mo>,</mo>
+						<mrow>
+							<mn>0</mn>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mn>0</mn>
+									<mo>&it;</mo>
+									<mi>𝑥</mi>
+								</mrow>
+								<mo>−</mo>
+								<mrow>
+									<mn>0</mn>
+									<mo>&it;</mo>
+									<mi>𝑥</mi>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mn>0</mn>
+											<mo>+</mo>
+											<mn>0</mn>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<mi>𝑥</mi>
+								</mrow>
+								<mo>−</mo>
+								<mrow>
+									<mn>0</mn>
+									<mo>&it;</mo>
+									<mi>𝑥</mi>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mn>0</mn>
+								<mo>&it;</mo>
+								<mi>𝑥</mi>
+							</mrow>
+						</mrow>
+					</math>
+				</p>
+			</article>
 			<article id="準同型" class="dfn">
 				<h3>準同型</h3>
 				<p>
@@ -169,6 +249,7 @@
 				</p>
 				<ul>
 					<li>
+						<a href="#擬環">和</a>に関して<a href="../../module/index.html#準同型">可換群準同型</a>：
 						<math display="block">
 							<mrow>
 								<mo>∀</mo>
@@ -224,6 +305,7 @@
 						</math>
 					</li>
 					<li>
+						<a href="#擬環">積</a>に関して<a href="../../magma/semigroup/index.html#準同型">半群準同型</a>：
 						<math display="block">
 							<mrow>
 								<mo>∀</mo>
@@ -280,20 +362,106 @@
 					</li>
 				</ul>
 			</article>
+			<p><a href="../../magma/group/index.html#準同型が暗に示す公理">準同型が暗に示す公理</a>より直ちに以下が成り立つ：</p>
+			<article id="準同型が暗に示す公理" class="thm">
+				<h3>準同型が暗に示す公理</h3>
+				<ul>
+					<li><a href="#擬環">擬環</a><math><mi>𝑅</mi><mo>,</mo><msup><mi>𝑅</mi><mo>′</mo></msup></math></li>
+					<li><a href="#準同型">準同型</a><math><mi>𝑓</mi><mo>:</mo><mrow><mi>𝑅</mi><mo>→</mo><msup><mi>𝑅</mi><mo>′</mo></msup></mrow></math></li>
+				</ul>
+				<p>を与えると，以下が成り立つ：</p>
+				<ul>
+					<li>
+						<a href="#擬環">和</a>の<a href="#擬環">単位元</a>を保つ：
+						<math display="block">
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msub>
+										<mn>0</mn>
+										<mi>𝑅</mi>
+									</msub>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<msub>
+								<mn>0</mn>
+								<msup>
+									<mi>𝑅</mi>
+									<mo>′</mo>
+								</msup>
+							</msub>
+						</math>
+					</li>
+					<li>
+						<a href="#擬環">和</a>の<a href="#擬環">逆元</a>を保つ：
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>∈</mo>
+									<mi>𝑅</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mo>−</mo>
+											<mi>𝑥</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>−</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑥</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+				</ul>
+			</article>
 			<article id="同型" class="dfn">
 				<h3>同型</h3>
-				<p>全単射な<a href="#準同型">擬環準同型</a>を<dfn>同型</dfn>と呼ぶ．</p>
+				<p>全単射な<a href="#準同型">擬環準同型</a>を<dfn>（擬環）同型</dfn><span lang="en">((rng) isomorphism)</span>と呼ぶ．</p>
 			</article>
-			
+			<article id="擬環の圏" class="dfn">
+				<h3>擬環の圏</h3>
+				<ul>
+					<li><a href="../../../category/index.html#圏">対象</a>を全ての<a href="#擬環">擬環</a></li>
+					<li><a href="../../../category/index.html#圏">射</a>を全ての<a href="#準同型">擬環準同型</a></li>
+				</ul>
+				<p>とする<a href="../../../category/index.html#圏">圏</a>を<dfn>擬環の圏</dfn><span lang="en">(category of rngs)</span>と呼ぶ</p>
+			</article>
 			<section>
-				<h3>性質</h3>
+				<h3>同型定理</h3>
+				<p><a href="#擬環の圏">擬環の圏</a>の<a href="../../../category/index.html#部分対象">部分対象</a>，<a href="../../../category/index.html#商対象">商対象</a>を確認し，同型定理を示す．</p>
 				<article id="部分擬環" class="dfn">
 					<h4>部分擬環</h4>
 					<p><a href="#擬環">擬環</a><math><mi>𝑅</mi></math>を与える．</p>
-					<p>部分集合<math><mi>𝑆</mi><mo>⊂</mo><mi>𝑅</mi></math>が<math><mi>𝑅</mi></math>と同じ積で擬環となる，つまり以下を満たすとき，<dfn>部分擬環</dfn>(subring)と呼ぶ．</p>
+					<p>部分集合<math><mi>𝑆</mi><mo>⊂</mo><mi>𝑅</mi></math>が<math><mi>𝑅</mi></math>と同じ<a href="#擬環">和</a>と<a href="#擬環">積</a>に関して擬環となる，つまり以下を満たすとき，<dfn>部分擬環</dfn><span lang="en">(trivial subrng)</span>と呼ぶ．</p>
 					<ul>
 						<li>
-							和<math><mo>+</mo></math>に関して<math><mi>𝑆</mi></math>は<math><mi>𝑅</mi></math>の部分（可換）群．つまり以下を満たす．
+							和<math><mo>+</mo></math>に関して<math><mi>𝑆</mi></math>は<math><mi>𝑅</mi></math>の<a href="../../module/index.html#部分可換群">部分可換群</a>．つまり以下を満たす．
 							<ul>
 								<li>
 									<math display="block">
@@ -345,6 +513,16 @@
 							</ul>
 						</li>
 					</ul>
+				</article>
+				<article id="自明な部分擬環" class="dfn">
+					<h4>自明な部分擬環</h4>
+					<p><a href="#擬環">擬環</a><math><mi>𝑅</mi></math>を与える．</p>
+					<ul>
+						<li><math><mi>𝑅</mi></math>自身は<math><mi>𝑅</mi></math>の<a href="#部分擬環">部分擬環</a>である．これを<math><mi>𝑅</mi></math>の<dfn>自明な部分擬環</dfn><span lang="en">(trivial subrng)</span>と呼ぶ．</li>
+						<li><math><mi>𝑅</mi></math>以外の<a href="#部分擬環">部分擬環</a>を<dfn>非自明</dfn><span lang="en">(nontrivial)</span>や<dfn>真</dfn><span lang="en">(proper)</span>と呼ぶ．</li>
+						<li></li>
+					</ul>
+					<p>部分集合<math><mi>𝑆</mi><mo>⊂</mo><mi>𝑅</mi></math>が<math><mi>𝑅</mi></math>と同じ<a href="#擬環">和</a>と<a href="#擬環">積</a>に関して擬環となる，つまり以下を満たすとき，と呼ぶ．</p>
 				</article>
 			</section>
 		</section>
