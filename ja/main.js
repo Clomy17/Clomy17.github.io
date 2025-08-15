@@ -115,7 +115,17 @@ document.querySelectorAll("section *:any-link").forEach(link => {
 			document.getElementById("link-render").innerHTML = '<button id="delete-link-render" type="button">×</button>';
 			if (this.pathname == location.pathname) {
 				document.getElementById("link-render").insertAdjacentHTML("beforeend", document.getElementById(decodeURI(hash)).outerHTML);
-			} // else {}
+			} else {
+				fetch(this.pathname)
+					.then(response => response.text())
+					.then((text) => {
+						return new DOMParser().parseFromString(text, "text/html");
+					})
+					.then((dom) => {
+						const loaded = dom.getElementById(decodeURI(hash));
+						document.getElementById("link-render").appendChild(loaded)
+					});
+			}
 			document.getElementById("delete-link-render").addEventListener("click", function() {
 				document.getElementById("link-render").innerHTML = "";
 			});
