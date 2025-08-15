@@ -1,7 +1,5 @@
 /* Box sizing rules reset */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
@@ -10,29 +8,26 @@ html:focus-within {
 	scroll-behavior: smooth;
 }
 
-body{
+html, body {
+	height: 100%
+}
+
+/* Remove default margin */
+body, h1, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+body {
 	background-color: #220;
 	color: #eee;
-	/* reset */
-	margin: 0;
 	/* Set core body defaults */
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+}
+
+main {
 	counter-reset: h2;
-}
-
-/* Remove default margin */
-p,
-figure,
-blockquote,
-dl,
-dd {
-	margin: 0;
-}
-
-dd {
-	margin-left: 1em;
 }
 
 p, mtext {
@@ -43,13 +38,11 @@ h1 {
 	font-size: 3em;
 	font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothiic Pro", HiraginoSans-W3, "Hiragino Sans W3", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "MS Gothic", "ＭＳ ゴシック", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 	text-align: center;
-	margin: 0;
 }
 
 h2 {
 	font-size: 2em;
-	margin: 3em auto 0.25em;
-	counter-reset: h3 ax dfn prp thm lem cor pblm;
+	margin: auto 0.25em;
 }
 
 h3 {
@@ -57,19 +50,16 @@ h3 {
 	padding: 0.25em;
 	border-bottom: solid white 2px;
 	border-left: solid red 6px;
-	counter-reset: h4;
 }
 
 h4 {
 	margin: 0.5rem;
 	border-bottom: solid white 2px;
-	counter-reset: h5;
 }
 
 h5 {
 	font-size: 16px;
 	margin: 0 0.5rem;
-	counter-reset: h6;
 }
 
 h6 {
@@ -98,7 +88,7 @@ ol[role="list"] {
 a {
 	text-decoration: none;
 }
-/* hrefを持つもの．a以外にMathML要素も含む */
+
 :any-link {
 	color: #88a3e8;
 }
@@ -202,33 +192,40 @@ mtable[intent=":lines"], mtable[intent=":system-of-equations"] {
 }
 
 /* 連番*/
-h2::before {
-	counter-increment: h2;
-	content: "第"counter(h2)"章  ";
+section:not([class]) {
+	> h2 {
+		counter-increment: h2;
+		counter-reset: h3 ax dfn prp thm lem cor pblm;
+	}
+	> h2::before {
+		content: "第"counter(h2)"章  ";
+	}
+	> h3 {
+		counter-increment: h3;
+		counter-reset: h4;
+	}
+	> h3::before {
+		content: counter(h2)"."counter(h3)"  ";
+	}
+	> h4 {
+		counter-increment: h4;
+		counter-reset: h5;
+	}
+	> h4::before {
+		content: counter(h2)"."counter(h3)"."counter(h4)"  ";
+	}
+	> h5 {
+		counter-increment: h5;
+		counter-reset: h6;
+	}
+	> h5::before {
+		content: counter(h2)"."counter(h3)"."counter(h4)"."counter(h5)"  ";
+	}
+	> h6::before {
+		counter-increment: h6;
+		content: counter(h2)"."counter(h3)"."counter(h4)"."counter(h5)"."counter(h6)"  ";
+	}
 }
-
-h3::before {
-	counter-increment: h3;
-	content: counter(h2)"."counter(h3)"  ";
-}
-
-h4::before {
-	counter-increment: h4;
-	content: counter(h2)"."counter(h3)"."counter(h4)"  ";
-}
-
-h5::before {
-	counter-increment: h5;
-	content: counter(h2)"."counter(h3)"."counter(h4)"."counter(h5)"  ";
-}
-
-h6::before {
-	counter-increment: h6;
-	content: counter(h2)"."counter(h3)"."counter(h4)"."counter(h5)"."counter(h6)"  ";
-}
-
-
-
 
 /* 公理，定義，命題，定理，補題，問題環境 */
 
@@ -364,6 +361,68 @@ article.ax > p, article.dfn > p, article.prp > p, article.thm > p, article.lem >
 	margin: 0 1rem;
 }
 
+#main-wrapper {
+	display: grid;
+	grid-template-areas: "main link-render";
+	// grid-template-areas: "toc main link-render";
+	grid-template-columns: minmax(0,2.5fr) minmax(0,1fr);
+	// grid-template-columns: minmax(0,1fr) minmax(0,2.5fr) minmax(0,15rem);
+	> aside {
+		max-height: 100vh;
+		overflow: auto;
+		position: sticky;
+		top: 0;
+	}
+}
+
+#link-render {
+	> article.ax {
+		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+			counter-increment: none;
+			content: "公理: ";
+		}
+	}
+	article.dfn {
+		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+			counter-increment: none;
+			content: "定義: ";
+		}
+	}
+	article.prp {
+		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+			counter-increment: none;
+			content: "命題: ";
+		}
+	}
+	article.thm {
+		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+			counter-increment: none;
+			content: "定理: ";
+		}
+	}
+	article.lem {
+		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+			counter-increment: none;
+			content: "補題: ";
+		}
+	}
+	article.cor {
+		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+			counter-increment: none;
+			content: "系: ";
+		}
+	}
+	article.pblm {
+		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
+			counter-increment: none;
+			content: "問題: ";
+		}
+	}
+}
+#delete-link-render {
+	float: right;
+}
+
 dl {
 	> dt {
 		font-weight: bold;
@@ -375,6 +434,9 @@ dl {
 	dt:after {
 		font-weight: bold;
 		content: ")";
+	}
+	dd {
+		margin-left: 1em;
 	}
 }
 

@@ -2,329 +2,332 @@
 <html lang="ja">
 	<head>
 		<link rel="stylesheet" href="../style.css"/>
+		<script type="module" src="../main.js"></script>
 		<meta charset="utf-8"/>
 		<meta name="description" content="位相空間"/>
 		<title>位相空間</title>
 	</head>
 	<body>
-		<h1>位相空間</h1>
-		<section>
-			<h2>定義</h2>
-			<article id="位相空間" class="ax">
-				<h3>位相空間</h3>
-				<p><dfn class="ax">位相空間</dfn><span lang="en">(topological space)</span>とは，以下の2つのデータからなる．</p>
-				<ul>
-					<li>集合<math><mi>𝑋</mi></math></li>
-					<li>
-						<dfn class="ax">位相</dfn><span lang="en">(topology)</span>と呼ばれる冪集合の部分集合
-						<math>
-							<mi>𝒪</mi>
-							<mo>⊂</mo>
-							<msup>
-								<mn>2</mn>
-								<mi>𝑋</mi>
-							</msup>
-						</math>
-					</li>
-				</ul>
-				<p>これらは以下を満たす．</p>
-				<ul>
-					<li>
-						<math>
-							<mrow>
-								<mi>∅</mi>
-								<mo>,</mo>
-								<mi>𝑋</mi>
-							</mrow>
-							<mo>∈</mo>
-							<mi>𝒪</mi>
-						</math>
-					</li>
-					<li>
-						<math>
-							<mrow>
-								<mo>∀</mo>
-								<mo>&af;</mo>
+		<main>
+			<h1>位相空間</h1>
+			<section>
+				<h2>定義</h2>
+				<article id="位相空間" class="ax">
+					<h3>位相空間</h3>
+					<p><dfn class="ax">位相空間</dfn><span lang="en">(topological space)</span>とは，以下の2つのデータからなる．</p>
+					<ul>
+						<li>集合<math><mi>𝑋</mi></math></li>
+						<li>
+							<dfn class="ax">位相</dfn><span lang="en">(topology)</span>と呼ばれる冪集合の部分集合
+							<math>
+								<mi>𝒪</mi>
+								<mo>⊂</mo>
+								<msup>
+									<mn>2</mn>
+									<mi>𝑋</mi>
+								</msup>
+							</math>
+						</li>
+					</ul>
+					<p>これらは以下を満たす．</p>
+					<ul>
+						<li>
+							<math>
 								<mrow>
-									<mi>𝑛</mi>
-									<mo>∈</mo>
-									<mi>ℕ</mi>
-								</mrow>
-							</mrow>
-						</math>
-						に対して以下を満たす
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑖</mi>
-										<mo>∈</mo>
-										<msub>
-											<mi>ℕ</mi>
-											<mrow>
-												<mo>≤</mo>
-												<mi>𝑛</mi>
-											</mrow>
-										</msub>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<msub>
-										<mi>𝑂</mi>
-										<mi>𝑖</mi>
-									</msub>
-									<mo>∈</mo>
-									<mi>𝒪</mi>
-								</mrow>
-							</mrow>
-							<mo>⇒</mo>
-							<mrow>
-								<mrow>
-									<munderover intent=":largeop">
-										<mo>⋂</mo>
-										<mrow>
-											<mi>𝑖</mi>
-											<mo>=</mo>
-											<mn>1</mn>
-										</mrow>
-										<mi>𝑛</mi>
-									</munderover>
-									<msub>
-										<mi>𝑂</mi>
-										<mi>𝑖</mi>
-									</msub>
+									<mi>∅</mi>
+									<mo>,</mo>
+									<mi>𝑋</mi>
 								</mrow>
 								<mo>∈</mo>
 								<mi>𝒪</mi>
-							</mrow>
-						</math>
-					</li>
-					<li>
-						任意の集合<math><mi>𝛬</mi></math>に対して以下を満たす
-						<math display="block">
-							<mrow>
+							</math>
+						</li>
+						<li>
+							<math>
 								<mrow>
 									<mo>∀</mo>
 									<mo>&af;</mo>
 									<mrow>
-										<mi>𝜆</mi>
+										<mi>𝑛</mi>
 										<mo>∈</mo>
-										<mi>𝛬</mi>
+										<mi>ℕ</mi>
 									</mrow>
 								</mrow>
-								<mo>,</mo>
+							</math>
+							に対して以下を満たす
+							<math display="block">
 								<mrow>
-									<msub>
-										<mi>𝑂</mi>
-										<mi>𝜆</mi>
-									</msub>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑖</mi>
+											<mo>∈</mo>
+											<msub>
+												<mi>ℕ</mi>
+												<mrow>
+													<mo>≤</mo>
+													<mi>𝑛</mi>
+												</mrow>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msub>
+											<mi>𝑂</mi>
+											<mi>𝑖</mi>
+										</msub>
+										<mo>∈</mo>
+										<mi>𝒪</mi>
+									</mrow>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<munderover intent=":largeop">
+											<mo>⋂</mo>
+											<mrow>
+												<mi>𝑖</mi>
+												<mo>=</mo>
+												<mn>1</mn>
+											</mrow>
+											<mi>𝑛</mi>
+										</munderover>
+										<msub>
+											<mi>𝑂</mi>
+											<mi>𝑖</mi>
+										</msub>
+									</mrow>
 									<mo>∈</mo>
 									<mi>𝒪</mi>
 								</mrow>
-							</mrow>
-							<mo>⇒</mo>
-							<mrow>
+							</math>
+						</li>
+						<li>
+							任意の集合<math><mi>𝛬</mi></math>に対して以下を満たす
+							<math display="block">
 								<mrow>
-									<munder intent=":largeop">
-										<mo>⋃</mo>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
 										<mrow>
 											<mi>𝜆</mi>
 											<mo>∈</mo>
 											<mi>𝛬</mi>
 										</mrow>
-									</munder>
-									<msub>
-										<mi>𝑂</mi>
-										<mi>𝑖</mi>
-									</msub>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msub>
+											<mi>𝑂</mi>
+											<mi>𝜆</mi>
+										</msub>
+										<mo>∈</mo>
+										<mi>𝒪</mi>
+									</mrow>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>⋃</mo>
+											<mrow>
+												<mi>𝜆</mi>
+												<mo>∈</mo>
+												<mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝑂</mi>
+											<mi>𝑖</mi>
+										</msub>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝒪</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<article id="開集合" class="dfn">
+						<h4>開集合</h4>
+						<p>
+							<a href="#位相空間">位相空間</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑋</mi>
+									<mo>,</mo>
+									<mi>𝒪</mi>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							を与える．
+						</p>
+						<ul>
+							<li><math><mi>𝒪</mi></math>の元のことを<dfn>開集合</dfn><span lang="en">(open set)</span>と呼ぶ．</li>
+							<li><math><mi>𝑂</mi><mo>∈</mo><mi>𝑋</mi></math>で，<math><mi>𝑋</mi><mo>∖</mo><mi>𝑂</mi></math>が開集合となるものを<dfn>閉集合</dfn><span lang="en">(closed set)</span>と呼ぶ．</li>
+						</ul>
+					</article>
+				</article>
+				<p>De Morganの法則より，<a href="#位相空間">位相空間</a>は<a href="#開集合">閉集合</a>を用いても定義可能：</p>
+				<article id="閉集合系による位相空間" class="ax">
+					<h3>閉集合系による位相空間</h3>
+					<p><dfn class="ax">位相空間</dfn><span lang="en">(topological space)</span>とは，以下の2つのデータからなる．</p>
+					<ul>
+						<li>集合<math><mi>𝑋</mi></math></li>
+						<li>
+							閉集合系
+							<math>
+								<msup>
+									<mi>𝒪</mi>
+									<mi mathvariant="normal">c</mi>
+								</msup>
+								<mo>⊂</mo>
+								<msup>
+									<mn>2</mn>
+									<mi>𝑋</mi>
+								</msup>
+							</math>
+						</li>
+					</ul>
+					<p>これらは以下を満たす．</p>
+					<ul>
+						<li>
+							<math>
+								<mrow>
+									<mi>∅</mi>
+									<mo>,</mo>
+									<mi>𝑋</mi>
 								</mrow>
 								<mo>∈</mo>
-								<mi>𝒪</mi>
-							</mrow>
-						</math>
-					</li>
-				</ul>
-				<article id="開集合" class="dfn">
-					<h4>開集合</h4>
-					<p>
-						<a href="#位相空間">位相空間</a>
-						<math>
-							<mo>(</mo>
-							<mrow>
-								<mi>𝑋</mi>
-								<mo>,</mo>
-								<mi>𝒪</mi>
-							</mrow>
-							<mo>)</mo>
-						</math>
-						を与える．
-					</p>
-					<ul>
-						<li><math><mi>𝒪</mi></math>の元のことを<dfn>開集合</dfn><span lang="en">(open set)</span>と呼ぶ．</li>
-						<li><math><mi>𝑂</mi><mo>∈</mo><mi>𝑋</mi></math>で，<math><mi>𝑋</mi><mo>∖</mo><mi>𝑂</mi></math>が開集合となるものを<dfn>閉集合</dfn><span lang="en">(closed set)</span>と呼ぶ．</li>
+								<msup>
+									<mi>𝒪</mi>
+									<mi mathvariant="normal">c</mi>
+								</msup>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>∈</mo>
+										<mi>ℕ</mi>
+									</mrow>
+								</mrow>
+							</math>
+							に対して以下を満たす
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑖</mi>
+											<mo>∈</mo>
+											<msub>
+												<mi>ℕ</mi>
+												<mrow>
+													<mo>≤</mo>
+													<mi>𝑛</mi>
+												</mrow>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msub>
+											<mi>𝑂</mi>
+											<mi>𝑖</mi>
+										</msub>
+										<mo>∈</mo>
+										<msup>
+											<mi>𝒪</mi>
+											<mi mathvariant="normal">c</mi>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<munderover intent=":largeop">
+											<mo>⋃</mo>
+											<mrow>
+												<mi>𝑖</mi>
+												<mo>=</mo>
+												<mn>1</mn>
+											</mrow>
+											<mi>𝑛</mi>
+										</munderover>
+										<msub>
+											<mi>𝑂</mi>
+											<mi>𝑖</mi>
+										</msub>
+									</mrow>
+									<mo>∈</mo>
+									<msup>
+										<mi>𝒪</mi>
+										<mi mathvariant="normal">c</mi>
+									</msup>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							任意の集合<math><mi>𝛬</mi></math>に対して以下を満たす
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝜆</mi>
+											<mo>∈</mo>
+											<mi>𝛬</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msub>
+											<mi>𝑂</mi>
+											<mi>𝜆</mi>
+										</msub>
+										<mo>∈</mo>
+										<msup>
+											<mi>𝒪</mi>
+											<mi mathvariant="normal">c</mi>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>⋂</mo>
+											<mrow>
+												<mi>𝜆</mi>
+												<mo>∈</mo>
+												<mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝑂</mi>
+											<mi>𝑖</mi>
+										</msub>
+									</mrow>
+									<mo>∈</mo>
+									<msup>
+										<mi>𝒪</mi>
+										<mi mathvariant="normal">c</mi>
+									</msup>
+								</mrow>
+							</math>
+						</li>
 					</ul>
 				</article>
-			</article>
-			<p>De Morganの法則より，<a href="#位相空間">位相空間</a>は<a href="#開集合">閉集合</a>を用いても定義可能：</p>
-			<article id="閉集合系による位相空間" class="ax">
-				<h3>閉集合系による位相空間</h3>
-				<p><dfn class="ax">位相空間</dfn><span lang="en">(topological space)</span>とは，以下の2つのデータからなる．</p>
-				<ul>
-					<li>集合<math><mi>𝑋</mi></math></li>
-					<li>
-						閉集合系
-						<math>
-							<msup>
-								<mi>𝒪</mi>
-								<mi mathvariant="normal">c</mi>
-							</msup>
-							<mo>⊂</mo>
-							<msup>
-								<mn>2</mn>
-								<mi>𝑋</mi>
-							</msup>
-						</math>
-					</li>
-				</ul>
-				<p>これらは以下を満たす．</p>
-				<ul>
-					<li>
-						<math>
-							<mrow>
-								<mi>∅</mi>
-								<mo>,</mo>
-								<mi>𝑋</mi>
-							</mrow>
-							<mo>∈</mo>
-							<msup>
-								<mi>𝒪</mi>
-								<mi mathvariant="normal">c</mi>
-							</msup>
-						</math>
-					</li>
-					<li>
-						<math>
-							<mrow>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝑛</mi>
-									<mo>∈</mo>
-									<mi>ℕ</mi>
-								</mrow>
-							</mrow>
-						</math>
-						に対して以下を満たす
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑖</mi>
-										<mo>∈</mo>
-										<msub>
-											<mi>ℕ</mi>
-											<mrow>
-												<mo>≤</mo>
-												<mi>𝑛</mi>
-											</mrow>
-										</msub>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<msub>
-										<mi>𝑂</mi>
-										<mi>𝑖</mi>
-									</msub>
-									<mo>∈</mo>
-									<msup>
-										<mi>𝒪</mi>
-										<mi mathvariant="normal">c</mi>
-									</msup>
-								</mrow>
-							</mrow>
-							<mo>⇒</mo>
-							<mrow>
-								<mrow>
-									<munderover intent=":largeop">
-										<mo>⋃</mo>
-										<mrow>
-											<mi>𝑖</mi>
-											<mo>=</mo>
-											<mn>1</mn>
-										</mrow>
-										<mi>𝑛</mi>
-									</munderover>
-									<msub>
-										<mi>𝑂</mi>
-										<mi>𝑖</mi>
-									</msub>
-								</mrow>
-								<mo>∈</mo>
-								<msup>
-									<mi>𝒪</mi>
-									<mi mathvariant="normal">c</mi>
-								</msup>
-							</mrow>
-						</math>
-					</li>
-					<li>
-						任意の集合<math><mi>𝛬</mi></math>に対して以下を満たす
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝜆</mi>
-										<mo>∈</mo>
-										<mi>𝛬</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<msub>
-										<mi>𝑂</mi>
-										<mi>𝜆</mi>
-									</msub>
-									<mo>∈</mo>
-									<msup>
-										<mi>𝒪</mi>
-										<mi mathvariant="normal">c</mi>
-									</msup>
-								</mrow>
-							</mrow>
-							<mo>⇒</mo>
-							<mrow>
-								<mrow>
-									<munder intent=":largeop">
-										<mo>⋂</mo>
-										<mrow>
-											<mi>𝜆</mi>
-											<mo>∈</mo>
-											<mi>𝛬</mi>
-										</mrow>
-									</munder>
-									<msub>
-										<mi>𝑂</mi>
-										<mi>𝑖</mi>
-									</msub>
-								</mrow>
-								<mo>∈</mo>
-								<msup>
-									<mi>𝒪</mi>
-									<mi mathvariant="normal">c</mi>
-								</msup>
-							</mrow>
-						</math>
-					</li>
-				</ul>
-			</article>
-		</section>
+			</section>
+		</main>
 	</body>
 </html>
