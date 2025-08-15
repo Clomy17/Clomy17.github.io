@@ -365,7 +365,7 @@ article.ax > p, article.dfn > p, article.prp > p, article.thm > p, article.lem >
 	display: grid;
 	grid-template-areas: "main link-render";
 	// grid-template-areas: "toc main link-render";
-	grid-template-columns: minmax(0,2.5fr) minmax(0,1fr);
+	grid-template-columns: minmax(3fr,auto) minmax(0,1fr);
 	// grid-template-columns: minmax(0,1fr) minmax(0,2.5fr) minmax(0,15rem);
 	> aside {
 		max-height: 100vh;
