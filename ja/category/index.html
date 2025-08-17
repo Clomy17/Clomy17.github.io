@@ -19792,7 +19792,7 @@
 										<mi>𝒜</mi>
 									</mrow>
 								</math>
-								のうち，<math><mi>𝐷</mi><mo>&af;</mo><mrow><mo>(</mo><mo>)</mo></mrow></math>が全て<a href="#モノ射">モノ射</a>となるものに対する<math><mi>𝐷</mi></math>の<a href="#極限">余極限</a>を<dfn>合併</dfn><span lang="en">(union)</span>，<dfn>和</dfn><span lang="en">(union, union)</span>や<dfn>結び</dfn><span lang="en">(join)</span>と呼ぶ．実用上は<a href="#圏">対象</a>
+								のうち，<math><mi>𝐷</mi><mo>&af;</mo><mrow><mo>(</mo><mo>)</mo></mrow></math>が全て<a href="#モノ射">モノ射</a>となるものに対する<math><mi>𝐷</mi></math>の<a href="#極限">余極限</a>を<dfn>合併</dfn><span lang="en">(union)</span>や<dfn>和</dfn><span lang="en">(sum)</span>，<dfn>結び</dfn><span lang="en">(join)</span>と呼ぶ．実用上は<a href="#圏">対象</a>
 								<math>
 									<mrow>
 										<mi>𝐴</mi>
@@ -22503,11 +22503,13 @@
 				</ul>
 				<p>を与えると，以下が成り立つ：</p>
 				<ul>
-					<li><math><mi>𝑒</mi></math>が<a href="#モノ射">エピ射</a>，<math><mi>𝑚</mi></math>が<a href="#モノ射">モノ射</a>のとき，<math><mi>𝑒</mi></math>が<math><mi>𝑚</mi></math>に関する<a href="#持ち上げ">左持ち上げ性</a>を持つなら<math><mi>𝑒</mi><mo>⊥</mo><mi>𝑚</mi></math>．</li>
-					<li>
+					<li>以下のいずれかの条件を満たすとき，<math><mi>𝑒</mi><mo>⊥</mo><mi>𝑚</mi></math>：
 						<ul>
+							<li><math><mi>𝑒</mi></math>が<a href="#モノ射">エピ射</a>，<math><mi>𝑚</mi></math>が<a href="#モノ射">モノ射</a>，<math><mi>𝑒</mi></math>が<math><mi>𝑚</mi></math>に関する<a href="#持ち上げ">左持ち上げ性</a>を持つ
+							<li><math><mi>𝑒</mi></math>が<a href="#同型射">分裂エピ射</a>かつ<math><mi>𝑚</mi></math>が<a href="#モノ射">モノ射</a>．</li>
+							<li><math><mi>𝑒</mi></math>が<a href="#モノ射">エピ射</a>かつ<math><mi>𝑚</mi></math>が<a href="#同型射">分裂モノ射</a>．</li>
 							<li>
-								<math><mi>𝑒</mi></math>が<a href="#同型射">分裂エピ射</a>ならば<math><mi>𝑒</mi><mo>⊥</mo><mi>𝑚</mi></math>．特に，任意の<a href="#圏">射</a>の集まり<math><mi>ℰ</mi></math>に対し，
+								<math><mi>𝑒</mi></math>が<a href="#同型射">分裂エピ射</a>で，その<a href="#同型射">右逆射</a>が一意．特に，任意の<a href="#圏">射</a>の集まり<math><mi>ℰ</mi></math>に対し，
 								<math>
 									<mmultiscripts>
 										<mi>ℰ</mi>
@@ -22518,7 +22520,7 @@
 								は共に全ての<a href="#同型射">分裂エピ射</a>を含む．
 							</li>
 							<li>
-								<math><mi>𝑚</mi></math>が<a href="#同型射">分裂モノ射</a>ならば<math><mi>𝑒</mi><mo>⊥</mo><mi>𝑚</mi></math>．特に，任意の<a href="#圏">射</a>の集まり<math><mi>ℰ</mi></math>に対し，
+								<math><mi>𝑚</mi></math>が<a href="#同型射">分裂モノ射</a>で，その<a href="#同型射">左逆射</a>が一意．特に，任意の<a href="#圏">射</a>の集まり<math><mi>ℰ</mi></math>に対し，
 								<math>
 									<msup>
 										<mi>ℰ</mi>
@@ -22528,7 +22530,7 @@
 								は共に全ての<a href="#同型射">分裂モノ射</a>を含む．
 							</li>
 							<li>
-								<math><mi>𝑒</mi><mo>,</mo><mi>𝑚</mi></math>のいずれかが<a href="#同型射">同型射</a>ならば<math><mi>𝑒</mi><mo>⊥</mo><mi>𝑚</mi></math>．特に任意の<a href="#圏">射</a>の集まり<math><mi>ℰ</mi></math>に対し，
+								<math><mi>𝑒</mi><mo>,</mo><mi>𝑚</mi></math>のいずれかが<a href="#同型射">同型射</a>．特に任意の<a href="#圏">射</a>の集まり<math><mi>ℰ</mi></math>に対し，
 								<math>
 									<mmultiscripts>
 										<mi>ℰ</mi>
@@ -22670,210 +22672,231 @@
 				<h3>証明</h3>
 				<ul>
 					<li>
-						<math><mi>𝑒</mi></math>が<a href="#モノ射">エピ射</a><math><mi>𝑒</mi></math>，<math><mi>𝑚</mi></math><a href="#モノ射">モノ射</a>だから，
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>∘</mo>
-									<mi>𝑒</mi>
-								</mrow>
-								<mo>=</mo>
-								<mi>𝑓</mi>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑚</mi>
-									<mo>∘</mo>
-									<mi>𝑔</mi>
-								</mrow>
-								<mo>=</mo>
-								<msup>
-									<mi>𝑓</mi>
-									<mo>′</mo>
-								</msup>
-							</mrow>
-						</math>
-						を満たす<a href="#圏">射</a>は（存在すれば）一意．
-					</li>
-					<li>
-						<math><mi>𝑒</mi></math>が<a href="#同型射">分裂エピ射</a>のとき，<a href="#圏">射</a>の組
-						<math>
-							<mrow>
-								<mi>𝑓</mi>
-								<mo>∈</mo>
-								<mrow>
-									<msub>
-										<mi>hom</mi>
-										<mi>𝒜</mi>
-									</msub>
-									<mo>&af;</mo>
+						<ul>
+							<li>
+								<math><mi>𝑒</mi></math>が<a href="#モノ射">エピ射</a>，<math><mi>𝑚</mi></math><a href="#モノ射">モノ射</a>のとき，
+								<math display="block">
 									<mrow>
-										<mo>(</mo>
 										<mrow>
-											<mi>𝐴</mi>
-											<mo>,</mo>
-											<mi>𝐵</mi>
+											<mi>𝑔</mi>
+											<mo>∘</mo>
+											<mi>𝑒</mi>
 										</mrow>
-										<mo>)</mo>
+										<mo>=</mo>
+										<mi>𝑓</mi>
 									</mrow>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<msup>
-									<mi>𝑓</mi>
-									<mo>′</mo>
-								</msup>
-								<mo>∈</mo>
-								<mrow>
-									<msub>
-										<mi>hom</mi>
-										<mi>𝒜</mi>
-									</msub>
-									<mo>&af;</mo>
+									<mo>,</mo>
 									<mrow>
-										<mo>(</mo>
 										<mrow>
-											<msup>
-												<mi>𝐴</mi>
-												<mo>′</mo>
-											</msup>
-											<mo>,</mo>
-											<msup>
-												<mi>𝐵</mi>
-												<mo>′</mo>
-											</msup>
+											<mi>𝑚</mi>
+											<mo>∘</mo>
+											<mi>𝑔</mi>
 										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-						が，
-						<math display="block">
-							<mrow>
-								<mi>𝑚</mi>
-								<mo>∘</mo>
-								<mi>𝑓</mi>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<msup>
-									<mi>𝑓</mi>
-									<mo>′</mo>
-								</msup>
-								<mo>∘</mo>
-								<mi>𝑒</mi>
-							</mrow>
-						</math>
-						を満たすとすると，
-						<a href="#圏">射</a>
-						<math>
-							<mi>𝑔</mi>
-							<mo>∈</mo>
-							<mrow>
-								<msub>
-									<mi>hom</mi>
-									<mi>𝒜</mi>
-								</msub>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
+										<mo>=</mo>
 										<msup>
-											<mi>𝐴</mi>
+											<mi>𝑓</mi>
 											<mo>′</mo>
 										</msup>
-										<mo>,</mo>
-										<mi>𝐵</mi>
 									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						で，
-						<math display="block">
-							<mrow>
-								<mi>𝑔</mi>
-								<mo>∘</mo>
-								<mi>𝑒</mi>
-							</mrow>
-							<mo>=</mo>
-							<mi>𝑓</mi>
-						</math>
-						を満たすのは，<math><mi>𝑒</mi></math>の<a href="#同型射">右逆射</a>
-						<math>
-							<msup>
-								<mi>𝑒</mi>
-								<mrow>
-									<mo>−</mo>
-									<mn>1</mn>
-								</mrow>
-							</msup>
-						</math>
-						に対する
-						<math display="block">
-							<mi>𝑔</mi>
-							<mo>=</mo>
-							<mrow>
-								<mi>𝑓</mi>
-								<mo>∘</mo>
-								<msup>
-									<mi>𝑒</mi>
+								</math>
+								を満たす<a href="#圏">射</a>は（存在すれば）一意．
+							</li>
+							<li>
+								<math><mi>𝑒</mi></math>が<a href="#同型射">分裂エピ射</a>のとき，<a href="#圏">射</a>の組
+								<math>
 									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
+										<mi>𝑓</mi>
+										<mo>∈</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi>
+												<mi>𝒜</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝐴</mi>
+													<mo>,</mo>
+													<mi>𝐵</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
 									</mrow>
-								</msup>
-							</mrow>
-						</math>
-						のみ．これに対し，
-						<math display="block">
-							<mrow>
-								<mi>𝑚</mi>
-								<mo>∘</mo>
-								<mi>𝑔</mi>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mi>𝑚</mi>
-								<mo>∘</mo>
-								<mi>𝑓</mi>
-								<mo>∘</mo>
-								<msup>
-									<mi>𝑒</mi>
+									<mo>,</mo>
 									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
+										<msup>
+											<mi>𝑓</mi>
+											<mo>′</mo>
+										</msup>
+										<mo>∈</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi>
+												<mi>𝒜</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝐴</mi>
+														<mo>′</mo>
+													</msup>
+													<mo>,</mo>
+													<msup>
+														<mi>𝐵</mi>
+														<mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
 									</mrow>
-								</msup>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<msup>
+								</math>
+								が，
+								<math display="block">
+									<mrow>
+										<mi>𝑚</mi>
+										<mo>∘</mo>
+										<mi>𝑓</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msup>
+											<mi>𝑓</mi>
+											<mo>′</mo>
+										</msup>
+										<mo>∘</mo>
+										<mi>𝑒</mi>
+									</mrow>
+								</math>
+								を満たすとすると，
+								<a href="#圏">射</a>
+								<math>
+									<mi>𝑔</mi>
+									<mo>∈</mo>
+									<mrow>
+										<msub>
+											<mi>hom</mi>
+											<mi>𝒜</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msup>
+													<mi>𝐴</mi>
+													<mo>′</mo>
+												</msup>
+												<mo>,</mo>
+												<mi>𝐵</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+								で，
+								<math display="block">
+									<mrow>
+										<mi>𝑔</mi>
+										<mo>∘</mo>
+										<mi>𝑒</mi>
+									</mrow>
+									<mo>=</mo>
 									<mi>𝑓</mi>
-									<mo>′</mo>
-								</msup>
-								<mo>∘</mo>
-								<mi>𝑒</mi>
-								<mo>∘</mo>
-								<msup>
-									<mi>𝑒</mi>
+								</math>
+								を満たすとき，<math><mi>𝑒</mi></math>の<a href="#同型射">右逆射</a>
+								<math>
+									<msup>
+										<mi>𝑒</mi>
+										<mo>′</mo>
+									</msup>
+								</math>
+								が存在して，
+								<math display="block">
+									<mi>𝑔</mi>
+									<mo>=</mo>
 									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
+										<mi>𝑓</mi>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑒</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
 									</mrow>
-								</msup>
-							</mrow>
-							<mo>=</mo>
-							<msup>
-								<mi>𝑓</mi>
-								<mo>′</mo>
-							</msup>
-						</math>
-						を満たすから<math><mi>𝑒</mi><mo>⊥</mo><mi>𝑚</mi></math>．<math><mi>𝑚</mi></math>が<a href="#同型射">分裂モノ射</a>の場合等も同様．
+								</math>
+								を満たす．これに対し，
+								<math display="block">
+									<mrow>
+										<mi>𝑚</mi>
+										<mo>∘</mo>
+										<mi>𝑔</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑚</mi>
+										<mo>∘</mo>
+										<mi>𝑓</mi>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑒</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msup>
+											<mi>𝑓</mi>
+											<mo>′</mo>
+										</msup>
+										<mo>∘</mo>
+										<mi>𝑒</mi>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑒</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>=</mo>
+									<msup>
+										<mi>𝑓</mi>
+										<mo>′</mo>
+									</msup>
+								</math>
+								を満たす．
+								<ul>
+									<li>
+										<math><mi>𝑚</mi></math>が<a href="#モノ射">モノ射</a>のとき，<math><mrow><mi>𝑚</mi><mo>∘</mo><mi>𝑔</mi></mrow><mo>=</mo><msup><mi>𝑓</mi><mo>′</mo></msup></math>を満たす<math><mi>𝑔</mi></math>は一意．
+									</li>
+									<li>
+										<math><mi>𝑒</mi></math>の<a href="#同型射">右逆射</a>が一意のとき，
+										<math>
+											<mrow>
+												<mi>𝑔</mi>
+												<mo>∘</mo>
+												<mi>𝑒</mi>
+											</mrow>
+											<mo>=</mo>
+											<mi>𝑓</mi>
+										</math>
+										を満たす<math><mi>𝑔</mi></math>は一意．
+									</li>
+								</ul>
+								いずれの場合でも，<math><mi>𝑒</mi><mo>⊥</mo><mi>𝑚</mi></math>．
+							</li>
+							<li>双対と，<a href="#同型射">同型射</a>の<a href="#同型射">逆射</a>の一意性より他も成立．</li>
+						</ul>
 					</li>
 					<li>
 						<a href="#圏">射</a>の組

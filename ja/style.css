@@ -173,7 +173,6 @@ text {
 }
 
 math {
-	overflow-x: scroll;
 	overflow-wrap: break-word;
 }
 
