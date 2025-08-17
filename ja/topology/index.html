@@ -14,7 +14,7 @@
 				<h2>定義</h2>
 				<section>
 					<h3>位相空間の定義</h3>
-					<p>同値な定義が割とあるので一通り示しておく．</p>
+					<p>同値な定義が割とあるので一通り示しておくが，基本は開集合系で定義する．</p>
 					<article id="位相空間" class="ax">
 						<h4>位相空間</h4>
 						<p><dfn class="ax">位相空間</dfn><span lang="en">(topological space)</span>とは，以下の2つのデータからなる．</p>
@@ -50,7 +50,7 @@
 									</li>
 									<li>
 										<math><mi>𝑋</mi></math>の部分集合の<dfn class="ax">閉包</dfn><span lang="en">(clousure)</span>をとる操作
-										<math display="block">
+										<math>
 											<mi>cl</mi>
 											<mo>:</mo>
 											<mrow>
@@ -68,7 +68,7 @@
 									</li>
 									<li>
 										<math><mi>𝑋</mi></math>の部分集合の<dfn class="ax">内部</dfn><span lang="en">(interior)</span>をとる操作
-										<math display="block">
+										<math>
 											<mi>int</mi>
 											<mo>:</mo>
 											<mrow>
@@ -86,7 +86,7 @@
 									</li>
 									<li>
 										<math><mi>𝑋</mi></math>の部分集合の<dfn class="ax">外部</dfn><span lang="en">(exterior)</span>をとる操作
-										<math display="block">
+										<math>
 											<mi>ext</mi>
 											<mo>:</mo>
 											<mrow>
@@ -104,7 +104,7 @@
 									</li>
 									<li>
 										<math><mi>𝑋</mi></math>の部分集合の<dfn class="ax">境界</dfn><span lang="en">(boundary)</span>をとる操作
-										<math display="block">
+										<math>
 											<mo>∂</mo>
 											<mo>:</mo>
 											<mrow>
@@ -122,7 +122,7 @@
 									</li>
 									<li>
 										<math><mi>𝑋</mi></math>の部分集合の<dfn class="ax">導（来）集合</dfn><span lang="en">(derived set)</span>をとる操作
-										<math display="block">
+										<math>
 											<msup>
 												<mi>-</mi>
 												<mo>∗</mo>
@@ -143,7 +143,7 @@
 									</li>
 									<li>
 										<math><mi>𝑋</mi></math>の各元の<dfn class="ax">近傍</dfn><span lang="en">(neighbourhood)</span>をとる操作
-										<math display="block">
+										<math>
 											<mi>𝑁</mi>
 											<mo>:</mo>
 											<mrow>
@@ -165,9 +165,10 @@
 								</ul>
 							</li>
 						</ul>
-						<p>これらは以下の同値な条件のいずれか（ゆえに全て）を満たす．</p>
-						<ul>
-							<li>
+						<p>それぞれに対し，本質的に等価な以下の条件を満たす．</p>
+						<dl>
+							<dt>開集合系の公理</dt>
+							<dd>
 								<ul>
 									<li>
 										<math>
@@ -287,8 +288,9 @@
 										</math>
 									</li>
 								</ul>
-							</li>
-							<li>
+							</dd>
+							<dt>閉集合系の公理</dt>
+							<dd>
 								<ul>
 									<li>
 										<math>
@@ -423,8 +425,9 @@
 										</math>
 									</li>
 								</ul>
-							</li>
-							<li>
+							</dd>
+							<dt>閉包作用素の公理</dt>
+							<dd>
 								<ul>
 									<li>
 										<math display="block">
@@ -453,15 +456,27 @@
 									</li>
 									<li>
 										<math display="block">
-											<mi>𝐴</mi>
-											<mo>⊂</mo>
 											<mrow>
-												<mi>cl</mi>
+												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
 													<mi>𝐴</mi>
-													<mo>)</mo>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝐴</mi>
+												<mo>⊂</mo>
+												<mrow>
+													<mi>cl</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝐴</mi>
+														<mo>)</mo>
+													</mrow>
 												</mrow>
 											</mrow>
 										</math>
@@ -469,45 +484,62 @@
 									<li>
 										<math display="block">
 											<mrow>
-												<mi>cl</mi>
+												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
 													<mrow>
 														<mi>𝐴</mi>
-														<mo>∪</mo>
+														<mo>,</mo>
 														<mi>𝐵</mi>
 													</mrow>
-													<mo>)</mo>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
 												</mrow>
 											</mrow>
-											<mo>=</mo>
+											<mo>,</mo>
 											<mrow>
 												<mrow>
 													<mi>cl</mi>
 													<mo>&af;</mo>
 													<mrow>
 														<mo>(</mo>
-														<mi>𝐴</mi>
+														<mrow>
+															<mi>𝐴</mi>
+															<mo>∪</mo>
+															<mi>𝐵</mi>
+														</mrow>
 														<mo>)</mo>
 													</mrow>
 												</mrow>
-												<mo>∪</mo>
+												<mo>=</mo>
 												<mrow>
-													<mi>cl</mi>
-													<mo>&af;</mo>
 													<mrow>
-														<mo>(</mo>
-														<mi>𝐵</mi>
-														<mo>)</mo>
+														<mi>cl</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐴</mi>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>∪</mo>
+													<mrow>
+														<mi>cl</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐵</mi>
+															<mo>)</mo>
+														</mrow>
 													</mrow>
 												</mrow>
 											</mrow>
 										</math>
 									</li>
 								</ul>
-							</li>
-							<li>
+							</dd>
+							<dt>内部作用素の公理</dt>
+							<dd>
 								<ul>
 									<li>
 										<math display="block">
@@ -536,15 +568,27 @@
 									</li>
 									<li>
 										<math display="block">
-											<mi>𝐴</mi>
-											<mo>⊃</mo>
 											<mrow>
-												<mi>int</mi>
+												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
 													<mi>𝐴</mi>
-													<mo>)</mo>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝐴</mi>
+												<mo>⊃</mo>
+												<mrow>
+													<mi>int</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝐴</mi>
+														<mo>)</mo>
+													</mrow>
 												</mrow>
 											</mrow>
 										</math>
@@ -552,45 +596,62 @@
 									<li>
 										<math display="block">
 											<mrow>
-												<mi>int</mi>
+												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
 													<mrow>
 														<mi>𝐴</mi>
-														<mo>∩</mo>
+														<mo>,</mo>
 														<mi>𝐵</mi>
 													</mrow>
-													<mo>)</mo>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
 												</mrow>
 											</mrow>
-											<mo>=</mo>
+											<mo>,</mo>
 											<mrow>
 												<mrow>
 													<mi>int</mi>
 													<mo>&af;</mo>
 													<mrow>
 														<mo>(</mo>
-														<mi>𝐴</mi>
+														<mrow>
+															<mi>𝐴</mi>
+															<mo>∩</mo>
+															<mi>𝐵</mi>
+														</mrow>
 														<mo>)</mo>
 													</mrow>
 												</mrow>
-												<mo>∩</mo>
+												<mo>=</mo>
 												<mrow>
-													<mi>int</mi>
-													<mo>&af;</mo>
 													<mrow>
-														<mo>(</mo>
-														<mi>𝐵</mi>
-														<mo>)</mo>
+														<mi>int</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐴</mi>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>∩</mo>
+													<mrow>
+														<mi>int</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐵</mi>
+															<mo>)</mo>
+														</mrow>
 													</mrow>
 												</mrow>
 											</mrow>
 										</math>
 									</li>
 								</ul>
-							</li>
-							<li>
+							</dd>
+							<dt>外部作用素の公理</dt>
+							<dd>
 								<ul>
 									<li>
 										<math display="block">
@@ -610,99 +671,140 @@
 									<li>
 										<math display="block">
 											<mrow>
-												<mi>ext</mi>
+												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
+													<mi>𝐴</mi>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mrow>
+													<mi>ext</mi>
+													<mo>&af;</mo>
 													<mrow>
-														<mi>𝑋</mi>
-														<mo>∖</mo>
+														<mo>(</mo>
 														<mrow>
-															<mi>ext</mi>
-															<mo>&af;</mo>
+															<mi>𝑋</mi>
+															<mo>∖</mo>
 															<mrow>
-																<mo>(</mo>
-																<mi>𝐴</mi>
-																<mo>)</mo>
+																<mi>ext</mi>
+																<mo>&af;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mi>𝐴</mi>
+																	<mo>)</mo>
+																</mrow>
 															</mrow>
 														</mrow>
+														<mo>)</mo>
 													</mrow>
-													<mo>)</mo>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<mi>ext</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝐴</mi>
+														<mo>)</mo>
+													</mrow>
 												</mrow>
 											</mrow>
-											<mo>=</mo>
+										</math>
+									</li>
+									<li>
+										<math display="block">
 											<mrow>
-												<mi>ext</mi>
+												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
 													<mi>𝐴</mi>
-													<mo>)</mo>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
 												</mrow>
 											</mrow>
-										</math>
-									</li>
-									<li>
-										<math display="block">
+											<mo>,</mo>
 											<mrow>
-												<mi>𝐴</mi>
-												<mo>∩</mo>
 												<mrow>
-													<mi>ext</mi>
-													<mo>&af;</mo>
+													<mi>𝐴</mi>
+													<mo>∩</mo>
 													<mrow>
-														<mo>(</mo>
-														<mi>𝐴</mi>
-														<mo>)</mo>
+														<mi>ext</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐴</mi>
+															<mo>)</mo>
+														</mrow>
 													</mrow>
 												</mrow>
+												<mo>=</mo>
+												<mi>∅</mi>
 											</mrow>
-											<mo>=</mo>
-											<mi>∅</mi>
 										</math>
 									</li>
 									<li>
 										<math display="block">
 											<mrow>
-												<mi>ext</mi>
+												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
 													<mrow>
 														<mi>𝐴</mi>
-														<mo>∪</mo>
+														<mo>,</mo>
 														<mi>𝐵</mi>
 													</mrow>
-													<mo>)</mo>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
 												</mrow>
 											</mrow>
-											<mo>=</mo>
+											<mo>,</mo>
 											<mrow>
 												<mrow>
 													<mi>ext</mi>
 													<mo>&af;</mo>
 													<mrow>
 														<mo>(</mo>
-														<mi>𝐴</mi>
+														<mrow>
+															<mi>𝐴</mi>
+															<mo>∪</mo>
+															<mi>𝐵</mi>
+														</mrow>
 														<mo>)</mo>
 													</mrow>
 												</mrow>
-												<mo>∩</mo>
+												<mo>=</mo>
 												<mrow>
-													<mi>ext</mi>
-													<mo>&af;</mo>
 													<mrow>
-														<mo>(</mo>
-														<mi>𝐵</mi>
-														<mo>)</mo>
+														<mi>ext</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐴</mi>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>∩</mo>
+													<mrow>
+														<mi>ext</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐵</mi>
+															<mo>)</mo>
+														</mrow>
 													</mrow>
 												</mrow>
 											</mrow>
 										</math>
 									</li>
 								</ul>
-							</li>
-							<li>
+							</dd>
+							<dt>境界作用素の公理</dt>
+							<dd>
 								<ul>
 									<li>
 										<math display="block">
@@ -722,52 +824,37 @@
 									<li>
 										<math display="block">
 											<mrow>
-												<msup>
-													<mo>∂</mo>
-													<mn>2</mn>
-												</msup>
+												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
 													<mi>𝐴</mi>
-													<mo>)</mo>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
 												</mrow>
 											</mrow>
-											<mo>⊂</mo>
+											<mo>,</mo>
 											<mrow>
-												<mo>∂</mo>
-												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>𝐴</mi>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</math>
-									</li>
-									<li>
-										<math display="block">
-											<mrow>
-												<mo>∂</mo>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mi>𝐴</mi>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>=</mo>
-											<mrow>
-												<mo>∂</mo>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
+													<msup>
+														<mo>∂</mo>
+														<mn>2</mn>
+													</msup>
+													<mo>&af;</mo>
 													<mrow>
-														<mi>𝑋</mi>
-														<mo>∖</mo>
+														<mo>(</mo>
 														<mi>𝐴</mi>
+														<mo>)</mo>
 													</mrow>
-													<mo>)</mo>
+												</mrow>
+												<mo>⊂</mo>
+												<mrow>
+													<mo>∂</mo>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝐴</mi>
+														<mo>)</mo>
+													</mrow>
 												</mrow>
 											</mrow>
 										</math>
@@ -775,76 +862,155 @@
 									<li>
 										<math display="block">
 											<mrow>
-												<mi>𝐴</mi>
-												<mo>⊂</mo>
-												<mi>𝐵</mi>
+												<mo>∀</mo>
+												<mo>&af;</mo>
+												<mrow>
+													<mi>𝐴</mi>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
+												</mrow>
 											</mrow>
-											<mo>⇒</mo>
+											<mo>,</mo>
 											<mrow>
 												<mrow>
 													<mo>∂</mo>
 													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝐴</mi>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<mo>∂</mo>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝑋</mi>
+															<mo>∖</mo>
+															<mi>𝐴</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</math>
+									</li>
+									<li>
+										<math display="block">
+											<mrow>
+												<mo>∀</mo>
+												<mo>&af;</mo>
+												<mrow>
+													<mrow>
+														<mi>𝐴</mi>
+														<mo>,</mo>
+														<mi>𝐵</mi>
+													</mrow>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mrow>
 													<mi>𝐴</mi>
+													<mo>⊂</mo>
+													<mi>𝐵</mi>
+												</mrow>
+												<mo>⇒</mo>
+												<mrow>
+													<mrow>
+														<mo>∂</mo>
+														<mo>&af;</mo>
+														<mi>𝐴</mi>
+													</mrow>
+													<mo>⊂</mo>
+													<mrow>
+														<mi>𝐵</mi>
+														<mo>∪</mo>
+														<mrow>
+															<mo>∂</mo>
+															<mo>&af;</mo>
+															<mi>𝐵</mi>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+										</math>
+									</li>
+									<li>
+										<math display="block">
+											<mrow>
+												<mo>∀</mo>
+												<mo>&af;</mo>
+												<mrow>
+													<mrow>
+														<mi>𝐴</mi>
+														<mo>,</mo>
+														<mi>𝐵</mi>
+													</mrow>
+													<mo>∈</mo>
+													<mi>𝑋</mi>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mrow>
+													<mo>∂</mo>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝐴</mi>
+															<mo>∪</mo>
+															<mi>𝐵</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
 												</mrow>
 												<mo>⊂</mo>
 												<mrow>
-													<mi>𝐵</mi>
+													<mrow>
+														<mo>∂</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐴</mi>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
 													<mo>∪</mo>
 													<mrow>
 														<mo>∂</mo>
 														<mo>&af;</mo>
-														<mi>𝐵</mi>
-													</mrow>
-												</mrow>
-											</mrow>
-										</math>
-									</li>
-									<li>
-										<math display="block">
-											<mrow>
-												<mo>∂</mo>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝐴</mi>
-														<mo>∪</mo>
-														<mi>𝐵</mi>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>⊂</mo>
-											<mrow>
-												<mrow>
-													<mo>∂</mo>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo>
-														<mi>𝐴</mi>
-														<mo>)</mo>
-													</mrow>
-												</mrow>
-												<mo>∪</mo>
-												<mrow>
-													<mo>∂</mo>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo>
-														<mi>𝐵</mi>
-														<mo>)</mo>
+														<mrow>
+															<mo>(</mo>
+															<mi>𝐵</mi>
+															<mo>)</mo>
+														</mrow>
 													</mrow>
 												</mrow>
 											</mrow>
 										</math>
 									</li>
 								</ul>
-							</li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
+							</dd>
+							<dt>導来集合の公理</dt>
+							<dd>
+							</dd>
+							<dt>近傍の公理</dt>
+							<dd>
+							</dd>
+							<dt>網の収束の公理</dt>
+							<dd>
+							</dd>
+							<dt>フィルターの収束の公理</dt>
+							<dd>
+							</dd>
+						</dl>
 						<article id="開集合" class="dfn">
 							<h5>点・開集合・閉集合</h5>
 							<p>
@@ -863,7 +1029,16 @@
 							<ul>
 								<li><math><mi>𝑋</mi></math>の元を<dfn>点</dfn><span lang="en">(point)</span>と呼ぶ．</li>
 								<li><math><mi>𝒪</mi></math>の元のことを<dfn>開集合</dfn><span lang="en">(open set)</span>と呼ぶ．</li>
-								<li><math><msup><mi>𝒪</mi><mi mathvariant="normal">c</mi></msup></math>で，<math><mi>𝑋</mi><mo>∖</mo><mi>𝑂</mi></math>が開集合となるものを<dfn>閉集合</dfn><span lang="en">(closed set)</span>と呼ぶ．</li>
+								<li><math><msup><mi>𝒪</mi><mi mathvariant="normal">c</mi></msup></math>の元のことを<dfn>閉集合</dfn><span lang="en">(closed set)</span>と呼ぶ．</li>
+							</ul>
+						</article>
+						<article id="位相空間の公理の等価性" class="thm">
+							<h4>位相空間の公理の等価性</h4>
+							<p>位相空間の各公理は，以下のような対応により本質的に等価：</p>
+							<ul>
+								<li><math><mi>𝒪</mi></math>が開（閉）集合系の公理を満たす⇔<math><mi>𝒪</mi></math>の補集合の集合<math><msup><mi>𝒪</mi><mi mathvariant="normal">c</mi></msup></math>が閉（開）集合系の公理を満たす</li>
+								<li></li>
+								<li></li>
 							</ul>
 						</article>
 					</article>
@@ -1001,8 +1176,23 @@
 									</mrow>
 								</math>
 							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
+							<li>
+							</li>
 						</ul>
-						<p></p>
 					</article>
 					<article id="同相写像" class="dfn">
 						<h4>同相写像</h4>
@@ -1050,6 +1240,160 @@
 					<article id="空位相空間" class="dfn">
 						<h4>空位相空間</h4>
 						<p>空集合<math><mi>∅</mi></math>は，その冪集合<math><mo>{</mo><mi>∅</mi><mi>}</mi></math>を<a href="#位相空間">位相</a>とする<a href="#位相空間">位相空間</a>となる．これを<dfn>空位相空間</dfn><span lang="en">(empty topological space)</span>と呼ぶ．</p>
+					</article>
+				</section>
+				<section>
+					<h3>部分・</h3>
+					<article id="相対位相" class="dfn">
+						<h4>相対位相・部分空間</h4>
+						<ul>
+							<li>
+								<a href="#位相空間">位相空間</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑋</mi>
+										<mo>,</mo>
+										<mi>𝒪</mi>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+							<li>部分集合<math><mi>𝑌</mi><mo>⊂</mo><mi>𝑋</mi></math></li>
+						</ul>
+						<p>を与える．</p>
+						<ul>
+							<li>
+								<math display="block">
+									<msub>
+										<mi>𝒪</mi>
+										<mi>𝑌</mi>
+									</msub>
+									<mo>≔</mo>
+									<mrow><mi>𝒪</mi><mo>∩</mo><mi>𝑌</mi></mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>{</mo>
+										<mrow><mi>𝑂</mi><mo>∩</mo><mi>𝑌</mi></mrow>
+										<mo>|</mo>
+										<mrow><mi>𝑂</mi><mo>∈</mo><mi>𝒪</mi></mrow>
+										<mo>}</mo>
+									</mrow>
+								</math>
+								は<math><mi>𝑌</mi></math>上の位相を定める．これを<dfn>相対位相</dfn><span lang="en">(relative topology)</span>と呼ぶ．
+							</li>
+							<li>
+								<a href="#位相空間">位相空間</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑌</mi>
+										<mo>,</mo>
+										<msub>
+											<mi>𝒪</mi>
+											<mi>𝑌</mi>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								を
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑋</mi>
+										<mo>,</mo>
+										<mi>𝒪</mi>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								の<dfn>部分位相空間</dfn><span lang="en">(topological subspace)</span>と呼ぶ．
+							</li>
+						</ul>
+					</article>
+					<article id="商位相" class="dfn">
+						<h4>商位相空間</h4>
+						<ul>
+							<li>
+								<a href="#位相空間">位相空間</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑋</mi>
+										<mo>,</mo>
+										<mi>𝒪</mi>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+							<li><math><mi>𝑋</mi></math>上の<a href="../set/index.html#同値関係">同値関係</a><math><mo>∼</mo></math></li>
+							<li><math><mo>∼</mo></math>による<a href="../set/index.html#同値関係">標準射影</a><math><mi>𝜋</mi><mo>:</mo><mrow><mi>𝑋</mi><mo>→</mo><mrow><mi>𝑋</mi><mo>∕</mo><mo>∼</mo></mrow></mrow></math></li>
+						</ul>
+						<p>を与える．</p>
+						<ul>
+							<li>
+								<math display="block">
+									<msub>
+										<mi>𝒪</mi>
+										<mrow>
+											<mi>𝑋</mi>
+											<mo>∕</mo>
+											<mo>∼</mo>
+										</mrow>
+									</msub>
+									<mo>≔</mo>
+									<mrow>
+										<msup>
+											<mi>𝜋</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝒪</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>{</mo>
+										<mrow><mi>𝑂</mi><mo>⊂</mo><mrow><mi>𝑋</mi><mo>∕</mo><mo>∼</mo></mrow></mrow>
+										<mo>|</mo>
+										<mrow><mi>𝑂</mi><mo>∈</mo><mi>𝒪</mi></mrow>
+										<mo>}</mo>
+									</mrow>
+								</math>
+								は<math><mi>𝑌</mi></math>上の位相を定める．これを<dfn>商位相</dfn><span lang="en">(quotient topology)</span>と呼ぶ．
+							</li>
+							<li>
+								<a href="#位相空間">位相空間</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow><mi>𝑋</mi><mo>∕</mo><mo>∼</mo></mrow>
+										<mo>,</mo>
+										<msub>
+											<mi>𝒪</mi>
+											<mrow><mi>𝑋</mi><mo>∕</mo><mo>∼</mo></mrow>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								を
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑋</mi>
+										<mo>,</mo>
+										<mi>𝒪</mi>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								の<math><mo>∼</mo></math>による<dfn>商位相空間</dfn><span lang="en">(quotient topological space)</span>と呼ぶ．
+							</li>
+						</ul>
 					</article>
 				</section>
 			</section>
