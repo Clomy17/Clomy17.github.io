@@ -32,7 +32,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<th><math><mi>𝐒𝐞𝐭</mi></math></th>
+							<th><math><mi href="../set/index.html#集合の圏">𝐒𝐞𝐭</mi></math></th>
 							<td>全ての<a href="../set/index.html#集合">集合</a></td>
 							<td>全ての<a href="../set/index.html#写像">写像</a></td>
 							<td>全単射</td>
@@ -42,16 +42,16 @@
 							<td><a href="../set/index.html#商集合">商集合</a></td>
 						</tr>
 						<tr>
-							<th><math><mi>𝐑𝐞𝐥</mi></math></th>
+							<th><math><mi href="../set/index.html#関係の圏">𝐑𝐞𝐥</mi></math></th>
 							<td>全ての<a href="../set/index.html#集合">集合</a></td>
 							<td>全ての<a href="../set/index.html#関係">関係</a></td>
 							<td><a href="../set/index.html#一対一対応">一対一対応</a></td>
-							<td colspan=2>空集合</td>
+							<td colspan=2><a href="#空関係">空集合</a></td>
 							<td></td>
 							<td></td>
 						</tr>
 						<tr>
-							<th><math><mi>𝐆𝐫𝐩</mi></math></th>
+							<th><math><mi href="../abstract-algebra/magma/group/index.html#群の圏">𝐆𝐫𝐩</mi></math></th>
 							<td>全ての<a href="../abstract-algebra/magma/group/index.html#群">群</a></td>
 							<td>全ての<a href="../abstract-algebra/magma/group/index.html#準同型">群準同型</a></td>
 							<td><a href="../abstract-algebra/magma/group/index.html#同型">群同型</a></td>
@@ -60,12 +60,12 @@
 							<td><a href="../abstract-algebra/magma/group/index.html#商群">商群</a></td>
 						</tr>
 						<tr>
-							<th><math><mi>𝐓𝐨𝐩</mi></math></th>
+							<th><math><mi href="../topology/index.html#位相空間の圏">𝐓𝐨𝐩</mi></math></th>
 							<td>全ての<a href="../topology/index.html#位相空間">位相空間</a></td>
-							<td>全ての連続写像</td>
-							<td>同相</td>
+							<td>全ての<a href="../topology/index.html#連続写像">連続写像</a></td>
+							<td><a href="../topology/index.html#同相写像">同相写像</a></td>
 							<td>一点空間</td>
-							<td>空位相空間</td>
+							<td><a href="../topology/index.html#空位相空間">空位相空間</a></td>
 							<td>部分位相空間</td>
 							<td>商位相空間</td>
 						</tr>
@@ -11382,55 +11382,66 @@
 					<p><a href="#圏">圏</a><math><mi>𝒜</mi></math>を与える．</p>
 					<ul>
 						<li>
-							<math><mi>𝒜</mi></math>の<a href="#圏">対象</a>の集まり
-							<math>
-								<mi>ob</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mi>𝒜</mi>
-									<mo>)</mo>
-								</mrow>
-							</math>
-							が集合であり，任意の<a href="#圏">対象</a>
-							<math>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝐴</mi>
-										<mo>,</mo>
-										<mi>𝐵</mi>
-									</mrow>
-								</mrow>
-								<mo>∈</mo>
-								<mrow>
-									<mi>ob</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mi>𝒜</mi>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							に対し，<a href="#圏">射</a>
-							<math>
-								<msub>
-									<mi>hom</mi>
-									<mi>𝒜</mi>
-								</msub>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝐴</mi>
-										<mo>,</mo>
-										<mi>𝐵</mi>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</math>が集合となるとき，<math><mi>𝒜</mi></math>を<dfn>小圏</dfn>（または<dfn>小さい圏</dfn>）<span lang="en">(small category)</span>と呼ぶ．そうでない場合は<dfn>大きい圏</dfn><span lang="en">(large category)</span>と呼ぶ．
+							<ul>
+								<li>
+									<math><mi>𝒜</mi></math>の<a href="#圏">対象</a>の集まり
+									<math>
+										<mi>ob</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝒜</mi>
+											<mo>)</mo>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									任意の<a href="#圏">対象</a>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>𝐴</mi>
+												<mo>,</mo>
+												<mi>𝐵</mi>
+											</mrow>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mi>ob</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mi>𝒜</mi>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									に対する<a href="#圏">射</a>
+									<math>
+										<msub>
+											<mi>hom</mi>
+											<mi>𝒜</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝐴</mi>
+												<mo>,</mo>
+												<mi>𝐵</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							が
+							<ul>
+								<li>共に集合となるとき，<math><mi>𝒜</mi></math>を<dfn>小圏</dfn>（または<dfn>小さい圏</dfn>）<span lang="en">(small category)</span>と呼ぶ．</li>
+								<li>いずれかが集合でないとき，<dfn>大きい圏</dfn><span lang="en">(large category)</span>と呼ぶ．</li>
+							</ul>
 						</li>
 						<li>
 							任意の<a href="#圏">対象</a>
@@ -11455,7 +11466,7 @@
 									</mrow>
 								</mrow>
 							</math>
-							に対し，<a href="#圏">射</a>
+							に対する<a href="#圏">射</a>
 							<math>
 								<msub>
 									<mi>hom</mi>
@@ -11471,14 +11482,21 @@
 									</mrow>
 									<mo>)</mo>
 								</mrow>
-							</math>が集合となるとき，<math><mi>𝒜</mi></math>を<dfn>局所的小圏</dfn><span lang="en">(locally small category)</span>と呼ぶ．そうでない場合は<dfn>局所的に大きい圏</dfn><span lang="en">(locally large category)</span>と呼ぶ．
+							</math>が
+							<ul>
+								<li>集合となるとき，<math><mi>𝒜</mi></math>を<dfn>局所的小圏</dfn><span lang="en">(locally small category)</span>と呼ぶ．</li>
+								<li>集合でないとき，<math><mi>𝒜</mi></math>を<dfn>局所的に大きい圏</dfn><span lang="en">(locally large category)</span>と呼ぶ．</li>
+							</ul>
 						</li>
 					</ul>
 				</article>
 				<article id="本質的小圏" class="dfn">
 					<h4>本質的小圏</h4>
 					<p><a href="#圏">圏</a><math><mi>𝒜</mi></math>を与える．</p>
-					<p><math><mi>𝒜</mi></math>が<a href="#小圏">局所的小圏</a>と<a href="#圏同値">圏同値</a>のとき，<math><mi>𝒜</mi></math>を<dfn>本質的小圏</dfn><span lang="en">(essentially small category)</span>と呼ぶ．そうでない場合は<dfn>本質的に大きい圏</dfn><span lang="en">(essentially large category)</span>と呼ぶ．</p>
+					<ul>
+						<li><math><mi>𝒜</mi></math>がある<a href="#小圏">局所的小圏</a>と<a href="#圏同値">圏同値</a>のとき，<math><mi>𝒜</mi></math>を<dfn>本質的小圏</dfn><span lang="en">(essentially small category)</span>と呼ぶ．</li>
+						<li><math><mi>𝒜</mi></math>が任意の<a href="#圏">圏</a>と<a href="#圏同値">圏同値</a>でないとき，<dfn>本質的に大きい圏</dfn><span lang="en">(essentially large category)</span>と呼ぶ．</li>
+					</ul>
 				</article>
 				<article id="集合の圏の大きさ" class="thm">
 					<h4>集合の圏の大きさ</h4>
@@ -15950,22 +15968,24 @@
 				<article id="図式" class="dfn">
 					<h4>図式</h4>
 					<p><a href="#圏">圏</a><math><mi>𝒜</mi><mo>,</mo><mi>ℐ</mi></math>を与える．</p>
-					<p>
-						<a href="#函手">函手</a>
-						<math>
-							<mi>𝐷</mi>
-							<mo>:</mo>
-							<mrow>
-								<mi>ℐ</mi>
-								<mo>→</mo>
-								<mi>𝒜</mi>
-							</mrow>
-						</math>
-						のことを<math><mi>ℐ</mi></math>型の<dfn>図式</dfn><span lang="en">(diagram of type <math><mi>ℐ</mi></math>)</span>と呼ぶ．
-					</p>
-					<p>このとき<math><mi>ℐ</mi></math>のことを<dfn>添字圏</dfn><span lang="en">(index category)</span>と呼ぶ．</p>
-					<p><math><mi>ℐ</mi></math>が<a href="#小圏">小圏</a>のとき，<dfn>小さい図式</dfn><span lang="en">(small diagram)</span>と呼ぶ．</p>
-					<p><math><mi>ℐ</mi></math>が有限のとき，<dfn>有限な図式</dfn><span lang="en">(finite diagram)</span>と呼ぶ．</p>
+					<ul>
+						<li>
+							<a href="#函手">函手</a>
+							<math>
+								<mi>𝐷</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>ℐ</mi>
+									<mo>→</mo>
+									<mi>𝒜</mi>
+								</mrow>
+							</math>
+							のことを<math><mi>ℐ</mi></math>型の<dfn>図式</dfn><span lang="en">(diagram of type <math><mi>ℐ</mi></math>)</span>と呼ぶ．
+						</li>
+						<li>このとき<math><mi>ℐ</mi></math>のことを<dfn>添字圏</dfn><span lang="en">(index category)</span>と呼ぶ．</li>
+						<li><math><mi>ℐ</mi></math>が<a href="#小圏">小圏</a>のとき，<dfn>小さい図式</dfn><span lang="en">(small diagram)</span>と呼ぶ．</li>
+						<li><math><mi>ℐ</mi></math>が有限のとき，<dfn>有限な図式</dfn><span lang="en">(finite diagram)</span>と呼ぶ．</li>
+					</ul>
 				</article>
 				<article id="錐の圏" class="dfn">
 					<h4>錐の圏</h4>
@@ -16993,7 +17013,7 @@
 						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
 					</ul>
 					<p>
-						を与えると，（唯一の図式である）<a href="#空函手">空函手</a>
+						を与えると，（唯一の<a href="#図式"><math><mi>∅</mi></math>型の図式</a>である）<a href="#空函手">空函手</a>
 						<math>
 							<mi>𝐷</mi>
 							<mo>:</mo>
@@ -18906,7 +18926,10 @@
 						<li>
 							<a href="#図式">図式</a>
 							<math>
-								<mi>𝐷</mi>
+								<msup>
+									<mi>𝐷</mi>
+									<mi>op</mi>
+								</msup>
 								<mo>:</mo>
 								<mrow>
 									<mo>→</mo>

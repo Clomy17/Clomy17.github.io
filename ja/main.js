@@ -98,19 +98,30 @@ if (heads && heads.length) {
 		--head_level_prev;
 		toc += "</li></ol>";
 	}
-	document.querySelector("#目次").innerHTML = "<h2>目次</h2>" + toc + "</ol>";
+	document.getElementById("目次").innerHTML = "<h2>目次</h2>" + toc + "</ol>";
 }
 // sidebar, link-rendering via another sidebar
 const main_wrapper = Object.assign(document.createElement('div'),{id:"main-wrapper"});
 const main_content = document.querySelector('main');
 main_content.parentNode.insertBefore(main_wrapper, main_content);
 main_wrapper.appendChild(main_content);
-// document.querySelector("#main-wrapper").insertAdjacentHTML("afterbegin", '<aside id="toc-sidebar"></aside>');
-document.querySelector("#main-wrapper").insertAdjacentHTML("beforeend", '<aside id="link-render"></aside>');
+// document.getElementById("main-wrapper").insertAdjacentHTML("afterbegin", '<aside id="toc-sidebar"></aside>');
+// スマホの場合はlink-renderはホバーにした方がよさそう
+let link_render_exist = 0;
 document.querySelectorAll("section *:any-link").forEach(link => {
 	if (link.getAttribute("href").slice(0,4) != "http") {
 		link.addEventListener("click", function(event) {
 			event.preventDefault();
+			if (link_render_exist === 0) {
+				link_render_exist = 1;
+				const main_wrapper_id = document.getElementById("main-wrapper");
+				main_wrapper_id.insertAdjacentHTML("beforeend", '<aside id="link-render"></aside>');
+				//const main_wrapper_css = [...document.styleSheets[0].cssRules].find(
+				//	(r) => r.selectorText === "#main-wrapper",
+				//);
+				// main_wrapper_css.style.setProperty("grid-template-areas", "main link-render");
+				main_wrapper_id.setAttribute("style", 'grid-template-areas: "main link-render"; grid-template-columns: 3fr 1fr;');
+			}
 			const hash = this.hash.slice(1);
 			document.getElementById("link-render").innerHTML = '<button id="delete-link-render" type="button">×</button>';
 			if (this.pathname == location.pathname) {
@@ -127,7 +138,9 @@ document.querySelectorAll("section *:any-link").forEach(link => {
 					});
 			}
 			document.getElementById("delete-link-render").addEventListener("click", function() {
-				document.getElementById("link-render").innerHTML = "";
+				link_render_exist = 0;
+				document.getElementById("link-render").remove()
+				document.getElementById("main-wrapper").removeAttribute("style");
 			});
 		})
 	}
