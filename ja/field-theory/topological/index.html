@@ -2,420 +2,439 @@
 <html lang="ja">
 	<head>
 		<link rel="stylesheet" href="../../style.css"/>
+		<script type="module" src="../../main.js"></script>
 		<meta charset="utf-8"/>
 		<meta name="description" content="位相的場の理論"/>
 		<title>位相的場の理論</title>
 	</head>
-	<body>
+	<body><main>
 		<h1>位相的場の理論</h1>
-		<h2>同位</h2>
-		<dl id="同位的規格化" class="dfn">
-			<dt>同位的規格化</dt>
-			<dd>
-			<math display="block">
-				<mrow>
-					<mo>⟨</mo>
-					<mi>state</mi>
-					<mo>|</mo>
-					<mi>state</mi>
-					<mo>⟩</mo>
-				</mrow>
-				<mo>=</mo>
-				<msub>
-					<mi>𝑑</mi>
-					<mi>𝑎</mi>
-				</msub>
-				<mo>∈</mo>
-				<mrow>
-					<mi>ℝ</mi>
-					<mo>∖</mo>
-					<mi>0</mi>
-				</mrow>
-			</math>
-			という規格化のことを，<dfn>同相的規格化</dfn>(isotopy normalization)と呼ぶ．
-			</dd>
-		</dl>
-		<p>特に，<math><msub><mi>𝑑</mi><mi>𝐼</mi></msub><mo>=</mo><mi>1</mi></math>となる．</p>
-		<dl id="物理的規格化" class="dfn">
-			<dt>物理的規格化</dt>
-			<dd>
-			<math display="block">
-				<mrow>
-					<mo>⟨</mo>
-					<mi>state</mi>
-					<mo>|</mo>
-					<mi>state</mi>
-					<mo>⟩</mo>
-				</mrow>
-				<mo>=</mo>
-				<mi>1</mi>
-			</math>
-			という規格化のことを，<dfn>物理的規格化</dfn>(physics normalization)と呼ぶ．
-			</dd>
-		</dl>
-		<p>基本的には，
-		<math display="block">
-			<msub>
-				<mi>𝑑</mi>
-				<mi>𝑎</mi>
-			</msub>
-			<mo>=</mo>
-			<mfrac>
-				<msub>
-					<mi>𝜖</mi>
-					<mi>𝑎</mi>
-				</msub>
-				<msub>
-					<mrow>
-						<mo>[</mo>
-						<msubsup>
-							<mi>𝐹</mi>
+		<section>
+			<h2>同位</h2>
+			<article id="同位的規格化" class="dfn">
+				<h3>同位的規格化</h3>
+				<p>
+					ある正の代数的整数
+					<math>
+						<msub>
+							<mi>𝑑</mi>
 							<mi>𝑎</mi>
+						</msub>
+					</math>
+					による
+					<math display="block">
+						<mrow>
+							<mo>⟨</mo>
+							<mi>state</mi>
+							<mo>|</mo>
+							<mi>state</mi>
+							<mo>⟩</mo>
+						</mrow>
+						<mo>=</mo>
+						<msub>
+							<mi>𝑑</mi>
+							<mi>𝑎</mi>
+						</msub>
+					</math>
+					という規格化のことを，<dfn>同相的規格化</dfn><span lang="en">(isotopy normalization)</span>と呼ぶ．
+				</p>
+			</article>
+			<p>特に，<math><msub><mi>𝑑</mi><mi>𝐼</mi></msub><mo>=</mo><mi>1</mi></math>となる．</p>
+			<article id="物理的規格化" class="dfn">
+				<h3>物理的規格化</h3>
+				<p>
+					<math display="block">
+						<mrow>
+							<mo>⟨</mo>
+							<mi>state</mi>
+							<mo>|</mo>
+							<mi>state</mi>
+							<mo>⟩</mo>
+						</mrow>
+						<mo>=</mo>
+						<mi>1</mi>
+					</math>
+					という規格化のことを，<dfn>物理的規格化</dfn><span lang="en">(physics normalization)</span>と呼ぶ．
+				</p>
+			</article>
+			<article class="thm">
+				<h3>
+					<math>
+						<msub>
+							<mrow>
+								<mo>[</mo>
+								<msubsup>
+									<mi>𝐹</mi>
+									<mi>𝑎</mi>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>&ic;</mo>
+										<mi>𝑎̅</mi>
+										<mo>&ic;</mo>
+										<mi>𝑎</mi>
+									</mrow>
+								</msubsup>
+								<mo>]</mo>
+							</mrow>
+							<mrow>
+								<mi>𝐼</mi>
+								<mo>&ic;</mo>
+								<mi>𝐼</mi>
+							</mrow>
+						</msub>
+					</math>
+					は実代数的整数．
+				</h3>
+				<p>実代数的整数</p>
+			</article>
+			<article class="proof">
+				<h3>証明</h3>
+				<p>
+					<math display="block">
+						<msub>
+							<mi>𝑑</mi>
+							<mi>𝑎</mi>
+						</msub>
+						<mo>=</mo>
+						<mfrac>
+							<msub>
+								<mi>𝜖</mi>
+								<mi>𝑎</mi>
+							</msub>
+							<msub>
+								<mrow>
+									<mo>[</mo>
+									<msubsup>
+										<mi>𝐹</mi>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝑎</mi>
+											<mi>𝑎̅</mi>
+											<mi>𝑎</mi>
+										</mrow>
+									</msubsup>
+									<mo>]</mo>
+								</mrow>
+								<mrow>
+									<mi>𝐼</mi>
+									<mo>&ic;</mo>
+									<mi>𝐼</mi>
+								</mrow>
+							</msub>
+						</mfrac>
+					</math>
+				</p>
+			</article>
+			<section>
+				<h3>Bookkeeping Scheme with 負の<math><mi>𝑑</mi></math></h3>
+				<p>
+					ここでは
+					<math>
+						<msub>
+							<mi>𝜖</mi>
+							<mi>𝑎</mi>
+						</msub>
+						<mo>=</mo>
+						<mrow>
+							<mo>+</mo>
+							<mn>1</mn>
+						</mrow>
+					</math>
+					とする．
+				</p>
+			</section>
+		</section>
+		<section>
+			<h2>捻り</h2>
+			<p>
+				以上の知識を用いて，1回分の捻りつまりReidemeister移動Iに対応する操作が計算できる:
+				<math display="block">
+					<mo>=</mo>
+					<munder>
+						<mo>∑</mo>
+						<mn>𝑐</mn>
+					</munder>
+					<mrow>
+						<mfrac>
+							<msqrt>
+								<msub>
+									<mi>𝑑</mi>
+									<mi>𝑐</mi>
+								</msub>
+							</msqrt>
+						<msub>
+							<mi>𝑑</mi>
+							<mi>𝑎</mi>
+						</msub>
+						</mfrac>
+						<mo>&it;</mo>
+						<msubsup>
+							<mi>𝑅</mi>
+							<mi>𝑐</mi>
 							<mrow>
 								<mi>𝑎</mi>
-								<mi>𝑎̅</mi>
+								<mo>&ic;</mo>
 								<mi>𝑎</mi>
 							</mrow>
 						</msubsup>
-						<mo>]</mo>
 					</mrow>
+					<mo>=</mo>
+					<munder>
+						<mo>∑</mo>
+						<mn>𝑐</mn>
+					</munder>
 					<mrow>
-						<mi>𝐼</mi>
-						<mo>&ic;</mo>
-						<mi>𝐼</mi>
-					</mrow>
-				</msub>
-			</mfrac>
-		</math>
-		</p>
-		<dl class="thm">
-			<dt>定理：
-			<math>
-				<msub>
-					<mrow>
-						<mo>[</mo>
-						<msubsup>
-							<mi>𝐹</mi>
+						<mfrac>
+							<msub>
+								<mi>𝑑</mi>
+								<mi>𝑐</mi>
+							</msub>
+						<msub>
+							<mi>𝑑</mi>
 							<mi>𝑎</mi>
+						</msub>
+						</mfrac>
+						<mo>&it;</mo>
+						<msubsup>
+							<mi>𝑅</mi>
+							<mi>𝑐</mi>
 							<mrow>
 								<mi>𝑎</mi>
-								<mi>𝑎̅</mi>
+								<mo>&ic;</mo>
 								<mi>𝑎</mi>
 							</mrow>
 						</msubsup>
-						<mo>]</mo>
-					</mrow>
-					<mrow>
-						<mi>𝐼</mi>
-						<mo>&ic;</mo>
-						<mi>𝐼</mi>
-					</mrow>
-				</msub>
-			</math>
-			は実数．</dt>
-			<dd>
-				実数．
-			</dd>
-		</dl>
-		<dl class="proof">
-			<dt>証明</dt>
-			<dd>
-			<math display="block">
-				<mrow>
-					<mo>⟨</mo>
-					<mi>state</mi>
-					<mo>|</mo>
-					<mi>state</mi>
-					<mo>⟩</mo>
-				</mrow>
-				<mo>=</mo>
-				<msub>
-					<mi>𝑑</mi>
-					<mi>𝑎</mi>
-				</msub>
-				<mo>∈</mo>
-				<mrow>
-					<mi>ℝ</mi>
-					<mo>∖</mo>
-					<mi>0</mi>
-				</mrow>
-			</math>
-				a
-			</dd>
-		</dl>
-		<h3>Bookkeeping Scheme with 負の<math><mi>𝑑</math></mi></h3>
-		<p>ここでは<math>
-			<msub>
-				<mi>𝜖</mi>
-				<mi>𝑎</mi>
-			</msub>
-			<mo>=</mo>
-			<mo>+</mo>
-			<mi>1</mi>
-		</math>とする．
-		<h2>捻り</h2>
-		<p>以上の知識を用いて，1回分の捻りつまりReidemeister移動Iに対応する操作が計算できる:</p>
-		<math display="block">
-			<mo>=</mo>
-			<munder>
-				<mo>∑</mo>
-				<mn>𝑐</mn>
-			</munder>
-			<mrow>
-				<mfrac>
-					<msqrt>
-						<msub>
-							<mi>𝑑</mi>
+						<mo>&it;</mo>
+						<msubsup>
+							<mi>𝑁</mi>
 							<mi>𝑐</mi>
-						</msub>
-					</msqrt>
-				<msub>
-					<mi>𝑑</mi>
-					<mi>𝑎</mi>
-				</msub>
-				</mfrac>
-				<mo>&it;</mo>
-				<msubsup>
-					<mi>𝑅</mi>
-					<mi>𝑐</mi>
-					<mrow>
-						<mi>𝑎</mi>
-						<mo>&ic;</mo>
-						<mi>𝑎</mi>
+							<mrow>
+								<mi>𝑎</mi>
+								<mo>&ic;</mo>
+								<mi>𝑎</mi>
+							</mrow>
+						</msubsup>
 					</mrow>
-				</msubsup>
-			</mrow>
-			<mo>=</mo>
-			<munder>
-				<mo>∑</mo>
-				<mn>𝑐</mn>
-			</munder>
-			<mrow>
-				<mfrac>
-					<msub>
-						<mi>𝑑</mi>
-						<mi>𝑐</mi>
-					</msub>
-				<msub>
-					<mi>𝑑</mi>
-					<mi>𝑎</mi>
-				</msub>
-				</mfrac>
-				<mo>&it;</mo>
-				<msubsup>
-					<mi>𝑅</mi>
-					<mi>𝑐</mi>
-					<mrow>
-						<mi>𝑎</mi>
-						<mo>&ic;</mo>
-						<mi>𝑎</mi>
-					</mrow>
-				</msubsup>
-				<mo>&it;</mo>
-				<msubsup>
-					<mi>𝑁</mi>
-					<mi>𝑐</mi>
-					<mrow>
-						<mi>𝑎</mi>
-						<mo>&ic;</mo>
-						<mi>𝑎</mi>
-					</mrow>
-				</msubsup>
-			</mrow>
-		</math>
-		<dl class="dfn">
-			<dt id="捻り因子">捻り因子，位相的スピン</dt>
-			<dd>
-			<math display="block">
-				<msub>
-					<mi>𝜃</mi>
-					<mi>𝑎</mi>
-				</msub>
-				<mo>≔</mo>
-				<munder>
-					<mo>∑</mo>
-					<mn>𝑐</mn>
-				</munder>
-				<mrow>
-					<mfrac>
+				</math>
+			</p>
+			<article id="捻り因子" class="dfn">
+				<h3>捻り因子，位相的スピン</h3>
+				<p>
+					<math display="block">
 						<msub>
-							<mi>𝑑</mi>
-							<mi>𝑐</mi>
+							<mi>𝜃</mi>
+							<mi>𝑎</mi>
 						</msub>
-					<msub>
-						<mi>𝑑</mi>
-						<mi>𝑎</mi>
-					</msub>
-					</mfrac>
-					<mo>&it;</mo>
-					<msubsup>
-						<mi>𝑅</mi>
-						<mi>𝑐</mi>
+						<mo>≔</mo>
+						<munder>
+							<mo>∑</mo>
+							<mn>𝑐</mn>
+						</munder>
 						<mrow>
-							<mi>𝑎</mi>
-							<mo>&ic;</mo>
-							<mi>𝑎</mi>
+							<mfrac>
+								<msub>
+									<mi>𝑑</mi>
+									<mi>𝑐</mi>
+								</msub>
+							<msub>
+								<mi>𝑑</mi>
+								<mi>𝑎</mi>
+							</msub>
+							</mfrac>
+							<mo>&it;</mo>
+							<msubsup>
+								<mi>𝑅</mi>
+								<mi>𝑐</mi>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>&ic;</mo>
+									<mi>𝑎</mi>
+								</mrow>
+							</msubsup>
+							<mo>&it;</mo>
+							<msubsup>
+								<mi>𝑁</mi>
+								<mi>𝑐</mi>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>&ic;</mo>
+									<mi>𝑎</mi>
+								</mrow>
+							</msubsup>
 						</mrow>
-					</msubsup>
-					<mo>&it;</mo>
-					<msubsup>
-						<mi>𝑁</mi>
-						<mi>𝑐</mi>
-						<mrow>
-							<mi>𝑎</mi>
-							<mo>&ic;</mo>
-							<mi>𝑎</mi>
-						</mrow>
-					</msubsup>
-				</mrow>
-			</math>
-			を，<dfn>捻り因子</dfn>(twist factor)と呼ぶ．
-			</dd>
-			<dd>
-			<math display="block">
-				<msub>
-					<mi>𝜃</mi>
-					<mi>𝑎</mi>
-				</msub>
-				<mo>=</mo>
-				<msup>
-					<mi>e</mi>
-					<mrow>
-						<mi>2</mi>
-						<mo>&it;</mo>
-						<mi>𝜋</mi>
-						<mo>&it;</mo>
-						<mi>i</mi>
-						<mo>&it;</mo>
+					</math>
+					を，<dfn>捻り因子</dfn><span lang="en">(twist factor)</span>と呼ぶ．
+				</p>
+				<p>
+					<math display="block">
 						<msub>
-							<mi>ℎ</mi>
+							<mi>𝜃</mi>
 							<mi>𝑎</mi>
 						</msub>
-					</mrow>
-				</msup>
-			</math>
-			を満たす<math><msub><mi>ℎ</mi><mi>𝑎</mi></msub><mo>⊂</mo><mi>ℝ</mi></math>を，<dfn>位相的スピン</dfn>(topological spin)，または<dfn>共形スケーリング次元</dfn>(conformal scaling dimension)と呼ぶ．</dd>
-		</dl>
-		<p>つまり，1回（時計回りに）捻ると，捻られていない場合と比べて余計な位相<math><msub><mi>𝜃</mi><mi>𝑎</mi></msub></math>がつく．</p>
-		<h3>捻り因子の性質</h3>
-		<p>Reidemeister移動I'が許されるから，</p>
-		<math id="捻り因子_ユニタリ性" display="block">
-			<msup>
-				<mrow>
-					<mo>|</mo>
-					<msub>
-						<mi>𝜃</mi>
-						<mi>𝑎</mi>
-					</msub>
-					<mo>|</mo>
-				</mrow>
-				<mi>2</mi>
-			</msup>
-			<mo>=</mo>
-			<mi>1</mi>
-		</math>
-		<p>Hermite共役をとると</p>
-		<p>となるので，反時計回りに捻った際の<a href="#捻り因子">捻り因子</a>は，<math id="捻り因子_逆"><msubsup><mi>𝜃</mi><mi>𝑎</mi><mo>*</mo></msubsup></math></p>
-		<p>また，</p>
-		<p>より，</p>
-		<math id="捻り因子_反粒子" display="block">
-			<msub>
-				<mi>𝜃</mi>
-				<mi>𝑎</mi>
-			</msub>
-			<mo>=</mo>
-			<msub>
-				<mi>𝜃</mi>
-				<mi>𝑎̅</mi>
-			</msub>
-		</math>
-		<p>前節の内容より，</p>
-		<math display="block">
-			<msubsup>
-				<mi>𝑅</mi>
-				<mi>𝐼</mi>
-				<mrow>
-					<mi>𝑎</mi>
-					<mo>&ic;</mo>
-					<mi>𝑎̅</mi>
-				</mrow>
-			</msubsup>
-			<mo>=</mo>
-			<msub>
-				<mi>𝜖</mi>
-				<mi>𝑎</mi>
-			</msub>
-			<mo>&it;</mo>
-			<msubsup>
-				<mi>𝜃</mi>
-				<mi>𝑎</mi>
-				<mo>*</mo>
-			</msub>
-		</math>
-		<math display="block">
-			<msubsup>
-				<mi>𝑅</mi>
-				<mi>𝑐</mi>
-				<mrow>
-					<mi>𝑏</mi>
-					<mo>&ic;</mo>
-					<mi>𝑎</mi>
-				</mrow>
-			</msubsup>
-			<mo>&it;</mo>
-			<msubsup>
-				<mi>𝑅</mi>
-				<mi>𝑐</mi>
-				<mrow>
-					<mi>𝑎</mi>
-					<mo>&ic;</mo>
-					<mi>𝑏</mi>
-				</mrow>
-			</msubsup>
-			<mo>=</mo>
-			<mfrac>
-				<msub>
-					<mi>𝜃</mi>
-					<mi>𝑐</mi>
-				</msub>
-				<mrow>
-					<msub>
-						<mi>𝜃</mi>
-						<mi>𝑎</mi>
-					</msub>
-					<mo>&it;</mo>
-					<msub>
-						<mi>𝜃</mi>
-						<mi>𝑏</mi>
-					</msub>
-				</mrow>
-			</mfrac>
-		</math>
-		<dl id="Shumの定理" class="thm">
-			<dt>Shumの定理</dt>
-			<dd>
-			向きづけられたframed tangleの圏<math><mi>FrOrTang</mi></math>は，単一の対象で生成された自由リボン圏とequivalently．
-			</dd>
-		</dl>
-		<h3>量子次元</h3>
-		<p>Hilbert空間の次元は
-		<math display="block">
-			<msubsup>
-				<mi>𝑉</mi>
-				<mi>𝑎</mi>
-				<mrow>
-					<mo>⨂</mo>
-					<mi>𝑁</mi>
-				</mrow>
-			</msubsup>
-			<mo>~</mo>
-			<msubsup>
-				<mi mathvariant="normal">λ</mi>
-				<mi>𝑎</mi>
-				<mi>𝑁</mi>
-			</msubsup>
-		</math>
-		となる．
-		</p>
-	</body>
+						<mo>=</mo>
+						<msup>
+							<mi>𝑒</mi>
+							<mrow>
+								<mi>2</mi>
+								<mo>&it;</mo>
+								<mi>𝜋</mi>
+								<mo>&it;</mo>
+								<mi>𝑖</mi>
+								<mo>&it;</mo>
+								<msub>
+									<mi>ℎ</mi>
+									<mi>𝑎</mi>
+								</msub>
+							</mrow>
+						</msup>
+					</math>
+					を満たす<math><msub><mi>ℎ</mi><mi>𝑎</mi></msub><mo>⊂</mo><mi>ℝ</mi></math>を，<dfn>位相的スピン</dfn><span lang="en">(topological spin)</span>，または<dfn>共形スケーリング次元</dfn><span lang="en">(conformal scaling dimension)</span>と呼ぶ．
+				</p>
+			</article>
+			<p>つまり，1回（時計回りに）捻ると，捻られていない場合と比べて余計な位相<math><msub><mi>𝜃</mi><mi>𝑎</mi></msub></math>がつく．</p>
+			<article id="捻り因子の性質" class="thm">
+				<h3>捻り因子の性質</h3>
+				<p>以下が成り立つ：</p>
+				<ul>
+					<li>
+						<math display="block">
+							<msup>
+								<mrow>
+									<mo>|</mo>
+									<msub>
+										<mi>𝜃</mi>
+										<mi>𝑎</mi>
+									</msub>
+									<mo>|</mo>
+								</mrow>
+								<mi>2</mi>
+							</msup>
+							<mo>=</mo>
+							<mi>1</mi>
+						</math>
+					</li>
+					<li>反時計回りに捻った際の<a href="#捻り因子">捻り因子</a>は<math><msubsup><mi>𝜃</mi><mi>𝑎</mi><mo>*</mo></msubsup></math></li>
+					<li>
+						<math display="block">
+							<msub>
+								<mi>𝜃</mi>
+								<mi>𝑎</mi>
+							</msub>
+							<mo>=</mo>
+							<msub>
+								<mi>𝜃</mi>
+								<mi>𝑎̅</mi>
+							</msub>
+						</math>
+					</li>
+					<li>
+						<math display="block">
+							<msubsup>
+								<mi>𝑅</mi>
+								<mi>𝐼</mi>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>&ic;</mo>
+									<mi>𝑎̅</mi>
+								</mrow>
+							</msubsup>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>𝜖</mi>
+									<mi>𝑎</mi>
+								</msub>
+								<mo>&it;</mo>
+								<msubsup>
+									<mi>𝜃</mi>
+									<mi>𝑎</mi>
+									<mo>*</mo>
+								</msubsup>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						<math display="block">
+							<mrow>
+								<msubsup>
+									<mi>𝑅</mi>
+									<mi>𝑐</mi>
+									<mrow>
+										<mi>𝑏</mi>
+										<mo>&ic;</mo>
+										<mi>𝑎</mi>
+									</mrow>
+								</msubsup>
+								<mo>&it;</mo>
+								<msubsup>
+									<mi>𝑅</mi>
+									<mi>𝑐</mi>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>&ic;</mo>
+										<mi>𝑏</mi>
+									</mrow>
+								</msubsup>
+							</mrow>
+							<mo>=</mo>
+							<mfrac>
+								<msub>
+									<mi>𝜃</mi>
+									<mi>𝑐</mi>
+								</msub>
+								<mrow>
+									<msub>
+										<mi>𝜃</mi>
+										<mi>𝑎</mi>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝜃</mi>
+										<mi>𝑏</mi>
+									</msub>
+								</mrow>
+							</mfrac>
+						</math>
+					</li>
+				</ul>
+			</article>
+			<article class="proof">
+				<h3>証明</h3>
+				<ul>
+					<li>Reidemeister移動I'</li>
+					<li>Hermite共役</li>
+					<li></li>
+					<li>前節の内容</li>
+					<li>前節の内容</li>
+				</ul>
+			</article>
+			<article id="Shumの定理" class="thm">
+				<h3>Shumの定理</h3>
+				<p>向きづけられたframed tangleの圏<math><mi>FrOrTang</mi></math>は，単一の対象で生成された自由リボン圏とequivalently．</p>
+			</article>
+			<section>
+				<h3>量子次元</h3>
+				<p>
+					Hilbert空間の次元は
+					<math display="block">
+						<msubsup>
+							<mi>𝑉</mi>
+							<mi>𝑎</mi>
+							<mrow>
+								<mo>⨂</mo>
+								<mi>𝑁</mi>
+							</mrow>
+						</msubsup>
+						<mo>~</mo>
+						<msubsup>
+							<mi mathvariant="normal">λ</mi>
+							<mi>𝑎</mi>
+							<mi>𝑁</mi>
+						</msubsup>
+					</math>
+					となる．
+				</p>
+			</section>
+		</section>
+	</main></body>
 </html>
