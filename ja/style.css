@@ -75,8 +75,10 @@ h1 ~ p {
 	text-align: center;
 }
 
-li > ul, li > ol {
-	padding-left: 20px;
+li { 
+	> ul, > ol {
+		padding-left: 20px;
+	}
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -371,7 +373,7 @@ article.ax > p, article.dfn > p, article.prp > p, article.thm > p, article.lem >
 		top: 0;
 	}
 	main {
-		grid-area: main;
+		grid-area: "main";
 	}
 	#link-render {
 		grid-area: link-render;
