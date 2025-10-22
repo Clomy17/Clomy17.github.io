@@ -78,7 +78,7 @@
 				</math>
 			</p>
 			<section>
-				<h3>共形変換群と共形代数</h3>
+				<h3>共形変換と共形代数</h3>
 				<article id="共形変換" class="dfn">
 					<h4>共形変換</h4>
 					<p>
@@ -188,9 +188,11 @@
 				</article>
 				<article id="大域的共形変換" class="dfn">
 					<h4>大域的共形変換</h4>
-					<p>可逆な<a href="#共形変換">共形変換</a>を<dfn>大域的共形変換</dfn><span lang="en">(grobal conformal transformation)</span>または<dfn>Möbius変換</dfn><span lang="en">(Möbius transformation)</span>と呼ぶ．</p>
-					<p>大域的共形変換全体はLie群をなす．これを<dfn>共形変換群</dfn><span lang="en">(conformal transformation group)</span>と呼ぶ．</p>
-					<p>これに伴うLie代数を<dfn>大域的共形代数</dfn><span lang="en">(grobal conformal algebra)</span>と呼ぶ．</p>
+					<ul>
+						<li>可逆な<a href="#共形変換">共形変換</a>を<dfn>大域的共形変換</dfn><span lang="en">(global conformal transformation)</span>または<dfn>Möbius変換</dfn><span lang="en">(Möbius transformation)</span>と呼ぶ．</li>
+						<li>大域的共形変換全体はLie群をなす．これを<dfn>共形変換群</dfn><span lang="en">(conformal transformation group)</span>と呼ぶ．</li>
+						<li>これに伴うLie代数を<dfn>大域的共形代数</dfn><span lang="en">(global conformal algebra)</span>と呼ぶ．</li>
+					</ul>
 				</article>
 				<aside>（ここに角度を保つとかの共形変換の概念的説明・図を書きたい）</aside>
 				<p>
@@ -449,7 +451,7 @@
 				<p><math><mi>𝑑</mi><mo>≥</mo><mn>3</mn></math>の場合，もう少し式変形をすることで楽に解くことのだが，とりあえず結果を確認する．</p>
 				<article id="Liouvilleの定理" class="thm">
 					<h4>（共形変換に関する）Liouvilleの定理</h4>
-					<p><math><mi>𝑑</mi><mo>≥</mo><mn>3</mn></math>次元の<a href="#共形変換">共形変換</a>全体は<math><mi>𝑆𝑂</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mi>𝑑</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></math>．特に任意の<a href="#共形変換">共形変換</a>は<a href="#大域的共形変換">大域的</a>．</p>
+					<p><math><mi>𝑑</mi><mo>≥</mo><mn>3</mn></math>次元ユークリッド時空の<a href="#共形変換">共形変換</a>全体は<math><mi>𝑆𝑂</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mi>𝑑</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></math>．特に任意の<a href="#共形変換">共形変換</a>は<a href="#大域的共形変換">大域的</a>．</p>
 				</article>
 				<article id="共形変換の分解" class="thm">
 					<h4>共形変換の分解</h4>
@@ -464,7 +466,7 @@
 				</article>
 				<article id="高次元共形代数" class="thm">
 					<h4><math><mi>𝑑</mi><mo>≥</mo><mn>3</mn></math>次元の共形代数</h4>
-					<p><math><mi>𝑑</mi><mo>≥</mo><mn>3</mn></math>次元の<a href="#共形変換">共形代数</a>（同じことだが<a href="#大域的共形変換">大域的共形代数</a>）は<math><mi>𝔰𝔬</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mi>𝑑</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></math>．</p>
+					<p><math><mi>𝑑</mi><mo>≥</mo><mn>3</mn></math>次元ユークリッド時空の<a href="#共形変換">共形代数</a>（同じことだが<a href="#大域的共形変換">大域的共形代数</a>）は<math><mi>𝔰𝔬</mi><mrow><mo>(</mo><mrow><mn>1</mn><mo>,</mo><mi>𝑑</mi><mo>+</mo><mn>1</mn></mrow><mo>)</mo></mrow></math>．</p>
 					<p>
 						基底は以下のように取る：
 						<math display="block">
@@ -498,16 +500,13 @@
 									<mo>∈</mo>
 									<mrow>
 										<mo>{</mo>
-											<mrow>
-												<mo>−</mo>
-												<mn>1</mn>
-											</mrow>
-											<mo>,</mo>
 											<mn>0</mn>
 											<mo>,</mo>
 											<mo>…</mo>
 											<mo>,</mo>
-											<mi>𝑑</mi>
+											<mrow>
+												<mi>𝑑</mi><mo>+</mo><mn>1</mn>
+											</mrow>
 										<mo>}</mo>
 									</mrow>
 								</mrow>
@@ -532,7 +531,7 @@
 										<mrow>
 											<mi>𝑐</mi>
 											<mo>&ic;</mo>
-											<mi>𝑏</mi>
+											<mi>𝑑</mi>
 										</mrow>
 									</msub>
 								</mrow>
@@ -540,94 +539,87 @@
 							</mrow>
 							<mo>=</mo>
 							<mrow>
-								<mi>𝑖</mi>
-								<mo>&it;</mo>
+								<mo>−</mo>
 								<mrow>
-									<mo>(</mo>
-									<mrow>
+									<msub>
+										<mi>𝜂</mi>
 										<mrow>
-											<msub>
-												<mi>𝛿</mi>
-												<mrow>
-													<mi>𝑏</mi>
-													<mo>&ic;</mo>
-													<mi>𝑐</mi>
-												</mrow>
-											</msub>
-											<mo>&it;</mo>
-											<msub>
-												<mi>𝐽</mi>
-												<mrow>
-													<mi>𝑎</mi>
-													<mo>&ic;</mo>
-													<mi>𝑑</mi>
-												</mrow>
-											</msub>
+											<mi>𝑎</mi>
+											<mo>&ic;</mo>
+											<mi>𝑐</mi>
 										</mrow>
-										<mo>−</mo>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝐽</mi>
 										<mrow>
-											<msub>
-												<mi>𝛿</mi>
-												<mrow>
-													<mi>𝑎</mi>
-													<mo>&ic;</mo>
-													<mi>𝑐</mi>
-												</mrow>
-											</msub>
-											<mo>&it;</mo>
-											<msub>
-												<mi>𝐽</mi>
-												<mrow>
-													<mi>𝑏</mi>
-													<mo>&ic;</mo>
-													<mi>𝑑</mi>
-												</mrow>
-											</msub>
+											<mi>𝑏</mi>
+											<mo>&ic;</mo>
+											<mi>𝑑</mi>
 										</mrow>
-										<mo>−</mo>
-										<mrow>
-											<msub>
-												<mi>𝛿</mi>
-												<mrow>
-													<mi>𝑏</mi>
-													<mo>&ic;</mo>
-													<mi>𝑑</mi>
-												</mrow>
-											</msub>
-											<mo>&it;</mo>
-											<msub>
-												<mi>𝐽</mi>
-												<mrow>
-													<mi>𝑎</mi>
-													<mo>&ic;</mo>
-													<mi>𝑐</mi>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>+</mo>
-										<mrow>
-											<msub>
-												<mi>𝛿</mi>
-												<mrow>
-													<mi>𝑎</mi>
-													<mo>&ic;</mo>
-													<mi>𝑑</mi>
-												</mrow>
-											</msub>
-											<mo>&it;</mo>
-											<msub>
-												<mi>𝐽</mi>
-												<mrow>
-													<mi>𝑏</mi>
-													<mo>&ic;</mo>
-													<mi>𝑐</mi>
-												</mrow>
-											</msub>
-										</mrow>
-									</mrow>
-									<mo>)</mo>
+									</msub>
 								</mrow>
-							</mrow>	
+								<mo>+</mo>
+								<mrow>
+									<msub>
+										<mi>𝜂</mi>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>&ic;</mo>
+											<mi>𝑑</mi>
+										</mrow>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝐽</mi>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>&ic;</mo>
+											<mi>𝑐</mi>
+										</mrow>
+									</msub>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<msub>
+										<mi>𝜂</mi>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>&ic;</mo>
+											<mi>𝑐</mi>
+										</mrow>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝐽</mi>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>&ic;</mo>
+											<mi>𝑑</mi>
+										</mrow>
+									</msub>
+								</mrow>
+								<mo>−</mo>
+								<mrow>
+									<msub>
+										<mi>𝜂</mi>
+										<mrow>
+											<mi>𝑏</mi>
+											<mo>&ic;</mo>
+											<mi>𝑑</mi>
+										</mrow>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝐽</mi>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>&ic;</mo>
+											<mi>𝑐</mi>
+										</mrow>
+									</msub>
+								</mrow>
+							</mrow>
 						</math>
 					</p>
 				</article>
@@ -1521,12 +1513,11 @@
 									<msub>
 										<mi>𝐽</mi>
 										<mrow>
-											<mrow>
-												<mo>−</mo>
-												<mn>1</mn>
-											</mrow>
-											<mo>,</mo>
 											<mn>0</mn>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝑑</mi><mo>+</mo><mn>1</mn>
+											</mrow>
 										</mrow>
 									</msub>
 								</mtd>
@@ -1535,85 +1526,28 @@
 							</mtr>
 							<mtr>
 								<mtd>
-									<mfrac>
-										<mn>1</mn>
-										<mn>2</mn>
-									</mfrac>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<msub>
-												<mi>𝐽</mi>
-												<mrow>
-													<mn>0</mn>
-													<mo>,</mo>
-													<mi>𝜇</mi>
-												</mrow>
-											</msub>
-											<mo>+</mo>
-											<msub>
-												<mi>𝐽</mi>
-												<mrow>
-													<mrow>
-														<mo>−</mo>
-														<mn>1</mn>
-													</mrow>
-													<mo>,</mo>
-													<mi>𝜇</mi>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mtd>
-								<mtd><mo>↦</mo></mtd>
-								<mtd>
 									<msub>
-										<mi>𝑃</mi>
-										<mi>𝜇</mi>
+										<mi>𝐽</mi>
+										<mrow>
+											<mrow>
+												<mi>𝑑</mi><mo>+</mo><mn>1</mn>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝑖</mi>
+										</mrow>
+									</msub>
+									<mo>+</mo>
+									<msub>
+										<mi>𝐽</mi>
+										<mrow>
+											<mn>0</mn><mo>,</mo><mi>𝑖</mi>
+										</mrow>
 									</msub>
 								</mtd>
-							</mtr>
-							<mtr>
-								<mtd>
-									<mfrac>
-										<mn>1</mn>
-										<mn>2</mn>
-									</mfrac>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<msub>
-												<mi>𝐽</mi>
-												<mrow>
-													<mn>0</mn>
-													<mo>,</mo>
-													<mi>𝜇</mi>
-												</mrow>
-											</msub>
-											<mo>−</mo>
-											<msub>
-												<mi>𝐽</mi>
-												<mrow>
-													<mrow>
-														<mo>−</mo>
-														<mn>1</mn>
-													</mrow>
-													<mo>,</mo>
-													<mi>𝜇</mi>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mtd>
 								<mtd><mo>↦</mo></mtd>
 								<mtd>
 									<msub>
-										<mi>𝐾</mi>
-										<mi>𝜇</mi>
+										<mi>𝑃</mi><mi>𝑖</mi>
 									</msub>
 								</mtd>
 							</mtr>
@@ -1622,9 +1556,34 @@
 									<msub>
 										<mi>𝐽</mi>
 										<mrow>
-											<mi>𝜇</mi>
+											<mrow>
+												<mi>𝑑</mi><mo>+</mo><mn>1</mn>
+											</mrow>
 											<mo>,</mo>
-											<mi>𝜈</mi>
+											<mi>𝑖</mi>
+										</mrow>
+									</msub>
+									<mo>−</mo>
+									<msub>
+										<mi>𝐽</mi>
+										<mrow>
+											<mn>0</mn><mo>,</mo><mi>𝑖</mi>
+										</mrow>
+									</msub>
+								</mtd>
+								<mtd><mo>↦</mo></mtd>
+								<mtd>
+									<msub>
+										<mi>𝐾</mi><mi>𝑖</mi>
+									</msub>
+								</mtd>
+							</mtr>
+							<mtr>
+								<mtd>
+									<msub>
+										<mi>𝐽</mi>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 										</mrow>
 									</msub>
 								</mtd>
@@ -1633,9 +1592,7 @@
 									<msub>
 										<mi>𝐿</mi>
 										<mrow>
-											<mi>𝜇</mi>
-											<mo>&ic;</mo>
-											<mi>𝜈</mi>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 										</mrow>
 									</msub>
 								</mtd>
@@ -1652,19 +1609,15 @@
 										<mi>𝐷</mi>
 										<mo>,</mo>
 										<msub>
-											<mi>𝑃</mi>
-											<mi>𝜇</mi>
+											<mi>𝑃</mi><mi>𝑖</mi>
 										</msub>
 									</mrow>
 									<mo>]</mo>
 								</mtd>
 								<mtd><mo>=</mo></mtd>
 								<mtd>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
 									<msub>
-										<mi>𝑃</mi>
-										<mi>𝜇</mi>
+										<mi>𝑃</mi><mi>𝑖</mi>
 									</msub>
 								</mtd>
 							</mtr>
@@ -1675,8 +1628,7 @@
 										<mi>𝐷</mi>
 										<mo>,</mo>
 										<msub>
-											<mi>𝐾</mi>
-											<mi>𝜇</mi>
+											<mi>𝐾</mi><mi>𝑖</mi>
 										</msub>
 									</mrow>
 									<mo>]</mo>
@@ -1684,11 +1636,8 @@
 								<mtd><mo>=</mo></mtd>
 								<mtd>
 									<mo>−</mo>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
 									<msub>
-										<mi>𝐾</mi>
-										<mi>𝜇</mi>
+										<mi>𝐾</mi><mi>𝑖</mi>
 									</msub>
 								</mtd>
 							</mtr>
@@ -1702,9 +1651,7 @@
 											<msub>
 												<mi>𝐿</mi>
 												<mrow>
-													<mi>𝜇</mi>
-													<mo>&ic;</mo>
-													<mi>𝜈</mi>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 												</mrow>
 											</msub>
 										</mrow>
@@ -1715,13 +1662,11 @@
 										<mo>[</mo>
 										<mrow>
 											<msub>
-												<mi>𝑃</mi>
-												<mi>𝜇</mi>
+												<mi>𝑃</mi><mi>𝑖</mi>
 											</msub>
 											<mo>,</mo>
 											<msub>
-												<mi>𝑃</mi>
-												<mi>𝜈</mi>
+												<mi>𝑃</mi><mi>𝑗</mi>
 											</msub>
 										</mrow>
 										<mo>]</mo>
@@ -1731,13 +1676,11 @@
 										<mo>[</mo>
 										<mrow>
 											<msub>
-												<mi>𝐾</mi>
-												<mi>𝜇</mi>
+												<mi>𝐾</mi><mi>𝑖</mi>
 											</msub>
 											<mo>,</mo>
 											<msub>
-												<mi>𝐾</mi>
-												<mi>𝜈</mi>
+												<mi>𝐾</mi><mi>𝑗</mi>
 											</msub>
 										</mrow>
 									<mo>]</mo>
@@ -1753,13 +1696,11 @@
 									<mo>[</mo>
 									<mrow>
 										<msub>
-											<mi>𝐾</mi>
-											<mi>𝜇</mi>
+											<mi>𝐾</mi><mi>𝑖</mi>
 										</msub>
 										<mo>,</mo>
 										<msub>
-											<mi>𝑃</mi>
-											<mi>𝜈</mi>
+											<mi>𝑃</mi><mi>𝑗</mi>
 										</msub>
 									</mrow>
 									<mo>]</mo>
@@ -1768,8 +1709,6 @@
 								<mtd>
 									<mn>2</mn>
 									<mo>&it;</mo>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
 									<mrow>
 										<mo>(</mo>
 										<mrow>
@@ -1777,9 +1716,7 @@
 												<msub>
 													<mi>𝛿</mi>
 													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜈</mi>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 													</mrow>
 												</msub>
 												<mo>&it;</mo>
@@ -1789,9 +1726,7 @@
 											<msub>
 												<mi>𝐿</mi>
 												<mrow>
-													<mi>𝜇</mi>
-													<mo>&ic;</mo>
-													<mi>𝜈</mi>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 												</mrow>
 											</msub>
 										</mrow>
@@ -1804,16 +1739,13 @@
 									<mo>[</mo>
 									<mrow>
 										<msub>
-											<mi>𝑃</mi>
-											<mi>𝜇</mi>
+											<mi>𝑃</mi><mi>𝑖</mi>
 										</msub>
 										<mo>,</mo>
 										<msub>
 											<mi>𝐿</mi>
 											<mrow>
-												<mi>𝜌</mi>
-												<mo>&ic;</mo>
-												<mi>𝜎</mi>
+												<mi>𝑘</mi><mo>,</mo><mi>𝑙</mi>
 											</mrow>
 										</msub>
 									</mrow>
@@ -1821,44 +1753,30 @@
 								</mtd>
 								<mtd><mo>=</mo></mtd>
 								<mtd>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
 									<mrow>
-										<mo>(</mo>
-										<mrow>
+										<msub>
+											<mi>𝛿</mi>
 											<mrow>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜌</mi>
-													</mrow>
-												</msub>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝑃</mi>
-													<mi>𝜎</mi>
-												</msub>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑙</mi>
 											</mrow>
-											<mo>−</mo>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑃</mi><mi>𝑘</mi>
+										</msub>
+									</mrow>
+									<mo>−</mo>
+									<mrow>
+										<msub>
+											<mi>𝛿</mi>
 											<mrow>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜎</mi>
-													</mrow>
-												</msub>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝑃</mi>
-													<mi>𝜌</mi>
-												</msub>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑘</mi>
 											</mrow>
-										</mrow>
-										<mo>)</mo>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑃</mi><mi>𝑙</mi>
+										</msub>
 									</mrow>
 								</mtd>
 							</mtr>
@@ -1867,16 +1785,13 @@
 									<mo>[</mo>
 									<mrow>
 										<msub>
-											<mi>𝐾</mi>
-											<mi>𝜇</mi>
+											<mi>𝐾</mi><mi>𝑖</mi>
 										</msub>
 										<mo>,</mo>
 										<msub>
 											<mi>𝐿</mi>
 											<mrow>
-												<mi>𝜌</mi>
-												<mo>&ic;</mo>
-												<mi>𝜎</mi>
+												<mi>𝑘</mi><mo>,</mo><mi>𝑙</mi>
 											</mrow>
 										</msub>
 									</mrow>
@@ -1884,44 +1799,30 @@
 								</mtd>
 								<mtd><mo>=</mo></mtd>
 								<mtd>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
 									<mrow>
-										<mo>(</mo>
-										<mrow>
+										<msub>
+											<mi>𝛿</mi>
 											<mrow>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜌</mi>
-													</mrow>
-												</msub>
-												<mo>&ic;</mo>
-												<msub>
-													<mi>𝐾</mi>
-													<mi>𝜎</mi>
-												</msub>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑙</mi>
 											</mrow>
-											<mo>−</mo>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐾</mi><mi>𝑘</mi>
+										</msub>
+									</mrow>
+									<mo>−</mo>
+									<mrow>
+										<msub>
+											<mi>𝛿</mi>
 											<mrow>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜈</mi>
-													</mrow>
-												</msub>
-												<mo>&ic;</mo>
-												<msub>
-													<mi>𝐾</mi>
-													<mi>𝜈</mi>
-												</msub>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑘</mi>
 											</mrow>
-										</mrow>
-										<mo>)</mo>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐾</mi><mi>𝑙</mi>
+										</msub>
 									</mrow>
 								</mtd>
 							</mtr>
@@ -1932,18 +1833,14 @@
 										<msub>
 											<mi>𝐿</mi>
 											<mrow>
-												<mi>𝜇</mi>
-												<mo>&ic;</mo>
-												<mi>𝜈</mi>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 											</mrow>
 										</msub>
 										<mo>,</mo>
 										<msub>
 											<mi>𝐿</mi>
 											<mrow>
-												<mi>𝜌</mi>
-												<mo>&ic;</mo>
-												<mi>𝜎</mi>
+												<mi>𝑘</mi><mo>,</mo><mi>𝑙</mi>
 											</mrow>
 										</msub>
 									</mrow>
@@ -1951,98 +1848,74 @@
 								</mtd>
 								<mtd><mo>=</mo></mtd>
 								<mtd>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
 									<mrow>
-										<mo>(</mo>
-										<mrow>
+										<msub>
+											<mi>𝛿</mi>
 											<mrow>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<mi>𝜈</mi>
-														<mo>&ic;</mo>
-														<mi>𝜌</mi>
-													</mrow>
-												</msub>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝐿</mi>
-													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜎</mi>
-													</mrow>
-												</msub>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑙</mi>
 											</mrow>
-											<mo>−</mo>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐿</mi>
 											<mrow>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜌</mi>
-													</mrow>
-												</msub>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝐿</mi>
-													<mrow>
-														<mi>𝜈</mi>
-														<mo>&ic;</mo>
-														<mi>𝜎</mi>
-													</mrow>
-												</msub>
+												<mi>𝑗</mi><mo>,</mo><mi>𝑘</mi>
 											</mrow>
-											<mo>−</mo>
+										</msub>
+									</mrow>
+									<mo>−</mo>
+									<mrow>
+										<msub>
+											<mi>𝛿</mi>
 											<mrow>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<mi>𝜈</mi>
-														<mo>&ic;</mo>
-														<mi>𝜎</mi>
-													</mrow>
-												</msub>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝐿</mi>
-													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜌</mi>
-													</mrow>
-												</msub>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑘</mi>
 											</mrow>
-											<mo>+</mo>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐿</mi>
 											<mrow>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<mi>𝜇</mi>
-														<mo>&ic;</mo>
-														<mi>𝜎</mi>
-													</mrow>
-												</msub>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝐿</mi>
-													<mrow>
-														<mi>𝜈</mi>
-														<mo>&ic;</mo>
-														<mi>𝜌</mi>
-													</mrow>
-												</msub>
+												<mi>𝑗</mi><mo>,</mo><mi>𝑙</mi>
 											</mrow>
-										</mrow>
-										<mo>)</mo>
+										</msub>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<msub>
+											<mi>𝛿</mi>
+											<mrow>
+												<mi>𝑗</mi><mo>,</mo><mi>𝑘</mi>
+											</mrow>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐿</mi>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑙</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>−</mo>
+									<mrow>
+										<msub>
+											<mi>𝛿</mi>
+											<mrow>
+												<mi>𝑗</mi><mo>,</mo><mi>𝑙</mi>
+											</mrow>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐿</mi>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑘</mi>
+											</mrow>
+										</msub>
 									</mrow>
 								</mtd>
 							</mtr>
 						</mtable>
 					</math>
-					となる．よって極大トーラスとして
+					（下2,3行目が±逆じゃないと答えが合わないが，𝑃と𝐾の定義が±逆では?）となる．よって極大トーラスとして
 					<math>
 						<mi>span</mi>
 						<mo>&af;</mo>
@@ -2054,14 +1927,31 @@
 								<msub>
 									<mi>𝐿</mi>
 									<mrow>
-										<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+										<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 									</mrow>
 								</msub>
 							</mrow>
 							<mo>}</mo>
 						</mrow>
 					</math>
-					を取れる．このウェイト加群を考えよう．
+					を取れる．ただし，
+					<math>
+						<msub>
+							<mi>𝐿</mi>
+							<mrow>
+								<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+							</mrow>
+						</msub>
+					</math>
+					の部分は
+					<math>
+						<mi>𝔰𝔬</mi>
+						<mo>&af;</mo>
+						<mrow>
+							<mo>(</mo><mi>𝑑</mi><mo>)</mo>
+						</mrow>
+					</math>
+					の極大トーラスになるように取る．このウェイト加群を考えよう．
 				</p>
 				<article id="スケーリング次元" class="dfn">
 					<h4>共形ウェイト</h4>
@@ -2081,23 +1971,14 @@
 						<math>
 							<mo>(</mo>
 							<mrow>
-								<mrow>
-									<mo>−</mo>
-									<mrow>
-										<mi>𝑖</mi><mo>&it;</mo><mi>𝛥</mi>
-									</mrow>
-								</mrow>
+								<mi>𝛥</mi>
 								<mo>,</mo>
-								<mrow>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mi>𝑆</mi>
-										<mrow>
-											<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
-										</mrow>
-									</msub>
-								</mrow>
+								<msub>
+									<mi>𝑆</mi>
+									<mrow>
+										<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+									</mrow>
+								</msub>
 							</mrow>
 							<mo>)</mo>
 						</math>
@@ -2117,18 +1998,13 @@
 								</mrow>
 								<mo>=</mo>
 								<mrow>
-									<mo>−</mo>
+									<mi>𝛥</mi>
+									<mo>&it;</mo>
 									<mrow>
-										<mi>𝑖</mi>
-										<mo>&it;</mo>
-										<mi>𝛥</mi>
-										<mo>&it;</mo>
+										<mi>𝒪</mi>
+										<mo>&af;</mo>
 										<mrow>
-											<mi>𝒪</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mn>0</mn><mo>)</mo>
-											</mrow>
+											<mo>(</mo><mn>0</mn><mo>)</mo>
 										</mrow>
 									</mrow>
 								</mrow>
@@ -2153,8 +2029,6 @@
 								</mrow>
 								<mo>=</mo>
 								<mrow>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
 									<msub>
 										<mi>𝑆</mi>
 										<mrow>
@@ -2211,13 +2085,13 @@
 							<mi>𝑃</mi><mi>𝜇</mi>
 						</msub>
 					</math>
-					は<math><mi>𝐷</mi></math>のウェイトを<math><mi>𝑖</mi></math>増やし，
+					は<math><mi>𝐷</mi></math>のウェイトを<math><mn>1</mn></math>増やし，
 					<math>
 						<msub>
 							<mi>𝐾</mi><mi>𝜇</mi>
 						</msub>
 					</math>
-					は<math><mi>𝐷</mi></math>のウェイトを<math><mi>𝑖</mi></math>減らす．ゆえに以下のようなウェイト加群を考えられる：
+					は<math><mi>𝐷</mi></math>のウェイトを<math><mn>1</mn></math>減らす．ゆえに以下のようなウェイト加群を考えられる：
 				</p>
 				<article id="準プライマリ場" class="dfn">
 					<h4>準プライマリ場</h4>
@@ -2237,7 +2111,7 @@
 							</mrow>
 							<mo>)</mo>
 						</math>
-						の場<math><mi>𝒪</mi></math>について，<math><mi>𝛥</mi></math>は最高ウェイトとなる，つまり，
+						の場<math><mi>𝒪</mi></math>について，<math><mi>𝛥</mi></math>は<math><mo>−</mo><mn>1</mn></math>を正とする最高ウェイトとなる，つまり，
 						<math display="block">
 							<mrow>
 								<mrow>
@@ -2253,18 +2127,13 @@
 								</mrow>
 								<mo>=</mo>
 								<mrow>
-									<mo>−</mo>
+									<mi>𝛥</mi>
+									<mo>&it;</mo>
 									<mrow>
-										<mi>𝑖</mi>
-										<mo>&it;</mo>
-										<mi>𝛥</mi>
-										<mo>&it;</mo>
+										<mi>𝒪</mi>
+										<mo>&af;</mo>
 										<mrow>
-											<mi>𝒪</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mn>0</mn><mo>)</mo>
-											</mrow>
+											<mo>(</mo><mn>0</mn><mo>)</mo>
 										</mrow>
 									</mrow>
 								</mrow>
@@ -2289,8 +2158,6 @@
 								</mrow>
 								<mo>=</mo>
 								<mrow>
-									<mi>𝑖</mi>
-									<mo>&it;</mo>
 									<msub>
 										<mi>𝑆</mi>
 										<mrow>
@@ -2336,11 +2203,14 @@
 						<math>
 							<mo>(</mo>
 							<mrow>
-								<mi>ℎ</mi>
+								<mi>𝛥</mi>
 								<mo>,</mo>
-								<mover>
-									<mi>ℎ</mi><mo>‾</mo>
-								</mover>
+								<msub>
+									<mi>𝑆</mi>
+									<mrow>
+										<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+									</mrow>
+								</msub>
 							</mrow>
 							<mo>)</mo>
 						</math>
@@ -2390,24 +2260,12 @@
 						</mrow>
 						<mo>=</mo>
 						<mrow>
-							<mrow>
-								<mi>Ad</mi>
-								<mo>&af;</mo>
+							<msup>
+								<mi>𝑒</mi>
 								<mrow>
-									<mo>(</mo>
-									<msup>
-										<mi>𝑒</mi>
-										<mrow>
-											<mi>𝑖</mi>
-											<mo>&it;</mo>
-											<mrow>
-												<mi>𝑥</mi><mo>⋅</mo><mi>𝑃</mi>
-											</mrow>
-										</mrow>
-									</msup>
-									<mo>)</mo>
+									<mi>𝑥</mi><mo>⋅</mo><mi>𝑃</mi>
 								</mrow>
-							</mrow>
+							</msup>
 							<mo>&af;</mo>
 							<mrow>
 								<mo>(</mo>
@@ -2445,8 +2303,7 @@
 											<msup>
 												<mi>𝑒</mi>
 												<mrow>
-													<mi>𝑖</mi>
-													<mo>&it;</mo>
+													<mo>−</mo>
 													<mrow>
 														<mi>𝑥</mi><mo>⋅</mo><mi>𝑃</mi>
 													</mrow>
@@ -2479,8 +2336,7 @@
 											<msup>
 												<mi>𝑒</mi>
 												<mrow>
-													<mi>𝑖</mi>
-													<mo>&it;</mo>
+													<mo>−</mo>
 													<mrow>
 														<mi>𝑥</mi><mo>⋅</mo><mi>𝑃</mi>
 													</mrow>
@@ -2493,7 +2349,7 @@
 									<mrow>
 										<mo>(</mo>
 										<msub>
-											<mi>𝐾</mi><mi>𝜇</mi>
+											<mi>𝐾</mi><mi>𝑖</mi>
 										</msub>
 										<mo>)</mo>
 									</mrow>
@@ -2501,14 +2357,14 @@
 								<mtd><mo>=</mo></mtd>
 								<mtd>
 									<msub>
-										<mi>𝐾</mi><mi>𝜇</mi>
+										<mi>𝐾</mi><mi>𝑖</mi>
 									</msub>
 									<mo>+</mo>
 									<mrow>
 										<mn>2</mn>
 										<mo>&it;</mo>
 										<msub>
-											<mi>𝑥</mi><mi>𝜇</mi>
+											<mi>𝑥</mi><mi>𝑖</mi>
 										</msub>
 										<mo>&it;</mo>
 										<mi>𝐷</mi>
@@ -2521,19 +2377,19 @@
 											<munderover intent=":largeop">
 												<mo>∑</mo>
 												<mrow>
-													<mi>𝜈</mi><mo>=</mo><mn>1</mn>
+													<mi>𝑗</mi><mo>=</mo><mn>1</mn>
 												</mrow>
 												<mi>𝑑</mi>
 											</munderover>
 											<mrow>
 												<msup>
-													<mi>𝑥</mi><mi>𝜈</mi>
+													<mi>𝑥</mi><mi>𝑗</mi>
 												</msup>
 												<mo>&it;</mo>
 												<msub>
 													<mi>𝐿</mi>
 													<mrow>
-														<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 													</mrow>
 												</msub>
 											</mrow>
@@ -2544,7 +2400,7 @@
 										<mn>2</mn>
 										<mo>&it;</mo>
 										<msub>
-											<mi>𝑥</mi><mi>𝜇</mi>
+											<mi>𝑥</mi><mi>𝑖</mi>
 										</msub>
 										<mo>&it;</mo>
 										<mrow>
@@ -2558,7 +2414,7 @@
 										</msup>
 										<mo>&it;</mo>
 										<msub>
-											<mi>𝑃</mi><mi>𝜇</mi>
+											<mi>𝑃</mi><mi>𝑖</mi>
 										</msub>
 									</mrow>
 								</mtd>
@@ -2573,8 +2429,7 @@
 											<msup>
 												<mi>𝑒</mi>
 												<mrow>
-													<mi>𝑖</mi>
-													<mo>&it;</mo>
+													<mo>−</mo>
 													<mrow>
 														<mi>𝑥</mi><mo>⋅</mo><mi>𝑃</mi>
 													</mrow>
@@ -2589,7 +2444,7 @@
 										<msub>
 											<mi>𝐿</mi>
 											<mrow>
-												<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 											</mrow>
 										</msub>
 										<mo>)</mo>
@@ -2600,27 +2455,27 @@
 									<msub>
 										<mi>𝐿</mi>
 										<mrow>
-											<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 										</mrow>
 									</msub>
 									<mo>−</mo>
 									<mrow>
 										<msub>
-											<mi>𝑥</mi><mi>𝜇</mi>
+											<mi>𝑥</mi><mi>𝑖</mi>
 										</msub>
 										<mo>&it;</mo>
 										<msub>
-											<mi>𝑃</mi><mi>𝜈</mi>
+											<mi>𝑃</mi><mi>𝑗</mi>
 										</msub>
 									</mrow>
 									<mo>+</mo>
 									<mrow>
 										<msub>
-											<mi>𝑥</mi><mi>𝜈</mi>
+											<mi>𝑥</mi><mi>𝑗</mi>
 										</msub>
 										<mo>&it;</mo>
 										<msub>
-											<mi>𝑃</mi><mi>𝜇</mi>
+											<mi>𝑃</mi><mi>𝑖</mi>
 										</msub>
 									</mrow>
 								</mtd>
@@ -2630,19 +2485,12 @@
 					となる．
 					<math>
 						<msub>
-							<mi>𝑃</mi><mi>𝜇</mi>
+							<mi>𝑃</mi><mi>𝑖</mi>
 						</msub>
 						<mo>=</mo>
-						<mrow>
-							<mo>−</mo>
-							<mrow>
-								<mi>𝑖</mi>
-								<mo>&it;</mo>
-								<msub>
-									<mo>∂</mo><mi>𝜇</mi>
-								</msub>
-							</mrow>
-						</mrow>
+						<msub>
+							<mo>∂</mo><mi>𝑖</mi>
+						</msub>
 					</math>
 					となるから，一般の作用は以下で与えられる：
 				</p>
@@ -2656,124 +2504,95 @@
 									<mtd><mi>𝐷</mi></mtd>
 									<mtd><mo>=</mo></mtd>
 									<mtd>
-										<mo>−</mo>
 										<mrow>
-											<mi>𝑖</mi>
-											<mo>&it;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mrow>
-														<mi>𝑥</mi><mo>⋅</mo><mo>∂</mo>
-													</mrow>
-													<mo>+</mo>
-													<mi>𝛥</mi>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
+											<mi>𝑥</mi><mo>⋅</mo><mo>∂</mo>
 										</mrow>
+										<mo>+</mo>
+										<mi>𝛥</mi>
 									</mtd>
 								</mtr>
 								<mtr>
 									<mtd>
 										<msub>
-											<mi>𝑃</mi>
-											<mi>𝜇</mi>
+											<mi>𝑃</mi><mi>𝑖</mi>
 										</msub>
 									</mtd>
 									<mtd><mo>=</mo></mtd>
 									<mtd>
-										<mo>−</mo>
+										<msub>
+											<mo>∂</mo><mi>𝑖</mi>
+										</msub>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd>
+										<msub>
+											<mi>𝐾</mi><mi>𝑖</mi>
+										</msub>
+									</mtd>
+									<mtd><mo>=</mo></mtd>
+									<mtd>
 										<mrow>
+											<mn>2</mn>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑥</mi><mi>𝑖</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mi>𝛥</mi>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mn>2</mn>
+											<mo>&it;</mo>
+											<mrow>
+												<munderover intent=":largeop">
+													<mo>∑</mo>
+													<mrow>
+														<mi>𝑗</mi><mo>=</mo><mn>1</mn>
+													</mrow>
+													<mi>𝑑</mi>
+												</munderover>
+												<mrow>
+													<msup>
+														<mi>𝑥</mi><mi>𝑗</mi>
+													</msup>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑆</mi>
+														<mrow>
+															<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+														</mrow>
+													</msub>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mn>2</mn>
+											<mo>&it;</mo>
 											<mi>𝑖</mi>
 											<mo>&it;</mo>
 											<msub>
-												<mo>∂</mo><mi>𝜇</mi>
+												<mi>𝑥</mi><mi>𝑖</mi>
 											</msub>
-										</mrow>
-									</mtd>
-								</mtr>
-								<mtr>
-									<mtd>
-										<msub>
-											<mi>𝐾</mi>
-											<mi>𝜇</mi>
-										</msub>
-									</mtd>
-									<mtd><mo>=</mo></mtd>
-									<mtd>
-										<mo>−</mo>
-										<mrow>
-											<mi>𝑖</mi>
 											<mo>&it;</mo>
 											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mrow>
-														<mn>2</mn>
-														<mo>&it;</mo>
-														<msub>
-															<mi>𝑥</mi><mi>𝜇</mi>
-														</msub>
-														<mo>&it;</mo>
-														<mi>𝛥</mi>
-													</mrow>
-													<mo>+</mo>
-													<mrow>
-														<mn>2</mn>
-														<mo>&it;</mo>
-														<mrow>
-															<munderover intent=":largeop">
-																<mo>∑</mo>
-																<mrow>
-																	<mi>𝜈</mi><mo>=</mo><mn>1</mn>
-																</mrow>
-																<mi>𝑑</mi>
-															</munderover>
-															<mrow>
-																<msup>
-																	<mi>𝑥</mi><mi>𝜈</mi>
-																</msup>
-																<mo>&it;</mo>
-																<msub>
-																	<mi>𝑆</mi>
-																	<mrow>
-																		<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
-																	</mrow>
-																</msub>
-															</mrow>
-														</mrow>
-													</mrow>
-													<mo>+</mo>
-													<mrow>
-														<mn>2</mn>
-														<mo>&it;</mo>
-														<mi>𝑖</mi>
-														<mo>&it;</mo>
-														<msub>
-															<mi>𝑥</mi><mi>𝜇</mi>
-														</msub>
-														<mo>&it;</mo>
-														<mrow>
-															<mi>𝑥</mi><mo>⋅</mo><mo>∂</mo>
-														</mrow>
-													</mrow>
-													<mo>−</mo>
-													<mrow>
-														<msup>
-															<mrow>
-																<mo>|</mo><mi>𝑥</mi><mo>|</mo>
-															</mrow>
-															<mn>2</mn>
-														</msup>
-														<mo>&it;</mo>
-														<msub>
-															<mo>∂</mo><mi>𝜇</mi>
-														</msub>
-													</mrow>
-												</mrow>
-												<mo>)</mo>
+												<mi>𝑥</mi><mo>⋅</mo><mo>∂</mo>
 											</mrow>
+										</mrow>
+										<mo>−</mo>
+										<mrow>
+											<msup>
+												<mrow>
+													<mo>|</mo><mi>𝑥</mi><mo>|</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+											<mo>&it;</mo>
+											<msub>
+												<mo>∂</mo><mi>𝑖</mi>
+											</msub>
 										</mrow>
 									</mtd>
 								</mtr>
@@ -2782,51 +2601,37 @@
 										<msub>
 											<mi>𝐿</mi>
 											<mrow>
-												<mi>𝜇</mi>
-												<mo>&ic;</mo>
-												<mi>𝜈</mi>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 											</mrow>
 										</msub>
 									</mtd>
 									<mtd><mo>=</mo></mtd>
 									<mtd>
-										<mi>𝑖</mi>
-										<mo>&it;</mo>
-										<mrow>
-											<mo>(</mo>
+										<msub>
+											<mi>𝑆</mi>
 											<mrow>
-												<mrow>
-													<msub>
-														<mi>𝑥</mi>
-														<mi>𝜇</mi>
-													</msub>
-													<mo>&it;</mo>
-													<msub>
-														<mo>∂</mo>
-														<mi>𝜈</mi>
-													</msub>
-												</mrow>
-												<mo>−</mo>
-												<mrow>
-													<msub>
-														<mi>𝑥</mi>
-														<mi>𝜇</mi>
-													</msub>
-													<mo>&it;</mo>
-													<msub>
-														<mo>∂</mo>
-														<mi>𝜈</mi>
-													</msub>
-												</mrow>
-												<mo>+</mo>
-												<msub>
-													<mi>𝑆</mi>
-													<mrow>
-														<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
-													</mrow>
-												</msub>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 											</mrow>
-											<mo>)</mo>
+										</msub>
+										<mo>−</mo>
+										<mrow>
+											<msub>
+												<mi>𝑥</mi><mi>𝑖</mi>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mo>∂</mo><mi>𝑗</mi>
+											</msub>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<msub>
+												<mi>𝑥</mi><mi>𝑗</mi>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mo>∂</mo><mi>𝑖</mi>
+											</msub>
 										</mrow>
 									</mtd>
 								</mtr>
@@ -3029,187 +2834,971 @@
 			</section>
 			<section>
 				<h3>相関函数</h3>
-				<p><a href="#準プライマリ場">準プライマリ場</a>の相関函数は，かなり形が制限されるというお話．</p>
+				<p>共形対称性により，場の相関函数が<a href="#スケーリング次元">共形ウェイト</a>を用いて非常に簡単な形で書ける．</p>
+				<article id="大域的共形対称性における2点函数" class="thm">
+					<h4>大域的共形対称性における2点函数</h4>
+					<ul>
+						<li>大域的共形対称性を持つ作用</li>
+						<li>
+							<a href="#スケーリング次元">スケーリング次元</a>がそれぞれ
+							<math>
+								<msub>
+									<mi>𝛥</mi><mn>1</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝛥</mi><mn>2</mn>
+								</msub>
+							</math>
+							の場
+							<math>
+								<msub>
+									<mi>𝒪</mi><mn>1</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝒪</mi><mn>2</mn>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>
+						を与えると，以下が成り立つ：
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi><mn>1</mn>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mn>1</mn>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi><mn>2</mn>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mn>2</mn>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>∝</mo>
+							<mfrac>
+								<msub>
+									<mi>𝛿</mi>
+									<mrow>
+										<msub>
+											<mi>𝛥</mi><mn>1</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝛥</mi><mn>2</mn>
+										</msub>
+									</mrow>
+								</msub>
+								<msup>
+									<mrow>
+										<mo>|</mo>
+										<mrow>
+											<msub>
+												<mi>𝑥</mi><mn>1</mn>
+											</msub>
+											<mo>−</mo>
+											<msub>
+												<mi>𝑥</mi><mn>2</mn>
+											</msub>
+										</mrow>
+										<mo>|</mo>
+									</mrow>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝛥</mi><mn>1</mn>
+										</msub>
+									</mrow>
+								</msup>
+							</mfrac>
+						</math>
+					</p>
+				</article>
+				<article id="大域的共形対称性における3点函数" class="thm">
+					<h4>大域的共形対称性における3点函数</h4>
+					<ul>
+						<li>大域的共形対称性を持つ作用</li>
+						<li>
+							<a href="#スケーリング次元">スケーリング次元</a>がそれぞれ
+							<math>
+								<msub>
+									<mi>𝛥</mi><mn>1</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝛥</mi><mn>2</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝛥</mi><mn>3</mn>
+								</msub>
+							</math>
+							の場
+							<math>
+								<msub>
+									<mi>𝒪</mi><mn>1</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝒪</mi><mn>2</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝒪</mi><mn>3</mn>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>
+						を与えると，以下が成り立つ：
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi><mn>1</mn>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mn>1</mn>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi><mn>2</mn>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mn>2</mn>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi><mn>2</mn>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mn>2</mn>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>∝</mo>
+							<mfrac>
+								<mn>1</mn>
+								<mrow>
+									<msup>
+										<mrow>
+											<mo>|</mo>
+											<mrow>
+												<msub>
+													<mi>𝑥</mi><mn>1</mn>
+												</msub>
+												<mo>−</mo>
+												<msub>
+													<mi>𝑥</mi><mn>2</mn>
+												</msub>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mrow>
+											<msub>
+												<mi>𝛥</mi><mn>1</mn>
+											</msub>
+											<mo>+</mo>
+											<msub>
+												<mi>𝛥</mi><mn>2</mn>
+											</msub>
+											<mo>−</mo>
+											<msub>
+												<mi>𝛥</mi><mn>3</mn>
+											</msub>
+										</mrow>
+									</msup>
+									<mo>&it;</mo>
+									<msup>
+										<mrow>
+											<mo>|</mo>
+											<mrow>
+												<msub>
+													<mi>𝑥</mi><mn>2</mn>
+												</msub>
+												<mo>−</mo>
+												<msub>
+													<mi>𝑥</mi><mn>3</mn>
+												</msub>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mrow>
+											<msub>
+												<mi>𝛥</mi><mn>2</mn>
+											</msub>
+											<mo>+</mo>
+											<msub>
+												<mi>𝛥</mi><mn>3</mn>
+											</msub>
+											<mo>−</mo>
+											<msub>
+												<mi>𝛥</mi><mn>1</mn>
+											</msub>
+										</mrow>
+									</msup>
+									<mo>&it;</mo>
+									<msup>
+										<mrow>
+											<mo>|</mo>
+											<mrow>
+												<msub>
+													<mi>𝑥</mi><mn>3</mn>
+												</msub>
+												<mo>−</mo>
+												<msub>
+													<mi>𝑥</mi><mn>1</mn>
+												</msub>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mrow>
+											<msub>
+												<mi>𝛥</mi><mn>3</mn>
+											</msub>
+											<mo>+</mo>
+											<msub>
+												<mi>𝛥</mi><mn>1</mn>
+											</msub>
+											<mo>−</mo>
+											<msub>
+												<mi>𝛥</mi><mn>2</mn>
+											</msub>
+										</mrow>
+									</msup>
+								</mrow>
+							</mfrac>
+						</math>
+					</p>
+				</article>
 			</section>
 			<section>
 				<h3>エネルギー・運動量テンソル</h3>
-				<p>Noether荷の線型結合もNoether荷となる．並進対称性に伴うNoether荷，エネルギー・運動量テンソルが<a href="#共形変換">共形変換</a>による対称性でより性質のよいものに出来得る．</p>
-				<p>
-					作用が<a href="#スケーリング次元">共形ウェイト</a>
-					<math>
-						<mo>(</mo>
-						<mrow>
-							<mi>𝛥</mi>
-							<mo>,</mo>
-							<msub>
-								<mi>𝑆</mi>
+				<p>Noether荷の線型結合もNoether荷となる．並進対称性に伴うNoether荷，エネルギー・運動量テンソルが<a href="#共形変換">共形変換</a>による対称性でより性質のよいものに出来得る．結論から言うと，以下：</p>
+				<article id="エネルギー・運動量テンソル" class="dfn">
+					<h4>エネルギー・運動量テンソル</h4>
+					<p>
+						<math display="block">
+							<msup>
+								<mi>𝑇</mi>
 								<mrow>
 									<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
 								</mrow>
-							</msub>
-						</mrow>
-						<mo>)</mo>
-					</math>
-					の場<math><mi>𝜙</mi></math>とその微分のみに依存するとする．
-				</p>
+							</msup>
+							<mo>≔</mo>
+							<mrow>
+								<mo>−</mo>
+								<mrow>
+									<mfrac>
+										<mn>2</mn><msqrt><mi>𝑔</mi></msqrt>
+									</mfrac>
+									<mo>&it;</mo>
+									<mfrac>
+										<mrow>
+											<mi>𝛿</mi><mo>&af;</mo><mi>𝑆</mi>
+										</mrow>
+										<mrow>
+											<mi>𝛿</mi>
+											<mo>&af;</mo>
+											<msub>
+												<mi>𝑔</mi>
+												<mrow>
+													<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+												</mrow>
+											</msub>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</mrow>
+						</math>
+						を<dfn>エネルギー・運動量テンソル</dfn><span lang="en">(energy-momentum tensor)</span>と呼ぶ．
+					</p>
+				</article>
+				<article id="共形不変な作用のNeother流" class="thm">
+					<h4>共形不変な作用のNeother流</h4>
+					<p>各対称性に伴うNeother流は，<a href="#エネルギー・運動量テンソル">エネルギー・運動量テンソル</a>（並進対称性に伴うNeother流）を用いて以下のように書ける：</p>
+					<ul>
+						<li>
+							回転：
+							<math display="block">
+								<msub>
+									<mi>𝐽</mi>
+									<mrow>
+										<mi>𝜌</mi><mo>,</mo><mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+									</mrow>
+								</msub>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑥</mi><mi>𝜈</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑇</mi>
+											<mrow>
+												<mi>𝜌</mi><mo>,</mo><mi>𝜇</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>−</mo>
+									<mrow>
+										<msub>
+											<mi>𝑥</mi><mi>𝜇</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑇</mi>
+											<mrow>
+												<mi>𝜌</mi><mo>,</mo><mi>𝜈</mi>
+											</mrow>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							スケール変換：
+							<math display="block">
+								<msup>
+									<mi>𝐽</mi><mi>𝜇</mi>
+								</msup>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<mi>𝑥</mi><mi>𝜈</mi>
+									</msup>
+									<mo>&it;</mo>
+									<msubsup>
+										<mi>𝑇</mi><mi>𝜈</mi><mi>𝜇</mi>
+									</msubsup>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							特殊共形変換：
+							<math display="block">
+								<msubsup>
+									<mi>𝐽</mi><mi>𝜇</mi><mi>𝜈</mi>
+								</msubsup>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑥</mi><mi>𝜈</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑥</mi><mi>𝜌</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝑇</mi>
+											<mrow>
+												<mi>𝜇</mi><mo>,</mo><mi>𝜌</mi>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>−</mo>
+									<mrow>
+										<msup>
+											<mi>𝑥</mi><mn>2</mn>
+										</msup>
+										<mo>&it;</mo>
+										<msubsup>
+											<mi>𝑇</mi><mi>𝜈</mi><mi>𝜇</mi>
+										</msubsup>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
 			</section>
 			<section>
 				<h3>相関函数</h3>
 				<p><a href="#準プライマリ場">準プライマリ場</a>の相関函数は，かなり形が制限されるというお話．</p>
 			</section>
 			<section>
-				<h3>エネルギー・運動量テンソル</h3>
-				<p>Noether荷の線型結合もNoether荷となる．並進対称性に伴うNoether荷，エネルギー・運動量テンソルが<a href="#共形変換">共形変換</a>による対称性でより性質のよいものに出来得る．</p>
-				<p>
-					作用
-					<math display="block">
-						<mi>𝑆</mi>
-						<mo>≔</mo>
-						<mrow>
-							<mo>∫</mo>
-							<mrow>
-								<msup>
-									<mi>𝑑</mi><mi>𝑑</mi>
-								</msup>
-								<mo>&af;</mo>
-								<mi>𝑥</mi>
-							</mrow>
-							<mrow>
-								<mi>ℒ</mi>
-								<mo>&af;</mo>
+				<h3>Ward・高橋恒等式</h3>
+				<article id="大域的共形Ward・高橋恒等式" class="thm">
+					<h4>大域的共形Ward・高橋恒等式</h4>
+					<p><a href="#大域的共形変換">大域的共形変換</a>に対するWard・高橋恒等式は，以下のようにまとめられる：</p>
+					<ul>
+						<li>
+							並進：
+							<math display="block">
 								<mrow>
-									<mo>(</mo>
+									<mo>⟨</mo>
 									<mrow>
-										<mi>𝜙</mi>
-										<mo>,</mo>
-										<mrow>
-											<msub>
-												<mo>∂</mo><mi>𝜇</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mi>𝜙</mi>
-										</mrow>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</mrow>
-					</math>
-					について，無限小<a href="#共形変換">共形変換</a>
-					<math>
-						<msup>
-							<mi>𝑥</mi><mi>𝜇</mi>
-						</msup>
-						<mo>↦</mo>
-						<mrow>
-							<msup>
-								<mi>𝑥</mi><mi>𝜇</mi>
-							</msup>
-							<mo>+</mo>
-							<mrow>
-								<msup>
-									<mi>𝜀</mi><mi>𝜇</mi>
-								</msup>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mi>𝑥</mi>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</mrow>
-					</math>
-					による変化分は
-					<math display="block">
-						<mrow>
-							<mi>𝛿</mi><mo>&af;</mo><mi>𝑆</mi>
-						</mrow>
-						<mo>=</mo>
-						<mrow>
-							<mfrac>
-								<mn>1</mn><mn>2</mn>
-							</mfrac>
-							<mo>&it;</mo>
-							<mrow>
-								<mo>∫</mo>
-								<mrow>
-									<msup>
-										<mi>𝑑</mi><mi>𝑑</mi>
-									</msup>
-									<mo>&af;</mo>
-									<mi>𝑥</mi>
-								</mrow>
-								<mrow>
-									<msup>
-										<mi>𝑇</mi>
-										<mrow>
-											<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
-										</mrow>
-									</msup>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
 										<mrow>
 											<mrow>
 												<msub>
 													<mo>∂</mo><mi>𝜇</mi>
 												</msub>
 												<mo>&af;</mo>
-												<msub>
-													<mi>𝜀</mi><mi>𝜈</mi>
-												</msub>
+												<msubsup>
+													<mi>𝑇</mi><mi>𝜇</mi><mi>𝜈</mi>
+												</msubsup>
 											</mrow>
-											<mo>+</mo>
+											<mo>&af;</mo>
 											<mrow>
-												<msub>
-													<mo>∂</mo><mi>𝜈</mi>
-												</msub>
-												<mo>&af;</mo>
-												<msub>
-													<mi>𝜀</mi><mi>𝜇</mi>
-												</msub>
+												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
 											</mrow>
 										</mrow>
-										<mo>)</mo>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mn>1</mn>
+										</msub>
+										<mo>&it;</mo>
+										<mo>⋯</mo>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mi>𝑁</mi>
+										</msub>
 									</mrow>
+									<mo>⟩</mo>
 								</mrow>
-							</mrow>
-						</mrow>
-						<mo>=</mo>
-						<mrow>
-							<mfrac>
-								<mn>1</mn><mi>𝑑</mi>
-							</mfrac>
-							<mo>&it;</mo>
-							<mrow>
-								<mo>∫</mo>
+								<mo>=</mo>
 								<mrow>
-									<msup>
-										<mi>𝑑</mi><mi>𝑑</mi>
-									</msup>
-									<mo>&af;</mo>
-									<mi>𝑥</mi>
+									<mo>−</mo>
+									<mrow>
+										<munderover intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>=</mo><mn>1</mn>
+											</mrow>
+											<mi>𝑁</mi>
+										</munderover>
+										<mrow>
+											<mrow>
+												<mi>𝛿</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>−</mo>
+														<msub>
+															<mi>𝑥</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>⟨</mo>
+												<mrow>
+													<msub>
+														<mi>𝒪</mi><mn>1</mn>
+													</msub>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<mo>&it;</mo>
+													<mrow>
+														<msub>
+															<mo>∂</mo><mi>𝜈</mi>
+														</msub>
+														<mo>&af;</mo>
+														<msub>
+															<mi>𝒪</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<msub>
+														<mi>𝒪</mi><mi>𝑁</mi>
+													</msub>
+												</mrow>
+												<mo>⟩</mo>
+											</mrow>
+										</mrow>
+									</mrow>
 								</mrow>
+							</math>
+						</li>
+						<li>
+							回転：
+							<math display="block">
 								<mrow>
+									<mo>⟨</mo>
 									<mrow>
-										<mi>tr</mi>
-										<mo>&af;</mo>
-										<msubsup>
-											<mi>𝑇</mi><mi>𝜇</mi><mi>𝜈</mi>
-										</msubsup>
+										<mrow>
+											<msub>
+												<mo>∂</mo><mi>𝜌</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<msup>
+															<mi>𝑥</mi><mi>𝜈</mi>
+														</msup>
+														<mo>&it;</mo>
+														<msup>
+															<mi>𝑇</mi>
+															<mrow>
+																<mi>𝜌</mi><mo>,</mo><mi>𝜇</mi>
+															</mrow>
+														</msup>
+													</mrow>
+													<mo>−</mo>
+													<mrow>
+														<msup>
+															<mi>𝑥</mi><mi>𝜇</mi>
+														</msup>
+														<mo>&it;</mo>
+														<msup>
+															<mi>𝑇</mi>
+															<mrow>
+																<mi>𝜌</mi><mo>,</mo><mi>𝜈</mi>
+															</mrow>
+														</msup>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mn>1</mn>
+										</msub>
+										<mo>&it;</mo>
+										<mo>⋯</mo>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mi>𝑁</mi>
+										</msub>
 									</mrow>
-									<mo>&it;</mo>
+									<mo>⟩</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>−</mo>
 									<mrow>
-										<mo>∂</mo><mo>⋅</mo><mi>𝜀</mi>
+										<munderover intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>=</mo><mn>1</mn>
+											</mrow>
+											<mi>𝑁</mi>
+										</munderover>
+										<mrow>
+											<mrow>
+												<mi>𝛿</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>−</mo>
+														<msub>
+															<mi>𝑥</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>⟨</mo>
+												<mrow>
+													<msub>
+														<mi>𝒪</mi><mn>1</mn>
+													</msub>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<mo>&it;</mo>
+													<mrow>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mrow>
+																	<msup>
+																		<mi>𝑥</mi><mi>𝜈</mi>
+																	</msup>
+																	<mo>&it;</mo>
+																	<msup>
+																		<mo>∂</mo><mi>𝜇</mi>
+																	</msup>
+																</mrow>
+																<mo>−</mo>
+																<mrow>
+																	<msup>
+																		<mi>𝑥</mi><mi>𝜇</mi>
+																	</msup>
+																	<mo>&it;</mo>
+																	<msup>
+																		<mo>∂</mo><mi>𝜈</mi>
+																	</msup>
+																</mrow>
+																<mo>+</mo>
+																<msup>
+																	<mi>𝑆</mi>
+																	<mrow>
+																		<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+																	</mrow>
+																</msup>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mo>&af;</mo>
+														<msub>
+															<mi>𝒪</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<msub>
+														<mi>𝒪</mi><mi>𝑁</mi>
+													</msub>
+												</mrow>
+												<mo>⟩</mo>
+											</mrow>
+										</mrow>
 									</mrow>
 								</mrow>
-							</mrow>
-						</mrow>
-					</math>
-				</p>
-			</section>
-			<section>
-				<h3>Ward・高橋恒等式</h3>
+							</math>
+							<math display="block">
+								<mrow>
+									<mo>⟨</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msup>
+													<mi>𝑇</mi>
+													<mrow>
+														<mi>𝜈</mi><mo>,</mo><mi>𝜇</mi>
+													</mrow>
+												</msup>
+												<mo>−</mo>
+												<msup>
+													<mi>𝑇</mi>
+													<mrow>
+														<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+													</mrow>
+												</msup>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mn>1</mn>
+										</msub>
+										<mo>&it;</mo>
+										<mo>⋯</mo>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mi>𝑁</mi>
+										</msub>
+									</mrow>
+									<mo>⟩</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>−</mo>
+									<mrow>
+										<munderover intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>=</mo><mn>1</mn>
+											</mrow>
+											<mi>𝑁</mi>
+										</munderover>
+										<mrow>
+											<mrow>
+												<mi>𝛿</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>−</mo>
+														<msub>
+															<mi>𝑥</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>⟨</mo>
+												<mrow>
+													<msub>
+														<mi>𝒪</mi><mn>1</mn>
+													</msub>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<mo>&it;</mo>
+													<mrow>
+														<msup>
+															<mi>𝑆</mi>
+															<mrow>
+																<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+															</mrow>
+														</msup>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝒪</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<msub>
+														<mi>𝒪</mi><mi>𝑁</mi>
+													</msub>
+												</mrow>
+												<mo>⟩</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							スケール変換：
+							<math display="block">
+								<mrow>
+									<mo>⟨</mo>
+									<mrow>
+										<mrow>
+											<msub>
+												<mo>∂</mo><mi>𝜇</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑥</mi><mi>𝜈</mi>
+													</msub>
+													<mo>&it;</mo>
+													<mrow>
+														<msup>
+															<mi>𝑇</mi>
+															<mrow>
+																<mi>𝜇</mi><mo>,</mo><mi>𝜈</mi>
+															</mrow>
+														</msup>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mn>1</mn>
+										</msub>
+										<mo>&it;</mo>
+										<mo>⋯</mo>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mi>𝑁</mi>
+										</msub>
+									</mrow>
+									<mo>⟩</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>−</mo>
+									<mrow>
+										<munderover intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>=</mo><mn>1</mn>
+											</mrow>
+											<mi>𝑁</mi>
+										</munderover>
+										<mrow>
+											<mrow>
+												<mi>𝛿</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>−</mo>
+														<msub>
+															<mi>𝑥</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>⟨</mo>
+												<mrow>
+													<msub>
+														<mi>𝒪</mi><mn>1</mn>
+													</msub>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mrow>
+																<mi>𝑥</mi><mo>⋅</mo><mo>∂</mo>
+															</mrow>
+															<mo>+</mo>
+															<msub>
+																<mi>𝛥</mi><mi>𝜈</mi>
+															</msub>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<msub>
+														<mi>𝒪</mi><mi>𝑁</mi>
+													</msub>
+												</mrow>
+												<mo>⟩</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							<math display="block">
+								<mrow>
+									<mo>⟨</mo>
+									<mrow>
+										<mrow>
+											<msup>
+												<mi>𝑇</mi>
+												<mrow>
+													<mi>𝜇</mi><mo>,</mo><mi>𝜇</mi>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mn>1</mn>
+										</msub>
+										<mo>&it;</mo>
+										<mo>⋯</mo>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝒪</mi><mi>𝑁</mi>
+										</msub>
+									</mrow>
+									<mo>⟩</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>−</mo>
+									<mrow>
+										<munderover intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>=</mo><mn>1</mn>
+											</mrow>
+											<mi>𝑁</mi>
+										</munderover>
+										<mrow>
+											<msub>
+												<mi>𝛥</mi><mi>𝑛</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mrow>
+												<mi>𝛿</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>−</mo>
+														<msub>
+															<mi>𝑥</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>⟨</mo>
+												<mrow>
+													<msub>
+														<mi>𝒪</mi><mn>1</mn>
+													</msub>
+													<mo>&it;</mo>
+													<mo>⋯</mo>
+													<msub>
+														<mi>𝒪</mi><mi>𝑁</mi>
+													</msub>
+												</mrow>
+												<mo>⟩</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
 			</section>
 			<section>
 				<h3>動径量子化・シリンダー時空</h3>
@@ -4684,7 +5273,7 @@
 					</math>
 					のウェイト<math><mi>𝑛</mi></math>変化させる．ゆえに以下のようなウェイト加群を考えられる：
 				</p>
-				<article id="共形ウェイト" class="dfn">
+				<article id="共形ウェイト" class="thm">
 					<h4>共形ウェイト</h4>
 					<p>
 						場<math><mi>𝒪</mi></math>が，原点への
@@ -4798,8 +5387,12 @@
 							</mrow>
 							<mo>)</mo>
 						</math>
-						の場と呼ぶ．
+						の場と呼ぶ．特に，
 					</p>
+					<ul>
+						<li><math><mi>𝛥</mi><mo>≔</mo><mrow><mi>ℎ</mi><mo>+</mo><mover><mi>ℎ</mi><mo>‾</mo></mover></mrow></math>は<a href="#スケーリング次元">スケーリング次元</a>．</li>
+						<li><math><mi>𝑠</mi><mo>≔</mo><mrow><mi>ℎ</mi><mo>−</mo><mover><mi>ℎ</mi><mo>‾</mo></mover></mrow></math>は<a href="#スケーリング次元">共形スピン</a>．</li>
+					</ul>
 				</article>
 				<article id="プライマリ場" class="dfn">
 					<h4>プライマリ場</h4>
@@ -4868,15 +5461,11 @@
 				</article>
 				<article id="プライマリ場は準プライマリ場" class="thm">
 					<h4>プライマリ場は準プライマリ場</h4>
-					<ul>
-						<li><a href="#プライマリ場">プライマリ場</a>は<a href="#準プライマリ場">準プライマリ場</a></li>
-						<li><math><mi>𝛥</mi><mo>≔</mo><mrow><mi>ℎ</mi><mo>+</mo><mover><mi>ℎ</mi><mo>‾</mo></mover></mrow></math>は<a href="#準プライマリ場">スケーリング次元</a>．</li>
-						<li><math><mi>𝑠</mi><mo>≔</mo><mrow><mi>ℎ</mi><mo>−</mo><mover><mi>ℎ</mi><mo>‾</mo></mover></mrow></math>は<a href="#準プライマリ場">共形スピン</a>．</li>
-					</ul>
+					<p><a href="#プライマリ場">プライマリ場</a>は<a href="#準プライマリ場">準プライマリ場</a></p>
 				</article>
 				<article id="プライマリ場のスケール変換" class="thm">
 					<h4>プライマリ場のスケール変換</h4>
-					<p><a href="#プライマリ場">共形ウェイト</a><math><mo>(</mo><mrow><mi>ℎ</mi><mo>,</mo><mover><mi>ℎ</mi><mo>‾</mo></mover></mrow><mo>)</mo></math>の<a href="#プライマリ場">準プライマリ場</a><math><mi>𝒪</mi></math>を与える．</p>
+					<p><a href="#プライマリ場">共形ウェイト</a><math><mo>(</mo><mrow><mi>ℎ</mi><mo>,</mo><mover><mi>ℎ</mi><mo>‾</mo></mover></mrow><mo>)</mo></math>の<a href="#プライマリ場">プライマリ場</a><math><mi>𝒪</mi></math>を与える．</p>
 					<p>
 						変換
 						<math>
@@ -6203,7 +6792,7 @@
 			<section>
 				<h3>エネルギー・運動量テンソルとVirasoro代数</h3>
 				<p>
-					エネルギー・運動量テンソルの正則部分
+					<a href="#エネルギー・運動量テンソル">エネルギー・運動量テンソル</a>のは対称かつ跡零で，エネルギー密度を表すもの．その正則部分
 					<math>
 						<mi>𝑇</mi>
 						<mo>&af;</mo>
@@ -6211,7 +6800,7 @@
 							<mo>(</mo><mi>𝑧</mi><mo>)</mo>
 						</mrow>
 					</math>
-					は対称かつ跡零で，エネルギー密度を表すものだから，<a href="#プライマリ場は準プライマリ場">スケーリング次元</a>，<a href="#プライマリ場は準プライマリ場">スピン</a>ともに<math><mn>2</mn></math>となるだろう．ゆえに<a href="#共形ウェイト">共形ウェイト</a>は
+					は<a href="#共形ウェイト">スケーリング次元</a>は<math><mn>2</mn></math>となるだろう．ゆえに<a href="#共形ウェイト">共形ウェイト</a>は
 					<math>
 						<mrow>
 							<mo>(</mo>
@@ -6365,7 +6954,7 @@
 								</mrow>
 							</mrow>
 						</math>
-						を定義すると，<a href="#共形Ward高橋恒等式">共形Ward・高橋恒等式</a>より
+						を定義すると，<a href="#共形Ward高橋恒等式">共形Ward・高橋恒等式</a>の積分系
 						<math display="block">
 							<mrow>
 								<msub>
@@ -6402,7 +6991,7 @@
 								</mrow>
 							</mrow>
 						</math>
-						となる．つまり，共形変換<math><mi>𝜀</mi></math>の生成子，共形荷となっている．
+						を満たす．つまり，共形変換<math><mi>𝜀</mi></math>の生成子，共形荷となっている．
 					</p>
 					<p>
 						ここで，エネルギー・運動量テンソルを<a href="#カイラルモード展開">正則モード展開</a>する：
@@ -6996,7 +7585,7 @@
 						反正則部分も全く同様なので，以上の結果をまとめると以下：
 					</p>
 					<article id="2次元のエネルギー・運動量テンソルのモード展開" class="thm">
-						<h4>2次元のエネルギー・運動量テンソルのモード展開</h4>
+						<h5>2次元のエネルギー・運動量テンソルのモード展開</h5>
 						<p>
 							エネルギー・運動量テンソルの<a href="#カイラルモード展開">正則・反正則モード展開</a>
 							<math>
@@ -7245,6 +7834,94 @@
 							</math>
 						</p>
 					</article>
+					<article id="Virasoro代数の三角分解" class="thm">
+						<h5>Virasoro代数の三角分解</h5>
+						<p>
+							<a href="../../abstract-algebra/algebra/Lie/Virasoro.html#Virasoro代数">Virasoro代数</a>は以下の三角分解を持つ．
+							<math display="block">
+								<mi>𝔙𝔦𝔯</mi>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<mi>𝔙𝔦𝔯</mi>
+										<mo>+</mo>
+									</msup>
+									<mo>⊕</mo>
+									<msup>
+										<mi>𝔙𝔦𝔯</mi>
+										<mn>0</mn>
+									</msup>
+									<mo>⊕</mo>
+									<msup>
+										<mi>𝔙𝔦𝔯</mi>
+										<mo>−</mo>
+									</msup>
+								</mrow>
+							</math>
+							<math display="block">
+								<msup>
+									<mi>𝔙𝔦𝔯</mi>
+									<mo>±</mo>
+								</msup>
+								<mo>≔</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>⨁</mo>
+										<mrow>
+											<mrow>
+												<mo>±</mo>
+												<mi>𝑛</mi>
+											</mrow>
+											<mo>∈</mo>
+											<msub>
+												<mi>ℤ</mi>
+												<mrow>
+													<mo>&gt;</mo>
+													<mn>0</mn>
+												</mrow>
+											</msub>
+										</mrow>
+									</munder>
+									<mrow>
+										<mi>ℂ</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐿</mi>
+											<mi>𝑛</mi>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							<math display="block">
+								<msup>
+									<mi>𝔙𝔦𝔯</mi>
+									<mn>0</mn>
+								</msup>
+								<mo>≔</mo>
+								<mrow>
+									<mrow>
+										<mi>ℂ</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐿</mi>
+											<mi>𝑛</mi>
+										</msub>
+									</mrow>
+									<mo>⊕</mo>
+									<mrow>
+										<mi>ℂ</mi>
+										<mo>&it;</mo>
+										<mi>𝑐</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</p>
+					</article>
+					<article id="中心荷" class="dfn">
+						<h4>中心荷</h4>
+						<p>Virasoro代数のウェイトのうち，中心<math><mi>𝑐</mi></math>に対応するものを<dfn>中心荷</dfn>(central charge)と呼び，記号の濫用で<math><mi>𝑐</mi></math>と書く．</p>
+					</article>
+					<p>濫用を避けるなら，Virasoro代数の元の方は<math><mi>𝑐̂</mi></math>と書く．普通<math><mi>𝑐̂</mi><mo>∈</mo><mi>ℂ</mi></math>として扱うと，<math><mi>𝑐̂</mi><mo>=</mo><mn>0</mn></math>のとき困るはずなのだが，結局表現論しか考えないため，記号の濫用が可能．</p>
 				</section>
 				<section>
 					<h4>Hilbert空間</h4>
@@ -8242,9 +8919,259 @@
 							</math>
 						</p>
 						<p>プライマリ場<math><mi>𝜙</mi></math>及び，<math><mi>𝜙</mi></math>の全てのディセンダント場の集まりを<dfn>共形族</dfn><span lang="en">(conformal family)</span>と呼び，<math><mo>[</mo><mi>𝜙</mi><mo>]</mo></math>と表す．</p>
+						<article id="ディセンダント状態" class="dfn">
+							<h6>ディセンダント状態</h6>
+							<p>
+								<a href="#共形ウェイト">共形ウェイト</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>ℎ</mi>
+										<mo>,</mo>
+										<mover>
+											<mi>ℎ</mi><mo>‾</mo>
+										</mover>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								の<a href="#プライマリ場">プライマリ場</a>
+								<math>
+									<mi>𝜙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑤</mi>
+											<mo>,</mo>
+											<mover>
+												<mi>𝑤</mi><mo>‾</mo>
+											</mover>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math>
+								の<a href="#ディセンダント場">ディセンダント場</a>
+								<math>
+									<msup>
+										<mi>𝜙</mi>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑘</mi><mn>1</mn>
+												</msub>
+												<mo>…</mo>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑘</mi><mi>𝑛</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</msup>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑤</mi>
+											<mo>,</mo>
+											<mover>
+												<mi>𝑤</mi><mo>‾</mo>
+											</mover>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math>
+								に対し，以下で定義される場を<dfn>ディセンダント状態</dfn><span lang="en">(descendant state)</span>と呼ぶ．：
+								<math display="block">
+									<mrow>
+										<mrow>
+											<msup>
+												<mi>𝜙</mi>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝑘</mi><mn>1</mn>
+														</msub>
+														<mo>…</mo>
+														<mo>,</mo>
+														<msub>
+															<mi>𝑘</mi><mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mn>0</mn><mo>,</mo><mn>0</mn>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>|</mo><mn>0</mn><mo>⟩</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∏</mo>
+												<mrow>
+													<mi>𝑖</mi><mo>=</mo><mn>1</mn>
+												</mrow>
+												<mi>𝑛</mi>
+											</munderover>
+											<msub>
+												<mi>𝐿</mi>
+												<mrow>
+													<mo>−</mo>
+													<msub>
+														<mi>𝑘</mi><mi>𝑖</mi>
+													</msub>
+												</mrow>
+											</msub>
+										</mrow>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>|</mo>
+											<mrow>
+												<mi>ℎ</mi>
+												<mo>,</mo>
+												<mover>
+													<mi>ℎ</mi><mo>‾</mo>
+												</mover>
+											</mrow>
+											<mo>⟩</mo>
+										</mrow>
+									</mrow>
+								</math>
+							</p>
+						</article>
+						<article id="ディセンダント場のレベル" class="dfn">
+							<h6>レベル</h6>
+							<p>
+								<a href="#共形ウェイト">共形ウェイト</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>ℎ</mi>
+										<mo>,</mo>
+										<mover>
+											<mi>ℎ</mi><mo>‾</mo>
+										</mover>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								の<a href="#プライマリ場">プライマリ場</a>
+								<math>
+									<mi>𝜙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑤</mi>
+											<mo>,</mo>
+											<mover>
+												<mi>𝑤</mi><mo>‾</mo>
+											</mover>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math>
+								の<a href="#ディセンダント場">ディセンダント場</a>
+								<math>
+									<msup>
+										<mi>𝜙</mi>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑘</mi><mn>1</mn>
+												</msub>
+												<mo>…</mo>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑘</mi><mi>𝑛</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</msup>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑤</mi>
+											<mo>,</mo>
+											<mover>
+												<mi>𝑤</mi><mo>‾</mo>
+											</mover>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math>
+								に対し，整数組
+								<math display="block">
+									<mrow>
+										<mi>𝑁</mi>
+										<mo>≔</mo>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑗</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mrow>
+												<mi>𝑝</mi>
+											</munderover>
+											<msub>
+												<mi>𝑘</mi>
+												<mi>𝑗</mi>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mover>
+											<mi>𝑁</mi>
+											<mo>‾</mo>
+										</mover>
+										<mo>≔</mo>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑗</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mrow>
+												<mi>𝑝̅</mi>
+											</munderover>
+											<msub>
+												<mover>
+													<mi>𝑘</mi>
+													<mo>‾</mo>
+												</mover>
+												<mi>𝑗</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</math>
+								を<dfn>レベル</dfn><span lang="en">(level)</span>と呼ぶ．
+							</p>
+						</article>
 					</article>
-					<article id="ディセンダント状態" class="dfn">
-						<h5>ディセンダント状態</h5>
+					<p><a href="#プライマリ場">プライマリ場</a><math><mi>𝜙</mi></math>があれば，Hilbert空間には<math><mi>𝜙</mi></math>の<a href="#プライマリ状態">プライマリ状態</a>及び（非零な）<math><mi>𝜙</mi></math>の<a href="#ディセンダント状態">ディセンダント状態</a>が全て含まれる．</p>
+					<p><a href="#プライマリ場">プライマリ場</a>は最高ウェイト加群．その中で最も自由な<a href="../../abstract-algebra/algebra/Lie/Virasoro.html#Virasoro代数のVerma加群">Verma加群</a>を考える．</p>
+					<article id="低レベルのディセンダント場の基底" class="thm">
+						<h5>低レベルのディセンダント場の基底</h5>
 						<p>
 							<a href="#共形ウェイト">共形ウェイト</a>
 							<math>
@@ -8274,1471 +9201,350 @@
 									<mo>)</mo>
 								</mrow>
 							</math>
-							の<a href="#ディセンダント場">ディセンダント場</a>
-							<math>
-								<msup>
+							を与える．
+						</p>
+						<ul>
+							<li>
+								<a href="#ディセンダント場のレベル">レベル</a><math><mo>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>の<math><mi>𝜙</mi></math>の<a href="#ディセンダント場">ディセンダント場</a>は
+								<math display="block">
+									<msub>
+										<mi>𝐿</mi>
+										<mrow>
+											<mo>−</mo>
+											<mn>1</mn>
+										</mrow>
+									</msub>
+									<mo>&af;</mo>
 									<mi>𝜙</mi>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<msub>
-												<mi>𝑘</mi><mn>1</mn>
-											</msub>
-											<mo>…</mo>
-											<mo>,</mo>
-											<msub>
-												<mi>𝑘</mi><mi>𝑛</mi>
-											</msub>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</msup>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝑤</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>𝑤</mi><mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</math>
-							に対し，以下で定義される場を<dfn>ディセンダント状態</dfn><span lang="en">(descendant state)</span>と呼ぶ．：
-							<math display="block">
-								<mrow>
-									<mrow>
-										<msup>
-											<mi>𝜙</mi>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<msub>
-														<mi>𝑘</mi><mn>1</mn>
-													</msub>
-													<mo>…</mo>
-													<mo>,</mo>
-													<msub>
-														<mi>𝑘</mi><mi>𝑛</mi>
-													</msub>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mn>0</mn><mo>,</mo><mn>0</mn>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>|</mo><mn>0</mn><mo>⟩</mo>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<munderover intent=":largeop">
-											<mo>∏</mo>
-											<mrow>
-												<mi>𝑖</mi><mo>=</mo><mn>1</mn>
-											</mrow>
-											<mi>𝑛</mi>
-										</munderover>
-										<msub>
-											<mi>𝐿</mi>
-											<mrow>
-												<mo>−</mo>
-												<msub>
-													<mi>𝑘</mi><mi>𝑖</mi>
-												</msub>
-											</mrow>
-										</msub>
-									</mrow>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>|</mo>
-										<mrow>
-											<mi>ℎ</mi>
-											<mo>,</mo>
-											<mover>
-												<mi>ℎ</mi><mo>‾</mo>
-											</mover>
-										</mrow>
-										<mo>⟩</mo>
-									</mrow>
-								</mrow>
-							</math>
-						</p>
-					</article>
-					<p>
-						<a href="#プライマリ場">プライマリ場</a><math><mi>𝜙</mi></math>があれば，Hilbert空間には<math><mi>𝜙</mi></math>の<a href="#プライマリ状態">プライマリ状態</a>及び（非零な）<math><mi>𝜙</mi></math>の<a href="#ディセンダント状態">ディセンダント状態</a>が全て含まれる．
-					</p>
-				</section>
-			</section>
-			<section>
-				<h3>相関函数</h3>
-				<p><a href="#プライマリ場">プライマリ場</a>の相関函数は，かなり形が制限されるというお話．</p>
-			</section>
-			<section>
-				<h3>2次元の共形代数とVirasoro代数</h3>
-				詳細は<a href="../../abstract-algebra/algebra/Lie/Virasoro.html">Virasoro代数</a>のページに書くかも．
-				<p>
-					<a href="#2次元の共形代数">共形代数</a>のウェイトは，
-					<math>
-						<msup>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mrow>
-										<mi>ℂ</mi>
-										<mo>&it;</mo>
-										<msub>
-											<mi>𝐿</mi>
-											<mn>0</mn>
-										</msub>
-									</mrow>
-									<mo>⊕</mo>
-									<mrow>
-										<mi>ℂ</mi>
-										<mo>&it;</mo>
-										<msub>
-											<mover>
-												<mi>𝐿</mi>
-												<mo>‾</mo>
-											</mover>
-											<mn>0</mn>
-										</msub>
-									</mrow>
-									<mo>⊕</mo>
-									<mrow>
-										<mi>ℂ</mi>
-										<mo>&it;</mo>
-										<mi>𝑐</mi>
-									</mrow>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-							<mo>∗</mo>
-						</msup>
-					</math>
-					の元，つまり3固有値の組を指定すべきもの．しかし共形場理論の文脈では
-					よくウェイトと言ったら
-					<math>
-						<msup>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mrow>
-										<mi>ℂ</mi>
-										<mo>&it;</mo>
-										<msub>
-											<mi>𝐿</mi>
-											<mn>0</mn>
-										</msub>
-									</mrow>
-									<mo>⊕</mo>
-									<mrow>
-										<mi>ℂ</mi>
-										<mo>&it;</mo>
-										<msub>
-											<mover>
-												<mi>𝐿</mi>
-												<mo>‾</mo>
-											</mover>
-											<mn>0</mn>
-										</msub>
-									</mrow>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-							<mo>∗</mo>
-						</msup>
-					</math>
-					のことを指す．
-				</p>
-				<article id="中心荷" class="dfn">
-					<h4 class="dfn-t">中心荷</h4>
-					<p class="dfn-d">
-						Virasoro代数のウェイトのうち，中心<math><mi>𝑐</mi></math>に対応するものを<dfn>中心荷</dfn>(central charge)と呼び，記号の濫用で<math><mi>𝑐</mi></math>と書く．
-					</p>
-				</article>
-				<p>濫用を避けるなら，Virasoro代数の元の方は<math><mi>𝑐̂</mi></math>と書く．普通<math><mi>𝑐̂</mi><mo>∈</mo><mi>ℂ</mi></math>として扱うと，<math><mi>𝑐̂</mi><mo>=</mo><mn>0</mn></math>のとき困るはずなのだが，結局表現論しか考えないため，記号の濫用が可能．</p>
-				<section>
-					<h4>ディセンダント場</h4>
-					<article id="Virasoro代数の三角分解" class="thm">
-						<h5>Virasoro代数の三角分解</h5>
-						<p>
-							<a href="../../abstract-algebra/algebra/Lie/Virasoro.html#Virasoro代数">Virasoro代数</a>は以下の三角分解を持つ．
-							<math display="block">
-								<mi>𝔙𝔦𝔯</mi>
-								<mo>=</mo>
-								<mrow>
-									<msup>
-										<mi>𝔙𝔦𝔯</mi>
-										<mo>+</mo>
-									</msup>
-									<mo>⊕</mo>
-									<msup>
-										<mi>𝔙𝔦𝔯</mi>
-										<mn>0</mn>
-									</msup>
-									<mo>⊕</mo>
-									<msup>
-										<mi>𝔙𝔦𝔯</mi>
-										<mo>−</mo>
-									</msup>
-								</mrow>
-							</math>
-							<math display="block">
-								<msup>
-									<mi>𝔙𝔦𝔯</mi>
-									<mo>±</mo>
-								</msup>
-								<mo>≔</mo>
-								<mrow>
-									<munder intent=":largeop">
-										<mo>⨁</mo>
-										<mrow>
-											<mrow>
-												<mo>±</mo>
-												<mi>𝑛</mi>
-											</mrow>
-											<mo>∈</mo>
-											<msub>
-												<mi>ℤ</mi>
-												<mrow>
-													<mo>&gt;</mo>
-													<mn>0</mn>
-												</mrow>
-											</msub>
-										</mrow>
-									</munder>
-									<mrow>
-										<mi>ℂ</mi>
-										<mo>&it;</mo>
-										<msub>
-											<mi>𝐿</mi>
-											<mi>𝑛</mi>
-										</msub>
-									</mrow>
-								</mrow>
-							</math>
-							<math display="block">
-								<msup>
-									<mi>𝔙𝔦𝔯</mi>
-									<mn>0</mn>
-								</msup>
-								<mo>≔</mo>
-								<mrow>
-									<mrow>
-										<mi>ℂ</mi>
-										<mo>&it;</mo>
-										<msub>
-											<mi>𝐿</mi>
-											<mi>𝑛</mi>
-										</msub>
-									</mrow>
-									<mo>⊕</mo>
-									<mrow>
-										<mi>ℂ</mi>
-										<mo>&it;</mo>
-										<mi>𝑐</mi>
-									</mrow>
-								</mrow>
-							</math>
-						</p>
-					</article>
-					<p>
-						角運動量代数と似ていると言ってもいいが，これからやることは第二量子化でのボゾンのFock空間の作り方の方が近い．
-						三角分解をもつ代数に対しては，<math><msup><mi>𝔤</mi><mn>0</mn></msup></math>の部分の（固有ベクトルとして）作用を定義してしまうと，他のベクトルへの作用は交換関係で決まってしまう．これを見ていこう．
-					</p>
-					<p>
-						<a href="#プライマリ状態">プライマリ状態</a>は
-						<math>
-							<msub>
-								<mi>𝐿</mi>
-								<mn>0</mn>
-							</msub>
-							<mo>,</mo>
-							<msub>
-								<mover>
-									<mi>𝐿</mi>
-									<mo>‾</mo>
-								</mover>
-								<mn>0</mn>
-							</msub>
-						</math>
-						の固有値
-						<math>
-							<mi>ℎ</mi>
-							<mo>,</mo>
-							<mover>
-								<mi>ℎ</mi>
-								<mo>‾</mo>
-							</mover>
-						</math>
-						の固有ベクトル
-						<math>
-							<mrow>
-								<mo>|</mo>
-								<mrow>
-									<mi>ℎ</mi>
-									<mo>,</mo>
-									<mover>
-										<mi>ℎ</mi>
-										<mo>‾</mo>
-									</mover>
-								</mrow>
-								<mo>⟩</mo>
-							</mrow>
-						</math>
-						のことであった．ここで，
-						<a href="../../abstract-algebra/algebra/Lie/Virasoro.html">Virasoro代数</a>の定義より，
-						<math display="block">
-							<mrow>
-								<mo>[</mo>
-									<mrow>
-										<msub>
-											<mi>𝐿</mi>
-											<mn>0</mn>
-										</msub>
-										<mo>,</mo>
-										<msub>
-											<mi>𝐿</mi>
-											<mi>𝑛</mi>
-										</msub>
-									</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mo>−</mo>
-								<mi>𝑛</mi>
-								<mo>&it;</mo>
-								<msub>
-									<mi>𝐿</mi>
-									<mi>𝑛</mi>
-								</msub>
-							</mrow>
-						</math>
-						だから，
-						<math>
-							<mrow>
-								<msub>
-									<mi>𝐿</mi>
-									<mi>𝑛</mi>
-								</msub>
-								<mo>,</mo>
-								<msub>
-									<mover>
-										<mi>𝐿</mi>
-										<mo>‾</mo>
-									</mover>
-									<mi>𝑛</mi>
-								</msub>
-							</mrow>
-							<mrow>
-								<mo>(</mo>
-									<mrow>
-										<mi>𝑛</mi>
-										<mo>≠</mo>
-										<mn>0</mn>
-									</mrow>
-								<mo>)</mo>
-							</mrow>
-						</math>
-						は<math><msub><mi>𝐿</mi><mn>0</mn></msub></math>の昇降演算子になっている．復習しておくと，
-						<math display="block">
-							<mrow>
-								<msub>
-									<mi>𝐿</mi>
-									<mn>0</mn>
-								</msub>
-								<msub>
-									<mi>𝐿</mi>
-									<mi>𝑛</mi>
-								</msub>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mo>(</mo>
-										<mrow>
-											<msub>
-												<mi>𝐿</mi>
-												<mi>𝑛</mi>
-											</msub>
-											<msub>
-												<mi>𝐿</mi>
-												<mn>0</mn>
-											</msub>
-											<mo>+</mo>
-											<mrow>
-												<mo>[</mo>
-													<mrow>
-														<msub>
-															<mi>𝐿</mi>
-															<mn>0</mn>
-														</msub>
-														<mo>,</mo>
-														<msub>
-															<mi>𝐿</mi>
-															<mi>𝑛</mi>
-														</msub>
-													</mrow>
-												<mo>]</mo>
-											</mrow>
-										</mrow>
-									<mo>)</mo>
-								</mrow>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mo>(</mo>
-										<mrow>
-											<mi>ℎ</mi>
-											<mo>−</mo>
-											<mi>𝑛</mi>
-										</mrow>
-									<mo>)</mo>
-								</mrow>
-								<mo>&it;</mo>
-								<msub>
-									<mi>𝐿</mi>
-									<mi>𝑛</mi>
-								</msub>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-						</math>
-						である．ただし，
-						<math display="block"> 
-							<mrow>
-								<msup>
-									<mi>𝔙𝔦𝔯</mi>
-									<mo>+</mo>
-								</msup>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<msup>
-									<mover accent="true">
-										<mi>𝔙𝔦𝔯</mi>
-										<mo>‾</mo>
-									</mover>
-									<mo>+</mo>
-								</msup>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mn>0</mn>
-						</math>
-						であったから，これは，
-						<math>
-							<mi>ℎ</mi>
-							<mo>,</mo>
-							<mover>
-								<mi>ℎ</mi>
-								<mo>‾</mo>
-							</mover>
-						</math>
-						が最高ウェイト（<math><msup><mi>𝔙𝔦𝔯</mi><mo>+</mo></msup></math>で変化する固有値の方を正と定義したときの最大固有値の組．実際には最小固有値の組）であることを意味する．<br />
-						同様に，<math><mi>𝑛</mi><mo>&lt;</mo><mn>0</mn></math>に対しても，作用が<math><mn>0</mn></math>でないとは限らない．ここで，
-						<math display="block">
-							<mrow>
-								<mrow>
-									<msub>
-										<mi>𝐿</mi>
-										<mrow>
-											<mo>−</mo>
-											<msub>
-												<mi>𝑘</mi>
-												<mn>1</mn>
-											</msub>
-										</mrow>
-									</msub>
-									<mo>⋯</mo>
-									<msub>
-										<mi>𝐿</mi>
-										<mrow>
-											<mo>−</mo>
-											<msub>
-												<mi>𝑘</mi>
-												<mi>𝑝</mi>
-											</msub>
-										</mrow>
-									</msub>
-								</mrow>
-								<mrow>
-									<msub>
-										<mover>
-											<mi>𝐿</mi>
-											<mo>‾</mo>
-										</mover>
-										<mrow>
-											<mo>−</mo>
-											<msub>
-												<mover>
-													<mi>𝑘</mi>
-													<mo>‾</mo>
-												</mover>
-												<mn>1</mn>
-											</msub>
-										</mrow>
-									</msub>
-									<mo>⋯</mo>
-									<msub>
-										<mover>
-											<mi>𝐿</mi>
-											<mo>‾</mo>
-										</mover>
-										<mrow>
-											<mo>−</mo>
-											<msub>
-												<mover>
-													<mi>𝑘</mi>
-													<mo>‾</mo>
-												</mover>
-												<mi>𝑝̅</mi>
-											</msub>
-										</mrow>
-									</msub>
-								</mrow>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-						</math>
-						という状態のことを<b>ディセンダント状態</b>(descendant state)と呼び，これらが全ての<math><mn>0</mn></math>でない加群のことを<a href="../../abstract-algebra/algebra/Lie/Virasoro.html#Virasoro代数のVerma加群">Verma加群</a>と呼ぶ．ボゾンのFock空間もまさにこんなノリであった．（<a href="#プライマリ状態">プライマリ状態</a>状態を含む）<a href="#ディセンダント状態">ディセンダント状態</a>全てのなす空間はHilbert空間の部分空間となる．
-					</p>
-					<p>
-						特に，整数の組
-						<math display="block">
-							<mrow>
-								<mi>𝑁</mi>
-								<mo>≔</mo>
-								<mrow>
-									<munderover intent=":largeop">
-										<mo>∑</mo>
-										<mrow>
-											<mi>𝑗</mi>
-											<mo>=</mo>
-											<mn>1</mn>
-										</mrow>
-										<mi>𝑝</mi>
-									</munderover>
-									<msub>
-										<mi>𝑘</mi>
-										<mi>𝑗</mi>
-									</msub>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mover>
-									<mi>𝑁</mi>
-									<mo>‾</mo>
-								</mover>
-								<mo>≔</mo>
-								<mrow>
-									<munderover intent=":largeop">
-										<mo>∑</mo>
-										<mrow>
-											<mi>𝑗</mi>
-											<mo>=</mo>
-											<mn>1</mn>
-										</mrow>
-										<mi>𝑝̅</mi>
-									</munderover>
-									<msub>
-										<mover>
-											<mi>𝑘</mi>
-											<mo>‾</mo>
-										</mover>
-										<mi>𝑗</mi>
-									</msub>
-								</mrow>
-							</mrow>
-						</math>
-						をディセンダント状態の<b>レベル</b>という．
-					</p>
-					<p>
-						例えば，レベル<math><mo>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>の<a href="#ディセンダント状態">ディセンダント状態</a>は
-						<math display="block">
-							<msub>
-								<mi>𝐿</mi>
-								<mrow>
-									<mo>−</mo>
-									<mn>1</mn>
-								</mrow>
-							</msub>
-							<mrow>
-								<mo>|</mo>
-								<mrow>
-									<mi>ℎ</mi>
-									<mo>,</mo>
-									<mover>
-										<mi>ℎ</mi>
-										<mo>‾</mo>
-									</mover>
-								</mrow>
-								<mo>⟩</mo>
-							</mrow>
-						</math>
-						レベル<math><mo>(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>の<a href="#ディセンダント状態">ディセンダント状態</a>は
-						<math display="block">
-							<mrow>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>2</mn>
-									</mrow>
-								</msub>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
-									</mrow>
-								</msub>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
-									</mrow>
-								</msub>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-						</math>
-						（の線型結合）．レベル<math><mo>(</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>の<a href="#ディセンダント状態">ディセンダント状態</a>は
-						<math display="block">
-							<mrow>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>3</mn>
-									</mrow>
-								</msub>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
-									</mrow>
-								</msub>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>2</mn>
-									</mrow>
-								</msub>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
-									</mrow>
-								</msub>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
-									</mrow>
-								</msub>
-								<msub>
-									<mi>𝐿</mi>
-									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
-									</mrow>
-								</msub>
-								<mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>ℎ</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-						</math>
-						（の線型結合）である．
-					</p>
-					<h5>次元公式</h5>
-					<p>
-						各レベルの<a href="#ディセンダント状態">ディセンダント状態</a>の張る空間の次元を調べる．代数的指標というものを用いると便利．
-					</p>
-					<p>
-						代数的指標とは，形式的な変数<math><mi>𝑞</mi></math>の冪をレベル，その係数をそのレベルの次元として読み取る級数のこと．まず，<math><msub><mi>𝐿</mi><mrow><mo>−</mo><mi>𝑛</mi></mrow></msub></math>のみが有限回作用した部分空間の代数的指標は，各レベルで1次元だから，
-						<math display="block">
-							<mrow>
-								<munderover intent=":largeop">
-									<mo>∑</mo>
-									<mrow>
-										<mi>𝑁</mi>
-										<mo>=</mo>
-										<mn>0</mn>
-									</mrow>
-									<mo>∞</mo>
-								</munderover>
-								<mrow>
-									<msup>
-										<mi>𝑞</mi>
-										<mrow>
-											<mi>𝑁</mi>
-											<mo>&it;</mo>
-											<mi>𝑛</mi>
-										</mrow>
-									</msup>
-								</mrow>
-								<mo>≕</mo>
-								<mfrac>
-									<mn>1</mn>
-									<mrow>
-										<mn>1</mn>
-										<mo>−</mo>
-										<msup>
-											<mi>𝑞</mi>
-											<mi>𝑛</mi>
-										</msup>
-									</mrow>
-								</mfrac>
-							</mrow>
-						</math>
-						となる．この部分空間に，
-						<math>
-							<msub>
-								<mi>𝐿</mi>
-								<mrow>
-									<mo>−</mo>
-									<mi>𝑚</mi>
-								</mrow>
-							</msub>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝑚</mi>
-									<mo>≠</mo>
-									<mi>𝑛</mi>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-						</math>
-						を異なる回数作用させた空間は，定義よりどの2つも<math><mn>0</mn></math>回作用させた<a href="#プライマリ状態">プライマリ状態</a>しか共通しない．よって，<math><msub><mi>𝐿</mi><mrow><mo>−</mo><mi>𝑛</mi></mrow></msub><mo>,</mo><msub><mi>𝐿</mi><mrow><mo>−</mo><mi>𝑚</mi></mrow></msub></math>のみが有限回作用した部分空間の代数的指標は，
-						<math display="block">
-							<mrow>
-								<munderover intent=":largeop">
-									<mo>∑</mo>
-									<mrow>
-										<mi>𝑁</mi>
-										<mo>=</mo>
-										<mn>0</mn>
-									</mrow>
-									<mo>∞</mo>
-								</munderover>
-								<mrow>
-									<msup>
-										<mi>𝑞</mi>
-										<mrow>
-											<mi>𝑁</mi>
-											<mo>&it;</mo>
-											<mi>𝑚</mi>
-										</mrow>
-									</msup>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-											<mrow>
-												<mn>1</mn>
-												<mo>−</mo>
-												<msup>
-													<mi>𝑞</mi>
-													<mi>𝑛</mi>
-												</msup>
-											</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mfrac>
-									<mn>1</mn>
-									<mrow>
-										<mrow>
-											<mo>(</mo>
-												<mrow>
-													<mn>1</mn>
-													<mo>−</mo>
-													<msup>
-														<mi>𝑞</mi>
-														<mi>𝑚</mi>
-													</msup>
-												</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<mo>(</mo>
-												<mrow>
-													<mn>1</mn>
-													<mo>−</mo>
-													<msup>
-														<mi>𝑞</mi>
-														<mi>𝑛</mi>
-													</msup>
-												</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mfrac>
-							</mrow>
-						</math>
-					</p>
-					<p>
-						だから，レベル<math><mo>(</mo><mi>𝑁</mi><mo>,</mo><mn>0</mn><mo>)</mo></math>の<a href="#ディセンダント状態">ディセンダント状態</a>の張る空間の次元<math><mi>𝑝</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑁</mi><mo>)</mo></mrow></math>とすると，
-						<math display="block">
-							<mfrac>
-								<mn>1</mn>
-								<mrow>
-									<munderover>
-										<mo>∏</mo>
-										<mrow>
-											<mi>𝑛</mi>
-											<mo>=</mo>
-											<mn>1</mn>
-										</mrow>
-										<mo>∞</mo>
-									</munderover>
-									<mrow>
-										<mo>(</mo>
-											<mrow>
-												<mn>1</mn>
-												<mo>−</mo>
-												<msup>
-													<mi>𝑞</mi>
-													<mi>𝑛</mi>
-												</msup>
-											</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</mfrac>
-							<mo>=</mo>
-							<mrow>
-								<munderover intent=":largeop">
-									<mo>∑</mo>
-									<mrow>
-										<mi>𝑁</mi>
-										<mo>=</mo>
-										<mn>0</mn>
-									</mrow>
-									<mo>∞</mo>
-								</munderover>
-								<mrow>
-									<mrow>
-										<mi>𝑝</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>𝑁</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>&it;</mo>
-									<msup>
-										<mi>𝑞</mi>
-										<mi>𝑁</mi>
-									</msup>
-								</mrow>
-							</mrow>
-						</math>
-						が成り立つ．最後に，レベル
-						<math>
-							<mo>(</mo>
-							<mrow>
-								<mi>𝑁</mi>
-								<mo>,</mo>
-								<mover>
-									<mi>𝑁</mi>
-									<mo>‾</mo>
-								</mover>
-							</mrow>
-							<mo>)</mo>
-						</math>
-						のディセンダント状態の張る空間の次元は
-						<math>
-							<mrow>
-								<mi>𝑝</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mi>𝑁</mi>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>&it;</mo>
-							<mrow>
-								<mi>𝑝</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mover>
-										<mi>𝑁</mi>
-										<mo>‾</mo>
-									</mover>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						である．
-					</p>
-					<h5>原点への場の挿入</h5>
-					<p>
-						<a href="#プライマリ状態">プライマリ状態</a>のように，<a href="#ディセンダント状態">ディセンダント状態</a>は原点に適当な場を挿入することで構成できることを帰納的に見る．
-					</p>
-					<ol>
-						<li>
-							<p>
-								まず，
-								<math display="block">
-									<mtable intent=":lines">
-										<mtr>
-											<mtd>
-												<msub>
-													<mi>𝐿</mi>
-													<mrow>
-														<mo>−</mo>
-														<mi>𝑛</mi>
-													</mrow>
-												</msub>
-											</mtd>
-											<mtd><mo>=</mo></mtd>
-											<mtd>
-												<munder>
-													<mi>lim</mi>
-													<mrow>
-														<mi>𝑤</mi>
-														<mo>→</mo>
-														<mn>0</mn>
-													</mrow>
-												</munder>
-												<mrow>
-													<msub>
-														<mi>𝐿</mi>
-														<mi>𝑛</mi>
-													</msub>
-													<mrow>
-														<mi>𝒪</mi>
-														<mo>&af;</mo>
-														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mi>𝑤</mi>
-																<mo>,</mo>
-																<mover>
-																	<mi>𝑤</mi>
-																	<mo>‾</mo>
-																</mover>
-															</mrow>
-															<mo>)</mo>
-														</mrow>
-													</mrow>
-												</mrow>
-												<mrow>
-													<mo>|</mo>
-													<mn>0</mn>
-													<mo>⟩</mo>
-												</mrow>
-											</mtd>
-										</mtr>
-										<mtr>
-											<mtd />
-											<mtd><mo>=</mo></mtd>
-											<mtd>
-												<munder>
-													<mi>lim</mi>
-													<mrow>
-														<mi>𝑤</mi>
-														<mo>→</mo>
-														<mn>0</mn>
-													</mrow>
-												</munder>
-												<mrow>
-													<mfrac>
-														<mn>1</mn>
-														<mrow>
-															<mn>2</mn>
-															<mo>&it;</mo>
-															<mi mathvariant="normal">π</mi>
-															<mo>&it;</mo>
-															<mi>𝑖</mi>
-														</mrow>
-													</mfrac>
-													<mrow>
-														<mo>∮</mo>
-														<mrow>
-															<mi mathvariant="normal">d</mi>
-															<mi>𝑧</mi>
-														</mrow>
-														<msup>
-															<mi>𝑧</mi>
-															<mrow>
-																<mo>−</mo>
-																<mi>𝑛</mi>
-																<mo>+</mo>
-																<mn>1</mn>
-															</mrow>
-														</msup>
-														<mo>&it;</mo>
-														<mi>𝑇</mi>
-														<mo>&af;</mo>
-														<mrow>
-															<mo>(</mo>
-															<mi>𝑧</mi>
-															<mo>)</mo>
-														</mrow>
-													</mrow>
-													<mrow>
-														<mi>𝒪</mi>
-														<mo>&af;</mo>
-														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mi>𝑤</mi>
-																<mo>,</mo>
-																<mover>
-																	<mi>𝑤</mi>
-																	<mo>‾</mo>
-																</mover>
-															</mrow>
-															<mo>)</mo>
-														</mrow>
-													</mrow>
-												</mrow>
-												<mrow>
-													<mo>|</mo>
-													<mn>0</mn>
-													<mo>⟩</mo>
-												</mrow>
-											</mtd>
-										</mtr>
-									</mtable>
 								</math>
-								と書けていた．演算子積展開を有限の部分まで展開すると，
+							</li>
+							<li>
+								<a href="#ディセンダント場のレベル">レベル</a><math><mo>(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>の<math><mi>𝜙</mi></math>の<a href="#ディセンダント場">ディセンダント場</a>は
 								<math display="block">
 									<mrow>
-										<mrow>
-											<mi>𝑇</mi>
-											<mo>&af;</mo>
+										<msub>
+											<mi>𝐿</mi>
 											<mrow>
-												<mo>(</mo>
-												<mi>𝑧</mi>
-												<mo>)</mo>
+												<mo>−</mo>
+												<mn>2</mn>
 											</mrow>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<mi>𝒪</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
+										</msub>
+										<mo>&af;</mo>
+										<mi>𝜙</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msup>
+											<msub>
+												<mi>𝐿</mi>
 												<mrow>
-													<mi>𝑤</mi>
-													<mo>,</mo>
-													<mover>
-														<mi>𝑤</mi>
-														<mo>‾</mo>
-													</mover>
+													<mo>−</mo><mn>1</mn>
 												</mrow>
-												<mo>)</mo>
+											</msub>
+											<mn>2</mn>
+										</msup>
+										<mo>&af;</mo>
+										<mi>𝜙</mi>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<a href="#ディセンダント場のレベル">レベル</a><math><mo>(</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>の<math><mi>𝜙</mi></math>の<a href="#ディセンダント場">ディセンダント場</a>は
+								<math display="block">
+									<mrow>
+										<msub>
+											<mi>𝐿</mi>
+											<mrow>
+												<mo>−</mo>
+												<mn>3</mn>
 											</mrow>
+										</msub>
+										<mo>&af;</mo>
+										<mi>𝜙</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<msub>
+												<mi>𝐿</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝐿</mi>
+												<mrow>
+													<mo>−</mo><mn>2</mn>
+												</mrow>
+											</msub>
+										</mrow>
+										<mo>&af;</mo>
+										<mi>𝜙</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msup>
+											<msub>
+												<mi>𝐿</mi>
+												<mrow>
+													<mo>−</mo>
+													<mn>1</mn>
+												</mrow>
+											</msub>
+											<mn>3</mn>
+										</msup>
+										<mo>&af;</mo><mi>𝜙</mi>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</article>
+					<section>
+						<h5>指標公式</h5>
+						<article id="Verma加群の指標" class="thm">
+							<h6>Verma加群の指標</h6>
+							<p>Hilbert空間が1つの<a href="#プライマリ状態">プライマリ状態</a>とその<a href="#ディセンダント状態">ディセンダント状態</a>のみからなるとする．</p>
+							<p>
+								その<a href="#ディセンダント場のレベル">レベル</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑁</mi>
+										<mo>,</mo>
+										<mover>
+											<mi>𝑁</mi>
+											<mo>‾</mo>
+										</mover>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								のディセンダント状態の張る部分Hilbert空間の次元は
+								<math>
+									<mrow>
+										<mi>𝑝</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑁</mi><mo>)</mo>
 										</mrow>
 									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>𝑝</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mover>
+												<mi>𝑁</mi><mo>‾</mo>
+											</mover>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+								．ただし，
+								<math>
+									<mi>𝑝</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑁</mi><mo>)</mo>
+									</mrow>
+								</math>
+								は<a href="#ディセンダント場のレベル">レベル</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝑁</mi><mo>,</mo><mn>0</mn>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								の<a href="#ディセンダント状態">ディセンダント状態</a>の張る部分Hilbert空間の次元で，
+								<math display="block">
+									<mfrac>
+										<mn>1</mn>
+										<mrow>
+											<munderover>
+												<mo>∏</mo>
+												<mrow>
+													<mi>𝑛</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mrow>
+												<mo>∞</mo>
+											</munderover>
+											<mrow>
+												<mo>(</mo>
+													<mrow>
+														<mn>1</mn>
+														<mo>−</mo>
+														<msup>
+															<mi>𝑞</mi>
+															<mi>𝑛</mi>
+														</msup>
+													</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mfrac>
 									<mo>=</mo>
 									<mrow>
 										<munderover intent=":largeop">
 											<mo>∑</mo>
 											<mrow>
-												<mi>𝑛</mi>
+												<mi>𝑁</mi>
 												<mo>=</mo>
 												<mn>0</mn>
 											</mrow>
 											<mo>∞</mo>
 										</munderover>
-										<msup>
-											<mrow>
-												<mo>(</mo>
-													<mrow>
-														<mi>𝑧</mi>
-														<mo>−</mo>
-														<mi>𝑤</mi>
-													</mrow>
-												<mo>)</mo>
-											</mrow>
-											<mrow>
-												<mi>𝑛</mi>
-												<mo>−</mo>
-												<mn>2</mn>
-											</mrow>
-										</msup>
-										<mo>&it;</mo>
-										<mrow>
-											<msup>
-												<mi>𝒪</mi>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mo>−</mo>
-														<mi>𝑛</mi>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</msup>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>𝑤</mi>
-													<mo>,</mo>
-													<mover>
-														<mi>𝑤</mi>
-														<mo>‾</mo>
-													</mover>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</math>
-								と書ける．この展開を用いると，<a href="#ディセンダント状態">ディセンダント状態</a>は，
-								<math display="block">
-									<mrow>
-										<msub>
-											<mi>𝐿</mi>
-											<mrow>
-												<mo>−</mo>
-												<mi>𝑛</mi>
-											</mrow>
-										</msub>
-										<mrow>
-											<mo>|</mo>
-											<mrow>
-												<mi>ℎ</mi>
-												<mo>,</mo>
-												<mover>
-													<mi>ℎ</mi>
-													<mo>‾</mo>
-												</mover>
-											</mrow>
-											<mo>⟩</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<munder>
-											<mi>lim</mi>
-											<mrow>
-												<mi>𝑤</mi>
-												<mo>→</mo>
-												<mn>0</mn>
-											</mrow>
-										</munder>
 										<mrow>
 											<mrow>
-												<msup>
-													<mi>𝒪</mi>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mo>−</mo>
-															<mi>𝑛</mi>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-												</msup>
+												<mi>𝑝</mi>
 												<mo>&af;</mo>
 												<mrow>
 													<mo>(</mo>
-													<mrow>
-														<mi>𝑤</mi>
-														<mo>,</mo>
-														<mover>
-															<mi>𝑤</mi>
-															<mo>‾</mo>
-														</mover>
-													</mrow>
+													<mi>𝑁</mi>
 													<mo>)</mo>
 												</mrow>
 											</mrow>
-										</mrow>
-										<mrow>
-											<mo>|</mo>
-											<mn>0</mn>
-											<mo>⟩</mo>
-										</mrow>
-									</mrow>
-								</math>
-								となる．よって，<a href="#ディセンダント状態">ディセンダント状態</a>は，<b>ディセンダント場</b>(descendant filed)
-								<math display="block">
-									<mrow>
-										<msup>
-											<mi>𝒪</mi>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mo>−</mo>
-													<mi>𝑛</mi>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝑤</mi>
-												<mo>,</mo>
-												<mover>
-													<mi>𝑤</mi>
-													<mo>‾</mo>
-												</mover>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<mfrac>
-											<mn>1</mn>
-											<mrow>
-												<mn>2</mn>
-												<mo>&it;</mo>
-												<mi mathvariant="normal">π</mi>
-												<mo>&it;</mo>
-												<mi>𝑖</mi>
-											</mrow>
-										</mfrac>
-										<mo>&it;</mo>
-										<mrow>
-											<mo>∮</mo>
-											<mrow>
-												<mi mathvariant="normal">d</mi>
-												<mi>𝑧</mi>
-											</mrow>
-											<mrow>
-												<msup>
-													<mrow>
-														<mo>(</mo>
-														<mi>𝑧</mi>
-														<mo>−</mo>
-														<mi>𝑤</mi>
-														<mo>)</mo>
-													</mrow>
-													<mrow>
-														<mo>−</mo>
-														<mi>𝑛</mi>
-														<mo>+</mo>
-														<mn>1</mn>
-													</mrow>
-												</msup>
-												<mo>&it;</mo>
-												<mrow>
-													<mi>𝑇</mi>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo>
-														<mi>𝑧</mi>
-														<mo>)</mo>
-													</mrow>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<mi>𝒪</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-													<mrow>
-														<mi>𝑤</mi>
-														<mo>,</mo>
-														<mover>
-															<mi>𝑤</mi>
-															<mo>‾</mo>
-														</mover>
-													</mrow>
-												<mo>)</mo>
-											</mrow>
+											<mo>&it;</mo>
+											<msup>
+												<mi>𝑞</mi>
+												<mi>𝑁</mi>
+											</msup>
 										</mrow>
 									</mrow>
 								</math>
-								を原点に挿入することで実現できる．
+								を満たす．
 							</p>
-						</li>
-						<li>
+						</article>
+					</section>
+					<section>
+						<h5>ディセンダント場の例</h5>
+						<article id="低レベルのディセンダント場" class="thm">
+							<h6>低レベルのディセンダント場</h6>
 							<p>
-								次に，
+								<math display="block">
+									<mtable intent=":system-of-equations">
+										<mtr>
+											<mtd>
+												<msup>
+													<mi>𝒪</mi>
+													<mrow>
+														<mo>(</mo>
+														<mn>0</mn>
+														<mo>)</mo>
+													</mrow>
+												</msup>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+														<mrow>
+															<mi>𝑧</mi>
+															<mo>,</mo>
+															<mover>
+																<mi>𝑧</mi>
+																<mo>‾</mo>
+															</mover>
+														</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mtd>
+											<mtd><mo>=</mo></mtd>
+											<mtd>
+												<mi>ℎ</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mi>𝒪</mi>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝑧</mi>
+															<mo>,</mo>
+															<mover>
+																<mi>𝑧</mi>
+																<mo>‾</mo>
+															</mover>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<msup>
+													<mi>𝒪</mi>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mo>−</mo>
+															<mn>1</mn>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</msup>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+														<mrow>
+															<mi>𝑧</mi>
+															<mo>,</mo>
+															<mover>
+																<mi>𝑧</mi>
+																<mo>‾</mo>
+															</mover>
+														</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mtd>
+											<mtd><mo>=</mo></mtd>
+											<mtd>
+												<msub>
+													<mo>∂</mo>
+													<mi>𝑧</mi>
+												</msub>
+												<mrow>
+													<mi>𝒪</mi>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝑧</mi>
+															<mo>,</mo>
+															<mover>
+																<mi>𝑧</mi>
+																<mo>‾</mo>
+															</mover>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mtd>
+										</mtr>
+									</mtable>
+								</math>
+							</p>
+						</article>
+						<article id="レベル2の恒等場のディセンダント場" class="thm">
+							<h6>レベル2の恒等場のディセンダント場</h6>
+							<p>
+								恒等場<math><mi>𝟙</mi></math>の<a href="#ディセンダント場のレベル">レベル</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mn>2</mn><mo>,</mo><mn>0</mn>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								の<a href="#ディセンダント場">ディセンダント場</a>の一つは<a href="#エネルギー・運動量テンソル">エネルギー・運動量テンソル</a>：
 								<math display="block">
 									<mrow>
 										<msup>
-											<mi>𝒪</mi>
+											<mi>𝟙</mi>
 											<mrow>
 												<mo>(</mo>
 												<mrow>
-													<mrow>
-														<mo>−</mo>
-														<msub>
-															<mi>𝑘</mi>
-															<mn>1</mn>
-														</msub>
-													</mrow>
-													<mo>,</mo>
-													<mo>…</mo>
-													<mrow>
-														<mo>−</mo>
-														<msub>
-															<mi>𝑘</mi>
-															<mi>𝑝</mi>
-														</msub>
-													</mrow>
+													<mo>−</mo>
+													<mn>2</mn>
 												</mrow>
 												<mo>)</mo>
 											</mrow>
@@ -9762,11 +9568,7 @@
 										<mfrac>
 											<mn>1</mn>
 											<mrow>
-												<mn>2</mn>
-												<mo>&it;</mo>
-												<mi mathvariant="normal">π</mi>
-												<mo>&it;</mo>
-												<mi>𝑖</mi>
+												<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝑖</mi>
 											</mrow>
 										</mfrac>
 										<mo>&it;</mo>
@@ -9787,8 +9589,6 @@
 													</mrow>
 													<mrow>
 														<mo>−</mo>
-														<mi>𝑛</mi>
-														<mo>+</mo>
 														<mn>1</mn>
 													</mrow>
 												</msup>
@@ -9803,1258 +9603,23 @@
 													</mrow>
 												</mrow>
 											</mrow>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<msup>
-												<mi>𝒪</mi>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mrow>
-															<mo>−</mo>
-															<msub>
-																<mi>𝑘</mi>
-																<mn>1</mn>
-															</msub>
-														</mrow>
-														<mo>,</mo>
-														<mo>…</mo>
-														<mrow>
-															<mo>−</mo>
-															<msub>
-																<mi>𝑘</mi>
-																<mrow>
-																	<mi>𝑝</mi>
-																	<mo>−</mo>
-																	<mn>1</mn>
-																</mrow>
-															</msub>
-														</mrow>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</msup>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-													<mrow>
-														<mi>𝑤</mi>
-														<mo>,</mo>
-														<mover>
-															<mi>𝑤</mi>
-															<mo>‾</mo>
-														</mover>
-													</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</math>
-								で帰納的に定まるディダンセント場により，他の<a href="#ディセンダント状態">ディセンダント状態</a>は
-								<math display="block">
-									<mrow>
-										<msub>
-											<mi>𝐿</mi>
-											<mrow>
-												<mo>−</mo>
-												<msub>
-													<mi>𝑘</mi>
-													<mi>𝑝</mi>
-												</msub>
-											</mrow>
-										</msub>
-										<mo>⋯</mo>
-										<msub>
-											<mi>𝐿</mi>
-											<mrow>
-												<mo>−</mo>
-												<msub>
-													<mi>𝑘</mi>
-													<mn>1</mn>
-												</msub>
-											</mrow>
-										</msub>
-										<mrow>
-											<mo>|</mo>
-											<mrow>
-												<mi>ℎ</mi>
-												<mo>,</mo>
-												<mover>
-													<mi>ℎ</mi>
-													<mo>‾</mo>
-												</mover>
-											</mrow>
-											<mo>⟩</mo>
 										</mrow>
 									</mrow>
 									<mo>=</mo>
 									<mrow>
+										<mi>𝑇</mi>
+										<mo>&af;</mo>
 										<mrow>
-											<munder>
-												<mi>lim</mi>
-												<mrow>
-													<mi>𝑤</mi>
-													<mo>→</mo>
-													<mn>0</mn>
-												</mrow>
-											</munder>
-											<mrow>
-												<msup>
-													<mi>𝒪</mi>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mrow>
-																<mo>−</mo>
-																<msub>
-																	<mi>𝑘</mi>
-																	<mn>1</mn>
-																</msub>
-															</mrow>
-															<mo>,</mo>
-															<mo>…</mo>
-															<mrow>
-																<mo>−</mo>
-																<msub>
-																	<mi>𝑘</mi>
-																	<mi>𝑝</mi>
-																</msub>
-															</mrow>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-												</msup>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝑤</mi>
-														<mo>,</mo>
-														<mover>
-															<mi>𝑤</mi>
-															<mo>‾</mo>
-														</mover>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mrow>
-											<mo>|</mo>
-											<mn>0</mn>
-											<mo>⟩</mo>
+											<mo>(</mo>
+											<mi>𝑤</mi>
+											<mo>)</mo>
 										</mrow>
 									</mrow>
 								</math>
-								と書ける．
 							</p>
-						</li>
-					</ol>
-				</section>
-				<section>
-					<h4>ディセンダント場の例</h4>
-					<p>
-						プライマリ場の演算子積展開の発散項を思い出すと，
-						<math display="block">
-							<mtable intent=":system-of-equations">
-								<mtr>
-									<mtd>
-										<msup>
-											<mi>𝒪</mi>
-											<mrow>
-												<mo>(</mo>
-												<mn>0</mn>
-												<mo>)</mo>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-												<mrow>
-													<mi>𝑧</mi>
-													<mo>,</mo>
-													<mover>
-														<mi>𝑧</mi>
-														<mo>‾</mo>
-													</mover>
-												</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mtd>
-									<mtd><mo>=</mo></mtd>
-									<mtd>
-										<mi>ℎ</mi>
-										<mo>&it;</mo>
-										<mrow>
-											<mi>𝒪</mi>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>𝑧</mi>
-													<mo>,</mo>
-													<mover>
-														<mi>𝑧</mi>
-														<mo>‾</mo>
-													</mover>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mtd>
-								</mtr>
-								<mtr>
-									<mtd>
-										<msup>
-											<mi>𝒪</mi>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mo>−</mo>
-													<mn>1</mn>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-												<mrow>
-													<mi>𝑧</mi>
-													<mo>,</mo>
-													<mover>
-														<mi>𝑧</mi>
-														<mo>‾</mo>
-													</mover>
-												</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mtd>
-									<mtd><mo>=</mo></mtd>
-									<mtd>
-										<msub>
-											<mo>∂</mo>
-											<mi>𝑧</mi>
-										</msub>
-										<mrow>
-											<mi>𝒪</mi>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>𝑧</mi>
-													<mo>,</mo>
-													<mover>
-														<mi>𝑧</mi>
-														<mo>‾</mo>
-													</mover>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mtd>
-								</mtr>
-							</mtable>
-						</math>
-						またプライマリ場として恒等場<math><mi>𝟙</mi></math>を考えると，
-						<math display="block">
-							<mrow>
-								<msup>
-									<mi>𝟙</mi>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mo>−</mo>
-											<mn>2</mn>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</msup>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝑤</mi>
-										<mo>,</mo>
-										<mover>
-											<mi>𝑤</mi>
-											<mo>‾</mo>
-										</mover>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mfrac>
-									<mn>1</mn>
-									<mrow>
-										<mn>2</mn>
-										<mo>&it;</mo>
-										<mi mathvariant="normal">π</mi>
-										<mo>&it;</mo>
-										<mi>𝑖</mi>
-									</mrow>
-								</mfrac>
-								<mo>&it;</mo>
-								<mrow>
-									<mo>∮</mo>
-									<mrow>
-										<mi mathvariant="normal">d</mi>
-										<mi>𝑧</mi>
-									</mrow>
-									<mrow>
-										<msup>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝑧</mi>
-												<mo>−</mo>
-												<mi>𝑤</mi>
-												<mo>)</mo>
-											</mrow>
-											<mrow>
-												<mo>−</mo>
-												<mn>1</mn>
-											</mrow>
-										</msup>
-										<mo>&it;</mo>
-										<mrow>
-											<mi>𝑇</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝑧</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mi>𝑇</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mi>𝑤</mi>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						となる．つまり，エネルギー運動量テンソルは，恒等場<math><mi>𝟙</mi></math>レベル<math><mo>(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>)</mo></math>のディセンダント場．これは，エネルギー運動量テンソルが中心荷<math><mi>𝑐</mi><mo>≠</mo><mn>0</mn></math>に対し，プライマリ場とならないことに対応している（らしい）．
-					</p>
-					<p>このように，<a href="#プライマリ場">プライマリ場</a><math><mi>𝒪</mi></math>から無限個の<a href="#ディセンダント場">ディセンダント場</a>を作ることができる．この<a href="#ディセンダント場">ディセンダント場</a>の集合を<b>共形族</b>(conformal family)<math>と呼び，<mo>[</mo><mi>𝒪</mi><mo>]</mo></math>と書く．</p>
-					<p>例えば，
-						<math>
-							<mi>𝑇</mi>
-							<mo>∈</mo>
-							<mrow>
-								<mo>[</mo>
-								<mi>𝟙</mi>
-								<mo>]</mo>
-							</mrow>
-						</math>
-						となる．
-					</p>
-				</section>
-				<section>
-					<h4>ディセンダント場の相関函数</h4>
-					<p>
-						まず，<a href="#ディセンダント場">ディセンダント場</a>の定義より，
-						<math display="block">
-							<mrow>
-								<mo>⟨</mo>
-								<mrow>
-									<mrow>
-										<msup>
-											<mi>𝒪</mi>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mo>−</mo>
-													<mi>𝑘</mi>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>𝑤</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>&it;</mo>
-									<mrow>
-										<msub>
-											<mi>𝒪</mi>
-											<mi>𝑛</mi>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<msub>
-												<mi>𝑧</mi>
-												<mi>𝑛</mi>
-											</msub>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>⋯</mo>
-									<mrow>
-										<msub>
-											<mi>𝒪</mi>
-											<mn>1</mn>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<msub>
-												<mi>𝑧</mi>
-												<mn>1</mn>
-											</msub>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>⟩</mo>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mfrac>
-									<mn>1</mn>
-									<mrow>
-										<mn>2</mn>
-										<mo>&it;</mo>
-										<mi>𝜋</mi>
-										<mo>&it;</mo>
-										<mi>𝑖</mi>
-									</mrow>
-								</mfrac>
-								<mo>&it;</mo>
-								<mrow>
-									<msub>
-										<mo>∮</mo>
-										<mi>𝑤</mi>
-									</msub>
-									<mrow>
-										<mi mathvariant="normal">d</mi>
-										<mi>𝑧</mi>
-									</mrow>
-									<mrow>
-										<msup>
-											<mrow>
-												<mo>(</mo>
-													<mrow>
-														<mi>𝑧</mi>
-														<mo>−</mo>
-														<mi>𝑤</mi>
-													</mrow>
-												<mo>)</mo>
-											</mrow>
-											<mrow>
-												<mo>−</mo>
-												<mi>𝑘</mi>
-												<mo>+</mo>
-												<mn>1</mn>
-											</mrow>
-										</msup>
-										<mo>&it;</mo>
-										<mrow>
-											<mo>⟨</mo>
-											<mrow>
-												<mrow>
-													<mi>𝑇</mi>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo>
-														<mi>𝑧</mi>
-														<mo>)</mo>
-													</mrow>
-												</mrow>
-												<mo>&it;</mo>
-												<mrow>
-													<mi>𝒪</mi>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo>
-														<mi>𝑤</mi>
-														<mo>)</mo>
-													</mrow>
-												</mrow>
-												<mo>&it;</mo>
-												<mrow>
-													<msub>
-														<mi>𝒪</mi>
-														<mi>𝑛</mi>
-													</msub>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo>
-														<msub>
-															<mi>𝑧</mi>
-															<mi>𝑛</mi>
-														</msub>
-														<mo>)</mo>
-													</mrow>
-												</mrow>
-												<mo>⋯</mo>
-												<mrow>
-													<msub>
-														<mi>𝒪</mi>
-														<mn>1</mn>
-													</msub>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo>
-														<msub>
-															<mi>𝑧</mi>
-															<mn>1</mn>
-														</msub>
-														<mo>)</mo>
-													</mrow>
-												</mrow>
-											</mrow>
-											<mo>⟩</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-						となる．ここで．<math><mo>∮</mo></math>の添字の<math><mi>𝑤</mi></math>は<math><mi>𝑤</mi></math>を囲む微小経路を表す．積分路を変更しつつ，<math><mi>𝑇</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑧</mi><mo>)</mo></mrow></math>と
-						<math>
-							<msub>
-								<mi>𝒪</mi>
-								<mi>𝑗</mi>
-							</msub>
-							<mo>&af;</mo>
-							<mrow>
-								<mo>(</mo>
-								<msub>
-									<mi>𝑧</mi>
-									<mi>𝑗</mi>
-								</msub>
-								<mo>)</mo>
-							</mrow>
-						</math>
-						の演算子積展開を用いると，
-						<math display="block">
-							<mtable intent=":lines">
-								<mtr>
-									<mtd>
-										<mo>⟨</mo>
-										<mrow>
-											<mrow>
-												<msup>
-													<mi>𝒪</mi>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mo>−</mo>
-															<mi>𝑘</mi>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-												</msup>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mi>𝑤</mi>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>&it;</mo>
-											<mrow>
-												<msub>
-													<mi>𝒪</mi>
-													<mi>𝑛</mi>
-												</msub>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<msub>
-														<mi>𝑧</mi>
-														<mi>𝑛</mi>
-													</msub>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>⋯</mo>
-											<mrow>
-												<msup>
-													<mi>𝒪</mi>
-													<mn>1</mn>
-												</msup>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<msub>
-														<mi>𝑧</mi>
-														<mn>1</mn>
-													</msub>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>⟩</mo>
-									</mtd>
-									<mtd><mo>=</mo></mtd>
-									<mtd>
-										<mo>−</mo>
-										<mrow>
-											<munderover intent=":largeop">
-												<mo>∑</mo>
-												<mrow>
-													<mi>𝑗</mi>
-													<mo>=</mo>
-													<mn>1</mn>
-												</mrow>
-												<mi>𝑛</mi>
-											</munderover>
-											<mrow>
-												<mfrac>
-													<mn>1</mn>
-													<mrow>
-														<mn>2</mn>
-														<mo>&it;</mo>
-														<mi>𝜋</mi>
-														<mo>&it;</mo>
-														<mi>𝑖</mi>
-													</mrow>
-												</mfrac>
-												<mo>&it;</mo>
-												<mrow>
-													<msub>
-														<mo>∮</mo>
-														<msub>
-															<mi>𝑧</mi>
-															<mi>𝑗</mi>
-														</msub>
-													</msub>
-													<mrow>
-														<mi mathvariant="normal">d</mi>
-														<mi>𝑧</mi>
-													</mrow>
-													<mrow>
-														<msup>
-															<mrow>
-																<mo>(</mo>
-																	<mrow>
-																		<mi>𝑧</mi>
-																		<mo>−</mo>
-																		<mi>𝑤</mi>
-																	</mrow>
-																<mo>)</mo>
-															</mrow>
-															<mrow>
-																<mo>−</mo>
-																<mi>𝑘</mi>
-																<mo>+</mo>
-																<mn>1</mn>
-															</mrow>
-														</msup>
-														<mo>&it;</mo>
-														<mrow>
-															<mo>[</mo>
-																<mrow>
-																	<mfrac>
-																		<msub>
-																			<mi>ℎ</mi>
-																			<mi>𝑗</mi>
-																		</msub>
-																		<msup>
-																			<mrow>
-																				<mo>(</mo>
-																					<mrow>
-																						<mi>𝑧</mi>
-																						<mo>−</mo>
-																						<msub>
-																							<mi>𝑧</mi>
-																							<mi>𝑗</mi>
-																						</msub>
-																					</mrow>
-																				<mo>)</mo>
-																			</mrow>
-																			<mn>2</mn>
-																		</msup>
-																	</mfrac>
-																	<mo>+</mo>
-																	<mrow>
-																		<mfrac>
-																			<mn>1</mn>
-																			<mrow>
-																				<mi>𝑧</mi>
-																				<mo>−</mo>
-																				<msub>
-																					<mi>𝑧</mi>
-																					<mi>𝑗</mi>
-																				</msub>
-																			</mrow>
-																		</mfrac>
-																		<mo>&it;</mo>
-																		<msub>
-																			<mo>∂</mo>
-																			<msub>
-																				<mi>𝑧</mi>
-																				<mi>𝑗</mi>
-																			</msub>
-																		</msub>
-																	</mrow>
-																</mrow>
-															<mo>]</mo>
-														</mrow>
-														<mo>&it;</mo>
-														<mrow>
-															<mo>⟨</mo>
-															<mrow>
-																<mrow>
-																	<mi>𝒪</mi>
-																	<mo>&af;</mo>
-																	<mrow>
-																		<mo>(</mo>
-																		<mi>𝑤</mi>
-																		<mo>)</mo>
-																	</mrow>
-																</mrow>
-																<mo>&it;</mo>
-																<mrow>
-																	<msub>
-																		<mi>𝒪</mi>
-																		<mi>𝑛</mi>
-																	</msub>
-																	<mo>&af;</mo>
-																	<mrow>
-																		<mo>(</mo>
-																		<msub>
-																			<mi>𝑧</mi>
-																			<mi>𝑛</mi>
-																		</msub>
-																		<mo>)</mo>
-																	</mrow>
-																</mrow>
-																<mo>⋯</mo>
-																<mrow>
-																	<msub>
-																		<mi>𝒪</mi>
-																		<mn>1</mn>
-																	</msub>
-																	<mo>&af;</mo>
-																	<mrow>
-																		<mo>(</mo>
-																		<msub>
-																			<mi>𝑧</mi>
-																			<mn>1</mn>
-																		</msub>
-																		<mo>)</mo>
-																	</mrow>
-																</mrow>
-															</mrow>
-															<mo>⟩</mo>
-														</mrow>
-													</mrow>
-												</mrow>
-											</mrow>
-										</mrow>
-									</mtd>
-								</mtr>
-								<mtr>
-									<mtd />
-									<mtd><mo>=</mo></mtd>
-									<mtd>
-										<mrow>
-											<munderover intent=":largeop">
-												<mo>∑</mo>
-												<mrow>
-													<mi>𝑗</mi>
-													<mo>=</mo>
-													<mn>1</mn>
-												</mrow>
-												<mi>𝑛</mi>
-											</munderover>
-											<mrow>
-												<mrow>
-													<mo>[</mo>
-													<mrow>
-														<mfrac>
-															<mrow>
-																<mrow>
-																	<mo>(</mo>
-																	<mrow>
-																		<mi>𝑘</mi>
-																		<mo>−</mo>
-																		<mn>1</mn>
-																	</mrow>
-																	<mo>)</mo>
-																</mrow>
-																<mo>&it;</mo>
-																<msub>
-																	<mi>ℎ</mi>
-																	<mi>𝑗</mi>
-																</msub>
-															</mrow>
-															<msup>
-																<mrow>
-																	<mo>(</mo>
-																		<mrow>
-																			<msub>
-																				<mi>𝑧</mi>
-																				<mi>𝑗</mi>
-																			</msub>
-																			<mo>−</mo>
-																			<mi>𝑤</mi>
-																		</mrow>
-																	<mo>)</mo>
-																</mrow>
-																<mi>𝑘</mi>
-															</msup>
-														</mfrac>
-														<mo>−</mo>
-														<mrow>
-															<mfrac>
-																<mn>1</mn>
-																<msup>
-																	<mrow>
-																		<mo>(</mo>
-																		<mrow>
-																			<msub>
-																				<mi>𝑧</mi>
-																				<mi>𝑗</mi>
-																			</msub>
-																			<mo>−</mo>
-																			<mi>𝑤</mi>
-																		</mrow>
-																		<mo>)</mo>
-																	</mrow>
-																	<mrow>
-																		<mi>𝑘</mi>
-																		<mo>−</mo>
-																		<mn>1</mn>
-																	</mrow>
-																</msup>
-															</mfrac>
-															<mo>&it;</mo>
-															<msub>
-																<mo>∂</mo>
-																<msub>
-																	<mi>𝑧</mi>
-																	<mi>𝑗</mi>
-																</msub>
-															</msub>
-														</mrow>
-													</mrow>
-													<mo>]</mo>
-												</mrow>
-												<mo>&it;</mo>
-												<mrow>
-													<mo>⟨</mo>
-													<mrow>
-														<mrow>
-															<mi>𝒪</mi>
-															<mo>&af;</mo>
-															<mrow>
-																<mo>(</mo>
-																<mi>𝑤</mi>
-																<mo>)</mo>
-															</mrow>
-														</mrow>
-														<mo>&it;</mo>
-														<mrow>
-															<msub>
-																<mi>𝒪</mi>
-																<mi>𝑛</mi>
-															</msub>
-															<mo>&af;</mo>
-															<mrow>
-																<mo>(</mo>
-																<msub>
-																	<mi>𝑧</mi>
-																	<mi>𝑛</mi>
-																</msub>
-																<mo>)</mo>
-															</mrow>
-														</mrow>
-														<mo>⋯</mo>
-														<mrow>
-															<msub>
-																<mi>𝒪</mi>
-																<mn>1</mn>
-															</msub>
-															<mo>&af;</mo>
-															<mrow>
-																<mo>(</mo>
-																<msub>
-																	<mi>𝑧</mi>
-																	<mn>1</mn>
-																</msub>
-																<mo>)</mo>
-															</mrow>
-														</mrow>
-													</mrow>
-													<mo>⟩</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-									</mtd>
-								</mtr>
-							</mtable>
-						</math>
-						となる．ここで
-						<math display="block">
-							<msub>
-								<mi>ℒ</mi>
-								<mrow>
-									<mo>−</mo>
-									<mi>𝑘</mi>
-								</mrow>
-							</msub>
-							<mo>≔</mo>
-							<mrow>
-								<munderover intent=":largeop">
-									<mo>∑</mo>
-									<mrow>
-										<mi>𝑗</mi>
-										<mo>=</mo>
-										<mn>1</mn>
-									</mrow>
-									<mi>𝑛</mi>
-								</munderover>
-								<mrow>
-									<mo>[</mo>
-									<mrow>
-										<mfrac>
-											<mrow>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝑘</mi>
-														<mo>−</mo>
-														<mn>1</mn>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-												<mo>&it;</mo>
-												<msub>
-													<mi>ℎ</mi>
-													<mi>𝑗</mi>
-												</msub>
-											</mrow>
-											<msup>
-												<mrow>
-													<mo>(</mo>
-														<mrow>
-															<msub>
-																<mi>𝑧</mi>
-																<mi>𝑗</mi>
-															</msub>
-															<mo>−</mo>
-															<mi>𝑤</mi>
-														</mrow>
-													<mo>)</mo>
-												</mrow>
-												<mi>𝑘</mi>
-											</msup>
-										</mfrac>
-										<mo>−</mo>
-										<mrow>
-											<mfrac>
-												<mn>1</mn>
-												<msup>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<msub>
-																<mi>𝑧</mi>
-																<mi>𝑗</mi>
-															</msub>
-															<mo>−</mo>
-															<mi>𝑤</mi>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-													<mrow>
-														<mi>𝑘</mi>
-														<mo>−</mo>
-														<mn>1</mn>
-													</mrow>
-												</msup>
-											</mfrac>
-											<mo>&it;</mo>
-											<msub>
-												<mo>∂</mo>
-												<msub>
-													<mi>𝑧</mi>
-													<mi>𝑗</mi>
-												</msub>
-											</msub>
-										</mrow>
-									</mrow>
-									<mo>]</mo>
-								</mrow>
-							</mrow>
-						</math>
-						という演算子を定義することで，
-						<math display="block">
-							<mrow>
-								<mo>⟨</mo>
-								<mrow>
-									<mrow>
-										<msup>
-											<mi>𝒪</mi>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mo>−</mo>
-													<mi>𝑘</mi>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>𝑤</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>&it;</mo>
-									<mrow>
-										<msub>
-											<mi>𝒪</mi>
-											<mi>𝑛</mi>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<msub>
-												<mi>𝑧</mi>
-												<mi>𝑛</mi>
-											</msub>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>⋯</mo>
-									<mrow>
-										<msub>
-											<mi>𝒪</mi>
-											<mn>1</mn>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<msub>
-												<mi>𝑧</mi>
-												<mn>1</mn>
-											</msub>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>⟩</mo>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<msub>
-									<mi>ℒ</mi>
-									<mrow>
-										<mo>−</mo>
-										<mi>𝑘</mi>
-									</mrow>
-								</msub>	
-								<mrow>
-									<mo>⟨</mo>
-									<mrow>
-										<mrow>
-											<mi>𝒪</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝑤</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<msub>
-												<mi>𝒪</mi>
-												<mi>𝑛</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<msub>
-													<mi>𝑧</mi>
-													<mi>𝑛</mi>
-												</msub>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>⋯</mo>
-										<mrow>
-											<msub>
-												<mi>𝒪</mi>
-												<mn>1</mn>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<msub>
-													<mi>𝑧</mi>
-													<mn>1</mn>
-												</msub>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-						</math>
-						と書ける．より一般に．
-						<math display="block">
-							<mrow>
-								<mo>⟨</mo>
-								<mrow>
-									<mrow>
-										<msup>
-											<mi>𝒪</mi>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mrow>
-														<mo>−</mo>
-														<msub>
-															<mi>𝑘</mi>
-															<mn>1</mn>
-														</msub>
-														<mo>,</mo>
-														<mo>…</mo>
-														<mo>,</mo>
-														<mrow>
-															<mo>−</mo>
-															<msub>
-																<mi>𝑘</mi>
-																<mi>𝑚</mi>
-															</msub>
-														</mrow>
-													</mrow>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>𝑤</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>&it;</mo>
-									<mrow>
-										<msub>
-											<mi>𝒪</mi>
-											<mi>𝑛</mi>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<msub>
-												<mi>𝑧</mi>
-												<mi>𝑛</mi>
-											</msub>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>⋯</mo>
-									<mrow>
-										<msub>
-											<mi>𝒪</mi>
-											<mn>1</mn>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<msub>
-												<mi>𝑧</mi>
-												<mn>1</mn>
-											</msub>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>⟩</mo>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<msub>
-									<mi>ℒ</mi>
-									<mrow>
-										<mo>−</mo>
-										<msub>
-											<mi>𝑘</mi>
-											<mi>𝑚</mi>
-										</msub>
-									</mrow>
-								</msub>
-								<mo>⋯</mo>
-								<msub>
-									<mi>ℒ</mi>
-									<mrow>
-										<mo>−</mo>
-										<msub>
-											<mi>𝑘</mi>
-											<mn>1</mn>
-										</msub>
-									</mrow>
-								</msub>	
-								<mrow>
-									<mo>⟨</mo>
-									<mrow>
-										<mrow>
-											<mi>𝒪</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝑤</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>&it;</mo>
-										<mrow>
-											<msub>
-												<mi>𝒪</mi>
-												<mi>𝑛</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<msub>
-													<mi>𝑧</mi>
-													<mi>𝑛</mi>
-												</msub>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>⋯</mo>
-										<mrow>
-											<msub>
-												<mi>𝒪</mi>
-												<mn>1</mn>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<msub>
-													<mi>𝑧</mi>
-													<mn>1</mn>
-												</msub>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-									<mo>⟩</mo>
-								</mrow>
-							</mrow>
-						</math>
-					</p>
+						</article>
+						<p>これは，<a href="#エネルギー・運動量テンソル">エネルギー・運動量テンソル</a>が<a href="#中心荷">中心荷</a><math><mi>𝑐</mi><mo>≠</mo><mn>0</mn></math>に対し，プライマリ場とならないことに対応している（らしい）．</p>
+					</section>
 				</section>
 				<section>
 					<h4>演算子積展開</h4>
@@ -11989,6 +10554,910 @@
 						</math>
 					</p>
 					<p>以下書きかけ</p>
+				</section>
+			</section>
+			<section>
+				<h3>相関函数</h3>
+				<p><a href="#プライマリ場">プライマリ場</a>の相関函数は，かなり形が制限されるというお話．</p>
+				<section>
+					<h4>ディセンダント場の相関函数</h4>
+					<p>
+						まず，<a href="#ディセンダント場">ディセンダント場</a>の定義より，
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mi>𝒪</mi>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>−</mo>
+													<mi>𝑘</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑤</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi>
+											<mi>𝑛</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑧</mi>
+												<mi>𝑛</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>⋯</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑧</mi>
+												<mn>1</mn>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mfrac>
+									<mn>1</mn>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mi>𝜋</mi>
+										<mo>&it;</mo>
+										<mi>𝑖</mi>
+									</mrow>
+								</mfrac>
+								<mo>&it;</mo>
+								<mrow>
+									<msub>
+										<mo>∮</mo>
+										<mi>𝑤</mi>
+									</msub>
+									<mrow>
+										<mi mathvariant="normal">d</mi>
+										<mi>𝑧</mi>
+									</mrow>
+									<mrow>
+										<msup>
+											<mrow>
+												<mo>(</mo>
+													<mrow>
+														<mi>𝑧</mi>
+														<mo>−</mo>
+														<mi>𝑤</mi>
+													</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mo>−</mo>
+												<mi>𝑘</mi>
+												<mo>+</mo>
+												<mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>⟨</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑇</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝑧</mi>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>&it;</mo>
+												<mrow>
+													<mi>𝒪</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝑤</mi>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>&it;</mo>
+												<mrow>
+													<msub>
+														<mi>𝒪</mi>
+														<mi>𝑛</mi>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑧</mi>
+															<mi>𝑛</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>⋯</mo>
+												<mrow>
+													<msub>
+														<mi>𝒪</mi>
+														<mn>1</mn>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑧</mi>
+															<mn>1</mn>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>⟩</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+						となる．ここで．<math><mo>∮</mo></math>の添字の<math><mi>𝑤</mi></math>は<math><mi>𝑤</mi></math>を囲む微小経路を表す．積分路を変更しつつ，<math><mi>𝑇</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑧</mi><mo>)</mo></mrow></math>と
+						<math>
+							<msub>
+								<mi>𝒪</mi>
+								<mi>𝑗</mi>
+							</msub>
+							<mo>&af;</mo>
+							<mrow>
+								<mo>(</mo>
+								<msub>
+									<mi>𝑧</mi>
+									<mi>𝑗</mi>
+								</msub>
+								<mo>)</mo>
+							</mrow>
+						</math>
+						の演算子積展開を用いると，
+						<math display="block">
+							<mtable intent=":lines">
+								<mtr>
+									<mtd>
+										<mo>⟨</mo>
+										<mrow>
+											<mrow>
+												<msup>
+													<mi>𝒪</mi>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mo>−</mo>
+															<mi>𝑘</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</msup>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mi>𝑤</mi>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<msub>
+													<mi>𝒪</mi>
+													<mi>𝑛</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑧</mi>
+														<mi>𝑛</mi>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>⋯</mo>
+											<mrow>
+												<msup>
+													<mi>𝒪</mi>
+													<mn>1</mn>
+												</msup>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑧</mi>
+														<mn>1</mn>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>⟩</mo>
+									</mtd>
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<mo>−</mo>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑗</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mrow>
+												<mi>𝑛</mi>
+											</munderover>
+											<mrow>
+												<mfrac>
+													<mn>1</mn>
+													<mrow>
+														<mn>2</mn>
+														<mo>&it;</mo>
+														<mi>𝜋</mi>
+														<mo>&it;</mo>
+														<mi>𝑖</mi>
+													</mrow>
+												</mfrac>
+												<mo>&it;</mo>
+												<mrow>
+													<msub>
+														<mo>∮</mo>
+														<msub>
+															<mi>𝑧</mi>
+															<mi>𝑗</mi>
+														</msub>
+													</msub>
+													<mrow>
+														<mi mathvariant="normal">d</mi>
+														<mi>𝑧</mi>
+													</mrow>
+													<mrow>
+														<msup>
+															<mrow>
+																<mo>(</mo>
+																	<mrow>
+																		<mi>𝑧</mi>
+																		<mo>−</mo>
+																		<mi>𝑤</mi>
+																	</mrow>
+																<mo>)</mo>
+															</mrow>
+															<mrow>
+																<mo>−</mo>
+																<mi>𝑘</mi>
+																<mo>+</mo>
+																<mn>1</mn>
+															</mrow>
+														</msup>
+														<mo>&it;</mo>
+														<mrow>
+															<mo>[</mo>
+																<mrow>
+																	<mfrac>
+																		<msub>
+																			<mi>ℎ</mi>
+																			<mi>𝑗</mi>
+																		</msub>
+																		<msup>
+																			<mrow>
+																				<mo>(</mo>
+																					<mrow>
+																						<mi>𝑧</mi>
+																						<mo>−</mo>
+																						<msub>
+																							<mi>𝑧</mi>
+																							<mi>𝑗</mi>
+																						</msub>
+																					</mrow>
+																				<mo>)</mo>
+																			</mrow>
+																			<mn>2</mn>
+																		</msup>
+																	</mfrac>
+																	<mo>+</mo>
+																	<mrow>
+																		<mfrac>
+																			<mn>1</mn>
+																			<mrow>
+																				<mi>𝑧</mi>
+																				<mo>−</mo>
+																				<msub>
+																					<mi>𝑧</mi>
+																					<mi>𝑗</mi>
+																				</msub>
+																			</mrow>
+																		</mfrac>
+																		<mo>&it;</mo>
+																		<msub>
+																			<mo>∂</mo>
+																			<msub>
+																				<mi>𝑧</mi>
+																				<mi>𝑗</mi>
+																			</msub>
+																		</msub>
+																	</mrow>
+																</mrow>
+															<mo>]</mo>
+														</mrow>
+														<mo>&it;</mo>
+														<mrow>
+															<mo>⟨</mo>
+															<mrow>
+																<mrow>
+																	<mi>𝒪</mi>
+																	<mo>&af;</mo>
+																	<mrow>
+																		<mo>(</mo>
+																		<mi>𝑤</mi>
+																		<mo>)</mo>
+																	</mrow>
+																</mrow>
+																<mo>&it;</mo>
+																<mrow>
+																	<msub>
+																		<mi>𝒪</mi>
+																		<mi>𝑛</mi>
+																	</msub>
+																	<mo>&af;</mo>
+																	<mrow>
+																		<mo>(</mo>
+																		<msub>
+																			<mi>𝑧</mi>
+																			<mi>𝑛</mi>
+																		</msub>
+																		<mo>)</mo>
+																	</mrow>
+																</mrow>
+																<mo>⋯</mo>
+																<mrow>
+																	<msub>
+																		<mi>𝒪</mi>
+																		<mn>1</mn>
+																	</msub>
+																	<mo>&af;</mo>
+																	<mrow>
+																		<mo>(</mo>
+																		<msub>
+																			<mi>𝑧</mi>
+																			<mn>1</mn>
+																		</msub>
+																		<mo>)</mo>
+																	</mrow>
+																</mrow>
+															</mrow>
+															<mo>⟩</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd />
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑗</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mrow>
+												<mi>𝑛</mi>
+											</munderover>
+											<mrow>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<mfrac>
+															<mrow>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>−</mo>
+																		<mn>1</mn>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>ℎ</mi>
+																	<mi>𝑗</mi>
+																</msub>
+															</mrow>
+															<msup>
+																<mrow>
+																	<mo>(</mo>
+																		<mrow>
+																			<msub>
+																				<mi>𝑧</mi>
+																				<mi>𝑗</mi>
+																			</msub>
+																			<mo>−</mo>
+																			<mi>𝑤</mi>
+																		</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mi>𝑘</mi>
+															</msup>
+														</mfrac>
+														<mo>−</mo>
+														<mrow>
+															<mfrac>
+																<mn>1</mn>
+																<msup>
+																	<mrow>
+																		<mo>(</mo>
+																		<mrow>
+																			<msub>
+																				<mi>𝑧</mi>
+																				<mi>𝑗</mi>
+																			</msub>
+																			<mo>−</mo>
+																			<mi>𝑤</mi>
+																		</mrow>
+																		<mo>)</mo>
+																	</mrow>
+																	<mrow>
+																		<mi>𝑘</mi>
+																		<mo>−</mo>
+																		<mn>1</mn>
+																	</mrow>
+																</msup>
+															</mfrac>
+															<mo>&it;</mo>
+															<msub>
+																<mo>∂</mo>
+																<msub>
+																	<mi>𝑧</mi>
+																	<mi>𝑗</mi>
+																</msub>
+															</msub>
+														</mrow>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>⟨</mo>
+													<mrow>
+														<mrow>
+															<mi>𝒪</mi>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mi>𝑤</mi>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+														<mo>&it;</mo>
+														<mrow>
+															<msub>
+																<mi>𝒪</mi>
+																<mi>𝑛</mi>
+															</msub>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<msub>
+																	<mi>𝑧</mi>
+																	<mi>𝑛</mi>
+																</msub>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+														<mo>⋯</mo>
+														<mrow>
+															<msub>
+																<mi>𝒪</mi>
+																<mn>1</mn>
+															</msub>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<msub>
+																	<mi>𝑧</mi>
+																	<mn>1</mn>
+																</msub>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>⟩</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mtd>
+								</mtr>
+							</mtable>
+						</math>
+						となる．ここで
+						<math display="block">
+							<msub>
+								<mi>ℒ</mi>
+								<mrow>
+									<mo>−</mo>
+									<mi>𝑘</mi>
+								</mrow>
+							</msub>
+							<mo>≔</mo>
+							<mrow>
+								<munderover intent=":largeop">
+									<mo>∑</mo>
+									<mrow>
+										<mi>𝑗</mi>
+										<mo>=</mo>
+										<mn>1</mn>
+									</mrow>
+									<mi>𝑛</mi>
+								</munderover>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mfrac>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑘</mi>
+														<mo>−</mo>
+														<mn>1</mn>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>&it;</mo>
+												<msub>
+													<mi>ℎ</mi>
+													<mi>𝑗</mi>
+												</msub>
+											</mrow>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+														<mrow>
+															<msub>
+																<mi>𝑧</mi>
+																<mi>𝑗</mi>
+															</msub>
+															<mo>−</mo>
+															<mi>𝑤</mi>
+														</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mi>𝑘</mi>
+											</msup>
+										</mfrac>
+										<mo>−</mo>
+										<mrow>
+											<mfrac>
+												<mn>1</mn>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<msub>
+																<mi>𝑧</mi>
+																<mi>𝑗</mi>
+															</msub>
+															<mo>−</mo>
+															<mi>𝑤</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mrow>
+														<mi>𝑘</mi>
+														<mo>−</mo>
+														<mn>1</mn>
+													</mrow>
+												</msup>
+											</mfrac>
+											<mo>&it;</mo>
+											<msub>
+												<mo>∂</mo>
+												<msub>
+													<mi>𝑧</mi>
+													<mi>𝑗</mi>
+												</msub>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</mrow>
+						</math>
+						という演算子を定義することで，
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mi>𝒪</mi>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>−</mo>
+													<mi>𝑘</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑤</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi>
+											<mi>𝑛</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑧</mi>
+												<mi>𝑛</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>⋯</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑧</mi>
+												<mn>1</mn>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>ℒ</mi>
+									<mrow>
+										<mo>−</mo>
+										<mi>𝑘</mi>
+									</mrow>
+								</msub>	
+								<mrow>
+									<mo>⟨</mo>
+									<mrow>
+										<mrow>
+											<mi>𝒪</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mi>𝑤</mi>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<msub>
+												<mi>𝒪</mi>
+												<mi>𝑛</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>𝑧</mi>
+													<mi>𝑛</mi>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>⋯</mo>
+										<mrow>
+											<msub>
+												<mi>𝒪</mi>
+												<mn>1</mn>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>𝑧</mi>
+													<mn>1</mn>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>⟩</mo>
+								</mrow>
+							</mrow>
+						</math>
+						と書ける．より一般に．
+						<math display="block">
+							<mrow>
+								<mo>⟨</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mi>𝒪</mi>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mo>−</mo>
+														<msub>
+															<mi>𝑘</mi>
+															<mn>1</mn>
+														</msub>
+														<mo>,</mo>
+														<mo>…</mo>
+														<mo>,</mo>
+														<mrow>
+															<mo>−</mo>
+															<msub>
+																<mi>𝑘</mi>
+																<mi>𝑚</mi>
+															</msub>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mi>𝑤</mi>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi>
+											<mi>𝑛</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑧</mi>
+												<mi>𝑛</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>⋯</mo>
+									<mrow>
+										<msub>
+											<mi>𝒪</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑧</mi>
+												<mn>1</mn>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>⟩</mo>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>ℒ</mi>
+									<mrow>
+										<mo>−</mo>
+										<msub>
+											<mi>𝑘</mi>
+											<mi>𝑚</mi>
+										</msub>
+									</mrow>
+								</msub>
+								<mo>⋯</mo>
+								<msub>
+									<mi>ℒ</mi>
+									<mrow>
+										<mo>−</mo>
+										<msub>
+											<mi>𝑘</mi>
+											<mn>1</mn>
+										</msub>
+									</mrow>
+								</msub>	
+								<mrow>
+									<mo>⟨</mo>
+									<mrow>
+										<mrow>
+											<mi>𝒪</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mi>𝑤</mi>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<msub>
+												<mi>𝒪</mi>
+												<mi>𝑛</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>𝑧</mi>
+													<mi>𝑛</mi>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>⋯</mo>
+										<mrow>
+											<msub>
+												<mi>𝒪</mi>
+												<mn>1</mn>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>𝑧</mi>
+													<mn>1</mn>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>⟩</mo>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
 				</section>
 			</section>
 			<section>
@@ -21023,7 +20492,7 @@
 								<mn>2</mn>
 							</msub>
 						</math>
-						はエネルギー・運動量テンソルの演算子積展開を満たすため，
+						は<a href="#エネルギー・運動量テンソル">エネルギー・運動量テンソル</a>の演算子積展開を満たすため，
 						<math>
 							<msub>
 								<mi>𝑢</mi>
@@ -21249,7 +20718,7 @@
 						となる．
 					</p>
 					<p>
-						エネルギー・運動量テンソルとの演算子積展開を具体的に計算すると，
+						<a href="#エネルギー・運動量テンソル">エネルギー・運動量テンソル</a>との演算子積展開を具体的に計算すると，
 						<math>
 							<msub>
 								<mi>𝑢</mi>
@@ -25200,9 +24669,6 @@
 								</mrow>
 							</math>
 							ただし，正規順序積は以下で定義される：
-							<math display="block">
-								
-							</math>
 						</p>
 					</article>
 				</section>
@@ -26269,9 +25735,7 @@
 														<msub>
 															<mi>𝛿</mi>
 															<mrow>
-																<mi mathvariant="normal">b</mi>
-																<mo>,</mo>
-																<mi>𝜆</mi>
+																<mi mathvariant="normal">b</mi><mo>,</mo><mo>±</mo>
 															</mrow>
 														</msub>
 													</mrow>
@@ -26289,8 +25753,7 @@
 														<mi>𝑥</mi>
 														<mo>−</mo>
 														<mfrac>
-															<mi>𝐿</mi>
-															<mn>2</mn>
+															<mi>𝐿</mi><mn>2</mn>
 														</mfrac>
 													</mrow>
 													<mo>)</mo>
@@ -26920,34 +26383,25 @@
 												<msup>
 													<mi>𝑒</mi>
 													<mrow>
+														<mo>±</mo>
 														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mi>sgn</mi>
-																<mo>&af;</mo>
-																<mi>𝜆</mi>
-															</mrow>
-															<mo>)</mo>
+															<mn>2</mn>
+															<mo>&it;</mo>
+															<mi>𝜋</mi>
+															<mo>&it;</mo>
+															<mi>𝑖</mi>
+															<mo>&it;</mo>
+															<mi>𝑞</mi>
+															<mo>&it;</mo>
+															<mi>𝑥</mi>
 														</mrow>
-														<mo>&it;</mo>
-														<mn>2</mn>
-														<mo>&it;</mo>
-														<mi>𝜋</mi>
-														<mo>&it;</mo>
-														<mi>𝑖</mi>
-														<mo>&it;</mo>
-														<mi>𝑞</mi>
-														<mo>&it;</mo>
-														<mi>𝑥</mi>
 													</mrow>
 												</msup>
 												<mo>&it;</mo>
 												<msub>
 													<mi>𝑁</mi>
 													<mrow>
-														<mi>𝑞</mi>
-														<mo>,</mo>
-														<mi>𝜆</mi>
+														<mi>𝑞</mi><mo>,</mo><mo>±</mo>
 													</mrow>
 												</msub>
 											</mrow>
@@ -29232,7 +28686,7 @@
 							<h5>Klein因子</h5>
 							<p>
 								最後にKlein因子と呼ばれるユニタリ演算子を定義する（合ってるかは自信無し）：
-								<math id="Klein因子" display="block">
+								<math display="block">
 									<msub>
 										<mi>𝐹</mi>
 										<mi>𝜆</mi>
@@ -31288,7 +30742,7 @@
 										</msub>
 									</mrow>
 								</math>
-								<math display="block">
+								<math id="Klein因子" display="block">
 									<msub>
 										<mi>𝜂</mi>
 										<mi>𝜆</mi>
@@ -38759,6 +38213,1112 @@
 					</section>
 					<section>
 						<h4>Heisenberg模型とsine-Gordon模型</h4>
+						<p>ボゾン化法を格子模型に応用する．</p>
+						<section>
+							<h5>Heisenberg模型とJordan-Wigner変換</h5>
+							<article id="Heisenberg模型" class="dfn">
+								<h6>Heisenberg模型</h6>
+								<p>
+									各サイト<math><mi>𝑖</mi><mo>,</mo><mi>𝑗</mi></math>の最近接組
+									<math>
+										<mo>⟨</mo>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+										</mrow>
+										<mo>⟩</mo>
+									</math>
+									が定義された格子に対し，以下のハミルトニアンを持つ模型を<dfn>Heisenberg模型</dfn><span lang="en">(Heisenberg模型)</span>と呼ぶ：
+									<math display="block">
+										<mi>𝐻</mi>
+										<mo>≔</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mo>⟨</mo>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+													</mrow>
+													<mo>⟩</mo>
+												</mrow>
+											</munder>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mfrac>
+															<mn>1</mn><mn>2</mn>
+														</mfrac>
+														<mo>&it;</mo>
+														<mi>𝐽</mi>
+														<mo>&it;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mrow>
+																	<msubsup>
+																		<mi>𝑆</mi><mi>𝑖</mi><mo>+</mo>
+																	</msubsup>
+																	<mo>&it;</mo>
+																	<msubsup>
+																		<mi>𝑆</mi><mi>𝑗</mi><mo>−</mo>
+																	</msubsup>
+																</mrow>
+																<mo>+</mo>
+																<mrow>
+																	<msubsup>
+																		<mi>𝑆</mi><mi>𝑖</mi><mo>−</mo>
+																	</msubsup>
+																	<mo>&it;</mo>
+																	<msubsup>
+																		<mi>𝑆</mi><mi>𝑗</mi><mo>+</mo>
+																	</msubsup>
+																</mrow>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>+</mo>
+													<mrow>
+														<msub>
+															<mi>𝐽</mi><mi>𝑧</mi>
+														</msub>
+														<mo>&it;</mo>
+														<msubsup>
+															<mi>𝑆</mi><mi>𝑖</mi><mi>𝑧</mi>
+														</msubsup>
+														<mo>&it;</mo>
+														<msubsup>
+															<mi>𝑆</mi><mi>𝑗</mi><mi>𝑧</mi>
+														</msubsup>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</p>
+								<ul>
+									<li><math><msub><mi>𝐽</mi><mi>𝑧</mi></msub><mo>=</mo><mi>𝐽</mi></math>のとき，<dfn>等方的</dfn><span lang="en">()</span>と呼ぶ．</li>
+									<li><math><msub><mi>𝐽</mi><mi>𝑧</mi></msub><mo>≠</mo><mi>𝐽</mi></math>のとき，<dfn>異方的</dfn><span lang="en">()</span>と呼ぶ．</li>
+								</ul>
+							</article>
+							<article id="Jordan-Wigner変換" class="dfn">
+								<h6>Jordan-Wigner変換</h6>
+								<p>
+									<math>
+										<mi>𝔰𝔲</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mn>2</mn><mo>)</mo>
+										</mrow>
+									</math>
+									の2次元単純表現
+									<math>
+										<mo>{</mo>
+										<mrow>
+											<msubsup>
+												<mi>𝑆</mi><mi>𝑖</mi><mo>+</mo>
+											</msubsup>
+											<mo>,</mo>
+											<msubsup>
+												<mi>𝑆</mi><mi>𝑖</mi><mi>𝑧</mi>
+											</msubsup>
+											<mo>,</mo>
+											<msubsup>
+												<mi>𝑆</mi><mi>𝑖</mi><mo>−</mo>
+											</msubsup>
+										</mrow>
+										<mo>}</mo>
+									</math>
+									の<math><mi>𝑖</mi></math>に関する直和を与える．
+								</p>
+								<p>
+									<math>
+										<msub>
+											<mi>𝑛</mi><mi>𝑖</mi>
+										</msub>
+										<mo>≔</mo>
+										<mrow>
+											<mfrac>
+												<mn>1</mn><mn>2</mn>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msubsup>
+														<mi>𝑆</mi><mi>𝑖</mi><mi>𝑧</mi>
+													</msubsup>
+													<mo>+</mo>
+													<msub>
+														<mi>𝟙</mi><mi>𝑖</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>(</mo>
+											<mtable intent=":matrix">
+												<mtr>
+													<mtd><mn>1</mn></mtd> <mtd><mn>0</mn></mtd>
+												</mtr>
+												<mtr>
+													<mtd><mn>0</mn></mtd> <mtd><mn>0</mn></mtd>
+												</mtr>
+											</mtable>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									に対し，
+									<math display="block">
+										<mtable intent=":system-of-equations">
+											<mtr>
+												<mtd>
+													<msubsup>
+														<mi>𝑆</mi><mi>𝑖</mi><mo>+</mo>
+													</msubsup>
+												</mtd>
+												<mtd><mo>≔</mo></mtd>
+												<mrow>
+													<msup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mo>−</mo><mn>1</mn>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mrow>
+															<munderover intent=":largeop">
+																<mo>∑</mo>
+																<mrow>
+																	<mi>𝑙</mi><mo>=</mo><mn>1</mn>
+																</mrow>
+																<mrow>
+																	<mi>𝑖</mi><mo>−</mo><mn>1</mn>
+																</mrow>
+															</munderover>
+															<msub>
+																<mi>𝑛</mi><mi>𝑙</mi>
+															</msub>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<msubsup>
+														<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+													</msubsup>
+												</mrow>
+											</mtr>
+											<mtr>
+												<mtd>
+													<msubsup>
+														<mi>𝑆</mi><mi>𝑖</mi><mo>−</mo>
+													</msubsup>
+												</mtd>
+												<mtd><mo>≔</mo></mtd>
+												<mrow>
+													<msub>
+														<mi>𝑎</mi><mi>𝑖</mi>
+													</msub>
+													<mo>&it;</mo>
+													<msup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mo>−</mo><mn>1</mn>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mrow>
+															<munderover intent=":largeop">
+																<mo>∑</mo>
+																<mrow>
+																	<mi>𝑙</mi><mo>=</mo><mn>1</mn>
+																</mrow>
+																<mrow>
+																	<mi>𝑖</mi><mo>−</mo><mn>1</mn>
+																</mrow>
+															</munderover>
+															<msub>
+																<mi>𝑛</mi><mi>𝑙</mi>
+															</msub>
+														</mrow>
+													</msup>
+												</mrow>
+											</mtr>
+										</mtable>
+									</math>
+									なる変換
+									<math>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msubsup>
+													<mi>𝑆</mi><mi>𝑖</mi><mo>+</mo>
+												</msubsup>
+												<mo>,</mo>
+												<msubsup>
+													<mi>𝑆</mi><mi>𝑖</mi><mi>𝑧</mi>
+												</msubsup>
+												<mo>,</mo>
+												<msubsup>
+													<mi>𝑆</mi><mi>𝑖</mi><mo>−</mo>
+												</msubsup>
+												<mo>,</mo>
+												<msub>
+													<mi>𝟙</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mo>↦</mo>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msubsup>
+													<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+												</msubsup>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑎</mi><mi>𝑖</mi>
+												</msub>
+												<mo>,</mo>
+												<mrow>
+													<msub>
+														<mi>𝑛</mi><mi>𝑖</mi>
+													</msub>
+													<mo>=</mo>
+													<mrow>
+														<msubsup>
+															<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+														</msubsup>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝑎</mi><mi>𝑖</mi>
+														</msub>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<msub>
+													<mi>𝟙</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</math>
+									を<dfn>Jordan-Wigner変換</dfn><span lang="en">(Jordan-Wigner transformation)</span>と呼び，フェルミオンの反交換関係
+									<math display="block">
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi><mi>𝑖</mi>
+												</msub>
+												<mo>,</mo>
+												<msubsup>
+													<mi>𝑎</mi><mi>𝑗</mi><mo>†</mo>
+												</msubsup>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mo>=</mo>
+										<msub>
+											<mi>𝛿</mi>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+											</mrow>
+										</msub>
+									</math>
+									を満たす．
+								</p>
+							</article>
+							<p>
+								<math>
+									<msup>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<msub>
+											<mi>𝑛</mi><mi>𝑙</mi>
+										</msub>
+									</msup>
+								</math>
+								は<a href="#Klein因子">Klein因子</a>と全く同じ形をしている．ハミルトニアンの相互作用項は
+								<math display="block">
+									<mrow>
+										<msubsup>
+											<mi>𝑆</mi><mi>𝑗</mi><mo>+</mo>
+										</msubsup>
+										<mo>&it;</mo>
+										<msubsup>
+											<mi>𝑆</mi>
+											<mrow>
+												<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+											</mrow>
+											<mo>−</mo>
+										</msubsup>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msubsup>
+											<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+										</msubsup>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑎</mi>
+											<mrow>
+												<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+											</mrow>
+										</msub>
+										<mo>&it;</mo>
+										<msup>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<msub>
+												<mi>𝑛</mi><mi>𝑖</mi>
+											</msub>
+										</msup>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msubsup>
+											<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+										</msubsup>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑎</mi>
+											<mrow>
+												<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+											</mrow>
+										</msub>
+									</mrow>
+								</math>
+								となるから，<a href="#Heisenberg模型">Heisenberg模型</a>のハミルトニアンは
+								<math display="block">
+									<mi>𝐻</mi>
+									<mo>=</mo>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mo>⟨</mo>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+												</mrow>
+												<mo>⟩</mo>
+											</mrow>
+										</munder>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mfrac>
+														<mn>1</mn><mn>2</mn>
+													</mfrac>
+													<mo>&it;</mo>
+													<mi>𝐽</mi>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mrow>
+																<msubsup>
+																	<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+																</msubsup>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑎</mi><mi>𝑗</mi>
+																</msub>
+															</mrow>
+															<mo>+</mo>
+															<mrow>
+																<msub>
+																	<mi>𝑎</mi><mi>𝑖</mi>
+																</msub>
+																<mo>&it;</mo>
+																<msubsup>
+																	<mi>𝑎</mi><mi>𝑗</mi><mo>†</mo>
+																</msubsup>
+															</mrow>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>+</mo>
+												<mrow>
+													<msub>
+														<mi>𝐽</mi><mi>𝑧</mi>
+													</msub>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mrow>
+																<mn>2</mn>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑛</mi><mi>𝑖</mi>
+																</msub>
+															</mrow>
+															<mo>−</mo>
+															<mn>1</mn>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mrow>
+																<mn>2</mn>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑛</mi><mi>𝑗</mi>
+																</msub>
+															</mrow>
+															<mo>−</mo>
+															<mn>1</mn>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>−</mo>
+										<mrow>
+											<mn>8</mn>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝐽</mi><mi>𝑧</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑁</mi>
+													<mo>−</mo>
+													<mfrac>
+														<mi>𝐿</mi><mn>4</mn>
+													</mfrac>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mi>𝐽</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>∑</mo>
+													<mrow>
+														<mo>⟨</mo>
+														<mrow>
+															<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+														</mrow>
+														<mo>⟩</mo>
+													</mrow>
+												</munder>
+												<mrow>
+													<msubsup>
+														<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+													</msubsup>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi><mi>𝑗</mi>
+													</msub>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mn>4</mn>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝐽</mi><mi>𝑧</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>∑</mo>
+													<mrow>
+														<mo>⟨</mo>
+														<mrow>
+															<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+														</mrow>
+														<mo>⟩</mo>
+													</mrow>
+												</munder>
+												<mrow>
+													<msubsup>
+														<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+													</msubsup>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi><mi>𝑖</mi>
+													</msub>
+													<mo>&it;</mo>
+													<msubsup>
+														<mi>𝑎</mi><mi>𝑗</mi><mo>†</mo>
+													</msubsup>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑎</mi><mi>𝑗</mi>
+													</msub>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math>
+								となる．<a href="#Heisenberg模型">Heisenberg模型</a>のXY成分がホッピング項に，Z成分が相互作用項に<a href="#Wigner-Jordan変換">Wigner-Jordan変換</a>された．
+							</p>
+							<p>
+								これは，格子状のボゾン化的なものになっている．
+							</p>
+						</section>
+						<section>
+							<h5>ボゾン化とsine-Gordon模型</h5>
+							<p>
+								<a href="#Heisenberg模型">Heisenberg模型</a>を外部磁場が零の場合で考える．この時<math><mo>↑</mo></math>スピンと<math><mo>↓</mo></math>スピンがちょうど同じ数存在するhalf-filling状態となる．格子定数を<math><mi>𝑎</mi></math>に対し，Fermi波数は
+								<math>
+									<msub>
+										<mi>𝑝</mi><mi mathvariant="normal">F</mi>
+									</msub>
+									<mo>=</mo>
+									<mfrac>
+										<mn>1</mn>
+										<mrow>
+											<mn>2</mn><mo>&it;</mo><mi>𝑎</mi>
+										</mrow>
+									</mfrac>
+								</math>
+								となる．この付近でスペクトルを線型近似する．また連続極限<math><mi>𝑎</mi><mo>→</mo><mn>0</mn></math>を考える．この極限でFermi演算子を
+								<math>
+									<msub>
+										<mi>𝑎</mi><mi>𝑖</mi>
+									</msub>
+									<mo>→</mo>
+									<mrow>
+										<msqrt><mi>𝛼</mi></msqrt>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<msup>
+														<mi>𝑒</mi>
+														<mrow>
+															<mn>2</mn>
+															<mo>&it;</mo>
+															<mi>𝜋</mi>
+															<mo>&it;</mo>
+															<mi>𝑖</mi>
+															<mo>&it;</mo>
+															<msub>
+																<mi>𝑝</mi><mi mathvariant="normal">F</mi>
+															</msub>
+															<mo>&it;</mo>
+															<mi>𝑥</mi>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<mrow>
+														<msub>
+															<mi>𝜓</mi><mo>+</mo>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>+</mo>
+												<mrow>
+													<msup>
+														<mi>𝑒</mi>
+														<mrow>
+															<mo>−</mo>
+															<mrow>
+																<mn>2</mn>
+																<mo>&it;</mo>
+																<mi>𝜋</mi>
+																<mo>&it;</mo>
+																<mi>𝑖</mi>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝑝</mi><mi mathvariant="normal">F</mi>
+																</msub>
+																<mo>&it;</mo>
+																<mi>𝑥</mi>
+															</mrow>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<mrow>
+														<msub>
+															<mi>𝜓</mi><mo>−</mo>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+								と置き換える．ただし
+								<math>
+									<msub>
+										<mi>𝜓</mi><mo>±</mo>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</math>
+								は格子間隔に比べてゆっくりと変化する連続場．
+							</p>
+							<p>
+								まず，<math><mi>𝐽</mi></math>に比例する項は，自由ハミルトニアン
+								<math display="block">
+									<mi>𝐻</mi>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑣</mi>
+											<mi mathvariant="normal">F</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>∫</mo>
+											<mrow>
+												<mi>𝑑</mi>
+												<mo>&af;</mo>
+												<mi>𝑥</mi>
+											</mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mrow>
+															<msubsup>
+																<mi>𝜓</mi>
+																<mo>+</mo>
+																<mo>†</mo>
+															</msubsup>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mi>𝑥</mi>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+														<mo>&it;</mo>
+														<mrow>
+															<mrow>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<mo>−</mo>
+																		<mrow>
+																			<mi>𝑖</mi>
+																			<mo>&it;</mo>
+																			<mfrac>
+																				<mi>𝑑</mi>
+																				<mrow>
+																					<mi>𝑑</mi>
+																					<mo>&af;</mo>
+																					<mi>𝑥</mi>
+																				</mrow>
+																			</mfrac>
+																		</mrow>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&af;</mo>
+																<msub>
+																	<mi>𝜓</mi>
+																	<mo>+</mo>
+																</msub>
+															</mrow>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mi>𝑥</mi>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>+</mo>
+													<mrow>
+														<mrow>
+															<msubsup>
+																<mi>𝜓</mi>
+																<mo>−</mo>
+																<mo>†</mo>
+															</msubsup>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mi>𝑥</mi>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+														<mo>&it;</mo>
+														<mrow>
+															<mrow>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>&it;</mo>
+																		<mfrac>
+																			<mi>𝑑</mi>
+																			<mrow>
+																				<mi>𝑑</mi>
+																				<mo>&af;</mo>
+																				<mi>𝑥</mi>
+																			</mrow>
+																		</mfrac>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mo>&af;</mo>
+																<msub>
+																	<mi>𝜓</mi>
+																	<mo>−</mo>
+																</msub>
+															</mrow>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mi>𝑥</mi>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mfrac>
+											<msub>
+												<mi>𝑣</mi><mi mathvariant="normal">F</mi>
+											</msub>
+											<mn>2</mn>
+										</mfrac>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>∫</mo>
+											<mrow>
+												<mi>𝑑</mi><mo>&af;</mo><mi>𝑥</mi>
+											</mrow>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mo>∂</mo><mi>𝑥</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mi>𝜑</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+										</mrow>
+									</mrow>
+								</math>
+								に帰着する．ただし
+								<math>
+									<msub>
+										<mi>𝑣</mi><mi mathvariant="normal">F</mi>
+									</msub>
+									<mo>≔</mo>
+									<mrow>
+										<mi>𝐽</mi><mo>&it;</mo><mi>𝑎</mi>
+									</mrow>
+								</math>
+								である．
+							</p>
+							<p>
+								相互作用項は
+								<math display="block">
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mi>𝑖</mi>
+											</munder>
+										</mrow>
+										<mrow>
+											<msubsup>
+												<mi>𝑎</mi><mi>𝑖</mi><mo>†</mo>
+											</msubsup>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑎</mi><mi>𝑖</mi>
+											</msub>
+											<mo>&it;</mo>
+											<msubsup>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+												</mrow>
+												<mo>†</mo>
+											</msubsup>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+												</mrow>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mo>⋯</mo>
+									<mo>=</mo>
+									<mrow>
+										<mn>4</mn>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝐽</mi><mi>𝑧</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mi>𝑎</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>∫</mo>
+											<mrow>
+												<mi>𝑑</mi><mo>&af;</mo><mi>𝑥</mi>
+											</mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<msub>
+															<mi>𝐽</mi><mo>+</mo>
+														</msub>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝐽</mi><mo>+</mo>
+														</msub>
+													</mrow>
+													<mo>+</mo>
+													<mrow>
+														<msub>
+															<mi>𝐽</mi><mo>−</mo>
+														</msub>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝐽</mi><mo>−</mo>
+														</msub>
+													</mrow>
+													<mo>+</mo>
+													<mrow>
+														<mn>4</mn>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝐽</mi><mo>+</mo>
+														</msub>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝐽</mi><mo>−</mo>
+														</msub>
+													</mrow>
+													<mo>−</mo>
+													<msup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msubsup>
+																	<mi>𝜓</mi><mo>+</mo><mo>†</mo>
+																</msubsup>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝜓</mi><mo>−</mo>
+																</msub>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mn>2</mn>
+													</msup>
+													<mo>−</mo>
+													<msup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msubsup>
+																	<mi>𝜓</mi><mo>−</mo><mo>†</mo>
+																</msubsup>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝜓</mi><mo>+</mo>
+																</msub>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mn>2</mn>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math>
+								となる．最初の三項はボゾン化で考えた相互作用項で
+								<math>
+									<msub>
+										<mi>𝑔</mi><mn>2</mn>
+									</msub>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑔</mi><mn>4</mn>
+									</msub>
+									<mo>≔</mo>
+									<mrow>
+										<msub>
+											<mi>𝐽</mi><mi>𝑧</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mi>𝑎</mi>
+									</mrow>
+								</math>
+								としたもの．後半2項は
+								<math display="block">
+									<mrow>
+										<mrow>
+											<msubsup>
+												<mi>𝜓</mi><mo>±</mo><mo>†</mo>
+											</msubsup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<msub>
+												<mi>𝜓</mi><mo>∓</mo>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mfrac>
+											<mn>1</mn>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mi>𝜋</mi>
+												<mo>&it;</mo>
+												<mi>𝑎</mi>
+											</mrow>
+										</mfrac>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝑒</mi>
+											<mrow>
+												<mo>−</mo>
+												<mrow>
+													<mn>2</mn>
+													<mo>&it;</mo>
+													<mi>𝜋</mi>
+													<mo>&it;</mo>
+													<mi>𝑖</mi>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<msub>
+																<mi>𝜑</mi><mo>±</mo>
+															</msub>
+															<mo>−</mo>
+															<msub>
+																<mi>𝜑</mi><mo>∓</mo>
+															</msub>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</msup>
+									</mrow>
+								</math>
+								より
+								<math>
+									<mi>cos</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mn>4</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝜑</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math>
+								に比例した相互作用（<a href="#Klein因子">Klein因子</a>は省略した）．まとめると，<a href="#Heisenberg模型">Heisenberg模型</a>のFermi面付近の有効ハミルトニアンは
+								<math display="block">
+									<mi>𝐻</mi>
+									<mo>=</mo>
+									<mrow>
+										<mo>∫</mo>
+										<mrow>
+											<mi>𝑑</mi><mo>&af;</mo><mi>𝑥</mi>
+										</mrow>
+										<mrow>
+											<mo>⋯</mo>
+										</mrow>
+									</mrow>
+								</math>
+								となる．
+							</p>
+							<p>
+								ここまで，線型近似以外は使っていないが，相互作用
+								<math>
+									<msub>
+										<mi>𝐽</mi><mi>𝑧</mi>
+									</msub>
+								</math>
+								の繰りこみが正しく取り入れられておらず，
+								<math>
+									<msub>
+										<mi>𝐽</mi><mi>𝑧</mi>
+									</msub>
+									<mo>&it;</mo>
+									<mi>𝑎</mi>
+								</math>
+								の項が露わに残ってしまっている．
+							</p>
+						</section>
 					</section>
 				</section>
 			</section>
@@ -38767,7 +39327,6 @@
 			<h2>参考文献</h2>
 			<ul>
 				<li>疋田泰章「共形場理論入門」講談社</li>
-				li
 				<li>川上則雄・梁成吉「共形場理論と1次元量子系」岩波書店</li>
 				<li>Philippe Di Francesco, Pierre Mathieu, David Sénéchal, "Conformal Field Theory", Springer</li>
 				<li>Jan von Delft, Herbert Schoeller, "Bosonization for Beginners --- Refermionization for Experts", <a href="https://doi.org/10.48550/arXiv.cond-mat/9805275">arXiv:cond-mat/9805275</a></li>
