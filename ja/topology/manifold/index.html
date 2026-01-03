@@ -9,17 +9,125 @@
 	</head>
 	<body>
 		<main>
-			<h1>多様体</h1>
+			<hgroup>
+				<h1>多様体</h1>
+				<p><math><msup><mi>ℝ</mi><mi>𝑛</mi></msup></math>から見た位相空間</p>
+			</hgroup>
 			<section>
 				<h2>定義</h2>
 				<section>
 					<h3>多様体</h3>
+					<article id="局所座標系" class="dfn">
+						<h4>局所座標系</h4>
+						<p><a href="../index.html#位相空間">位相空間</a><math><mo>(</mo><mrow><mi>𝑀</mi><mo>,</mo><mi>𝒪</mi><mo>)</mo></mrow></math>を与える．</p>
+						<p><math><mi>𝑀</mi></math>の<dfn>局所座標系</dfn><span lang="en">(local chart)</span>または<dfn>チャート</dfn>とは以下のデータからなる：</p>
+						<ul>
+							<li><math><mi>𝑀</mi></math>の<a href="#開集合">開集合</a><math><mi>𝑈</mi><mo>∈</mo><mi>𝒪</mi></math></li>
+							<li>
+								<math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math>に対し，<a href="../index.html#同相写像">同相写像</a>
+								<math>
+									<mi>𝜑</mi>
+									<mo>:</mo>
+									<mrow>
+										<mi>𝑈</mi>
+										<mo>→</mo>
+										<msup>
+											<mi>ℝ</mi><mi>𝑛</mi>
+										</msup>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>これらは以下を満たす：</p>
+						<article id="局所座標" class="dfn">
+							<h5>局所座標</h5>
+							<ul>
+								<li><a href="../index.html#位相空間">位相空間</a><math><mo>(</mo><mrow><mi>𝑀</mi><mo>,</mo><mi>𝒪</mi><mo>)</mo></mrow></math></li>
+								<li><a href="#局所座標系">局所座標系</a><math><mo>(</mo><mrow><mi>𝑈</mi><mo>,</mo><mi>𝜑</mi></mrow><mo>)</mo></math></li>
+							</ul>
+							<p>を与える．</p>
+							<ul>
+								<li>
+									<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑝</mi><mo>∈</mo><mi>𝑈</mi></mrow></math>
+									に対し，
+									<ul>
+										<li><math><mi>𝑈</mi></math>を<math><mi>𝑝</mi></math>の<dfn>座標近傍</dfn><span lang="en">(coordinate neighborhood)</span>と呼ぶ．</li>
+										<li>
+											<math>
+												<mrow>
+													<mi>𝜑</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑝</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>∈</mo>
+												<msup>
+													<mi>ℝ</mi><mi>𝑛</mi>
+												</msup>
+											</math>
+											を
+											<math><mi>𝑝</mi></math>の<dfn>局所座標</dfn><span lang="en">(local coordinate)</span>と呼ぶ．
+										</li>
+									</ul>
+								</li>
+								<li>
+									<math><msup><mi>ℝ</mi><mi>𝑛</mi></msup></math>
+									の第
+									<math><mi>𝑖</mi></math>
+									成分への射影演算子
+									<math><msub><mi>𝜋</mi><mi>𝑖</mi></msub></math>
+									に対し，
+									<math>
+										<msup>
+											<mi>𝑥</mi><mi>𝑖</mi>
+										</msup>
+										<mo>≔</mo>
+										<mrow>
+											<msub>
+												<mi>𝜋</mi><mi>𝑖</mi>
+											</msub>
+											<mo>∘</mo>
+											<mi>𝜑</mi>
+										</mrow>
+									</math>
+									を
+									<math><mi>𝑈</mi></math>
+									上の座標函数と呼ぶ．
+								</li>
+							</ul>
+						</article>
+					</article>
 					<article id="多様体" class="ax">
 						<h4>多様体</h4>
 						<p><math><mi>𝑛</mi></math>次元<dfn class="ax">位相多様体</dfn><span lang="en">(manifold)</span>とは以下のデータからなる：</p>
-						<ul><li>Hausdorff空間<math><mo>(</mo><mrow><mi>𝑀</mi><mo>,</mo><mi>𝒪</mi></mrow></math></li></ul>
+						<ul><li><a href="../index.html#分離公理">Hausdorff空間</a><math><mo>(</mo><mrow><mi>𝑀</mi><mo>,</mo><mi>𝒪</mi><mo>)</mo></mrow></math></li></ul>
 						<p>これらは以下を満たす：</p>
-						<ul><li>任意の点<math><mi>𝑥</mi><mo>∈</mo><mi>𝑀</mi></math>に対し，<math><mi>𝑥</mi></math>の開近傍が，<math><msup><mi>ℝ</mi><mi>𝑛</mi></msup></math>と同相．</li></ul>
+						<ul>
+							<li>
+								任意の点
+								<math><mi>𝑝</mi><mo>∈</mo><mi>𝑀</mi></math>
+								に対し，
+								<math><mi>𝑝</mi></math>
+								の
+								<a href="../index.html#位相空間">近傍</a><math><mi>𝑈</mi><mo>∈</mo><mi>𝒪</mi></math>
+								と
+								<math><msup><mi>ℝ</mi><mi>𝑛</mi></msup></math>
+								への<a href="../index.html#同相写像">同相写像</a>
+								<math>
+									<mi>𝜑</mi>
+									<mo>:</mo>
+									<mrow>
+										<mi>𝑈</mi>
+										<mo>→</mo>
+										<msup>
+											<mi>ℝ</mi><mi>𝑛</mi>
+										</msup>
+									</mrow>
+								</math>
+								との組が存在し，これが<a href="#局所座標系">局所座標系</a>をなす．
+							</li>
+						</ul>
 					</article>
 				</section>
 			</section>
