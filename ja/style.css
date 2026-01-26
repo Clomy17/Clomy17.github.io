@@ -146,9 +146,6 @@ svg {
 	margin: 0 auto;
 }
 
-foreignObject {
-}
-
 line, polyline {
 	stroke: white;
 	stroke-width: 1%;
@@ -159,18 +156,13 @@ line.auxiliary, polyline.auxiliary {
 	stroke-dasharray: 2.5%;
 }
 
-text {
-	text-anchor: middle;
-	dominant-baseline: central;
-}
-
 math {
 	overflow-wrap: break-word;
 }
 
-mi {
+/* mi {
 	mathvariant: normal;
-}
+} */
 
 mtable {
 	math-style: normal;
@@ -360,74 +352,6 @@ article.proof {
 
 article.ax > p, article.dfn > p, article.prp > p, article.thm > p, article.lem > p, article.cor > p, article.pblm > p, article.proof > p {
 	margin: 0 1rem;
-}
-
-#main-wrapper {
-	display: grid;
-	// grid-template-areas: "main";
-	// grid-template-areas: "toc main link-render";
-	> aside {
-		max-height: 100vh;
-		overflow: auto;
-		position: sticky;
-		top: 0;
-	}
-	main {
-		grid-area: "main";
-	}
-	#link-render {
-		grid-area: link-render;
-	}
-}
-
-#link-render {
-	> article.ax {
-		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
-			counter-increment: none;
-			content: "公理: ";
-		}
-	}
-	article.dfn {
-		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
-			counter-increment: none;
-			content: "定義: ";
-		}
-	}
-	article.prp {
-		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
-			counter-increment: none;
-			content: "命題: ";
-		}
-	}
-	article.thm {
-		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
-			counter-increment: none;
-			content: "定理: ";
-		}
-	}
-	article.lem {
-		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
-			counter-increment: none;
-			content: "補題: ";
-		}
-	}
-	article.cor {
-		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
-			counter-increment: none;
-			content: "系: ";
-		}
-	}
-	article.pblm {
-		> h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before {
-			counter-increment: none;
-			content: "問題: ";
-		}
-	}
-}
-
-#delete-link-render {
-	margin-right: 10px;
-	float: right;
 }
 
 dl {

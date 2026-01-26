@@ -54,6 +54,7 @@ if (heads_origin && heads_origin.length) {
 	})
 }
 // toc-main
+document.querySelector("head").insertAdjacentHTML("beforeend", '<style>aside#目次 > ol > li::marker {content: "第"counter(list-item)"章 ";}</style>');
 const h1_in_hgroup = document.querySelector("main > hgroup:first-child");
 if (h1_in_hgroup == null) {
 	document.querySelector("main > h1").insertAdjacentHTML("afterend", '<aside id="目次"></aside>');
@@ -84,14 +85,14 @@ if (heads && heads.length) {
 			break;
 		}
 		if (head_level_now === head_level_prev + 1) {
-			toc += `<ol><li><a href="#${head.getAttribute("id")}">${head.textContent}</a>`;
+			toc += `<ol><li><a href="#${head.getAttribute("id")}">${head.innerHTML}</a>`;
 			++head_level_prev;
 		} else {
 			while (head_level_now < head_level_prev) {
 				--head_level_prev;
 				toc += "</li></ol>";
 			}
-			toc += `</li><li><a href="#${head.getAttribute("id")}">${head.textContent}</a>`;
+			toc += `</li><li><a href="#${head.getAttribute("id")}">${head.innerHTML}</a>`;
 		} 
 	})
 	while (head_level_prev == 1) {
@@ -106,24 +107,19 @@ const main_content = document.querySelector('main');
 main_content.parentNode.insertBefore(main_wrapper, main_content);
 main_wrapper.appendChild(main_content);
 // document.getElementById("main-wrapper").insertAdjacentHTML("afterbegin", '<aside id="toc-sidebar"></aside>');
-// スマホの場合はlink-renderはホバーにした方がよさそう
-let link_render_exist = 0;
+let link_render_exist = false;
 document.querySelectorAll("section *:any-link").forEach(link => {
 	if (link.getAttribute("href").slice(0,4) != "http") {
 		link.addEventListener("click", function(event) {
 			event.preventDefault();
-			if (link_render_exist === 0) {
-				link_render_exist = 1;
+			if (!link_render_exist) {
+				link_render_exist = true;
 				const main_wrapper_id = document.getElementById("main-wrapper");
 				main_wrapper_id.insertAdjacentHTML("beforeend", '<aside id="link-render"></aside>');
-				//const main_wrapper_css = [...document.styleSheets[0].cssRules].find(
-				//	(r) => r.selectorText === "#main-wrapper",
-				//);
-				// main_wrapper_css.style.setProperty("grid-template-areas", "main link-render");
-				main_wrapper_id.setAttribute("style", 'grid-template-areas: "main link-render"; grid-template-columns: 3fr 1fr;');
+				document.querySelector("head").insertAdjacentHTML("beforeend", '<style>#link-render{ position: fixed; top: 100px; left: 50%; background-color:#222; border: 1px solid #666; box-shadow: 0 4px 12px rgba(0,0,0,0.4); z-index: 1;} #link-render-dragger{cursor: move; text-align: center; background: #444; border-bottom: 1px solid #666; user-select: none;} #delete-link-render {margin-right: 10px; float: right;} #link-render {article.ax { h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before { counter-increment: none; content: "公理: "; } } article.dfn { h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before { counter-increment: none; content: "定義: "; } } article.prp { h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before { counter-increment: none; content: "命題: "; } } article.thm { h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before { counter-increment: none; content: "定理: "; } } article.lem { h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before { counter-increment: none; content: "補題: "; } } article.cor { h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before { counter-increment: none; content: "系: "; } } article.pblm { h1::before, > h2::before, > h3::before, > h4::before, > h5::before, > h6::before { counter-increment: none; content: "問題: "; } } }</style>');
 			}
 			const hash = this.hash.slice(1);
-			document.getElementById("link-render").innerHTML = '<button id="delete-link-render" type="button">×</button>';
+			document.getElementById("link-render").innerHTML = '<div id="link-render-dragger">ドラッグして移動<button id="delete-link-render" type="button">×</button></div>';
 			if (this.pathname == location.pathname) {
 				document.getElementById("link-render").insertAdjacentHTML("beforeend", document.getElementById(decodeURI(hash)).outerHTML);
 			} else {
@@ -138,9 +134,33 @@ document.querySelectorAll("section *:any-link").forEach(link => {
 					});
 			}
 			document.getElementById("delete-link-render").addEventListener("click", function() {
-				link_render_exist = 0;
+				link_render_exist = false;
 				document.getElementById("link-render").remove()
 				document.getElementById("main-wrapper").removeAttribute("style");
+			});
+			const linkRender = document.getElementById("link-render");
+			const linkRenderDragger = document.getElementById("link-render-dragger");
+			
+			let isDragging = false;
+			let offsetX = 0;
+			let offsetY = 0;
+			
+			linkRenderDragger.addEventListener("mousedown", (e) => {
+				isDragging = true;
+				offsetX = e.clientX - linkRender.offsetLeft;
+				offsetY = e.clientY - linkRender.offsetTop;
+			});
+			
+			document.addEventListener("mousemove", (e) => {
+				if (!isDragging) return;
+				const maxX = window.innerWidth - linkRender.offsetWidth;
+				const maxY = window.innerHeight - linkRender.offsetHeight;
+				linkRender.style.left = Math.min(Math.max(0, e.clientX - offsetX), maxX) + "px";
+				linkRender.style.top  = Math.min(Math.max(0, e.clientY - offsetY), maxY) + "px";
+			});
+			
+			document.addEventListener("mouseup", () => {
+				isDragging = false;
 			});
 		})
 	}
