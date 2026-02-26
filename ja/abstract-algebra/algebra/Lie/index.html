@@ -920,12 +920,9 @@
 									特に，自然な<a href="#同型">同型</a>
 									<math>
 										<mrow>
-											<mi>𝔤</mi>
-											<mo>∕</mo>
+											<mi>𝔤</mi><mo>∕</mo>
 											<mrow>
-												<mi>ker</mi>
-												<mo>&af;</mo>
-												<mi>𝑓</mi>
+												<mi>ker</mi><mo>&af;</mo><mi>𝑓</mi>
 											</mrow>
 										</mrow>
 										<mo>≅</mo>
@@ -949,6 +946,142 @@
 						</li>
 					</ul>
 				</article>
+			</section>
+			<section>
+				<h3>自由・忘却随伴</h3>
+				<article id="自由" class="dfn">
+					<h4>自由Lie代数</h4>
+					<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
+					<p>
+						<math><mi>𝕂</mi></math>-線型空間<math><mi>𝑉</mi></math>上の<dfn>自由Lie代数</dfn><span lang="en">(free Lie algebra)</span>とは，以下のデータからなる：
+					</p>
+					<ul>
+						<li>
+							<math><mi>𝕂</mi></math>-線型空間<math><mi>𝑉</mi></math>
+							<math display="block">
+								<munder intent=":largeop">
+									<mo>∐</mo>
+									<mrow>
+										<mi>𝑛</mi><mo>∈</mo><mi>ℤ</mi>
+									</mrow>
+								</munder>
+								<msup>
+									<mi>𝑉</mi>
+									<mrow>
+										<mo>⨿</mo><mi>𝑛</mi>
+									</mrow>
+								</msup>
+							</math>
+						</li>
+						<li>
+							を線型に拡張したもの．
+						</li>
+					</ul>
+				</article>
+				<article id="自由Lie代数の普遍性" class="thm">
+					<h4>自由Lie代数の普遍性</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝑉</mi></math></li>
+						<li><a href="#自由"><math><mi>𝑉</mi></math>上の自由Lie代数</a><math><mi>𝔙</mi></math></li>
+						<li>
+							包含写像
+							<math>
+								<mi>𝑖</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑉</mi><mo>→</mo><mi>𝔙</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与えると，以下の<dfn>自由Lie代数の普遍性</dfn>を満たす：</p>
+					<ul>
+						<li>任意の<math><mi>𝕂</mi></math>-<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+						<li>
+							任意の<math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑉</mi><mo>→</mo><mi>𝔤</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>
+						に対し，<a href="#準同型">Lie代数準同型</a>
+						<math>
+							<mover>
+								<mi>𝑓</mi><mo>‾</mo>
+							</mover>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝔙</mi><mo>→</mo><mi>𝔤</mi>
+							</mrow>
+						</math>
+						が一意的に存在し，以下を満たす：
+						<math display="block">
+							<mrow>
+								<mover>
+									<mi>𝑓</mi><mo>‾</mo>
+								</mover>
+								<mo>∘</mo>
+								<mi>𝑖</mi>
+							</mrow>
+							<mo>=</mo>
+							<mi>𝑓</mi>
+						</math>
+						つまり，以下の図式を可換にする．
+					</p>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						<math display="block">
+							chottomendo-
+						</math>
+						とすると，
+						より，
+						<math>
+							<mover>
+								<mi>𝑓</mi><mo>‾</mo>
+							</mover>
+						</math>
+						は<a href="#準同型">Lie代数準同型</a>となる．特に，
+						<math>
+							<mrow>
+								<mover>
+									<mi>𝑓</mi><mo>‾</mo>
+								</mover>
+								<mo>∘</mo>
+								<mi>𝑖</mi>
+							</mrow>
+							<mo>=</mo>
+							<mi>𝑓</mi>
+						</math>
+						を満たす．
+					</p>
+					<p>
+						可換図式を満たす<a href="#準同型">Lie代数準同型</a>
+						<math>
+							<mover>
+								<mi>𝑓</mi><mo>‾</mo>
+							</mover>
+							<mo>,</mo>
+							<msup>
+								<mover>
+									<mi>𝑓</mi><mo>‾</mo>
+								</mover>
+								<mo>′</mo>
+							</msup>
+						</math>
+						に対し，<a href="../../../category/index.html#同型射">自然同型</a>
+					</p>
+				</article>
+			</section>
+			<section>
+				<h3>可換</h3>
 				<article id="可換" class="dfn">
 					<h4>可換</h4>
 					<ul>
@@ -960,9 +1093,7 @@
 						<li>
 							<math>
 								<mrow>
-									<mi>𝑥</mi>
-									<mo>,</mo>
-									<mi>𝑦</mi>
+									<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
 								</mrow>
 								<mo>∈</mo>
 								<mi>𝔤</mi>
@@ -972,9 +1103,7 @@
 								<mrow>
 									<mo>[</mo>
 									<mrow>
-										<mi>𝑥</mi>
-										<mo>,</mo>
-										<mi>𝑦</mi>
+										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
 									</mrow>
 									<mo>]</mo>
 								</mrow>
@@ -988,9 +1117,7 @@
 								<mrow>
 									<mo>[</mo>
 									<mrow>
-										<mi>𝔤</mi>
-										<mo>,</mo>
-										<mi>𝔤</mi>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
 									</mrow>
 									<mo>]</mo>
 								</mrow>
@@ -1001,7 +1128,78 @@
 						</li>
 					</ul>
 				</article>
-				<p>任意の<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝔤</mi></math>は，<a href="#可換">可換</a>な<a href="#Lie代数">Lie括弧</a>をあたえることで<a href="#Lie代数">Lie代数</a>になる．</p>
+				<article id="自由可換Lie代数" class="dfn">
+					<h4>自由可換Lie代数</h4>
+					<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
+					<p>
+						<math><mi>𝕂</mi></math>-線型空間<math><mi>𝑉</mi></math>上の<dfn>可換Lie代数</dfn><span lang="en">(commutative Lie algebra)</span>とは，以下で定義される<a href="#Lie代数">Lie代数</a>のこと：
+					</p>
+					<ul>
+						<li>
+							<math><mi>𝕂</mi></math>-線型空間<math><mi>𝑉</mi></math>
+						</li>
+						<li>
+							<a href="#Lie代数">Lie括弧</a>
+							<math>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mo>⋅</mo><mo>,</mo><mo>⋅</mo>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mi>𝑉</mi><mo>∏</mo><mi>𝑉</mi>
+										</mrow>
+										<mo>→</mo>
+										<mi>𝑉</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="可換Lie代数の普遍性" class="thm">
+					<h4>可換Lie代数の普遍性</h4>
+					<p>可換Lie代数の<a href="#圏">圏</a>と線型空間の圏は<a href="../../../category/index.html#自然同型">自然同型</a>．</p>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						任意の<math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a>
+						<math>
+							<mi>𝑉</mi><mo>≃</mo><mi>𝑊</mi>
+						</math>
+						に対し，それぞれの<a href="#自由可換Lie代数">自由可換Lie代数</a>を
+						<math>
+							<mi>𝔙</mi><mo>,</mo><mi>𝔚</mi>
+						</math>
+						とする．また，任意の線型同型写像
+						<math>
+							<mi>𝑓</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝑉</mi><mo>→</mo><mi>𝑊</mi>
+							</mrow>
+						</math>
+						に対し，
+					</p>
+				</article>
 				<article id="中心" class="dfn">
 					<h4>中心化代数・中心</h4>
 					<ul>

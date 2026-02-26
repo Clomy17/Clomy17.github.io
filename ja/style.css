@@ -227,6 +227,8 @@ article.ax, article.dfn, article.prp, article.thm, article.lem, article.cor, art
 	border-radius: 0.25rem;
 	padding: 0.25rem;
 	margin: 0.25rem 1rem;
+	display: inline-block;
+	min-width: 75%;
 	> * {
 		margin: 0 0 0 1em;
 	}
