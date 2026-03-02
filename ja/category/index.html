@@ -1781,7 +1781,7 @@
 				</article>
 				<article id="双函手" class="dfn">
 					<h4>双函手</h4>
-					<p>始域が<a href="#積圏">積圏</a>である<a href="#函手">函手</a>を<dfn>双函手</dfn><span lang="en">(bifunctor)</span>と呼ぶ．</p>
+					<p>始域が<a href="#直積圏">積圏</a>である<a href="#函手">函手</a>を<dfn>双函手</dfn><span lang="en">(bifunctor)</span>と呼ぶ．</p>
 				</article>
 				<article id="函手の基本性質" class="thm">
 					<h4>函手の基本性質</h4>
@@ -4181,7 +4181,7 @@
 						<h5>函手圏の積圏</h5>
 						<p><a href="#圏">圏</a><math><mi>𝒜</mi><mo>,</mo><msup><mi>𝒜</mi><mo>′</mo></msup><mo>,</mo><msup><mi>𝒜</mi><mo>″</mo></msup></math>を与える．</p>
 						<p>
-							<a href="#函手圏">函手圏</a>の<a href="#積圏">積圏</a>
+							<a href="#函手圏">函手圏</a>の<a href="#直積圏">積圏</a>
 							<math>
 								<mrow>
 									<mo>[</mo>
@@ -12393,7 +12393,7 @@
 				</article>
 				<p>そもそも左辺が集合であることも非自明な気はするが，集合であることの証明の仕方がわからないので認めておく．</p>
 				<p>
-					抽象度が高いので難解に感じるかもしれないが，証明自体は<a href="#積圏">積圏</a>からの<a href="#函手">函手</a>（それぞれ
+					抽象度が高いので難解に感じるかもしれないが，証明自体は<a href="#直積圏">積圏</a>からの<a href="#函手">函手</a>（それぞれ
 					<math>
 						<mrow>
 							<mrow>
@@ -17082,8 +17082,8 @@
 						が<a href="#終対象">終対象</a>の定義を満たすということに他ならない．<a href="#極限">余極限</a>も同様．
 					</p>
 				</article>
-				<article id="積" class="dfn">
-					<h4>積</h4>
+				<article id="直積" class="dfn">
+					<h4>直積</h4>
 					<ul>
 						<li><a href="#離散圏">離散圏</a><math><mi>ℐ</mi></math></li>
 						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
@@ -17095,16 +17095,14 @@
 							<mi>𝐷</mi>
 							<mo>:</mo>
 							<mrow>
-								<mi>ℐ</mi>
-								<mo>→</mo>
-								<mi>𝒜</mi>
+								<mi>ℐ</mi><mo>→</mo><mi>𝒜</mi>
 							</mrow>
 						</math>
 						の
 					</p>
 					<ul>
 						<li>
-							<a href="#極限">極限</a>を<dfn>積</dfn><span lang="en">(product)</span>と呼び，
+							<a href="#極限">極限</a>を<dfn>直積</dfn><span lang="en">(product)</span>と呼び，
 							<math>
 								<munder intent=":largeop">
 									<mo>∏</mo>
@@ -17326,7 +17324,7 @@
 							に対し，以下の図式を可換にする：
 						</li>
 						<li>
-							<a href="#極限">余極限</a>を<dfn>余積</dfn><span lang="en">(coproduct)</span>と呼び，
+							<a href="#極限">余極限</a>を<dfn>余直積</dfn><span lang="en">(coproduct)</span>と呼び，
 							<math>
 								<munder intent=":largeop">
 									<mo>∐</mo>
@@ -19615,8 +19613,8 @@
 					<thead>
 						<tr>
 							<th><a href="#圏">圏</a></th>
-							<th><a href="#積">積</a></th>
-							<th><a href="#積">和</a></th>
+							<th><a href="#直積">積</a></th>
+							<th><a href="#直積">和</a></th>
 							<th><a href="#等化子">等化子</a></th>
 							<th><a href="#等化子">余等化子</a></th>
 							<th><a href="#引き戻し">引き戻し</a></th>
@@ -19649,16 +19647,16 @@
 							以下の同値な条件のいずれか（ゆえに全て）を満たす<a href="#圏">圏</a><math><mi>𝒜</mi></math>を<dfn>完備</dfn><span lang="en">(complete)</span>と呼ぶ．
 							<ul>
 								<li><math><mi>𝒜</mi></math>は全ての小さい極限を持つ．</li>
-								<li><math><mi>𝒜</mi></math>は全ての小さい<a href="#積">積</a>と<a href="#等化子">等化子</a>を持つ．</li>
-								<li><math><mi>𝒜</mi></math>は全ての小さい<a href="#積">積</a>と<a href="#引き戻し">引き戻し</a>を持つ．</li>
+								<li><math><mi>𝒜</mi></math>は全ての小さい<a href="#直積">積</a>と<a href="#等化子">等化子</a>を持つ．</li>
+								<li><math><mi>𝒜</mi></math>は全ての小さい<a href="#直積">積</a>と<a href="#引き戻し">引き戻し</a>を持つ．</li>
 							</ul>
 						</li>
 						<li>
 							以下の同値な条件のいずれか（ゆえに全て）を満たす<a href="#圏">圏</a><math><mi>𝒜</mi></math>を<dfn>余完備</dfn><span lang="en">(cocomplete)</span>と呼ぶ．
 							<ul>
 								<li><math><mi>𝒜</mi></math>は全ての小さい余極限を持つ．</li>
-								<li><math><mi>𝒜</mi></math>は全ての小さい<a href="#積">余積</a>と<a href="#等化子">余等化子</a>を持つ．</li>
-								<li><math><mi>𝒜</mi></math>は全ての小さい<a href="#積">余積</a>と<a href="#引き戻し">押し出し</a>を持つ．</li>
+								<li><math><mi>𝒜</mi></math>は全ての小さい<a href="#直積">余積</a>と<a href="#等化子">余等化子</a>を持つ．</li>
+								<li><math><mi>𝒜</mi></math>は全ての小さい<a href="#直積">余積</a>と<a href="#引き戻し">押し出し</a>を持つ．</li>
 							</ul>
 						</li>
 						<li>
@@ -19677,8 +19675,8 @@
 							以下の同値な条件のいずれか（ゆえに全て）を満たす<a href="#圏">圏</a><math><mi>𝒜</mi></math>を<dfn>有限完備</dfn><span lang="en">(finitely complete)</span>と呼ぶ．
 							<ul>
 								<li><math><mi>𝒜</mi></math>は全ての有限極限を持つ．</li>
-								<li><math><mi>𝒜</mi></math>は全ての有限<a href="#積">積</a>，全ての有限<a href="#等化子">等化子</a>を持つ．</li>
-								<li><math><mi>𝒜</mi></math>は二項の<a href="#積">積</a>，全ての有限<a href="#等化子">等化子</a>，<a href="#終対象">終対象</a>を持つ．</li>
+								<li><math><mi>𝒜</mi></math>は全ての有限<a href="#直積">積</a>，全ての有限<a href="#等化子">等化子</a>を持つ．</li>
+								<li><math><mi>𝒜</mi></math>は二項の<a href="#直積">積</a>，全ての有限<a href="#等化子">等化子</a>，<a href="#終対象">終対象</a>を持つ．</li>
 								<li><math><mi>𝒜</mi></math>は全ての<a href="#引き戻し">引き戻し</a>，<a href="#終対象">終対象</a>を持つ．</li>
 							</ul>
 						</li>
@@ -19686,8 +19684,8 @@
 							以下の同値な条件のいずれか（ゆえに全て）を満たす<a href="#圏">圏</a><math><mi>𝒜</mi></math>を<dfn>有限余完備</dfn><span lang="en">(finitely cocomplete)</span>と呼ぶ．
 							<ul>
 								<li><math><mi>𝒜</mi></math>は全ての有限余極限を持つ．</li>
-								<li><math><mi>𝒜</mi></math>は全ての有限<a href="#積">余積</a>，全ての有限<a href="#等化子">余等化子</a>を持つ．</li>
-								<li><math><mi>𝒜</mi></math>は二項の<a href="#積">余積</a>，全ての有限<a href="#等化子">余等化子</a>，<a href="#終対象">始対象</a>を持つ．</li>
+								<li><math><mi>𝒜</mi></math>は全ての有限<a href="#直積">余積</a>，全ての有限<a href="#等化子">余等化子</a>を持つ．</li>
+								<li><math><mi>𝒜</mi></math>は二項の<a href="#直積">余積</a>，全ての有限<a href="#等化子">余等化子</a>，<a href="#終対象">始対象</a>を持つ．</li>
 								<li><math><mi>𝒜</mi></math>は全ての<a href="#引き戻し">押し出し</a>，<a href="#終対象">始対象</a>を持つ．</li>
 							</ul>
 						</li>
@@ -19851,14 +19849,11 @@
 								<mo>(</mo>
 								<mrow>
 									<mrow>
-										<mi>lim</mi>
-										<mo>&af;</mo>
-										<mi>𝐷</mi>
+										<mi>lim</mi><mo>&af;</mo><mi>𝐷</mi>
 									</mrow>
 									<mo>,</mo>
 									<msub>
-										<mi>𝑝</mi>
-										<mi>-</mi>
+										<mi>𝑝</mi><mi>-</mi>
 									</msub>
 								</mrow>
 								<mo>)</mo>
@@ -19872,6 +19867,2518 @@
 		</section>
 		<section>
 			<h2>準同型定理</h2>
+			<section>
+				<h3>部分対象</h3>
+				<article id="部分対象" class="dfn">
+					<h4>部分対象</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#対象">対象</a>
+							<math>
+								<mi>𝐴</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ob</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li><dfn>部分対象</dfn><span lang="en">(subobject)</span>と呼ぶ．</li>
+						<li><dfn>余部分対象</dfn><span lang="en">(co-subobject)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+			</section>
+			<section>
+				<h3>関係と商対象</h3>
+				<p>部分対象のことを書いて，その次がこれがよさそう? </p>
+				<article id="jointlyモノ" class="dfn">
+					<h4>jointlyモノ・エピ</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#対象">対象</a>
+							<math>
+								<mrow>
+									<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ob</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<a href="#圏">射</a>の組
+						<math>
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>,</mo>
+								<msup>
+									<mi>𝑓</mi><mo>′</mo>
+								</msup>
+							</mrow>
+							<mo>∈</mo>
+							<mi>hom</mi>
+							<mo>(</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
+								</mrow>
+							<mo>)</mo>
+						</math>
+						で，
+					</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>,</mo>
+											<msup>
+												<mi>𝑔</mi><mo>′</mo>
+											</msup>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mi>hom</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>-</mi><mo>,</mo><mi>𝐴</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mrow>
+													<mi>𝑓</mi><mo>∘</mo><mi>𝑔</mi>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>∘</mo>
+													<msup>
+														<mi>𝑔</mi><mo>′</mo>
+													</msup>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mrow>
+													<msup>
+														<mi>𝑓</mi><mo>′</mo>
+													</msup>
+													<mo>∘</mo>
+													<mi>𝑔</mi>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<msup>
+														<mi>𝑓</mi><mo>′</mo>
+													</msup>
+													<mo>∘</mo>
+													<msup>
+														<mi>𝑔</mi><mo>′</mo>
+													</msup>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>⇒</mo>
+									<mrow>
+										<mi>𝑔</mi>
+										<mo>=</mo>
+										<msup>
+											<mi>𝑔</mi><mo>′</mo>
+										</msup>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすものを<dfn>jointlyモノ</dfn><span lang="en">(jointly monic)</span>と呼ぶ．
+						</li>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>,</mo>
+											<msup>
+												<mi>𝑔</mi><mo>′</mo>
+											</msup>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mi>hom</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝐵</mi><mo>,</mo><mi>-</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mrow>
+													<mi>𝑔</mi><mo>∘</mo><mi>𝑓</mi>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<msup>
+														<mi>𝑔</mi><mo>′</mo>
+													</msup>
+													<mo>∘</mo>
+													<mi>𝑓</mi>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑔</mi>
+													<mo>∘</mo>
+													<msup>
+														<mi>𝑓</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<msup>
+														<mi>𝑔</mi><mo>′</mo>
+													</msup>
+													<mo>∘</mo>
+													<msup>
+														<mi>𝑓</mi><mo>′</mo>
+													</msup>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>⇒</mo>
+									<mrow>
+										<mi>𝑔</mi>
+										<mo>=</mo>
+										<msup>
+											<mi>𝑔</mi><mo>′</mo>
+										</msup>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすものを<dfn>jointlyエピ</dfn><span lang="en">(jointly epic)</span>と呼ぶ．
+						</li>
+					</ul>
+				</article>
+				<article id="関係" class="dfn">
+					<h4>内部二項関係</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mrow>
+									<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<dfn><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への（内部）二項関係</dfn><span lang="en">((internal) binary relation from <math><mi>𝐴</mi></math> to <math><mi>𝐵</mi></math>)</span>，あるいは単に<dfn>関係</dfn><span lang="en">(relation)</span>とは以下のデータの組のこと：
+							<ul>
+								<li>
+									<a href="#圏">対象</a>
+									<math>
+										<mi>𝑅</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>hom</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#joitlyモノ">joitlyモノ</a>な<a href="#圏">射</a>の組
+									<math>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝑅</mi><mo>→</mo><mi>𝐴</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝑅</mi><mo>→</mo><mi>𝐵</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<dfn><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への（内部）二項余関係</dfn><span lang="en">((internal) binary co-relation from <math><mi>𝐴</mi></math> to <math><mi>𝐵</mi></math>)</span>，あるいは単に<dfn>余関係</dfn><span lang="en">(co-relation)</span>とは以下のデータの組のこと：
+							<ul>
+								<li>
+									<a href="#圏">対象</a>
+									<math>
+										<mi>𝑅</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>hom</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#joitlyモノ">joitlyエピ</a>な<a href="#圏">射</a>の組
+									<math>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝐴</mi><mo>→</mo><mi>𝑅</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝐵</mi><mo>→</mo><mi>𝑅</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li><math><mi>𝐴</mi></math>から<math><mi>𝐴</mi></math>への関係を，<dfn><math><mi>𝐴</mi></math>上の関係</dfn><span lang="en">(relation on <math><mi>𝐴</mi></math>)</span>と呼ぶ．</li>
+						<li><math><mi>𝐴</mi></math>から<math><mi>𝐴</mi></math>への余関係を，<dfn><math><mi>𝐴</mi></math>上の余関係<dfn><span lang="en">(co-relation on <math><mi>𝐴</mi></math>)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+				<article id="反対関係" class="dfn">
+					<h4>反対関係</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mrow>
+									<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p></p>
+					<ul>
+						<li>
+							<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への関係</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							に対し，<math><mi>𝐵</mi></math>から<math><mi>𝐴</mi></math>への関係
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							を<dfn>反対関係</dfn><span lang="en">(opposite relation)</span>と呼ぶ．
+						</li>
+						<li>
+							<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への余関係</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							に対し，<math><mi>𝐵</mi></math>から<math><mi>𝐴</mi></math>への余関係
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							を<dfn>反対余関係</dfn><span lang="en">(opposite co-relation)</span>と呼ぶ．
+						</li>
+					</ul>
+				</article>
+				<article id="関係の合成" class="dfn">
+					<h4>関係の合成</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mrow>
+									<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi><mo>,</mo><mi>𝐶</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<msub>
+													<mi>𝑟</mi><mn>0</mn>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑟</mi><mn>1</mn>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+								</li>
+								<li>
+									<a href="#関係"><math><mi>𝐵</mi></math>から<math><mi>𝐶</mi></math>への関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑆</mi>
+											<mo>,</mo>
+											<mrow>
+												<msub>
+													<mi>𝑠</mi><mn>0</mn>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑠</mi><mn>1</mn>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+								</li>
+							</ul>
+							に対し，
+							<math>
+								<msub>
+									<mi>𝑟</mi><mn>1</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑠</mi><mn>0</mn>
+								</msub>
+							</math>
+							の<a href="#引き戻し">引き戻し</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑅</mi>
+										<msub>
+											<mo>Π</mo><mi>𝐵</mi>
+										</msub>
+										<mi>𝑆</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑝</mi><mn>0</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑝</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							が存在したとする．このとき，
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑅</mi>
+										<msub>
+											<mo>Π</mo><mi>𝐵</mi>
+										</msub>
+										<mi>𝑆</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>𝑟</mi><mn>0</mn>
+												</msub>
+												<mo>∘</mo>
+												<msub>
+													<mi>𝑝</mi><mn>0</mn>
+												</msub>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<msub>
+													<mi>𝑠</mi><mn>1</mn>
+												</msub>
+												<mo>∘</mo>
+												<msub>
+													<mi>𝑝</mi><mn>1</mn>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							が<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐶</mi></math>への関係</a>となるとき，これを関係の<dfn>合成</dfn><span lang="en">(composite)</span>と呼ぶ．
+						</li>
+						<li>
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への余関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<msub>
+													<mi>𝑟</mi><mn>0</mn>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑟</mi><mn>1</mn>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+								</li>
+								<li>
+									<a href="#関係"><math><mi>𝐵</mi></math>から<math><mi>𝐶</mi></math>への余関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑆</mi>
+											<mo>,</mo>
+											<mrow>
+												<msub>
+													<mi>𝑠</mi><mn>0</mn>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑠</mi><mn>1</mn>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+								</li>
+							</ul>
+							に対し，
+							<math>
+								<msub>
+									<mi>𝑟</mi><mn>1</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑠</mi><mn>0</mn>
+								</msub>
+							</math>
+							の<a href="#引き戻し">押し出し</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑅</mi>
+										<msub>
+											<mo>⨿</mo><mi>𝐵</mi>
+										</msub>
+										<mi>𝑆</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑝</mi><mn>0</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑝</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							が存在したとする．このとき，
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑅</mi>
+										<msub>
+											<mo>⨿</mo><mi>𝐵</mi>
+										</msub>
+										<mi>𝑆</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>𝑟</mi><mn>0</mn>
+												</msub>
+												<mo>∘</mo>
+												<msub>
+													<mi>𝑝</mi><mn>0</mn>
+												</msub>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<msub>
+													<mi>𝑠</mi><mn>1</mn>
+												</msub>
+												<mo>∘</mo>
+												<msub>
+													<mi>𝑝</mi><mn>1</mn>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							が<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐶</mi></math>への余関係</a>となるとき，これを余関係の<dfn>合成</dfn><span lang="en">(composite)</span>と呼ぶ．
+						</li>
+					</ul>
+				</article>
+				<article id="直積をもつ圏の関係" class="thm">
+					<h4>直積をもつ圏の関係</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mrow>
+									<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<a href="#直積">直積</a>
+							<math>
+								<mo>(</mo>
+									<mrow>
+										<mi>𝐴</mi><mo>Π</mo><mi>𝐵</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑝</mi><mn>0</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑝</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								<mo>)</mo>
+							</math>
+							（を持つとする）
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への関係</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							と<math><mi>𝐴</mi><mo>Π</mo><mi>𝐵</mi></math>の部分対象
+							<math>
+								<mi>𝑑</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>→</mo>
+									<mrow>
+										<mi>𝐴</mi><mo>Π</mo><mi>𝐵</mi>
+									</mrow>
+								</mrow>
+							</math>
+							は一対一対応．特にこの対応において，<math><mi>𝑑</mi></math>は<a href="#直積">直積の普遍性</a>より一意的に定まる<a href="#圏">射</a>
+							<math>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>Π</mo>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+							</math>
+							に等しく，
+							<math>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑝</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑑</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑝</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑑</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への余関係</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							と<math><mi>𝐴</mi><mo>Π</mo><mi>𝐵</mi></math>の余部分対象
+							<math>
+								<mi>𝑑</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝐴</mi><mo>⨿</mo><mi>𝐵</mi>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝑅</mi>
+								</mrow>
+							</math>
+							は一対一対応．特にこの対応において，<math><mi>𝑑</mi></math>は<a href="#直積">余直積の普遍性</a>より一意的に定まる<a href="#圏">射</a>
+							<math>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>⨿</mo>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+							</math>
+							に等しく，
+							<math>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑑</mi>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑝</mi><mn>0</mn>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑑</mi>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑝</mi><mn>1</mn>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>
+							<a href="#関係"><math><mi>𝐴</mi></math>から<math><mi>𝐵</mi></math>への関係</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑑</mi><mn>0</mn>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝑑</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							に対し，<a href="#直積">直積の普遍性</a>より
+							<math display="block">
+								<mrow>
+									<mo>∃!</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑑</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>hom</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑅</mi>
+													<mo>,</mo>
+													<mrow>
+														<mi>𝐴</mi><mo>Π</mo><mi>𝐵</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>=</mo>
+										<mrow>
+											<msub>
+												<mi>𝑝</mi><mn>0</mn>
+											</msub>
+											<mo>∘</mo>
+											<mi>𝑑</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+										<mo>=</mo>
+										<mrow>
+											<msub>
+												<mi>𝑝</mi><mn>1</mn>
+											</msub>
+											<mo>∘</mo>
+											<mi>𝑑</mi>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							を満たす．<a href="#射">射</a>
+							<math>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>,</mo>
+									<msup>
+										<mi>𝑔</mi><mo>′</mo>
+									</msup>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>-</mi><mo>,</mo><mi>𝑅</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+							が
+							<math display="block">
+								<mrow>
+									<mi>𝑑</mi><mo>∘</mo><mi>𝑔</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑑</mi>
+									<mo>∘</mo>
+									<msup>
+										<mi>𝑔</mi><mo>′</mo>
+									</msup>
+								</mrow>
+							</math>
+							を満たすとき，
+							<math display="block">
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑔</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑔</mi><mo>′</mo>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑔</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑔</mi><mo>′</mo>
+										</msup>
+									</mrow>
+								</mrow>
+							</math>
+							であり，
+							<math>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+							</math>
+							は<a href="#jointlyモノ">jointlyモノ</a>だから
+							<math>
+								<mi>𝑔</mi>
+								<mo>=</mo>
+								<msup>
+									<mi>𝑔</mi><mo>′</mo>
+								</msup>
+							</math>
+							．つまり，<math><mi>𝑑</mi></math>は<a href="#モノ射">モノ射</a>．
+						</li>
+						<li>
+							<a href="#モノ射">モノ射</a>
+							<math>
+								<mi>𝑑</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑅</mi>
+									<mo>→</mo>
+									<mrow>
+										<mi>𝐴</mi><mo>Π</mo><mi>𝐵</mi>
+									</mrow>
+								</mrow>
+							</math>
+							に対し，
+							<a href="#射">射</a>
+							<math>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>,</mo>
+									<msup>
+										<mi>𝑔</mi><mo>′</mo>
+									</msup>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>-</mi><mo>,</mo><mi>𝑅</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+							が
+							<math display="block">
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑝</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑑</mi>
+										<mo>∘</mo>
+										<mi>𝑔</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑝</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑑</mi>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑔</mi><mo>′</mo>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑝</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑑</mi>
+										<mo>∘</mo>
+										<mi>𝑔</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑝</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑑</mi>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑔</mi><mo>′</mo>
+										</msup>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすとき，
+							<a href="#直積">直積の普遍性</a>より，
+							<math display="block">
+								<mrow>
+									<mi>𝑑</mi><mo>∘</mo><mi>𝑔</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑑</mi>
+									<mo>∘</mo>
+									<msup>
+										<mi>𝑔</mi><mo>′</mo>
+									</msup>
+								</mrow>
+							</math>
+							を満たす．<math><mi>𝑑</mi></math>は<a href="#モノ射">モノ射</a>だから，
+							<math>
+								<mi>𝑔</mi>
+								<mo>=</mo>
+								<msup>
+									<mi>𝑔</mi><mo>′</mo>
+								</msup>
+							</math>
+							つまり，
+							<math>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+							</math>
+							は<a href="#jointlyモノ">jointlyモノ</a>．
+						</li>
+					</ul>
+				</article>
+				<article id="反射関係" class="dfn">
+					<h4>反射関係</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mi>𝐴</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>上の関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+								</li>
+								<li>
+									共通の<a href="#同型射">切断</a>
+									<math>
+										<mi>𝜌</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝐴</mi><mo>→</mo><mi>𝑅</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							のことを<dfn>（内部）反射関係</dfn><span lang="en">((internal) reflexivity)</span>と呼ぶ．つまり以下を満たす：
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+									<mo>∘</mo>
+									<mi>𝜌</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+									<mo>∘</mo>
+									<mi>𝜌</mi>
+								</mrow>
+								<mo>=</mo>
+								<msub>
+									<mi>id</mi><mi>𝐴</mi>
+								</msub>
+							</math>
+						</li>
+						<li>
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>上の余関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+								</li>
+								<li>
+									共通の<a href="#同型射">retraction</a>
+									<math>
+										<mi>𝜌</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝑅</mi><mo>→</mo><mi>𝐴</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							のことを<dfn>（内部）反射余関係</dfn><span lang="en">((internal) co-reflexive)</span>と呼ぶ．つまり，以下を満たす：
+							<math display="block">
+								<mrow>
+									<mi>𝜌</mi>
+									<mo>∘</mo>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝜌</mi>
+									<mo>∘</mo>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<msub>
+									<mi>id</mi><mi>𝐴</mi>
+								</msub>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="対称関係" class="dfn">
+					<h4>対称関係</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mi>𝐴</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝐴</mi></math>上の<dfn>（内部）対称関係</dfn><span lang="en">((internal) symmetry)</span>とは以下のデータからなる：
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>上の関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+								</li>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝜎</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝑅</mi><mo>→</mo><mi>𝑅</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは以下を満たす：
+							<math display="block">
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝜎</mi>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝜎</mi>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝐴</mi></math>上の<dfn>（内部）対称余関係</dfn><span lang="en">((internal) cosymmetry)</span>とは以下のデータからなる：
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>上の余関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+								</li>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝜎</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝑅</mi><mo>→</mo><mi>𝑅</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは以下を満たす：
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mi>𝜎</mi>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝜎</mi>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="推移関係" class="dfn">
+					<h4>推移関係</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mi>𝐴</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝐴</mi></math>上の<dfn>（内部）推移関係</dfn><span lang="en">((internal) transitivity)</span>とは以下のデータからなる：
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>上の関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									で
+									<math>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</math>
+									が<a href="#引き戻し">引き戻し</a>を持つもの
+								</li>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝜏</mi>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑅</mi>
+												<msub>
+													<mo>Π</mo><mi>𝐴</mi>
+												</msub>
+												<mi>𝑅</mi>
+											</mrow>
+											<mo>→</mo>
+											<mi>𝑅</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは
+							<math>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+							</math>
+							の<a href="#引き戻し">引き戻し</a>
+							<math>
+								<mi>𝑅</mi>
+								<msub>
+									<mo>Π</mo><mi>𝐴</mi>
+								</msub>
+								<mi>𝑅</mi>
+							</math>
+							の<a href="#引き戻し">射影</a>
+							<math>
+								<msub>
+									<mi>𝑝</mi><mn>0</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑝</mi><mn>1</mn>
+								</msub>
+							</math>
+							に対し，以下を満たす：
+							<math display="block">
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝜏</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑝</mi><mn>0</mn>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝜏</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑝</mi><mn>1</mn>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝐴</mi></math>上の<dfn>（内部）推移余関係</dfn><span lang="en">((internal) cotransitivity)</span>とは以下のデータからなる：
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>上の余関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									で
+									<math>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</math>
+									が<a href="#引き戻し">押し出し</a>を持つもの
+								</li>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝜏</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>→</mo>
+											<mrow>
+												<mi>𝑅</mi>
+												<msub>
+													<mo>⨿</mo><mi>𝐴</mi>
+												</msub>
+												<mi>𝑅</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは
+							<math>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+							</math>
+							の<a href="#引き戻し">押し出し</a>
+							<math>
+								<mi>𝑅</mi>
+								<msub>
+									<mo>⨿</mo><mi>𝐴</mi>
+								</msub>
+								<mi>𝑅</mi>
+							</math>
+							の<a href="#引き戻し">余射影</a>
+							<math>
+								<msub>
+									<mi>𝑝</mi><mn>0</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑝</mi><mn>1</mn>
+								</msub>
+							</math>
+							に対し，以下を満たす：
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mi>𝜏</mi>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑝</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝜏</mi>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑝</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="合同" class="dfn">
+					<h4>合同</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mi>𝐴</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝐴</mi></math>上の<dfn>（内部）同値関係</dfn><span lang="en">((internal) equivalence relation)</span>または<dfn>合同</dfn><span lang="en">(congruence)</span>とは以下のデータからなる：
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>上の関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									で
+									<math>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</math>
+									が<a href="#引き戻し">引き戻し</a>を持つもの
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</math>
+									共通の<a href="#同型射">切断</a>
+									<math>
+										<mi>𝜌</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝐴</mi><mo>→</mo><mi>𝑅</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝜎</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝑅</mi><mo>→</mo><mi>𝑅</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝜏</mi>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑅</mi>
+												<msub>
+													<mo>Π</mo><mi>𝐴</mi>
+												</msub>
+												<mi>𝑅</mi>
+											</mrow>
+											<mo>→</mo>
+											<mi>𝑅</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは以下を満たす：
+							<ul>
+								<li>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜌</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は<a href="#反射関係">反射関係</a>
+								</li>
+								<li>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜎</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は<a href="#対称関係">対称関係</a>
+								</li>
+								<li>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜏</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は<a href="#推移関係">推移関係</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<math><mi>𝐴</mi></math>上の<dfn>（内部）同値余関係</dfn><span lang="en">((internal) equivalence co-relation)</span>または<dfn>余合同</dfn><span lang="en">(cocongruence)</span>とは以下のデータからなる：
+							<ul>
+								<li>
+									<a href="#関係"><math><mi>𝐴</mi></math>上の関係</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									で
+									<math>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</math>
+									が<a href="#引き戻し">押し出し</a>を持つもの
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+									</math>
+									共通の<a href="#同型射">retraction</a>
+									<math>
+										<mi>𝜌</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝑅</mi><mo>→</mo><mi>𝐴</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝜎</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝑅</mi><mo>→</mo><mi>𝑅</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝜏</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>→</mo>
+											<mrow>
+												<mi>𝑅</mi>
+												<msub>
+													<mo>⨿</mo><mi>𝐴</mi>
+												</msub>
+												<mi>𝑅</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは以下を満たす：
+							<ul>
+								<li>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜌</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は<a href="#反射関係">反射余関係</a>
+								</li>
+								<li>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜎</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は<a href="#対称関係">対称余関係</a>
+								</li>
+								<li>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑅</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑑</mi><mn>0</mn>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝑑</mi><mn>1</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝜏</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は<a href="#推移関係">推移余関係</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article id="商対象" class="dfn">
+					<h4>商対象</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mi>𝐴</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li><a href="#合同"><math><mi>𝐴</mi></math>上の合同</a>の<a href="#等化子">余等化子</a>を（存在すれば）<dfn>商対象</dfn><span lang="en">(quotient object)</span>と呼ぶ．</li>
+						<li><a href="#合同"><math><mi>𝐴</mi></math>上の余合同</a>の<a href="#等化子">等化子</a>を（存在すれば）<dfn>余商対象</dfn><span lang="en">(coquotient object)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+				<article id="核対は合同" class="thm">
+					<h4>核対は合同</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mi>𝐴</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<a href="#圏">射</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>→</mo><mi>-</mi>
+								</mrow>
+							</math>
+							に対し，<a href="#核対">核対</a>は（存在すれば）<math><mi>𝑓</mi></math>の<a href="#合同">合同</a>．
+						</li>
+						<li>
+							<a href="#圏">射</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>-</mi><mo>→</mo><mi>𝐴</mi>
+								</mrow>
+							</math>
+							に対し，<a href="#核対">余核対</a>は（存在すれば）<math><mi>𝑓</mi></math>の<a href="#合同">余合同</a>．
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						<math><mi>𝑓</mi></math>の<a href="#核対">核対</a><math><mi>𝑅</mi></math>の<a href="#核対">射影</a>
+						<math>
+							<mrow>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+							</mrow>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝑅</mi><mo>→</mo><mi>𝐴</mi>
+							</mrow>
+						</math>
+						に対し，<a href="#引き戻し">核対の普遍性</a>より，以下を満たす<a href="#圏">射</a>
+						<math>
+							<mi>𝜌</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝐴</mi><mo>→</mo><mi>𝑅</mi>
+							</mrow>
+						</math>
+						が一意的に存在する：
+						<math display="block">
+							<mrow>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>∘</mo>
+								<mi>𝜌</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+								<mo>∘</mo>
+								<mi>𝜌</mi>
+							</mrow>
+							<mo>=</mo>
+							<msub>
+								<mi>id</mi><mi>𝐴</mi>
+							</msub>
+						</math>
+						同様に，以下を満たす<a href="#圏">射</a>
+						<math>
+							<mi>𝜎</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝑅</mi><mo>→</mo><mi>𝑅</mi>
+							</mrow>
+						</math>
+						が一意的に存在する：
+						<math display="block">
+							<mrow>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+									<mo>∘</mo>
+									<mi>𝜎</mi>
+								</mrow>
+								<mo>=</mo>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+									<mo>∘</mo>
+									<mi>𝜎</mi>
+								</mrow>
+								<mo>=</mo>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+							</mrow>
+						</math>
+						最後に，
+						<math>
+							<msub>
+								<mi>𝑑</mi><mn>0</mn>
+							</msub>
+							<mo>,</mo>
+							<msub>
+								<mi>𝑑</mi><mn>1</mn>
+							</msub>
+						</math>
+						の<a href="#引き戻し">引き戻し</a>の<a href="#引き戻し">射影</a>
+						<math>
+							<msub>
+								<mi>𝑝</mi><mn>0</mn>
+							</msub>
+							<mo>,</mo>
+							<msub>
+								<mi>𝑝</mi><mn>1</mn>
+							</msub>
+						</math>
+						とすると，
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>0</mn>
+										</msub>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑝</mi><mn>0</mn>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>∘</mo>
+								<mi>𝑓</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>𝑑</mi><mn>0</mn>
+								</msub>
+								<mo>∘</mo>
+								<msub>
+									<mi>𝑝</mi><mn>1</mn>
+								</msub>
+								<mo>∘</mo>
+								<mi>𝑓</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>𝑑</mi><mn>1</mn>
+								</msub>
+								<mo>∘</mo>
+								<msub>
+									<mi>𝑝</mi><mn>0</mn>
+								</msub>
+								<mo>∘</mo>
+								<mi>𝑓</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝑑</mi><mn>1</mn>
+										</msub>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝑝</mi><mn>1</mn>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>∘</mo>
+								<mi>𝑓</mi>
+							</mrow>
+						</math>
+						より，<a href="#引き戻し">核対の普遍性</a>から，以下を満たす<a href="#圏">射</a>
+						<math>
+							<mi>𝜏</mi>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑅</mi>
+									<msub>
+										<mo>Π</mo><mi>𝐴</mi>
+									</msub>
+									<mi>𝑅</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝑅</mi>
+							</mrow>
+						</math>
+						が一意的に存在する：
+						<math display="block">
+							<mrow>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+									<mo>∘</mo>
+									<mi>𝜏</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>0</mn>
+									</msub>
+									<mo>∘</mo>
+									<msub>
+										<mi>𝑝</mi><mn>0</mn>
+									</msub>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+									<mo>∘</mo>
+									<mi>𝜏</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑑</mi><mn>1</mn>
+									</msub>
+									<mo>∘</mo>
+									<msub>
+										<mi>𝑝</mi><mn>1</mn>
+									</msub>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article id="有効合同" class="dfn">
+					<h4>有効合同</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mi>𝐴</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>ある<a href="#圏">射</a>の<a href="#核対">核対</a>となっている<a href="#合同"><math><mi>𝐴</mi></math>上の合同</a>を<dfn>有効</dfn><span lang="en">(effective)</span>と呼ぶ．</li>
+						<li>ある<a href="#圏">射</a>の<a href="#核対">余核対</a>となっている<a href="#合同"><math><mi>𝐴</mi></math>上の余合同</a>を<dfn>有効</dfn><span lang="en">(effective)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+			</section>
 			<section>
 				<h3>持ち上げ性・直交性と分解系</h3>
 				<article id="持ち上げ" class="dfn">
@@ -20128,17 +22635,12 @@
 										<mi>𝑓</mi>
 										<mo>∈</mo>
 										<mrow>
-											<msub>
-												<mi>hom</mi>
-												<mi>𝒜</mi>
-											</msub>
+											<mi>hom</mi>
 											<mo>&af;</mo>
 											<mrow>
 												<mo>(</mo>
 												<mrow>
-													<mi>𝐴</mi>
-													<mo>,</mo>
-													<mi>𝐵</mi>
+													<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
 												</mrow>
 												<mo>)</mo>
 											</mrow>
