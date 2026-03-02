@@ -7104,9 +7104,7 @@
 								<mrow>
 									<mo>(</mo>
 									<mrow>
-										<mi>𝐹</mi>
-										<mo>⇒</mo>
-										<mi>𝑋</mi>
+										<mi>𝐹</mi><mo>⇒</mo><mi>𝑋</mi>
 									</mrow>
 									<mo>)</mo>
 								</mrow>
@@ -7114,9 +7112,7 @@
 								<mrow>
 									<mo>(</mo>
 									<mrow>
-										<mi>𝐹</mi>
-										<mo>/</mo>
-										<mi>𝑋</mi>
+										<mi>𝐹</mi><mo>/</mo><mi>𝑋</mi>
 									</mrow>
 									<mo>)</mo>
 								</mrow>
@@ -7189,9 +7185,7 @@
 										<mrow>
 											<mo>(</mo>
 											<mrow>
-												<mi>𝐴</mi>
-												<mo>,</mo>
-												<mi>𝑔</mi>
+												<mi>𝐴</mi><mo>,</mo><mi>𝑔</mi>
 											</mrow>
 											<mo>)</mo>
 										</mrow>
@@ -7200,13 +7194,11 @@
 											<mo>(</mo>
 											<mrow>
 												<msup>
-													<mi>𝐴</mi>
-													<mo>′</mo>
+													<mi>𝐴</mi><mo>′</mo>
 												</msup>
 												<mo>,</mo>
 												<msup>
-													<mi>𝑔</mi>
-													<mo>′</mo>
+													<mi>𝑔</mi><mo>′</mo>
 												</msup>
 											</mrow>
 											<mo>)</mo>
@@ -7218,8 +7210,7 @@
 										<mo>∈</mo>
 										<mrow>
 											<msub>
-												<mi>hom</mi>
-												<mi>𝒜</mi>
+												<mi>hom</mi><mi>𝒜</mi>
 											</msub>
 											<mo>&af;</mo>
 											<mrow>
@@ -7228,8 +7219,7 @@
 													<mi>𝐴</mi>
 													<mo>,</mo>
 													<msup>
-														<mi>𝐴</mi>
-														<mo>′</mo>
+														<mi>𝐴</mi><mo>′</mo>
 													</msup>
 												</mrow>
 												<mo>)</mo>
@@ -7240,17 +7230,14 @@
 									<math display="block">
 										<mrow>
 											<msup>
-												<mi>𝑔</mi>
-												<mo>′</mo>
+												<mi>𝑔</mi><mo>′</mo>
 											</msup>
 											<mo>∘</mo>
 											<mrow>
 												<mi>𝐹</mi>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>𝑓</mi>
-													<mo>)</mo>
+													<mo>(</mo><mi>𝑓</mi><mo>)</mo>
 												</mrow>
 											</mrow>
 										</mrow>
@@ -7276,9 +7263,7 @@
 												<mi>𝐹</mi>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>𝐴</mi>
-													<mo>)</mo>
+													<mo>(</mo><mi>𝐴</mi><mo>)</mo>
 												</mrow>
 											</math>
 										</foreignObject>
@@ -7289,8 +7274,7 @@
 												<mrow>
 													<mo>(</mo>
 													<msup>
-														<mi>𝐴</mi>
-														<mo>′</mo>
+														<mi>𝐴</mi><mo>′</mo>
 													</msup>
 													<mo>)</mo>
 												</mrow>
@@ -22496,6 +22480,772 @@
 				</article>
 			</section>
 			<section>
+				<h3>エピ・モノ分解系</h3>
+				<article id="像" class="dfn">
+					<h4>像</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">対象</a>
+							<math>
+								<mrow>
+									<mi>𝐴</mi>
+									<mo>,</mo>
+									<msup>
+										<mi>𝐴</mi><mo>′</mo>
+									</msup>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ob</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<a href="#圏">射</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>∈</mo>
+								<mrow>
+									<msub>
+										<mi>hom</mi><mi>𝒜</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝐴</mi>
+											<mo>,</mo>
+											<msup>
+												<mi>𝐴</mi><mo>′</mo>
+											</msup>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑓</mi></math>の<dfn>像</dfn><span lang="en">(image)</span>とは，以下のデータからなる：
+							<ul>
+								<li>
+									<a href="#圏">対象</a>
+									<math>
+										<mrow>
+											<mi>im</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mi>ob</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#モノ射">モノ射</a>
+									<math>
+										<mi>𝑚</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>hom</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mi>im</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<msup>
+														<mi>𝐴</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは以下を満たす：
+							<ul>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝑒</mi>
+										<mo>∈</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi><mi>𝒜</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝐴</mi>
+													<mo>,</mo>
+													<mrow>
+														<mi>im</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									が存在し，
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑒</mi><mo>,</mo><mi>𝑚</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は
+									<math><mi>𝑓</mi></math>
+									を分解する：
+									<math display="block">
+										<mi>𝑓</mi>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑚</mi><mo>∘</mo><mi>𝑒</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									別の<a href="#圏">射</a>
+									<math>
+										<msup>
+											<mi>𝑒</mi><mo>′</mo>
+										</msup>
+										<mo>∈</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi><mi>𝒜</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝐴</mi><mo>,</mo><mi>𝑋</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									と<a href="#モノ射">モノ射</a>
+									<math>
+										<msup>
+											<mi>𝑚</mi><mo>′</mo>
+										</msup>
+										<mo>∈</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi><mi>𝒜</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑋</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝐴</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									による
+									<math><mi>𝑓</mi></math>
+									の分解
+									<math>
+										<mi>𝑓</mi>
+										<mo>=</mo>
+										<mrow>
+											<msup>
+												<mi>𝑚</mi><mo>′</mo>
+											</msup>
+											<mo>∘</mo>
+											<msup>
+												<mi>𝑒</mi><mo>′</mo>
+											</msup>
+										</mrow>
+									</math>
+									に対し，以下の同値な条件のいずれか（ゆえに全て）を満たす：
+									<ul>
+										<li>
+											<math><msup><mi>𝑚</mi><mo>′</mo></msup></math>
+											は
+											<math><mi>𝑚</mi></math>
+											を通して分解する．
+										</li>
+										<li>
+											<math><msup><mi>𝑚</mi><mo>′</mo></msup></math>
+											は
+											<math><mi>𝑚</mi></math>
+											を通して一意的に分解する．
+										</li>
+									</ul>
+								</li>
+							</ul>
+							つまり，図式としては以下のように表される．
+						</li>
+						<li>
+							<math><mi>𝑓</mi></math>の<dfn>余像</dfn><span lang="en">(coimage)</span>とは，以下のデータからなる：
+							<ul>
+								<li>
+									<a href="#圏">対象</a>
+									<math>
+										<mrow>
+											<mi>coim</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mi>ob</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#モノ射">エピ射</a>
+									<math>
+										<mi>𝑒</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>hom</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝐴</mi>
+													<mo>,</mo>
+													<mrow>
+														<mi>coim</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは以下を満たす：
+							<ul>
+								<li>
+									<a href="#圏">射</a>
+									<math>
+										<mi>𝑚</mi>
+										<mo>∈</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi><mi>𝒜</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mi>coim</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<msup>
+														<mi>𝐴</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									が存在し，
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑒</mi><mo>,</mo><mi>𝑚</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は
+									<math><mi>𝑓</mi></math>
+									を分解する：
+									<math display="block">
+										<mi>𝑓</mi>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑚</mi><mo>∘</mo><mi>𝑒</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									別の<a href="#モノ射">エピ射</a>
+									<math>
+										<msup>
+											<mi>𝑒</mi><mo>′</mo>
+										</msup>
+										<mo>∈</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi><mi>𝒜</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝐴</mi><mo>,</mo><mi>𝑋</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									と<a href="#圏">射</a>
+									<math>
+										<msup>
+											<mi>𝑚</mi><mo>′</mo>
+										</msup>
+										<mo>∈</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi><mi>𝒜</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑋</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝐴</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									による
+									<math><mi>𝑓</mi></math>
+									の分解
+									<math>
+										<mi>𝑓</mi>
+										<mo>=</mo>
+										<mrow>
+											<msup>
+												<mi>𝑚</mi><mo>′</mo>
+											</msup>
+											<mo>∘</mo>
+											<msup>
+												<mi>𝑔</mi><mo>′</mo>
+											</msup>
+										</mrow>
+									</math>
+									に対し，以下の同値な条件のいずれか（ゆえに全て）を満たす：
+									<ul>
+										<li>
+											<math><msup><mi>𝑒</mi><mo>′</mo></msup></math>
+											は
+											<math><mi>𝑒</mi></math>
+											を通して分解する．
+										</li>
+										<li>
+											<math><msup><mi>𝑒</mi><mo>′</mo></msup></math>
+											は
+											<math><mi>𝑒</mi></math>
+											を通して一意的に分解する．
+										</li>
+									</ul>
+								</li>
+							</ul>
+							つまり，図式としては以下のように表される．
+						</li>
+					</ul>
+				</article>
+				<article id="等化子を持つ圏における像" class="thm">
+					<h4>等化子を持つ圏における像</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#圏">射</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与えると，以下を満たす；</p>
+					<ul>
+						<li>
+							<math><mi>𝒜</mi></math>が<a href="#等化子">等化子</a>を持つとき，<math><mi>𝑓</mi></math>の<a href="#像">像</a>による分解
+							<math display="block">
+								<mi>𝑓</mi>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>im</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>∘</mo>
+									<mi>𝑒</mi>
+								</mrow>
+							</math>
+							に対し，<math><mi>𝑒</mi></math>は<a href="#極値的モノ射">極値的エピ射</a>
+						</li>
+						<li>
+							<math><mi>𝒜</mi></math>が<a href="#等化子">余等化子</a>を持つとき，<math><mi>𝑓</mi></math>の<a href="#像">余像</a>による分解
+							<math display="block">
+								<mi>𝑓</mi>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑚</mi>
+									<mo>∘</mo>
+									<mrow>
+										<mi>coim</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							に対し，<math><mi>𝑚</mi></math>は<a href="#極値的モノ射">極値的モノ射</a>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						<math>
+							<mi>𝑓</mi>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>im</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>∘</mo>
+								<mi>𝑒</mi>
+							</mrow>
+						</math>
+						に対し，<a href="#圏">射</a>
+						<math>
+							<mrow>
+								<mi>ℎ</mi>
+								<mo>,</mo>
+								<msup>
+									<mi>ℎ</mi><mo>′</mo>
+								</msup>
+							</mrow>
+							<mo>∈</mo>
+							<mrow>
+								<mi>hom</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+						が
+						<math display="block">
+							<mrow>
+								<mi>ℎ</mi><mo>∘</mo><mi>𝑒</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msup>
+									<mi>ℎ</mi><mo>′</mo>
+								</msup>
+								<mo>∘</mo>
+								<mi>𝑒</mi>
+							</mrow>
+						</math>
+						を満たすとき，
+						<math>
+							<mi>ℎ</mi>
+							<mo>,</mo>
+							<msup>
+								<mi>ℎ</mi><mo>′</mo>
+							</msup>
+						</math>
+						の<a href="#等化子">等化子</a>を
+						<math><mi>𝑚</mi></math>
+						とすると，<a href="#等化子">等化子の普遍性</a>より
+						<math display="block">
+							<mrow>
+								<mo>∃!</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mover>
+										<mi>𝑒</mi><mo>‾</mo>
+									</mover>
+									<mo>∈</mo>
+									<mrow>
+										<mi>hom</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mi>𝑒</mi>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑚</mi>
+									<mo>∘</mo>
+									<mover>
+										<mi>𝑒</mi><mo>‾</mo>
+									</mover>
+								</mrow>
+							</mrow>
+						</math>
+						となる．つまり，
+						<math display="block">
+							<mi>𝑓</mi>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>im</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>∘</mo>
+								<mi>𝑒</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mi>im</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>∘</mo>
+										<mi>𝑚</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>∘</mo>
+								<mover>
+									<mi>𝑒</mi><mo>‾</mo>
+								</mover>
+							</mrow>
+						</math>
+						となる．<math><mi>𝑚</mi></math>は等化子なのでモノ射であり，
+						<math>
+							<mi>im</mi>
+							<mo>&af;</mo>
+							<mrow>
+								<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+							</mrow>
+						</math>
+						は<a href="#像">像の定義</a>より<a href="#モノ射">モノ射</a>なので，
+						<math>
+							<mrow>
+								<mi>im</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>∘</mo>
+							<mi>𝑚</mi>
+						</math>
+						は<a href="#モノ射">モノ射</a>となる．よって<a href="#像">像の定義</a>より
+						<math>
+							<mi>𝑒</mi>
+							<mo>⊥</mo>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<mrow>
+										<mi>im</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>∘</mo>
+									<mi>𝑚</mi>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+						</math>
+						だから，
+						<math display="block">
+							<mrow>
+								<mo>∃!</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>hom</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>im</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>∘</mo>
+									<mi>𝑚</mi>
+									<mo>∘</mo>
+									<mi>𝑔</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>im</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+						となる．
+						<math>
+							<mrow>
+								<mi>im</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>∘</mo>
+							<mi>𝑚</mi>
+						</math>
+						は<a href="#モノ射">モノ射</a>だから，<math><mi>𝑚</mi><mo>∘</mo><mi>𝑔</mi></math>は<a href="#圏">恒等射</a>．つまり，<math><mi>𝑚</mi></math>は<a href="#同型射">同型射</a>となる．<math><mi>𝑚</mi></math>は
+						<math>
+							<mi>ℎ</mi>
+							<mo>,</mo>
+							<msup>
+								<mi>ℎ</mi><mo>′</mo>
+							</msup>
+						</math>
+						の<a href="#等化子">等化子</a>だったから，
+						<math>
+							<mrow>
+								<mi>ℎ</mi><mo>∘</mo><mi>𝑚</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msup>
+									<mi>ℎ</mi><mo>′</mo>
+								</msup>
+								<mo>∘</mo>
+								<mi>𝑚</mi>
+							</mrow>
+						</math>
+						より
+						<math display="block">
+							<mi>ℎ</mi>
+							<mo>=</mo>
+							<msup>
+								<mi>ℎ</mi><mo>′</mo>
+							</msup>
+						</math>
+						となる．
+						<math>
+							<mi>𝑒</mi>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑚</mi>
+								<mo>∘</mo>
+								<mover>
+									<mi>𝑒</mi><mo>‾</mo>
+								</mover>
+							</mrow>
+						</math>
+						と合わせると，
+						<math><mi>𝑒</mi></math>
+						は<a href="#極値的モノ射">極値的エピ射</a>となる．
+					</p>
+				</article>
+				<article id="エピ・モノ分解系" class="dfn">
+					<h4>エピ・モノ分解系</h4>
+					<ul>
+						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
+						<li>
+							<a href="#直交分解系">直交分解系</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>ℰ</mi><mo>,</mo><mi>ℳ</mi>
+								</mrow>
+								<mo>)</mo>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p><math><mi>ℰ</mi></math>の任意の<a href="#射">射</a>が<a href="#モノ射">エピ射</a>であり，<math><mi>ℳ</mi></math>の任意の<a href="#射">射</a>が<a href="#モノ射">モノ射</a>であるとき，<dfn>エピ・モノ分解系</dfn><span lang="en">(epi-mono factorization system)</span>と呼ぶ．</p>
+				</article>
+			</section>
+			<section>
 				<h3>モノ射・エピ射の種類</h3>
 				<article id="有効モノ射" class="dfn">
 					<h4>有効モノ・エピ射</h4>
@@ -22549,27 +23299,9 @@
 						<li>
 							<math><mi>𝑓</mi></math>が<dfn>有効モノ射</dfn><span lang="en">(effective monomorphism)</span>であるとは，以下を満たすことを言う：
 							<ul>
+								<li><math><mi>𝑓</mi></math>は<a href="#核対">余核対</a>を持つ．</li>
 								<li>
-									<math><mi>𝑓</mi></math>は，<a href="#核対">余核対</a>
-									<math>
-										<mi>coker</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-										</mrow>
-									</math>
-									を持つ．
-								</li>
-								<li>
-									<math><mi>𝑓</mi></math>は，
-									<math>
-										<mi>coker</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-										</mrow>
-									</math>
-									の<a href="#極限">余射影</a>
+									<math><mi>𝑓</mi></math>は<a href="#核対">余核対</a>の<a href="#極限">余射影</a>
 									<math>
 										<msub>
 											<mi>𝑝</mi>
@@ -22587,26 +23319,10 @@
 							<math><mi>𝑓</mi></math>が<dfn>有効エピ射</dfn><span lang="en">(effective epimorphism)</span>であるとは，以下を満たすことを言う：
 							<ul>
 								<li>
-									<math><mi>𝑓</mi></math>は，<a href="#核対">核対</a>
-									<math>
-										<mi>ker</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-										</mrow>
-									</math>
-									を持つ．
+									<math><mi>𝑓</mi></math>は<a href="#核対">核対</a>を持つ．
 								</li>
 								<li>
-									<math><mi>𝑓</mi></math>は，
-									<math>
-										<mi>ker</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-										</mrow>
-									</math>
-									の<a href="#極限">射影</a>
+									<math><mi>𝑓</mi></math>は<a href="#核対">核対</a>の<a href="#極限">射影</a>
 									<math>
 										<msub>
 											<mi>𝑝</mi><mi>𝐴</mi>
@@ -22718,28 +23434,7 @@
 									</math>
 								</li>
 							</ul>
-							<p>
-								が存在し，<math><mi>𝑓</mi></math>が<a href="#等化子">等化子</a>に等しいことを言う：
-								<math display="block">
-									<mi>𝑓</mi>
-									<mo>=</mo>
-									<mrow>
-										<mi>eq</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝑔</mi>
-												<mo>,</mo>
-												<msup>
-													<mi>𝑔</mi><mo>′</mo>
-												</msup>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</math>
-							</p>
+							<p>が存在し，<math><mi>𝑓</mi></math>が<a href="#等化子">等化子</a>の<a href="#等化子">射影</a>に等しいことを言う．</p>
 						</li>
 						<li>
 							<p><math><mi>𝑓</mi></math>が<dfn>正則エピ射</dfn><span lang="en">(regular monomorphism)</span>であるとは，</p>
@@ -22789,28 +23484,7 @@
 									</math>
 								</li>
 							</ul>
-							<p>
-								が存在し，<math><mi>𝑓</mi></math>が<a href="#等化子">余等化子</a>に等しいことを言う：
-								<math display="block">
-									<mi>𝑓</mi>
-									<mo>=</mo>
-									<mrow>
-										<mi>coeq</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝑔</mi>
-												<mo>,</mo>
-												<msup>
-													<mi>𝑔</mi><mo>′</mo>
-												</msup>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</math>
-							</p>
+							<p>が存在し，<math><mi>𝑓</mi></math>が<a href="#等化子">余等化子</a>の<a href="#等化子">余射影</a>に等しいことを言う．</p>
 						</li>
 					</ul>
 				</article>
@@ -23971,7 +24645,7 @@
 										</msub>
 										<mi>𝐴</mi>
 									</math>
-									の<a href="#極限">射影</a>
+									の<a href="#引き戻し">射影</a>
 									<math>
 										<msub>
 											<mi>𝑝</mi><mn>1</mn>
@@ -24329,690 +25003,78 @@
 						<li>
 							<ul>
 								<li>
+									<math><mi>𝑓</mi></math>の正則エピモノ分解を
+									<math>
+										<mi>𝑓</mi>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑚</mi><mo>∘</mo><mi>𝑒</mi>
+										</mrow>
+									</math>
+									とする．<math><mi>𝑓</mi></math>の<a href="#核対">核対</a>の<a href="#引き戻し">射影</a>を
+									<math>
+										<mi>𝑝</mi>
+										<mo>,</mo>
+										<msup>
+											<mi>𝑝</mi><mo>′</mo>
+										</msup>
+									</math>
+									とすると，
+									<math display="block">
+										<mrow>
+											<mi>𝑚</mi><mo>∘</mo><mi>𝑒</mi><mo>∘</mo><mi>𝑝</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑓</mi><mo>∘</mo><mi>𝑝</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>∘</mo>
+											<msup>
+												<mi>𝑝</mi><mo>′</mo>
+											</msup>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑚</mi>
+											<mo>∘</mo>
+											<mi>𝑒</mi>
+											<mo>∘</mo>
+											<msup>
+												<mi>𝑝</mi><mo>′</mo>
+											</msup>
+										</mrow>
+									</math>
+									を満たすが，<math><mi>𝑚</mi></math>は<a href="#モノ射">モノ射</a>なので，
+									<math display="block">
+										<mrow>
+											<mi>𝑒</mi><mo>∘</mo><mi>𝑝</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑒</mi>
+											<mo>∘</mo>
+											<msup>
+												<mi>𝑝</mi><mo>′</mo>
+											</msup>
+										</mrow>
+									</math>
+									となる．つまり，
+									<math>
+										<mi>𝑝</mi>
+										<mo>,</mo>
+										<msup>
+											<mi>𝑝</mi><mo>′</mo>
+										</msup>
+									</math>
+									は<math><mi>𝑒</mi></math>の<a href="#核対">核対</a>の<a href="#引き戻し">射影</a>にもなっている．<math><mi>𝑒</mi></math>は<a href="#正則エピ射">正則エピ射</a>なので，<math><mi>𝑝</mi><mo>,</mo><msup><mi>𝑝</mi><mo>′</mo></msup></math>の<a href="#等化子">等化子</a>に等しい．
 								</li>
 								<li>自明らしい．</li>
 							</ul>
 						</li>
 					</ul>
-				</article>
-				<article id="像" class="dfn">
-					<h4>像</h4>
-					<ul>
-						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
-						<li>
-							<a href="#圏">対象</a>
-							<math>
-								<mrow>
-									<mi>𝐴</mi>
-									<mo>,</mo>
-									<msup>
-										<mi>𝐴</mi><mo>′</mo>
-									</msup>
-								</mrow>
-								<mo>∈</mo>
-								<mrow>
-									<mi>ob</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<a href="#圏">射</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>∈</mo>
-								<mrow>
-									<msub>
-										<mi>hom</mi><mi>𝒜</mi>
-									</msub>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝐴</mi>
-											<mo>,</mo>
-											<msup>
-												<mi>𝐴</mi><mo>′</mo>
-											</msup>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-					<p>を与える．</p>
-					<ul>
-						<li>
-							<math><mi>𝑓</mi></math>の<dfn>像</dfn><span lang="en">(image)</span>とは，<a href="#モノ射">モノ射</a>
-							<math>
-								<mrow>
-									<mi>im</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>∈</mo>
-								<mrow>
-									<msub>
-										<mi>hom</mi><mi>𝒜</mi>
-									</msub>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑋</mi>
-											<mo>,</mo>
-											<msup>
-												<mi>𝐴</mi><mo>′</mo>
-											</msup>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							（または，その<a href="#始域">始域</a><math><mi>𝑋</mi></math>）のこと．これは以下を満たす：
-							<ul>
-								<li>
-									<a href="#圏">射</a>
-									<math>
-										<mi>𝑔</mi>
-										<mo>∈</mo>
-										<mrow>
-											<msub>
-												<mi>hom</mi><mi>𝒜</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>𝐴</mi><mo>,</mo><mi>𝑋</mi>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</math>
-									が存在し，以下を満たす：
-									<math display="block">
-										<mi>𝑓</mi>
-										<mo>=</mo>
-										<mrow>
-											<mrow>
-												<mi>im</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>∘</mo>
-											<mi>𝑔</mi>
-										</mrow>
-									</math>
-								</li>
-								<li>
-									別の<a href="#モノ射">モノ射</a>
-									<math>
-										<mi>𝑚</mi>
-										<mo>∈</mo>
-										<mrow>
-											<msub>
-												<mi>hom</mi><mi>𝒜</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<msup>
-														<mi>𝑋</mi><mo>′</mo>
-													</msup>
-													<mo>,</mo>
-													<msup>
-														<mi>𝐴</mi><mo>′</mo>
-													</msup>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</math>
-									と<a href="#圏">射</a>
-									<math>
-										<msup>
-											<mi>𝑔</mi><mo>′</mo>
-										</msup>
-										<mo>∈</mo>
-										<mrow>
-											<msub>
-												<mi>hom</mi><mi>𝒜</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>𝐴</mi>
-													<mo>,</mo>
-													<msup>
-														<mi>𝑋</mi><mo>′</mo>
-													</msup>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</math>
-									による
-									<math><mi>𝑓</mi></math>
-									の分解
-									<math>
-										<mi>𝑓</mi>
-										<mo>=</mo>
-										<mrow>
-											<mi>𝑚</mi>
-											<mo>∘</mo>
-											<msup>
-												<mi>𝑔</mi><mo>′</mo>
-											</msup>
-										</mrow>
-									</math>
-									に対し，
-									<math>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑔</mi><mo>,</mo><mi>𝑚</mi>
-										</mrow>
-										<mo>)</mo>
-									</math>
-									は以下の同値な条件のいずれか（ゆえに全て）を満たす：
-									<ul>
-										<li><a href="#持ち上げ">持ち上げ性</a>を持つ．</li>
-										<li><a href="#直交">直交性</a>を持つ．</li>
-									</ul>
-								</li>
-							</ul>
-							つまり，図式としては以下のように表される．
-						</li>
-						<li>
-							<math><mi>𝑓</mi></math>の<dfn>余像</dfn><span lang="en">(coimage)</span>とは，<a href="#モノ射">エピ射</a>
-							<math>
-								<mrow>
-									<mi>coim</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>∈</mo>
-								<mrow>
-									<msub>
-										<mi>hom</mi><mi>𝒜</mi>
-									</msub>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝐴</mi><mo>,</mo><mi>𝑋</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							（または，その<a href="#始域">終域</a><math><mi>𝑋</mi></math>）のこと．これは以下を満たす：
-							<ul>
-								<li>
-									<a href="#圏">射</a>
-									<math>
-										<mi>𝑔</mi>
-										<mo>∈</mo>
-										<mrow>
-											<msub>
-												<mi>hom</mi><mi>𝒜</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>𝑋</mi>
-													<mo>,</mo>
-													<msup>
-														<mi>𝐴</mi><mo>′</mo>
-													</msup>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</math>
-									が存在し，以下を満たす：
-									<math display="block">
-										<mi>𝑓</mi>
-										<mo>=</mo>
-										<mrow>
-											<mi>𝑔</mi>
-											<mo>∘</mo>
-											<mrow>
-												<mi>coim</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-									</math>
-								</li>
-								<li>
-									別の<a href="#モノ射">エピ射</a>
-									<math>
-										<mi>𝑒</mi>
-										<mo>∈</mo>
-										<mrow>
-											<msub>
-												<mi>hom</mi><mi>𝒜</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>𝐴</mi>
-													<mo>,</mo>
-													<msup>
-														<mi>𝑋</mi><mo>′</mo>
-													</msup>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</math>
-									と<a href="#圏">射</a>
-									<math>
-										<msup>
-											<mi>𝑔</mi><mo>′</mo>
-										</msup>
-										<mo>∈</mo>
-										<mrow>
-											<msub>
-												<mi>hom</mi><mi>𝒜</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<msup>
-														<mi>𝑋</mi><mo>′</mo>
-													</msup>
-													<mo>,</mo>
-													<msup>
-														<mi>𝐴</mi><mo>′</mo>
-													</msup>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</math>
-									による
-									<math><mi>𝑓</mi></math>
-									の分解
-									<math>
-										<mi>𝑓</mi>
-										<mo>=</mo>
-										<mrow>
-											<msup>
-												<mi>𝑔</mi><mo>′</mo>
-											</msup>
-											<mo>∘</mo>
-											<mi>𝑒</mi>
-										</mrow>
-									</math>
-									に対し，
-									<math>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑒</mi><mo>,</mo><mi>𝑔</mi>
-										</mrow>
-										<mo>)</mo>
-									</math>
-									は以下の同値な条件のいずれか（ゆえに全て）を満たす：
-									<ul>
-										<li><a href="#持ち上げ">持ち上げ性</a>を持つ．</li>
-										<li><a href="#直交">直交性</a>を持つ．</li>
-									</ul>
-								</li>
-							</ul>
-							つまり，図式としては以下のように表される．
-						</li>
-					</ul>
-				</article>
-				<article id="等化子を持つ圏における像" class="thm">
-					<h4>等化子を持つ圏における像</h4>
-					<ul>
-						<li><a href="#圏">圏</a><math><mi>𝒜</mi></math></li>
-						<li>
-							<a href="#圏">射</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>∈</mo>
-								<mrow>
-									<mi>hom</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝒜</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-					<p>を与えると，以下を満たす；</p>
-					<ul>
-						<li>
-							<math><mi>𝒜</mi></math>が<a href="#等化子">等化子</a>を持つとき，<math><mi>𝑓</mi></math>の<a href="#像">像</a>による分解
-							<math display="block">
-								<mi>𝑓</mi>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<mi>im</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>∘</mo>
-									<mi>𝑒</mi>
-								</mrow>
-							</math>
-							に対し，<math><mi>𝑒</mi></math>は<a href="#極値的モノ射">極値的エピ射</a>
-						</li>
-						<li>
-							<math><mi>𝒜</mi></math>が<a href="#等化子">余等化子</a>を持つとき，<math><mi>𝑓</mi></math>の<a href="#像">余像</a>による分解
-							<math display="block">
-								<mi>𝑓</mi>
-								<mo>=</mo>
-								<mrow>
-									<mi>𝑚</mi>
-									<mo>∘</mo>
-									<mrow>
-										<mi>coim</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-							に対し，<math><mi>𝑚</mi></math>は<a href="#極値的モノ射">極値的モノ射</a>
-						</li>
-					</ul>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p>
-						<math>
-							<mi>𝑓</mi>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mi>im</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>∘</mo>
-								<mi>𝑒</mi>
-							</mrow>
-						</math>
-						に対し，<a href="#圏">射</a>
-						<math>
-							<mrow>
-								<mi>ℎ</mi>
-								<mo>,</mo>
-								<msup>
-									<mi>ℎ</mi><mo>′</mo>
-								</msup>
-							</mrow>
-							<mo>∈</mo>
-							<mrow>
-								<mi>hom</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝒜</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						が
-						<math display="block">
-							<mrow>
-								<mi>ℎ</mi><mo>∘</mo><mi>𝑒</mi>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<msup>
-									<mi>ℎ</mi><mo>′</mo>
-								</msup>
-								<mo>∘</mo>
-								<mi>𝑒</mi>
-							</mrow>
-						</math>
-						を満たすとき，
-						<math>
-							<mi>ℎ</mi>
-							<mo>,</mo>
-							<msup>
-								<mi>ℎ</mi><mo>′</mo>
-							</msup>
-						</math>
-						の<a href="#等化子">等化子</a>を
-						<math><mi>𝑚</mi></math>
-						とすると，<a href="#等化子">等化子の普遍性</a>より
-						<math display="block">
-							<mrow>
-								<mo>∃!</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mover>
-										<mi>𝑒</mi><mo>‾</mo>
-									</mover>
-									<mo>∈</mo>
-									<mrow>
-										<mi>hom</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝒜</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mi>𝑒</mi>
-								<mo>=</mo>
-								<mrow>
-									<mi>𝑚</mi>
-									<mo>∘</mo>
-									<mover>
-										<mi>𝑒</mi><mo>‾</mo>
-									</mover>
-								</mrow>
-							</mrow>
-						</math>
-						となる．つまり，
-						<math display="block">
-							<mi>𝑓</mi>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mi>im</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>∘</mo>
-								<mi>𝑒</mi>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mrow>
-											<mi>im</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>∘</mo>
-										<mi>𝑚</mi>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-								<mo>∘</mo>
-								<mover>
-									<mi>𝑒</mi><mo>‾</mo>
-								</mover>
-							</mrow>
-						</math>
-						となる．<math><mi>𝑚</mi></math>は等化子なのでモノ射であり，
-						<math>
-							<mi>im</mi>
-							<mo>&af;</mo>
-							<mrow>
-								<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-							</mrow>
-						</math>
-						は<a href="#像">像の定義</a>より<a href="#モノ射">モノ射</a>なので，
-						<math>
-							<mrow>
-								<mi>im</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>∘</mo>
-							<mi>𝑚</mi>
-						</math>
-						は<a href="#モノ射">モノ射</a>となる．よって<a href="#像">像の定義</a>より
-						<math>
-							<mi>𝑒</mi>
-							<mo>⊥</mo>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mrow>
-										<mi>im</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>∘</mo>
-									<mi>𝑚</mi>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-						</math>
-						だから，
-						<math display="block">
-							<mrow>
-								<mo>∃!</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>hom</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝒜</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mrow>
-										<mi>im</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>∘</mo>
-									<mi>𝑚</mi>
-									<mo>∘</mo>
-									<mi>𝑔</mi>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mi>im</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-						となる．
-						<math>
-							<mrow>
-								<mi>im</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝑓</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>∘</mo>
-							<mi>𝑚</mi>
-						</math>
-						は<a href="#モノ射">モノ射</a>だから，<math><mi>𝑚</mi><mo>∘</mo><mi>𝑔</mi></math>は<a href="#圏">恒等射</a>．つまり，<math><mi>𝑚</mi></math>は<a href="#同型射">同型射</a>となる．<math><mi>𝑚</mi></math>は
-						<math>
-							<mi>ℎ</mi>
-							<mo>,</mo>
-							<msup>
-								<mi>ℎ</mi><mo>′</mo>
-							</msup>
-						</math>
-						の<a href="#等化子">等化子</a>だったから，
-						<math>
-							<mrow>
-								<mi>ℎ</mi><mo>∘</mo><mi>𝑚</mi>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<msup>
-									<mi>ℎ</mi><mo>′</mo>
-								</msup>
-								<mo>∘</mo>
-								<mi>𝑚</mi>
-							</mrow>
-						</math>
-						より
-						<math display="block">
-							<mi>ℎ</mi>
-							<mo>=</mo>
-							<msup>
-								<mi>ℎ</mi><mo>′</mo>
-							</msup>
-						</math>
-						となる．
-						<math>
-							<mi>𝑒</mi>
-							<mo>=</mo>
-							<mrow>
-								<mi>𝑚</mi>
-								<mo>∘</mo>
-								<mover>
-									<mi>𝑒</mi><mo>‾</mo>
-								</mover>
-							</mrow>
-						</math>
-						と合わせると，
-						<math><mi>𝑒</mi></math>
-						は<a href="#極値的モノ射">極値的エピ射</a>となる．
-					</p>
 				</article>
 			</section>
 		</section>
@@ -26097,7 +26159,7 @@
 					<dl>
 						<dt><math><mtext><a href="#正規モノ射">正規モノ射</a></mtext><mo>⇒</mo><mtext><a href="#有効モノ射">有効モノ射</a></mtext></math></dt>
 						<dd>
-							そもそも偽の可能性あり．正則なら真．
+							そもそも偽の可能性あり．<a href="#正則モノ射">正則モノ射</a>なら真．
 						</dd>
 					</dl>
 				</article>

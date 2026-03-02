@@ -24792,7 +24792,7 @@
 							<mo>=</mo>
 							<mn>1</mn>
 						</math>
-						ゆえに調和振動子の生成消滅演算子で書きたいところだが，ハミルトニアンに寄与しないゼロモード<math><msub><mi>𝜑</mi><mn>0</mn></msub></math>が存在することで定義に発散が現れてしまう．そこで以下のモード展開を採用する：
+						ハミルトニアンの形を見ると，調和振動子の生成消滅演算子で書けそうだが，ハミルトニアンに寄与しないゼロモード<math><msub><mi>𝜑</mi><mn>0</mn></msub></math>が存在することで定義に発散が現れてしまう．そこで以下のモード展開を採用する：
 						<math display="block">
 							<mrow>
 								<msub>
@@ -24818,7 +24818,7 @@
 											<mi>𝜑</mi><mi>𝑛</mi>
 										</msub>
 									</mrow>
-									<mo>−</mo>
+									<mo>+</mo>
 									<mrow>
 										<mfrac>
 											<mrow>
@@ -24864,73 +24864,7 @@
 											</mrow>
 										</msub>
 									</mrow>
-									<mo>+</mo>
-									<mrow>
-										<mfrac>
-											<mrow>
-												<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
-											</mrow>
-											<mn>2</mn>
-										</mfrac>
-										<mo>&it;</mo>
-										<msub>
-											<mi>𝛿</mi>
-											<mrow>
-												<mi>𝑛</mi><mo>,</mo><mn>0</mn>
-											</mrow>
-										</msub>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-						<math display="block">
-							<mrow>
-								<msub>
-									<mi>𝑎</mi><mn>0</mn>
-								</msub>
-								<mo>≔</mo>
-								<mrow>
-									<msub>
-										<mi>𝜋</mi><mn>0</mn>
-									</msub>
 									<mo>−</mo>
-									<mfrac>
-										<mrow>
-											<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
-										</mrow>
-										<mn>2</mn>
-									</mfrac>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<msub>
-									<mover>
-										<mi>𝑎</mi><mo>‾</mo>
-									</mover>
-									<mi>𝑛</mi>
-								</msub>
-								<mo>≔</mo>
-								<mrow>
-									<msub>
-										<mi>𝜋</mi><mi>𝑛</mi>
-									</msub>
-									<mo>−</mo>
-									<mrow>
-										<mi>𝑖</mi>
-										<mo>&it;</mo>
-										<mi>𝜋</mi>
-										<mo>&it;</mo>
-										<mi>𝑛</mi>
-										<mo>&it;</mo>
-										<msub>
-											<mi>𝜑</mi>
-											<mrow>
-												<mo>−</mo><mi>𝑛</mi>
-											</mrow>
-										</msub>
-									</mrow>
-									<mo>+</mo>
 									<mrow>
 										<mfrac>
 											<mrow>
@@ -24954,9 +24888,12 @@
 								<mi>𝜇</mi>
 								<mo>≔</mo>
 								<mrow>
-									<msub>
-										<mi>𝜑</mi><mn>0</mn>
-									</msub>
+									<mfrac>
+										<msub>
+											<mi>𝜑</mi><mn>0</mn>
+										</msub>
+										<mn>2</mn>
+									</mfrac>
 									<mo>+</mo>
 									<mfrac>
 										<mi>𝜃</mi><mi>𝑅</mi>
@@ -24970,12 +24907,57 @@
 								</mover>
 								<mo>≔</mo>
 								<mrow>
-									<msub>
-										<mi>𝜑</mi><mn>0</mn>
-									</msub>
+									<mfrac>
+										<msub>
+											<mi>𝜑</mi><mn>0</mn>
+										</msub>
+										<mn>2</mn>
+									</mfrac>
 									<mo>−</mo>
 									<mfrac>
 										<mi>𝜃</mi><mi>𝑅</mi>
+									</mfrac>
+								</mrow>
+							</mrow>
+						</math>
+						<math display="block">
+							<mrow>
+								<msub>
+									<mi>𝑎</mi><mn>0</mn>
+								</msub>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝜋</mi><mn>0</mn>
+									</msub>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+										</mrow>
+										<mn>2</mn>
+									</mfrac>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<msub>
+									<mover>
+										<mi>𝑎</mi><mo>‾</mo>
+									</mover>
+									<mn>0</mn>
+								</msub>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝜋</mi><mn>0</mn>
+									</msub>
+									<mo>−</mo>
+									<mfrac>
+										<mrow>
+											<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+										</mrow>
+										<mn>2</mn>
 									</mfrac>
 								</mrow>
 							</mrow>
@@ -25319,6 +25301,7 @@
 													<mover>
 														<mi>𝑎</mi><mo>‾</mo>
 													</mover>
+													<mn>0</mn>
 												</msub>
 												<mo>,</mo>
 												<mover>
