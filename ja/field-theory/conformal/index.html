@@ -26330,12 +26330,7 @@
 										<mtd><mo>≔</mo></mtd>
 										<mtd>
 											<mrow>
-												<mfrac>
-													<msub>
-														<mi>𝜑</mi><mn>0</mn>
-													</msub>
-													<mn>2</mn>
-												</mfrac>
+												<mi>𝜇</mi>
 												<mo>&it;</mo>
 												<msub>
 													<mi>𝛿</mi>
@@ -26406,7 +26401,7 @@
 										<mtd>
 											<mrow>
 												<mover>
-													<mi>𝜑</mi><mo>‾</mo>
+													<mi>𝜙</mi><mo>‾</mo>
 												</mover>
 												<mo>&af;</mo>
 												<mrow>
@@ -26421,12 +26416,9 @@
 										<mtd><mo>≔</mo></mtd>
 										<mtd>
 											<mrow>
-												<mfrac>
-													<msub>
-														<mi>𝜑</mi><mn>0</mn>
-													</msub>
-													<mn>2</mn>
-												</mfrac>
+												<mover>
+													<mi>𝜇</mi><mo>‾</mo>
+												</mover>
 												<mo>&it;</mo>
 												<msub>
 													<mi>𝛿</mi>
@@ -26555,12 +26547,7 @@
 										</mtd>
 										<mtd><mo>≔</mo></mtd>
 										<mtd>
-											<mfrac>
-												<msub>
-													<mi>𝜑</mi><mn>0</mn>
-												</msub>
-												<mn>2</mn>
-											</mfrac>
+											<mi>𝜇</mi>
 											<mo>−</mo>
 											<mrow>
 												<munder intent=":largeop">
@@ -27483,7 +27470,7 @@
 								<mtr>
 									<mtd>
 										<msup>
-											<mi>𝜑</mi>
+											<mi>𝜙</mi>
 											<mrow>
 												<mo>(</mo><mn>0</mn><mo>)</mo>
 											</mrow>
@@ -27495,12 +27482,7 @@
 									</mtd>
 									<mtd><mo>≔</mo></mtd>
 									<mtd>
-										<mfrac>
-											<msub>
-												<mi>𝜑</mi><mn>0</mn>
-											</msub>
-											<mn>2</mn>
-										</mfrac>
+										<mi>𝜇</mi>
 										<mo>+</mo>
 										<mrow>
 											<mfrac>
@@ -27525,7 +27507,7 @@
 								<mtr>
 									<mtd>
 										<msup>
-											<mi>𝜑</mi>
+											<mi>𝜙</mi>
 											<mrow>
 												<mo>(</mo><mi>−</mi><mo>)</mo>
 											</mrow>
@@ -27537,6 +27519,7 @@
 									</mtd>
 									<mtd><mo>≔</mo></mtd>
 									<mtd>
+										<mo>−</mo>
 										<mrow>
 											<munder intent=":largeop">
 												<mo>∑</mo>
@@ -27544,10 +27527,8 @@
 													<mi>𝑛</mi>
 													<mo>∈</mo>
 													<mrow>
-														<mrow>
-															<mo>−</mo><mi>ℕ</mi>
-														</mrow>
-														<mo>+</mo>
+														<mi>ℕ</mi>
+														<mo>−</mo>
 														<msub>
 															<mi>𝜈</mi><mi mathvariant="normal">b</mi>
 														</msub>
@@ -27557,10 +27538,7 @@
 											<mrow>
 												<mfrac>
 													<msup>
-														<mi>𝑧</mi>
-														<mrow>
-															<mo>−</mo><mi>𝑛</mi>
-														</mrow>
+														<mi>𝑧</mi><mi>𝑛</mi>
 													</msup>
 													<mrow>
 														<mn>2</mn>
@@ -27574,7 +27552,10 @@
 												</mfrac>
 												<mo>&it;</mo>
 												<msub>
-													<mi>𝑎</mi><mi>𝑛</mi>
+													<mi>𝑎</mi>
+													<mrow>
+														<mo>−</mo><mi>𝑛</mi>
+													</mrow>
 												</msub>
 											</mrow>
 										</mrow>
@@ -28036,6 +28017,280 @@
 								</mtr>
 							</mtable>
 						</math>
+						<math display="block">
+							<mrow>
+								<mn>2</mn>
+								<mo>&it;</mo>
+								<mi>𝜋</mi>
+								<mo>&it;</mo>
+								<mi>𝑖</mi>
+								<mo>&it;</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mrow>
+											<msup>
+												<mi>𝜙</mi>
+												<mrow>
+													<mo>(</mo><mn>0</mn><mo>)</mo>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msup>
+												<mi>𝜙</mi>
+												<mrow>
+													<mo>(</mo><mn>0</mn><mo>)</mo>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>ln</mi><mo>&af;</mo><mi>𝑧</mi>
+								</mrow>
+								<mo>−</mo>
+								<mrow>
+									<mi>ln</mi><mo>&af;</mo><mi>𝑤</mi>
+								</mrow>
+							</mrow>
+						</math>
+						<math display="block">
+							<mtable intent=":lines">
+								<mtr>
+									<mtd>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mi>𝜋</mi>
+										<mo>&it;</mo>
+										<mi>𝑖</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mrow>
+													<msup>
+														<mrow>
+															<mo>∂</mo><mo>&af;</mo><mi>𝜙</mi>
+														</mrow>
+														<mrow>
+															<mo>(</mo><mo>+</mo><mo>)</mo>
+														</mrow>
+													</msup>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<msup>
+														<mrow>
+															<mo>∂</mo><mo>&af;</mo><mi>𝜙</mi>
+														</mrow>
+														<mrow>
+															<mo>(</mo><mo>−</mo><mo>)</mo>
+														</mrow>
+													</msup>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mtd>
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<mo>−</mo>
+										<mrow>
+											<mfrac>
+												<mn>1</mn>
+												<mrow>
+													<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝑖</mi>
+												</mrow>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>∑</mo>
+													<mrow>
+														<mrow>
+															<mi>𝑛</mi>
+															<mo>,</mo>
+															<msup>
+																<mi>𝑛</mi><mo>′</mo>
+															</msup>
+														</mrow>
+														<mo>∈</mo>
+														<mi>ℕ</mi>
+													</mrow>
+												</munder>
+												<mrow>
+													<msup>
+														<mi>𝑧</mi>
+														<mrow>
+															<mo>−</mo><mi>𝑛</mi><mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<msup>
+														<mi>𝑤</mi>
+														<mrow>
+															<msup>
+																<mi>𝑛</mi><mo>′</mo>
+															</msup>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>[</mo>
+														<mrow>
+															<msub>
+																<mi>𝑎</mi><mi>𝑛</mi>
+															</msub>
+															<mo>,</mo>
+															<msub>
+																<mi>𝑎</mi>
+																<mrow>
+																	<mo>−</mo>
+																	<msup>
+																		<mi>𝑛</mi><mo>′</mo>
+																	</msup>
+																</mrow>
+															</msub>
+														</mrow>
+														<mo>]</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd />
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<mo>−</mo>
+										<mrow>
+											<mfrac>
+												<mn>1</mn>
+												<mrow>
+													<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝑖</mi>
+												</mrow>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>∑</mo>
+													<mrow>
+														<mrow>
+															<mi>𝑛</mi>
+															<mo>,</mo>
+															<msup>
+																<mi>𝑛</mi><mo>′</mo>
+															</msup>
+														</mrow>
+														<mo>∈</mo>
+														<mi>ℕ</mi>
+													</mrow>
+												</munder>
+												<mrow>
+													<mi>𝑛</mi>
+													<mo>&it;</mo>
+													<msup>
+														<mi>𝑧</mi>
+														<mrow>
+															<mo>−</mo><mi>𝑛</mi><mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<msup>
+														<mi>𝑤</mi>
+														<mrow>
+															<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd />
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<mfrac>
+											<mn>1</mn>
+											<mrow>
+												<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝑖</mi><mo>&it;</mo><mi>𝑧</mi><mo>&it;</mo><mi>𝑤</mi>
+											</mrow>
+										</mfrac>
+										<mo>&it;</mo>
+										<mfrac>
+											<mfrac>
+												<mi>𝑤</mi><mi>𝑧</mi>
+											</mfrac>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mn>1</mn>
+														<mo>−</mo>
+														<mfrac>
+															<mi>𝑤</mi><mi>𝑧</mi>
+														</mfrac>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+										</mfrac>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd />
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<mfrac>
+											<mn>1</mn>
+											<mrow>
+												<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝑖</mi>
+											</mrow>
+										</mfrac>
+										<mo>&it;</mo>
+										<mfrac>
+											<mn>1</mn>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑧</mi><mo>−</mo><mi>𝑤</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+										</mfrac>
+									</mtd>
+								</mtr>
+							</mtable>
+						</math>
 					</p>
 					<p>
 						<math display="block">
@@ -28135,7 +28390,7 @@
 					<p><math><mi>𝜑</mi></math>のスケーリング次元が0なため，スケールを気にせずに無限種類の<math><mi>𝜑</mi></math>に関する局所的な場を構成できる：</p>
 					<article id="頂点演算子" class="dfn">
 						<h5>頂点演算子</h5>
-						<p>自由ボゾン場<math><mi>𝜑</mi></math>を与える．</p>
+						<p><a href="#自由ボゾン場">自由ボゾン場</a><math><mi>𝜑</mi></math>を与える．</p>
 						<p>
 							<math><mi>𝛼</mi><mo>∈</mo></math>に対し，以下で定義する演算子を，<math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></math>荷<math><mi>𝛼</mi></math>の<dfn>頂点演算子</dfn><span lang="en">(vertex operator)</span>と呼ぶ：
 							<math display="block">
@@ -28193,6 +28448,229 @@
 							ただし，正規順序積は以下で定義される：
 						</p>
 					</article>
+					<p>
+						<math>
+							<mo>∂</mo><mo>&af;</mo><mi>𝜙</mi>
+						</math>
+						と<a href="#頂点演算子">頂点演算子</a>
+						<math>
+							<msub>
+								<mi>𝑉</mi><mi>𝛼</mi>
+							</msub>
+						</math>
+						の演算子積展開は
+						<math display="block">
+							<mtable intent=":lines">
+								<mtr>
+									<mtd>
+										<mrow>
+											<mrow>
+												<mo>∂</mo><mi>𝜙</mi>
+											</mrow>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<msub>
+												<mi>𝑉</mi><mi>𝛼</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mtd>
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<munderover intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>=</mo><mn>0</mn>
+											</mrow>
+											<mi>∞</mi>
+										</munderover>
+										<mrow>
+											<mfrac>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝑖</mi><mo>&it;</mo><mi>𝛼</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mi>𝑛</mi>
+												</msup>
+												<mrow>
+													<mi>𝑛</mi><mi>!</mi>
+												</mrow>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<mrow>
+													<mo>∂</mo><mo>&af;</mo><mi>𝜙</mi>
+												</mrow>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>:</mo>
+												<msup>
+													<mrow>
+														<mi>𝜙</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mi>𝑛</mi>
+												</msup>
+												<mo>:</mo>
+											</mrow>
+										</mrow>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd />
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<mo>−</mo>
+										<mrow>
+											<mfrac>
+												<mn>1</mn>
+												<mrow>
+													<mi>𝑧</mi><mo>−</mo><mi>𝑤</mi>
+												</mrow>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<munderover intent=":largeop">
+													<mo>∑</mo>
+													<mrow>
+														<mi>𝑛</mi><mo>=</mo><mn>1</mn>
+													</mrow>
+													<mi>∞</mi>
+												</munderover>
+												<mrow>
+													<mfrac>
+														<msup>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝑖</mi><mo>&it;</mo><mi>𝛼</mi>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+															<mi>𝑛</mi>
+														</msup>
+														<mrow>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+															<mi>!</mi>
+														</mrow>
+													</mfrac>
+													<mo>&it;</mo>
+													<mrow>
+														<mrow>
+															<mo>∂</mo><mo>&af;</mo><mi>𝜙</mi>
+														</mrow>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>&it;</mo>
+													<mrow>
+														<mo>:</mo>
+														<msup>
+															<mrow>
+																<mi>𝜙</mi>
+																<mo>&af;</mo>
+																<mrow>
+																	<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+																</mrow>
+															</mrow>
+															<mrow>
+																<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+															</mrow>
+														</msup>
+														<mo>:</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd />
+									<mtd><mo>=</mo></mtd>
+									<mtd>
+										<mo>−</mo>
+										<mrow>
+											<mi>𝑖</mi>
+											<mo>&it;</mo>
+											<mi>𝛼</mi>
+											<mo>&it;</mo>
+											<mfrac>
+												<mrow>
+													<msub>
+														<mi>𝑉</mi><mi>𝛼</mi>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mrow>
+													<mi>𝑧</mi><mo>−</mo><mi>𝑤</mi>
+												</mrow>
+											</mfrac>
+										</mrow>
+									</mtd>
+								</mtr>
+							</mtable>
+						</math>
+					</p>
+					<p>
+						<a href="#頂点演算子">頂点演算子</a>の<a href="#共形ウェイト">共形ウェイト</a>は
+						<math display="block">
+							<mrow>
+								<mi>ℎ</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mover>
+									<mi>ℎ</mi><mo>‾</mo>
+								</mover>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mfrac>
+								<msup>
+									<mi>𝛼</mi><mn>2</mn>
+								</msup>
+								<mn>2</mn>
+							</mfrac>
+						</math>
+					</p>
 				</section>
 			</section>
 			<section>
