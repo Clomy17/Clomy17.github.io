@@ -17,23 +17,21 @@
 					ある正の代数的整数
 					<math>
 						<msub>
-							<mi>𝑑</mi>
-							<mi>𝑎</mi>
+							<mi>𝑑</mi><mi>𝑎</mi>
 						</msub>
 					</math>
 					による
 					<math display="block">
 						<mrow>
 							<mo>⟨</mo>
-							<mi>state</mi>
-							<mo>|</mo>
-							<mi>state</mi>
+							<mrow>
+								<mi>state</mi><mo>|</mo><mi>state</mi>
+							</mrow>
 							<mo>⟩</mo>
 						</mrow>
 						<mo>=</mo>
 						<msub>
-							<mi>𝑑</mi>
-							<mi>𝑎</mi>
+							<mi>𝑑</mi><mi>𝑎</mi>
 						</msub>
 					</math>
 					という規格化のことを，<dfn>同相的規格化</dfn><span lang="en">(isotopy normalization)</span>と呼ぶ．
@@ -46,9 +44,9 @@
 					<math display="block">
 						<mrow>
 							<mo>⟨</mo>
-							<mi>state</mi>
-							<mo>|</mo>
-							<mi>state</mi>
+							<mrow>
+								<mi>state</mi><mo>|</mo><mi>state</mi>
+							</mrow>
 							<mo>⟩</mo>
 						</mrow>
 						<mo>=</mo>
@@ -68,18 +66,18 @@
 									<mi>𝑎</mi>
 									<mrow>
 										<mi>𝑎</mi>
-										<mo>&ic;</mo>
-										<mi>𝑎̅</mi>
-										<mo>&ic;</mo>
+										<mo>,</mo>
+										<mover>
+											<mi>𝑎</mi><mo>‾</mo>
+										</mover>
+										<mo>,</mo>
 										<mi>𝑎</mi>
 									</mrow>
 								</msubsup>
 								<mo>]</mo>
 							</mrow>
 							<mrow>
-								<mi>𝐼</mi>
-								<mo>&ic;</mo>
-								<mi>𝐼</mi>
+								<mi>𝐼</mi><mo>,</mo><mi>𝐼</mi>
 							</mrow>
 						</msub>
 					</math>
@@ -92,14 +90,12 @@
 				<p>
 					<math display="block">
 						<msub>
-							<mi>𝑑</mi>
-							<mi>𝑎</mi>
+							<mi>𝑑</mi><mi>𝑎</mi>
 						</msub>
 						<mo>=</mo>
 						<mfrac>
 							<msub>
-								<mi>𝜖</mi>
-								<mi>𝑎</mi>
+								<mi>𝜖</mi><mi>𝑎</mi>
 							</msub>
 							<msub>
 								<mrow>
@@ -109,16 +105,16 @@
 										<mi>𝑎</mi>
 										<mrow>
 											<mi>𝑎</mi>
-											<mi>𝑎̅</mi>
+											<mover>
+												<mi>𝑎</mi><mo>‾</mo>
+											</mover>
 											<mi>𝑎</mi>
 										</mrow>
 									</msubsup>
 									<mo>]</mo>
 								</mrow>
 								<mrow>
-									<mi>𝐼</mi>
-									<mo>&ic;</mo>
-									<mi>𝐼</mi>
+									<mi>𝐼</mi><mo>,</mo><mi>𝐼</mi>
 								</mrow>
 							</msub>
 						</mfrac>
@@ -131,13 +127,11 @@
 					ここでは
 					<math>
 						<msub>
-							<mi>𝜖</mi>
-							<mi>𝑎</mi>
+							<mi>𝜖</mi><mi>𝑎</mi>
 						</msub>
 						<mo>=</mo>
 						<mrow>
-							<mo>+</mo>
-							<mn>1</mn>
+							<mo>+</mo><mn>1</mn>
 						</mrow>
 					</math>
 					とする．
@@ -435,6 +429,354 @@
 					となる．
 				</p>
 			</section>
+		</section>
+		<section>
+			<h2>Chern-Simons理論</h2>
+			<p>
+				簡単のため，ゲージ群を
+				<math>
+					<mi>𝐺</mi>
+					<mo>=</mo>
+					<mrow>
+						<mi>SU</mi>
+						<mo>&af;</mo>
+						<mrow>
+							<mo>(</mo><mn>2</mn><mo>)</mo>
+						</mrow>
+					</mrow>
+				</math>
+				とする．一つのゲージ場からなる作用であって，
+			</p>
+			<ul>
+				<li>トポロジカル不変性</li>
+				<li>分配函数のゲージ不変性</li>
+			</ul>
+			<p>
+				を満たすものは，<dfn>Chern-Simons作用</dfn>と呼ばれるものに限られる．それが以下：
+				<math display="block">
+					<mrow>
+						<msub>
+							<mi>𝑆</mi>
+							<mrow>
+								<mi>CS</mi>
+							</mrow>
+						</msub>
+						<mo>&af;</mo>
+						<mrow>
+							<mo>[</mo>
+							<msub>
+								<mi>𝐴</mi><mi>𝜇</mi>
+							</msub>
+							<mo>]</mo>
+						</mrow>
+					</mrow>
+					<mo>≔</mo>
+					<mrow>
+						<mfrac>
+							<mi>𝑘</mi>
+							<mrow>
+								<mn>4</mn><mo>&it;</mo><mi>𝜋</mi>
+							</mrow>
+						</mfrac>
+						<mo>&it;</mo>
+						<mrow>
+							<msub>
+								<mo>∫</mo><mi>ℳ</mi>
+							</msub>
+							<mrow>
+								<mi>Tr</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mrow>
+											<mi>𝐴</mi>
+											<mo>∧</mo>
+											<mrow>
+												<mi>𝑑</mi><mo>&af;</mo><mi>𝐴</mi>
+											</mrow>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mfrac>
+												<mn>2</mn><mn>3</mn>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<mi>𝐴</mi><mo>∧</mo><mi>𝐴</mi><mo>∧</mo><mi>𝐴</mi>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</mrow>
+						</mrow>
+					</mrow>
+					<mo>=</mo>
+					<mrow>
+						<mfrac>
+							<mi>𝑘</mi>
+							<mrow>
+								<mn>4</mn><mo>&it;</mo><mi>𝜋</mi>
+							</mrow>
+						</mfrac>
+						<mo>&it;</mo>
+						<mrow>
+							<msub>
+								<mo>∫</mo><mi>ℳ</mi>
+							</msub>
+							<mrow>
+								<msup>
+									<mi>𝑑</mi><mn>3</mn>
+								</msup>
+								<mo>&af;</mo>
+								<mi>𝑥</mi>
+							</mrow>
+							<mrow>
+								<msup>
+									<mi>𝜀</mi>
+									<mrow>
+										<mi>𝛼</mi><mo>,</mo><mi>𝛽</mi><mo>,</mo><mi>𝛾</mi>
+									</mrow>
+								</msup>
+								<mo>&it;</mo>
+								<mrow>
+									<mi>Tr</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>𝐴</mi><mi>𝛼</mi>
+												</msub>
+												<mo>&it;</mo>
+												<mrow>
+													<msub>
+														<mo>∂</mo><mi>𝛽</mi>
+													</msub>
+													<mo>&af;</mo>
+													<msub>
+														<mi>𝐴</mi><mi>𝛾</mi>
+													</msub>
+												</mrow>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mfrac>
+													<mn>2</mn><mn>3</mn>
+												</mfrac>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝐴</mi><mi>𝛼</mi>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝐴</mi><mi>𝛽</mi>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝐴</mi><mi>𝛾</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</mrow>
+					</mrow>
+				</math>
+				特に<math><mi>𝑘</mi></math>をレベルと呼ぶ．
+			</p>
+			<p>
+				ゲージ変換
+				<math display="block">
+					<msub>
+						<mi>𝐴</mi><mi>𝜇</mi>
+					</msub>
+					<mo>↦</mo>
+					<mrow>
+						<mi>𝑈</mi>
+						<mo>&it;</mo>
+						<mrow>
+							<mo>(</mo>
+							<mrow>
+								<msub>
+									<mi>𝐴</mi><mi>𝜇</mi>
+								</msub>
+								<mo>+</mo>
+								<msub>
+									<mo>∂</mo><mi>𝜇</mi>
+								</msub>
+							</mrow>
+							<mo>)</mo>
+						</mrow>
+						<mo>&it;</mo>
+						<msup>
+							<mi>𝑈</mi>
+							<mrow>
+								<mo>−</mo><mn>1</mn>
+							</mrow>
+						</msup>
+					</mrow>
+				</math>
+				に対し，作用の変化は
+				<math display="block">
+					<mrow>
+						<msub>
+							<mi>𝑆</mi><mi>CS</mi>
+						</msub>
+						<mo>&af;</mo>
+						<mrow>
+							<mo>[</mo>
+							<msub>
+								<mi>𝐴</mi><mi>𝜇</mi>
+							</msub>
+							<mo>]</mo>
+						</mrow>
+					</mrow>
+					<mo>↦</mo>
+					<mrow>
+						<mrow>
+							<msub>
+								<mi>𝑆</mi><mi>CS</mi>
+							</msub>
+							<mo>&af;</mo>
+							<mrow>
+								<mo>[</mo>
+								<msub>
+									<mi>𝐴</mi><mi>𝜇</mi>
+								</msub>
+								<mo>]</mo>
+							</mrow>
+						</mrow>
+						<mo>+</mo>
+						<mrow>
+							<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝜈</mi><mo>&it;</mo><mi>𝑘</mi>
+						</mrow>
+					</mrow>
+				</math>
+				<math display="block">
+					<mi>𝜈</mi>
+					<mo>≔</mo>
+					<mrow>
+						<mfrac>
+							<mn>1</mn>
+							<mrow>
+								<mn>24</mn>
+								<mo>&it;</mo>
+								<msup>
+									<mi>𝜋</mi><mn>2</mn>
+								</msup>
+							</mrow>
+						</mfrac>
+						<mo>&it;</mo>
+						<mrow>
+							<msub>
+								<mo>∫</mo><mi>ℳ</mi>
+							</msub>
+							<mrow>
+								<msup>
+									<mi>𝑑</mi><mn>3</mn>
+								</msup>
+								<mo>&af;</mo>
+								<mi>𝑥</mi>
+							</mrow>
+							<mrow>
+								<msup>
+									<mi>𝜀</mi>
+									<mrow>
+										<mi>𝛼</mi><mo>,</mo><mi>𝛽</mi><mo>,</mo><mi>𝛾</mi>
+									</mrow>
+								</msup>
+								<mo>&it;</mo>
+								<mrow>
+									<mi>Tr</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝑈</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<msub>
+														<mo>∂</mo><mi>𝛼</mi>
+													</msub>
+													<mo>&it;</mo>
+													<mi>𝑈</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝑈</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<msub>
+														<mo>∂</mo><mi>𝛽</mi>
+													</msub>
+													<mo>&it;</mo>
+													<mi>𝑈</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝑈</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<msub>
+														<mo>∂</mo><mi>𝛾</mi>
+													</msub>
+													<mo>&it;</mo>
+													<mi>𝑈</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</mrow>
+					</mrow>
+				</math>
+				となる．<math><mi>𝜈</mi></math> は写像
+				<math>
+					<mi>𝑈</mi>
+					<mo>:</mo>
+					<mrow>
+						<mi>𝛭</mi><mo>→</mo><mi>𝐺</mi>
+					</mrow>
+				</math>
+				の<dfn>巻き付き数<dfn><span lang="en">(winding number)</span>，もしくは
+			</p>
+		</section>
+		<section class="reference">
+			<h2>参考文献</h2>
+			<ul>
+				<li><a href="#https://github.com/T2sp/TQFT">https://github.com/T2sp/TQFT</a></li>
+			</ul>
 		</section>
 	</main></body>
 </html>
