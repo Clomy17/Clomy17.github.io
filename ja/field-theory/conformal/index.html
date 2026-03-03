@@ -24820,12 +24820,32 @@
 									</mrow>
 									<mo>+</mo>
 									<mrow>
-										<mfrac>
+										<mrow>
+											<mo>(</mo>
 											<mrow>
-												<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+												<mfrac>
+													<mrow>
+														<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+													</mrow>
+													<mn>2</mn>
+												</mfrac>
+												<mo>−</mo>
+												<mrow>
+													<mn>2</mn>
+													<mo>&it;</mo>
+													<mi>𝜋</mi>
+													<mo>&it;</mo>
+													<mi>𝑖</mi>
+													<mo>&it;</mo>
+													<mi>𝑛</mi>
+													<mo>&it;</mo>
+													<mfrac>
+														<mi>𝜃</mi><mi>𝑅</mi>
+													</mfrac>
+												</mrow>
 											</mrow>
-											<mn>2</mn>
-										</mfrac>
+											<mo>)</mo>
+										</mrow>
 										<mo>&it;</mo>
 										<msub>
 											<mi>𝛿</mi>
@@ -24866,12 +24886,32 @@
 									</mrow>
 									<mo>−</mo>
 									<mrow>
-										<mfrac>
+										<mrow>
+											<mo>(</mo>
 											<mrow>
-												<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+												<mfrac>
+													<mrow>
+														<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+													</mrow>
+													<mn>2</mn>
+												</mfrac>
+												<mo>−</mo>
+												<mrow>
+													<mn>2</mn>
+													<mo>&it;</mo>
+													<mi>𝜋</mi>
+													<mo>&it;</mo>
+													<mi>𝑖</mi>
+													<mo>&it;</mo>
+													<mi>𝑛</mi>
+													<mo>&it;</mo>
+													<mfrac>
+														<mi>𝜃</mi><mi>𝑅</mi>
+													</mfrac>
+												</mrow>
 											</mrow>
-											<mn>2</mn>
-										</mfrac>
+											<mo>)</mo>
+										</mrow>
 										<mo>&it;</mo>
 										<msub>
 											<mi>𝛿</mi>
@@ -24920,48 +24960,204 @@
 								</mrow>
 							</mrow>
 						</math>
-						<math display="block">
-							<mrow>
-								<msub>
-									<mi>𝑎</mi><mn>0</mn>
-								</msub>
+						（これ<math><mi>𝜇</mi></math>要らなくない?）これらの交換関係は以下：
+					</p>
+					<article id="自由ボゾン場のモード" class="thm">
+						<h5>自由ボゾン場のモード</h5>
+						<p>
+							自由ボゾン場のモードは以下：
+							<math display="block">
+								<mtable intent=":piecewise">
+									<mtr>
+										<mtd>
+											<msub>
+												<mrow>
+													<mo>{</mo>
+													<mrow>
+														<msub>
+															<mi>𝑎</mi><mi>𝑛</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mover>
+																<mi>𝑎</mi><mo>‾</mo>
+															</mover>
+															<mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>}</mo>
+												</mrow>
+												<mrow>
+													<mi>𝑛</mi>
+													<mo>∈</mo>
+													<mi>ℤ</mi>
+												</mrow>
+											</msub>
+											<mo>∪</mo>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mi>𝜇</mi>
+													<mo>,</mo>
+													<mover>
+														<mi>𝜇</mi><mo>‾</mo>
+													</mover>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+										</mtd>
+										<mtd>
+											<msub>
+												<mi>𝜈</mi><mi mathvariant="normal">b</mi>
+											</msub>
+											<mo>=</mo>
+											<mn>0</mn>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd>
+											<msub>
+												<mrow>
+													<mo>{</mo>
+													<mrow>
+														<msub>
+															<mi>𝑎</mi><mi>𝑛</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mover>
+																<mi>𝑎</mi><mo>‾</mo>
+															</mover>
+															<mi>𝑛</mi>
+														</msub>
+													</mrow>
+													<mo>}</mo>
+												</mrow>
+												<mrow>
+													<mi>𝑛</mi>
+													<mo>∈</mo>
+													<mrow>
+														<mi>ℤ</mi>
+														<mo>−</mo>
+														<mfrac>
+															<mn>1</mn><mn>2</mn>
+														</mfrac>
+													</mrow>
+												</mrow>
+											</msub>
+										</mtd>
+										<mtd>
+											<msub>
+												<mi>𝜈</mi><mi mathvariant="normal">b</mi>
+											</msub>
+											<mo>=</mo>
+											<mfrac>
+												<mn>1</mn><mn>2</mn>
+											</mfrac>
+										</mtd>
+									</mtr>
+								</mtable>
+							</math>
+							これらは以下を満たす：
+							<math display="block">
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<msub>
+											<mi>𝑎</mi><mi>𝑛</mi>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑎</mi><mi>𝑚</mi>
+										</msub>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
 								<mo>=</mo>
 								<mrow>
-									<msub>
-										<mi>𝜋</mi><mn>0</mn>
-									</msub>
-									<mo>+</mo>
-									<mfrac>
-										<mrow>
-											<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
-										</mrow>
-										<mn>2</mn>
-									</mfrac>
+									<mo>[</mo>
+									<mrow>
+										<msub>
+											<mover>
+												<mi>𝑎</mi><mo>‾</mo>
+											</mover>
+											<mi>𝑛</mi>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mover>
+												<mi>𝑎</mi><mo>‾</mo>
+											</mover>
+											<mi>𝑚</mi>
+										</msub>
+									</mrow>
+									<mo>]</mo>
 								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<msub>
-									<mover>
-										<mi>𝑎</mi><mo>‾</mo>
-									</mover>
-									<mn>0</mn>
-								</msub>
 								<mo>=</mo>
 								<mrow>
+									<mi>𝑛</mi>
+									<mo>&it;</mo>
 									<msub>
-										<mi>𝜋</mi><mn>0</mn>
-									</msub>
-									<mo>−</mo>
-									<mfrac>
+										<mi>𝛿</mi>
 										<mrow>
-											<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+											<mi>𝑛</mi><mo>+</mo><mi>𝑚</mi>
 										</mrow>
-										<mn>2</mn>
-									</mfrac>
+									</msub>
 								</mrow>
-							</mrow>
-						</math>
+							</math>
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mi>𝜋</mi>
+										<mo>&it;</mo>
+										<mi>𝑖</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi><mn>0</mn>
+												</msub>
+												<mo>,</mo>
+												<mi>𝜇</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mi>𝜋</mi>
+										<mo>&it;</mo>
+										<mi>𝑖</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<msub>
+													<mover>
+														<mi>𝑎</mi><mo>‾</mo>
+													</mover>
+													<mn>0</mn>
+												</msub>
+												<mo>,</mo>
+												<mover>
+													<mi>𝜇</mi><mo>‾</mo>
+												</mover>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mn>1</mn>
+								</mrow>
+							</math>
+						</p>
+					</article>
+					<p>
 						このときハミルトニアンは
 						<math display="block">
 							<mi>𝐻</mi>
@@ -25126,197 +25322,8 @@
 								</mrow>
 							</mrow>
 						</math>
-						つまり，<math><msub><mi>𝑎</mi><mi>𝑛</mi></msub><mo>,</mo><msub><mover><mi>𝑎</mi><mo>‾</mo></mover><mi>𝑛</mi></msub></math>はエネルギーの昇降演算子．
+						つまり，<math><mrow><msub><mi>𝑎</mi><mi>𝑛</mi></msub><mo>,</mo><msub><mover><mi>𝑎</mi><mo>‾</mo></mover><mi>𝑛</mi></msub></mrow><mrow><mo>(</mo><mrow><mi>𝑛</mi><mo>≠</mo><mn>0</mn></mrow><mo>)</mo></mrow></math>はエネルギーの昇降演算子．
 					</p>
-					<article id="自由ボゾン場のモード" class="thm">
-						<h5>自由ボゾン場のモード</h5>
-						<p>
-							自由ボゾン場のモードは以下：
-							<math display="block">
-								<mtable intent=":piecewise">
-									<mtr>
-										<mtd>
-											<msub>
-												<mrow>
-													<mo>{</mo>
-													<mrow>
-														<msub>
-															<mi>𝑎</mi><mi>𝑛</mi>
-														</msub>
-														<mo>,</mo>
-														<msub>
-															<mover>
-																<mi>𝑎</mi><mo>‾</mo>
-															</mover>
-															<mi>𝑛</mi>
-														</msub>
-													</mrow>
-													<mo>}</mo>
-												</mrow>
-												<mrow>
-													<mi>𝑛</mi>
-													<mo>∈</mo>
-													<mi>ℤ</mi>
-												</mrow>
-											</msub>
-											<mo>∪</mo>
-											<mrow>
-												<mo>{</mo>
-												<mrow>
-													<mi>𝜇</mi>
-													<mo>,</mo>
-													<mover>
-														<mi>𝜇</mi><mo>‾</mo>
-													</mover>
-												</mrow>
-												<mo>}</mo>
-											</mrow>
-										</mtd>
-										<mtd>
-											<msub>
-												<mi>𝜈</mi><mi mathvariant="normal">b</mi>
-											</msub>
-											<mo>=</mo>
-											<mn>0</mn>
-										</mtd>
-									</mtr>
-									<mtr>
-										<mtd>
-											<msub>
-												<mrow>
-													<mo>{</mo>
-													<mrow>
-														<msub>
-															<mi>𝑎</mi><mi>𝑛</mi>
-														</msub>
-														<mo>,</mo>
-														<msub>
-															<mover>
-																<mi>𝑎</mi><mo>‾</mo>
-															</mover>
-															<mi>𝑛</mi>
-														</msub>
-													</mrow>
-													<mo>}</mo>
-												</mrow>
-												<mrow>
-													<mi>𝑛</mi>
-													<mo>∈</mo>
-													<mrow>
-														<mi>ℤ</mi>
-														<mo>−</mo>
-														<mfrac>
-															<mn>1</mn><mn>2</mn>
-														</mfrac>
-													</mrow>
-												</mrow>
-											</msub>
-										</mtd>
-										<mtd>
-											<msub>
-												<mi>𝜈</mi><mi mathvariant="normal">b</mi>
-											</msub>
-											<mo>=</mo>
-											<mfrac>
-												<mn>1</mn><mn>2</mn>
-											</mfrac>
-										</mtd>
-									</mtr>
-								</mtable>
-							</math>
-							これらは以下を満たす：
-							<math display="block">
-								<mrow>
-									<mo>[</mo>
-									<mrow>
-										<msub>
-											<mi>𝑎</mi><mi>𝑛</mi>
-										</msub>
-										<mo>,</mo>
-										<msub>
-											<mi>𝑎</mi><mi>𝑚</mi>
-										</msub>
-									</mrow>
-									<mo>]</mo>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mo>[</mo>
-									<mrow>
-										<msub>
-											<mi>𝑎</mi><mi>𝑛</mi>
-										</msub>
-										<mo>,</mo>
-										<msub>
-											<mi>𝑎</mi><mi>𝑚</mi>
-										</msub>
-									</mrow>
-									<mo>]</mo>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mi>𝑛</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mi>𝛿</mi>
-										<mrow>
-											<mi>𝑛</mi><mo>+</mo><mi>𝑚</mi>
-										</mrow>
-									</msub>
-								</mrow>
-							</math>
-							<math display="block">
-								<mrow>
-									<mrow>
-										<mn>2</mn>
-										<mo>&it;</mo>
-										<mi>𝜋</mi>
-										<mo>&it;</mo>
-										<mi>𝑖</mi>
-										<mo>&it;</mo>
-										<mrow>
-											<mo>[</mo>
-											<mrow>
-												<msub>
-													<mi>𝑎</mi><mn>0</mn>
-												</msub>
-												<mo>,</mo>
-												<mi>𝜇</mi>
-											</mrow>
-											<mo>]</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<mn>2</mn>
-										<mo>&it;</mo>
-										<mi>𝜋</mi>
-										<mo>&it;</mo>
-										<mi>𝑖</mi>
-										<mo>&it;</mo>
-										<mrow>
-											<mo>[</mo>
-											<mrow>
-												<msub>
-													<mover>
-														<mi>𝑎</mi><mo>‾</mo>
-													</mover>
-													<mn>0</mn>
-												</msub>
-												<mo>,</mo>
-												<mover>
-													<mi>𝜇</mi><mo>‾</mo>
-												</mover>
-											</mrow>
-											<mo>]</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mn>1</mn>
-								</mrow>
-							</math>
-						</p>
-					</article>
 					<p>
 						<a href="#自由ボゾン場">自由ボゾン場</a>の<math><mi>𝑛</mi><mo>≠</mo><mn>0</mn></math>のFourierモードは
 						<math display="block">
@@ -26329,20 +26336,6 @@
 										</mtd>
 										<mtd><mo>≔</mo></mtd>
 										<mtd>
-											<mrow>
-												<mi>𝜇</mi>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝛿</mi>
-													<mrow>
-														<msub>
-															<mi>𝜈</mi><mi mathvariant="normal">b</mi>
-														</msub>
-														<mo>,</mo>
-														<mn>0</mn>
-													</mrow>
-												</msub>
-											</mrow>
 											<mo>−</mo>
 											<mrow>
 												<munder intent=":largeop">
@@ -26415,58 +26408,24 @@
 										</mtd>
 										<mtd><mo>≔</mo></mtd>
 										<mtd>
-											<mrow>
-												<mover>
-													<mi>𝜇</mi><mo>‾</mo>
-												</mover>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝛿</mi>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑛</mi>
+													<mo>∈</mo>
 													<mrow>
+														<mi>ℤ</mi>
+														<mo>−</mo>
 														<msub>
 															<mi>𝜈</mi><mi mathvariant="normal">b</mi>
 														</msub>
-														<mo>,</mo>
-														<mn>0</mn>
 													</mrow>
-												</msub>
-											</mrow>
-											<mo>+</mo>
+												</mrow>
+											</munder>
 											<mrow>
-												<munder intent=":largeop">
-													<mo>∑</mo>
-													<mrow>
-														<mi>𝑛</mi>
-														<mo>∈</mo>
-														<mrow>
-															<mi>ℤ</mi>
-															<mo>−</mo>
-															<msub>
-																<mi>𝜈</mi><mi mathvariant="normal">b</mi>
-															</msub>
-														</mrow>
-													</mrow>
-												</munder>
-												<mrow>
-													<mfrac>
-														<msup>
-															<mi>𝑒</mi>
-															<mrow>
-																<mn>2</mn>
-																<mo>&it;</mo>
-																<mi>𝜋</mi>
-																<mo>&it;</mo>
-																<mi>𝑖</mi>
-																<mo>&it;</mo>
-																<mi>𝑛</mi>
-																<mfrac>
-																	<mrow>
-																		<mi>𝑥</mi><mo>+</mo><mi>𝑡</mi>
-																	</mrow>
-																	<mi>𝐿</mi>
-																</mfrac>
-															</mrow>
-														</msup>
+												<mfrac>
+													<msup>
+														<mi>𝑒</mi>
 														<mrow>
 															<mn>2</mn>
 															<mo>&it;</mo>
@@ -26475,18 +26434,33 @@
 															<mi>𝑖</mi>
 															<mo>&it;</mo>
 															<mi>𝑛</mi>
+															<mfrac>
+																<mrow>
+																	<mi>𝑥</mi><mo>+</mo><mi>𝑡</mi>
+																</mrow>
+																<mi>𝐿</mi>
+															</mfrac>
 														</mrow>
-													</mfrac>
-													<mo>&it;</mo>
-													<msub>
-														<mover>
-															<mi>𝑎</mi><mo>‾</mo>
-														</mover>
-														<mrow>
-															<mo>−</mo><mi>𝑛</mi>
-														</mrow>
-													</msub>
-												</mrow>
+													</msup>
+													<mrow>
+														<mn>2</mn>
+														<mo>&it;</mo>
+														<mi>𝜋</mi>
+														<mo>&it;</mo>
+														<mi>𝑖</mi>
+														<mo>&it;</mo>
+														<mi>𝑛</mi>
+													</mrow>
+												</mfrac>
+												<mo>&it;</mo>
+												<msub>
+													<mover>
+														<mi>𝑎</mi><mo>‾</mo>
+													</mover>
+													<mrow>
+														<mo>−</mo><mi>𝑛</mi>
+													</mrow>
+												</msub>
 											</mrow>
 										</mtd>
 									</mtr>
@@ -26547,7 +26521,6 @@
 										</mtd>
 										<mtd><mo>≔</mo></mtd>
 										<mtd>
-											<mi>𝜇</mi>
 											<mo>−</mo>
 											<mrow>
 												<munder intent=":largeop">
@@ -26626,6 +26599,82 @@
 					</article>
 					<p>
 						カイラル部分の境界条件は
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mi>𝜙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi><mo>+</mo><mi>𝐿</mi><mo>−</mo><mi>𝑡</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝜙</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑥</mi><mo>−</mo><mi>𝑡</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+										</mrow>
+										<mn>2</mn>
+									</mfrac>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mover>
+										<mi>𝜙</mi><mo>‾</mo>
+									</mover>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi><mo>+</mo><mi>𝐿</mi><mo>+</mo><mi>𝑡</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mover>
+											<mi>𝜙</mi><mo>‾</mo>
+										</mover>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑥</mi><mo>+</mo><mi>𝑡</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mi>𝑁</mi><mo>&it;</mo><mi>𝑅</mi>
+										</mrow>
+										<mn>2</mn>
+									</mfrac>
+								</mrow>
+							</mrow>
+						</math>
+						となる．<math><mi>𝑁</mi></math>が整数でいいの?
 					</p>
 					<p>
 						正則微分
@@ -26637,9 +26686,7 @@
 							<mi>𝑖</mi>
 							<mo>&it;</mo>
 							<mrow>
-								<mo>∂</mo>
-								<mo>&af;</mo>
-								<mi>𝜑</mi>
+								<mo>∂</mo><mo>&af;</mo><mi>𝜑</mi>
 							</mrow>
 						</math>
 						は
