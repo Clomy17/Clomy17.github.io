@@ -388,3 +388,6 @@ dl {
 		scroll-behavior: auto !important;
 	}
 }
+/* サイドバー表示の境目にする予定*/
+@media screen and (min-width: 1120px) {
+}

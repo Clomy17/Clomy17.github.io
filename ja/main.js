@@ -102,7 +102,7 @@ mainContent.parentNode.insertBefore(mainWrapper, mainContent);
 mainWrapper.appendChild(mainContent);
 // document.getElementById("main-wrapper").insertAdjacentHTML("afterbegin", '<aside id="toc-sidebar"></aside>');
 let linkRenderExist = false;
-document.querySelectorAll("section *:any-link").forEach(link => {
+document.querySelectorAll("*:any-link").forEach(link => {
 	if (link.getAttribute("href").slice(0,4) != "http") {
 		link.addEventListener("click", function(event) {
 			event.preventDefault();
