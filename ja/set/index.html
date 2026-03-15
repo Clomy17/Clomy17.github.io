@@ -724,6 +724,112 @@
 					</ul>
 					<p>とする<a href="../category/index.html#圏">圏</a>を<dfn>関係の圏</dfn>と呼び，<math><mi>𝐑𝐞𝐥</mi></math>と表す．</p>
 				</article>
+				<article id="関係の誘導する写像" class="dfn">
+					<h3>関係の誘導する写像</h3>
+					<ul>
+						<li><a href="#集合">集合</a><math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi></mat </li>
+						<li><math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi></math>の<a href="#関係">関係</a><math><mo>∼</mo></math></li>
+						<li><math><mo>∼</mo></math>の<a href="#関係">グラフ</a><math><mi>𝑅</mi></math></li>
+					</ul>
+					<p>を与えると，以下のような<dfn>関係の誘導する写像</dfn><span lang="en">()</span>と呼ばれる写像が定義できる．</p>
+					<ul>
+						<li>
+							<math>
+								<msub>
+									<mi>𝑅</mi><mo>∗</mo>
+								</msub>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mn>2</mn><mi>𝐴</mi>
+										</msup>
+										<mo>→</mo>
+										<msup>
+											<mn>2</mn><mi>𝐵</mi>
+										</msup>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑆</mi>
+										<mo>↦</mo>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑏</mi><mo>∈</mo><mi>𝐵</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mo>∃</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mi>𝑠</mi><mo>∼</mo><mi>𝑏</mi>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<msup>
+									<mi>𝑅</mi><mo>∗</mo>
+								</msup>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mn>2</mn><mi>𝐴</mi>
+										</msup>
+										<mo>→</mo>
+										<msup>
+											<mn>2</mn><mi>𝐵</mi>
+										</msup>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑆</mi>
+										<mo>↦</mo>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑎</mi><mo>∈</mo><mi>𝐴</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mo>∃</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mi>𝑎</mi><mo>∼</mo><mi>𝑠</mi>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p></p>
+				</article>
 				<article id="空関係" class="dfn">
 					<h3>空関係</h3>
 					<p><a href="#集合">集合</a><math><mi>𝐴</mi></math>を与える．</p>
@@ -1043,336 +1149,156 @@
 				<article id="可逆関係" class="dfn">
 					<h3>左右可逆関係</h3>
 					<p><a href="#集合">集合</a><math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi></math>を与える．</p>
-					<p>
-						<math><mi>𝐴</mi></math>と<math><mi>𝐵</mi></math>の間の<a href="#関係">関係</a>
-						<math>
-							<mo>∼</mo>
-							<mo>∈</mo>
-							<mrow>
-								<mi>𝐑𝐞𝐥</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝐴</mi>
-										<mo>,</mo>
-										<mi>𝐵</mi>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						で，以下の同値な条件のいずれか（ゆえに全て）を満たすものを<dfn>モノ関係</dfn><span lang="en">(monic relation)</span>または<dfn>左可逆</dfn><span lang="en">(left-invertible)</span>と呼ぶ．
-					</p>
 					<ul>
-						<li><a href="#一意関係">左一意的</a>かつ<a href="#全域関係">左全域的</a></li>
 						<li>
-							<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#モノ射">モノ射</a>．つまり，以下を満たす．
-							<math display="block">
+							<math><mi>𝐴</mi></math>と<math><mi>𝐵</mi></math>の間の<a href="#関係">関係</a>
+							<math>
+								<mo>∼</mo>
+								<mo>∈</mo>
 								<mrow>
-									<mo>∀</mo>
+									<mi>𝐑𝐞𝐥</mi>
 									<mo>&af;</mo>
 									<mrow>
-										<mi>𝐶</mi>
-										<mo>∈</mo>
+										<mo>(</mo>
 										<mrow>
-											<mi>ob</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝐑𝐞𝐥</mi>
-												<mo>)</mo>
-											</mrow>
+											<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
 										</mrow>
+										<mo>)</mo>
 									</mrow>
 								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
+							</math>
+							で，以下の同値な条件のいずれか（ゆえに全て）を満たすものを<dfn>左可逆</dfn><span lang="en">(left-invertible)</span>と呼ぶ．
+							<ul>
+								<li><a href="#一意関係">左一意的</a>かつ<a href="#全域関係">左全域的</a></li>
+								<li>
+									<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#同型射">分裂モノ射</a>．つまり，以下を満たす：
+									<math display="block">
 										<mrow>
+											<mo>∃</mo>
+											<mo>&af;</mo>
 											<mrow>
-												<msub>
+												<msup>
 													<mo>∼</mo>
-													<mn>1</mn>
-												</msub>
-												<mo>,</mo>
-												<msub>
-													<mo>∼</mo>
-													<mn>2</mn>
-												</msub>
-											</mrow>
-											<mo>∈</mo>
-											<mrow>
-												<mi>𝐑𝐞𝐥</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
 													<mrow>
-														<mi>𝐶</mi>
-														<mo>,</mo>
-														<mi>𝐴</mi>
+														<mo>−</mo>
+														<mn>1</mn>
 													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mrow>
-											<mrow>
-												<mo>∼</mo>
-												<mo>∘</mo>
-												<msub>
-													<mo>∼</mo>
-													<mn>1</mn>
-												</msub>
-											</mrow>
-											<mo>=</mo>
-											<mrow>
-												<mo>∼</mo>
-												<mo>∘</mo>
-												<msub>
-													<mo>∼</mo>
-													<mn>2</mn>
-												</msub>
-											</mrow>
-										</mrow>
-										<mo>⇒</mo>
-										<mrow>
-											<msub>
-												<mo>∼</mo>
-												<mn>1</mn>
-											</msub>
-											<mo>=</mo>
-											<msub>
-												<mo>∼</mo>
-												<mn>2</mn>
-											</msub>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math display="block">
-								<mrow>
-									<mo>∃</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<msup>
-											<mo>∼</mo>
-											<mrow>
-												<mo>−</mo>
-												<mn>1</mn>
-											</mrow>
-										</msup>
-										<mo>∈</mo>
-										<mrow>
-											<mi>𝐑𝐞𝐥</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
+												</msup>
+												<mo>∈</mo>
 												<mrow>
-													<mi>𝐵</mi>
-													<mo>,</mo>
-													<mi>𝐴</mi>
+													<mi>𝐑𝐞𝐥</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝐵</mi>
+															<mo>,</mo>
+															<mi>𝐴</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
 												</mrow>
-												<mo>)</mo>
 											</mrow>
 										</mrow>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<msup>
-											<mo>∼</mo>
-											<mrow>
-												<mo>−</mo>
-												<mn>1</mn>
-											</mrow>
-										</msup>
-										<mo>∘</mo>
-										<mo>∼</mo>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<msub>
-											<mo>=</mo>
-											<mi>𝐴</mi>
-										</msub>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-					<p>
-						<math><mi>𝐴</mi></math>と<math><mi>𝐵</mi></math>の間の<a href="#関係">関係</a>
-						<math>
-							<mo>∼</mo>
-							<mo>∈</mo>
-							<mrow>
-								<mi>𝐑𝐞𝐥</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝐴</mi>
 										<mo>,</mo>
-										<mi>𝐵</mi>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						で，以下の同値な条件のいずれか（ゆえに全て）を満たすものを<dfn>エピ関係</dfn><span lang="en">(epic relation)</span>または<dfn>右可逆</dfn><span lang="en">(right-invertible)</span>と呼ぶ．
-					</p>
-					<ul>
-						<li><a href="#一意関係">右一意的</a>かつ<a href="#全域関係">右全域的</a></li>
-						<li>
-							<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#モノ射">エピ射</a>．つまり，以下を満たす．
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝐶</mi>
-										<mo>∈</mo>
-										<mrow>
-											<mi>ob</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝐑𝐞𝐥</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
 										<mrow>
 											<mrow>
-												<msub>
+												<msup>
 													<mo>∼</mo>
-													<mn>1</mn>
-												</msub>
-												<mo>,</mo>
-												<msub>
-													<mo>∼</mo>
-													<mn>2</mn>
-												</msub>
-											</mrow>
-											<mo>∈</mo>
-											<mrow>
-												<mi>𝐑𝐞𝐥</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
 													<mrow>
-														<mi>𝐵</mi>
-														<mo>,</mo>
-														<mi>𝐶</mi>
+														<mo>−</mo>
+														<mn>1</mn>
 													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mrow>
-											<mrow>
-												<msub>
-													<mo>∼</mo>
-													<mn>1</mn>
-												</msub>
+												</msup>
 												<mo>∘</mo>
 												<mo>∼</mo>
 											</mrow>
 											<mo>=</mo>
 											<mrow>
 												<msub>
-													<mo>∼</mo>
-													<mn>2</mn>
+													<mo>=</mo>
+													<mi>𝐴</mi>
 												</msub>
-												<mo>∘</mo>
-												<mo>∼</mo>
 											</mrow>
 										</mrow>
-										<mo>⇒</mo>
-										<mrow>
-											<msub>
-												<mo>∼</mo>
-												<mn>1</mn>
-											</msub>
-											<mo>=</mo>
-											<msub>
-												<mo>∼</mo>
-												<mn>2</mn>
-											</msub>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
+									</math>
+								</li>
+							</ul>
 						</li>
 						<li>
-							<math display="block">
+							<math><mi>𝐴</mi></math>と<math><mi>𝐵</mi></math>の間の<a href="#関係">関係</a>
+							<math>
+								<mo>∼</mo>
+								<mo>∈</mo>
 								<mrow>
-									<mo>∃</mo>
+									<mi>𝐑𝐞𝐥</mi>
 									<mo>&af;</mo>
 									<mrow>
-										<msup>
-											<mo>∼</mo>
-											<mrow>
-												<mo>−</mo>
-												<mn>1</mn>
-											</mrow>
-										</msup>
-										<mo>∈</mo>
+										<mo>(</mo>
 										<mrow>
-											<mi>𝐑𝐞𝐥</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mi>𝐵</mi>
-													<mo>,</mo>
-													<mi>𝐴</mi>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
+											<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
 										</mrow>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∼</mo>
-										<mo>∘</mo>
-										<msup>
-											<mo>∼</mo>
-											<mrow>
-												<mo>−</mo>
-												<mn>1</mn>
-											</mrow>
-										</msup>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<msub>
-											<mo>=</mo>
-											<mi>𝐵</mi>
-										</msub>
+										<mo>)</mo>
 									</mrow>
 								</mrow>
 							</math>
+							で，以下の同値な条件のいずれか（ゆえに全て）を満たすものを<dfn>右可逆</dfn><span lang="en">(right-invertible)</span>と呼ぶ．
+							<ul>
+								<li><a href="#一意関係">右一意的</a>かつ<a href="#全域関係">右全域的</a></li>
+								<li>
+									<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#同型射">分裂エピ射</a>．つまり，以下を満たす：
+									<math display="block">
+										<mrow>
+											<mo>∃</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<msup>
+													<mo>∼</mo>
+													<mrow>
+														<mo>−</mo>
+														<mn>1</mn>
+													</mrow>
+												</msup>
+												<mo>∈</mo>
+												<mrow>
+													<mi>𝐑𝐞𝐥</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝐵</mi>
+															<mo>,</mo>
+															<mi>𝐴</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mo>∼</mo>
+												<mo>∘</mo>
+												<msup>
+													<mo>∼</mo>
+													<mrow>
+														<mo>−</mo>
+														<mn>1</mn>
+													</mrow>
+												</msup>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<msub>
+													<mo>=</mo>
+													<mi>𝐵</mi>
+												</msub>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</article>
@@ -1384,20 +1310,18 @@
 							<msup>
 								<mo>∼</mo>
 								<mrow>
-									<mo>−</mo>
-									<mn>1</mn>
+									<mo>−</mo><mn>1</mn>
 								</mrow>
 							</msup>
 						</math>
 						は<a href="#反対関係">反対関係</a>に他ならない，というのを念頭においておこう．
 					</p>
-					<ol>
+					<ul>
 						<li>
 							<math><mo>∼</mo></math>の<a href="#一意関係">左一意性</a>の<a href="#全域関係">左全域性</a>を仮定する．
 							<math>
 								<msup>
-									<mo>∼</mo>
-									<mi>op</mi>
+									<mo>∼</mo><mi>op</mi>
 								</msup>
 							</math>
 							が<a href="#全域関係">右全域的</a>であることに注意すると，
@@ -1406,8 +1330,7 @@
 								<mo>&af;</mo>
 								<mrow>
 									<msub>
-										<mi>𝑎</mi>
-										<mn>1</mn>
+										<mi>𝑎</mi><mn>1</mn>
 									</msub>
 									<mo>∈</mo>
 									<mi>𝐴</mi>
@@ -1420,8 +1343,7 @@
 									<mo>&af;</mo>
 									<mrow>
 										<msub>
-											<mi>𝑎</mi>
-											<mn>2</mn>
+											<mi>𝑎</mi><mn>2</mn>
 										</msub>
 										<mo>∈</mo>
 										<mi>𝐴</mi>
@@ -1433,39 +1355,32 @@
 										<mo>∃</mo>
 										<mo>&af;</mo>
 										<mrow>
-											<mi>𝑏</mi>
-											<mo>∈</mo>
-											<mi>𝐵</mi>
+											<mi>𝑏</mi><mo>∈</mo><mi>𝐵</mi>
 										</mrow>
 									</mrow>
 									<mo>,</mo>
 									<mrow>
 										<mrow>
 											<msub>
-												<mi>𝑎</mi>
-												<mn>1</mn>
+												<mi>𝑎</mi><mn>1</mn>
 											</msub>
 											<mo>∼</mo>
 											<mi>𝑏</mi>
 											<msup>
-												<mo>∼</mo>
-												<mi>op</mi>
+												<mo>∼</mo><mi>op</mi>
 											</msup>
 											<msub>
-												<mi>𝑎</mi>
-												<mn>2</mn>
+												<mi>𝑎</mi><mn>2</mn>
 											</msub>
 										</mrow>
 										<mo>⇔</mo>
 										<mrow>
 											<msub>
-												<mi>𝑎</mi>
-												<mn>1</mn>
+												<mi>𝑎</mi><mn>1</mn>
 											</msub>
 											<mo>=</mo>
 											<msub>
-												<mi>𝑎</mi>
-												<mn>2</mn>
+												<mi>𝑎</mi><mn>2</mn>
 											</msub>
 										</mrow>
 									</mrow>
@@ -1476,218 +1391,120 @@
 								<msup>
 									<mo>∼</mo>
 									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
+										<mo>−</mo><mn>1</mn>
 									</mrow>
 								</msup>
 								<mo>=</mo>
 								<msup>
-									<mo>∼</mo>
-									<mi>op</mi>
+									<mo>∼</mo><mi>op</mi>
 								</msup>
 							</math>
 							が存在する．
 						</li>
 						<li>
-							<math>
-								<msup>
-									<mo>∼</mo>
-									<mrow>
-										<mo>−</mo>
-										<mn>1</mn>
-									</mrow>
-								</msup>
-							</math>
-							が存在するとき，<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#モノ射">モノ射</a>になることは自明．
-						</li>
-						<li>
-							<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#モノ射">モノ射</a>になることを仮定し，背理法で<math><mo>∼</mo></math>の<a href="#一意関係">左一意性</a>の<a href="#全域関係">左全域性</a>を示す．グラフ<math><mi>𝐺</mi><mo>⊂</mo><mrow><mi>𝐴</mi><mo>×</mo><mi>𝐵</mi></mrow></math>が誘導する<a href="#関係">関係</a>を<math><msub><mo>∼</mo><mi>𝐺</mi></msub></math>と表す．
+							<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#同型射">分裂モノ射</a>になるとすると，
 							<ul>
 								<li>
-									<math><mo>∼</mo></math>が<a href="#一意関係">左一意的</a>でない，つまり
 									<math>
 										<mrow>
-											<mo>∃</mo>
-											<mo>&af;</mo>
-											<mrow>
-												<mi>𝑏</mi>
-												<mo>∈</mo>
-												<mi>𝐵</mi>
-											</mrow>
+											<msub>
+												<mi>𝑎</mi><mn>1</mn>
+											</msub>
+											<mo>∼</mo>
+											<mi>𝑏</mi>
 										</mrow>
 										<mo>,</mo>
 										<mrow>
-											<mrow>
-												<mo>∃</mo>
-												<mo>&af;</mo>
-												<mrow>
-													<mrow>
-														<msub>
-															<mi>𝑎</mi>
-															<mn>1</mn>
-														</msub>
-														<mo>≠</mo>
-														<msub>
-															<mi>𝑎</mi>
-															<mn>2</mn>
-														</msub>
-													</mrow>
-													<mo>∈</mo>
-													<mi>𝐴</mi>
-												</mrow>
-											</mrow>
-											<mo>,</mo>
-											<mrow>
-												<mrow>
-													<msub>
-														<mi>𝑎</mi>
-														<mn>1</mn>
-													</msub>
-													<mo>∼</mo>
-													<mi>𝑏</mi>
-												</mrow>
-												<mo>∩</mo>
-												<mrow>
-													<msub>
-														<mi>𝑎</mi>
-														<mn>2</mn>
-													</msub>
-													<mo>∼</mo>
-													<mi>𝑏</mi>
-												</mrow>
-											</mrow>
-										</mrow>
-									</math>
-									を満たすと仮定すると，この
-									<math>
-										<mo>∃</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mrow>
-												<msub>
-													<mi>𝑎</mi>
-													<mn>1</mn>
-												</msub>
-												<mo>≠</mo>
-												<msub>
-													<mi>𝑎</mi>
-													<mn>2</mn>
-												</msub>
-											</mrow>
-											<mo>∈</mo>
-											<mi>𝐴</mi>
-										</mrow>
-									</math>
-									，任意の空でない<a href="#集合">集合</a><math><mi>𝐶</mi></math>，
-									<math>
-										<mi>𝑐</mi>
-										<mo>∈</mo>
-										<mi>𝐶</mi>
-									</math>
-									に対し，
-									<math display="block">
-										<mrow>
-											<mo>∼</mo>
-											<mo>∘</mo>
 											<msub>
-												<mo>∼</mo>
-												<mrow>
-													<mo>{</mo>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mi>𝑐</mi>
-															<mo>,</mo>
-															<msub>
-																<mi>𝑎</mi>
-																<mn>1</mn>
-															</msub>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-													<mo>}</mo>
-												</mrow>
+												<mi>𝑎</mi><mn>2</mn>
 											</msub>
+											<mo>∼</mo>
+											<mi>𝑏</mi>
 										</mrow>
+									</math>
+									のとき，
+									<math>
+										<msub>
+											<mi>𝑎</mi><mn>1</mn>
+										</msub>
+										<mrow>
+											<msup>
+												<mo>∼</mo><mi>op</mi>
+											</msup>
+											<mo>∘</mo>
+											<mo>∼</mo>
+										</mrow>
+										<msub>
+											<mi>𝑎</mi><mn>2</mn>
+										</msub>
+									</math>
+									より，
+									<math>
+										<msub>
+											<mi>𝑎</mi><mn>1</mn>
+										</msub>
 										<mo>=</mo>
-										<mrow>
-											<mo>∼</mo>
-											<mo>∘</mo>
-											<msub>
-												<mo>∼</mo>
-												<mrow>
-													<mo>{</mo>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mi>𝑐</mi>
-															<mo>,</mo>
-															<msub>
-																<mi>𝑎</mi>
-																<mn>2</mn>
-															</msub>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-													<mo>}</mo>
-												</mrow>
-											</msub>
-										</mrow>
-									</math>
-									を満たすが，
-									<math>
 										<msub>
-											<mo>∼</mo>
-											<mrow>
-												<mo>{</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝑐</mi>
-														<mo>,</mo>
-														<msub>
-															<mi>𝑎</mi>
-															<mn>1</mn>
-														</msub>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-												<mo>}</mo>
-											</mrow>
-										</msub>
-										<mo>≠</mo>
-										<msub>
-											<mo>∼</mo>
-											<mrow>
-												<mo>{</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝑐</mi>
-														<mo>,</mo>
-														<msub>
-															<mi>𝑎</mi>
-															<mn>2</mn>
-														</msub>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-												<mo>}</mo>
-											</mrow>
+											<mi>𝑎</mi><mn>2</mn>
 										</msub>
 									</math>
-									なので矛盾．
+									．
 								</li>
 								<li>
-									<math><mo>∼</mo></math>の<a href="#全域関係">左全域性</a>でない，つまり
+									<math><mo>∼</mo></math>の<a href="#全域関係">左全域性</a>でないと，
 									<math>
 										<mrow>
-											<mo>∃</mo>
+											<msup>
+												<mo>∼</mo>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>∘</mo>
+											<mo>∼</mo>
+										</mrow>
+										<mo>=</mo>
+										<msub>
+											<mo>=</mo><mi>𝐴</mi>
+										</msub>
+									</math>
+									に矛盾．
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article id="モノ関係" class="dfn">
+					<h3>関係の圏のモノ射・エピ射</h3>
+					<ul>
+						<li><a href="#集合">集合</a><math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi></mat </li>
+						<li><math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi></math>の<a href="#関係">関係</a><math><mo>∼</mo></math></li>
+						<li><math><mo>∼</mo></math>の<a href="#関係">グラフ</a><math><mi>𝑅</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							以下の同値な条件のいずれか（ゆえに全て）を満たすとき，<math><mo>∼</mo></math>を<dfn></dfn><span lang="en">()</span>と呼ぶ．
+							<ul>
+								<li><a href="#関係の誘導する写像"><math><mo>∼</mo></math>の誘導する写像</a><math><msub><mi>𝑅</mi><mo>∗</mo></msub></math>が単射．</li>
+								<li>
+									<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#モノ射">モノ射</a>．つまり，以下を満たす．
+									<math display="block">
+										<mrow>
+											<mo>∀</mo>
 											<mo>&af;</mo>
 											<mrow>
-												<mi>𝑎</mi>
+												<mi>𝐶</mi>
 												<mo>∈</mo>
-												<mi>𝐴</mi>
+												<mrow>
+													<mi>ob</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝐑𝐞𝐥</mi>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
 											</mrow>
 										</mrow>
 										<mo>,</mo>
@@ -1696,132 +1513,169 @@
 												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mi>𝑏</mi>
+													<mrow>
+														<msub>
+															<mo>∼</mo>
+															<mn>1</mn>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mo>∼</mo>
+															<mn>2</mn>
+														</msub>
+													</mrow>
 													<mo>∈</mo>
-													<mi>𝐵</mi>
+													<mrow>
+														<mi>𝐑𝐞𝐥</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mi>𝐶</mi>
+																<mo>,</mo>
+																<mi>𝐴</mi>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
 												</mrow>
 											</mrow>
 											<mo>,</mo>
 											<mrow>
-												<mi>𝑎</mi>
-												<mo>≁</mo>
-												<mi>𝑏</mi>
-											</mrow>
-										</mrow>
-									</math>
-									を満たすと仮定すると，この<math><mi>𝑎</mi><mo>∈</mo><mi>𝐴</mi></math>，任意の<a href="#濃度">濃度</a><math><mn>2</mn></math>以上の<a href="#集合">集合</a><math><mi>𝐶</mi></math>，
-									<math>
-										<mrow>
-											<msub>
-												<mi>𝑐</mi>
-												<mn>1</mn>
-											</msub>
-											<mo>≠</mo>
-											<msub>
-												<mi>𝑐</mi>
-												<mn>2</mn>
-											</msub>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝐶</mi>
-									</math>
-									に対し，
-									<math display="block">
-										<mrow>
-											<mo>∼</mo>
-											<mo>∘</mo>
-											<msub>
-												<mo>∼</mo>
 												<mrow>
-													<mo>{</mo>
 													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<msub>
-																<mi>𝑐</mi>
-																<mn>1</mn>
-															</msub>
-															<mo>,</mo>
-															<mi>𝑎</mi>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-													<mo>}</mo>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mo>∼</mo>
-											<mo>∘</mo>
-											<msub>
-												<mo>∼</mo>
-												<mrow>
-													<mo>{</mo>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<msub>
-																<mi>𝑐</mi>
-																<mn>2</mn>
-															</msub>
-															<mo>,</mo>
-															<mi>𝑎</mi>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-													<mo>}</mo>
-												</mrow>
-											</msub>
-										</mrow>
-									</math>
-									を満たすが，
-									<math>
-										<msub>
-											<mo>∼</mo>
-											<mrow>
-												<mo>{</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
+														<mo>∼</mo>
+														<mo>∘</mo>
 														<msub>
-															<mi>𝑐</mi>
+															<mo>∼</mo>
 															<mn>1</mn>
 														</msub>
-														<mo>,</mo>
-														<mi>𝑎</mi>
 													</mrow>
-													<mo>)</mo>
-												</mrow>
-												<mo>}</mo>
-											</mrow>
-										</msub>
-										<mo>≠</mo>
-										<msub>
-											<mo>∼</mo>
-											<mrow>
-												<mo>{</mo>
-												<mrow>
-													<mo>(</mo>
+													<mo>=</mo>
 													<mrow>
+														<mo>∼</mo>
+														<mo>∘</mo>
 														<msub>
-															<mi>𝑐</mi>
+															<mo>∼</mo>
 															<mn>2</mn>
 														</msub>
-														<mo>,</mo>
-														<mi>𝑎</mi>
 													</mrow>
-													<mo>)</mo>
 												</mrow>
-												<mo>}</mo>
+												<mo>⇒</mo>
+												<mrow>
+													<msub>
+														<mo>∼</mo>
+														<mn>1</mn>
+													</msub>
+													<mo>=</mo>
+													<msub>
+														<mo>∼</mo>
+														<mn>2</mn>
+													</msub>
+												</mrow>
 											</mrow>
-										</msub>
+										</mrow>
 									</math>
-									なので矛盾．
 								</li>
 							</ul>
 						</li>
-					</ol>
+						<li>
+							以下の同値な条件のいずれか（ゆえに全て）を満たすとき，<math><mo>∼</mo></math>を<dfn></dfn><span lang="en">()</span>と呼ぶ．
+							<ul>
+								<li><a href="#関係の誘導する写像"><math><mo>∼</mo></math>の誘導する写像</a><math><msup><mi>𝑅</mi><mo>∗</mo></msup></math>が単射．</li>
+								<li>
+									<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#モノ射">エピ射</a>．つまり，以下を満たす．
+									<math display="block">
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>𝐶</mi>
+												<mo>∈</mo>
+												<mrow>
+													<mi>ob</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mi>𝐑𝐞𝐥</mi>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mo>∀</mo>
+												<mo>&af;</mo>
+												<mrow>
+													<mrow>
+														<msub>
+															<mo>∼</mo>
+															<mn>1</mn>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mo>∼</mo>
+															<mn>2</mn>
+														</msub>
+													</mrow>
+													<mo>∈</mo>
+													<mrow>
+														<mi>𝐑𝐞𝐥</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mi>𝐵</mi>
+																<mo>,</mo>
+																<mi>𝐶</mi>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mrow>
+													<mrow>
+														<msub>
+															<mo>∼</mo>
+															<mn>1</mn>
+														</msub>
+														<mo>∘</mo>
+														<mo>∼</mo>
+													</mrow>
+													<mo>=</mo>
+													<mrow>
+														<msub>
+															<mo>∼</mo>
+															<mn>2</mn>
+														</msub>
+														<mo>∘</mo>
+														<mo>∼</mo>
+													</mrow>
+												</mrow>
+												<mo>⇒</mo>
+												<mrow>
+													<msub>
+														<mo>∼</mo>
+														<mn>1</mn>
+													</msub>
+													<mo>=</mo>
+													<msub>
+														<mo>∼</mo>
+														<mn>2</mn>
+													</msub>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</article>
 				<article id="一対一対応" class="dfn">
 					<h3>一対一対応・可逆関係</h3>
