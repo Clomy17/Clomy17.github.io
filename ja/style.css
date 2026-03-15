@@ -45,6 +45,10 @@ h2 {
 	margin: auto 0.25em;
 }
 
+section:has(h2) {
+	margin-top: 5em;
+}
+
 h3 {
 	margin: 0.5em auto;
 	padding: 0.25em;
