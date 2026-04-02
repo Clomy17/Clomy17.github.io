@@ -74,6 +74,11 @@ section > p {
 	margin: 0 2rem;
 }
 
+aside.future-work::before {
+	font-weight: bold;
+	content: "future work: ";
+}
+
 h1 ~ p {
 	font-weight: bold;
 	text-align: center;
