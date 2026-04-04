@@ -545,13 +545,30 @@
 							</mrow>
 						</mrow>
 					</math>
-					を満たすので<a href="#準同型">準同型</a>．逆写像<math><mi>𝑓</mi></math>を持つから，<a href="#同型">同型</a>．
+					を満たすので<a href="#準同型">準同型</a>．
+					<math>
+						<msup>
+							<mi>𝑓</mi>
+							<mrow>
+								<mo>−</mo><mn>1</mn>
+							</mrow>
+						</msup>
+						<mo>:</mo>
+						<mrow>
+							<mi>𝔥</mi><mo>→</mo><mi>𝔤</mi>
+						</mrow>
+					</math>
+					は全単射なので<a href="#同型">同型</a>となる．
 				</p>
 			</article>
 			<article id="Lie代数の圏" class="dfn">
 				<h3>Lie代数の圏</h3>
+				<ul>
+					<li><a href="../../../category/index.html#圏">対象</a>を全ての<a href="#Lie代数">Lie代数</a>の集まり</li>
+					<li><a href="../../../category/index.html#圏">射</a>を全ての<a href="#準同型">準同型</a>の集まり</li>
+				</ul>
 				<p>
-					<a href="../#対象">対象</a>を全ての<a href="#Lie代数">Lie代数</a>の集まり，<a href="#射">射</a>を全ての<a href="#準同型">準同型</a>とする<a href="#圏">圏</a>を<dfn>Lie代数の圏</dfn>と呼び，
+					とする<a href="../../../category/index.html#圏">圏</a>を<dfn>Lie代数の圏</dfn>と呼び，
 					<math>
 						<msub>
 							<mi>𝐋𝐢𝐞𝐀𝐥𝐠</mi>
@@ -559,24 +576,6 @@
 						</msub>
 					</math>
 					と表す．
-				</p>
-			</article>
-			<article id="零Lie代数" class="dfn">
-				<h3>零Lie代数</h3>
-				<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
-				<p>零線型空間<math><mo>{</mo><mn>0</mn><mo>}</mo></math>は，<a href="#Lie代数">Lie括弧</a>として唯一
-					<math display="block">
-						<mrow>
-							<mo>[</mo>
-							<mrow>
-								<mn>0</mn><mo>,</mo><mn>0</mn>
-							</mrow>
-							<mo>]</mo>
-						</mrow>
-						<mo>=</mo>
-						<mn>0</mn>
-					</math>
-					を持ち得る．これを定義とする<a href="#Lie代数">Lie代数</a><math><mo>{</mo><mn>0</mn><mo>}</mo></math>を<dfn>自明なLie代数</dfn><span lang="en">(trivial Lie algebra)</span>や<dfn>零Lie代数</dfn><span lang="en">(zero Lie algebra)</span>と呼ぶ．
 				</p>
 			</article>
 			<article id="反対Lie代数" class="dfn">
@@ -607,6 +606,17 @@
 									<mi>𝑦</mi><mo>,</mo><mi>𝑥</mi>
 								</mrow>
 								<mo>]</mo>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mo>−</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
 							</mrow>
 						</math>
 					</li>
@@ -659,9 +669,27 @@
 					が
 				</p>
 				<ul>
-					<li><a href="#準同型">準同型</a>となるとき，<dfn>反変準同型</dfn><span lang="en">(antihomomorphism)</span>と呼ぶ．</li>
-					<li><a href="#同型">同型</a>となるとき，<dfn>反変同型</dfn><span lang="en">(antiisoomorphism)</span>と呼ぶ．</li>
+					<li><a href="#準同型">準同型</a>となるとき，<dfn>反変準同型</dfn>や<dfn>反準同型</dfn><span lang="en">(antihomomorphism)</span>と呼ぶ．</li>
+					<li><a href="#同型">同型</a>となるとき，<dfn>反変同型</dfn>や<dfn>反同型</dfn><span lang="en">(antiisoomorphism)</span>と呼ぶ．</li>
 				</ul>
+			</article>
+			<article id="零Lie代数" class="dfn">
+				<h3>零Lie代数</h3>
+				<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
+				<p>零線型空間<math><mo>{</mo><mn>0</mn><mo>}</mo></math>は，<a href="#Lie代数">Lie括弧</a>として唯一
+					<math display="block">
+						<mrow>
+							<mo>[</mo>
+							<mrow>
+								<mn>0</mn><mo>,</mo><mn>0</mn>
+							</mrow>
+							<mo>]</mo>
+						</mrow>
+						<mo>=</mo>
+						<mn>0</mn>
+					</math>
+					を持ち得る．これを定義とする<a href="#Lie代数">Lie代数</a><math><mo>{</mo><mn>0</mn><mo>}</mo></math>を<dfn>自明なLie代数</dfn><span lang="en">(trivial Lie algebra)</span>や<dfn>零Lie代数</dfn><span lang="en">(zero Lie algebra)</span>と呼ぶ．
+				</p>
 			</article>
 			<section>
 				<h3>包絡代数</h3>
@@ -875,8 +903,1318 @@
 				</article>
 			</section>
 			<section>
+				<h3>Lie代数の演算</h3>
+				<article id="直積" class="dfn">
+					<h4>直積Lie代数</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>集合<math><mi>𝛬</mi></math></li>
+						<li>
+							<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a>の集まり
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝔤</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝔤</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>直積</dfn><span lang="en">(direct poduct)</span>とは，以下のデータのこと：
+							<ul>
+								<li>
+									線型空間の直積
+									<math>
+										<munder intent=":largeop">
+											<mo>∏</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝔤</mi><mi>𝜆</mi>
+										</msub>
+									</math>
+									に，<a href="#Lie代数">Lie括弧</a>を以下で定義することで得られる<a href="#Lie代数">Lie代数</a>：
+									<math display="block">
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<msub>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑥</mi><mi>𝜆</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+													<mrow>
+														<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+													</mrow>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑦</mi><mi>𝜆</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+													<mrow>
+														<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+													</mrow>
+												</msub>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>≔</mo>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<msub>
+															<mi>𝑥</mi><mi>𝜆</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mi>𝑦</mi><mi>𝜆</mi>
+														</msub>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</math>
+								</li>
+								<li>
+									<a href="#準同型">Lie代数準同型</a>
+									<math display="block">
+										<msub>
+											<mi>𝜋</mi><mi>𝜆</mi>
+										</msub>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<math>
+													<munder intent=":largeop">
+														<mo>∏</mo>
+														<mrow>
+															<msup>
+																<mi>𝜆</mi><mo>′</mo>
+															</msup>
+															<mo>∈</mo>
+															<mi>𝛬</mi>
+														</mrow>
+													</munder>
+													<msub>
+														<mi>𝔤</mi>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+													</msub>
+												</math>
+												<mo>→</mo>
+												<msub>
+													<mi>𝔤</mi><mi>𝜆</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msub>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑥</mi>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+												<mrow>
+													<msup>
+														<mi>𝜆</mi><mo>′</mo>
+													</msup>
+													<mo>∈</mo>
+													<mi>𝛬</mi>
+												</mrow>
+											</msub>
+											<mo>↦</mo>
+											<msub>
+												<mi>𝑥</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#Lie代数">Lie代数</a> <math><mi>𝔥</mi></math>を始域とする<a href="#準同型">Lie代数準同型</a>の集まり
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝔥</mi>
+												<mo>→</mo>
+												<msub>
+													<mi>𝔤</mi><mi>𝜆</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>直積</dfn><span lang="en">(direct poduct)</span>とは，<a href="#準同型">Lie代数準同型</a>
+							<math display="block">
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∏</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</munder>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝔥</mi>
+										<mo>→</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∏</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝔤</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>↦</mo>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑓</mi><mi>𝜆</mi>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							のこと．
+						</li>
+					</ul>
+					<article id="直積の普遍性" class="thm">
+						<h5>直積の普遍性</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li>集合<math><mi>𝛬</mi></math></li>
+							<li>
+								<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a>の集まり
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝔤</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<a href="#Lie代数">Lie代数</a> <math><mi>𝔥</mi></math>を始域とする<a href="#準同型">Lie代数準同型</a>の集まり
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<mi>𝔥</mi>
+													<mo>→</mo>
+													<msub>
+														<mi>𝔤</mi><mi>𝜆</mi>
+													</msub>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+						</ul>
+						<p>
+							を与えると，以下を満たす<a href="#準同型">Lie代数準同型</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝔥</mi>
+									<mo>→</mo>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∏</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝔤</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							は<a href="#直積">直積</a>
+							<math>
+								<munder intent=":largeop">
+									<mo>∏</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</munder>
+								<msub>
+									<mi>𝑓</mi><mi>𝜆</mi>
+								</msub>
+							</math>
+							に限られる：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝜋</mi><mi>𝜆</mi>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑓</mi>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑓</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+							</math>
+						</p>
+					</article>
+				</article>
+				<article id="直和" class="dfn">
+					<h4>直和Lie代数</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>集合<math><mi>𝛬</mi></math></li>
+						<li>
+							<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a>の集まり
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝔤</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝔤</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>直和</dfn><span lang="en">(direct sum)</span>とは，以下のデータのこと：
+							<ul>
+								<li>
+									線型空間の直和
+									<math>
+										<munder intent=":largeop">
+											<mo>∐</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝔤</mi><mi>𝜆</mi>
+										</msub>
+									</math>
+									に，<a href="#Lie代数">Lie括弧</a>を以下で定義することで得られる<a href="#Lie代数">Lie代数</a>：
+									<math display="block">
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<msub>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑥</mi><mi>𝜆</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+													<mrow>
+														<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+													</mrow>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑦</mi><mi>𝜆</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+													<mrow>
+														<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+													</mrow>
+												</msub>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>≔</mo>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<msub>
+															<mi>𝑥</mi><mi>𝜆</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mi>𝑦</mi><mi>𝜆</mi>
+														</msub>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</math>
+								</li>
+								<li>
+									<a href="#準同型">Lie代数準同型</a>
+									<math display="block">
+										<msub>
+											<mi>𝜄</mi><mi>𝜆</mi>
+										</msub>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>𝔤</mi><mi>𝜆</mi>
+												</msub>
+												<mo>→</mo>
+												<math>
+													<munder intent=":largeop">
+														<mo>∐</mo>
+														<mrow>
+															<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+														</mrow>
+													</munder>
+													<msub>
+														<mi>𝔤</mi><mi>𝜆</mi>
+													</msub>
+												</math>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>↦</mo>
+											<msub>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝑥</mi>
+															<msup>
+																<mi>𝜆</mi><mo>′</mo>
+															</msup>
+														</msub>
+														<mo>≔</mo>
+														<mrow>
+															<mo>{</mo>
+															<mtable intent=":piecewise">
+																<mtr>
+																	<mtd><mi>𝑥</mi></mtd>
+																	<mtd>
+																		<mrow>
+																			<msup>
+																				<mi>𝜆</mi><mo>′</mo>
+																			</msup>
+																			<mo>=</mo>
+																			<mi>𝜆</mi>
+																		</mrow>
+																	</mtd>
+																</mtr>
+																<mtr>
+																	<mtd><mn>0</mn></mtd>
+																	<mtd>
+																		<msup>
+																			<mi>𝜆</mi><mo>′</mo>
+																		</msup>
+																		<mo>≠</mo>
+																		<mi>𝜆</mi>
+																	</mtd>
+																</mtr>
+															</mtable>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mrow>
+													<msup>
+														<mi>𝜆</mi><mo>′</mo>
+													</msup>
+													<mo>∈</mo>
+													<mi>𝛬</mi>
+												</mrow>
+											</msub>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#Lie代数">Lie代数</a> <math><mi>𝔥</mi></math>を終域とする<a href="#準同型">Lie代数準同型</a>の集まり
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<msub>
+													<mi>𝔤</mi><mi>𝜆</mi>
+												</msub>
+												<mo>→</mo>
+												<mi>𝔥</mi>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>直和</dfn><span lang="en">(direct sum)</span>とは，<a href="#準同型">Lie代数準同型</a>
+							<math display="block">
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∐</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</munder>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∐</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝔤</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>→</mo>
+										<mi>𝔥</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>𝑥</mi><mi>𝜆</mi>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+										<mo>↦</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑥</mi><mi>𝜆</mi>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							のこと．
+						</li>
+					</ul>
+					<article id="直和の普遍性" class="thm">
+						<h5>直和の普遍性</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li>集合<math><mi>𝛬</mi></math></li>
+							<li>
+								<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a>の集まり
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝔤</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<a href="#Lie代数">Lie代数</a> <math><mi>𝔥</mi></math>を終域とする<a href="#準同型">Lie代数準同型</a>の集まり
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<msub>
+														<mi>𝔤</mi><mi>𝜆</mi>
+													</msub>
+													<mo>→</mo>
+													<mi>𝔥</mi>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+						</ul>
+						<p>
+							を与えると，以下を満たす<a href="#準同型">Lie代数準同型</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∐</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝔤</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝔥</mi>
+								</mrow>
+							</math>
+							は<a href="#直和">直和</a>
+							<math>
+								<munder intent=":largeop">
+									<mo>∐</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</munder>
+								<msub>
+									<mi>𝑓</mi><mi>𝜆</mi>
+								</msub>
+							</math>
+							に限られる：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝜄</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑓</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+							</math>
+						</p>
+					</article>
+				</article>
+				<article id="等化子" class="dfn">
+					<h4>等化子</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>集合<math><mi>𝛬</mi></math></li>
+						<li>
+							<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a>
+							<math>
+								<mi>𝔤</mi>
+								<mo>,</mo>
+								<msup>
+									<mi>𝔤</mi><mo>′</mo>
+								</msup>
+							</math>
+						</li>
+						<li>
+							<a href="#準同型">準同型</a>の集まり
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝔤</mi>
+												<mo>→</mo>
+												<msup>
+													<mi>𝔤</mi><mo>′</mo>
+												</msup>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math>
+							<msub>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi>𝜆</mi>
+										</msub>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>→</mo>
+											<msup>
+												<mi>𝔤</mi><mo>′</mo>
+											</msup>
+										</mrow>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+								<mrow>
+									<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+								</mrow>
+							</msub>
+						</math>
+						の<dfn>等化子</dfn><span lang="en">(equalizer)</span>とは，以下のデータのこと：
+						<ul>
+							<li>
+								写像の等化子
+								<math>
+									<mi>eq</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<a href="#準同型">Lie代数準同型</a>となる包含写像
+								<math>
+									<mi>𝜄</mi>
+									<mo>:</mo>
+									<mrow>
+										<mrow>
+											<mi>eq</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mrow>
+														<mo>{</mo>
+														<msub>
+															<mi>𝑓</mi><mi>𝜆</mi>
+														</msub>
+														<mo>}</mo>
+													</mrow>
+													<mrow>
+														<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+													</mrow>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>→</mo>
+										<mi>𝔤</mi>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</p>
+					<article id="等化子の基本性質" class="thm">
+						<h5>等化子の基本性質</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li>集合<math><mi>𝛬</mi></math></li>
+							<li>
+								<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a>
+								<math>
+									<mi>𝔤</mi>
+									<mo>,</mo>
+									<msup>
+										<mi>𝔤</mi><mo>′</mo>
+									</msup>
+								</math>
+							</li>
+							<li>
+								<a href="#準同型">準同型</a>の集まり
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<mi>𝔤</mi>
+													<mo>→</mo>
+													<msup>
+														<mi>𝔤</mi><mo>′</mo>
+													</msup>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+						</ul>
+						<p>
+							を与えると，<a href="#等化子">等化子</a>
+							<math>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mi>eq</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mrow>
+														<mo>{</mo>
+														<msub>
+															<mi>𝑓</mi><mi>𝜆</mi>
+														</msub>
+														<mo>}</mo>
+													</mrow>
+													<mrow>
+														<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+													</mrow>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mi>𝑖</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math>
+							に対し，
+						</p>
+						<ul>
+							<li>
+								<math>
+									<mi>eq</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</math>
+								は<math><mi>𝔤</mi></math>の<a href="#部分Lie代数">部分Lie代数</a>
+							</li>
+							<li><mi>𝑖</mi> は<a href="#準同型">準同型</a></li>
+						</ul>
+					</article>
+					<article id="等化子の普遍性" class="thm">
+						<h4>等化子の普遍性</h4>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li>集合<math><mi>𝛬</mi></math></li>
+							<li>
+								<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a>
+								<math>
+									<mi>𝔤</mi>
+									<mo>,</mo>
+									<msup>
+										<mi>𝔤</mi><mo>′</mo>
+									</msup>
+								</math>
+							</li>
+							<li>
+								<a href="#準同型">準同型</a>の集まり
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<mi>𝔤</mi>
+													<mo>→</mo>
+													<msup>
+														<mi>𝔤</mi><mo>′</mo>
+													</msup>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<a href="#等化子">等化子</a>
+								<math>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>eq</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mrow>
+															<mo>{</mo>
+															<msub>
+																<mi>𝑓</mi><mi>𝜆</mi>
+															</msub>
+															<mo>}</mo>
+														</mrow>
+														<mrow>
+															<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+														</mrow>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝑖</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与えると，</p>
+						<ul>
+							<li>
+								<math>
+									<mrow>
+										<mi>eq</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mrow>
+													<mo>{</mo>
+													<msub>
+														<mi>𝑓</mi><mi>𝜆</mi>
+													</msub>
+													<mo>}</mo>
+												</mrow>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+								の<a href="#部分Lie代数">部分Lie代数</a>
+								<math><mi>𝔥</mi></math>
+							</li>
+							<li>
+								<a href="#準同型">準同型</a>
+								<math>
+									<mi>𝑔</mi>
+									<mo>:</mo>
+									<mrow>
+										<mi>𝔥</mi><mo>→</mo><mi>𝔤</mi>
+									</mrow>
+								</math>
+								で，以下を満たすもの：
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝜆</mi>
+												<mo>,</mo>
+												<msup>
+													<mi>𝜆</mi><mo>′</mo>
+												</msup>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝛬</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>∘</mo>
+											<mi>𝑔</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi>
+												<msup>
+													<mi>𝜆</mi><mo>′</mo>
+												</msup>
+											</msub>
+											<mo>∘</mo>
+											<mi>𝑔</mi>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>
+							に対し，以下を満たす
+							<a href="#準同型">Lie代数準同型</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝔥</mi>
+									<mo>→</mo>
+									<mrow>
+										<mi>eq</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mrow>
+													<mo>{</mo>
+													<msub>
+														<mi>𝑓</mi><mi>𝜆</mi>
+													</msub>
+													<mo>}</mo>
+												</mrow>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							は，自然な包含写像
+							<math>
+								<msup>
+									<mi>𝜄</mi><mo>′</mo>
+								</msup>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝔥</mi>
+									<mo>→</mo>
+									<mrow>
+										<mi>eq</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mrow>
+													<mo>{</mo>
+													<msub>
+														<mi>𝑓</mi><mi>𝜆</mi>
+													</msub>
+													<mo>}</mo>
+												</mrow>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							に限られる：
+							<math display="block">
+								<mrow>
+									<mi>𝜄</mi><mo>∘</mo><mi>𝑓</mi>
+								</mrow>
+								<mo>=</mo>
+								<msup>
+									<mi>𝑓</mi><mo>′</mo>
+								</msup>
+							</math>
+						</p>
+					</article>
+				</article>
+				<article id="余等化子" class="dfn">
+					<h4>余等化子</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>集合<math><mi>𝛬</mi></math></li>
+						<li>
+							<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a>
+							<math>
+								<mi>𝔤</mi>
+								<mo>,</mo>
+								<msup>
+									<mi>𝔤</mi><mo>′</mo>
+								</msup>
+							</math>
+						</li>
+						<li>
+							<a href="#準同型">準同型</a>の集まり
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝔤</mi>
+												<mo>→</mo>
+												<msup>
+													<mi>𝔤</mi><mo>′</mo>
+												</msup>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math>
+							<msub>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi>𝜆</mi>
+										</msub>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>→</mo>
+											<msup>
+												<mi>𝔤</mi><mo>′</mo>
+											</msup>
+										</mrow>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+								<mrow>
+									<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+								</mrow>
+							</msub>
+						</math>
+						の<dfn>余等化子</dfn><span lang="en">(coequalizer)</span>とは，以下のデータのこと：
+						<ul>
+							<li></li>
+							<li></li>
+						</ul>
+					</p>
+					<article id="余等化子の普遍性" class="thm">
+						<h5>余等化子の普遍性</h5>
+						<p></p>
+					</article>
+				</article>
+			</section>
+			<section>
 				<h3>同型定理</h3>
-				<p><a href="#Lie代数の圏">Lie代数の圏</a>の<a href="../../../category/index.html#部分対象">部分対象</a>，正規対象，<a href="../../../category/index.html#部分対象">商対象</a>を確認し，同型定理を示す．</p>
+				<p><a href="#Lie代数の圏">Lie代数の圏</a>の<a href="../../../category/index.html#モノ射">部分対象</a>，正規対象，<a href="../../../category/index.html#商対象">商対象</a>を確認し，同型定理を示す．</p>
 				<article id="部分Lie代数" class="dfn">
 					<h4>部分Lie代数</h4>
 					<ul>
@@ -885,7 +2223,7 @@
 					</ul>
 					<p>を与える．</p>
 					<p>
-						部分集合<math><mi>𝔥</mi><mo>⊂</mo><mi>𝑔</mi></math>で，<math><mi>𝔤</mi></math>と同じ演算に関して<a href="#Lie代数">Lie代数</a>となるものを，<math><mi>𝔤</mi></math>の<dfn>部分Lie代数</dfn><span lang="en">(Lie subalgebra)</span>と呼ぶ．つまり以下を満たす：
+						部分集合<math><mi>𝔥</mi><mo>⊂</mo></math>で，<math><mi>𝔤</mi></math>と同じ演算に関して<a href="#Lie代数">Lie代数</a>となるものを，<math><mi>𝔤</mi></math>の<dfn>部分Lie代数</dfn><span lang="en">(Lie subalgebra)</span>と呼ぶ．つまり以下を満たす：
 						<math display="block">
 							<mrow>
 								<mrow>
@@ -933,17 +2271,15 @@
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
-					<p>部分集合<math><mi>𝔦</mi><mo>⊂</mo><mi>𝔤</mi></math>が<math><mi>𝔤</mi></math>の</math><dfn>イデアル</dfn><span lang="en">(ideal)</span>であるとは，以下を満たすことを言う．</p>
+					<p><math><mi>𝔤</mi></math>の<dfn>イデアル</dfn><span lang="en">(ideal)</span>とは，部分集合<math><mi>𝔦</mi><mo>⊂</mo><mi>𝔤</mi></math>であって，以下を満たすものを言う：</p>
 					<ul>
 						<li><math><mi>𝔦</mi></math>は<math><mi>𝔤</mi></math>の<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a></li>
 						<li>
-							<math display="block">
+							<math>
 								<mrow>
 									<mo>[</mo>
 									<mrow>
-										<mi>𝔤</mi>
-										<mo>,</mo>
-										<mi>𝔦</mi>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔦</mi>
 									</mrow>
 									<mo>]</mo>
 								</mrow>
@@ -960,23 +2296,23 @@
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
 					</ul>
 					<p>を与える．</p>
-					<p>
-						<math>
-							<mrow>
+					<ul>
+						<li>
+							<math>
 								<mrow>
-									<mo>{</mo>
-									<mn>0</mn>
-									<mo>}</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+									<mo>,</mo>
+									<mi>𝔤</mi>
 								</mrow>
-								<mo>,</mo>
+								<mo>⊂</mo>
 								<mi>𝔤</mi>
-							</mrow>
-							<mo>⊂</mo>
-							<mi>𝔤</mi>
-						</math>
-						は<math><mi>𝔤</mi></math>の<a href="#イデアル">イデアル</a>となる．これらを<math><mi>𝔤</mi></math>の<dfn>自明なイデアル</dfn><span lang="en">(trivial ideal)</span>と呼ぶ．
-					</p>
-					<p>それ以外を<dfn>非自明</dfn><span lang="en">(nontrivial)</span>と呼ぶ．</p>
+							</math>
+							は<math><mi>𝔤</mi></math>の<a href="#イデアル">イデアル</a>となる．これらを<math><mi>𝔤</mi></math>の<dfn>自明なイデアル</dfn><span lang="en">(trivial ideal)</span>と呼ぶ．
+						</li>
+						<li>それ以外を<dfn>非自明</dfn><span lang="en">(nontrivial)</span>と呼ぶ．</li>
+					</ul>
 				</article>
 				<article id="正規閉包" class="dfn">
 					<h4>正規閉包</h4>
