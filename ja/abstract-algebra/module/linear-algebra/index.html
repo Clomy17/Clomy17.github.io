@@ -360,7 +360,7 @@
 				<p>線型同型の<a href="../../../set/index.html#写像">始域</a>と<a href="../../../set/index.html#写像">終域</a>のことも互いに<dfn>同型</dfn><span lang="en">(linear isomorphic)</span>呼ぶ．</p>
 			</article>
 			<article id="線型空間の圏" class="dfn">
-				<h4>線型空間の圏</h4>
+				<h3>線型空間の圏</h3>
 				<p><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
 				<ul>
 					<li>全ての<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>の集まりを<a href="../../../category/index.html#圏">対象</a></li>
@@ -368,6 +368,599 @@
 				</ul>
 				<p>とする<a href="../../../category/index.html#圏">圏</a>を<dfn><math><mi>𝕂</mi></math>-線型空間の圏</dfn>と呼び，<math><mi>𝕂-𝐕𝐞𝐜𝐭</mi></math>と書く．</p>
 			</article>
+			<article id="線型独立" class="dfn">
+				<h3>線型独立</h3>
+				<ul>
+					<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+					<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+					<li>ベクトルの集合 <math><mi>𝑆</mi><mo>⊂</mo><mi>𝑉</mi></math></li>
+				</ul>
+				<p>を与える．</p>
+				<ul>
+					<li>
+						<math><mi>𝑆</mi></math>が<dfn>線型独立</dfn><span lang="en">(linear independent)</span>であるとは，任意の<math><mi>𝑆</mi></math>の有限部分集合
+						<math>
+							<mrow>
+								<mo>{</mo>
+								<mrow>
+									<msub>
+										<mi>𝑣</mi><mn>1</mn>
+									</msub>
+									<mo>,</mo>
+									<mo>…</mo>
+									<mo>,</mo>
+									<msub>
+										<mi>𝑣</mi><mi>𝑛</mi>
+									</msub>
+								</mrow>
+								<mo>}</mo>
+							</mrow>
+							<mo>⊂</mo>
+							<mi>𝑆</mi>
+						</math>
+						に対し，以下を満たすことを言う：
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝑎</mi><mn>1</mn>
+										</msub>
+										<mo>,</mo>
+										<mo>…</mo>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑎</mi><mi>𝑛</mi>
+										</msub>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝕂</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi><mn>1</mn>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑣</mi><mn>1</mn>
+												</msub>
+											</mrow>
+											<mo>+</mo>
+											<mo>⋯</mo>
+											<mo>+</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi><mi>𝑛</mi>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑣</mi><mi>𝑛</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+									<mo>⇒</mo>
+									<mrow>
+										<mrow>
+											<msub>
+												<mi>𝑎</mi><mn>1</mn>
+											</msub>
+											<mo>=</mo>
+											<mo>⋯</mo>
+											<mo>=</mo>
+											<msub>
+												<mi>𝑎</mi><mi>𝑛</mi>
+											</msub>
+										</mrow>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+						</math>
+					</li>
+					<li><math><mi>𝑆</mi></math>が<dfn>線型従属</dfn><span lang="en">(linear dependent)</span>であるとは，線型独立でないことを言う．</li>
+				</ul>
+			</article>
+			<section>
+				<h3>同型定理</h3>
+				<article id="部分線型空間" class="dfn">
+					<h4>部分線型空間</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p><math><mi>𝑊</mi><mo>⊂</mo><mi>𝑉</mi></math>が<dfn>部分線型空間</dfn><span lang="en">(linear subspace)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
+					<ul>
+						<li><math><mi>𝑉</mi></math>と同じ演算で<a href="#線型空間">線型空間</a>となる</li>
+						<li>
+							<math>
+								<mrow>
+									<mrow>
+										<mi>𝑊</mi><mo>+</mo><mi>𝑊</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝕂</mi><mo>&it;</mo><mi>𝑊</mi>
+									</mrow>
+								</mrow>
+								<mo>⊂</mo>
+								<mi>𝑊</mi>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="基底" class="dfn">
+					<h4>生成系・基底</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						<li>ベクトルの集合 <math><mi>𝑆</mi><mo>⊂</mo><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math>
+								<mrow>
+									<mi>𝕂</mi><mo>&it;</mo><mi>𝑆</mi>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝕂</mi><mo>&it;</mo><mi>𝑆</mi>
+								</mrow>
+							</math>
+							は<math><mi>𝑆</mi></math>を含む最小の<a href="#部分線型空間">部分線型空間</a>となる．これを<dfn><math><mi>𝑆</mi></math>で生成される部分線型空間</dfn><span lang="en">()</span>と呼ぶ．
+						</li>
+						<li><math><mi>𝑆</mi></math>で生成される部分線型空間が<math><mi>𝑉</mi></math>に等しいとき，これを<dfn><math><mi>𝑉</mi></math>の生成系</dfn><span lang="en">(generator)</span>と呼ぶ．</li>
+						<li><a href="#線型独立">線型独立</a>な生成系を<dfn>基底</dfn><span lang="en">(basis)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+				<article id="基底の存在" class="thm">
+					<h4>基底の存在</h4>
+					<p>以下は同値：</p>
+					<ul>
+						<li>選択公理</li>
+						<li>任意の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
+						<li>任意の<a href="#線型空間">線型空間</a>は整列可能な<a href="#基底">基底</a>が存在する．</li>
+						<li>任意の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
+					</ul>
+				</article>
+			</section>
+			<section>
+				<h3>線型変換</h3>
+				<article id="線型変換" class="dfn">
+					<h4>線型変換</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							写像
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑉</mi><mo>→</mo><mi>𝑉</mi>
+								</mrow>
+							</math>
+							が<dfn> <math><mi>𝑉</mi></math> 上の（<math><mi>𝕂</mi></math>-）線型変換</dfn><span lang="en">((<math><mi>𝕂</mi></math>-)linear transformation on <math><mi>𝑉</mi></math>)</span>（または<dfn><math><mi>𝑉</mi></math>上の自己（線型）準同型</dfn><span lang="en">(endmorhpism)</span>）であるとは，<a href="#線型写像"><math><mi>𝑉</mi></math>から<math><mi>𝑉</mi></math>への線型写像</a>であることを言う．
+						</li>
+						<li>
+							<math><mi>𝑉</mi></math>上の線型変換の集合を
+							<math>
+								<mi>end</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+								</mrow>
+							</math>
+							と書く．
+						</li>
+					</ul>
+					<article id="線型変換の集合は単位的結合代数" class="thm">
+						<h4>線型変換の集合は単位的結合代数</h4>
+						<p><a href="#線型変換">線型変換</a>の集合は単位的結合代数</p>
+					</article>
+				</article>
+				<section>
+					<h4>固有ベクトル</h4>
+					<article id="固有ベクトル" class="dfn">
+						<h5>固有ベクトル</h5>
+						<ul>
+							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+							<li><a href="#線型変換">線型変換</a><math><mi>𝑓</mi><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></mrow></math></li>
+						</ul>
+						<p>を与える．</p>
+						<ul>
+							<li>
+								<math>
+									<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+								</math>
+								が <math><mi>𝑓</mi></math> の<dfn>固有値</dfn><span lang="en">(eigenvalue)</span> <math><mi>𝜆</mi><mo>∈</mo><mi>𝕂</mi></math> の<dfn>固有ベクトル</dfn><span lang="en">(eigenvector)</span>であるとは，以下を満たすことを言う：
+								<math display="block">
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>&it;</mo><mi>𝑣</mi>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝑓</mi></math> の<dfn>固有値</dfn><span lang="en">(eigenvalue)</span> <math><mi>𝜆</mi><mo>∈</mo><mi>𝕂</mi></math> の固有ベクトルの集合を，<dfn>固有空間</dfn><span lang="en">(eigenvector)</span>と呼ぶ：
+								<math>
+									<msub>
+										<mi>𝑉</mi><mi>𝜆</mi>
+									</msub>
+									<mo>≔</mo>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+											</mrow>
+											<mo>|</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>&it;</mo><mi>𝑣</mi>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</article>
+					<article id="半単純" class="dfn">
+						<h5>半単純</h5>
+						<ul>
+							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						</ul>
+						<p>を与える．</p>
+						<p>
+							<a href="#線型変換">線型変換</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+								</mrow>
+							</math>
+							が<dfn>半単純</dfn><span lang="en">(seimisimple)</span>であるとは，<math><mi>𝑉</mi></math>が<math><mi>𝑓</mi></math>の固有空間の直和で表されることを言う．
+						</p>
+					</article>
+					<article id="冪零" class="dfn">
+						<h5>冪零</h5>
+						<ul>
+							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						</ul>
+						<p>を与える．</p>
+						<p>
+							<a href="#線型変換">線型変換</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+							が<dfn>冪零</dfn><span lang="en">(nilpotent)</span>であるとは，それが（単位的）<a href="../../algebra/associative/index.html#結合代数">結合代数</a>としての<a href="../../algebra/associative/index.html#冪零">冪零元</a>であることを言う．つまり，以下を満たす：
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>∈</mo>
+										<msub>
+											<mi>ℕ</mi><mn>0</mn>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mi>𝑓</mi><mi>𝑛</mi>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mn>0</mn><mi>𝑉</mi>
+									</msub>
+								</mrow>
+							</math>
+						</p>
+					</article>
+					<article id="Jordan-Chevalley分解" class="dfn">
+						<h5>Jordan-Chevalley分解</h5>
+						<ul>
+							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+							<li>
+								<a href="#線型変換">線型変換</a>
+								<math>
+									<mi>𝑓</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>end</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与える．</p>
+						<p><math><mi>𝑓</mi></math>の<dfn>Jordan-Chevalley分解</dfn><span lang="en">(Jordan–Chevalley decomposition)</span>とは，以下のデータからなる：</p>
+						<ul>
+							<li>
+								<a href="#半単純">半単純</a>な<a href="#線型変換">線型変換</a>
+								<math>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>∈</mo>
+									<mrow>
+										<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<a href="#冪零">冪零</a>な<a href="#線型変換">線型変換</a>
+								<math>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>∈</mo>
+									<mrow>
+										<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>これらは以下を満たす：</p>
+						<ul>
+							<li>
+								<math>
+									<mi>𝑓</mi>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+										</msub>
+										<mo>+</mo>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+										</msub>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+										</msub>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</article>
+				</section>
+			</section>
+		</section>
+		<section>
+			<h2>有限次元線型空間</h2>
+			<section>
+				<h3>自己準同型</h3>
+				<article id="旗" class="dfn">
+					<h4>旗</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>有限次元<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑉</mi></math>の<dfn>旗</dfn><span lang="en">(flag)</span>とは，<a href="#部分線型空間">部分線型空間</a>の増大列
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝑉</mi><mn>0</mn>
+									</msub>
+									<mo>≔</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+								</mrow>
+								<mo>⊂</mo>
+								<msub>
+									<mi>𝑉</mi><mn>1</mn>
+								</msub>
+								<mo>⊂</mo>
+								<mo>⋯</mo>
+								<mo>⊂</mo>
+								<mrow>
+									<msub>
+										<mi>𝑉</mi>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+										</mrow>
+									</msub>
+									<mo>≔</mo>
+									<mi>𝑉</mi>
+								</mrow>
+							</math>
+							であって，以下を満たすもののこと：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑗</mi>
+										<mo>∈</mo>
+										<msubsup>
+											<mi>ℕ</mi><mn>0</mn>
+											<mrow>
+												<mo>≤</mo>
+												<mrow>
+													<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+												</mrow>
+											</mrow>
+										</msubsup>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>dim</mi>
+										<mo>&af;</mo>
+										<msub>
+											<mi>𝑉</mi><mi>𝑗</mi>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑗</mi>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<a href="#線型変換">線型変換</a>
+							<math>
+								<mi>𝑥</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+								</mrow>
+							</math>
+							が旗を<dfn>安定化する</dfn><span lang="en">(stabilize)</span>とは，以下を満たすことを言う：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑗</mi>
+										<mo>∈</mo>
+										<msubsup>
+											<mi>ℕ</mi><mn>0</mn>
+											<mrow>
+												<mo>≤</mo>
+												<mrow>
+													<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+												</mrow>
+											</mrow>
+										</msubsup>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝑗</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>⊂</mo>
+									<msub>
+										<mi>𝑉</mi><mi>𝑗</mi>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="有限次元Jordan-Chevalley分解" class="thm">
+					<h4>有限次元におけるJordan-Chevalley分解の存在条件</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>有限次元<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与えると，以下が成り立つ：</p>
+					<ul>
+						<li>
+							<a href="#線型変換">線型変換</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+								</mrow>
+							</math>
+							が<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>を持つ必要十分条件は <math><mi>𝑓</mi></math> の最小多項式が分離的であること．
+						</li>
+						<li>このとき，<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>は一意．</li>
+						<li>特に <math><mi>𝕂</mi></math> が完全体のとき，任意の<a href="#線型変換">線型変換</a>は<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>を持つ．</li>
+					</ul>
+				</article>
+			</section>
+		</section>
+		<section class="references">
+			<h2>参考文献</h2>
+			<ul>
+				<li>James Edward Humphreys, "<cite>Introduction to Lie Algebras and Representation Theory</cite>", <a href="https://doi.org/10.1007/978-1-4612-6398-2">doi:10.1007/978-1-4612-6398-2</a></li>
+				<li>高間俊至，奥山竜司，<a href="https://github.com/T2sp/rep">過去に書いた表言論のノート</a></li>
+			</ul>
 		</section>
 	</main></body>
 </html>
