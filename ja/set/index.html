@@ -566,50 +566,61 @@
 									</math>
 								</li>
 								<li>
-									自然な全射の集合
+									自然な全射の<a href="#集合">集合</a>
 									<math>
 										<msub>
-											<mi>𝜋</mi><mi>𝜆</mi>
-										</msub>
-										<mo>:</mo>
-										<mrow>
 											<mrow>
+												<mo>{</mo>
 												<mrow>
-													<munder intent=":largeop">
-														<mo>∏</mo>
-														<mrow>
-															<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
-														</mrow>
-													</munder>
 													<msub>
-														<mi>𝐴</mi><mi>𝜆</mi>
+														<mi>𝜋</mi><mi>𝜆</mi>
 													</msub>
+													<mo>:</mo>
+													<mrow>
+														<mrow>
+															<mrow>
+																<munder intent=":largeop">
+																	<mo>∏</mo>
+																	<mrow>
+																		<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+																	</mrow>
+																</munder>
+																<msub>
+																	<mi>𝐴</mi><mi>𝜆</mi>
+																</msub>
+															</mrow>
+															<mo>→</mo>
+															<msub>
+																<mi>𝐴</mi><mi>𝜆</mi>
+															</msub>
+														</mrow>
+														<mo>,</mo>
+														<mrow>
+															<msub>
+																<mrow>
+																	<mo>(</mo>
+																	<msub>
+																		<mi>𝑎</mi><mi>𝜆</mi>
+																	</msub>
+																	<mo>)</mo>
+																</mrow>
+																<mrow>
+																	<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+																</mrow>
+															</msub>
+															<mo>↦</mo>
+															<msub>
+																<mi>𝑎</mi><mi>𝜆</mi>
+															</msub>
+														</mrow>
+													</mrow>
 												</mrow>
-												<mo>→</mo>
-												<msub>
-													<mi>𝐴</mi><mi>𝜆</mi>
-												</msub>
+												<mo>}</mo>
 											</mrow>
-											<mo>,</mo>
 											<mrow>
-												<msub>
-													<mrow>
-														<mo>(</mo>
-														<msub>
-															<mi>𝑎</mi><mi>𝜆</mi>
-														</msub>
-														<mo>)</mo>
-													</mrow>
-													<mrow>
-														<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
-													</mrow>
-												</msub>
-												<mo>↦</mo>
-												<msub>
-													<mi>𝑎</mi><mi>𝜆</mi>
-												</msub>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
 											</mrow>
-										</mrow>
+										</msub>
 									</math>
 								</li>
 							</ul>
@@ -626,7 +637,7 @@
 											</msub>
 											<mo>:</mo>
 											<mrow>
-												<mi>𝐶</mi>
+												<mi>𝐵</mi>
 												<mo>→</mo>
 												<msub>
 													<mi>𝐴</mi><mi>𝜆</mi>
@@ -689,6 +700,154 @@
 							</math>
 						</li>
 					</ul>
+					<article id="直積の普遍性" class="thm">
+						<h5>直積の普遍性</h5>
+						<ul>
+							<li><a href="#集合">集合</a><math><mi>𝛬</mi></math></li>
+							<li>
+								<a href="#集合">集合</a>の<a href="#集合">集合</a>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+								の<a href="#直積">直積</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∏</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<mi>𝜋</mi>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+							<li>
+								<a href="#集合">集合</a><math><mi>𝐵</mi></math>を<a href="#写像">始域</a>とする<a href="#写像">写像</a>の<a href="#集合">集合</a>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<mi>𝐵</mi>
+													<mo>→</mo>
+													<msub>
+														<mi>𝐴</mi><mi>𝜆</mi>
+													</msub>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+						</ul>
+						<p>
+							を与えると，以下を満たす<a href="#写像">写像</a>
+							<math>
+								<mover>
+									<mi>𝑓</mi><mo>‾</mo>
+								</mover>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐵</mi>
+									<mo>→</mo>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∏</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝐴</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							は，<a href="#直積">直積</a>
+							<math>
+								<munder intent=":largeop">
+									<mo>∏</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</munder>
+								<msub>
+									<mi>𝑓</mi><mi>𝜆</mi>
+								</msub>
+							</math>
+							に限られる：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝜋</mi><mi>𝜆</mi>
+										</msub>
+										<mo>∘</mo>
+										<mover>
+											<mi>𝑓</mi><mo>‾</mo>
+										</mover>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑓</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+							</math>
+						</p>
+					</article>
 				</article>
 				<article id="直和" class="dfn">
 					<h4>直和</h4>
@@ -754,13 +913,19 @@
 												</mrow>
 											</munder>
 											<mrow>
-												<msub>
-													<mi>𝐴</mi><mi>𝜆</mi>
-												</msub>
-												<mo>Π</mo>
+												<mo>(</mo>
 												<mrow>
-													<mo>{</mo><mi>𝜆</mi><mo>}</mo>
+													<mrow>
+														<msub>
+															<mi>𝐴</mi><mi>𝜆</mi>
+														</msub>
+														<mo>Π</mo>
+														<mrow>
+															<mo>{</mo><mi>𝜆</mi><mo>}</mo>
+														</mrow>
+													</mrow>
 												</mrow>
+												<mo>)</mo>
 											</mrow>
 										</mrow>
 									</math>
@@ -769,46 +934,51 @@
 									自然な単射の集合
 									<math>
 										<msub>
-											<mi>𝜄</mi><mi>𝜆</mi>
-										</msub>
-										<mo>:</mo>
-										<mrow>
 											<mrow>
-												<msub>
-													<mi>𝐴</mi><mi>𝜆</mi>
-												</msub>
-												<mo>→</mo>
+												<mo>{</mo>
 												<mrow>
-													<munder intent=":largeop">
-														<mo>∐</mo>
-														<mrow>
-															<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
-														</mrow>
-													</munder>
 													<msub>
-														<mi>𝐴</mi><mi>𝜆</mi>
+														<mi>𝜄</mi><mi>𝜆</mi>
 													</msub>
-												</mrow>
-											</mrow>
-											<mo>,</mo>
-											<mrow>
-												<msub>
-													<mi>𝑎</mi><mi>𝜆</mi>
-												</msub>
-												<mo>↦</mo>
-												<mrow>
-													<mo>(</mo>
+													<mo>:</mo>
 													<mrow>
-														<msub>
-															<mi>𝑎</mi><mi>𝜆</mi>
-														</msub>
+														<mrow>
+															<msub>
+																<mi>𝐴</mi><mi>𝜆</mi>
+															</msub>
+															<mo>→</mo>
+															<mrow>
+																<munder intent=":largeop">
+																	<mo>∐</mo>
+																	<mrow>
+																		<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+																	</mrow>
+																</munder>
+																<msub>
+																	<mi>𝐴</mi><mi>𝜆</mi>
+																</msub>
+															</mrow>
+														</mrow>
 														<mo>,</mo>
-														<mi>𝜆</mi>
+														<mrow>
+															<mi>𝑎</mi>
+															<mo>↦</mo>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<mi>𝑎</mi><mo>,</mo><mi>𝜆</mi>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
 													</mrow>
-													<mo>)</mo>
 												</mrow>
+												<mo>}</mo>
 											</mrow>
-										</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
 									</math>
 								</li>
 							</ul>
@@ -866,11 +1036,7 @@
 										<mrow>
 											<mo>(</mo>
 											<mrow>
-												<msub>
-													<mi>𝑎</mi><mi>𝜆</mi>
-												</msub>
-												<mo>,</mo>
-												<mi>𝜆</mi>
+												<mi>𝑎</mi><mo>,</mo><mi>𝜆</mi>
 											</mrow>
 											<mo>)</mo>
 										</mrow>
@@ -881,11 +1047,7 @@
 											</msub>
 											<mo>&af;</mo>
 											<mrow>
-												<mo>(</mo>
-												<msub>
-													<mi>𝑎</mi><mi>𝜆</mi>
-												</msub>
-												<mo>)</mo>
+												<mo>(</mo><mi>𝑎</mi><mo>)</mo>
 											</mrow>
 										</mrow>
 									</mrow>
@@ -893,6 +1055,154 @@
 							</math>
 						</li>
 					</ul>
+					<article id="直和の普遍性" class="thm">
+						<h5>直和の普遍性</h5>
+						<ul>
+							<li><a href="#集合">集合</a><math><mi>𝛬</mi></math></li>
+							<li>
+								<a href="#集合">集合</a>の<a href="#集合">集合</a>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+								の<a href="#直和">直和</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∐</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<mi>𝜄</mi>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+							<li>
+								<a href="#集合">集合</a><math><mi>𝐵</mi></math>を<a href="#写像">終域</a>とする<a href="#写像">写像</a>の<a href="#集合">集合</a>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<msub>
+														<mi>𝐴</mi><mi>𝜆</mi>
+													</msub>
+													<mo>→</mo>
+													<mi>𝐵</mi>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+						</ul>
+						<p>
+							を与えると，以下を満たす<a href="#写像">写像</a>
+							<math>
+								<mover>
+									<mi>𝑓</mi><mo>‾</mo>
+								</mover>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∐</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝐴</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝐵</mi>
+								</mrow>
+							</math>
+							は，<a href="#直和">直和</a>
+							<math>
+								<munder intent=":largeop">
+									<mo>∐</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</munder>
+								<msub>
+									<mi>𝑓</mi><mi>𝜆</mi>
+								</msub>
+							</math>
+							に限られる：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mover>
+											<mi>𝑓</mi><mo>‾</mo>
+										</mover>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝜄</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑓</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+							</math>
+						</p>
+					</article>
 				</article>
 				<article id="等化子" class="dfn">
 					<h4>等化子</h4>
@@ -2247,16 +2557,7 @@
 				</article>
 			</section>
 			<section>
-				<h3>関係の圏の分析(?)</h3>
-				<article id="空関係" class="dfn">
-					<h4>空関係</h4>
-					<p><a href="#集合">集合</a><math><mi>𝐴</mi></math>を与える．</p>
-					<p><a href="#空集合">空集合</a><math><mi>∅</mi></math>と<math><mi>𝐴</mi></math>の<a href="#関係">関係</a>，<math><mi>𝐴</mi></math>と<math><mi>∅</mi></math>の関係は共に唯一．これを<dfn>空関係</dfn><span lang="en">(empty relation)</span>と呼ぶ．</p>
-					<article id="空関係は零対象" class="thm">
-						<h5>空関係は零対象</h5>
-						<p><a href="#空関係">空関係</a>は<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#終対象">零対象</a></p>
-					</article>
-				</article>
+				<h3>特殊な関係</h3>
 				<article id="反対関係" class="dfn">
 					<h4>反対関係</h4>
 					<p><a href="#集合">集合</a><math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi></math>を与える．</p>
@@ -5101,6 +5402,508 @@
 						は<a href="#可逆関係">左可逆</a>．同様にして<a href="#可逆関係">右可逆</a>となる．
 					</p>
 				</article>
+			</section>
+			<section>
+				<h3>関係の演算</h3>
+				<article id="双積" class="dfn">
+					<h4>双積</h4>
+					<ul>
+						<li><a href="#集合">集合</a><math><mi>𝛬</mi></math></li>
+						<li>
+							<a href="#集合">集合</a>の<a href="#集合">集合</a>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝐴</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝐴</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>双積</dfn><span lang="en">(biproduct)</span>（または<dfn>（関係に関する）直和</dfn><span lang="en">(direct sum)</span>）とは，以下のデータのこと：
+							<ul>
+								<li>
+									<a href="#直和">集合の直和</a>
+									<math>
+										<munder intent=":largeop">
+											<mo>∐</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝐴</mi><mi>𝜆</mi>
+										</msub>
+									</math>
+								</li>
+								<li>
+									自然な<a href="#可逆関係"><math><munder intent=":largeop"><mo>∐</mo><mrow><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></mrow></munder><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> と <math><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> の間の右可逆関係</a>の集合
+									<math>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mrow>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msup>
+																	<mi>𝑎</mi><mo>′</mo>
+																</msup>
+																<mo>,</mo>
+																<msup>
+																	<mi>𝜆</mi><mo>′</mo>
+																</msup>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<msubsup>
+															<mo>∼</mo><mi>𝜆</mi><mi mathvariant="normal">R</mi>
+														</msubsup>
+														<mi>𝑎</mi>
+													</mrow>
+													<mo>⇔</mo>
+													<mrow>
+														<mrow>
+															<msup>
+																<mi>𝑎</mi><mo>′</mo>
+															</msup>
+															<mo>=</mo>
+															<mi>𝑎</mi>
+														</mrow>
+														<mo>∩</mo>
+														<mrow>
+															<msup>
+																<mi>𝜆</mi><mo>′</mo>
+															</msup>
+															<mo>=</mo>
+															<mi>𝜆</mi>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</math>
+								</li>
+								<li>
+									<math><msubsup><mo>∼</mo><mi>𝜆</mi><mi mathvariant="normal">L</mi></msubsup></math> の<a href="#反対関係">反対関係</a>（つまり<a href="#可逆関係"><math><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> と <math><munder intent=":largeop"><mo>∐</mo><mrow><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></mrow></munder><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> の間の左可逆関係</a>）の集合
+									<math>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑎</mi>
+														<msubsup>
+															<mo>∼</mo><mi>𝜆</mi><mi mathvariant="normal">L</mi>
+														</msubsup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msup>
+																	<mi>𝑎</mi><mo>′</mo>
+																</msup>
+																<mo>,</mo>
+																<msup>
+																	<mi>𝜆</mi><mo>′</mo>
+																</msup>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>⇔</mo>
+													<mrow>
+														<mrow>
+															<mi>𝑎</mi>
+															<mo>=</mo>
+															<msup>
+																<mi>𝑎</mi><mo>′</mo>
+															</msup>
+														</mrow>
+														<mo>∩</mo>
+														<mrow>
+															<mi>𝜆</mi>
+															<mo>=</mo>
+															<msup>
+																<mi>𝜆</mi><mo>′</mo>
+															</msup>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#集合">集合</a><math><mi>𝐵</mi></math>に対し，<a href="#関係"><math><mi>𝐵</mi></math> と <math><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> の間の関係</a>の<a href="#集合">集合</a>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mo>∼</mo><mi>𝜆</mi>
+											</msub>
+											<mo>∈</mo>
+											<mrow>
+												<mi>𝐑𝐞𝐥</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝐴</mi><mi>𝜆</mi>
+														</msub>
+														<mo>,</mo>
+														<mi>𝐵</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>双積</dfn><span lang="en">(biproduct)</span>（または<dfn>直和</dfn><span lang="en">(direct sum)</span>とは，以下で定義される<a href="#関係"> <math><mi>𝐵</mi></math> と <math><munder intent=":largeop"><mo>∐</mo><mrow><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></mrow></munder><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> の間の関係</a>のこと：
+							<math display="block">
+								<mrow>
+									<mi>𝑏</mi>
+									<mo>∼</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>,</mo><mi>𝜆</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mi>𝑏</mi>
+									<msub>
+										<mo>∼</mo><mi>𝜆</mi>
+									</msub>
+									<mi>𝑎</mi>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<a href="#集合">集合</a><math><mi>𝐵</mi></math>に対し，<a href="#関係"><math><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> と <math><mi>𝐵</mi></math> の間の関係</a>の<a href="#集合">集合</a>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mo>∼</mo><mi>𝜆</mi>
+											</msub>
+											<mo>∈</mo>
+											<mrow>
+												<mi>𝐑𝐞𝐥</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝐴</mi><mi>𝜆</mi>
+														</msub>
+														<mo>,</mo>
+														<mi>𝐵</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>双積</dfn><span lang="en">(biproduct)</span>（または<dfn>直和</dfn><span lang="en">(direct sum)</span>とは，以下で定義される<a href="#関係"> <math><munder intent=":largeop"><mo>∐</mo><mrow><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></mrow></munder><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> と <math><mi>𝐵</mi></math> の間の関係</a>のこと：
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>,</mo><mi>𝜆</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>∼</mo>
+									<mi>𝑏</mi>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<msub>
+										<mo>∼</mo><mi>𝜆</mi>
+									</msub>
+									<mi>𝑏</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<article id="双積の普遍性" class="thm">
+						<h5>双積の普遍性</h5>
+						<ul>
+							<li><a href="#集合">集合</a><math><mi>𝛬</mi><mo>,</mo><mi>𝐵</mi></math></li>
+							<li>
+								<a href="#集合">集合</a>の<a href="#集合">集合</a>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+								の<a href="#直和">直和</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∐</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<msup>
+											<mo>∼</mo><mi mathvariant="normal">L</mi>
+										</msup>
+										<mo>,</mo>
+										<msup>
+											<mo>∼</mo><mi mathvariant="normal">R</mi>
+										</msup>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+						</ul>
+						<p>を与えると，以下が成り立つ：</p>
+						<ul>
+							<li>
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<msubsup>
+												<mo>∼</mo><mi>𝜆</mi><mi mathvariant="normal">R</mi>
+											</msubsup>
+											<mo>∘</mo>
+											<msubsup>
+												<mo>∼</mo><mi>𝜆</mi><mi mathvariant="normal">L</mi>
+											</msubsup>
+										</mrow>
+										<mo>=</mo>
+										<msub>
+											<mo>=</mo>
+											<msub>
+												<mi>𝐴</mi><mi>𝜆</mi>
+											</msub>
+										</msub>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<a href="#関係"><math><mi>𝐵</mi></math> と <math><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> の間の関係</a>の<a href="#集合">集合</a>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mo>∼</mo><mi>𝜆</mi>
+												</msub>
+												<mo>∈</mo>
+												<mrow>
+													<mi>𝐑𝐞𝐥</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝐵</mi>
+															<mo>,</mo>
+															<msub>
+																<mi>𝐴</mi><mi>𝜆</mi>
+															</msub>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+								に対し，以下を満たす<a href="#関係"> <math><mi>𝐵</mi></math> と <math><munder intent=":largeop"><mo>∐</mo><mrow><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></mrow></munder><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> の間の関係</a> <math><mover><mo>∼</mo><mo>‾</mo></mover></math> は，<a href="#双積">双積</a> <math><mo>∼</mo></math> に限られる：
+								<math display="block">
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<msubsup>
+												<mo>∼</mo><mi>𝜆</mi><mi mathvariant="normal">R</mi>
+											</msubsup>
+											<mo>∘</mo>
+											<mover>
+												<mo>∼</mo><mo>‾</mo>
+											</mover>
+										</mrow>
+										<mo>=</mo>
+										<msub>
+											<mo>∼</mo><mi>𝜆</mi>
+										</msub>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<a href="#関係"><math><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> と <math><mi>𝐵</mi></math> の間の関係</a>の<a href="#集合">集合</a>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mo>∼</mo><mi>𝜆</mi>
+												</msub>
+												<mo>∈</mo>
+												<mrow>
+													<mi>𝐑𝐞𝐥</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<msub>
+																<mi>𝐴</mi><mi>𝜆</mi>
+															</msub>
+															<mo>,</mo>
+															<mi>𝐵</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+								に対し，以下を満たす<a href="#関係"> <math><munder intent=":largeop"><mo>∐</mo><mrow><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></mrow></munder><msub><mi>𝐴</mi><mi>𝜆</mi></msub></math> から <math><mi>𝐵</mi></math> への関係</a> <math><mover><mo>∼</mo><mo>‾</mo></mover></math> は，<a href="#双積">双積</a> <math><mo>∼</mo></math> に限られる：
+								<math display="block">
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mover>
+												<mo>∼</mo><mo>‾</mo>
+											</mover>
+											<mo>∘</mo>
+											<msubsup>
+												<mo>∼</mo><mi>𝜆</mi><mi mathvariant="normal">L</mi>
+											</msubsup>
+										</mrow>
+										<mo>=</mo>
+										<msub>
+											<mo>∼</mo><mi>𝜆</mi>
+										</msub>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</article>
+				</article>
 				<article id="関係の合併" class="dfn">
 					<h4>関係の合併</h4>
 					<p>
@@ -5247,6 +6050,18 @@
 						</math>
 						と表す．
 					</p>
+				</article>
+			</section>
+			<section>
+				<h3>零対象など</h3>
+				<article id="空関係" class="dfn">
+					<h4>空関係</h4>
+					<p><a href="#集合">集合</a><math><mi>𝐴</mi></math>を与える．</p>
+					<p><a href="#空集合">空集合</a><math><mi>∅</mi></math>と<math><mi>𝐴</mi></math>の<a href="#関係">関係</a>，<math><mi>𝐴</mi></math>と<math><mi>∅</mi></math>の関係は共に唯一．これを<dfn>空関係</dfn><span lang="en">(empty relation)</span>と呼ぶ．</p>
+					<article id="空関係は零対象" class="thm">
+						<h5>空関係は零対象</h5>
+						<p><a href="#空関係">空関係</a>は<a href="#関係の圏">関係の圏</a>の<a href="../category/index.html#終対象">零対象</a></p>
+					</article>
 				</article>
 			</section>
 			<section>

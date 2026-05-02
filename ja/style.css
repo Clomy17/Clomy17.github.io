@@ -197,7 +197,7 @@ mtable[intent=":lines"], mtable[intent=":system-of-equations"] {
 section:not([class]) {
 	> h2 {
 		counter-increment: h2;
-		counter-reset: h3 ax dfn prp thm lem cor pblm;
+		counter-reset: h3 ax dfn prp thm lem cor pblm table figure;
 	}
 	> h2::before {
 		content: "第"counter(h2)"章  ";
@@ -227,6 +227,17 @@ section:not([class]) {
 		counter-increment: h6;
 		content: counter(h2)"."counter(h3)"."counter(h4)"."counter(h5)"."counter(h6)"  ";
 	}
+}
+
+figcaption::before {
+	counter-increment: figure;
+	font-weight: bold;
+	content: "図"counter(h2)"."counter(figure)": ";
+}
+caption::before {
+	counter-increment: table;
+	font-weight: bold;
+	content: "表"counter(h2)"."counter(table)": ";
 }
 
 /* 公理，定義，命題，定理，補題，問題環境 */

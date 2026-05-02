@@ -14,78 +14,66 @@
 			<article id="線型空間" class="ax">
 				<h3>線型空間</h3>
 				<p><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
-				<p><dfn class="ax"><math><mi>𝕂</mi></math>上の線型空間</dfn><span lang="en">(<math><mi>𝕂</mi></math>-linear space)</span>とは，<a href="../over-ring/index.html#左加群">環上の左<math><mi>𝕂</mi></math>-加群</a>のことである．つまり以下のデータからなる．</p>
+				<p><dfn class="ax"><math><mi>𝕂</mi></math>上の線型空間</dfn><span lang="en">(<math><mi>𝕂</mi></math>-linear space)</span>とは，<a href="../over-ring/index.html#左加群">環上の左<math><mi>𝕂</mi></math>-加群</a>のこと．つまり以下のデータからなる：</p>
 				<ul>
 					<li><a href="#../../magma/group/index.html#可換群">可換群</a><math><mi>𝑉</mi></math></li>
 					<li>
 						<dfn>スカラー乗法</dfn>と呼ばれる演算
 						<math>
 							<mrow>
-								<mi>𝕂</mi>
-								<mo>×</mo>
-								<mi>𝑉</mi>
+								<mi>𝕂</mi><mo>Π</mo><mi>𝑉</mi>
 							</mrow>
 							<mo>→</mo>
 							<mi>𝑉</mi>
 						</math>
 					</li>
 				</ul>
-				<p>これらは以下の条件を満たす．</p>
-				<ul class="ax">
+				<p>これらは以下の条件を満たす：</p>
+				<ul>
 					<li>
 						<math display="block">
 							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
 								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mi>𝑎</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝕂</mi>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mi>𝑣</mi>
-											<mo>,</mo>
-											<mi>𝑤</mi>
-										</mrow>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝑉</mi>
+									<mi>𝑎</mi><mo>∈</mo><mi>𝕂</mi>
 								</mrow>
 							</mrow>
 							<mo>,</mo>
 							<mrow>
 								<mrow>
-									<mi>𝑎</mi>
-									<mo>&it;</mo>
+									<mo>∀</mo>
+									<mo>&af;</mo>
 									<mrow>
-										<mo>(</mo>
 										<mrow>
-											<mi>𝑣</mi>
-											<mo>+</mo>
-											<mi>𝑦</mi>
+											<mi>𝑣</mi><mo>,</mo><mi>𝑤</mi>
 										</mrow>
-										<mo>)</mo>
+										<mo>∈</mo>
+										<mi>𝑉</mi>
 									</mrow>
 								</mrow>
-								<mo>=</mo>
+								<mo>,</mo>
 								<mrow>
 									<mrow>
 										<mi>𝑎</mi>
 										<mo>&it;</mo>
-										<mi>𝑣</mi>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑣</mi><mo>+</mo><mi>𝑦</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
 									</mrow>
-									<mo>+</mo>
+									<mo>=</mo>
 									<mrow>
-										<mi>𝑎</mi>
-										<mo>&it;</mo>
-										<mi>𝑦</mi>
+										<mrow>
+											<mi>𝑎</mi><mo>&it;</mo><mi>𝑣</mi>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>&it;</mo><mi>𝑦</mi>
+										</mrow>
 									</mrow>
 								</mrow>
 							</mrow>
@@ -94,57 +82,98 @@
 					<li>
 						<math display="block">
 							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
 								<mrow>
 									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mi>𝑎</mi>
-											<mo>,</mo>
-											<mi>𝑏</mi>
-										</mrow>
+										<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
 									</mrow>
 									<mo>∈</mo>
 									<mi>𝕂</mi>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mi>𝑣</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝑉</mi>
 								</mrow>
 							</mrow>
 							<mo>,</mo>
 							<mrow>
 								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
 									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑎</mi>
-											<mo>+</mo>
-											<mi>𝑏</mi>
-										</mrow>
-										<mo>)</mo>
+										<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
 									</mrow>
-									<mo>&it;</mo>
-									<mi>𝑣</mi>
 								</mrow>
-								<mo>=</mo>
+								<mo>,</mo>
 								<mrow>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>+</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi><mo>&it;</mo><mi>𝑣</mi>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mi>𝑏</mi><mo>&it;</mo><mi>𝑣</mi>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</li>
+					<li>
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝕂</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>&it;</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+									<mo>=</mo>
 									<mrow>
 										<mi>𝑎</mi>
 										<mo>&it;</mo>
-										<mi>𝑣</mi>
-									</mrow>
-									<mo>+</mo>
-									<mrow>
-										<mi>𝑏</mi>
-										<mo>&it;</mo>
-										<mi>𝑣</mi>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑏</mi><mo>&it;</mo><mi>𝑣</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
 									</mrow>
 								</mrow>
 							</mrow>
@@ -153,81 +182,17 @@
 					<li>
 						<math display="block">
 							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
 								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mi>𝑎</mi>
-											<mo>,</mo>
-											<mi>𝑏</mi>
-										</mrow>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝕂</mi>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mi>𝑣</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝑉</mi>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑎</mi>
-											<mo>&it;</mo>
-											<mi>𝑏</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-									<mo>&it;</mo>
-									<mi>𝑣</mi>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mi>𝑎</mi>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑏</mi>
-											<mo>&it;</mo>
-											<mi>𝑣</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-					</li>
-					<li>
-						<math display="block">
-							<mrow>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mi>𝑣</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝑉</mi>
+									<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
 								</mrow>
 							</mrow>
 							<mo>,</mo>
 							<mrow>
 								<mrow>
 									<msub>
-										<mn>1</mn>
-										<mi>𝕂</mi>
+										<mn>1</mn><mi>𝕂</mi>
 									</msub>
 									<mo>&it;</mo>
 									<mi>𝑣</mi>
@@ -247,105 +212,94 @@
 				</ul>
 				<p>を与える．</p>
 				<p>
-					写像
+					<a href="../../../set/index.html#写像">写像</a>
 					<math>
 						<mi>𝑓</mi>
 						<mo>:</mo>
 						<mrow>
-							<mi>𝑉</mi>
-							<mo>→</mo>
-							<mi>𝑊</mi>
+							<mi>𝑉</mi><mo>→</mo><mi>𝑊</mi>
 						</mrow>
 					</math>
-					が以下を満たすとき，<math><mi>𝑓</mi></math>を<dfn>（<math><mi>𝕂</mi></math>-）線型写像</dfn><span lang="en">(<math><mi>𝕂</mi></math>-linear map)</span>と呼ぶ：
+					が以下を満たすとき，<math><mi>𝑓</mi></math> を<dfn>（<math><mi>𝕂</mi></math>-）線型写像</dfn><span lang="en">(<math><mi>𝕂</mi></math>-linear map)</span>と呼ぶ：
 					<math display="block">
 						<mrow>
+							<mo>∀</mo>
+							<mo>&af;</mo>
 							<mrow>
 								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑎</mi>
-										<mo>,</mo>
-										<mi>𝑏</mi>
-									</mrow>
+									<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
 								</mrow>
 								<mo>∈</mo>
 								<mi>𝕂</mi>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑣</mi>
-										<mo>,</mo>
-										<msup>
-											<mi>𝑣</mi>
-											<mo>′</mo>
-										</msup>
-									</mrow>
-								</mrow>
-								<mo>∈</mo>
-								<mi>𝑉</mi>
 							</mrow>
 						</mrow>
 						<mo>,</mo>
 						<mrow>
 							<mrow>
-								<mi>𝑓</mi>
+								<mo>∀</mo>
 								<mo>&af;</mo>
 								<mrow>
-									<mo>(</mo>
 									<mrow>
-										<mrow>
-											<mi>𝑎</mi>
-											<mo>&it;</mo>
-											<mi>𝑣</mi>
-										</mrow>
-										<mo>+</mo>
-										<mrow>
-											<mi>𝑏</mi>
-											<mo>&it;</mo>
-											<msup>
-												<mi>𝑣</mi>
-												<mo>′</mo>
-											</msup>
-										</mrow>
+										<mi>𝑣</mi>
+										<mo>,</mo>
+										<msup>
+											<mi>𝑣</mi><mo>′</mo>
+										</msup>
 									</mrow>
-									<mo>)</mo>
+									<mo>∈</mo>
+									<mi>𝑉</mi>
 								</mrow>
 							</mrow>
-							<mo>=</mo>
+							<mo>,</mo>
 							<mrow>
 								<mrow>
-									<mi>𝑎</mi>
-									<mo>&it;</mo>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
 									<mrow>
-										<mi>𝑓</mi>
-										<mo>&af;</mo>
+										<mo>(</mo>
 										<mrow>
-											<mo>(</mo>
-											<mi>𝑣</mi>
-											<mo>)</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>&it;</mo><mi>𝑣</mi>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑏</mi>
+												<mo>&it;</mo>
+												<msup>
+													<mi>𝑣</mi><mo>′</mo>
+												</msup>
+											</mrow>
 										</mrow>
+										<mo>)</mo>
 									</mrow>
 								</mrow>
-								<mo>+</mo>
+								<mo>=</mo>
 								<mrow>
-									<mi>𝑏</mi>
-									<mo>&it;</mo>
 									<mrow>
-										<mi>𝑓</mi>
-										<mo>&af;</mo>
+										<mi>𝑎</mi>
+										<mo>&it;</mo>
 										<mrow>
-											<mo>(</mo>
-											<msup>
-												<mi>𝑣</mi>
-												<mo>′</mo>
-											</msup>
-											<mo>)</mo>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑏</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msup>
+													<mi>𝑣</mi><mo>′</mo>
+												</msup>
+												<mo>)</mo>
+											</mrow>
 										</mrow>
 									</mrow>
 								</mrow>
@@ -475,12 +429,1255 @@
 				</ul>
 			</article>
 			<section>
+				<h3>線型空間の演算</h3>
+				<article id="直積" class="dfn">
+					<h4>直積</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>集合<math><mi>𝛬</mi></math></li>
+						<li>
+							<a href="#線型空間">線型空間</a>の集合
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>与える．</p>
+					<ul>
+						<li>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>直積</dfn><span lang="en">(direct poduct)</span>とは，以下のデータのこと：
+							<ul>
+								<li>
+									可換群の直積
+									<math>
+										<munder intent=":largeop">
+											<mo>∏</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+									</math>
+									に，<a href="#線型空間">スカラー乗法</a>を以下で定義することで得られる<a href="#線型空間">線型空間</a>：
+									<math display="block">
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>&it;</mo>
+											<msub>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑣</mi><mi>𝜆</mi>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</msub>
+										</mrow>
+										<mo>≔</mo>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi>
+													<mo>&it;</mo>
+													<msub>
+														<mi>𝑣</mi><mi>𝜆</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</math>
+								</li>
+								<li>
+									<a href="#線型写像">線型写像</a>
+									<math display="block">
+										<msub>
+											<mi>𝜋</mi><mi>𝜆</mi>
+										</msub>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<mrow>
+													<munder intent=":largeop">
+														<mo>∏</mo>
+														<mrow>
+															<msup>
+																<mi>𝜆</mi><mo>′</mo>
+															</msup>
+															<mo>∈</mo>
+															<mi>𝛬</mi>
+														</mrow>
+													</munder>
+													<msub>
+														<mi>𝑉</mi>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+													</msub>
+												</mrow>
+												<mo>→</mo>
+												<msub>
+													<mi>𝑉</mi><mi>𝜆</mi>
+												</msub>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<msub>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑣</mi>
+															<msup>
+																<mi>𝜆</mi><mo>′</mo>
+															</msup>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+													<mrow>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+														<mo>∈</mo>
+														<mi>𝛬</mi>
+													</mrow>
+												</msub>
+												<mo>↦</mo>
+												<msub>
+													<mi>𝑣</mi><mi>𝜆</mi>
+												</msub>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#線型空間">線型空間</a> <math><mi>𝑊</mi></math> を<a href="../../../set/index.html#写像">始域</a>とする<a href="#線型写像">線型写像</a>の集合
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝑊</mi>
+												<mo>→</mo>
+												<msub>
+													<mi>𝑉</mi><mi>𝜆</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>直積</dfn><span lang="en">(direct poduct)</span>とは，<a href="#線型写像">線型写像</a>
+							<math display="block">
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∏</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</munder>
+									<msub>
+										<mi>𝑓</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑊</mi>
+										<mo>→</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∏</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑣</mi>
+										<mo>↦</mo>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑓</mi><mi>𝜆</mi>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							のこと．
+						</li>
+					</ul>
+					<article id="直積の普遍性" class="thm">
+						<h5>直積の普遍性</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li>集合<math><mi>𝛬</mi></math></li>
+							<li>
+								<math><mi>𝕂</mi></math>上の<a href="#線型空間">線型空間</a>の集合
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+								の<a href="#直積">直積</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∏</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝜋</mi><mi>𝜆</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+							<li>
+								<a href="#線型空間">線型空間</a> <math><mi>𝑊</mi></math> を<a href="../../../set/index.html#写像">始域</a>とする<a href="#線型写像">線型写像</a>の集合
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<mi>𝑊</mi>
+													<mo>→</mo>
+													<msub>
+														<mi>𝑉</mi><mi>𝜆</mi>
+													</msub>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+						</ul>
+						<p>
+							を与えると，以下を満たす<a href="#線型写像">線型写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑊</mi>
+									<mo>→</mo>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∏</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							は
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝑊</mi>
+												<mo>→</mo>
+												<msub>
+													<mi>𝑉</mi><mi>𝜆</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<a href="#直積">直積</a>
+							<math>
+								<munder intent=":largeop">
+									<mo>∏</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</munder>
+								<msub>
+									<mi>𝑓</mi><mi>𝜆</mi>
+								</msub>
+							</math>
+							に限られる：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝜋</mi><mi>𝜆</mi>
+										</msub>
+										<mo>∘</mo>
+										<mi>𝑓</mi>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑓</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+							</math>
+						</p>
+					</article>
+				</article>
+				<article id="直和" class="dfn">
+					<h4>直和</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>集合<math><mi>𝛬</mi></math></li>
+						<li>
+							<a href="#線型空間">線型空間</a>の集合
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>与える．</p>
+					<ul>
+						<li>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>直和</dfn><span lang="en">(direct sum)</span>とは，以下のデータのこと：
+							<ul>
+								<li>
+									<a href="#直積">直積</a>
+									<math>
+										<munder intent=":largeop">
+											<mo>∏</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+									</math>
+									の部分集合
+									<math display="block">
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∐</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>≔</mo>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<msub>
+														<mrow>
+															<mo>(</mo>
+															<msub>
+																<mi>𝑣</mi><mi>𝜆</mi>
+															</msub>
+															<mo>)</mo>
+														</mrow>
+														<mrow>
+															<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+														</mrow>
+													</msub>
+													<mo>∈</mo>
+													<mrow>
+														<munder intent=":largeop">
+															<mo>∏</mo>
+															<mrow>
+																<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+															</mrow>
+														</munder>
+														<msub>
+															<mi>𝑉</mi><mi>𝜆</mi>
+														</msub>
+													</mrow>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mi>card</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mo>{</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+																	</mrow>
+																	<mo>|</mo>
+																	<mrow>
+																		<msub>
+																			<mi>𝑣</mi><mi>𝜆</mi>
+																		</msub>
+																		<mo>≠</mo>
+																		<mn>0</mn>
+																	</mrow>
+																</mrow>
+																<mo>}</mo>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>&lt;</mo>
+													<mi>∞</mi>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</math>
+									に<a href="#直積">直積</a>と同じ<a href="#線型空間">可換群の和とスカラー乗法</a>を定義することで得られる<a href="#線型空間">線型空間</a>
+								</li>
+								<li>
+									<a href="#線型写像">線型写像</a>
+									<math display="block">
+										<msub>
+											<mi>𝜄</mi><mi>𝜆</mi>
+										</msub>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>𝑉</mi><mi>𝜆</mi>
+												</msub>
+												<mo>→</mo>
+												<mrow>
+													<munder intent=":largeop">
+														<mo>∐</mo>
+														<mrow>
+															<msup>
+																<mi>𝜆</mi><mo>′</mo>
+															</msup>
+															<mo>∈</mo>
+															<mi>𝛬</mi>
+														</mrow>
+													</munder>
+													<msub>
+														<mi>𝑉</mi>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+													</msub>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝑣</mi>
+												<mo>↦</mo>
+												<msub>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<msub>
+																<mi>𝑣</mi>
+																<msup>
+																	<mi>𝜆</mi><mo>′</mo>
+																</msup>
+															</msub>
+															<mo>≔</mo>
+															<mrow>
+																<mo>{</mo>
+																<mtable intent=":piecewise">
+																	<mtr>
+																		<mtd><mi>𝑣</mi></mtd>
+																		<mtd>
+																			<msup>
+																				<mi>𝜆</mi><mo>′</mo>
+																			</msup>
+																			<mo>=</mo>
+																			<mi>𝜆</mi>
+																		</mtd>
+																	</mtr>
+																	<mtr>
+																		<mtd><mn>0</mn></mtd>
+																		<mtd>
+																			<msup>
+																				<mi>𝜆</mi><mo>′</mo>
+																			</msup>
+																			<mo>≠</mo>
+																			<mi>𝜆</mi>
+																		</mtd>
+																	</mtr>
+																</mtable>
+															</mrow>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mrow>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+														<mo>∈</mo>
+														<mi>𝛬</mi>
+													</mrow>
+												</msub>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#線型空間">線型空間</a> <math><mi>𝑊</mi></math> を<a href="../../../set/index.html#写像">終域</a>とする<a href="#線型写像">線型写像</a>の集合
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<msub>
+													<mi>𝑉</mi><mi>𝜆</mi>
+												</msub>
+												<mo>→</mo>
+												<mi>𝑊</mi>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+								</msub>
+							</math>
+							の<dfn>直和</dfn><span lang="en">(direct sum)</span>とは，<a href="#線型写像">線型写像</a>
+							<math display="block">
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∐</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</munder>
+									<msub>
+										<mi>𝑓</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∐</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>→</mo>
+										<mi>𝑊</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>𝑣</mi><mi>𝜆</mi>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+										<mo>↦</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑣</mi><mi>𝜆</mi>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							のこと．
+						</li>
+					</ul>
+					<article id="直和の普遍性" class="thm">
+						<h5>直和の普遍性</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li>集合<math><mi>𝛬</mi></math></li>
+							<li>
+								<math><mi>𝕂</mi></math>上の<a href="#線型空間">線型空間</a>の集合
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+								の<a href="#直和">直和</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∐</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝜄</mi><mi>𝜆</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+							<li>
+								<a href="#線型空間">線型空間</a> <math><mi>𝑊</mi></math> を<a href="../../../set/index.html#写像">終域</a>とする<a href="#線型写像">線型写像</a>の集合
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi>𝜆</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<msub>
+														<mi>𝑉</mi><mi>𝜆</mi>
+													</msub>
+													<mo>→</mo>
+													<mi>𝑊</mi>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+						</ul>
+						<p>
+							を与えると，以下を満たす<a href="#線型写像">線型写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∐</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝑊</mi>
+								</mrow>
+							</math>
+							は
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi>𝜆</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<msub>
+													<mi>𝑉</mi><mi>𝜆</mi>
+												</msub>
+												<mo>→</mo>
+												<mi>𝑊</mi>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+							の<a href="#直和">直和</a>
+							<math>
+								<munder intent=":largeop">
+									<mo>∐</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</munder>
+								<msub>
+									<mi>𝑓</mi><mi>𝜆</mi>
+								</msub>
+							</math>
+							に限られる：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝜄</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑓</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+							</math>
+						</p>
+					</article>
+				</article>
+				<p>可換群の場合と同様，添字集合 <math><mi>𝛬</mi></math> が有限なら，<a href="#直積">直積</a>と<a href="#直和">直和</a>は<a href="#線型同型">同型</a>である：</p>
+				<article id="双積" class="dfn">
+					<h4>双積</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li>有限集合<math><mi>𝛬</mi></math></li>
+						<li>
+							<a href="#線型空間">線型空間</a>の集合
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>与える．</p>
+					<p>
+						<math>
+							<msub>
+								<mrow>
+									<mo>{</mo>
+									<msub>
+										<mi>𝑉</mi><mi>𝜆</mi>
+									</msub>
+									<mo>}</mo>
+								</mrow>
+								<mrow>
+									<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+								</mrow>
+							</msub>
+						</math>
+						の<dfn>双積</dfn><span lang="en">(biproduct)</span>とは，以下のデータのこと：
+						<ul>
+							<li>
+								<a href="#直積">直積線型空間</a>（同じことだが<a href="#直和">直和線型空間</a>）
+								<math>
+									<munder intent=":largeop">
+										<mo>⨁</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</munder>
+									<msub>
+										<mi>𝑉</mi><mi>𝜆</mi>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<a href="#線型写像">線型写像</a>の集合
+								<math display="block">
+									<msub>
+										<mi>𝜋</mi><mi>𝜆</mi>
+									</msub>
+									<mo>:</mo>
+									<mrow>
+										<mrow>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>⨁</mo>
+													<mrow>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+														<mo>∈</mo>
+														<mi>𝛬</mi>
+													</mrow>
+												</munder>
+												<msub>
+													<mi>𝑉</mi>
+													<msup>
+														<mi>𝜆</mi><mo>′</mo>
+													</msup>
+												</msub>
+											</mrow>
+											<mo>→</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msub>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑣</mi>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+												<mrow>
+													<msup>
+														<mi>𝜆</mi><mo>′</mo>
+													</msup>
+													<mo>∈</mo>
+													<mi>𝛬</mi>
+												</mrow>
+											</msub>
+											<mo>↦</mo>
+											<msub>
+												<mi>𝑣</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<a href="#線型写像">線型写像</a>の集合
+								<math display="block">
+									<msub>
+										<mi>𝜄</mi><mi>𝜆</mi>
+									</msub>
+									<mo>:</mo>
+									<mrow>
+										<mrow>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>→</mo>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>⨁</mo>
+													<mrow>
+														<msup>
+															<mi>𝜆</mi><mo>′</mo>
+														</msup>
+														<mo>∈</mo>
+														<mi>𝛬</mi>
+													</mrow>
+												</munder>
+												<msub>
+													<mi>𝑉</mi>
+													<msup>
+														<mi>𝜆</mi><mo>′</mo>
+													</msup>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝑣</mi>
+											<mo>↦</mo>
+											<msub>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝑣</mi>
+															<msup>
+																<mi>𝜆</mi><mo>′</mo>
+															</msup>
+														</msub>
+														<mo>≔</mo>
+														<mrow>
+															<mo>{</mo>
+															<mtable intent=":piecewise">
+																<mtr>
+																	<mtd><mi>𝑣</mi></mtd>
+																	<mtd>
+																		<msup>
+																			<mi>𝜆</mi><mo>′</mo>
+																		</msup>
+																		<mo>=</mo>
+																		<mi>𝜆</mi>
+																	</mtd>
+																</mtr>
+																<mtr>
+																	<mtd><mn>0</mn></mtd>
+																	<mtd>
+																		<msup>
+																			<mi>𝜆</mi><mo>′</mo>
+																		</msup>
+																		<mo>≠</mo>
+																		<mi>𝜆</mi>
+																	</mtd>
+																</mtr>
+															</mtable>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mrow>
+													<msup>
+														<mi>𝜆</mi><mo>′</mo>
+													</msup>
+													<mo>∈</mo>
+													<mi>𝛬</mi>
+												</mrow>
+											</msub>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</p>
+					<article id="双積の基本性質" class="thm">
+						<h5>双積の基本性質</h5>
+						<ul>
+							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li>有限集合<math><mi>𝛬</mi></math></li>
+							<li>
+								<a href="#線型空間">線型空間</a>の集合
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+								の<a href="#双積">双積</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>⨁</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝜋</mi><mi>𝜆</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝜄</mi><mi>𝜆</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+						</ul>
+						<p>
+							与えると，以下が成り立つ：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝜋</mi><mi>𝜆</mi>
+										</msub>
+										<mo>∘</mo>
+										<msub>
+											<mi>𝜄</mi><mi>𝜆</mi>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>id</mi>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+									</msub>
+								</mrow>
+							</math>
+						</p>
+					</article>
+				</article>
+			</section>
+			<section>
 				<h3>同型定理</h3>
 				<article id="部分線型空間" class="dfn">
 					<h4>部分線型空間</h4>
 					<ul>
 						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与える．</p>
 					<p><math><mi>𝑊</mi><mo>⊂</mo><mi>𝑉</mi></math>が<dfn>部分線型空間</dfn><span lang="en">(linear subspace)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
@@ -532,7 +1729,7 @@
 					<h4>基底の存在</h4>
 					<p>以下は同値：</p>
 					<ul>
-						<li>選択公理</li>
+						<li><a href="../../../set/index.html#選択公理">選択公理</a></li>
 						<li>任意の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
 						<li>任意の<a href="#線型空間">線型空間</a>は整列可能な<a href="#基底">基底</a>が存在する．</li>
 						<li>任意の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
@@ -574,8 +1771,59 @@
 					</ul>
 					<article id="線型変換の集合は単位的結合代数" class="thm">
 						<h4>線型変換の集合は単位的結合代数</h4>
-						<p><a href="#線型変換">線型変換</a>の集合は単位的結合代数</p>
+						<p><a href="#線型変換">線型変換</a>の集合は恒等変換を単位元とする単位的結合代数</p>
 					</article>
+				</article>
+				<article id="可逆変換" class="dfn">
+					<h4>可逆変換</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p><a href="#線型変換">線型変換</a> <math><mi>𝑓</mi></math> が<dfn>可逆</dfn><span lang="en">(invertible)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
+					<ul>
+						<li><math><mi>𝑓</mi></math>が全単射．</li>
+						<li><math><mi>𝑓</mi></math>が単射．</li>
+						<li><math><mi>𝑓</mi></math>が分裂全射．</li>
+						<li>基底の像は基底．</li>
+					</ul>
+				</article>
+				<article id="不変部分空間" class="dfn">
+					<h4>不変部分空間</h4>
+					<ul>
+						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						<li>
+							<a href="#線型変換">線型変換</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mi>𝑉</mi></math>の<a href="#部分線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑊</mi><mo>⊂</mo><mi>𝑉</mi></math> が <math><mi>𝑓</mi></math> の<dfn>不変部分空間</dfn><span lang="en">(invariant subspace)</span>であるとは，以下を満たすことを言う：
+						<math display="block">
+							<mrow>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝑊</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>⊂</mo>
+							<mi>𝑊</mi>
+						</math>
+					</p>
 				</article>
 				<section>
 					<h4>固有ベクトル</h4>
@@ -711,6 +1959,57 @@
 								</mrow>
 							</math>
 						</p>
+					</article>
+					<article id="冪零性の基本性質" class="thm">
+						<h5>冪零性の基本性質</h5>
+						<ul>
+							<li><a href="../../ring/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+							<li><a href="#冪零">冪零変換</a> <math><mi>𝑓</mi><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></mrow></math></li>
+						</ul>
+						<p>を与えると，以下が成り立つ：</p>
+						<ul>
+							<li><math><mi>𝑓</mi></math> の取り得る<a href="#固有値">固有値</a>は <math><mn>0</mn></math> のみ．</li>
+							<li><math><mi>𝑓</mi></math> は可逆でない．</li>
+							<li>
+								<math>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑡</mi><mo>∈</mo><mi>𝕂</mi>
+									</mrow>
+								</math>
+								に対し，
+								<math>
+									<mi>id</mi>
+									<mo>−</mo>
+									<mrow>
+										<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
+									</mrow>
+								</math>
+								は可逆で，その逆変換は
+								<math>
+									<munderover intent=":largeop">
+										<mo>∑</mo>
+										<mrow>
+											<mi>𝑗</mi><mo>=</mo><mn>1</mn>
+										</mrow>
+										<mi>∞</mi>
+									</munderover>
+									<msup>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑡</mi><mo>&it;</mo><mi>𝑁</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mi>𝑗</mi>
+									</msup>
+								</math>
+								．
+							</li>
+						</ul>
 					</article>
 					<article id="Jordan-Chevalley分解" class="dfn">
 						<h5>Jordan-Chevalley分解</h5>
@@ -954,6 +2253,35 @@
 					</ul>
 				</article>
 			</section>
+		</section>
+		<section>
+			<h2>初学時のメモ</h2>
+			<ul>
+				<li>内積空間</li>
+				<li>ノルム空間</li>
+				<li>双対空間</li>
+				<li>基底の取替</li>
+				<li>線型写像・変換の行列表示</li>
+				<li>線型写像のrank</li>
+				<li>正規直交系</li>
+				<li>Schmidtの直交化法</li>
+				<li>不変部分空間</li>
+				<li>補空間・直交補空間</li>
+				<li>計量同型</li>
+				<li>基底の取替とユニタリ，直交行列</li>
+				<li>随伴変換</li>
+				<li>正規変換</li>
+				<li>射影</li>
+				<li>スペクトル分解</li>
+				<li>Hermite変換</li>
+				<li>実計量空間・対称変換</li>
+				<li>二次形式</li>
+				<li>二次形式の符号</li>
+				<li>Lagrangeの方法</li>
+				<li>二次曲面・曲線</li>
+				<li>x-行列（多項式行列? 一般的な呼び名あるのでは?）</li>
+				<li>標準系</li>
+			</ul>
 		</section>
 		<section class="references">
 			<h2>参考文献</h2>
