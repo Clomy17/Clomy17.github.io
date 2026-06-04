@@ -21838,12 +21838,32 @@
 						<li>任意の順序を保つ写像を<a href="#圏">射</a>とする</li>
 					</ul>
 				</article>
-				<article id="面写像・縮退写像" class="dfn">
+				<p>
+					後述の位相的実現に添え字合わせるため，von Neumann 順序の定義
+					<math>
+						<mi>𝑛</mi>
+						<mo>≔</mo>
+						<mrow>
+							<mo>{</mo>
+							<mrow>
+								<mn>0</mn>
+								<mo>,</mo>
+								<mo>…</mo>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+								</mrow>
+							</mrow>
+							<mo>}</mo>
+						</mrow>
+					</math>
+					からずれている（うーん……）．
+				</p>
+				<article id="面写像" class="dfn">
 					<h4>面写像・縮退写像</h4>
 					<ul>
-						<li><a href="#単体圏">単体圏</a><math><mi>𝛥</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><msub><mi>ℕ</mi><mn>0</mn></msub></math></li>
-						<li><math><mi>𝑖</mi><mo>∈</mo><mrow><mo>[</mo><mi>𝑛</mi><mo>]</mo></mrow></math></li>
+						<li><a href="#単体圏"><math><mi>𝑛</mi></math>-単体</a> <math><mo>[</mo><mi>𝑛</mi><mo>]</mo></math> の元 <math><mi>𝑖</mi><mo>∈</mo><mrow><mo>[</mo><mi>𝑛</mi><mo>]</mo></mrow></math></li>
 					</ul>
 					<p>を与える．</p>
 					<ul>
@@ -21996,12 +22016,462 @@
 							</math>
 						</li>
 					</ul>
+					<article id="単体恒等式" class="thm">
+						<h5>単体恒等式</h5>
+						<p><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> に対する<a href="#単体圏"> <math><mi>𝑛</mi></math>-単体</a> <math><mo>[</mo><mi>𝑛</mi><mo>]</mo></math> を与えると，以下を満たす：</p>
+						<ul>
+							<li>
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>&lt;</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mrow>
+												<mo>[</mo><mi>𝑛</mi><mo>]</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<msubsup>
+												<mi>𝑑</mi><mi>𝑗</mi><mi>𝑛</mi>
+											</msubsup>
+											<mo>∘</mo>
+											<msubsup>
+												<mi>𝑑</mi>
+												<mi>𝑖</mi>
+												<mrow>
+													<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+												</mrow>
+											</msubsup>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<msubsup>
+												<mi>𝑑</mi><mi>𝑖</mi><mi>𝑛</mi>
+											</msubsup>
+											<mo>∘</mo>
+											<msubsup>
+												<mi>𝑑</mi>
+												<mrow>
+													<mi>𝑗</mi><mo>−</mo><mn>1</mn>
+												</mrow>
+												<mrow>
+													<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+												</mrow>
+											</msubsup>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>≤</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mrow>
+												<mo>[</mo><mi>𝑛</mi><mo>]</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<msubsup>
+												<mi>𝑠</mi><mi>𝑗</mi><mi>𝑛</mi>
+											</msubsup>
+											<mo>∘</mo>
+											<msubsup>
+												<mi>𝑠</mi>
+												<mi>𝑖</mi>
+												<mrow>
+													<mi>𝑛</mi><mo>+</mo><mn>1</mn>
+												</mrow>
+											</msubsup>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<msubsup>
+												<mi>𝑠</mi><mi>𝑖</mi><mi>𝑛</mi>
+											</msubsup>
+											<mo>∘</mo>
+											<msubsup>
+												<mi>𝑠</mi>
+												<mrow>
+													<mi>𝑗</mi><mo>+</mo><mn>1</mn>
+												</mrow>
+												<mrow>
+													<mi>𝑛</mi><mo>+</mo><mn>1</mn>
+												</mrow>
+											</msubsup>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mrow>
+												<mo>[</mo><mi>𝑛</mi><mo>]</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<msubsup>
+												<mi>𝑠</mi><mi>𝑗</mi><mi>𝑛</mi>
+											</msubsup>
+											<mo>∘</mo>
+											<msubsup>
+												<mi>𝑑</mi>
+												<mi>𝑖</mi>
+												<mrow>
+													<mi>𝑛</mi><mo>+</mo><mn>1</mn>
+												</mrow>
+											</msubsup>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>{</mo>
+											<mtable intent=":piecewise">
+												<mtr>
+													<mtd>
+														<msubsup>
+															<mi>𝑑</mi><mi>𝑖</mi><mi>𝑛</mi>
+														</msubsup>
+														<mo>∘</mo>
+														<msubsup>
+															<mi>𝑠</mi>
+															<mrow>
+																<mi>𝑗</mi><mo>−</mo><mn>1</mn>
+															</mrow>
+															<mrow>
+																<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+															</mrow>
+														</msubsup>
+													</mtd>
+													<mtd><mi>𝑖</mi><mo>&lt;</mo><mi>𝑗</mi></mtd>
+												</mtr>
+												<mtr>
+													<mtd>
+														<msubsup>
+															<mi>𝑑</mi>
+															<mrow>
+																<mi>𝑖</mi><mo>−</mo><mn>1</mn>
+															</mrow>
+															<mi>𝑛</mi>
+														</msubsup>
+														<mo>∘</mo>
+														<msubsup>
+															<mi>𝑠</mi>
+															<mi>𝑗</mi>
+															<mrow>
+																<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+															</mrow>
+														</msubsup>
+													</mtd>
+													<mtd><mi>𝑖</mi><mo>&gt;</mo><mrow><mi>𝑗</mi><mo>+</mo><mn>1</mn></mrow></mtd>
+												</mtr>
+												<mtr>
+													<mtd>
+														<msub>
+															<mi>id</mi>
+															<mrow>
+																<mo>[</mo><mi>𝑛</mi><mo>]</mo>
+															</mrow>
+														</msub>
+													</mtd>
+													<mtd><mi>𝑖</mi><mo>=</mo><mrow><mi>𝑗</mi><mo>,</mo><mrow><mi>𝑗</mi><mo>+</mo><mn>1</mn></mrow></mrow></mtd>
+												</mtr>
+											</mtable>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>特に，</p>
+						<ul>
+							<li><a href="#面写像">面写像</a>は<a href="#同型射">分裂モノ射</a>．</li>
+							<li><a href="#面写像">縮退写像</a>は<a href="#同型射">分裂エピ射</a>．</li>
+						</ul>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>単体的恒等式の証明</h4>
+					<ul>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mo>[</mo><mrow><mi>𝑛</mi><mo>−</mo><mn>2</mn></mrow><mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+							に対し，
+							<math>
+								<mrow>
+									<mrow>
+										<msubsup>
+											<mi>𝑑</mi><mi>𝑗</mi><mi>𝑛</mi>
+										</msubsup>
+										<mo>∘</mo>
+										<msubsup>
+											<mi>𝑑</mi>
+											<mi>𝑖</mi>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msubsup>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo>
+									<mtable intent=":piecewise">
+										<mtr>
+											<mtd><mi>𝑥</mi></mtd>
+											<mtd><mi>𝑥</mi><mo>&lt;</mo><mi>𝑖</mi></mtd>
+										</mtr>
+										<mtr>
+											<mtd><mi>𝑥</mi><mo>+</mo><mn>1</mn></mtd>
+											<mtd><mi>𝑖</mi><mo>≤</mo><mi>𝑥</mi><mo>&lt;</mo><mrow><mi>𝑗</mi><mo>−</mo><mn>1</mn></mrow></mtd>
+										</mtr>
+										<mtr>
+											<mtd><mi>𝑥</mi><mo>+</mo><mn>2</mn></mtd>
+											<mtd><mrow><mi>𝑗</mi><mo>−</mo><mn>1</mn></mrow><mo>≤</mo><mi>𝑥</mi></mtd>
+										</mtr>
+									</mtable>
+									<mo>}</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<msubsup>
+											<mi>𝑑</mi><mi>𝑖</mi><mi>𝑛</mi>
+										</msubsup>
+										<mo>∘</mo>
+										<msubsup>
+											<mi>𝑑</mi>
+											<mrow>
+												<mi>𝑗</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msubsup>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mo>[</mo><mrow><mi>𝑛</mi><mo>+</mo><mn>2</mn></mrow><mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+							に対し，
+							<math>
+								<mrow>
+									<mrow>
+										<msubsup>
+											<mi>𝑠</mi><mi>𝑗</mi><mi>𝑛</mi>
+										</msubsup>
+										<mo>∘</mo>
+										<msubsup>
+											<mi>𝑠</mi>
+											<mi>𝑖</mi>
+											<mrow>
+												<mi>𝑛</mi><mo>+</mo><mn>1</mn>
+											</mrow>
+										</msubsup>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo>
+									<mtable intent=":piecewise">
+										<mtr>
+											<mtd><mi>𝑥</mi></mtd>
+											<mtd><mi>𝑥</mi><mo>≤</mo><mi>𝑖</mi></mtd>
+										</mtr>
+										<mtr>
+											<mtd><mi>𝑥</mi><mo>−</mo><mn>1</mn></mtd>
+											<mtd><mi>𝑖</mi><mo>&lt;</mo><mi>𝑥</mi><mo>≤</mo><mrow><mi>𝑗</mi><mo>+</mo><mn>1</mn></mrow></mtd>
+										</mtr>
+										<mtr>
+											<mtd><mi>𝑥</mi><mo>−</mo><mn>2</mn></mtd>
+											<mtd><mrow><mi>𝑗</mi><mo>+</mo><mn>1</mn></mrow><mo>&lt;</mo><mi>𝑥</mi></mtd>
+										</mtr>
+									</mtable>
+									<mo>}</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<msubsup>
+											<mi>𝑠</mi><mi>𝑖</mi><mi>𝑛</mi>
+										</msubsup>
+										<mo>∘</mo>
+										<msubsup>
+											<mi>𝑠</mi>
+											<mrow>
+												<mi>𝑗</mi><mo>+</mo><mn>1</mn>
+											</mrow>
+											<mrow>
+												<mi>𝑛</mi><mo>+</mo><mn>1</mn>
+											</mrow>
+										</msubsup>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mo>[</mo><mi>𝑛</mi><mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+							に対し，
+							<math>
+								<mrow>
+									<mrow>
+										<msubsup>
+											<mi>𝑠</mi><mi>𝑗</mi><mi>𝑛</mi>
+										</msubsup>
+										<mo>∘</mo>
+										<msubsup>
+											<mi>𝑑</mi>
+											<mi>𝑖</mi>
+											<mrow>
+												<mi>𝑛</mi><mo>+</mo><mn>1</mn>
+											</mrow>
+										</msubsup>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo>
+									<mtable intent=":piecewise">
+										<mtr>
+											<mtd><mi>𝑥</mi><mo>−</mo><mn>1</mn></mtd>
+											<mtd><mi>𝑗</mi><mo>&lt;</mo><mi>𝑥</mi><mo>&lt;</mo><mi>𝑖</mi></mtd>
+										</mtr>
+										<mtr>
+											<mtd><mi>𝑥</mi><mo>+</mo><mn>1</mn></mtd>
+											<mtd><mi>𝑖</mi><mo>≤</mo><mi>𝑥</mi><mo>&lt;</mo><mi>𝑗</mi></mtd>
+										</mtr>
+										<mtr>
+											<mtd><mi>𝑥</mi></mtd>
+											<mtd><mtext>他</mtext></mtd>
+										</mtr>
+									</mtable>
+									<mo>}</mo>
+								</mrow>
+							</math>
+							と
+							<math>
+								<mrow>
+									<mrow>
+										<msubsup>
+											<mi>𝑑</mi><mi>𝑖</mi><mi>𝑛</mi>
+										</msubsup>
+										<mo>∘</mo>
+										<msubsup>
+											<mi>𝑠</mi>
+											<mi>𝑗</mi>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msubsup>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo>
+									<mtable intent=":piecewise">
+										<mtr>
+											<mtd><mi>𝑥</mi><mo>−</mo><mn>1</mn></mtd>
+											<mtd><mi>𝑗</mi><mo>&lt;</mo><mi>𝑥</mi><mo>&lt;</mo><mrow><mi>𝑖</mi><mo>+</mo><mn>1</mn></mrow></mtd>
+										</mtr>
+										<mtr>
+											<mtd><mi>𝑥</mi><mo>+</mo><mn>1</mn></mtd>
+											<mtd><mi>𝑖</mi><mo>≤</mo><mi>𝑥</mi><mo>&lt;</mo><mrow><mi>𝑗</mi><mo>+</mo><mn>1</mn></mrow></mtd>
+										</mtr>
+										<mtr>
+											<mtd><mi>𝑥</mi></mtd>
+											<mtd><mtext>他</mtext></mtd>
+										</mtr>
+									</mtable>
+									<mo>}</mo>
+								</mrow>
+							</math>
+							より成り立つ．
+						</li>
+					</ul>
 				</article>
 				<article id="単体的集合の圏" class="dfn">
 					<h4>単体的集合の圏</h4>
 					<ul>
 						<li>
-							<a href="#単体圏">単体圏</a><math><mi>𝛥</mi></math>の<a href="#前層">前層の圏</a>を<dfn>単体的集合の圏</dfn><span lang="en">(simplicial set)</span>と呼び，
+							<a href="#単体圏">単体圏</a> <math><mi>𝛥</mi></math> の<a href="#前層">前層の圏</a>を<dfn>単体的集合の圏</dfn><span lang="en">(simplicial set)</span>と呼び，
 							<math display="block">
 								<mi>𝐬𝐒𝐞𝐭</mi>
 								<mo>≔</mo>
@@ -22020,7 +22490,7 @@
 							と表す．
 						</li>
 						<li>
-							<a href="#単体圏">単体圏</a><math><mi>𝛥</mi></math>の<a href="#前層">余前層の圏</a>を<dfn>余単体的集合の圏</dfn><span lang="en">(simplicial set)</span>と呼び，
+							<a href="#単体圏">単体圏</a> <math><mi>𝛥</mi></math> の<a href="#前層">余前層の圏</a>を<dfn>余単体的集合の圏</dfn><span lang="en">(simplicial set)</span>と呼び，
 							<math display="block">
 								<mi>𝐜𝐨𝐬𝐒𝐞𝐭</mi>
 								<mo>≔</mo>
@@ -22034,14 +22504,93 @@
 							</math>
 							と表す．
 						</li>
-						<li><math><mi>𝐬𝐒𝐞𝐭</mi></math>の元，つまり<a href="#前層">前層</a><math><msup><mi>𝛥</mi><mi>op</mi></msup><mo>→</mo><mi>𝐒𝐞𝐭</mi></math>のことを<dfn>単体的集合</dfn><span lang="en">(simplicial set)</span>と呼ぶ．</li>
-						<li><math><mi>𝐜𝐨𝐬𝐒𝐞𝐭</mi></math>の元，つまり<a href="#前層">余前層</a><math><mi>𝛥</mi><mo>→</mo><mi>𝐒𝐞𝐭</mi></math>のことを<dfn>余単体的集合</dfn><span lang="en">(cosimplicial set)</span>と呼ぶ．</li>
+						<li><math><mi>𝐬𝐒𝐞𝐭</mi></math>の元，つまり<a href="#前層">前層</a> <math><msup><mi>𝛥</mi><mi>op</mi></msup><mo>→</mo><mi>𝐒𝐞𝐭</mi></math> のことを<dfn>単体的集合</dfn><span lang="en">(simplicial set)</span>と呼ぶ．</li>
+						<li><math><mi>𝐜𝐨𝐬𝐒𝐞𝐭</mi></math>の元，つまり<a href="#前層">余前層</a> <math><mi>𝛥</mi><mo>→</mo><mi>𝐒𝐞𝐭</mi></math> のことを<dfn>余単体的集合</dfn><span lang="en">(cosimplicial set)</span>と呼ぶ．</li>
 					</ul>
 				</article>
 				<article id="単体的集合の圏の基本性質" class="thm">
 					<h4>単体的集合の圏の基本性質</h4>
+					<p>
+						<math><mi>𝛥</mi></math>の<a href="#米田埋め込み">米田埋め込み</a>を
+						<math>
+							<mi>よ</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝛥</mi><mo>→</mo><mi>𝐬𝐒𝐞𝐭</mi>
+							</mrow>
+						</math>
+						とする．
+					</p>
 					<ul>
-						<li>．</li>
+						<li>
+							任意の<a href="#単体的集合">単体的集合</a>
+							<math>
+								<mi>𝐾</mi>
+								<mo>:</mo>
+								<mrow>
+									<msup>
+										<mi>𝛥</mi><mi>op</mi>
+									</msup>
+									<mo>→</mo>
+									<mi>𝐒𝐞𝐭</mi>
+								</mrow>
+							</math>
+							に対し，以下の<a href="#自然同型">自然同型</a>が成り立つ：
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>hom</mi><mi>𝐬𝐒𝐞𝐭</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>hom</mi><mi>𝛥</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>-</mi>
+														<mo>,</mo>
+														<mrow>
+															<mo>[</mo><mi>𝑛</mi><mo>]</mo>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝐾</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≅</mo>
+								<mrow>
+									<mi>𝐾</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mo>[</mo><mi>𝑛</mi><mo>]</mo>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li><math><mi>𝐬𝐒𝐞𝐭</mi><mo>,</mo><mi>𝐜𝐨𝐬𝐒𝐞𝐭</mi></math>は<a href="#完備圏">双完備</a>．</li>
+						<li>
+							<math display="block">
+								<mi>𝐾</mi>
+								<mo>≅</mo>
+								<mrow>
+								</mrow>
+							</math>
+						</li>
 					</ul>
 				</article>
 			</section>
@@ -36135,7 +36684,6 @@
 				<p><a href="#分裂モノ射">分裂モノ・エピ射</a>と<a href="#正規モノ射">正規モノ・エピ射</a>は，一般には無関係．</p>
 				<article id="正規⇔正則" class="thm">
 					<h4>正規⇔正則となる十分条件</h4>
-					<p></p>
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
@@ -36163,11 +36711,11 @@
 						</math>
 						の<a href="#等化子">等化子</a>となっているとすると，
 						<math>
-							<mi>𝑔</mi>
-							<mo>≔</mo>
-							<mrow>
-								<mi>ℎ</mi><mo>−</mo><mi>𝑘</mi>
-							</mrow>
+							<mi>𝑓</mi>
+							<mo>−</mo>
+							<msup>
+								<mi>𝑓</mi><mo>′</mo>
+							</msup>
 						</math>
 						の<a href="#核">核</a>は
 						<math>
@@ -36269,14 +36817,6 @@
 					<h4>証明</h4>
 					<p><a href="#核の余核の核は核">核の余核の核は核</a>であることと，<a href="#正規モノ射">正規モノ射</a>の定義より自明．</p>
 				</article>
-				<article id="正規圏" class="dfn">
-					<h4>正規圏</h4>
-					<ul>
-						<li>任意の<a href="#モノ射">モノ射</a>が<a href="#正規モノ射">正規モノ射</a>であるような<a href="#圏">圏</a>を<dfn>正規圏</dfn><span lang="en">(normal category)</span>と呼ぶ．</li>
-						<li>任意の<a href="#モノ射">エピ射</a>が<a href="#正規モノ射">正規エピ射</a>であるような<a href="#圏">圏</a>を<dfn>余正規圏</dfn><span lang="en">(conormal category)</span>と呼ぶ．</li>
-						<li>正規かつ余正規な<a href="#圏">圏</a>を<dfn>双正規圏</dfn><span lang="en">(binormal category)</span>と呼ぶ．</li>
-					</ul>
-				</article>
 				<article id="余核の核は像" class="thm">
 					<h4>余核の核は像</h4>
 					<ul>
@@ -36294,8 +36834,8 @@
 					</ul>
 					<p>を与える．</p>
 					<ul>
-						<li><math><mi>𝒜</mi></math> が任意の<a href="#モノ射">モノ射</a>が<a href="#核">余核</a>を持つ<a href="#正規圏">正規圏</a>のとき，<math><mi>𝑓</mi></math> の<a href="#核">余核</a>の<a href="#核">核</a>は（存在すれば）<math><mi>𝑓</mi></math> の<a href="#像">像</a>．</li>
-						<li><math><mi>𝒜</mi></math> が任意の<a href="#モノ射">エピ射</a>が<a href="#核">核</a>を持つ<a href="#正規圏">余正規圏</a>のとき，<math><mi>𝑓</mi></math> の<a href="#核">核</a>の<a href="#核">余核</a>は（存在すれば）<math><mi>𝑓</mi></math> の<a href="#像">余像</a>．</li>
+						<li><math><mi>𝒜</mi></math> の任意の<a href="#正規モノ射">正規モノ射</a>が<a href="#核">余核</a>を持つとき，<a href="#正規モノ射">正規モノ射</a>の集まりを <math><mi>ℳ</mi></math> とすると，<math><mi>𝑓</mi></math> の<a href="#核">余核</a>の<a href="#核">核</a>は（存在すれば）<math><mi>𝑓</mi></math> の<a href="#像"> <math><mi>ℳ</mi></math>-像</a>．</li>
+						<li><math><mi>𝒜</mi></math> の任意の<a href="#正規モノ射">正規エピ射</a>が<a href="#核">核</a>を持つとき，<a href="#正規モノ射">正規エピ射</a>の集まりを <math><mi>ℰ</mi></math> とすると，<math><mi>𝑓</mi></math> の<a href="#核">核</a>の<a href="#核">余核</a>は（存在すれば）<math><mi>𝑓</mi></math> の<a href="#像"> <math><mi>ℰ</mi></math>-余像</a>．</li>
 					</ul>
 				</article>
 				<article class="proof">
@@ -36406,7 +36946,7 @@
 								<mi>𝑓</mi>
 							</mrow>
 						</math>
-						<a href="#モノ射">モノ射</a>
+						<a href="#正規モノ射">正規モノ射</a>
 						<math>
 							<msup>
 								<mi>𝑚</mi><mo>′</mo>
@@ -36527,7 +37067,7 @@
 								</mrow>
 							</msub>
 						</math>
-						より，<a href="#核"><math><mi>coker</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑓</mi><mo>)</mo></mrow></math>の余核の普遍性</a>より，
+						より，<a href="#核"><math><mi>coker</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑓</mi><mo>)</mo></mrow></math>の余核の普遍性</a>から，
 						<math display="block">
 							<mrow>
 								<mo>∃!</mo>
@@ -36600,8 +37140,7 @@
 								</msub>
 							</mrow>
 						</math>
-						となる．<a href="#正規圏">正規圏の定義</a>より，
-						<math><msup><mi>𝑚</mi><mo>′</mo></msup></math>
+						となる．<math><msup><mi>𝑚</mi><mo>′</mo></msup></math>
 						は<a href="#正規モノ射">正規モノ射</a>であるから，
 						<math>
 							<mo>(</mo>
@@ -36614,7 +37153,7 @@
 							</mrow>
 							<mo>)</mo>
 						</math>
-						は<a href="#正規モノ射の余核の核は自分自身"><math><msup><mi>𝑚</mi><mo>′</mo></msup></math>の余核の核となる</a>．
+						は<a href="#正規モノ射の余核の核は自分自身"> <math><msup><mi>𝑚</mi><mo>′</mo></msup></math> の余核の核となる</a>．
 						<math>
 							<mrow>
 								<msub>
@@ -36711,7 +37250,7 @@
 								</mrow>
 							</msub>
 						</math>
-						より<a href="#核">核<math><msup><mi>𝑚</mi><mo>′</mo></msup></math>の普遍性</a>から
+						より<a href="#核">核 <math><msup><mi>𝑚</mi><mo>′</mo></msup></math> の普遍性</a>から
 						<math display="block">
 							<mrow>
 								<mo>∃!</mo>
@@ -36837,8 +37376,16 @@
 							</mrow>
 							<mo>)</mo>
 						</math>
-						は<math><mi>𝑓</mi></math>の<a href="#像">像</a>となる．
+						は<math><mi>𝑓</mi></math>の<a href="#像"><math><mi>ℳ</mi></math>-像</a>となる．
 					</p>
+				</article>
+				<article id="正規圏" class="dfn">
+					<h4>正規圏</h4>
+					<ul>
+						<li>任意の<a href="#モノ射">モノ射</a>が<a href="#正規モノ射">正規モノ射</a>であるような<a href="#圏">圏</a>を<dfn>正規圏</dfn><span lang="en">(normal category)</span>と呼ぶ．</li>
+						<li>任意の<a href="#モノ射">エピ射</a>が<a href="#正規モノ射">正規エピ射</a>であるような<a href="#圏">圏</a>を<dfn>余正規圏</dfn><span lang="en">(conormal category)</span>と呼ぶ．</li>
+						<li>正規かつ余正規な<a href="#圏">圏</a>を<dfn>双正規圏</dfn><span lang="en">(binormal category)</span>と呼ぶ．</li>
+					</ul>
 				</article>
 			</section>
 			<section>
