@@ -11037,8 +11037,8 @@
 					<h4>イデアル・フィルター</h4>
 					<p><a href="#前順序集合">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> を与える．</p>
 					<ul>
-						<li><math><mi>𝑃</mi></math> の<dfn>イデアル</dfn><span lang="en">(ideal)</span>とは，<a href="#空集合">非空</a>な<a href="#部分集合">部分集合</a>であって，<a href="#下方集合">下方集合</a>かつ<a href="#有向集合">有向集合</a>となるものを言う．</li>
-						<li><math><mi>𝑃</mi></math> の<dfn>フィルター</dfn><span lang="en">(filter)</span>とは，<a href="#空集合">非空</a>な <math><mi>𝑃</mi></math> <a href="#部分集合">部分集合</a>であって，<a href="#下方集合">上方集合</a>かつ<a href="#有向集合">余有向集合</a>となるものを言う．</li>
+						<li><math><mi>𝑃</mi></math> の<dfn>イデアル</dfn><span lang="en">(ideal)</span>とは，<a href="#空集合">非空</a>な <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>であって，<a href="#下方集合">下方集合</a>かつ<a href="#有向集合">有向集合</a>となるものを言う．</li>
+						<li><math><mi>𝑃</mi></math> の<dfn>フィルター</dfn><span lang="en">(filter)</span>とは，<a href="#空集合">非空</a>な <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>であって，<a href="#下方集合">上方集合</a>かつ<a href="#有向集合">余有向集合</a>となるものを言う．</li>
 					</ul>
 				</article>
 			</section>
@@ -11221,7 +11221,7 @@
 									<math>
 										<mo>(</mo>
 										<mrow>
-											<mi>𝑃</mi><mo>,</mo><mo>∨</mo>
+											<mi>𝑃</mi><mo>,</mo><mo>∧</mo>
 										</mrow>
 										<mo>)</mo>
 									</math>
@@ -11233,7 +11233,7 @@
 										<mo>⇔</mo>
 										<mrow>
 											<mrow>
-												<mi>𝑎</mi><mo>∘</mo><mi>𝑏</mi>
+												<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
 											</mrow>
 											<mo>=</mo>
 											<mi>𝑎</mi>
@@ -11302,7 +11302,7 @@
 										<mo>⇔</mo>
 										<mrow>
 											<mrow>
-												<mi>𝑎</mi><mo>∘</mo><mi>𝑏</mi>
+												<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
 											</mrow>
 											<mo>=</mo>
 											<mi>𝑏</mi>
@@ -11318,9 +11318,7 @@
 										<mo>)</mo>
 									</math>
 									は<a href="#半順序">半順序集合</a>であり，
-									<math>
-										<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
-									</math>
+									<math><mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi></math>
 									は
 									<math>
 										<mo>{</mo>
@@ -11338,6 +11336,158 @@
 						<h5>半束・半順序対応</h5>
 						<p><a href="#半束">半束</a>，<a href="#下半束">下半束</a>，<a href="#下半束">上半束</a>は一対一対応．</p>
 					</article>
+				</article>
+				<article class="proof">
+					<h4>条件の同値性の証明</h4>
+					<p><a href="#下半束">下半束</a>の方を示す．</p>
+					<ul>
+						<li><math><mo>∧</mo></math> の<a href="#半束">冪等律</a>と <math><mo>≤</mo></math> の<a href="#半順序">反射律</a>は同値．</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑃</mi>
+								</mrow>
+							</math>
+							に対し，
+							<math><mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi></math>
+							が
+							<math>
+								<mo>{</mo>
+								<mrow>
+									<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+								</mrow>
+								<mo>}</mo>
+							</math>
+							の<a href="#上限">下限</a>で定義されるとき，<math><mo>∨</mo></math>の<a href="#半束">可換律</a>と<a href="#半束">結合律</a>は自明．
+						</li>
+						<li>
+							<ul>
+								<li>
+									<math><mo>∧</mo></math> の<a href="#半束">可換律</a>より，
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑃</mi>
+										</mrow>
+									</math>
+									に対し，
+									<math display="block">
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi>
+												<mo>=</mo>
+												<mrow>
+													<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+												</mrow>
+											</mrow>
+											<mo>∩</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑏</mi><mo>∧</mo><mi>𝑎</mi>
+												</mrow>
+												<mo>=</mo>
+												<mi>𝑏</mi>
+											</mrow>
+										</mrow>
+										<mo>⇒</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>=</mo><mi>𝑏</mi>
+										</mrow>
+									</math>
+									なので <math><mo>≤</mo></math> は<a href="#半順序">反対称律</a>を満たす．
+								</li>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑐</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑃</mi>
+										</mrow>
+									</math>
+									に対し，<math><mo>∧</mo></math> の<a href="#半束">結合律</a>より，
+									<math display="block">
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mrow>
+														<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+													</mrow>
+													<mo>=</mo>
+													<mi>𝑎</mi>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑏</mi><mo>∧</mo><mi>𝑐</mi>
+													</mrow>
+													<mo>=</mo>
+													<mi>𝑏</mi>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>⇒</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑎</mi><mo>∧</mo><mi>𝑐</mi>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mo>∧</mo>
+													<mi>𝑐</mi>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<mi>𝑎</mi>
+													<mo>∧</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝑏</mi><mo>∧</mo><mi>𝑐</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+												</mrow>
+												<mo>=</mo>
+												<mi>𝑎</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									なので <math><mo>≤</mo></math> は<a href="#半順序">推移律</a>を満たす．
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</article>
 			</section>
 			<section>
@@ -11541,6 +11691,38 @@
 								</li>
 								<li>
 									このとき，<math><mo>≤</mo></math> は以下のいずれか（実際は全て）を満たす：
+									<ul>
+										<li>
+											<math>
+												<mrow>
+													<mi>𝑎</mi><mo>≤</mo><mi>𝑏</mi>
+												</mrow>
+												<mo>⇔</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+													</mrow>
+													<mo>=</mo>
+													<mi>𝑏</mi>
+												</mrow>
+											</math>
+										</li>
+										<li>
+											<math>
+												<mrow>
+													<mi>𝑎</mi><mo>≤</mo><mi>𝑏</mi>
+												</mrow>
+												<mo>⇔</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
+													</mrow>
+													<mo>=</mo>
+													<mi>𝑎</mi>
+												</mrow>
+											</math>
+										</li>
+									</ul>
 								</li>
 							</ul>
 						</li>
@@ -11565,6 +11747,315 @@
 									</math> は<a href="#下半束">上半束</a>
 								</li>
 							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>条件の同値性の証明</h4>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑏</mi>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>∨</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
+									</mrow>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
+									</mrow>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>∧</mo>
+										<mi>𝑏</mi>
+									</mrow>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑏</mi>
+								</mrow>
+							</math>
+							より
+							<math>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑏</mi>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑎</mi>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<ul>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi>
+										</mrow>
+									</math>
+									に対し，
+									<math display="block">
+										<mrow>
+											<mi>𝑎</mi><mo>∨</mo><mi>𝑎</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>∨</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi>
+													<mo>∧</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝑎</mi><mo>∨</mo><mi>𝑎</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑎</mi>
+									</math>
+									より <math><mo>∨</mo></math> は<a href="#半束">冪等律</a> を満たす．<math><mo>∧</mo></math> も同様．
+								</li>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑃</mi>
+										</mrow>
+									</math>
+									に対し，<a href="#上限">下限</a>の定義より
+									<math>
+										<mi>𝑎</mi>
+										<mo>≤</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+										</mrow>
+									</math>
+									なので，<a href="#下半束">下半束</a>の <math><mo>≤</mo></math> の定義（の一つ）より
+									<math>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>∨</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑎</mi>
+									</math>
+									．同様に，
+									<math>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>∧</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑎</mi>
+									</math>
+									なので，<math><mo>∨</mo><mo>,</mo><mo>∧</mo></math> は<a href="#束">吸収律</a>を満たす．
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article id="モジュラー束" class="dfn">
+					<h4>モジュラー束</h4>
+					<p>
+						<a href="#束">束</a>
+						<math>
+							<mo>(</mo>
+							<mrow>
+								<mi>𝑃</mi><mo>,</mo><mo>≤</mo><mo>,</mo><mo>∧</mo><mo>,</mo><mo>∨</mo>
+							</mrow>
+							<mo>)</mo>
+						</math>
+						が<dfn>モジュラー</dfn><span lang="en">(modular)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+					</p>
+					<ul>
+						<li>
+							<math>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑐</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑃</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>∧</mo><mi>𝑐</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>∧</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑏</mi><mo>∧</mo><mi>𝑐</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑎</mi><mo>∧</mo><mi>𝑐</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>∨</mo>
+												<mi>𝑏</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>∧</mo>
+										<mi>𝑐</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑐</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑃</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>≤</mo><mi>𝑐</mi>
+									</mrow>
+									<mo>⇒</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>∨</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑏</mi><mo>∧</mo><mi>𝑐</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>∧</mo>
+											<mi>𝑐</mi>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li class="future-work">
+							部分束が
+							<math>
+								<msub>
+									<mi>𝑁</mi><mn>5</mn>
+								</msub>
+								を含まない．
+							</math>
 						</li>
 					</ul>
 				</article>
@@ -11880,7 +12371,7 @@
 				<li>J. B. Nation, "<cite>Notes on Lattice Theory</cite>", <a href="https://math.hawaii.edu/~jb/lattice2017.pdf">https://math.hawaii.edu/~jb/lattice2017.pdf</a></li>
 				<li>Steven Roman, "<cite>Lattices and Ordered Sets</cite>", <a href="https://doi.org/10.1007/978-0-387-78901-9">doi:10.1007/978-0-387-78901-9</a></li>
 				<li>Stanley N. Burris and H.P. Sankappanavar, "<cite>A Course in Universal Algebra</cite>", <a href="https://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html">https://www.math.uwaterloo.ca/~snburris/htdocs/ualg.html</a></li>
-				<li>（未所持）George M. Bergmanm "<cite>An Invitation to General Algebra and Universal Constructions</cite>", <a href="https://doi.org/10.1007/978-3-319-11478-1">doi:10.1007/978-3-319-11478-1</a></li>
+				<li>George M. Bergmanm "<cite>An Invitation to General Algebra and Universal Constructions</cite>", <a href="https://doi.org/10.1007/978-3-319-11478-1">doi:10.1007/978-3-319-11478-1</a></li>
 			</ul>
 		</section>
 	</main></body>
