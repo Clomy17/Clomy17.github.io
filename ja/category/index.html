@@ -510,8 +510,7 @@
 								<mrow>
 									<mo>(</mo>
 									<msup>
-										<mi>𝒜</mi>
-										<mi>op</mi>
+										<mi>𝒜</mi><mi>op</mi>
 									</msup>
 									<mo>)</mo>
 								</mrow>
@@ -521,9 +520,7 @@
 								<mi>ob</mi>
 								<mo>&af;</mo>
 								<mrow>
-									<mo>(</mo>
-									<mi>𝒜</mi>
-									<mo>)</mo>
+									<mo>(</mo><mi>𝒜</mi><mo>)</mo>
 								</mrow>
 							</mrow>
 						</math>
@@ -532,17 +529,14 @@
 								<msub>
 									<mi>hom</mi>
 									<msup>
-										<mi>𝒜</mi>
-										<mi>op</mi>
+										<mi>𝒜</mi><mi>op</mi>
 									</msup>
 								</msub>
 								<mo>&af;</mo>
 								<mrow>
 									<mo>(</mo>
 									<mrow>
-										<mi>𝐴</mi>
-										<mo>,</mo>
-										<mi>𝐵</mi>
+										<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi>
 									</mrow>
 									<mo>)</mo>
 								</mrow>
@@ -550,16 +544,13 @@
 							<mo>≔</mo>
 							<mrow>
 								<msub>
-									<mi>hom</mi>
-									<mi>𝒜</mi>
+									<mi>hom</mi><mi>𝒜</mi>
 								</msub>
 								<mo>&af;</mo>
 								<mrow>
 									<mo>(</mo>
 									<mrow>
-										<mi>𝐵</mi>
-										<mo>,</mo>
-										<mi>𝐴</mi>
+										<mi>𝐵</mi><mo>,</mo><mi>𝐴</mi>
 									</mrow>
 									<mo>)</mo>
 								</mrow>
@@ -790,6 +781,10 @@
 						</math>
 						より，<math><mi>𝑓</mi></math>の全ての<a href="#同型射">retraction</a>と<a href="#同型射">切断</a>は<math><mi>𝑓</mi></math>の<a href="#同型射">逆射</a>であり，それらは全て等しい．
 					</p>
+				</article>
+				<article id="骨格的" class="dfn">
+					<h4>骨格的圏</h4>
+					<p><a href="#圏">圏</a> <math><mi>𝒜</mi></math> が<dfn>骨格的</dfn><span lang="en">(skeletal)</span>であるとは，任意の <math><mi>𝒜</mi></math> の<a href="#圏">対象</a> <math><mrow><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi></mrow><mo>∈</mo><mrow><mi>ob</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝒜</mi><mo>)</mo></mrow></mrow></math> に対し，<math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi></math>が<a href="#同型射">同型</a>ならば <math><mi>𝐴</mi><mo>=</mo><mi>𝐵</mi></math>となることを言う．</p>
 				</article>
 				<article id="モノ射" class="dfn">
 					<h4>部分対象・モノ射・エピ射</h4>
@@ -4335,82 +4330,85 @@
 							</li>
 						</ul>
 						<p>を与える．</p>
-						<p><a href="#自然変換">自然変換</a><math><mi>𝛼</mi><mo>:</mo><mrow><mi>𝐹</mi><mo>⇒</mo><mi>𝐺</mi></mrow></math>で，以下の同値な条件のいずれか（ゆえに全て）を満たすものを<dfn>自然同型</dfn><span lang="en">(natural isomorphism)</span>と呼ぶ．</p>
 						<ul>
 							<li>
-								<math><mi>𝛼</mi></math>は<a href="#函手圏">函手圏</a>
-								<math>
-									<mo>[</mo>
-									<mrow>
-										<mi>𝒜</mi><mo>,</mo><mi>ℬ</mi>
-									</mrow>
-									<mo>]</mo>
-								</math>の<a href="#同型射">同型射</a>
+								<a href="#自然変換">自然変換</a><math><mi>𝛼</mi><mo>:</mo><mrow><mi>𝐹</mi><mo>⇒</mo><mi>𝐺</mi></mrow></math>で，以下の同値な条件のいずれか（ゆえに全て）を満たすものを<dfn>自然同型</dfn><span lang="en">(natural isomorphism)</span>と呼ぶ．
+								<ul>
+									<li>
+										<math><mi>𝛼</mi></math>は<a href="#函手圏">函手圏</a>
+										<math>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝒜</mi><mo>,</mo><mi>ℬ</mi>
+											</mrow>
+											<mo>]</mo>
+										</math>の<a href="#同型射">同型射</a>
+									</li>
+									<li>
+										<a href="#圏">対象</a>
+										<math>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>𝐴</mi>
+												<mo>∈</mo>
+												<mrow>
+													<mi>ob</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</math>に対し，<a href="#自然変換">成分</a>
+										<math>
+											<msub>
+												<mi>𝛼</mi><mi>𝐴</mi>
+											</msub>
+											<mo>:</mo>
+											<mrow>
+												<mrow>
+													<mi>𝐹</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝛢</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>→</mo>
+												<mrow>
+													<mi>𝐺</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝛢</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</math>は<math><mi>ℬ</mi></math>の<a href="#同型射">同型射</a>
+									</li>
+								</ul>
 							</li>
+							<li>このとき，<a href="#函手">函手</a><math><mi>𝐹</mi><mo>,</mo><mi>𝐺</mi></math>のことも<dfn>自然同型</dfn><span lang="en">(natural isomorfic)</span>と呼ぶ．</li>
 							<li>
-								<a href="#圏">対象</a>
 								<math>
-									<mo>∀</mo>
-									<mo>&af;</mo>
 									<mrow>
-										<mi>𝐴</mi>
-										<mo>∈</mo>
+										<mi>𝐹</mi>
+										<mo>&af;</mo>
 										<mrow>
-											<mi>ob</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mi>𝒜</mi><mo>)</mo>
-											</mrow>
+											<mo>(</mo><mi>𝐴</mi><mo>)</mo>
 										</mrow>
 									</mrow>
-								</math>に対し，<a href="#自然変換">成分</a>
-								<math>
-									<msub>
-										<mi>𝛼</mi><mi>𝐴</mi>
-									</msub>
-									<mo>:</mo>
+									<mo>≅</mo>
 									<mrow>
+										<mi>𝐺</mi>
+										<mo>&af;</mo>
 										<mrow>
-											<mi>𝐹</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mi>𝛢</mi><mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>→</mo>
-										<mrow>
-											<mi>𝐺</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mi>𝛢</mi><mo>)</mo>
-											</mrow>
+											<mo>(</mo><mi>𝐴</mi><mo>)</mo>
 										</mrow>
 									</mrow>
-								</math>は<math><mi>ℬ</mi></math>の<a href="#同型射">同型射</a>
+								</math>
+								は<dfn><math><mi>𝐴</mi></math>において自然</dfn><span lang="en">(naturally in <math><mi>𝐴</mi></math>)</span>と呼ぶ．
 							</li>
 						</ul>
-						<p>このとき，<a href="#函手">函手</a><math><mi>𝐹</mi><mo>,</mo><mi>𝐺</mi></math>のことも<dfn>自然同型</dfn><span lang="en">(natural isomorfic)</span>と呼ぶ．</p>
-						<p>
-							また，
-							<math>
-								<mrow>
-									<mi>𝐹</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝐴</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>≅</mo>
-								<mrow>
-									<mi>𝐺</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝐴</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							は<dfn><math><mi>𝐴</mi></math>において自然</dfn><span lang="en">(naturally in <math><mi>𝐴</mi></math>)</span>と呼ぶ．
-						</p>
 					</article>
 					<article class="proof">
 						<h5>条件の同値性の証明</h5>
@@ -8534,196 +8532,158 @@
 				</article>
 				<article id="随伴" class="dfn">
 					<h4>随伴</h4>
-					<p><a href="#圏">圏</a><math><mi>𝒜</mi><mo>,</mo><mi>ℬ</mi></math>を与える．</p>
-					<p><a href="#函手">函手</a>の組
-						<math>
-							<mrow>
-								<mi>𝐹</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>𝒜</mi>
-									<mo>→</mo>
-									<mi>ℬ</mi>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mi>𝐺</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>ℬ</mi>
-									<mo>→</mo>
-									<mi>𝒜</mi>
-								</mrow>
-							</mrow>
-						</math>
-						が以下の同値な条件のいずれか（ゆえに全て）をみたすとき，<math><mi>𝐹</mi></math>を<math><mi>𝐺</mi></math>の<dfn>左随伴</dfn><span lang="en">(left adjoint)</span>，<math><mi>𝐺</mi></math>を<math><mi>𝐹</mi></math>の<dfn>右随伴</dfn><span lang="en">(right adjoint)</span>と呼び，
-						<math>
-							<mi>𝐹</mi>
-							<mo>⊣</mo>
-							<mi>𝐺</mi>
-						</math>
-						と表す．
-					</p>
 					<ul>
 						<li>
-							<dfn>転置</dfn><span lang="en">(transpose)</span>と呼ばれる<a href="#自然同型">自然同型</a>
-							<math display="block">
-								<mrow>
-									<msub>
-										<mi>hom</mi>
-										<mi>ℬ</mi>
-									</msub>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
+							<dfn>随伴</dfn><span lang="en">(adjunction)</span> とは以下のデータからなる：
+							<ul>
+								<li><a href="#圏">圏</a> <math><mi>𝒜</mi><mo>,</mo><mi>ℬ</mi></math </li>
+								<li>
+									<a href="#函手">函手</a>の組
+									<math>
+										<mrow>
+											<mi>𝐹</mi>
+											<mo>:</mo>
+											<mrow>
+												<mi>𝒜</mi><mo>→</mo><mi>ℬ</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝐺</mi>
+											<mo>:</mo>
+											<mrow>
+												<mi>ℬ</mi><mo>→</mo><mi>𝒜</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<dfn>余単位</dfn><span lang="en">(counit)</span>，<dfn>単位</dfn><span lang="en">(unit)</span>と呼ばれる<a href="#自然変換">自然変換</a>の組
+									<math>
+										<mrow>
+											<mi>𝜀</mi>
+											<mo>:</mo>
+											<mrow>
+												<mrow>
+													<mi>𝐹</mi><mo>∘</mo><mi>𝐺</mi>
+												</mrow>
+												<mo>⇒</mo>
+												<msub>
+													<mn>1</mn><mi>ℬ</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝜂</mi>
+											<mo>:</mo>
+											<mrow>
+												<msub>
+													<mn>1</mn><mi>𝒜</mi>
+												</msub>
+												<mo>⇒</mo>
+												<mrow>
+													<mi>𝐺</mi><mo>∘</mo><mi>𝐹</mi>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは以下の同値な条件のいずれか（ゆえに全て）を満たす：
+							<ul>
+								<li>
+									<dfn>転置</dfn><span lang="en">(transpose)</span>と呼ばれる<a href="#自然同型">自然同型</a>
+									<math display="block">
+										<mover>
+											<mo>⋅</mo><mo>‾</mo>
+										</mover>
+										<mo>:</mo>
 										<mrow>
 											<mrow>
-												<mi>𝐹</mi>
+												<msub>
+													<mi>hom</mi><mi>ℬ</mi>
+												</msub>
 												<mo>&af;</mo>
 												<mrow>
 													<mo>(</mo>
-													<mi>𝐴</mi>
+													<mrow>
+														<mrow>
+															<mi>𝐹</mi>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+															</mrow>
+														</mrow>
+														<mo>,</mo>
+														<mi>𝐵</mi>
+													</mrow>
 													<mo>)</mo>
 												</mrow>
 											</mrow>
-											<mo>,</mo>
-											<mi>𝐵</mi>
+											<mo>≅</mo>
+											<mrow>
+												<msub>
+													<mi>hom</mi><mi>𝒜</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝐴</mi>
+														<mo>,</mo>
+														<mrow>
+															<mi>𝐺</mi>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo><mi>𝐵</mi><mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
 										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>≅</mo>
-								<mrow>
-									<msub>
-										<mi>hom</mi>
-										<mi>𝒜</mi>
-									</msub>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
+									</math>
+									を持ち，これは
+									<math>
 										<mrow>
 											<mi>𝐴</mi>
-											<mo>,</mo>
-											<mrow>
-												<mi>𝐺</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mi>𝐵</mi>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							を持ち，これは
-							<math>
-								<mrow>
-									<mi>𝐴</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>ob</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>𝒜</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mi>𝐵</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>ob</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>ℬ</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-							において<a href="#自然同型">自然</a>．つまり，以下を満たす．
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝐴</mi>
-										<mo>∈</mo>
-										<mrow>
-											<mi>ob</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝒜</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mrow>
-												<mi>𝐵</mi>
-												<mo>,</mo>
-												<msup>
-													<mi>𝐵</mi>
-													<mo>′</mo>
-												</msup>
-											</mrow>
 											<mo>∈</mo>
 											<mrow>
 												<mi>ob</mi>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>ℬ</mi>
-													<mo>)</mo>
+													<mo>(</mo><mi>𝒜</mi><mo>)</mo>
 												</mrow>
 											</mrow>
 										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝐵</mi>
+											<mo>∈</mo>
+											<mrow>
+												<mi>ob</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>ℬ</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+									において<a href="#自然同型">自然</a>．つまり，以下を満たす：
+									<math display="block">
 										<mrow>
 											<mo>∀</mo>
 											<mo>&af;</mo>
 											<mrow>
-												<mi>𝑔</mi>
+												<mi>𝐴</mi>
 												<mo>∈</mo>
 												<mrow>
-													<msub>
-														<mi>hom</mi>
-														<mi>ℬ</mi>
-													</msub>
+													<mi>ob</mi>
 													<mo>&af;</mo>
 													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mrow>
-																<mi>𝐹</mi>
-																<mo>&af;</mo>
-																<mrow>
-																	<mo>(</mo>
-																	<mi>𝐴</mi>
-																	<mo>)</mo>
-																</mrow>
-															</mrow>
-															<mo>,</mo>
-															<mi>𝐵</mi>
-														</mrow>
-														<mo>)</mo>
+														<mo>(</mo><mi>𝒜</mi><mo>)</mo>
 													</mrow>
 												</mrow>
 											</mrow>
@@ -8734,12 +8694,411 @@
 												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mi>𝑞</mi>
+													<mrow>
+														<mi>𝐵</mi>
+														<mo>,</mo>
+														<msup>
+															<mi>𝐵</mi><mo>′</mo>
+														</msup>
+													</mrow>
+													<mo>∈</mo>
+													<mrow>
+														<mi>ob</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>ℬ</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mrow>
+													<mo>∀</mo>
+													<mo>&af;</mo>
+													<mrow>
+														<mi>𝑔</mi>
+														<mo>∈</mo>
+														<mrow>
+															<msub>
+																<mi>hom</mi><mi>ℬ</mi>
+															</msub>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝐹</mi>
+																		<mo>&af;</mo>
+																		<mrow>
+																			<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mi>𝐵</mi>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mrow>
+														<mo>∀</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑞</mi>
+															<mo>∈</mo>
+															<mrow>
+																<msub>
+																	<mi>hom</mi><mi>ℬ</mi>
+																</msub>
+																<mo>&af;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<mi>𝐵</mi>
+																		<mo>,</mo>
+																		<msup>
+																			<mi>𝐵</mi><mo>′</mo>
+																		</msup>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mrow>
+															<mover>
+																<mrow>
+																	<mi>𝑞</mi><mo>∘</mo><mi>𝑔</mi>
+																</mrow>
+																<mo>‾</mo>
+															</mover>
+															<mo>=</mo>
+															<mrow>
+																<mrow>
+																	<mi>𝐺</mi>
+																	<mo>&af;</mo>
+																	<mrow>
+																		<mo>(</mo><mi>𝑞</mi><mo>)</mo>
+																	</mrow>
+																</mrow>
+																<mo>∘</mo>
+																<mover>
+																	<mi>𝑔</mi><mo>‾</mo>
+																</mover>
+															</mrow>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+									<math display="block">
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mrow>
+													<mi>𝐴</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝐴</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>∈</mo>
+												<mrow>
+													<mi>ob</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝒜</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mo>∀</mo>
+												<mo>&af;</mo>
+												<mrow>
+													<mi>𝐵</mi>
+													<mo>∈</mo>
+													<mrow>
+														<mi>ob</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>ℬ</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mrow>
+													<mo>∀</mo>
+													<mo>&af;</mo>
+													<mrow>
+														<mi>𝑝</mi>
+														<mo>∈</mo>
+														<mrow>
+															<msub>
+																<mi>hom</mi><mi>𝒜</mi>
+															</msub>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo>
+																<mrow>
+																	<msup>
+																		<mi>𝐴</mi><mo>′</mo>
+																	</msup>
+																	<mo>,</mo>
+																	<mi>𝐴</mi>
+																</mrow>
+																<mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mrow>
+														<mo>∀</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑓</mi>
+															<mo>∈</mo>
+															<mrow>
+																<msub>
+																	<mi>hom</mi><mi>𝒜</mi>
+																</msub>
+																<mo>&af;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<mi>𝐴</mi>
+																		<mo>,</mo>
+																		<mrow>
+																			<mi>𝐺</mi>
+																			<mo>&af;</mo>
+																			<mrow>
+																				<mo>(</mo><mi>𝐵</mi><mo>)</mo>
+																			</mrow>
+																		</mrow>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+															</mrow>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mrow>
+															<mover>
+																<mrow>
+																	<mi>𝑓</mi><mo>∘</mo><mi>𝑝</mi>
+																</mrow>
+																<mo>‾</mo>
+															</mover>
+															<mo>=</mo>
+															<mrow>
+																<mover>
+																	<mi>𝑓</mi><mo>‾</mo>
+																</mover>
+																<mo>∘</mo>
+																<mrow>
+																	<mi>𝐹</mi>
+																	<mo>&af;</mo>
+																	<mrow>
+																		<mo>(</mo><mi>𝑝</mi><mo>)</mo>
+																	</mrow>
+																</mrow>
+															</mrow>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+									更に，以下を満たす：
+									<math display="block">
+										<mrow>
+											<msub>
+												<mi>𝜀</mi><mi>𝐵</mi>
+											</msub>
+											<mo>≔</mo>
+											<mover>
+												<msub>
+													<mn>1</mn>
+													<mrow>
+														<mi>𝐺</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝐵</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</msub>
+												<mo>‾</mo>
+											</mover>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msub>
+												<mi>𝜂</mi><mi>𝐴</mi>
+											</msub>
+											<mo>=</mo>
+											<mover>
+												<msub>
+													<mn>1</mn>
+													<mrow>
+														<mi>𝐹</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</msub>
+												<mo>‾</mo>
+											</mover>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									以下の<dfn>ジグザク恒等式</dfn><span lang="en">(zigzag identities)</span>（または<dfn>三角恒等式</dfn><span lang="en">(triangle identities)</span>）を満たす：
+									<math display="block">
+										<mrow>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝜀</mi><mo>∗</mo><mi>𝐹</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>∘</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝐹</mi><mo>∗</mo><mi>𝜂</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<msub>
+												<mn>1</mn><mi>𝐹</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝐺</mi><mo>∗</mo><mi>𝜀</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>∘</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝜂</mi><mo>∗</mo><mi>𝐺</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<msub>
+												<mn>1</mn><mi>𝐺</mi>
+											</msub>
+										</mrow>
+									</math>
+									つまり，以下の図式を可換にする：
+									<svg class="future-work" viewbox="0 0 40 40" width="40" height="40" fill="white">
+										<text x="0" y="35">図式</text>
+									</svg>
+								</li>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝐵</mi>
+											<mo>∈</mo>
+											<mrow>
+												<mi>ob</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>ℬ</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+									に対し，
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>𝐺</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝐵</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<msub>
+												<mi>𝜀</mi><mi>𝐵</mi>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									は<a href="#対象上のコンマ圏">コンマ圏</a>
+									<math>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝐹</mi><mo>⇒</mo><mi>𝐵</mi>
+										</mrow>
+										<mo>)</mo>
+									</math>
+									の<a href="#普遍射">普遍射</a>であり，以下を満たす：
+									<math display="block">
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mrow>
+													<mi>𝐵</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝐵</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>∈</mo>
+												<mrow>
+													<mi>ob</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>ℬ</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mo>∀</mo>
+												<mo>&af;</mo>
+												<mrow>
+													<mi>𝑔</mi>
 													<mo>∈</mo>
 													<mrow>
 														<msub>
-															<mi>hom</mi>
-															<mi>ℬ</mi>
+															<mi>hom</mi><mi>ℬ</mi>
 														</msub>
 														<mo>&af;</mo>
 														<mrow>
@@ -8748,8 +9107,7 @@
 																<mi>𝐵</mi>
 																<mo>,</mo>
 																<msup>
-																	<mi>𝐵</mi>
-																	<mo>′</mo>
+																	<mi>𝐵</mi><mo>′</mo>
 																</msup>
 															</mrow>
 															<mo>)</mo>
@@ -8760,340 +9118,76 @@
 											<mo>,</mo>
 											<mrow>
 												<mrow>
-													<mover>
-														<mrow>
-															<mi>𝑞</mi>
-															<mo>∘</mo>
-															<mi>𝑔</mi>
-														</mrow>
-														<mo>‾</mo>
-													</mover>
-													<mo>=</mo>
+													<msub>
+														<mi>𝜀</mi>
+														<msup>
+															<mi>𝐵</mi><mo>′</mo>
+														</msup>
+													</msub>
+													<mo>∘</mo>
 													<mrow>
+														<mo>(</mo>
 														<mrow>
-															<mi>𝐺</mi>
+															<mrow>
+																<mi>𝐹</mi><mo>∘</mo><mi>𝐺</mi>
+															</mrow>
 															<mo>&af;</mo>
 															<mrow>
-																<mo>(</mo>
-																<mi>𝑞</mi>
-																<mo>)</mo>
+																<mo>(</mo><mi>𝑔</mi><mo>)</mo>
 															</mrow>
 														</mrow>
-														<mo>∘</mo>
-														<mover>
-															<mi>𝑔</mi>
-															<mo>‾</mo>
-														</mover>
+														<mo>)</mo>
 													</mrow>
+												</mrow>
+												<mo>=</mo>
+												<mrow>
+													<mi>𝑔</mi>
+													<mo>∘</mo>
+													<msub>
+														<mi>𝜀</mi><mi>𝐵</mi>
+													</msub>
 												</mrow>
 											</mrow>
 										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mrow>
-											<mi>𝐴</mi>
-											<mo>,</mo>
-											<msup>
-												<mi>𝐴</mi>
-												<mo>′</mo>
-											</msup>
-										</mrow>
-										<mo>∈</mo>
-										<mrow>
-											<mi>ob</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝒜</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
+									</math>
+								</li>
+								<li>
+									<math>
 										<mo>∀</mo>
 										<mo>&af;</mo>
 										<mrow>
-											<mi>𝐵</mi>
+											<mi>𝐴</mi>
 											<mo>∈</mo>
 											<mrow>
 												<mi>ob</mi>
 												<mo>&af;</mo>
 												<mrow>
 													<mo>(</mo>
-													<mi>ℬ</mi>
+													<mi>𝒜</mi>
 													<mo>)</mo>
 												</mrow>
 											</mrow>
 										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
+									</math>
+									に対し，<a href="#対象上のコンマ圏">コンマ圏</a>
+									<math>
+										<mo>(</mo>
 										<mrow>
-											<mo>∀</mo>
-											<mo>&af;</mo>
-											<mrow>
-												<mi>𝑝</mi>
-												<mo>∈</mo>
-												<mrow>
-													<msub>
-														<mi>hom</mi>
-														<mi>𝒜</mi>
-													</msub>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<msup>
-																<mi>𝐴</mi>
-																<mo>′</mo>
-															</msup>
-															<mo>,</mo>
-															<mi>𝐴</mi>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-												</mrow>
-											</mrow>
+											<mi>𝐴</mi><mo>⇒</mo><mi>𝐺</mi>
 										</mrow>
-										<mo>,</mo>
-										<mrow>
-											<mrow>
-												<mo>∀</mo>
-												<mo>&af;</mo>
-												<mrow>
-													<mi>𝑓</mi>
-													<mo>∈</mo>
-													<mrow>
-														<msub>
-															<mi>hom</mi>
-															<mi>𝒜</mi>
-														</msub>
-														<mo>&af;</mo>
-														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mi>𝐴</mi>
-																<mo>,</mo>
-																<mrow>
-																	<mi>𝐺</mi>
-																	<mo>&af;</mo>
-																	<mrow>
-																		<mo>(</mo>
-																		<mi>𝐵</mi>
-																		<mo>)</mo>
-																	</mrow>
-																</mrow>
-															</mrow>
-															<mo>)</mo>
-														</mrow>
-													</mrow>
-												</mrow>
-											</mrow>
-											<mo>,</mo>
-											<mrow>
-												<mrow>
-													<mover>
-														<mrow>
-															<mi>𝑓</mi>
-															<mo>∘</mo>
-															<mi>𝑝</mi>
-														</mrow>
-														<mo>‾</mo>
-													</mover>
-													<mo>=</mo>
-													<mrow>
-														<mover>
-															<mi>𝑓</mi>
-															<mo>‾</mo>
-														</mover>
-														<mo>∘</mo>
-														<mrow>
-															<mi>𝐹</mi>
-															<mo>&af;</mo>
-															<mrow>
-																<mo>(</mo>
-																<mi>𝑝</mi>
-																<mo>)</mo>
-															</mrow>
-														</mrow>
-													</mrow>
-												</mrow>
-											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
+										<mo>)</mo>
+									</math>
+									は<a href="#普遍射">普遍射</a>を持つ（このとき適当な<math><mi>𝐺</mi></math>の左随伴<math><mi>𝐹</mi></math>が定義される）．
+								</li>
+							</ul>
 						</li>
 						<li>
-							それぞれ<dfn>余単位</dfn><span lang="en">(counit)</span>，<dfn>単位</dfn><span lang="en">(unit)</span>と呼ばれる<a href="#自然変換">自然変換</a>
-							<math display="block">
-								<mrow>
-									<mi>𝜀</mi>
-									<mo>:</mo>
-									<mrow>
-										<mrow>
-											<mi>𝐹</mi>
-											<mo>∘</mo>
-											<mi>𝐺</mi>
-										</mrow>
-										<mo>⇒</mo>
-										<msub>
-											<mn>1</mn>
-											<mi>ℬ</mi>
-										</msub>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mi>𝜂</mi>
-									<mo>:</mo>
-									<mrow>
-										<msub>
-											<mn>1</mn>
-											<mi>𝒜</mi>
-										</msub>
-										<mo>⇒</mo>
-										<mrow>
-											<mi>𝐺</mi>
-											<mo>∘</mo>
-											<mi>𝐹</mi>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-							が存在し，以下（<dfn>ジグザク恒等式</dfn><span lang="en">(zigzag identities)</span>や<dfn>三角恒等式</dfn><span lang="en">(triangle identities)</span>と呼ばれる）を満たす：
-							<math display="block">
-								<mrow>
-									<mrow>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝜀</mi>
-												<mo>∗</mo>
-												<mi>𝐹</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>∘</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝐹</mi>
-												<mo>∗</mo>
-												<mi>𝜂</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<msub>
-										<mn>1</mn>
-										<mi>𝐹</mi>
-									</msub>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝐺</mi>
-												<mo>∗</mo>
-												<mi>𝜀</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>∘</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝜂</mi>
-												<mo>∗</mo>
-												<mi>𝐺</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<msub>
-										<mn>1</mn>
-										<mi>𝐺</mi>
-									</msub>
-								</mrow>
-							</math>
-							つまり，以下の図式を可換にする：
-							<svg class="future-work" viewbox="0 0 40 40" width="40" height="40" fill="white">
-								<text x="0" y="35">図式</text>
-							</svg>
-						</li>
-						<li>
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝐵</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>ob</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>ℬ</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-							に対し，<a href="#対象上のコンマ圏">コンマ圏</a>
-							<math>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝐹</mi>
-									<mo>⇒</mo>
-									<mi>𝐵</mi>
-								</mrow>
-								<mo>)</mo>
-							</math>
-							は<a href="#普遍射">普遍射</a>を持つ（このとき適当な<math><mi>𝐹</mi></math>の右随伴<math><mi>𝐺</mi></math>が定義される）．
-						</li>
-						<li>
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝐴</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>ob</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>𝒜</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-							に対し，<a href="#対象上のコンマ圏">コンマ圏</a>
-							<math>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝐴</mi>
-									<mo>⇒</mo>
-									<mi>𝐺</mi>
-								</mrow>
-								<mo>)</mo>
-							</math>
-							は<a href="#普遍射">普遍射</a>を持つ（このとき適当な<math><mi>𝐺</mi></math>の左随伴<math><mi>𝐹</mi></math>が定義される）．
+							このとき
+							<ul>
+								<li><math><mi>𝐹</mi></math>を<math><mi>𝐺</mi></math>の<dfn>左随伴</dfn><span lang="en">(left adjoint)</span>，</li>
+								<li><math><mi>𝐺</mi></math>を<math><mi>𝐹</mi></math>の<dfn>右随伴</dfn><span lang="en">(right adjoint)</span></li>
+							</ul>
+							<p>と呼び，<math><mi>𝐹</mi><mo>⊣</mo><mi>𝐺</mi></math> と表す．</p>
 						</li>
 					</ul>
 				</article>
@@ -9102,88 +9196,12 @@
 					<ul>
 						<li>
 							転置を持つとき，
-							<math>
-								<mi>𝐵</mi>
-								<mo>∈</mo>
-								<mrow>
-									<mi>ob</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mi>ℬ</mi>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							に対し，
-							<math display="block">
-								<msub>
-									<mi>𝜀</mi>
-									<mi>𝐵</mi>
-								</msub>
-								<mo>≔</mo>
-								<mover>
-									<msub>
-										<mn>1</mn>
-										<mrow>
-											<mi>𝐺</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝐵</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</msub>
-									<mo>‾</mo>
-								</mover>
-							</math>
-							とし，
-							<math>
-								<mi>𝐴</mi>
-								<mo>∈</mo>
-								<mrow>
-									<mi>ob</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mi>𝒜</mi>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							に対し，
-							<math display="block">
-								<msub>
-									<mi>𝜂</mi>
-									<mi>𝐴</mi>
-								</msub>
-								<mo>≔</mo>
-								<mover>
-									<msub>
-										<mn>1</mn>
-										<mrow>
-											<mi>𝐹</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝐴</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</msub>
-									<mo>‾</mo>
-								</mover>
-							</math>
-							とすると，<math><mi>𝜀</mi><mo>,</mo><mi>𝜂</mi></math>はこれらを<a href="#自然変換">成分</a>とする<a href="#自然変換">自然変換</a>となり，これらは
 							<math display="block">
 								<mrow>
 									<mrow>
 										<mo>(</mo>
 										<mrow>
-											<mi>𝜀</mi>
-											<mo>∗</mo>
-											<mi>𝐹</mi>
+											<mi>𝜀</mi><mo>∗</mo><mi>𝐹</mi>
 										</mrow>
 										<mo>)</mo>
 									</mrow>
@@ -9191,9 +9209,7 @@
 									<mrow>
 										<mo>(</mo>
 										<mrow>
-											<mi>𝐹</mi>
-											<mo>∗</mo>
-											<mi>𝜂</mi>
+											<mi>𝐹</mi><mo>∗</mo><mi>𝜂</mi>
 										</mrow>
 										<mo>)</mo>
 									</mrow>
@@ -9205,15 +9221,11 @@
 											<mn>1</mn>
 											<mrow>
 												<mrow>
-													<mi>𝐺</mi>
-													<mo>∘</mo>
-													<mi>𝐹</mi>
+													<mi>𝐺</mi><mo>∘</mo><mi>𝐹</mi>
 												</mrow>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>-</mi>
-													<mo>)</mo>
+													<mo>(</mo><mi>-</mi><mo>)</mo>
 												</mrow>
 											</mrow>
 										</msub>
@@ -9232,9 +9244,7 @@
 														<mi>𝐹</mi>
 														<mo>&af;</mo>
 														<mrow>
-															<mo>(</mo>
-															<mi>-</mi>
-															<mo>)</mo>
+															<mo>(</mo><mi>-</mi><mo>)</mo>
 														</mrow>
 													</mrow>
 												</msub>
@@ -9251,15 +9261,11 @@
 											<mn>1</mn>
 											<mrow>
 												<mrow>
-													<mi>𝐺</mi>
-													<mo>∘</mo>
-													<mi>𝐹</mi>
+													<mi>𝐺</mi><mo>∘</mo><mi>𝐹</mi>
 												</mrow>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>-</mi>
-													<mo>)</mo>
+													<mo>(</mo><mi>-</mi><mo>)</mo>
 												</mrow>
 											</mrow>
 										</msub>
@@ -9271,9 +9277,7 @@
 													<mi>𝐹</mi>
 													<mo>&af;</mo>
 													<mrow>
-														<mo>(</mo>
-														<mi>-</mi>
-														<mo>)</mo>
+														<mo>(</mo><mi>-</mi><mo>)</mo>
 													</mrow>
 												</mrow>
 											</msub>
@@ -9286,8 +9290,7 @@
 								<mover>
 									<mover>
 										<msub>
-											<mn>1</mn>
-											<mi>𝐹</mi>
+											<mn>1</mn><mi>𝐹</mi>
 										</msub>
 										<mo>‾</mo>
 									</mover>
@@ -9295,8 +9298,7 @@
 								</mover>
 								<mo>=</mo>
 								<msub>
-									<mn>1</mn>
-									<mi>𝐹</mi>
+									<mn>1</mn><mi>𝐹</mi>
 								</msub>
 							</math>
 							<math display="block">
@@ -9304,9 +9306,7 @@
 									<mrow>
 										<mo>(</mo>
 										<mrow>
-											<mi>𝐺</mi>
-											<mo>∗</mo>
-											<mi>𝜀</mi>
+											<mi>𝐺</mi><mo>∗</mo><mi>𝜀</mi>
 										</mrow>
 										<mo>)</mo>
 									</mrow>
@@ -9314,9 +9314,7 @@
 									<mrow>
 										<mo>(</mo>
 										<mrow>
-											<mi>𝜂</mi>
-											<mo>∗</mo>
-											<mi>𝐺</mi>
+											<mi>𝜂</mi><mo>∗</mo><mi>𝐺</mi>
 										</mrow>
 										<mo>)</mo>
 									</mrow>
@@ -9335,9 +9333,7 @@
 														<mi>𝐺</mi>
 														<mo>&af;</mo>
 														<mrow>
-															<mo>(</mo>
-															<mi>-</mi>
-															<mo>)</mo>
+															<mo>(</mo><mi>-</mi><mo>)</mo>
 														</mrow>
 													</mrow>
 												</msub>
@@ -9352,15 +9348,11 @@
 											<mn>1</mn>
 											<mrow>
 												<mrow>
-													<mi>𝐺</mi>
-													<mo>∘</mo>
-													<mi>𝐹</mi>
+													<mi>𝐺</mi><mo>∘</mo><mi>𝐹</mi>
 												</mrow>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>-</mi>
-													<mo>)</mo>
+													<mo>(</mo><mi>-</mi><mo>)</mo>
 												</mrow>
 											</mrow>
 										</msub>
@@ -9377,9 +9369,7 @@
 													<mi>𝐺</mi>
 													<mo>&af;</mo>
 													<mrow>
-														<mo>(</mo>
-														<mi>-</mi>
-														<mo>)</mo>
+														<mo>(</mo><mi>-</mi><mo>)</mo>
 													</mrow>
 												</mrow>
 											</msub>
@@ -9390,15 +9380,11 @@
 											<mn>1</mn>
 											<mrow>
 												<mrow>
-													<mi>𝐺</mi>
-													<mo>∘</mo>
-													<mi>𝐹</mi>
+													<mi>𝐺</mi><mo>∘</mo><mi>𝐹</mi>
 												</mrow>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>-</mi>
-													<mo>)</mo>
+													<mo>(</mo><mi>-</mi><mo>)</mo>
 												</mrow>
 											</mrow>
 										</msub>
@@ -9409,8 +9395,7 @@
 								<mover>
 									<mover>
 										<msub>
-											<mn>1</mn>
-											<mi>𝐺</mi>
+											<mn>1</mn><mi>𝐺</mi>
 										</msub>
 										<mo>‾</mo>
 									</mover>
@@ -9418,14 +9403,13 @@
 								</mover>
 								<mo>=</mo>
 								<msub>
-									<mn>1</mn>
-									<mi>𝐺</mi>
+									<mn>1</mn><mi>𝐺</mi>
 								</msub>
 							</math>
 							を満たす．
 						</li>
 						<li>
-							余単位と単位を持つとき，
+							<a href="#随伴">ジグザグ恒等式</a>を満たすとき，
 							<math>
 								<mo>∀</mo>
 								<mo>&af;</mo>
@@ -9436,102 +9420,72 @@
 										<mi>ob</mi>
 										<mo>&af;</mo>
 										<mrow>
+											<mo>(</mo><mi>ℬ</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							に対する<a href="#対象上のコンマ圏">コンマ圏</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝐹</mi><mo>⇒</mo><mi>𝐵</mi>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							を考える．
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝐴</mi><mo>,</mo><mi>𝑔</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>∈</mo>
+									<mrow>
+										<mi>ob</mi>
+										<mo>&af;</mo>
+										<mrow>
 											<mo>(</mo>
-											<mi>ℬ</mi>
+											<mrow>
+												<mi>𝐹</mi><mo>⇒</mo><mi>𝐵</mi>
+											</mrow>
 											<mo>)</mo>
 										</mrow>
 									</mrow>
 								</mrow>
 							</math>
-							に対する
+							と<a href="#圏">射</a>
 							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
 								<mrow>
-									<mo>(</mo>
+									<mi>𝑓</mi>
+									<mo>∈</mo>
 									<mrow>
-										<mrow>
-											<mi>𝐺</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝐵</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>,</mo>
 										<msub>
-											<mi>𝜀</mi>
-											<mi>𝐵</mi>
+											<mi>hom</mi><mi>𝒜</mi>
 										</msub>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-								<mo>∈</mo>
-								<mrow>
-									<mi>ob</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
+										<mo>&af;</mo>
 										<mrow>
-											<mi>𝐹</mi>
-											<mo>⇒</mo>
-											<mi>𝐵</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							を考える．
-							<math>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝐴</mi>
-										<mo>,</mo>
-										<mi>𝑔</mi>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-								<mo>∈</mo>
-								<mrow>
-									<mi>ob</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝐹</mi>
-											<mo>⇒</mo>
-											<mi>𝐵</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-							とすると，<a href="#圏">射</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>∈</mo>
-								<mrow>
-									<msub>
-										<mi>hom</mi>
-										<mi>𝒜</mi>
-									</msub>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝐴</mi>
-											<mo>,</mo>
+											<mo>(</mo>
 											<mrow>
-												<mi>𝐺</mi>
-												<mo>&af;</mo>
+												<mi>𝐴</mi>
+												<mo>,</mo>
 												<mrow>
-													<mo>(</mo>
-													<mi>𝐵</mi>
-													<mo>)</mo>
+													<mi>𝐺</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝐵</mi><mo>)</mo>
+													</mrow>
 												</mrow>
 											</mrow>
+											<mo>)</mo>
 										</mrow>
-										<mo>)</mo>
 									</mrow>
 								</mrow>
 							</math>
@@ -9545,17 +9499,14 @@
 											<mo>(</mo>
 											<mrow>
 												<msub>
-													<mi>𝜀</mi>
-													<mi>𝐵</mi>
+													<mi>𝜀</mi><mi>𝐵</mi>
 												</msub>
 												<mo>∘</mo>
 												<mrow>
 													<mi>𝐹</mi>
 													<mo>&af;</mo>
 													<mrow>
-														<mo>(</mo>
-														<mi>𝑓</mi>
-														<mo>)</mo>
+														<mo>(</mo><mi>𝑓</mi><mo>)</mo>
 													</mrow>
 												</mrow>
 											</mrow>
@@ -9660,17 +9611,14 @@
 							<math display="block">
 								<mrow>
 									<msub>
-										<mi>𝜀</mi>
-										<mi>𝐵</mi>
+										<mi>𝜀</mi><mi>𝐵</mi>
 									</msub>
 									<mo>∘</mo>
 									<mrow>
 										<mi>𝐹</mi>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo>
-											<mi>𝑓</mi>
-											<mo>)</mo>
+											<mo>(</mo><mi>𝑓</mi><mo>)</mo>
 										</mrow>
 									</mrow>
 								</mrow>
@@ -9686,29 +9634,16 @@
 										<mi>𝐺</mi>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo>
-											<mi>𝑔</mi>
-											<mo>)</mo>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
 										</mrow>
 									</mrow>
 									<mo>∘</mo>
 									<msub>
-										<mi>𝜂</mi>
-										<mi>𝐴</mi>
+										<mi>𝜂</mi><mi>𝐴</mi>
 									</msub>
 								</mrow>
 							</math>
-							のみ．つまり，<a href="#対象上のコンマ圏">コンマ圏</a>
-							<math>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝐹</mi>
-									<mo>⇒</mo>
-									<mi>𝐵</mi>
-								</mrow>
-								<mo>)</mo>
-							</math>
-							は<a href="#普遍射">普遍射</a>
+							のみ．つまり，
 							<math>
 								<mo>(</mo>
 								<mrow>
@@ -9716,20 +9651,17 @@
 										<mi>𝐺</mi>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo>
-											<mi>𝐵</mi>
-											<mo>)</mo>
+											<mo>(</mo><mi>𝐵</mi><mo>)</mo>
 										</mrow>
 									</mrow>
 									<mo>,</mo>
 									<msub>
-										<mi>𝜀</mi>
-										<mi>𝐵</mi>
+										<mi>𝜀</mi><mi>𝐵</mi>
 									</msub>
 								</mrow>
 								<mo>)</mo>
 							</math>
-							を持つ．双対を考えれば，
+							は <math><mi>𝐹</mi></math> から <math><mi>𝐵</mi></math> への<a href="#普遍射">普遍射</a>．双対を考えれば，
 							<math>
 								<mo>∀</mo>
 								<mo>&af;</mo>
@@ -9740,24 +9672,30 @@
 										<mi>ob</mi>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo>
-											<mi>𝒜</mi>
-											<mo>)</mo>
+											<mo>(</mo><mi>𝒜</mi><mo>)</mo>
 										</mrow>
 									</mrow>
 								</mrow>
 							</math>
-							に対し，<a href="#対象上のコンマ圏">コンマ圏</a>
+							に対し，
 							<math>
 								<mo>(</mo>
 								<mrow>
-									<mi>𝐴</mi>
-									<mo>⇒</mo>
-									<mi>𝐺</mi>
+									<mrow>
+										<mi>𝐹</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<msub>
+										<mi>𝜂</mi><mi>𝐴</mi>
+									</msub>
 								</mrow>
 								<mo>)</mo>
 							</math>
-							は<a href="#普遍射">普遍射</a>を持つ．
+							は <math><mi>𝐴</mi></math> から <math><mi>𝐺</mi></math> への<a href="#普遍射">普遍射</a>．
 						</li>
 						<li>
 							<math>
@@ -9770,24 +9708,12 @@
 										<mi>ob</mi>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo>
-											<mi>ℬ</mi>
-											<mo>)</mo>
+											<mo>(</mo><mi>ℬ</mi><mo>)</mo>
 										</mrow>
 									</mrow>
 								</mrow>
 							</math>
-							に対し，<a href="#対象上のコンマ圏">コンマ圏</a>
-							<math>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝐹</mi>
-									<mo>⇒</mo>
-									<mi>𝐵</mi>
-								</mrow>
-								<mo>)</mo>
-							</math>
-							が<a href="#普遍射">普遍射</a>
+							に対し，
 							<math>
 								<mo>(</mo>
 								<mrow>
@@ -9795,40 +9721,17 @@
 										<mi>𝐺</mi>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo>
-											<mi>𝐵</mi>
-											<mo>)</mo>
+											<mo>(</mo><mi>𝐵</mi><mo>)</mo>
 										</mrow>
 									</mrow>
 									<mo>,</mo>
 									<msub>
-										<mi>𝜀</mi>
-										<mi>𝐵</mi>
+										<mi>𝜀</mi><mi>𝐵</mi>
 									</msub>
 								</mrow>
 								<mo>)</mo>
 							</math>
-							を持つとき，<a href="#函手">函手</a>
-							<math>
-								<mi>𝐺</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>ℬ</mi>
-									<mo>→</mo>
-									<mi>𝒜</mi>
-								</mrow>
-							</math>
-							の<a href="#函手">対象-対象対応</a>をこの
-							<math>
-								<mi>𝐺</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mi>𝐵</mi>
-									<mo>)</mo>
-								</mrow>
-							</math>
-							で定義する．
+							が <math><mi>𝐹</mi></math> から <math><mi>𝐵</mi></math> への<a href="#普遍射">普遍射</a>となるとき，
 							<math>
 								<mrow>
 									<mi>𝐵</mi>
@@ -11151,6 +11054,146 @@
 				<article class="proof">
 					<h4>証明</h4>
 					<p><a href="#分裂モノかつエピ射は同型射">分裂モノかつエピ射は同型射</a>であったから，<math><mi>𝐹</mi><mo>⊣</mo><mi>𝐺</mi></math>が共に<a href="#埋め込み">埋め込み</a>であることと，<math><mi>𝜀</mi><mo>,</mo><mi>𝜂</mi></math>が<a href="#自然同型">自然同型</a>であることは同値．</p>
+				</article>
+			</section>
+			<section>
+				<h3>モナド</h3>
+				<article id="モナド" class="dfn">
+					<h4>モナド</h4>
+					<ul>
+						<li>
+							<dfn>モナド</dfn><span lang="en">(monad)</span>とは，以下のデータからなる：
+							<ul>
+								<li><a href="#圏">圏</a> <math><mi>𝒜</mi></math></li>
+								<li>
+									<math><mi>𝒜</mi></math> 上の自己<a href="#函手">函手</a>
+									<math>
+										<mi>𝑇</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝒜</mi><mo>→</mo><mi>𝒜</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#自然変換">自然変換</a>
+									<math>
+										<mi>𝜂</mi>
+										<mo>:</mo>
+										<mrow>
+											<msub>
+												<mn>1</mn><mi>𝒜</mi>
+											</msub>
+											<mo>→</mo>
+											<mi>𝑇</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#自然変換">自然変換</a>
+									<math>
+										<mi>𝜇</mi>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑇</mi><mo>∘</mo><mi>𝑇</mi>
+											</mrow>
+											<mo>→</mo>
+											<mi>𝑇</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							これらは以下を満たす：
+							<ul>
+								<li>
+									<math>
+										<mrow>
+											<mi>𝜇</mi>
+											<mo>∘</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑇</mi><mo>∗</mo><mi>𝜇</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝜇</mi>
+											<mo>∘</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝜇</mi><mo>∗</mo><mi>𝑇</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									つまり以下の図式を可換にする：
+									<svg class="future-work" viewbox="0 0 40 40" width="40" height="40" fill="white">
+										<text x="0" y="35">図式</text>
+									</svg>
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mi>𝜇</mi>
+											<mo>∘</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑇</mi><mo>∗</mo><mi>𝜂</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<msub>
+											<mn>1</mn><mi>𝑇</mi>
+										</msub>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝜇</mi>
+											<mo>∘</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝜂</mi><mo>∗</mo><mi>𝑇</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									つまり以下の図式を可換にする：
+									<svg class="future-work" viewbox="0 0 40 40" width="40" height="40" fill="white">
+										<text x="0" y="35">図式</text>
+									</svg>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<dfn>余モナド</dfn><span lang="en">(comonad)</span>とは，以下のデータからなる：
+						</li>
+					</ul>
+				</article>
+				<article id="冪等モナド" class="dfn">
+					<h4>冪等モナド</h4>
+					<ul>
+						<li>
+							<dfn>冪等モナド</dfn><span lang="en">(idempotent monad)</span>とは，<a href="#モナド">モナド</a><math><mo>(</mo><mrow><mi>𝒜</mi><mo>,</mo><mi>𝑇</mi><mo>,</mo><mi>𝜂</mi><mo>,</mo><mi>𝜇</mi></mrow><mo>)</mo></math>であって，以下の同値な条件のいずれか（ゆえに全て）を満たすものを言う：
+							<ul>
+								<li><math><mi>𝜇</mi></math> は<a href="#自然同型">自然同型</a></li>
+								<li><math><mi>𝜇</mi></math> の全ての<a href="#自然変換">成分</a>は<a href="#モノ射">モノ射</a></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</li>
+					</ul>
 				</article>
 			</section>
 			<section>
