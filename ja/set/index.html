@@ -8985,7 +8985,7 @@
 					<h4>整礎集合</h4>
 					<p><a href="#集合">集合</a> <math><mi>𝐴</mi></math> を与える．</p>
 					<p>
-						<a href="#関係"><math><mi>𝐴</mi></math> 上の関係</a>が<dfn>整礎</dfn><span lang="en">(well-founded)</span>であるとは，任意の<a href="#空集合">空</a>でない <math><mi>𝐴</mi></math> の<a href="#部分集合">部分集合</a>が<a href="#極大元">極小元</a>を持つことを言う．
+						<a href="#関係"><math><mi>𝐴</mi></math> 上の関係</a>が<dfn>整礎</dfn><span lang="en">(well-founded)</span>であるとは，任意の<a href="#空集合">空</a>でない <math><mi>𝐴</mi></math> の<a href="#部分集合">部分集合</a>が<a href="#極小元">極小元</a>を持つことを言う．
 					</p>
 				</article>
 				<p>以上のうちいくつかを同時に満たすこともある．多くが関係の代わりに順序と呼ばれ，それらは次章以降で扱っている．もう一つ重要なのが<a href="#同値関係">同値関係</a>で，あとで扱っている．</p>
@@ -9816,7 +9816,7 @@
 								</mrow>
 								<mo>)</mo>
 							</math>
-							に対し，<a href="#前順序が誘導する圏">前順序が誘導する圏</a>は<a href="../category/index.html#骨格的">骨格的</a>．
+							に対し，<a href="#前順序が誘導する圏">前順序が誘導する圏</a>は<a href="../category/index.html#骨格的">骨格的</a>．特に，<a href="../category/index.html#同型射">同型射</a>は<a href="../category/index.html#圏">恒等射</a>に限られる．
 						</p>
 					</article>
 				</article>
@@ -10856,6 +10856,181 @@
 				</article>
 			</section>
 			<section>
+				<h3>順序を保つ写像</h3>
+				<article id="順序を保つ写像" class="dfn">
+					<h4>順序を保つ写像</h4>
+					<p>
+						<a href="#前順序">前順序集合</a>
+						<math>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>,</mo><mo>≤</mo>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝐵</mi><mo>,</mo><mo>≤</mo>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+						</math>
+						を与える．
+					</p>
+					<ul>
+						<li>
+							<a href="#写像">写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>→</mo><mi>𝐵</mi>
+								</mrow>
+							</math>
+							が<dfn>順序を保つ</dfn><span lang="en">(order-preserving)</span>とは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							<ul>
+								<li><math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">関係を保つ</a></li>
+								<li><math><mi>𝑓</mi></math> は<a href="../category/index.html#函手">函手</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#写像">写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>→</mo><mi>𝐵</mi>
+								</mrow>
+							</math>
+							が<dfn>順序を逆にする</dfn><span lang="en">(order-reversing)</span>とは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							<ul>
+								<li><math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">関係を逆にする</a></li>
+								<li><math><mi>𝑓</mi></math> は<a href="../category/index.html#反変函手">反変函手</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#写像">写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>→</mo><mi>𝐵</mi>
+								</mrow>
+							</math>
+							が<dfn>順序を反映する</dfn><span lang="en">(order-reflecting)</span>とは，<a href="#関係を保つ写像">関係を反映する</a>ことを言う．
+						</li>
+						<li>
+							<a href="#写像">写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>→</mo><mi>𝐵</mi>
+								</mrow>
+							</math>
+							が<dfn>順序埋め込み</dfn><span lang="en">(order embedding)</span>とは，<a href="#関係を保つ写像">関係埋め込み</a>であることを言う．
+						</li>
+						<li>
+							<a href="#写像">写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>→</mo><mi>𝐵</mi>
+								</mrow>
+							</math>
+							が<dfn>順序同値</dfn><span lang="en">(order equivalence)</span>とは，<a href="../category/index.html#圏同値">函手として同値</a>であることを言う．つまり，以下を満たす：
+						</li>
+						<li>
+							<a href="#写像">写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐴</mi><mo>→</mo><mi>𝐵</mi>
+								</mrow>
+							</math>
+							が<dfn>順序同型</dfn><span lang="en">(order isomorphism)</span>とは，<a href="#関係を保つ写像">関係同型</a>であることを言う．
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>条件の同値性の証明</h4>
+					<p>定義より自明</p>
+				</article>
+				<article id="拡大写像" class="dfn">
+					<h4>拡大写像</h4>
+					<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow <mo>)</mo></math> を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑃</mi></math> 上の<a href="#写像">写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑃</mi><mo>→</mo><mi>𝑃</mi>
+								</mrow>
+							</math> が<dfn>拡大的</dfn><span lang="en">(extensive)</span>であるとは，以下を満たすことを言う：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>≤</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝑃</mi></math> 上の<a href="#写像">写像</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝑃</mi><mo>→</mo><mi>𝑃</mi>
+								</mrow>
+							</math> が<dfn>縮小的</dfn><span lang="en">(<span class="future-work">english name?</span>)</span>であるとは，以下を満たすことを言う：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>≤</mo>
+									<mi>𝑎</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+			</section>
+			<section>
 				<h3>前順序</h3>
 				<p><a href="#前順序">前順序</a>が<a href="#巡回を持つ関係の推移閉包">巡回を持つことと，半順序であることは同値</a>．よって，順序らしいのは(?)<a href="#半順序">半順序</a>なのだが，<a href="#前順序">前順序</a>もうまい<a href="#商集合">商集合</a>上の<a href="#半順序">半順序</a>を誘導する：</p>
 				<article id="前順序の誘導する半順序" class="thm">
@@ -10960,6 +11135,17 @@
 								<mo>)</mo>
 							</math>
 							は<a href="#半順序">半順序集合</a>
+						</li>
+						<li>
+							<a href="#商集合">標準射影</a>
+							<math>
+								<mi>𝑃</mi>
+								<mo>→</mo>
+								<mrow>
+									<mi>𝑃</mi><mo>∕</mo><mo>∼</mo>
+								</mrow>
+							</math>
+							は<a href="#順序を保つ写像">順序埋め込み</a>．
 						</li>
 					</ul>
 				</article>
@@ -11080,137 +11266,7 @@
 								<li><a href="#前順序">前順序</a> <math><mo>⪯</mo></math> が<a href="#推移関係">推移関係</a>なので，<math><mo>≤</mo></math> の定義より<a href="#半順序">推移律</a>を満たす．</li>
 							</ul>
 						</li>
-					</ul>
-				</article>
-			</section>
-			<section>
-				<h3>順序を保つ写像</h3>
-				<article id="順序を保つ写像" class="dfn">
-					<h4>順序を保つ写像</h4>
-					<p>
-						<a href="#前順序">前順序集合</a>
-						<math>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝐴</mi><mo>,</mo><mo>≤</mo>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝐵</mi><mo>,</mo><mo>≤</mo>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-						</math>
-						を与える．
-					</p>
-					<ul>
-						<li>
-							<a href="#写像">写像</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>𝐴</mi><mo>→</mo><mi>𝐵</mi>
-								</mrow>
-							</math>
-							が<dfn>順序を保つ</dfn><span lang="en">(order-preserving)</span>とは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
-							<ul>
-								<li><math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">関係を保つ</a></li>
-								<li><math><mi>𝑓</mi></math> は<a href="../category/index.html#函手">函手</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#写像">写像</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>𝐴</mi><mo>→</mo><mi>𝐵</mi>
-								</mrow>
-							</math>
-							が<dfn>順序を逆にする</dfn><span lang="en">(order-reversing)</span>とは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
-							<ul>
-								<li><math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">関係を逆にする</a></li>
-								<li><math><mi>𝑓</mi></math> は<a href="../category/index.html#反変函手">反変函手</a></li>
-							</ul>
-						</li>
-					</ul>
-				</article>
-				<article class="proof">
-					<h4>条件の同値性の証明</h4>
-					<p>定義より自明</p>
-				</article>
-				<article id="拡大写像" class="dfn">
-					<h4>拡大写像</h4>
-					<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow <mo>)</mo></math> を与える．</p>
-					<ul>
-						<li>
-							<math><mi>𝑃</mi></math> 上の<a href="#写像">写像</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>𝑃</mi><mo>→</mo><mi>𝑃</mi>
-								</mrow>
-							</math> が<dfn>拡大的</dfn><span lang="en">(extensive)</span>であるとは，以下を満たすことを言う：
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mi>𝑎</mi>
-									<mo>≤</mo>
-									<mrow>
-										<mi>𝑓</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑎</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math><mi>𝑃</mi></math> 上の<a href="#写像">写像</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>𝑃</mi><mo>→</mo><mi>𝑃</mi>
-								</mrow>
-							</math> が<dfn>縮小的</dfn><span lang="en">(<span class="future-work">english name?</span>)</span>であるとは，以下を満たすことを言う：
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑓</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑎</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>≤</mo>
-									<mi>𝑎</mi>
-								</mrow>
-							</math>
-						</li>
+						<li><math><mo>≤</mo></math> の定義より自明．</li>
 					</ul>
 				</article>
 			</section>
@@ -11235,7 +11291,7 @@
 									<math><mi>𝑃</mi></math> 上の（<a href="../category/index.html#冪等モナド">冪等</a>）<a href="../category/index.html#モナド">モナド</a>．つまり，以下を満たす：
 									<ul>
 										<li>
-											<math><mi>cl</mi></math> は<a href="#関係を保つ写像">順序を保つ</a>：
+											<math><mi>cl</mi></math> は<a href="#順序を保つ写像">順序を保つ</a>：
 											<math>
 												<mrow>
 													<mo>∀</mo>
@@ -11429,7 +11485,7 @@
 									<math><mi>𝑃</mi></math> 上の（<a href="../category/index.html#冪等モナド">冪等</a>）<a href="../category/index.html#モナド">余モナド</a>．つまり，以下を満たす：
 									<ul>
 										<li>
-											<math><mi>cl</mi></math> は<a href="#関係を保つ写像">順序を保つ</a>：
+											<math><mi>cl</mi></math> は<a href="#順序を保つ写像">順序を保つ</a>：
 											<math>
 												<mrow>
 													<mo>∀</mo>
@@ -11609,7 +11665,7 @@
 							<math><mi>𝑃</mi></math> と <math><mi>𝑄</mi></math> の間の<dfn>（反調）Galois接続</dfn><span lang="en">((antitone) Galois connection)</span>とは，双対随伴のこと．つまり，以下のデータからなる：
 							<ul>
 								<li>
-									<a href="#関係を保つ写像">順序を逆にする写像</a>の組
+									<a href="#順序を保つ写像">順序を逆にする写像</a>の組
 									<math>
 										<mrow>
 											<mi>𝐹</mi>
@@ -11743,7 +11799,7 @@
 							<math><mi>𝑃</mi></math> と <math><mi>𝑄</mi></math> の間の<dfn>単調Galois接続</dfn><span lang="en">(monotone Galois connection)</span>とは，<a href="../category/index.html#随伴">随伴</a>のこと．つまり，以下のデータからなる：
 							<ul>
 								<li>
-									<a href="#関係を保つ写像">順序を保つ写像</a>の組
+									<a href="#順序を保つ写像">順序を保つ写像</a>の組
 									<math>
 										<mrow>
 											<mi>𝐹</mi>
@@ -12132,7 +12188,7 @@
 							<math>
 								<mi>𝑎</mi><mo>≤</mo><mi>𝑎</mi>
 							</math>
-							となる．<math><mi>𝐹</mi></math> は<a href="#関係を保つ写像">順序を逆にする</a>から，
+							となる．<math><mi>𝐹</mi></math> は<a href="#順序を保つ写像">順序を逆にする</a>から，
 							<math display="block">
 								<mrow>
 									<mrow>
@@ -12214,7 +12270,7 @@
 									</mrow>
 								</mrow>
 							</math>
-							に対し，<math><mi>𝐺</mi></math> は<a href="#関係を保つ写像">順序を逆にする</a>から，
+							に対し，<math><mi>𝐺</mi></math> は<a href="#順序を保つ写像">順序を逆にする</a>から，
 							<math display="block">
 								<mrow>
 									<mi>𝑏</mi>
@@ -12325,7 +12381,7 @@
 									</mrow>
 								</mrow>
 							</math>
-							．<math><mi>𝐹</mi></math> は<a href="#関係を保つ写像">順序を逆にする</a> ので，
+							．<math><mi>𝐹</mi></math> は<a href="#順序を保つ写像">順序を逆にする</a> ので，
 							<math display="block">
 								<mrow>
 									<mrow>
@@ -12404,7 +12460,7 @@
 						<li>
 							<ul>
 								<li>
-									<math><mi>𝐹</mi><mo>,</mo><mi>𝐺</mi></math> は<a href="#関係を保つ写像">順序を逆にする</a> から，
+									<math><mi>𝐹</mi><mo>,</mo><mi>𝐺</mi></math> は<a href="#順序を保つ写像">順序を逆にする</a> から，
 									<math>
 										<mrow>
 											<mi>𝐺</mi><mo>∘</mo><mi>𝐹</mi>
@@ -12414,7 +12470,7 @@
 											<mi>𝐹</mi><mo>∘</mo><mi>𝐺</mi>
 										</mrow>
 									</math>
-									は<a href="#関係を保つ写像">順序を保つ</a>．
+									は<a href="#順序を保つ写像">順序を保つ</a>．
 								</li>
 								<li>
 									また，<a href="#Galois接続">Galois接続の定義</a>（の一つ）より，
@@ -12712,9 +12768,9 @@
 			<h2>束</h2>
 			<section>
 				<h3>上限・下限</h3>
-				<p><a href="#前順序が誘導する圏">前順序が誘導する圏</a>の<a href="../category/index.html#極限">（余）極限</a>について．</p>
-				<article id="極大元" class="dfn">
-					<h4>極大元・極小元・最大元・最小元</h4>
+				<p><a href="#前順序が誘導する圏">前順序が誘導する圏</a>の<a href="../category/index.html#極限">極限・余極限</a>について．</p>
+				<article id="極小元" class="dfn">
+					<h4>極小元・極大元・最小元・最大元</h4>
 					<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> を与える．</p>
 					<ul>
 						<li>
@@ -12774,28 +12830,79 @@
 							</ul>
 						</li>
 					</ul>
+					<article id="半順序の最小元の一意性" class="thm">
+						<h5>半順序の最小元・最大元の一意性</h5>
+						<p><a href="#半順序">半順序集合</a>の<a href="#極小元">最小元</a>および<a href="#極小元">最大元</a>は，存在すれば一意．</p>
+					</article>
 				</article>
-				<article id="上限" class="dfn">
-					<h4>上界・下界・上限・下限</h4>
+				<article id="下限" class="dfn">
+					<h4>下界・上界・下限・上限</h4>
 					<ul>
-						<li><a href="#推移関係">推移関係付き集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math></li>
-						<li><a href="#部分集合">部分集合</a> <math><mi>𝐴</mi><mo>⊂</mo><mi>𝑃</mi></math></li>
-						<li><a href="#離散圏">離散圏</a> <math><mi>ℐ</mi></math></li>
+						<li><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math></li>
+						<li><a href="#部分集合">部分集合</a> <math><mi>𝐴</mi><mo>⊆</mo><mi>𝑃</mi></math></li>
+						<li>
+							<a href="../category/index.html#函手">函手</a>
+							<math>
+								<mi>𝐷</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝐴</mi><mo>,</mo><mo>=</mo>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>→</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝐴</mi><mo>,</mo><mo>≤</mo>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
 					</ul>
-					<p> を与える．</p>
+					<p>を与える．</p>
 					<ul>
 						<li>
 							<ul>
-								<li><math><mi>𝑚</mi><mo>∈</mo><mi>𝑃</mi></math> が <math><mi>𝐴</mi></math> の<dfn>上界</dfn><span lang="en">(upper bound)</span>であるとは，<a href="../category/index.html#錐">錐</a>となることを言う．つまり，以下を満たす：<math display="block"><mrow><mi>𝐴</mi><mo>∖</mo><mi>𝑚</mi></mrow><mo>≤</mo><mi>𝑚</mi></math></li>
-								<li><math><mi>𝑚</mi><mo>∈</mo><mi>𝑃</mi></math> が <math><mi>𝐴</mi></math> の<dfn>下界</dfn><span lang="en">(lower bound)</span>であるとは，以下を満たすことを言う：<math display="block"><mi>𝑚</mi><mo>≤</mo><mrow><mi>𝐴</mi><mo>∖</mo><mi>𝑚</mi></mrow></math></li>
+								<li><math><mi>𝑚</mi><mo>∈</mo><mi>𝑃</mi></math> が <math><mi>𝐴</mi></math> の<dfn>下界</dfn><span lang="en">(lower bound)</span>であるとは，<math><mi>𝐷</mi></math> の<a href="../category/index.html#錐">錐</a>となることを言う．つまり，以下を満たす：<math display="block"><mi>𝑚</mi><mo>≤</mo><mi>𝐴</mi></math></li>
+								<li><math><mi>𝑚</mi><mo>∈</mo><mi>𝑃</mi></math> が <math><mi>𝐴</mi></math> の<dfn>上界</dfn><span lang="en">(upper bound)</span>であるとは，<math><mi>𝐷</mi></math> の<a href="../category/index.html#錐">余錐</a>となることを言う．つまり，以下を満たす：<math display="block"><mi>𝐴</mi><mo>≤</mo><mi>𝑚</mi></math></li>
 							</ul>
 						</li>
 						<li>
 							<ul>
-								<li><a href="../category/index.html#直積">直積</a>のこと，<math><mi>𝐴</mi></math> の上界全てのなす <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>の<a href="#極大元">最小元</a>のことを，<math><mi>𝐴</mi></math> の<dfn>上限</dfn><span lang="en">(supremum)</span>や<dfn>合併</dfn><span lang="en">(join)</span>と呼び，<math><mo>⋁</mo><mi>𝐴</mi></math> と表す．</li>
-								<li><math><mi>𝐴</mi></math> の下界全てのなす <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>の<a href="#極大元">最大元</a>のことを，<math><mi>𝐴</mi></math> の<dfn>下限</dfn><span lang="en">(infimum)</span>や<dfn>交叉</dfn><span lang="en">(meet)</span>と呼び，<math><mo>⋀</mo><mi>𝐴</mi></math> と表す．</li>
+								<li><math><mi>𝐴</mi></math> の<a href="../category/index.html#直積">直積</a>のこと，つまり <math><mi>𝐴</mi></math> の下界全てのなす <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>の<a href="#極小元">最大元</a>のことを，<math><mi>𝐴</mi></math> の<dfn>下限</dfn><span lang="en">(infimum)</span>や<dfn>交叉</dfn><span lang="en">(meet)</span>と呼び，<math><mo>⋀</mo><mi>𝐴</mi></math> と表す．</li>
+								<li><math><mi>𝐴</mi></math> の<a href="../category/index.html#直積">余直積</a>のこと，つまり <math><mi>𝐴</mi></math> の上界全てのなす <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>の<a href="#極小元">最小元</a>のことを，<math><mi>𝐴</mi></math> の<dfn>上限</dfn><span lang="en">(supremum)</span>や<dfn>合併</dfn><span lang="en">(join)</span>と呼び，<math><mo>⋁</mo><mi>𝐴</mi></math> と表す．</li>
 							</ul>
 						</li>
+					</ul>
+					<article id="空集合の下限" class="thm">
+						<h5>空集合の下界・上界・下限・上限</h5>
+						<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> を与えると，<a href="#空集合">空集合</a> <math><mi>∅</mi><mo>⊆</mo><mi>𝑃</mi></math> の</p>
+						<ul>
+							<li><a href="#下限">下界</a>・<a href="#下限">上界</a>は <math><mi>𝑃</mi></math></li>
+							<li><a href="#下限">下限</a>は （存在すれば）<math><mi>𝑃</mi></math> の<a href="#極小元">最大元</a></li>
+							<li><a href="#下限">上限</a>は （存在すれば）<math><mi>𝑃</mi></math> の<a href="#極小元">最小元</a></li>
+						</ul>
+					</article>
+					<article id="半順序の下限の一意性" class="thm">
+						<h5>半順序の下限・上限の一意性</h5>
+						<p><a href="#半順序">半順序集合</a>の<a href="#下限">下限</a>および<a href="#下限">上限</a>は，存在すれば一意．</p>
+					</article>
+				</article>
+				<article id="Zornの補題" class="thm">
+					<h4>Zornの補題・Hausdorffの極大原理・Tukeyの補題 ・整列可能原理</h4>
+					<p>以下は同値：</p>
+					<ul>
+						<li><a href="#選択公理">選択公理</a></li>
+						<li>Zornの補題<span lang="en">(Zorn's lemma)</span>：任意の<a href="#半順序">半順序集合</a>で任意の<a href="#鎖">鎖</a>が<a href="#下限">上界</a>を持つものは，<a href="#極小元">極大元</a>を持つ．</li>
+						<li>Hausdorffの極大原理<span lang="en">(Hausdorff maximality principle)</span>：任意の<a href="#半順序">半順序集合</a>で任意の<a href="#鎖">鎖</a>は<a href="#極小元">極大</a>な鎖を含む．</li>
+						<li>Tukeyの補題<span lang="en">(Tukey's lemma)</span>：は，<a href="#極小元">極大元</a>を持つ．</li>
+						<li>整列可能原理<span lang="en">(well-ordering theorem)</span>：任意の<a href="#空集合">空</a>でない<a href="#集合">集合</a>は整列可能．</li>
 					</ul>
 				</article>
 			</section>
@@ -12981,7 +13088,7 @@
 										</mrow>
 										<mo>}</mo>
 									</math>
-									の<a href="#上限">下限</a>．
+									の<a href="#下限">下限</a>．
 								</li>
 							</ul>
 						</li>
@@ -13048,7 +13155,7 @@
 										</mrow>
 										<mo>}</mo>
 									</math>
-									の<a href="#上限">上限</a>．
+									の<a href="#下限">上限</a>．
 								</li>
 							</ul>
 						</li>
@@ -13085,7 +13192,7 @@
 								</mrow>
 								<mo>}</mo>
 							</math>
-							の<a href="#上限">下限</a>で定義されるとき，<math><mo>∧</mo></math>の<a href="#半束">可換律</a>と<a href="#半束">結合律</a>は自明．
+							の<a href="#下限">下限</a>で定義されるとき，<math><mo>∧</mo></math>の<a href="#半束">可換律</a>と<a href="#半束">結合律</a>は自明．
 						</li>
 						<li>
 							<ul>
@@ -13209,6 +13316,22 @@
 							</ul>
 						</li>
 					</ul>
+				</article>
+				<article id="有界束" class="dfn">
+					<h4>有界下半束・有界上半束・有界束</h4>
+					<ul>
+						<li><dfn>有界下半束</dfn><span lang="en">(bounded meet-semilattice)</span>または<dfn>有限完備半束</dfn><span lang="en">(finitely complete semilattice)</span>とは，<a href="#極小元">最大元</a>を持つ<a href="#下半束">下半束</a>のこと．</li>
+						<li><dfn>有界上半束</dfn><span lang="en">(bounded join-semilattice)</span>または<dfn>有限余完備半束</dfn><span lang="en">(finitely cocomplete semilattice)</span>とは，<a href="#極小元">最小元</a>を持つ<a href="#下半束">上半束</a>のこと．</li>
+						<li><dfn>有界束</dfn><span lang="en">(bounded lattice)</span>または<dfn>有限（双）完備束</dfn><span lang="en">(finitely (bi)complete lattice)</span>とは，<a href="#極小元">最小元</a>と<a href="#極小元">最大元</a>を持つ<a href="#束">束</a>のこと．</li>
+					</ul>
+					<article id="有界束の基本性質" class="thm">
+						<h5>有界束の基本性質</h5>
+						<ul>
+							<li><a href="#有界束">有界下半束</a>は<a href="../category/index.html#有限完備圏">有限完備圏</a>．つまり，任意の有限<a href="#部分集合">部分集合</a>は<a href="#下限">下限</a>を持つ．</li>
+							<li><a href="#有界束">有界上半束</a>は<a href="../category/index.html#有限完備圏">有限余完備圏</a>．つまり，任意の有限<a href="#部分集合">部分集合</a>は<a href="#下限">上限</a>を持つ．</li>
+							<li><a href="#有界束">有界束</a>は<a href="../category/index.html#有限完備圏">有限双完備圏</a>．つまり，任意の有限<a href="#部分集合">部分集合</a>は<a href="#下限">下限</a>と<a href="#下限">上限</a>を持つ．</li>
+						</ul>
+					</article>
 				</article>
 				<article id="束" class="dfn">
 					<h4>束</h4>
@@ -13604,7 +13727,7 @@
 											<mi>𝑃</mi>
 										</mrow>
 									</math>
-									に対し，<a href="#上限">下限</a>の定義より
+									に対し，<a href="#下限">下限</a>の定義より
 									<math>
 										<mi>𝑎</mi>
 										<mo>≤</mo>
@@ -13688,13 +13811,13 @@
 						
 						<li>
 							<ul>
-								<li><math><mo>⋀</mo></math> は<a href="#上限">下限</a>を取る操作</li>
-								<li><math><mo>⋁</mo></math> は<a href="#上限">上限</a>を取る操作</li>
+								<li><math><mo>⋀</mo></math> は<a href="#下限">下限</a>を取る操作</li>
+								<li><math><mo>⋁</mo></math> は<a href="#下限">上限</a>を取る操作</li>
 							</ul>
 						</li>
 						<li>
 							<ul>
-								<li><math><mo>⋀</mo></math> は<a href="#上限">下限</a>を取る操作</li>
+								<li><math><mo>⋀</mo></math> は<a href="#下限">下限</a>を取る操作</li>
 								<li>
 									<math>
 										<mo>∀</mo>
@@ -13703,7 +13826,7 @@
 											<mi>𝐴</mi><mo>⊂</mo><mi>𝑃</mi>
 										</mrow>
 									</math>
-									に対し，<a href="#上限">上界</a>の集合を
+									に対し，<a href="#下限">上界</a>の集合を
 									<math>
 										<msup>
 											<mi>𝐴</mi><mi mathvariant="normal">u</mi>
@@ -13728,7 +13851,7 @@
 						</li>
 						<li>
 							<ul>
-								<li><math><mo>⋁</mo></math> は<a href="#上限">上限</a>を取る操作</li>
+								<li><math><mo>⋁</mo></math> は<a href="#下限">上限</a>を取る操作</li>
 								<li>
 									<math>
 										<mo>∀</mo>
@@ -13737,7 +13860,7 @@
 											<mi>𝐴</mi><mo>⊂</mo><mi>𝑃</mi>
 										</mrow>
 									</math>
-									に対し，<a href="#上限">下界</a>の集合を
+									に対し，<a href="#下限">下界</a>の集合を
 									<math>
 										<msup>
 											<mi>𝐴</mi><mi mathvariant="normal">l</mi>
@@ -13764,7 +13887,7 @@
 				</article>
 			</section>
 			<section>
-				<h4>準同型</h4>
+				<h3>準同型</h3>
 				<article id="半束準同型" class="dfn">
 					<h4>半束準同型・半束埋め込み</h4>
 					<p><a href="#半束">半束</a> <math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> を与える．</p>
@@ -13826,6 +13949,7 @@
 							</math>
 						</li>
 						<li><dfn>半束埋め込み</dfn><span lang="en">(semilattice embedding)</span>とは，<a href="#単射">単射</a>な半束準同型のこと．</li>
+						<li><dfn>半束同型</dfn><span lang="en">(semilattice embedding)</span>とは，<a href="#全単射">全単射</a>な半束準同型のこと．</li>
 					</ul>
 					<article id="下半束準同型" class="thm">
 						<h5>下半束準同型・上半束準同型</h5>
@@ -13844,9 +13968,16 @@
 						</ul>
 						<p>を与えると，以下が成り立つ：</p>
 						<ul>
-							<li><math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> が共に<a href="#下半束">下半束</a>，または<a href="#下半束">上半束</a>ならば，<math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">順序を保つ</a>．（つまり，それぞれ<dfn>下半束準同型</dfn>，<dfn>上半束準同型</dfn>）</li>
-							<li><math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> の一方が<a href="#下半束">下半束</a>で他方が<a href="#下半束">上半束</a>ならば，<math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">順序を逆にする</a>．</li>
-							<li><math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> が共に<a href="#下半束">下半束</a>，または<a href="#下半束">上半束</a>で，<math><mi>𝑓</mi></math> が<a href="#半束準同型">半束埋め込み</a>ならば，<math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">順序埋め込み</a>．</li>
+							<li><math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> が共に<a href="#下半束">下半束</a>，または<a href="#下半束">上半束</a>ならば，<math><mi>𝑓</mi></math> は<a href="#順序を保つ写像">順序を保つ</a>．（つまり，それぞれ<dfn>下半束準同型</dfn>，<dfn>上半束準同型</dfn>）</li>
+							<li><math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> の一方が<a href="#下半束">下半束</a>で他方が<a href="#下半束">上半束</a>ならば，<math><mi>𝑓</mi></math> は<a href="#順序を保つ写像">順序を逆にする</a>．</li>
+							<li><math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> が共に<a href="#下半束">下半束</a>，または<a href="#下半束">上半束</a>で，<math><mi>𝑓</mi></math> が<a href="#半束準同型">半束埋め込み</a>ならば，<math><mi>𝑓</mi></math> は<a href="#順序を保つ写像">順序埋め込み</a>．</li>
+							<li>
+								<math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> が共に<a href="#下半束">下半束</a>，または<a href="#下半束">上半束</a>のとき，以下は同値：
+								<ul>
+									<li><math><mi>𝑓</mi></math> は<a href="#半束準同型">順序同型</a></li>
+									<li><math><mi>𝑓</mi></math> は<a href="#半束準同型">半束同型</a></li>
+								</ul>
+							</li>
 						</ul>
 					</article>
 				</article>
@@ -13940,7 +14071,7 @@
 									</mrow>
 								</mrow>
 							</math>
-							を満たすので，<math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">順序を保つ</a>．
+							を満たすので，<math><mi>𝑓</mi></math> は<a href="#順序を保つ写像">順序を保つ</a>．
 						</li>
 						<li>
 							<math>
@@ -14028,7 +14159,273 @@
 									<mi>𝑎</mi><mo>≤</mo><mi>𝑏</mi>
 								</mrow>
 							</math>
-							を満たす．つまり，<math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">関係を反映する</a>．よって，<math><mi>𝑓</mi></math> は<a href="#関係を保つ写像">順序埋め込み</a>となる．
+							を満たす．つまり，<math><mi>𝑓</mi></math> は<a href="#順序を保つ写像">順序を反映する</a>．よって，<math><mi>𝑓</mi></math> は<a href="#順序を保つ写像">順序埋め込み</a>となる．
+						</li>
+						<li>
+							<ul>
+								<li><a href="#下・上半束準同型">下半束埋め込み</a>は<a href="#順序を保つ写像">順序埋め込み</a>なので，<a href="#下半束準同型">下・上半束準同型</a> は<a href="#順序を保つ写像">順序同型</a>．</li>
+								<li>
+									<math><mi>𝑓</mi></math> が<a href="#順序を保つ写像">順序同型</a>のとき，
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑃</mi>
+										</mrow>
+									</math>
+									に対し，<a href="#下限">下限の定義</a>より，
+									<math>
+										<mrow>
+											<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+										</mrow>
+										<mo>≤</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+										</mrow>
+									</math>．<math><mi>𝑓</mi></math> は<a href="#順序を保つ写像">順序を保つ</a>から，
+									<math>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は 
+									<math>
+										<mo>{</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑏</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</math>
+									の<a href="#下限">下界</a>．よって，
+									<math display="block">
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>≤</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>∧</mo>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑏</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>≤</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑏</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+									となる．<math><msup><mi>𝑓</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></math> も<a href="#順序を保つ写像">順序を保つ</a>から，
+									<math display="block">
+										<mrow>
+											<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+										</mrow>
+										<mo>≤</mo>
+										<mrow>
+											<msup>
+												<mi>𝑓</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑓</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>∧</mo>
+													<mrow>
+														<mi>𝑓</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑏</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>≤</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+										</mrow>
+									</math>
+									を満たす．よって，
+									<math>
+										<msup>
+											<mi>𝑓</mi>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>∧</mo>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑏</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+									は
+									<math>
+										<mo>{</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+										</mrow>
+										<mo>}</mo>
+									</math>
+									の<a href="#下限">下界</a>．よって，
+									<math display="block">
+										<mrow>
+											<msup>
+												<mi>𝑓</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑓</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>∧</mo>
+													<mrow>
+														<mi>𝑓</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑏</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>≤</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+										</mrow>
+									</math>
+									となる．<math><mo>≤</mo></math> の<a href="#半順序">反対称律</a>より
+									<math display="block">
+										<mrow>
+											<msup>
+												<mi>𝑓</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑓</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑎</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>∧</mo>
+													<mrow>
+														<mi>𝑓</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑏</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+										</mrow>
+									</math>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</article>
@@ -14156,33 +14553,23 @@
 							であって，以下の同値な条件のいずれか（ゆえに全て）を満たすものを言う：
 							<ul>
 								<li><a href="#全単射">全単射</a>な束準同型</li>
-								<li><a href="#関係を保つ写像">順序同型</a></li>
+								<li><a href="#順序を保つ写像">順序同型</a></li>
 							</ul>
 						</li>
-						<li>束同型を持つ，<a href="#束">束</a>のことも<dfn>束同型</dfn><span lang="en">(lattice isomorphism)</span>と呼ぶ．</li>
+						<li>束同型の<a href="#写像">始域</a>と<a href="#写像">終域</a>のことも<dfn>束同型</dfn><span lang="en">(lattice isomorphism)</span>と呼ぶ．</li>
 					</ul>
 					<article id="束準同型の基本性質" class="thm">
 						<h5>束準同型の基本性質</h5>
 						<p><a href="#束">束</a> <math><mi>𝑃</mi><mo>,</mo><mi>𝑄</mi></math> を与えると，以下が成り立つ：</p>
 						<ul>
-							<li><a href="#束準同型">束準同型</a>は<a href="#関係を保つ写像">順序を保つ</a>．</li>
-							<li><a href="#束準同型">束埋め込み</a>は<a href="#関係を保つ写像">順序埋め込み</a>．</li>
+							<li><a href="#束準同型">束準同型</a>は<a href="#順序を保つ写像">順序を保つ</a>．</li>
+							<li><a href="#束準同型">束埋め込み</a>は<a href="#順序を保つ写像">順序埋め込み</a>．</li>
 						</ul>
 					</article>
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
-					<ul>
-						<li>
-							<ul>
-								<li><a href="#束準同型の基本性質">束準同型の基本性質</a>より，<a href="#全単射">全単射</a>な束準同型は<a href="#関係を保つ写像">順序を保つ</a>．<a href="#全単射">逆写像</a>も考えると，<a href="#関係を保つ写像">順序同型</a>．</li>
-								<li>
-									<math><mi>𝑓</mi></math> が<a href="#関係を保つ写像">順序同型</a>のとき，
-								</li>
-							</ul>
-						</li>
-						<li><a href="#下半束準同型">下半束準同型</a>のときと全く同様．</li>
-					</ul>
+					<p><a href="#下半束準同型">下半束準同型</a>のときと全く同様．</p>
 				</article>
 			</section>
 			<section>
@@ -14281,578 +14668,6 @@
 						</li>
 					</ul>
 				</article>
-			</section>
-			<section>
-				<h3>イデアル・フィルター</h3>
-				<article id="下方集合" class="dfn">
-					<h4>下方集合</h4>
-					<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> を与える．</p>
-					<ul>
-						<li>
-							<dfn>下方集合</dfn><span lang="en">(lower set, down-set)</span>とは，<math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝐷</mi><mo>⊂</mo><mi>𝑃</mi></math> であって，以下を満たすもののこと：
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑥</mi><mo>∈</mo><mi>𝐷</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mi>𝑦</mi><mo>∈</mo><mi>𝑃</mi>
-										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑦</mi><mo>≤</mo><mi>𝑥</mi>
-										</mrow>
-										<mo>⇒</mo>
-										<mrow>
-											<mi>𝑦</mi><mo>∈</mo><mi>𝐷</mi>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<dfn>上方集合</dfn><span lang="en">(upper set, up-set)</span>とは，<math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝑈</mi><mo>⊂</mo><mi>𝑃</mi></math> であって，以下を満たすもののこと：
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑥</mi><mo>∈</mo><mi>𝑈</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mi>𝑦</mi><mo>∈</mo><mi>𝑃</mi>
-										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑦</mi><mo>≥</mo><mi>𝑥</mi>
-										</mrow>
-										<mo>⇒</mo>
-										<mrow>
-											<mi>𝑦</mi><mo>∈</mo><mi>𝑈</mi>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-				</article>
-				<article id="有限有向集合" class="dfn">
-					<h4>有限有向集合</h4>
-					<ul>
-						<li>
-							<a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> が，<dfn>有限（上方）有向集合</dfn><span lang="en">(finitely (upward-)directed set)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
-							<ul>
-								<li>
-									<math>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
-											</mrow>
-											<mo>∈</mo>
-											<mi>𝑃</mi>
-										</mrow>
-									</math>
-									に対し，
-									<math>
-										<mrow>
-											<mo>{</mo>
-											<mrow>
-												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
-											</mrow>
-											<mo>}</mo>
-										</mrow>
-										<mo>⊂</mo>
-										<mi>𝑃</mi>
-									</math>
-									が<a href="#上限">上界</a>を持つ．
-								</li>
-								<li>任意の <math><mi>𝑃</mi></math> の有限<a href="#部分集合">部分集合</a>が<a href="#上界">上界</a>を持つ．</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> が，<dfn>有限下方有向集合</dfn><span lang="en">(finitely downwarddirected set)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
-							<ul>
-								<li>
-									<math>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
-											</mrow>
-											<mo>∈</mo>
-											<mi>𝑃</mi>
-										</mrow>
-									</math>
-									に対し，
-									<math>
-										<mrow>
-											<mo>{</mo>
-											<mrow>
-												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
-											</mrow>
-											<mo>}</mo>
-										</mrow>
-										<mo>⊂</mo>
-										<mi>𝑃</mi>
-									</math>
-									が<a href="#上限">下界</a>を持つことを言う．
-								</li>
-								<li>
-									<math>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
-											</mrow>
-											<mo>∈</mo>
-											<mi>𝑃</mi>
-										</mrow>
-									</math>
-									に対し，
-									<math>
-										<mrow>
-											<mo>{</mo>
-											<mrow>
-												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
-											</mrow>
-											<mo>}</mo>
-										</mrow>
-										<mo>⊂</mo>
-										<mi>𝑃</mi>
-									</math>
-									が<a href="#上限">下界</a>を持つ．
-								</li>
-								<li>任意の <math><mi>𝑃</mi></math> の有限<a href="#部分集合">部分集合</a>が<a href="#上界">上界</a>を持つ．</li>
-							</ul>
-						</li>
-					</ul>
-				</article>
-				<article id="イデアル" class="dfn">
-					<h4>イデアル・フィルター</h4>
-					<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> を与える．</p>
-					<ul>
-						<li><math><mi>𝑃</mi></math> の<dfn>イデアル</dfn><span lang="en">(ideal)</span>とは，<a href="#空集合">非空</a>な <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>であって，<a href="#下方集合">下方集合</a>かつ<a href="#有限有向集合">有限有向集合</a>となるものを言う．</li>
-						<li><math><mi>𝑃</mi></math> の<dfn>フィルター</dfn><span lang="en">(filter)</span>とは，<a href="#空集合">非空</a>な <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>であって，<a href="#下方集合">上方集合</a>かつ<a href="#有限有向集合">有限下方有向集合</a>となるものを言う．</li>
-					</ul>
-				</article>
-				<article id="下方閉包" class="dfn">
-					<h4>下方閉包・上方閉包</h4>
-					<ul>
-						<li><a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math></li>
-						<li><math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi><mo>⊂</mo><mi>𝑃</mi></math></li>
-					</ul>
-					<p>を与える．</p>
-					<ul>
-						<li>
-							<math><mrow><mi>↓</mi><mo>&af;</mo><mi>𝑆</mi></mrow><mo>⊂</mo><mi>𝑃</mi></math> が <math><mi>𝑆</mi></math> の<dfn>下方閉包</dfn><span lang="en">(down closure)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
-							<ul>
-								<li>
-									<math>
-										<mi>𝑆</mi>
-										<mo>⊂</mo>
-										<mrow>
-											<mi>↓</mi><mo>&af;</mo><mi>𝑆</mi>
-										</mrow>
-									</math>
-									なる<a href="#下方集合">下方集合</a>のうち，<a href="#極大元">最小</a>のもの．
-								</li>
-								<li>
-									<math>
-										<mrow>
-											<mi>↓</mi><mo>&af;</mo><mi>𝑆</mi>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mo>{</mo>
-											<mrow>
-												<mrow>
-													<mi>𝑥</mi><mo>∈</mo><mi>𝑃</mi>
-												</mrow>
-												<mo>|</mo>
-												<mrow>
-													<mrow>
-														<mo>∃</mo>
-														<mo>&af;</mo>
-														<mrow>
-															<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
-														</mrow>
-													</mrow>
-													<mo>,</mo>
-													<mrow>
-														<mi>𝑥</mi><mo>≤</mo><mi>𝑠</mi>
-													</mrow>
-												</mrow>
-											</mrow>
-											<mo>}</mo>
-										</mrow>
-									</math>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<math><mrow><mi>↑</mi><mo>&af;</mo><mi>𝑆</mi></mrow><mo>⊂</mo><mi>𝑃</mi></math> が <math><mi>𝑆</mi></math> の<dfn>上方閉包</dfn><span lang="en">(up closure)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
-							<ul>
-								<li>
-									<math>
-										<mi>𝑆</mi>
-										<mo>⊂</mo>
-										<mrow>
-											<mi>↑</mi><mo>&af;</mo><mi>𝑆</mi>
-										</mrow>
-									</math>
-									なる<a href="#下方集合">上方集合</a>のうち，<a href="#極大元">最小</a>のもの．
-								</li>
-								<li>
-									<math>
-										<mrow>
-											<mi>↑</mi><mo>&af;</mo><mi>𝑆</mi>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mo>{</mo>
-											<mrow>
-												<mrow>
-													<mi>𝑥</mi><mo>∈</mo><mi>𝑃</mi>
-												</mrow>
-												<mo>|</mo>
-												<mrow>
-													<mrow>
-														<mo>∃</mo>
-														<mo>&af;</mo>
-														<mrow>
-															<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
-														</mrow>
-													</mrow>
-													<mo>,</mo>
-													<mrow>
-														<mi>𝑠</mi><mo>≤</mo><mi>𝑥</mi>
-													</mrow>
-												</mrow>
-											</mrow>
-											<mo>}</mo>
-										</mrow>
-									</math>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</article>
-				<article id="単項イデアル" class="dfn">
-					<h4>単項イデアル・単項フィルター</h4>
-					<ul>
-						<li><a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math></li>
-						<li><math><mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi></math></li>
-					</ul>
-					<p>を与える．</p>
-					<ul>
-						<li>
-							<math><mrow><mi>↓</mi><mo>&af;</mo><mi>𝑎</mi></mrow><mo>⊂</mo><mi>𝑃</mi></math> が <dfn><math><mi>𝑎</mi></math> で生成される単項イデアル</dfn><span lang="en">(principal ideal generated by <math><mi>𝑎</mi></math>)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
-							<ul>
-								<li>
-									<math>
-										<mrow>
-											<mo>{</mo><mi>𝑎</mi><mo>}</mo>
-										</mrow>
-										<mo>⊂</mo>
-										<mrow>
-											<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
-										</mrow>
-									</math>
-									なる<a href="#イデアル">イデアル</a>のうち，<a href="#極大元">最小</a>のもの．
-								</li>
-								<li>
-									<math>
-										<mo>{</mo><mi>𝑎</mi><mo>}</mo>
-									</math>
-									の<a href="#下方閉包">下方閉包</a>：
-									<math>
-										<mrow>
-											<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mi>↓</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>{</mo><mi>𝑎</mi><mo>}</mo>
-											</mrow>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mo>{</mo>
-											<mrow>
-												<mrow>
-													<mi>𝑥</mi><mo>∈</mo><mi>𝑃</mi>
-												</mrow>
-												<mo>|</mo>
-												<mrow>
-													<mi>𝑥</mi><mo>≤</mo><mi>𝑎</mi>
-												</mrow>
-											</mrow>
-											<mo>}</mo>
-										</mrow>
-									</math>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<math><mrow><mi>↑</mi><mo>&af;</mo><mi>𝑎</mi></mrow><mo>⊂</mo><mi>𝑃</mi></math> が <dfn><math><mi>𝑎</mi></math> で生成される単項フィルター</dfn><span lang="en">(principal filter generated by <math><mi>𝑎</mi></math>)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
-							<ul>
-								<li>
-									<math>
-										<mrow>
-											<mo>{</mo><mi>𝑎</mi><mo>}</mo>
-										</mrow>
-										<mo>⊂</mo>
-										<mrow>
-											<mi>↑</mi><mo>&af;</mo><mi>𝑎</mi>
-										</mrow>
-									</math>
-									なる<a href="#イデアル">フィルター</a>のうち，<a href="#極大元">最小</a>のもの．
-								</li>
-								<li>
-									<math>
-										<mo>{</mo><mi>𝑎</mi><mo>}</mo>
-									</math>
-									の<a href="#下方閉包">上方閉包</a>：
-									<math>
-										<mrow>
-											<mi>↑</mi><mo>&af;</mo><mi>𝑎</mi>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mi>↑</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>{</mo><mi>𝑎</mi><mo>}</mo>
-											</mrow>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mo>{</mo>
-											<mrow>
-												<mrow>
-													<mi>𝑥</mi><mo>∈</mo><mi>𝑃</mi>
-												</mrow>
-												<mo>|</mo>
-												<mrow>
-													<mi>𝑎</mi><mo>≤</mo><mi>𝑥</mi>
-												</mrow>
-											</mrow>
-											<mo>}</mo>
-										</mrow>
-									</math>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<article id="半順序の包含による表現定理" class="thm">
-						<h5>半順序の包含による表現定理</h5>
-						<ul>
-							<li>
-								<a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> 
-							</li>
-							<li>
-								<math><mi>𝑃</mi></math> の<a href="#冪集合">冪集合</a>を包含関係により<a href="#半順序">半順序集合</a>見做したもの <math><mo>(</mo><mrow><msup><mn>2</mn><mi>𝑃</mi></msup><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> 
-							</li>
-						</ul>
-						<p>を与えると，以下が成り立つ：</p>
-						<ul>
-							<li>
-								<a href="#単項イデアル">単項イデアル</a>を取る操作
-								<math>
-									<mi>↓</mi>
-									<mo>:</mo>
-									<mrow>
-										<mi>𝑃</mi>
-										<mo>→</mo>
-										<msup>
-											<mn>2</mn><mi>𝑃</mi>
-										</msup>
-									</mrow>
-								</math>
-								は<a href="#関係を保つ写像">関係埋め込み</a>．特に，
-								<math>
-									<mi>↓</mi>
-									<mo>:</mo>
-									<mrow>
-										<mi>𝑃</mi>
-										<mo>→</mo>
-										<mrow>
-											<mi>im</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mi>↓</mi><mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</math>
-								は<a href="#関係を保つ写像">関係同型</a>．
-							</li>
-							<li>
-								<a href="#単項イデアル">単項フィルター</a>を取る操作
-								<math>
-									<mi>↑</mi>
-									<mo>:</mo>
-									<mrow>
-										<mi>𝑃</mi>
-										<mo>→</mo>
-										<msup>
-											<mn>2</mn><mi>𝑃</mi>
-										</msup>
-									</mrow>
-								</math>
-								は<a href="#関係を保つ写像">関係逆埋め込み</a>．特に，
-								<math>
-									<mi>↑</mi>
-									<mo>:</mo>
-									<mrow>
-										<mi>𝑃</mi>
-										<mo>→</mo>
-										<mrow>
-											<mi>im</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mi>↑</mi><mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</math>
-								は<a href="#関係を保つ写像">関係逆同型</a>．
-							</li>
-						</ul>
-					</article>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<ul>
-						<li>
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑥</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝑃</mi>
-								</mrow>
-							</math>
-							に対し，<math><mo>≤</mo></math> の<a href="#半順序">推移律</a>より
-							<math>
-								<mrow>
-									<mi>𝑎</mi><mo>≤</mo><mi>𝑏</mi>
-								</mrow>
-								<mo>⇒</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑥</mi><mo>≤</mo><mi>𝑎</mi>
-										</mrow>
-										<mo>⇒</mo>
-										<mrow>
-											<mi>𝑥</mi><mo>≤</mo><mi>𝑏</mi>
-										</mrow>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-								<mo>⇒</mo>
-								<mrow>
-									<mrow>
-										<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
-									</mrow>
-									<mo>⊆</mo>
-									<mrow>
-										<mi>↓</mi><mo>&af;</mo><mi>𝑏</mi>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑥</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝑃</mi>
-								</mrow>
-							</math>
-							に対し，<math><mo>≤</mo></math> の<a href="#半順序">反射律</a>より，
-							<math>
-								<mi>𝑎</mi>
-								<mo>∈</mo>
-								<mrow>
-									<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
-								</mrow>
-							</math>
-							なので，
-							<math>
-								<mrow>
-									<mrow>
-										<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
-									</mrow>
-									<mo>⊆</mo>
-									<mrow>
-										<mi>↓</mi><mo>&af;</mo><mi>𝑏</mi>
-									</mrow>
-								</mrow>
-								<mo>⇒</mo>
-								<mrow>
-									<mi>𝑎</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>↓</mi><mo>&af;</mo><mi>𝑏</mi>
-									</mrow>
-								</mrow>
-								<mo>⇒</mo>
-								<mrow>
-									<mi>𝑎</mi><mo>≤</mo><mi>𝑏</mi>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-					<p>以上より，<math><mi>↓</mi></math>は<a href="#関係を保つ写像">関係埋め込み</a>．</p>
-				</article>
-			</section>
-			<section>
-				<h3>atom</h3>
-				<article id="点" class="dfn">
-					<h4>点</h4>
-					<p><a href="#推移関係">厳密非推移関係付き集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>⋖</mo></mrow><mo>)</mo></math> を与える．</p>
-					<ul>
-						<li><math><mi>𝑃</mi></math> が<a href="#極大元">最小元</a> <math><mn>0</mn></math> を持つとき，<math><mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi></math> が<dfn>アトム</dfn><span lang="en">(atom)</span>や<dfn>点</dfn><span lang="en">(point)</span>であるとは，<a href="#被覆"><math><mi>𝑎</mi></math> が <math><mn>0</mn></math>	を被覆する</a>ことを言う．</li>
-						<li><math><mi>𝑃</mi></math> が<a href="#極大元">最大元</a> <math><mn>1</mn></math> を持つとき，<math><mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi></math> が<dfn>余アトム</dfn><span lang="en">(coatom)</span>や<dfn>余点</dfn><span lang="en">(copoint)</span>であるとは，<a href="#被覆"><math><mn>1</mn></math> が <math><mi>𝑎</mi></math>	を被覆する</a>ことを言う．</li>
-					</ul>
-				</article>
-			</section>
-			<section>
-				<h3>完備束の閉包</h3>
 				<article id="完備束の閉包" class="thm">
 					<h4>完備束の閉包</h4>
 					<p><a href="#完備束">完備束</a><math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo><mo>,</mo><mo>⋁</mo><mo>,</mo><mo>⋀</mo></mrow><mo>)</mo></math>を与えると，以下が成り立つ：</p>
@@ -15116,7 +14931,558 @@
 				<aside class="future-work">finitary closure</aside>
 			</section>
 			<section>
+				<h3>フィルター・イデアル</h3>
+				<article id="下方集合" class="dfn">
+					<h4>下方集合</h4>
+					<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> を与える．</p>
+					<ul>
+						<li>
+							<dfn>下方集合</dfn><span lang="en">(lower set, down-set)</span>とは，<math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝐷</mi><mo>⊂</mo><mi>𝑃</mi></math> であって，以下を満たすもののこと：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>∈</mo><mi>𝐷</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑦</mi><mo>∈</mo><mi>𝑃</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑦</mi><mo>≤</mo><mi>𝑥</mi>
+										</mrow>
+										<mo>⇒</mo>
+										<mrow>
+											<mi>𝑦</mi><mo>∈</mo><mi>𝐷</mi>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<dfn>上方集合</dfn><span lang="en">(upper set, up-set)</span>とは，<math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝑈</mi><mo>⊂</mo><mi>𝑃</mi></math> であって，以下を満たすもののこと：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>∈</mo><mi>𝑈</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑦</mi><mo>∈</mo><mi>𝑃</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑦</mi><mo>≥</mo><mi>𝑥</mi>
+										</mrow>
+										<mo>⇒</mo>
+										<mrow>
+											<mi>𝑦</mi><mo>∈</mo><mi>𝑈</mi>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="有限有向集合" class="dfn">
+					<h4>有限有向集合</h4>
+					<ul>
+						<li>
+							<a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> が，<dfn>有限（上方）有向集合</dfn><span lang="en">(finitely (upward-)directed set)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							<ul>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑃</mi>
+										</mrow>
+									</math>
+									に対し，
+									<math>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mo>⊂</mo>
+										<mi>𝑃</mi>
+									</math>
+									が<a href="#下限">上界</a>を持つ．
+								</li>
+								<li>任意の <math><mi>𝑃</mi></math> の有限<a href="#部分集合">部分集合</a>が<a href="#下限">上界</a>を持つ．</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> が，<dfn>有限下方有向集合</dfn><span lang="en">(finitely downwarddirected set)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							<ul>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑃</mi>
+										</mrow>
+									</math>
+									に対し，
+									<math>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mo>⊂</mo>
+										<mi>𝑃</mi>
+									</math>
+									が<a href="#下限">下界</a>を持つ．
+								</li>
+								<li>任意の <math><mi>𝑃</mi></math> の有限<a href="#部分集合">部分集合</a>が<a href="#下限">下界</a>を持つ．</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article id="フィルター" class="dfn">
+					<h4>フィルター・イデアル</h4>
+					<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> を与える．</p>
+					<ul>
+						<li><math><mi>𝑃</mi></math> の<dfn>フィルター</dfn><span lang="en">(filter)</span>とは，<a href="#空集合">非空</a>な <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>であって，<a href="#下方集合">上方集合</a>かつ<a href="#有限有向集合">有限下方有向集合</a>となるものを言う．</li>
+						<li><math><mi>𝑃</mi></math> の<dfn>イデアル</dfn><span lang="en">(ideal)</span>とは，<a href="#空集合">非空</a>な <math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a>であって，<a href="#下方集合">下方集合</a>かつ<a href="#有限有向集合">有限有向集合</a>となるものを言う．</li>
+					</ul>
+				</article>
+				<article id="下方閉包" class="dfn">
+					<h4>下方閉包・上方閉包</h4>
+					<ul>
+						<li><a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math></li>
+						<li><math><mi>𝑃</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi><mo>⊂</mo><mi>𝑃</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mrow><mi>↓</mi><mo>&af;</mo><mi>𝑆</mi></mrow><mo>⊂</mo><mi>𝑃</mi></math> が <math><mi>𝑆</mi></math> の<dfn>下方閉包</dfn><span lang="en">(down closure)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							<ul>
+								<li>
+									<math>
+										<mi>𝑆</mi>
+										<mo>⊂</mo>
+										<mrow>
+											<mi>↓</mi><mo>&af;</mo><mi>𝑆</mi>
+										</mrow>
+									</math>
+									なる<a href="#下方集合">下方集合</a>のうち，<a href="#極小元">最小</a>のもの．
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mi>↓</mi><mo>&af;</mo><mi>𝑆</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑥</mi><mo>∈</mo><mi>𝑃</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mo>∃</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mi>𝑥</mi><mo>≤</mo><mi>𝑠</mi>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<math><mrow><mi>↑</mi><mo>&af;</mo><mi>𝑆</mi></mrow><mo>⊂</mo><mi>𝑃</mi></math> が <math><mi>𝑆</mi></math> の<dfn>上方閉包</dfn><span lang="en">(up closure)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							<ul>
+								<li>
+									<math>
+										<mi>𝑆</mi>
+										<mo>⊂</mo>
+										<mrow>
+											<mi>↑</mi><mo>&af;</mo><mi>𝑆</mi>
+										</mrow>
+									</math>
+									なる<a href="#下方集合">上方集合</a>のうち，<a href="#極小元">最小</a>のもの．
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mi>↑</mi><mo>&af;</mo><mi>𝑆</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑥</mi><mo>∈</mo><mi>𝑃</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mo>∃</mo>
+														<mo>&af;</mo>
+														<mrow>
+															<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mi>𝑠</mi><mo>≤</mo><mi>𝑥</mi>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article id="単項イデアル" class="dfn">
+					<h4>単項イデアル・単項フィルター</h4>
+					<ul>
+						<li><a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math></li>
+						<li><math><mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mrow><mi>↓</mi><mo>&af;</mo><mi>𝑎</mi></mrow><mo>⊂</mo><mi>𝑃</mi></math> が <dfn><math><mi>𝑎</mi></math> で生成される単項イデアル</dfn><span lang="en">(principal ideal generated by <math><mi>𝑎</mi></math>)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							<ul>
+								<li>
+									<math>
+										<mrow>
+											<mo>{</mo><mi>𝑎</mi><mo>}</mo>
+										</mrow>
+										<mo>⊂</mo>
+										<mrow>
+											<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
+										</mrow>
+									</math>
+									なる<a href="#イデアル">イデアル</a>のうち，<a href="#極小元">最小</a>のもの．
+								</li>
+								<li>
+									<math>
+										<mo>{</mo><mi>𝑎</mi><mo>}</mo>
+									</math>
+									の<a href="#下方閉包">下方閉包</a>：
+									<math>
+										<mrow>
+											<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>↓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>{</mo><mi>𝑎</mi><mo>}</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑥</mi><mo>∈</mo><mi>𝑃</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mi>𝑥</mi><mo>≤</mo><mi>𝑎</mi>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<math><mrow><mi>↑</mi><mo>&af;</mo><mi>𝑎</mi></mrow><mo>⊂</mo><mi>𝑃</mi></math> が <dfn><math><mi>𝑎</mi></math> で生成される単項フィルター</dfn><span lang="en">(principal filter generated by <math><mi>𝑎</mi></math>)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							<ul>
+								<li>
+									<math>
+										<mrow>
+											<mo>{</mo><mi>𝑎</mi><mo>}</mo>
+										</mrow>
+										<mo>⊂</mo>
+										<mrow>
+											<mi>↑</mi><mo>&af;</mo><mi>𝑎</mi>
+										</mrow>
+									</math>
+									なる<a href="#イデアル">フィルター</a>のうち，<a href="#極小元">最小</a>のもの．
+								</li>
+								<li>
+									<math>
+										<mo>{</mo><mi>𝑎</mi><mo>}</mo>
+									</math>
+									の<a href="#下方閉包">上方閉包</a>：
+									<math>
+										<mrow>
+											<mi>↑</mi><mo>&af;</mo><mi>𝑎</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>↑</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>{</mo><mi>𝑎</mi><mo>}</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑥</mi><mo>∈</mo><mi>𝑃</mi>
+												</mrow>
+												<mo>|</mo>
+												<mrow>
+													<mi>𝑎</mi><mo>≤</mo><mi>𝑥</mi>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<article id="半順序の包含による表現定理" class="thm">
+						<h5>半順序の包含による表現定理</h5>
+						<ul>
+							<li>
+								<a href="#半順序">半順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> 
+							</li>
+							<li>
+								<math><mi>𝑃</mi></math> の<a href="#冪集合">冪集合</a>を包含関係により<a href="#半順序">半順序集合</a>見做したもの <math><mo>(</mo><mrow><msup><mn>2</mn><mi>𝑃</mi></msup><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> 
+							</li>
+						</ul>
+						<p>を与えると，以下が成り立つ：</p>
+						<ul>
+							<li>
+								<a href="#単項イデアル">単項イデアル</a>を取る操作
+								<math>
+									<mi>↓</mi>
+									<mo>:</mo>
+									<mrow>
+										<mi>𝑃</mi>
+										<mo>→</mo>
+										<msup>
+											<mn>2</mn><mi>𝑃</mi>
+										</msup>
+									</mrow>
+								</math>
+								は<a href="#順序を保つ写像">順序埋め込み</a>．特に，
+								<math>
+									<mi>↓</mi>
+									<mo>:</mo>
+									<mrow>
+										<mi>𝑃</mi>
+										<mo>→</mo>
+										<mrow>
+											<mi>im</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>↓</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math>
+								は<a href="#順序を保つ写像">順序同型</a>．
+							</li>
+							<li>
+								<a href="#単項イデアル">単項フィルター</a>を取る操作
+								<math>
+									<mi>↑</mi>
+									<mo>:</mo>
+									<mrow>
+										<mi>𝑃</mi>
+										<mo>→</mo>
+										<msup>
+											<mn>2</mn><mi>𝑃</mi>
+										</msup>
+									</mrow>
+								</math>
+								は<a href="#順序を保つ写像">順序逆埋め込み</a>．特に，
+								<math>
+									<mi>↑</mi>
+									<mo>:</mo>
+									<mrow>
+										<mi>𝑃</mi>
+										<mo>→</mo>
+										<mrow>
+											<mi>im</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>↑</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math>
+								は<a href="#順序を保つ写像">順序逆同型</a>．
+							</li>
+						</ul>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑃</mi>
+								</mrow>
+							</math>
+							に対し，<math><mo>≤</mo></math> の<a href="#半順序">推移律</a>より
+							<math>
+								<mrow>
+									<mi>𝑎</mi><mo>≤</mo><mi>𝑏</mi>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi><mo>≤</mo><mi>𝑎</mi>
+										</mrow>
+										<mo>⇒</mo>
+										<mrow>
+											<mi>𝑥</mi><mo>≤</mo><mi>𝑏</mi>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
+									</mrow>
+									<mo>⊆</mo>
+									<mrow>
+										<mi>↓</mi><mo>&af;</mo><mi>𝑏</mi>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑃</mi>
+								</mrow>
+							</math>
+							に対し，<math><mo>≤</mo></math> の<a href="#半順序">反射律</a>より，
+							<math>
+								<mi>𝑎</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
+								</mrow>
+							</math>
+							なので，
+							<math>
+								<mrow>
+									<mrow>
+										<mi>↓</mi><mo>&af;</mo><mi>𝑎</mi>
+									</mrow>
+									<mo>⊆</mo>
+									<mrow>
+										<mi>↓</mi><mo>&af;</mo><mi>𝑏</mi>
+									</mrow>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>↓</mi><mo>&af;</mo><mi>𝑏</mi>
+									</mrow>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mi>𝑎</mi><mo>≤</mo><mi>𝑏</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>以上より，<math><mi>↓</mi></math>は<a href="#順序を保つ写像">順序埋め込み</a>．</p>
+				</article>
+			</section>
+			<section>
+				<h3>atom</h3>
+				<article id="点" class="dfn">
+					<h4>点</h4>
+					<p><a href="#前順序">前順序集合</a> <math><mo>(</mo><mrow><mi>𝑃</mi><mo>,</mo><mo>≤</mo></mrow><mo>)</mo></math> を与える．</p>
+					<ul>
+						<li><math><mi>𝑃</mi></math> が<a href="#極小元">最小元</a> <math><mn>0</mn></math> を持つとき，<math><mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi></math> が<dfn>アトム</dfn><span lang="en">(atom)</span>や<dfn>点</dfn><span lang="en">(point)</span>であるとは，<a href="#被覆"><math><mi>𝑎</mi></math> が <math><mn>0</mn></math>	を被覆する</a>ことを言う．</li>
+						<li><math><mi>𝑃</mi></math> が<a href="#極小元">最大元</a> <math><mn>1</mn></math> を持つとき，<math><mi>𝑎</mi><mo>∈</mo><mi>𝑃</mi></math> が<dfn>余アトム</dfn><span lang="en">(coatom)</span>や<dfn>余点</dfn><span lang="en">(copoint)</span>であるとは，<a href="#被覆"><math><mn>1</mn></math> が <math><mi>𝑎</mi></math>	を被覆する</a>ことを言う．</li>
+					</ul>
+				</article>
+			</section>
+			<section>
 				<h3>特別な束</h3>
+				<figure>
+					<svg viewBox="0 0 100 100" width="100">
+						<text x="50" y="20" text-anchor="middle" dominant-baseline="middle">Bool代数</text>
+						<text x="50" y="50" text-anchor="middle" dominant-baseline="middle">有界束</text>
+						<text x="50" y="80" text-anchor="middle" dominant-baseline="middle">束</text>
+					</svg>
+					<figcaption>束の分類に関するHasse図</figcaption>
+				</figure>
 				<article id="モジュラー束" class="dfn">
 					<h4>モジュラー束</h4>
 					<p>
@@ -15255,15 +15621,15 @@
 				<article id="昇鎖" class="dfn">
 					<h4>昇鎖・降鎖</h4>
 					<ul>
-						<li><a href="#半順序">半順序集合</a>の<dfn>昇鎖</dfn><span lang="en">(ascending chain)</span> とは，<a href="#極大元">最小元</a>を持つ<a href="#鎖">鎖</a>のこと．</li>
-						<li><a href="#半順序">半順序集合</a>の<dfn>降鎖</dfn><span lang="en">(descending chain)</span> とは，<a href="#極大元">最大元</a>を持つ<a href="#鎖">鎖</a>のこと．</li>
+						<li><a href="#半順序">半順序集合</a>の<dfn>昇鎖</dfn><span lang="en">(ascending chain)</span>とは，<a href="#極小元">最小元</a>を持つ<a href="#鎖">鎖</a>のこと．</li>
+						<li><a href="#半順序">半順序集合</a>の<dfn>降鎖</dfn><span lang="en">(descending chain)</span>とは，<a href="#極小元">最大元</a>を持つ<a href="#鎖">鎖</a>のこと．</li>
 					</ul>
 				</article>
 				<article id="昇鎖条件" class="dfn">
 					<h4>昇鎖条件・降鎖条件</h4>
 					<ul>
-						<li><a href="#半順序">半順序集合</a>が<dfn>昇鎖条件</dfn><span lang="en">(<abbr>ACC</abbr> (ascending chain condition))</span> を満たすとは，任意の<a href="#昇鎖">昇鎖</a>が<a href="#鎖">有限長</a>となることを言う．</li>
-						<li><a href="#半順序">半順序集合</a>が<dfn>降鎖条件</dfn><span lang="en">(<abbr>ACC</abbr> (descending chain condition))</span> を満たすとは，任意の<a href="#昇鎖">降鎖</a>が<a href="#鎖">有限長</a>となることを言う．</li>
+						<li><a href="#半順序">半順序集合</a>が<dfn>昇鎖条件</dfn><span lang="en">(<abbr>ACC</abbr> (ascending chain condition))</span>を満たすとは，任意の<a href="#昇鎖">昇鎖</a>が<a href="#鎖">有限長</a>となることを言う．</li>
+						<li><a href="#半順序">半順序集合</a>が<dfn>降鎖条件</dfn><span lang="en">(<abbr>ACC</abbr> (descending chain condition))</span>を満たすとは，任意の<a href="#昇鎖">降鎖</a>が<a href="#鎖">有限長</a>となることを言う．</li>
 					</ul>
 				</article>
 				<article id="昇鎖条件と整礎関係は同値" class="thm">
@@ -15348,13 +15714,13 @@
 								<mo>⊆</mo>
 								<mi>𝑆</mi>
 							</math>
-							が存在し，<math><mi>𝑆</mi></math> の<a href="#上限">下限</a>は
+							が存在し，<math><mi>𝑆</mi></math> の<a href="#下限">下限</a>は
 							<math>
 								<msub>
 									<mi>𝑆</mi><mn>0</mn>
 								</msub>
 							</math>
-							の<a href="#上限">下限</a>に等しい：
+							の<a href="#下限">下限</a>に等しい：
 							<math display="block">
 								<mrow>
 									<mo>⋀</mo><mo>&af;</mo><mi>𝑆</mi>
@@ -15369,7 +15735,7 @@
 								</mrow>
 							</math>
 						</li>
-						<li><a href="#極大元">最大元</a>を持つ，<a href="#昇鎖条件">降鎖条件</a>を満たす<a href="#束">束</a>は，<a href="#完備束">完備束</a>．</li>
+						<li><a href="#極小元">最大元</a>を持つ，<a href="#昇鎖条件">降鎖条件</a>を満たす<a href="#束">束</a>は，<a href="#完備束">完備束</a>．</li>
 						<li>
 							<a href="#昇鎖条件">昇鎖条件</a>を満たす<a href="#束">束</a>
 							<math>
@@ -15391,13 +15757,13 @@
 								<mo>⊆</mo>
 								<mi>𝑆</mi>
 							</math>
-							が存在し，<math><mi>𝑆</mi></math> の<a href="#上限">上限</a>は
+							が存在し，<math><mi>𝑆</mi></math> の<a href="#下限">上限</a>は
 							<math>
 								<msub>
 									<mi>𝑆</mi><mn>0</mn>
 								</msub>
 							</math>
-							の<a href="#上限">上限</a>に等しい：
+							の<a href="#下限">上限</a>に等しい：
 							<math display="block">
 								<mrow>
 									<mo>⋁</mo><mo>&af;</mo><mi>𝑆</mi>
@@ -15412,13 +15778,13 @@
 								</mrow>
 							</math>
 						</li>
-						<li><a href="#極大元">最小元</a>を持つ，<a href="#昇鎖条件">昇鎖条件</a>を満たす<a href="#束">束</a>は，<a href="#完備束">完備束</a>．</li>
+						<li><a href="#極小元">最小元</a>を持つ，<a href="#昇鎖条件">昇鎖条件</a>を満たす<a href="#束">束</a>は，<a href="#完備束">完備束</a>．</li>
 					</ul>
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
 					<p>
-						<math><mi>𝑆</mi></math> の全ての有限<a href="#部分集合">部分集合</a>の<a href="#上限">下限</a>の集合は，<math><mi>𝑃</mi></math> の<a href="#空集合">空</a>でない<a href="#部分集合">部分集合</a>なので，<a href="#極大元">極小元</a>を持ち，それは有限<a href="#部分集合">部分集合</a>
+						<math><mi>𝑆</mi></math> の全ての有限<a href="#部分集合">部分集合</a>の<a href="#下限">下限</a>の集合は，<math><mi>𝑃</mi></math> の<a href="#空集合">空</a>でない<a href="#部分集合">部分集合</a>なので，<a href="#極小元">極小元</a>を持ち，それは有限<a href="#部分集合">部分集合</a>
 						<math>
 							<msub>
 								<mi>𝑆</mi><mn>0</mn>
@@ -15494,7 +15860,7 @@
 								<mi>𝑆</mi><mn>0</mn>
 							</msub>
 						</math>
-						の<a href="#極大元">極小性</a>より，
+						の<a href="#極小元">極小性</a>より，
 						<math display="block">
 							<mrow>
 								<mo>⋀</mo>
@@ -15542,7 +15908,7 @@
 								<mi>𝑆</mi><mn>0</mn>
 							</msub>
 						</math>
-						は <math><mi>𝑆</mi></math> の<a href="#上限">下界</a>．これは自明に<a href="#上限">下限</a>となる．
+						は <math><mi>𝑆</mi></math> の<a href="#下限">下界</a>．これは自明に<a href="#下限">下限</a>となる．
 					</p>
 				</article>
 			</section>
@@ -15879,7 +16245,7 @@
 											<mi>𝑝</mi><mo>∈</mo><mi>𝑃</mi>
 										</mrow>
 									</math>
-									に対し，<math><mi>𝐷</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi></math> が存在し，その<a href="#上限">下限</a>に等しいことを言う：
+									に対し，<math><mi>𝐷</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi></math> が存在し，その<a href="#下限">下限</a>に等しいことを言う：
 									<math display="block">
 										<mi>𝑝</mi>
 										<mo>=</mo>
@@ -15901,7 +16267,7 @@
 											<mi>𝑝</mi><mo>∈</mo><mi>𝑃</mi>
 										</mrow>
 									</math>
-									に対し，<math><mi>𝐷</mi></math> の有限<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi></math> が存在し，その<a href="#上限">下限</a>に等しいことを言う：
+									に対し，<math><mi>𝐷</mi></math> の有限<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi></math> が存在し，その<a href="#下限">下限</a>に等しいことを言う：
 									<math display="block">
 										<mi>𝑝</mi>
 										<mo>=</mo>
@@ -15927,7 +16293,7 @@
 											<mi>𝑝</mi><mo>∈</mo><mi>𝑃</mi>
 										</mrow>
 									</math>
-									に対し，<math><mi>𝐷</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi></math> が存在し，その<a href="#上限">上限</a>に等しいことを言う：
+									に対し，<math><mi>𝐷</mi></math> の<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi></math> が存在し，その<a href="#下限">上限</a>に等しいことを言う：
 									<math display="block">
 										<mi>𝑝</mi>
 										<mo>=</mo>
@@ -15949,7 +16315,7 @@
 											<mi>𝑝</mi><mo>∈</mo><mi>𝑃</mi>
 										</mrow>
 									</math>
-									に対し，<math><mi>𝐷</mi></math> の有限<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi></math> が存在し，その<a href="#上限">下限</a>に等しいことを言う：
+									に対し，<math><mi>𝐷</mi></math> の有限<a href="#部分集合">部分集合</a> <math><mi>𝑆</mi></math> が存在し，その<a href="#下限">下限</a>に等しいことを言う：
 									<math display="block">
 										<mi>𝑝</mi>
 										<mo>=</mo>
@@ -15971,23 +16337,6 @@
 					<ul>
 						<li><a href="#昇鎖条件">昇鎖条件</a>を持つ<a href="#下半束">下半束</a>の<a href="#下限既約">下限既約</a>元の<a href="#集合">集合</a>は<a href="#下限稠密">有限下限稠密</a></li>
 						<li><a href="#昇鎖条件">降鎖条件</a>を持つ<a href="#下半束">上半束</a>の<a href="#下限既約">上限既約</a>元の<a href="#集合">集合</a>は<a href="#下限稠密">有限上限稠密</a></li>
-					</ul>
-				</article>
-			</section>
-		</section>
-		<section>
-			<h2>整理しなおし</h2>
-			<section>
-				<h3>Zornの補題</h3>
-				<article id="Zornの補題" class="thm">
-					<h4>Zornの補題・Hausdorffの極大原理・Tukeyの補題 ・整列可能原理</h4>
-					<p>以下は同値：</p>
-					<ul>
-						<li><a href="#選択公理">選択公理</a></li>
-						<li><span lang="en">(Zorn's lemma)</span>：任意の<a href="#半順序">半順序集合</a>で任意の<a href="#鎖">鎖</a>が<a href="#上限">上界</a>を持つものは，<a href="#極大元">極大元</a>を持つ．</li>
-						<li><span lang="en">(Hausdorff maximality principle)</span>：任意の<a href="#半順序">半順序集合</a>で任意の<a href="#鎖">鎖</a>は<a href="#極大元">極大</a>な鎖を含む．</li>
-						<li><span lang="en">(Tukey's lemma)</span>：は，<a href="#極大元">極大元</a>を持つ．</li>
-						<li><span lang="en">(well-ordering theorem)</span>：任意の<a href="#空集合">空</a>でない<a href="#集合">集合</a>は整列可能．</li>
 					</ul>
 				</article>
 			</section>

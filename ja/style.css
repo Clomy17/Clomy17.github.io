@@ -30,7 +30,7 @@ main {
 	counter-reset: h2;
 }
 
-p, mtext {
+p, mtext, text {
 	font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -153,6 +153,9 @@ dfn {
 svg {
 	display: block;
 	margin: 0 auto;
+	> text {
+		fill: #eee;
+	}
 }
 
 line, polyline {
@@ -229,6 +232,7 @@ section:not([class]) {
 	}
 }
 
+figcaption {text-align: center;}
 figcaption::before {
 	counter-increment: figure;
 	font-weight: bold;
