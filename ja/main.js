@@ -1,18 +1,19 @@
-// Open Graph protocol, Twitter card, header, footer
 const head = document.querySelector("head")
+const body = document.querySelector("body")
+const main = body.querySelector('main');
+// Open Graph protocol, Twitter card, header, footer
 head.insertAdjacentHTML("beforeend", '<meta property="og:url" content="' + location.href + '" />');
 head.insertAdjacentHTML("beforeend", '<meta property="og:title" content="' + document.querySelector("title").textContent + '" />');
 head.insertAdjacentHTML("beforeend", '<meta property="og:description" content="' + document.querySelector('meta[name="description"]').getAttribute("content") + '" />');
 head.insertAdjacentHTML("beforeend", '<meta name="twitter:card" content="summary" />');
-const body = document.querySelector("body")
 body.insertAdjacentHTML("afterbegin", "<header></header>");
 body.insertAdjacentHTML("beforeend", "<footer></footer>");
 // set id for h2-h6 (if null)
-const headsOrigin = document.querySelectorAll('section:not([class]) > h2, section:not([class]) > h3, section:not([class]) > h4, section:not([class]) > h5, section:not([class]) > h6');
-if (headsOrigin && headsOrigin.length) {
+const mainSections = main.querySelectorAll('section:not([class])');
+if (mainSections && mainSections.length) {
 	const headsCounter = [0, 0, 0, 0, 0];
-	headsOrigin.forEach(head => {
-		switch(head.localName) {
+	mainSections.forEach(head => {
+		switch(head.firstElementChild.localName) {
 			case "h2":
 				++headsCounter[0];
 				for (let i = 1; i < 5; i++) {
@@ -55,24 +56,22 @@ if (headsOrigin && headsOrigin.length) {
 		}
 	})
 }
-// sidebar, リンク先の小窓
-const main = document.querySelector('main');
 // toc-main, toc-sidebar
-main.insertAdjacentHTML("beforeend", '<style>nav#目次 > ol > li::marker {content: "第"counter(list-item)"章 ";} body { display: grid; column-gap: 24px; grid-template: min-content 1fr min-content / 12.25rem minmax(0,1fr); grid-template-areas: "header header" "sidebar main" "footer footer" } header {grid-area: header;} nav#目次-サイドバー {grid-area: sidebar;} main {grid-area: main; max-height: 100%} footer {grid-area: footer;} nav#目次-サイドバー > * {position: sticky; top: 20px; max-height: calc(100vh); overflow: hidden scroll; a.active {color: #ccc; font-weight: bold;}}</style>');
-const h1InHgroup = document.querySelector("main > hgroup:first-child");
+main.insertAdjacentHTML("beforeend", '<style>nav#目次 > ol > li::marker {content: "第"counter(list-item)"章 ";} body { display: grid; column-gap: 24px; grid-template: min-content 1fr min-content / 12.25rem minmax(0,1fr); grid-template-areas: "header header" "sidebar main" "footer footer" } header {grid-area: header;} nav#目次-サイドバー {grid-area: sidebar;} main {grid-area: main; max-height: 100%} footer {grid-area: footer;} nav#目次-サイドバー > * {position: sticky; top: 20px; max-height: calc(100vh - 20px); overflow: hidden scroll; li.active > a {color: #ccc; font-weight: bold;}}</style>');
+const h1InHgroup = main.querySelector("hgroup:first-child");
 if (h1InHgroup == null) {
-	document.querySelector("main > h1").insertAdjacentHTML("afterend", '<nav id="目次"></nav>');
+	main.querySelector("main > h1").insertAdjacentHTML("afterend", '<nav id="目次"></nav>');
 } else {
 	h1InHgroup.insertAdjacentHTML("afterend", '<nav id="目次"></nav>');
 }
 main.insertAdjacentHTML("beforebegin", '<nav id="目次-サイドバー"></nav>');
-const heads = main.querySelectorAll('section:not([class]) > h2, section:not([class]) > h3, section:not([class]) > h4');
-if (heads && heads.length) {
+if (mainSections && mainSections.length) {
 	let tocMain = "";
 	let tocSide = "";
 	let headLevelPrev = 1;
 	let headLevelNow = 2;
-	heads.forEach(head => {
+	mainSections.forEach(section => {
+		let head = section.firstElementChild;
 		switch(head.localName) {
 			case "h2":
 				headLevelNow = 2;
@@ -85,8 +84,8 @@ if (heads && heads.length) {
 			break;
 		}
 		if (headLevelNow === headLevelPrev + 1) {
-			tocMain += `<ol><li><a href="#${head.getAttribute("id")}">${head.innerHTML}</a>`;
-			tocSide += `<ul><li><a href="#${head.getAttribute("id")}" data-target="${head.getAttribute("id")}">${head.innerHTML}</a>`;
+			tocMain += `<ol><li><a href="#${section.getAttribute("id")}">${head.innerHTML}</a>`;
+			tocSide += `<ul><li data-target="${section.getAttribute("id")}"><a href="#${section.getAttribute("id")}">${head.innerHTML}</a>`;
 			++headLevelPrev;
 		} else {
 			while (headLevelNow < headLevelPrev) {
@@ -94,8 +93,8 @@ if (heads && heads.length) {
 				tocMain += "</li></ol>";
 				tocSide += "</li></ul>";
 			}
-			tocMain += `</li><li><a href="#${head.getAttribute("id")}">${head.innerHTML}</a>`;
-			tocSide += `</li><li><a href="#${head.getAttribute("id")}" data-target="${head.getAttribute("id")}">${head.innerHTML}</a>`;
+			tocMain += `</li><li><a href="#${section.getAttribute("id")}">${head.innerHTML}</a>`;
+			tocSide += `</li><li data-target="${section.getAttribute("id")}"><a href="#${section.getAttribute("id")}">${head.innerHTML}</a>`;
 		} 
 	})
 	while (headLevelPrev == 1) {
@@ -111,24 +110,31 @@ const observerOptions = {
 	rootMargin: '0px 0px -80% 0px',
 	threshold: 0
 }
-const toc = document.getElementById('目次-サイドバー');
-const tocLinks = toc.querySelectorAll('a');
+const tocSidebar = document.getElementById('目次-サイドバー');
+const tocLinks = tocSidebar.querySelectorAll('li');
 const observerCallback = (entries) => {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
 			tocLinks.forEach(link => link.classList.remove('active'));
-			const activeLink = toc.querySelector(`a[data-target="${entry.target.id}"]`)
+			let activeLink = tocSidebar.querySelector(`li[data-target="${entry.target.id}"]`)
 			if (activeLink) {
 				activeLink.classList.add('active');
+			}
+			if (activeLink) {
+				activeLink = activeLink.parentElement.parentElement;
+			}
+			while (activeLink.localName === "li") {
+				activeLink.classList.add('active');
+				activeLink = activeLink.parentElement.parentElement;
 			}
 		}
 	});
 };
 const observer = new IntersectionObserver(observerCallback, observerOptions);
-heads.forEach(heading => observer.observe(heading));
+mainSections.forEach(heading => observer.observe(heading));
 // リンク先の小窓
 let linkRenderExist = false;
-document.querySelectorAll("main > section *:any-link").forEach(link => {
+main.querySelectorAll("section *:any-link").forEach(link => {
 	if (link.getAttribute("href").slice(0,4) != "http") {
 		link.addEventListener("click", function(event) {
 			event.preventDefault();
