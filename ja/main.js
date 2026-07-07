@@ -57,7 +57,7 @@ if (mainSections && mainSections.length) {
 	})
 }
 // toc-main, toc-sidebar
-main.insertAdjacentHTML("beforeend", '<style>nav#目次 > ol > li::marker {content: "第"counter(list-item)"章 ";} body { display: grid; column-gap: 24px; grid-template: min-content 1fr min-content / 12.25rem minmax(0,1fr); grid-template-areas: "header header" "sidebar main" "footer footer" } header {grid-area: header;} nav#目次-サイドバー {grid-area: sidebar;} main {grid-area: main; max-height: 100%} footer {grid-area: footer;} nav#目次-サイドバー > * {position: sticky; top: 20px; max-height: calc(100vh - 20px); overflow: hidden scroll; li.active > a {color: #ccc; font-weight: bold;}}</style>');
+main.insertAdjacentHTML("beforeend", '<style>nav#目次 > ol > li::marker {content: "第"counter(list-item)"章 ";} body { display: grid; column-gap: 24px; grid-template: min-content 1fr min-content / 12.25rem minmax(0,1fr); grid-template-areas: "header header" "sidebar main" "footer footer" } header {grid-area: header;} nav#目次-サイドバー {grid-area: sidebar;} main {grid-area: main; max-height: 100%} footer {grid-area: footer;} nav#目次-サイドバー > * {position: sticky; top: 16px; bottom: 16px; max-height: calc(100vh - 32px); overflow: hidden scroll; li.active > a {color: #ccc; font-weight: bold;}}</style>');
 const h1InHgroup = main.querySelector("hgroup:first-child");
 if (h1InHgroup == null) {
 	main.querySelector("main > h1").insertAdjacentHTML("afterend", '<nav id="目次"></nav>');
