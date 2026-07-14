@@ -74,11 +74,6 @@ section > p {
 	margin: 0 2rem;
 }
 
-.future-work::before {
-	font-weight: bold;
-	content: "future work: ";
-}
-
 h1 ~ p {
 	font-weight: bold;
 	text-align: center;
@@ -414,4 +409,9 @@ dl {
 }
 /* サイドバー表示の境目にする予定*/
 @media screen and (min-width: 1120px) {
+}
+
+.future-work::before {
+	font-weight: bold;
+	content: "future work: ";
 }
