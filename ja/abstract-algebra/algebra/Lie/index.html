@@ -14,69 +14,151 @@
 		</hgroup>
 		<section>
 			<h2>定義</h2>
-			<article id="Lie代数" class="ax">
-				<h3>Lie代数</h3>
-				<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
-				<p><math><mi>𝕂</mi></math>上の<dfn class="ax">Lie代数</dfn><span lang="en">(Lie algebra)</span>とは，以下のデータからなる．</p>
-				<ul>
-					<li><math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝔤</mi></math></li>
-					<li><dfn>Lie括弧</dfn><span lang="en">(Lie bracket)</span>（または括弧積）と呼ばれる<math><mi>𝐴</mi></math>上の二項演算
-						<math display="block">
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mo>⋅</mo><mo>,</mo><mo>⋅</mo>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>:</mo>
-							<mrow>
-								<msup>
-									<mi>𝔤</mi>
-									<mrow>
-										<mo>Π</mo><mn>2</mn>
-									</mrow>
-								</msup>
-								<mo>→</mo>
-								<mi>𝔤</mi>
-							</mrow>
-						</math>
-					</li>
-				</ul>
-				<p>これらは以下の条件を満たす．</p>
-				<ul>
-					<li>Lie括弧は<math><mi>𝕂</mi></math>-双線型．</li>
-					<li>Lie括弧は交代性を満たす．つまり，
-						<math display="block">
-							<mrow>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
+			<section>
+				<h3>Lie代数とと準同型</h3>
+				<article id="Lie代数" class="ax">
+					<h4>Lie代数</h4>
+					<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
+					<p><math><mi>𝕂</mi></math>上の<dfn class="ax">Lie代数</dfn><span lang="en">(Lie algebra)</span>とは，以下のデータからなる．</p>
+					<ul>
+						<li><math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝔤</mi></math></li>
+						<li><dfn>Lie括弧</dfn><span lang="en">(Lie bracket)</span>（または括弧積）と呼ばれる<math><mi>𝐴</mi></math>上の二項演算
+							<math display="block">
 								<mrow>
 									<mo>[</mo>
 									<mrow>
-										<mi>𝑥</mi><mo>,</mo><mi>𝑥</mi>
+										<mo>⋅</mo><mo>,</mo><mo>⋅</mo>
 									</mrow>
 									<mo>]</mo>
 								</mrow>
-								<mo>=</mo>
-								<mn>0</mn>
-							</mrow>
-						</math>
-					</li>
-					<li>Lie括弧はJacobi恒等式を満たす．つまり，
+								<mo>:</mo>
+								<mrow>
+									<msup>
+										<mi>𝔤</mi>
+										<mrow>
+											<mo>Π</mo><mn>2</mn>
+										</mrow>
+									</msup>
+									<mo>→</mo>
+									<mi>𝔤</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>これらは以下の条件を満たす．</p>
+					<ul>
+						<li>Lie括弧は<math><mi>𝕂</mi></math>-双線型．</li>
+						<li>Lie括弧は交代性を満たす．つまり，
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝑥</mi><mo>,</mo><mi>𝑥</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</mrow>
+							</math>
+						</li>
+						<li>Lie括弧はJacobi恒等式を満たす．つまり，
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi><mo>,</mo><mi>𝑧</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝔤</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝑥</mi>
+												<mo>,</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<mi>𝑦</mi><mo>,</mo><mi>𝑧</mi>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝑦</mi>
+												<mo>,</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<mi>𝑧</mi><mo>,</mo><mi>𝑥</mi>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝑧</mi>
+												<mo>,</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="Lie括弧の反交換律" class="thm">
+					<h4>Lie括弧の反交換律</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>
+						を与えると，以下を満たす．
 						<math display="block">
 							<mrow>
 								<mo>∀</mo>
 								<mo>&af;</mo>
 								<mrow>
 									<mrow>
-										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi><mo>,</mo><mi>𝑧</mi>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
 									</mrow>
 									<mo>∈</mo>
 									<mi>𝔤</mi>
@@ -85,43 +167,146 @@
 							<mo>,</mo>
 							<mrow>
 								<mrow>
+									<mo>[</mo>
 									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<mi>𝑥</mi>
-											<mo>,</mo>
-											<mrow>
-												<mo>[</mo>
-												<mrow>
-													<mi>𝑦</mi><mo>,</mo><mi>𝑧</mi>
-												</mrow>
-												<mo>]</mo>
-											</mrow>
-										</mrow>
-										<mo>]</mo>
+										<mi>𝑥</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
 									</mrow>
-									<mo>+</mo>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>−</mo>
 									<mrow>
 										<mo>[</mo>
 										<mrow>
 											<mi>𝑦</mi>
 											<mo>,</mo>
-											<mrow>
-												<mo>[</mo>
-												<mrow>
-													<mi>𝑧</mi><mo>,</mo><mi>𝑥</mi>
-												</mrow>
-												<mo>]</mo>
-											</mrow>
+											<mi>𝑥</mi>
 										</mrow>
 										<mo>]</mo>
 									</mrow>
-									<mo>+</mo>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						<math display="block">
+							<mn>0</mn>
+							<mo>=</mo>
+							<mrow>
+								<mo>[</mo>
+								<mrow>
 									<mrow>
-										<mo>[</mo>
+										<mi>𝑥</mi><mo>+</mo><mi>𝑦</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>+</mo><mi>𝑦</mi>
+									</mrow>
+								</mrow>
+								<mo>]</mo>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>,</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑦</mi><mo>,</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑦</mi>
+										<mo>,</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑦</mi><mo>,</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+				</article>
+				<article id="準同型" class="dfn">
+					<h4>準同型</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi><mo>,</mo><mi>𝔥</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						以下の条件を満たす<math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>
+						<math>
+							<mi>𝑓</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝔤</mi><mo>→</mo><mi>𝔥</mi>
+							</mrow>
+						</math>
+						を<dfn>（Lie代数）準同型</dfn>と呼ぶ．
+					</p>
+					<ul>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
 										<mrow>
-											<mi>𝑧</mi>
-											<mo>,</mo>
+											<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝔤</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
 											<mrow>
 												<mo>[</mo>
 												<mrow>
@@ -129,163 +314,72 @@
 												</mrow>
 												<mo>]</mo>
 											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑦</mi><mo>)</mo>
+												</mrow>
+											</mrow>
 										</mrow>
 										<mo>]</mo>
 									</mrow>
 								</mrow>
-								<mo>=</mo>
-								<mn>0</mn>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="同型" class="dfn">
+					<h4>同型</h4>
+					<ul>
+						<li>全単射な<a href="#準同型">Lie代数準同型</a>を<dfn>（Lie代数）同型</dfn><span lang="en">(isomorphism)</span>と呼ぶ．</li>
+						<li>同型の始域と終域のことも互いに<dfn>同型</dfn><span lang="en">(isomorphism)</span>と呼ぶ．</li>
+					</ul>
+					<article id="同型の逆射" class="thm">
+						<h4>同型の逆射</h4>
+						<p><a href="#同型">Lie代数同型</a>の逆写像も<a href="#同型">Lie代数同型</a>．</p>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						<a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi><mo>,</mo><mi>𝔥</mi></math>と<a href="#同型">同型</a>
+						<math>
+							<mi>𝑓</mi>
+							<mo>:</mo>
+							<mrow>
+								<mi>𝔤</mi><mo>→</mo><mi>𝔥</mi>
 							</mrow>
 						</math>
-					</li>
-				</ul>
-			</article>
-			<article id="Lie括弧の反交換律" class="thm">
-				<h3>Lie括弧の反交換律</h3>
-				<ul>
-					<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-					<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
-				</ul>
-				<p>
-					を与えると，以下を満たす．
-					<math display="block">
-						<mrow>
-							<mo>∀</mo>
-							<mo>&af;</mo>
+						に対し，逆写像
+						<math>
+							<msup>
+								<mi>𝑓</mi>
+								<mrow>
+									<mo>−</mo><mn>1</mn>
+								</mrow>
+							</msup>
+							<mo>:</mo>
 							<mrow>
-								<mrow>
-									<mi>𝑥</mi>
-									<mo>,</mo>
-									<mi>𝑦</mi>
-								</mrow>
-								<mo>∈</mo>
-								<mi>𝔤</mi>
+								<mi>𝔥</mi><mo>→</mo><mi>𝔤</mi>
 							</mrow>
-						</mrow>
-						<mo>,</mo>
-						<mrow>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝑥</mi>
-									<mo>,</mo>
-									<mi>𝑦</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mo>−</mo>
-								<mrow>
-									<mo>[</mo>
-									<mrow>
-										<mi>𝑦</mi>
-										<mo>,</mo>
-										<mi>𝑥</mi>
-									</mrow>
-									<mo>]</mo>
-								</mrow>
-							</mrow>
-						</mrow>
-					</math>
-				</p>
-			</article>
-			<article class="proof">
-				<h3>証明</h3>
-				<p>
-					<math display="block">
-						<mn>0</mn>
-						<mo>=</mo>
-						<mrow>
-							<mo>[</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑥</mi><mo>+</mo><mi>𝑦</mi>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mi>𝑥</mi><mo>+</mo><mi>𝑦</mi>
-								</mrow>
-							</mrow>
-							<mo>]</mo>
-						</mrow>
-						<mo>=</mo>
-						<mrow>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝑥</mi><mo>,</mo><mi>𝑥</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>+</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>+</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝑦</mi><mo>,</mo><mi>𝑥</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>+</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝑦</mi>
-									<mo>,</mo>
-									<mi>𝑦</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-						</mrow>
-						<mo>=</mo>
-						<mrow>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>+</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝑦</mi><mo>,</mo><mi>𝑥</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-						</mrow>
-					</math>
-				</p>
-			</article>
-			<article id="準同型" class="dfn">
-				<h3>準同型</h3>
-				<ul>
-					<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-					<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi><mo>,</mo><mi>𝔥</mi></math></li>
-				</ul>
-				<p>を与える．</p>
-				<p>
-					以下の条件を満たす<math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>
-					<math>
-						<mi>𝑓</mi>
-						<mo>:</mo>
-						<mrow>
-							<mi>𝔤</mi><mo>→</mo><mi>𝔥</mi>
-						</mrow>
-					</math>
-					を<dfn>（Lie代数）準同型</dfn>と呼ぶ．
-				</p>
-				<ul>
-					<li>
+						</math>
+						は線型写像の逆写像なので線型写像であり，
 						<math display="block">
 							<mrow>
 								<mo>∀</mo>
@@ -295,13 +389,18 @@
 										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
 									</mrow>
 									<mo>∈</mo>
-									<mi>𝔤</mi>
+									<mi>𝔥</mi>
 								</mrow>
 							</mrow>
 							<mo>,</mo>
 							<mrow>
 								<mrow>
-									<mi>𝑓</mi>
+									<msup>
+										<mi>𝑓</mi>
+										<mrow>
+											<mo>−</mo><mn>1</mn>
+										</mrow>
+									</msup>
 									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo>
@@ -317,10 +416,117 @@
 								</mrow>
 								<mo>=</mo>
 								<mrow>
+									<msup>
+										<mi>𝑓</mi>
+										<mrow>
+											<mo>−</mo><mn>1</mn>
+										</mrow>
+									</msup>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mrow>
+													<mrow>
+														<mi>𝑓</mi>
+														<mo>∘</mo>
+														<msup>
+															<mi>𝑓</mi>
+															<mrow>
+																<mo>−</mo><mn>1</mn>
+															</mrow>
+														</msup>
+													</mrow>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑓</mi>
+														<mo>∘</mo>
+														<msup>
+															<mi>𝑓</mi>
+															<mrow>
+																<mo>−</mo><mn>1</mn>
+															</mrow>
+														</msup>
+													</mrow>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑦</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mi>𝑓</mi>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>∘</mo>
+										<mi>𝑓</mi>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mrow>
+													<msup>
+														<mi>𝑓</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<msup>
+														<mi>𝑓</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑦</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
 									<mo>[</mo>
 									<mrow>
 										<mrow>
-											<mi>𝑓</mi>
+											<msup>
+												<mi>𝑓</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
 											<mo>&af;</mo>
 											<mrow>
 												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
@@ -328,7 +534,12 @@
 										</mrow>
 										<mo>,</mo>
 										<mrow>
-											<mi>𝑓</mi>
+											<msup>
+												<mi>𝑓</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
 											<mo>&af;</mo>
 											<mrow>
 												<mo>(</mo><mi>𝑦</mi><mo>)</mo>
@@ -339,69 +550,48 @@
 								</mrow>
 							</mrow>
 						</math>
-					</li>
-				</ul>
-			</article>
-			<article id="同型" class="dfn">
-				<h3>同型</h3>
-				<ul>
-					<li>全単射な<a href="#準同型">Lie代数準同型</a>を<dfn>（Lie代数）同型</dfn><span lang="en">(isomorphism)</span>と呼ぶ．</li>
-					<li>同型の始域と終域のことも互いに<dfn>同型</dfn><span lang="en">(isomorphism)</span>と呼ぶ．</li>
-				</ul>
-				<article id="同型の逆射" class="thm">
-					<h4>同型の逆射</h4>
-					<p><a href="#同型">Lie代数同型</a>の逆写像も<a href="#同型">Lie代数同型</a>．</p>
-				</article>
-			</article>
-			<article class="proof">
-				<h3>証明</h3>
-				<p>
-					<a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi><mo>,</mo><mi>𝔥</mi></math>と<a href="#同型">同型</a>
-					<math>
-						<mi>𝑓</mi>
-						<mo>:</mo>
-						<mrow>
-							<mi>𝔤</mi><mo>→</mo><mi>𝔥</mi>
-						</mrow>
-					</math>
-					に対し，逆写像
-					<math>
-						<msup>
-							<mi>𝑓</mi>
-							<mrow>
-								<mo>−</mo><mn>1</mn>
-							</mrow>
-						</msup>
-						<mo>:</mo>
-						<mrow>
-							<mi>𝔥</mi><mo>→</mo><mi>𝔤</mi>
-						</mrow>
-					</math>
-					は線型写像の逆写像なので線型写像であり，
-					<math display="block">
-						<mrow>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
+						を満たすので<a href="#準同型">準同型</a>．
+						<math>
+							<msup>
+								<mi>𝑓</mi>
 								<mrow>
-									<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+									<mo>−</mo><mn>1</mn>
 								</mrow>
-								<mo>∈</mo>
-								<mi>𝔥</mi>
-							</mrow>
-						</mrow>
-						<mo>,</mo>
-						<mrow>
+							</msup>
+							<mo>:</mo>
 							<mrow>
+								<mi>𝔥</mi><mo>→</mo><mi>𝔤</mi>
+							</mrow>
+						</math>
+						は全単射なので<a href="#同型">同型</a>となる．
+					</p>
+				</article>
+				<article id="Lie代数の圏" class="dfn">
+					<h4>Lie代数の圏</h4>
+					<ul>
+						<li><a href="../../../category/index.html#圏">対象</a>を全ての<a href="#Lie代数">Lie代数</a>の集まり</li>
+						<li><a href="../../../category/index.html#圏">射</a>を全ての<a href="#準同型">準同型</a>の集まり</li>
+					</ul>
+					<p>
+						とする<a href="../../../category/index.html#圏">圏</a>を<dfn>Lie代数の圏</dfn>と呼び，<math><msub><mi>𝐋𝐢𝐞𝐀𝐥𝐠</mi><mi>𝕂</mi></msub></math> と表す．
+					</p>
+					<article id="Lie代数の圏は亜代数" class="thm">
+						<h4>Lie代数の圏は亜代数</h4>
+						<p><a href="#Lie代数の圏">Lie代数の圏</a>は<math><mi>𝕂</mi></math>-亜代数（<math><mi>𝕂</mi></math>-線型圏）をなす．</p>
+					</article>
+				</article>
+				<article id="反対Lie代数" class="dfn">
+					<h4>反対Lie代数</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝔤</mi></math>の<dfn>反対Lie括弧</dfn><span lang="en">(opposite Lie bracket)</span>とは，以下で定義される<a href="#Lie代数">Lie括弧</a>のこと：
+							<math display="block">
 								<msup>
-									<mi>𝑓</mi>
-									<mrow>
-										<mo>−</mo><mn>1</mn>
-									</mrow>
-								</msup>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
 									<mrow>
 										<mo>[</mo>
 										<mrow>
@@ -409,288 +599,83 @@
 										</mrow>
 										<mo>]</mo>
 									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<msup>
-									<mi>𝑓</mi>
-									<mrow>
-										<mo>−</mo><mn>1</mn>
-									</mrow>
-								</msup>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<mrow>
-												<mrow>
-													<mi>𝑓</mi>
-													<mo>∘</mo>
-													<msup>
-														<mi>𝑓</mi>
-														<mrow>
-															<mo>−</mo><mn>1</mn>
-														</mrow>
-													</msup>
-												</mrow>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>𝑥</mi><mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>,</mo>
-											<mrow>
-												<mrow>
-													<mi>𝑓</mi>
-													<mo>∘</mo>
-													<msup>
-														<mi>𝑓</mi>
-														<mrow>
-															<mo>−</mo><mn>1</mn>
-														</mrow>
-													</msup>
-												</mrow>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>𝑦</mi><mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<msup>
-										<mi>𝑓</mi>
-										<mrow>
-											<mo>−</mo><mn>1</mn>
-										</mrow>
-									</msup>
-									<mo>∘</mo>
-									<mi>𝑓</mi>
-								</mrow>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<mrow>
-												<msup>
-													<mi>𝑓</mi>
-													<mrow>
-														<mo>−</mo><mn>1</mn>
-													</mrow>
-												</msup>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>𝑥</mi><mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>,</mo>
-											<mrow>
-												<msup>
-													<mi>𝑓</mi>
-													<mrow>
-														<mo>−</mo><mn>1</mn>
-													</mrow>
-												</msup>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>𝑦</mi><mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mrow>
-										<msup>
-											<mi>𝑓</mi>
-											<mrow>
-												<mo>−</mo><mn>1</mn>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑥</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<msup>
-											<mi>𝑓</mi>
-											<mrow>
-												<mo>−</mo><mn>1</mn>
-											</mrow>
-										</msup>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑦</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-						</mrow>
-					</math>
-					を満たすので<a href="#準同型">準同型</a>．
-					<math>
-						<msup>
-							<mi>𝑓</mi>
-							<mrow>
-								<mo>−</mo><mn>1</mn>
-							</mrow>
-						</msup>
-						<mo>:</mo>
-						<mrow>
-							<mi>𝔥</mi><mo>→</mo><mi>𝔤</mi>
-						</mrow>
-					</math>
-					は全単射なので<a href="#同型">同型</a>となる．
-				</p>
-			</article>
-			<article id="Lie代数の圏" class="dfn">
-				<h3>Lie代数の圏</h3>
-				<ul>
-					<li><a href="../../../category/index.html#圏">対象</a>を全ての<a href="#Lie代数">Lie代数</a>の集まり</li>
-					<li><a href="../../../category/index.html#圏">射</a>を全ての<a href="#準同型">準同型</a>の集まり</li>
-				</ul>
-				<p>
-					とする<a href="../../../category/index.html#圏">圏</a>を<dfn>Lie代数の圏</dfn>と呼び，<math><msub><mi>𝐋𝐢𝐞𝐀𝐥𝐠</mi><mi>𝕂</mi></msub></math> と表す．
-				</p>
-				<article id="Lie代数の圏は亜代数" class="thm">
-					<h4>Lie代数の圏は亜代数</h4>
-					<p><a href="#Lie代数の圏">Lie代数の圏</a>は<math><mi>𝕂</mi></math>-亜代数（<math><mi>𝕂</mi></math>-線型圏）をなす．</p>
-				</article>
-			</article>
-			<article id="反対Lie代数" class="dfn">
-				<h3>反対Lie代数</h3>
-				<ul>
-					<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-					<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
-				</ul>
-				<p>を与える．</p>
-				<ul>
-					<li>
-						<math><mi>𝔤</mi></math>の<dfn>反対Lie括弧</dfn><span lang="en">(opposite Lie bracket)</span>とは，以下で定義される<a href="#Lie代数">Lie括弧</a>のこと：
-						<math display="block">
-							<msup>
-								<mrow>
-									<mo>[</mo>
-									<mrow>
-										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
-									</mrow>
-									<mo>]</mo>
-								</mrow>
-								<mi>op</mi>
-							</msup>
-							<mo>≔</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝑦</mi><mo>,</mo><mi>𝑥</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mo>−</mo>
-								<mrow>
-									<mo>[</mo>
-									<mrow>
-										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
-									</mrow>
-									<mo>]</mo>
-								</mrow>
-							</mrow>
-						</math>
-					</li>
-					<li>
-						<math><mi>𝔤</mi></math>の<dfn>反対Lie代数</dfn><span lang="en">(opposite Lie algebra)</span>
-						<math><msup><mi>𝔤</mi><mi>op</mi></msup></math>
-						とは，<a href="#Lie代数">Lie代数</a>
-						<math>
-							<mo>(</mo>
-							<mrow>
-								<mi>𝔤</mi>
-								<mo>,</mo>
-								<msup>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<mo>⋅</mo><mo>,</mo><mo>⋅</mo>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
 									<mi>op</mi>
 								</msup>
-							</mrow>
-							<mo>)</mo>
-						</math>
-						のこと．
-					</li>
-				</ul>
-			</article>
-			<article id="反変同型" class="dfn">
-				<h4>反変準同型・同型</h4>
-				<ul>
-					<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-					<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi><mo>,</mo><mi>𝔥</mi></math></li>
-				</ul>
-				<p>を与える．</p>
-				<p>
-					写像
-					<math>
-						<mi>𝑓</mi>
-						<mo>:</mo>
-						<mrow>
-							<msup>
-								<mi>𝔤</mi><mi>op</mi>
-							</msup>
-							<mo>→</mo>
-							<mi>𝔥</mi>
-						</mrow>
-					</math>
-					が
-				</p>
-				<ul>
-					<li><a href="#準同型">準同型</a>となるとき，<dfn>反変準同型</dfn>や<dfn>反準同型</dfn><span lang="en">(antihomomorphism)</span>と呼ぶ．</li>
-					<li><a href="#同型">同型</a>となるとき，<dfn>反変同型</dfn>や<dfn>反同型</dfn><span lang="en">(antiisoomorphism)</span>と呼ぶ．</li>
-				</ul>
-			</article>
-			<article id="零Lie代数" class="dfn">
-				<h3>零Lie代数</h3>
-				<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
-				<p>零線型空間<math><mo>{</mo><mn>0</mn><mo>}</mo></math>は，<a href="#Lie代数">Lie括弧</a>として唯一
-					<math display="block">
-						<mrow>
-							<mo>[</mo>
+								<mo>≔</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝑦</mi><mo>,</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>−</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝔤</mi></math>の<dfn>反対Lie代数</dfn><span lang="en">(opposite Lie algebra)</span>
+							<math><msup><mi>𝔤</mi><mi>op</mi></msup></math>
+							とは，<a href="#Lie代数">Lie代数</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝔤</mi>
+									<mo>,</mo>
+									<msup>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mo>⋅</mo><mo>,</mo><mo>⋅</mo>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mi>op</mi>
+									</msup>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							のこと．
+						</li>
+					</ul>
+				</article>
+				<article id="反変同型" class="dfn">
+					<h4>反変準同型・同型</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi><mo>,</mo><mi>𝔥</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						写像
+						<math>
+							<mi>𝑓</mi>
+							<mo>:</mo>
 							<mrow>
-								<mn>0</mn><mo>,</mo><mn>0</mn>
+								<msup>
+									<mi>𝔤</mi><mi>op</mi>
+								</msup>
+								<mo>→</mo>
+								<mi>𝔥</mi>
 							</mrow>
-							<mo>]</mo>
-						</mrow>
-						<mo>=</mo>
-						<mn>0</mn>
-					</math>
-					を持ち得る．これを定義とする<a href="#Lie代数">Lie代数</a><math><mo>{</mo><mn>0</mn><mo>}</mo></math>を<dfn>自明なLie代数</dfn><span lang="en">(trivial Lie algebra)</span>や<dfn>零Lie代数</dfn><span lang="en">(zero Lie algebra)</span>と呼ぶ．
-				</p>
-			</article>
+						</math>
+						が
+					</p>
+					<ul>
+						<li><a href="#準同型">準同型</a>となるとき，<dfn>反変準同型</dfn>や<dfn>反準同型</dfn><span lang="en">(antihomomorphism)</span>と呼ぶ．</li>
+						<li><a href="#同型">同型</a>となるとき，<dfn>反変同型</dfn>や<dfn>反同型</dfn><span lang="en">(antiisoomorphism)</span>と呼ぶ．</li>
+					</ul>
+				</article>
+			</section>
 			<section>
 				<h3>包絡代数</h3>
 				<article id="交換子" class="dfn">
@@ -2799,6 +2784,24 @@
 			</section>
 			<section>
 				<h3>同型定理</h3>
+				<article id="零Lie代数" class="dfn">
+					<h4>零Lie代数</h4>
+					<p><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
+					<p>零線型空間<math><mo>{</mo><mn>0</mn><mo>}</mo></math>は，<a href="#Lie代数">Lie括弧</a>として唯一
+						<math display="block">
+							<mrow>
+								<mo>[</mo>
+								<mrow>
+									<mn>0</mn><mo>,</mo><mn>0</mn>
+								</mrow>
+								<mo>]</mo>
+							</mrow>
+							<mo>=</mo>
+							<mn>0</mn>
+						</math>
+						を持ち得る．これを定義とする<a href="#Lie代数">Lie代数</a><math><mo>{</mo><mn>0</mn><mo>}</mo></math>を<dfn>自明なLie代数</dfn><span lang="en">(trivial Lie algebra)</span>や<dfn>零Lie代数</dfn><span lang="en">(zero Lie algebra)</span>と呼ぶ．
+					</p>
+				</article>
 				<section>
 					<h4>同型定理</h4>
 					<p><a href="#Lie代数の圏">Lie代数の圏</a>の<a href="../../../category/index.html#モノ射">部分対象</a>，正規対象，<a href="../../../category/index.html#商対象">商対象</a>を確認し，同型定理を示す．</p>
@@ -7354,7 +7357,6 @@
 						</math>
 					</p>
 				</article>
-				<aside class="future-work">表現の圏の性質の良い（充満?）部分圏がBGG圏<math><mi>𝒪</mi></math></aside>
 				<article id="ルート" class="dfn">
 					<h4>ルート</h4>
 					<p><a href="#随伴表現">随伴表現</a>の<a href="#ウェイト">ウェイト</a>のことを<dfn>ルート</dfn><span lang="en">(root)</span>と呼ぶ．</p>
@@ -7831,7 +7833,7 @@
 				</article>
 			</section>
 			<section>
-				<h3>最高ウェイト加群</h3>
+				<h3><abbr>BGG</abbr>圏 <math><mi>𝒪</mi></math></h3>
 				<article id="BGG圏" class="dfn">
 					<h4>BGG圏</h4>
 					<ul>
@@ -7841,35 +7843,36 @@
 						<li><math><mi>𝔥</mi></math>の双対線型空間 <math><msup><mi>𝔥</mi><mo>∗</mo></msup></math></li>
 					</ul>
 					<p>を与える．</p>
-					<p><dfn>BGG圏</dfn><span lang="en">(BGG category)</span> <math><mi>𝒪</mi></math> とは，以下を満たすような加群の圏の<a href="../../../../category/index.html#部分圏">充満部分圏</a>のこと：</p>
+					<p><dfn><abbr>BGG</abbr>（Bernstein-Gel’fand-Gel’fand）圏</dfn><span lang="en">(<abbr>BGG</abbr> category)</span> <math><mi>𝒪</mi></math> とは，<a href="#../../../../category/index.html圏">対象</a> を <a href="#加群"><math><mi>𝔤</mi></math>-加群</a> であって，以下の全てを満たすものの集まりとする，<math><mi>𝔤</mi></math>-加群の圏の<a href="../../../../category/index.html#部分圏">充満部分圏</a>のこと：</p>
 					<ul>
+						<li><math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math>に関して有限生成</li>
+						<li><math><mi>𝔥</mi></math> に関する<a href="#ウェイト加群">ウェイト加群</a></li>
 						<li>
-							<a href="#../../../../category/index.html圏">対象</a> を <a href="#加群"><math><mi>𝔤</mi></math>-加群</a> であって，以下の全てを満たすものの集まり：
-							<ul>
-								<li>有限生成</li>
-								<li><a href="#ウェイト加群">ウェイト加群</a></li>
-								<li></li>
-							</ul>
-						</li>
-						<li>
+							局所的に <math><msub><mi>𝔤</mi><mo>+</mo></msub></math> の作用に関して有限：
 							<math>
 								<mo>∀</mo>
 								<mo>&af;</mo>
 								<mrow>
-									<mrow>
-										<mi>𝑉</mi><mo>,</mo><mi>𝑊</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mrow>
-										<mi>ob</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝒪</mi><mo>)</mo>
-										</mrow>
-									</mrow>
+									<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
 								</mrow>
 							</math>
-							の間の<a href="#../../../../category/index.html圏">射</a>を，<math><mi>𝑉</mi></math> から <math><mi>𝑊</mi></math> への全ての<a href="#加群準同型">加群準同型</a>．
+							に対し，<math><mi>𝑉</mi></math> の<a href="../../module/linear-algebra/index.html#部分線型空間">部分空間</a>
+							<math>
+								<mrow>
+									<mi>𝑈</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mi>𝔤</mi><mo>+</mo>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&af;</mo>
+								<mi>𝑣</mi>
+							</math>
+							は有限次元．
 						</li>
 					</ul>
 					<article id="BGG圏の性質" class="thm">
@@ -7877,21 +7880,98 @@
 						<p>を与えると，以下が成り立つ：</p>
 						<ul>
 							<li>全ての<a href="#ウェイト">ウェイト空間</a>は有限次元．</li>
-							<li>O5</li>
+							<li>
+								有限集合
+								<math>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<msup>
+											<mi>𝛬</mi><mo>′</mo>
+										</msup>
+										<mo>⊂</mo>
+										<msup>
+											<mi>𝔥</mi><mo>∗</mo>
+										</msup>
+									</mrow>
+								</math>
+								に対し，<a href="#ウェイト">ウェイト空間</a>の次元が <math><mn>0</mn></math> でない<a href="#ウェイト">ウェイト</a>の集合は，
+								<math>
+									<munder intent=":largeop">
+										<mo>∐</mo>
+										<mrow>
+											<mi>𝜆</mi>
+											<mo>∈</mo>
+											<msup>
+												<mi>𝛬</mi><mo>′</mo>
+											</msup>
+										</mrow>
+									</munder>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝜆</mi>
+											<mo>−</mo>
+											<msub>
+												<mi>𝛬</mi><mo>+</mo>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math>
+								に含まれる．
+							</li>
 							<li><math><mi>𝒪</mi></math> はNoether圏</li>
 							<li><math><mi>𝒪</mi></math> は部分加群，商加群，直和を取る操作に対して閉じる．</li>
 							<li><math><mi>𝒪</mi></math> はAbel圏</li>
 							<li></li>
 							<li>
-								<math><mi>𝔤</mi></math> の<a href="#中心">中心</a>
+								<math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> の<a href="#中心">中心</a>
 								<math>
 									<mi>𝑍</mi>
 									<mo>&af;</mo>
 									<mrow>
-										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑈</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
 									</mrow>
 								</math>
-								の作用に対して有限
+								の作用に対して（局所的に?）有限：
+								<math>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑣</mi><mo>∈</mo><mi>𝑀</mi>
+									</mrow>
+								</math>
+								に対し，
+								<math>
+									<mrow>
+										<mi>𝑍</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑈</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&af;</mo>
+									<mi>𝑣</mi>
+								</math>
+								は有限次元．
 							</li>
 							<li>
 								<math>
@@ -7911,6 +7991,9 @@
 						</ul>
 					</article>
 				</article>
+			</section>
+			<section>
+				<h3>最高ウェイト加群</h3>
 			</section>
 		</section>
 		<section>
@@ -10141,6 +10224,7 @@
 			<h2>参考文献</h2>
 			<ul>
 				<li>James Edward Humphreys, "<cite>Introduction to Lie Algebras and Representation Theory</cite>", <a href="https://doi.org/10.1007/978-1-4612-6398-2">doi:10.1007/978-1-4612-6398-2</a></li>
+				<li>James Edward Humphreys, "<cite>Representations of Semisimple Lie Algebras in the <abbr>BGG</abbr> Category <math><mi>𝒪</mi></math></cite>, <a href="#https://doi.org/10.1090/gsm/094">doi:10.1090/gsm/094</a></li>
 				<li>Robert Vaughan Moody, Arturo Pianzola, "<cite>Lie Algebras with Triangular Decompositions</cite>", ISBN 978-0471633044</li>
 				<li>高間俊至，奥山竜司，<a href="https://github.com/T2sp/rep">過去に書いた表現論のノート</a></li>
 			</ul>
