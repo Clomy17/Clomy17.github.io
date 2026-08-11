@@ -415,3 +415,10 @@ dl {
 	font-weight: bold;
 	content: "future work: ";
 }
+
+@media print {
+	body {
+		background-color: #FFF;
+		color: #000;
+	}
+}
