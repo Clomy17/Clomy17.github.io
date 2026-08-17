@@ -15531,7 +15531,7 @@
 											</mrow>
 											<mo>)</mo>
 										</mrow>
-										<mo>∧</mo>
+										<mo>∨</mo>
 										<mrow>
 											<mo>(</mo>
 											<mrow>
@@ -15616,15 +15616,227 @@
 								<msub>
 									<mi>𝑁</mi><mn>5</mn>
 								</msub>
+								<mo>≃</mo>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>12</mn>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
 							</math>
 							を含まない．
 						</li>
 					</ul>
 				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>
+							<a href="#束">束</a>の定義の一つより，
+							<math>
+								<mrow>
+									<mi>𝑎</mi><mo>≤</mo><mi>𝑐</mi>
+								</mrow>
+								<mo>⇒</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>∧</mo><mi>𝑐</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑎</mi>
+								</mrow>
+							</math>
+							から明らか．
+						</li>
+						<li>
+							<math>
+								<mrow>
+									<mn>2</mn>
+									<mo>∨</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mn>3</mn><mo>∧</mo><mn>4</mn>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mn>2</mn><mo>∨</mo><mn>1</mn>
+								</mrow>
+								<mo>=</mo>
+								<mn>2</mn>
+								<mo>≠</mo>
+								<mn>4</mn>
+								<mo>=</mo>
+								<mrow>
+									<mn>12</mn><mo>∧</mo><mn>4</mn>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mn>2</mn><mo>∨</mo><mn>3</mn>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>∧</mo>
+									<mn>4</mn>
+								</mrow>
+							</math> より対偶が成り立つ．
+						</li>
+						<li>
+							a
+						</li>
+					</ul>
+				</article>
 				<article id="分配束" class="dfn">
 					<h4>分配束</h4>
-					<p>を与える．</p>
-					<p><dfn>分配束</dfn><span lang="en">()</span>とは，以下のデータのこと：</p>
+					<p>
+						<a href="#束">束</a>
+						<math>
+							<mo>(</mo>
+							<mrow>
+								<mi>𝑃</mi><mo>,</mo><mo>≤</mo><mo>,</mo><mo>∧</mo><mo>,</mo><mo>∨</mo>
+							</mrow>
+							<mo>)</mo>
+						</math>
+						が<dfn>分配束</dfn><span lang="en">(distributive lattice)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+					</p>
+					<ul>
+						<li>
+							<ul>
+								<li>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑐</mi>
+												</mrow>
+												<mo>∈</mo>
+												<mi>𝑃</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi>
+												<mo>∧</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑏</mi><mo>∨</mo><mi>𝑐</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑎</mi><mo>∧</mo><mi>𝑏</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>∨</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑎</mi><mo>∧</mo><mi>𝑐</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑐</mi>
+												</mrow>
+												<mo>∈</mo>
+												<mi>𝑃</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑎</mi>
+												<mo>∨</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑏</mi><mo>∧</mo><mi>𝑐</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑎</mi><mo>∨</mo><mi>𝑏</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>∧</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑎</mi><mo>∨</mo><mi>𝑐</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#部分束">部分束</a>として
+							<math>
+								<msub>
+									<mi>𝑀</mi><mn>5</mn>
+								</msub>
+								<mo>≃</mo>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>30</mn>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+							</math>
+							または
+							<math>
+								<msub>
+									<mi>𝑁</mi><mn>5</mn>
+								</msub>
+								<mo>≃</mo>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>12</mn>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+							</math>
+							と<a href="#束準同型">束同型</a>なものを含まない．
+						</li>
+					</ul>
 				</article>
 			</section>
 			<section>

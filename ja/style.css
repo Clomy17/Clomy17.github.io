@@ -417,6 +417,9 @@ dl {
 }
 
 @media print {
+	@page {
+		size: A4;
+	}
 	body {
 		background-color: #FFF;
 		color: #000;
