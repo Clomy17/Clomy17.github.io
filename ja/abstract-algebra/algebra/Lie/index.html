@@ -21821,11 +21821,11 @@
 				</article>
 			</section>
 			<section>
-				<h3>対称化可能Cartan行列のKac-Moody代数の分類</h3>
+				<h3>対称化可能Cartan行列上のKac-Moody代数の分類</h3>
 				<section>
 					<h4>有限型</h4>
 					<article id="有限次元Kac-Moody代数" class="thm">
-						<h5>有限次元Kac-Moody代数</h5>
+						<h5>有限型Cartan行列・有限次元Kac-Moody代数</h5>
 						<ul>
 							<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
@@ -21882,33 +21882,909 @@
 							<li><math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数の実ルート">虚ルート</a>を持たない．</li>
 						</ul>
 					</article>
-					<article id="有限型Kac-Moody代数の分類" class="thm">
-						<h5>有限型Kac-Moody代数の分類</h5>
-						<p>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えると，既約な<a href="#対称化可能Cartan行列">有限型Cartan行列</a>に付随する<a href="#Kac-Moody代数">Kac-Moody代数</a>は以下のいずれかに<a href="#同型">同型</a>：</p>
+					<article id="X型Cartan行列" class="dfn">
+						<h5><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</h5>
+						<ul>
+							<li>
+								<math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> に対する <dfn><math><msub><mi>𝐴</mi><mi>𝑙</mi></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐴</mi><mi>𝑙</mi></msub></math>)</span>とは，以下で定義される<a href="#Cartan行列">Cartan行列</a>のこと：
+								<math display="block">
+									<mi>𝐴</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mo>(</mo>
+										<mtable intent=":matrix">
+											<mtr>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+											</mtr>
+										</mtable>
+										<mo>)</mo>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+													</mrow>
+												</msub>
+												<mo>≔</mo>
+												<mrow>
+													<mo>{</mo>
+													<mtable intent=":piecewise">
+														<mtr>
+															<mtd><mn>2</mn></mtd>
+															<mtd><mi>𝑖</mi><mo>=</mo><mi>𝑗</mi></mtd>
+														</mtr>
+														<mtr>
+															<mtd><mo>−</mo><mn>1</mn></mtd>
+															<mtd>
+																<mi>𝑖</mi>
+																<mo>=</mo>
+																<mrow>
+																	<mi>𝑗</mi><mo>±</mo><mn>1</mn>
+																</mrow>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd><mn>0</mn></mtd>
+															<mtd><mtext>他</mtext></mtd>
+														</mtr>
+													</mtable>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑙</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> に対する <dfn><math><msub><mi>𝐶</mi><mi>𝑙</mi></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐶</mi><mi>𝑙</mi></msub></math>)</span>とは，以下で定義される<a href="#Cartan行列">Cartan行列</a>のこと：
+								<math display="block">
+									<mi>𝐴</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mo>(</mo>
+										<mtable intent=":matrix">
+											<mtr>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>−</mo><mn>2</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+											</mtr>
+										</mtable>
+										<mo>)</mo>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+													</mrow>
+												</msub>
+												<mo>≔</mo>
+												<mrow>
+													<mo>{</mo>
+													<mtable intent=":piecewise">
+														<mtr>
+															<mtd><mn>2</mn></mtd>
+															<mtd><mi>𝑖</mi><mo>=</mo><mi>𝑗</mi></mtd>
+														</mtr>
+														<mtr>
+															<mtd><mo>−</mo><mn>1</mn></mtd>
+															<mtd>
+																<mrow>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>∈</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>2</mn>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+																<mo>∪</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>∈</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑗</mi><mo>+</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd><mo>−</mo><mn>2</mn></mtd>
+															<mtd>
+																<mrow>
+																	<mi>𝑖</mi>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑙</mi><mo>−</mo><mn>2</mn>
+																	</mrow>
+																</mrow>
+																<mo>,</mo>
+																<mrow>
+																	<mi>𝑗</mi>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑙</mi><mo>−</mo><mn>1</mn>
+																	</mrow>
+																</mrow>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd><mn>0</mn></mtd>
+															<mtd><mtext>他</mtext></mtd>
+														</mtr>
+													</mtable>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑛</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> に対する <dfn><math><msub><mi>𝐵</mi><mi>𝑙</mi></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐵</mi><mi>𝑙</mi></msub></math>)</span>とは，以下で定義される<a href="#Cartan行列">Cartan行列</a>のこと：
+								<math display="block">
+									<mi>𝐴</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mo>(</mo>
+										<mtable intent=":matrix">
+											<mtr>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>2</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+											</mtr>
+										</mtable>
+										<mo>)</mo>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+													</mrow>
+												</msub>
+												<mo>≔</mo>
+												<mrow>
+													<mo>{</mo>
+													<mtable intent=":piecewise">
+														<mtr>
+															<mtd><mn>2</mn></mtd>
+															<mtd><mi>𝑖</mi><mo>=</mo><mi>𝑗</mi></mtd>
+														</mtr>
+														<mtr>
+															<mtd><mo>−</mo><mn>1</mn></mtd>
+															<mtd>
+																<mrow>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>∈</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+																<mo>∪</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>∈</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>2</mn>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑗</mi><mo>+</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd><mo>−</mo><mn>2</mn></mtd>
+															<mtd>
+																<mrow>
+																	<mi>𝑖</mi>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑙</mi><mo>−</mo><mn>1</mn>
+																	</mrow>
+																</mrow>
+																<mo>,</mo>
+																<mrow>
+																	<mi>𝑗</mi>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑙</mi><mo>−</mo><mn>2</mn>
+																	</mrow>
+																</mrow>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd><mn>0</mn></mtd>
+															<mtd><mtext>他</mtext></mtd>
+														</mtr>
+													</mtable>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑛</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> に対する <dfn><math><msub><mi>𝐷</mi><mi>𝑙</mi></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐷</mi><mi>𝑙</mi></msub></math>)</span>とは，以下で定義される<a href="#Cartan行列">Cartan行列</a>のこと：
+								<math display="block">
+									<mi>𝐴</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mo>(</mo>
+										<mtable intent=":matrix">
+											<mtr>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mn>0</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>0</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+											</mtr>
+										</mtable>
+										<mo>)</mo>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+													</mrow>
+												</msub>
+												<mo>≔</mo>
+												<mrow>
+													<mo>{</mo>
+													<mtable intent=":piecewise">
+														<mtr>
+															<mtd><mn>2</mn></mtd>
+															<mtd><mi>𝑖</mi><mo>=</mo><mi>𝑗</mi></mtd>
+														</mtr>
+														<mtr>
+															<mtd><mo>−</mo><mn>1</mn></mtd>
+															<mtd>
+																<mrow>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>∈</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>2</mn>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+																<mo>∪</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>∈</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>2</mn>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑗</mi><mo>+</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+																<mo>∪</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝑖</mi><mo>+</mo><mn>2</mn>
+																	</mrow>
+																	<mo>=</mo>
+																	<mi>𝑗</mi>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑙</mi><mo>−</mo><mn>1</mn>
+																	</mrow>
+																</mrow>
+																<mo>∪</mo>
+																<mrow>
+																	<mi>𝑖</mi>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑗</mi><mo>+</mo><mn>2</mn>
+																	</mrow>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑙</mi><mo>−</mo><mn>1</mn>
+																	</mrow>
+																</mrow>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd><mo>−</mo><mn>2</mn></mtd>
+															<mtd>
+																<mrow>
+																	<mi>𝑖</mi>
+																	<mo>=</mo>
+																	<mrow>
+																		<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+																	</mrow>
+																</mrow>
+																<mo>,</mo>
+																<mrow>
+																	<mi>𝑗</mi><mo>=</mo><mi>𝑛</mi>
+																</mrow>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd><mn>0</mn></mtd>
+															<mtd><mtext>他</mtext></mtd>
+														</mtr>
+													</mtable>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑛</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> に対する <dfn><math><msub><mi>𝐸</mi><mi>𝑙</mi></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐸</mi><mi>𝑙</mi></msub></math>)</span>とは，以下で定義される<a href="#Cartan行列">Cartan行列</a>のこと：
+								<math display="block">
+									<mi>𝐴</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mo>(</mo>
+										<mtable intent=":matrix">
+											<mtr>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+												<mtd />
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd />
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>⋱</mo></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mn>0</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+												<mtd><mn>0</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+											</mtr>
+										</mtable>
+										<mo>)</mo>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+													</mrow>
+												</msub>
+												<mo>≔</mo>
+												<mrow>
+													<mo>{</mo>
+													<mtable intent=":piecewise">
+														<mtr>
+															<mtd><mn>2</mn></mtd>
+															<mtd><mi>𝑖</mi><mo>=</mo><mi>𝑗</mi></mtd>
+														</mtr>
+														<mtr>
+															<mtd><mo>−</mo><mn>1</mn></mtd>
+															<mtd>
+																<mrow>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>∈</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>2</mn>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑖</mi><mo>+</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+																<mo>∪</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>∈</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>2</mn>
+																		</mrow>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑗</mi><mo>+</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+																<mo>∪</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝑖</mi><mo>=</mo><mn>2</mn>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑗</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+																<mo>∪</mo>
+																<mrow>
+																	<mrow>
+																		<mi>𝑗</mi><mo>=</mo><mn>2</mn>
+																	</mrow>
+																	<mo>,</mo>
+																	<mrow>
+																		<mi>𝑖</mi>
+																		<mo>=</mo>
+																		<mrow>
+																			<mi>𝑙</mi><mo>−</mo><mn>1</mn>
+																		</mrow>
+																	</mrow>
+																</mrow>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd><mn>0</mn></mtd>
+															<mtd><mtext>他</mtext></mtd>
+														</mtr>
+													</mtable>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑛</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<dfn><math><msub><mi>𝐹</mi><mn>4</mn></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐹</mi><mn>4</mn></msub></math>)</span>とは，以下で定義される <math><mn>4</mn></math> 次の<a href="#Cartan行列">Cartan行列</a>のこと：
+								<math display="block">
+									<mi>𝐴</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mo>(</mo>
+										<mtable intent=":matrix">
+											<mtr>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd />
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>2</mn></mtd>
+												<mtd />
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd />
+												<mtd />
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+												<mtd><mn>2</mn></mtd>
+											</mtr>
+										</mtable>
+										<mo>)</mo>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<dfn><math><msub><mi>𝐺</mi><mn>2</mn></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐺</mi><mn>2</mn></msub></math>)</span>とは，以下で定義される<a href="#Cartan行列">Cartan行列</a>のこと：
+								<math display="block">
+									<mi>𝐴</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mo>(</mo>
+										<mtable intent=":matrix">
+											<mtr>
+												<mtd><mn>2</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+											</mtr>
+											<mtr>
+												<mtd><mo>−</mo><mn>3</mn></mtd>
+												<mtd><mo>−</mo><mn>1</mn></mtd>
+											</mtr>
+										</mtable>
+										<mo>)</mo>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<article id="X型Cartan行列の同型" class="thm">
+							<h6><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列の同型</h6>
+							<p><a href="#X型Cartan行列"><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</a>に対し，以下が成り立つ：</p>
+							<ul>
+								<li>
+									<math>
+										<msub>
+											<mi>𝐴</mi><mn>1</mn>
+										</msub>
+										<mo>=</mo>
+										<msub>
+											<mi>𝐶</mi><mn>1</mn>
+										</msub>
+										<mo>=</mo>
+										<msub>
+											<mi>𝐵</mi><mn>1</mn>
+										</msub>
+										<mo>=</mo>
+										<msub>
+											<mi>𝐷</mi><mn>1</mn>
+										</msub>
+										<mo>=</mo>
+										<msub>
+											<mi>𝐸</mi><mn>1</mn>
+										</msub>
+									</math>
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝐵</mi><mn>2</mn>
+										</msub>
+										<mo>=</mo>
+										<msub>
+											<mi>𝐶</mi><mn>2</mn>
+										</msub>
+									</math>
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝐷</mi><mn>2</mn>
+										</msub>
+										<mo>=</mo>
+										<mrow>
+											<msub>
+												<mi>𝐴</mi><mn>1</mn>
+											</msub>
+											<mo>⊕</mo>
+											<msub>
+												<mi>𝐴</mi><mn>1</mn>
+											</msub>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝐷</mi><mn>3</mn>
+										</msub>
+										<mo>=</mo>
+										<msub>
+											<mi>𝐴</mi><mn>3</mn>
+										</msub>
+									</math>
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝐸</mi><mn>3</mn>
+										</msub>
+										<mo>=</mo>
+										<mrow>
+											<msub>
+												<mi>𝐴</mi><mn>2</mn>
+											</msub>
+											<mo>⊕</mo>
+											<msub>
+												<mi>𝐴</mi><mn>1</mn>
+											</msub>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝐸</mi><mn>4</mn>
+										</msub>
+										<mo>=</mo>
+										<msub>
+											<mi>𝐴</mi><mn>4</mn>
+										</msub>
+									</math>
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝐸</mi><mn>5</mn>
+										</msub>
+										<mo>=</mo>
+										<msub>
+											<mi>𝐷</mi><mn>5</mn>
+										</msub>
+									</math>
+								</li>
+							</ul>
+							<p>逆に，これら以外の <a href="#X型Cartan行列"><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</a>は互いに相異なる．</p>
+						</article>
+					</article>
+					<article id="有限型Cartan行列の分類" class="thm">
+						<h5>有限型Cartan行列の分類</h5>
+						<p>既約な<a href="#対称化可能Cartan行列">有限型Cartan行列</a>は以下の <a href="#X型Cartan行列"><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</a>の内，いずれかに等しい：</p>
 						<ul>
 							<li>
 								<math>
 									<mo>∀</mo>
 									<mo>&af;</mo>
 									<mrow>
-										<mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi>
+										<mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi>
 									</mrow>
 								</math>
-								に対する<a href="#特殊線型Lie代数">特殊線型Lie代数</a>
+								に対する
 								<math>
-									<mi>𝔰𝔩</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑛</mi><mo>+</mo><mn>1</mn>
-											</mrow>
-											<mo>,</mo>
-											<mi>𝕂</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
+									<msub>
+										<mi>𝐴</mi><mi>𝑙</mi>
+									</msub>
 								</math>
 							</li>
 							<li>
@@ -21916,39 +22792,7 @@
 									<mo>∀</mo>
 									<mo>&af;</mo>
 									<mrow>
-										<mi>𝑛</mi>
-										<mo>∈</mo>
-										<msub>
-											<mi>ℕ</mi>
-											<mrow>
-												<mo>≥</mo><mn>3</mn>
-											</mrow>
-										</msub>
-									</mrow>
-								</math>
-								に対する<a href="#シンプレクティックLie代数">シンプレクティックLie代数</a>
-								<math>
-									<mi>𝔰𝔭</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mrow>
-												<mn>2</mn><mo>&it;</mo><mi>𝑛</mi>
-											</mrow>
-											<mo>,</mo>
-											<mi>𝕂</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</math>
-							</li>
-							<li>
-								<math>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑛</mi>
+										<mi>𝑙</mi>
 										<mo>∈</mo>
 										<msub>
 											<mi>ℕ</mi>
@@ -21958,25 +22802,11 @@
 										</msub>
 									</mrow>
 								</math>
-								に対する<a href="#特殊直交Lie代数">特殊直交Lie代数</a>
+								に対する
 								<math>
-									<mi>𝔰𝔬</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mrow>
-												<mrow>
-													<mn>2</mn><mo>&it;</mo><mi>𝑛</mi>
-												</mrow>
-												<mo>+</mo>
-												<mn>1</mn>
-											</mrow>
-											<mo>,</mo>
-											<mi>𝕂</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
+									<msub>
+										<mi>𝐶</mi><mi>𝑙</mi>
+									</msub>
 								</math>
 							</li>
 							<li>
@@ -21984,7 +22814,29 @@
 									<mo>∀</mo>
 									<mo>&af;</mo>
 									<mrow>
-										<mi>𝑛</mi>
+										<mi>𝑙</mi>
+										<mo>∈</mo>
+										<msub>
+											<mi>ℕ</mi>
+											<mrow>
+												<mo>≥</mo><mn>3</mn>
+											</mrow>
+										</msub>
+									</mrow>
+								</math>
+								に対する
+								<math>
+									<msub>
+										<mi>𝐵</mi><mi>𝑙</mi>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑙</mi>
 										<mo>∈</mo>
 										<msub>
 											<mi>ℕ</mi>
@@ -21994,21 +22846,11 @@
 										</msub>
 									</mrow>
 								</math>
-								に対する<a href="#特殊直交Lie代数">特殊直交Lie代数</a>
+								に対する
 								<math>
-									<mi>𝔰𝔬</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mrow>
-												<mn>2</mn><mo>&it;</mo><mi>𝑛</mi>
-											</mrow>
-											<mo>,</mo>
-											<mi>𝕂</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
+									<msub>
+										<mi>𝐷</mi><mi>𝑙</mi>
+									</msub>
 								</math>
 							</li>
 							<li>
@@ -22024,17 +22866,11 @@
 									<msub>
 										<mi>𝐸</mi><mn>8</mn>
 									</msub>
-								</math>
-							</li>
-							<li>
-								<math>
+									<mo>,</mo>
 									<msub>
 										<mi>𝐹</mi><mn>4</mn>
 									</msub>
-								</math>
-							</li>
-							<li>
-								<math>
+									<mo>,</mo>
 									<msub>
 										<mi>𝐺</mi><mn>2</mn>
 									</msub>
