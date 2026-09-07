@@ -21260,7 +21260,7 @@
 							<ul>
 								<li>正定値のとき，<dfn>有限型</dfn><span lang="en">(finite type)</span>と呼ぶ．</li>
 								<li>半正定値のとき，<dfn>アフィン型</dfn><span lang="en">(affine type)</span>と呼ぶ．</li>
-								<li>不定値かつ<span class="future-work">?????</span>のとき，<dfn>双曲型</dfn><span lang="en">(hyperbolic type)</span>と呼ぶ．</li>
+								<li>不定値かつ主小行列が有限型またはアフィン型のとき，<dfn>双曲型</dfn><span lang="en">(hyperbolic type)</span>と呼ぶ．</li>
 							</ul>
 						</li>
 					</ul>
@@ -21287,7 +21287,7 @@
 									</msub>
 								</mrow>
 							</mrow>
-						</math> とおく．
+						</math> とおき，まずは正有理数に関する仮定を外した条件の同値性を証明する：
 					</p>
 					<ul>
 						<li>
@@ -21516,10 +21516,257 @@
 										</mrow>
 									</mrow>
 								</math>
-								とすると，これは
+								を満たし，かつ<span class="future-work"> <math><mi>𝔤</mi></math> 上の<a href="#不変形式">不変形式</a>となるものが一意的に存在する</span>．ゆえに，<math><mi>𝜅</mi></math> は<a href="#標準不変形式">標準不変形式</a>となる．
 							</p>
 						</li>
+						<li><a href="#標準不変形式">標準不変形式</a>は自然に <math><mi>𝐸</mi></math> 上の標準形式を誘導する．</li>
+						<li>
+							<a href="#標準形式">標準形式の定義</a>より，
+							<math>
+								<mrow>
+									<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝑛</mi>
+							</math>
+							に対し，
+							<math display="block">
+								<msub>
+									<mi>𝑎</mi>
+									<mrow>
+										<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+									</mrow>
+								</msub>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝛼</mi><mi>𝑗</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mi>ℎ</mi><mi>𝑖</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mn>2</mn>
+									<mo>&it;</mo>
+									<mfrac>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝛼</mi><mi>𝑗</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</math>
+							より，
+							<math>
+								<mrow>
+									<mfrac>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mn>2</mn>
+									</mfrac>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+										</mrow>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝛼</mi><mi>𝑖</mi>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝛼</mi><mi>𝑗</mi>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mfrac>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝛼</mi><mi>𝑗</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑗</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mn>2</mn>
+									</mfrac>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝑗</mi><mo>,</mo><mi>𝑖</mi>
+										</mrow>
+									</msub>
+								</mrow>
+							</math>
+							となる．つまり，<math><mi>ℝ</mi><mo>∖</mo><mn>0</mn></math> 値の対角行列
+							<math>
+								<mi>𝐷</mi>
+								<mo>≔</mo>
+								<msub>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝛿</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<mfrac>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝛼</mi><mi>𝑖</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mi>𝛼</mi><mi>𝑖</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mn>2</mn>
+											</mfrac>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mrow>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑛</mi>
+									</mrow>
+								</msub>
+							</math>
+							が存在し，<math><mi>𝐷</mi><mo>&it;</mo><mi>𝐴</mi></math> は対称行列となる．
+						</li>
 					</ul>
+					<p>
+						<a href="#Cartan行列">Cartan行列</a>は <math><mi>ℤ</mi></math>-値なので，対称化する行列 <math><mi>𝐷</mi></math> は，<math><msub><mi>ℚ</mi><mrow><mo>&gt;</mo><mn>0</mn></mrow></msub></math>-値に取れる．このとき標準形式は，
+						<math>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<msub>
+										<mi>𝛼</mi><mi>𝑖</mi>
+									</msub>
+									<mo>,</mo>
+									<msub>
+										<mi>𝛼</mi><mi>𝑗</mi>
+									</msub>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>𝐷</mi><mi>𝑖</mi>
+								</msub>
+								<mo>&it;</mo>
+								<msub>
+									<mi>𝑎</mi>
+									<mrow>
+										<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+									</mrow>
+								</msub>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>𝐷</mi><mi>𝑗</mi>
+								</msub>
+								<mo>&it;</mo>
+								<msub>
+									<mi>𝑎</mi>
+									<mrow>
+										<mi>𝑗</mi><mo>,</mo><mi>𝑖</mi>
+									</mrow>
+								</msub>
+							</mrow>
+						</math> 
+						と定義していたから，
+						<math>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<msub>
+										<mi>𝛼</mi><mi>𝑖</mi>
+									</msub>
+									<mo>,</mo>
+									<msub>
+										<mi>𝛼</mi><mi>𝑖</mi>
+									</msub>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+							<mo>∈</mo>
+							<msub>
+								<mi>ℚ</mi>
+								<mrow>
+									<mo>&gt;</mo><mn>0</mn>
+								</mrow>
+							</msub>
+						</math>
+						となる．
+					</p>
 				</article>
 				<article id="対称化可能Cartan行列のKac-Moody代数の一意性" class="thm">
 					<h4>対称化可能Cartan行列のKac-Moody代数の一意性</h4>
@@ -23235,7 +23482,7 @@
 								<td><math><mn>1</mn></math></td>
 							</tr>
 						</tbody>
-						<caption>標数 <math><mn>0</mn></math> の体上の既約有限型Kac-Moody代数の一覧</caption>
+						<caption>（標数 <math><mn>0</mn></math> の体上の）既約有限型Kac-Moody代数の一覧</caption>
 					</table>
 				</section>
 			</section>
