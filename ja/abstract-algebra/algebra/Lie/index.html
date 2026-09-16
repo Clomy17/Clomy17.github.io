@@ -701,8 +701,9 @@
 						を定義すると，<math><mi>𝐴</mi></math>は交換子を<a href="#Lie代数">Lie括弧</a>とする<a href="#Lie代数">Lie代数</a>をなす．
 					</p>
 				</article>
-				<p>このとき，<a href="../index.html#準同型">結合代数準同型</a>は<a href="#準同型">Lie代数準同型</a>に写るから，<a href="../index.html#結合代数の圏">結合代数の圏</a>から<a href="#Lie代数の圏">Lie代数の圏</a>への<a href="../../../category/index.html#函手">函手</a>をなす．</p>
-				<p>特にこの函手は<a href="../../../category/index.html#随伴">左随伴</a>を持つ．これにより任意の<a href="#Lie代数">Lie代数</a>に対し，結合代数的な積を（同型を除いて）一意的に定めることができる：</p>
+				<p>このとき，<a href="../index.html#準同型">（結合）代数準同型</a>は<a href="#準同型">Lie代数準同型</a>に写るから，<a href="../index.html#結合代数の圏">結合代数の圏</a>から<a href="#Lie代数の圏">Lie代数の圏</a>への<a href="../../../category/index.html#函手">函手</a>をなす．</p>
+				<p>同様にして，<a href="../unital/index.html#準同型">単位的（結合）代数準同型</a>は<a href="#準同型">Lie代数準同型</a>に写るから，単位的結合代数の圏から<a href="#Lie代数の圏">Lie代数の圏</a>への<a href="../../../category/index.html#函手">函手</a>をなす．</p>
+				<p>特にこれらの函手は<a href="../../../category/index.html#随伴">左随伴</a>を持つ．これにより任意の<a href="#Lie代数">Lie代数</a>に対し，結合代数的な積を（同型を除いて）一意的に定めることができる：</p>
 				<article id="包絡代数" class="dfn">
 					<h4>包絡代数</h4>
 					<ul>
@@ -1211,7 +1212,7 @@
 							</math>
 						</li>
 					</ul>
-					<p>を与えると，以下は可換結合代数同型：</p>
+					<p>を与えると，以下は<a href="../index.html#準同型">（可換結合）代数同型</a>：</p>
 					<ul>
 						<li>
 							<math>
@@ -1235,7 +1236,7 @@
 							</math>
 						</li>
 						<li>
-							<math><mi>𝔤</mi></math> 上の対称代数
+							<math><mi>𝔤</mi></math> 上の<a href="../unital/index.html#対称代数">対称代数</a>
 							<math>
 								<mi>𝑆</mi>
 								<mo>&af;</mo>
@@ -1774,7 +1775,7 @@
 									<mi>𝑅</mi>
 								</mrow>
 								<mo>)</mo>
-							</math> は<a href="../unital/index.html#準三角双代数">三角</a><a href="../unital/index.html#Hopf代数">Hopf代数</a>．
+							</math> は<a href="../unital/index.html#準三角双代数">三角双代数</a>．
 						</li>
 					</ul>
 				</article>
@@ -22080,9 +22081,9 @@
 					<h4>Adoの定理</h4>
 					<ul>
 						<li>任意の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li>任意の<math><mi>𝕂</mi></math>上の有限次元<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+						<li>任意の <math><mi>𝕂</mi></math> 上の有限次元<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
 					</ul>
-					<p>に対し，<math><mi>𝔤</mi></math>はある有限次元<a href="#線型Lie代数">線型Lie代数</a>と<a href="#同型">同型</a>．同じことだが，<a href="#忠実表現">忠実</a>な<a href="#加群"> <math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> が存在する．</p>
+					<p>に対し，<math><mi>𝔤</mi></math> はある有限次元<a href="#線型Lie代数">線型Lie代数</a>と<a href="#同型">同型</a>．同じことだが，<a href="#忠実表現">忠実</a>な<a href="#加群"> <math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> が存在する．</p>
 				</article>
 			</section>
 			<section>
@@ -22447,125 +22448,112 @@
 				</article>
 			</section>
 			<section>
-				<h3>Engelの定理</h3>
-				<article id="冪零変換のウェイトベクトルの存在" class="lem">
-					<h4>冪零変換のウェイトベクトルの存在</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
-						<li>
-							<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>のみからなる<a href="#線型Lie代数">線型Lie代数</a>
-							<math>
-								<mi>𝔤</mi>
-								<mo>⊂</mo>
-								<mrow>
-									<mi>𝔤𝔩</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝑉</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-					<p>を与えると，以下が成り立つ：</p>
-					<ul>
-						<li>
-							<math><mi>𝔤</mi></math>の<a href="#部分Lie代数">真部分Lie代数</a>
-							<math><mi>𝔥</mi><mo>⊊</mo><mi>𝔤</mi></math>
-							に対し，その<a href="#正規化Lie代数">正規化Lie代数</a>は真に大きい：
-							<math>
-								<mi>𝔥</mi>
-								<mo>⊊</mo>
-								<mrow>
-									<msub>
-										<mi>𝑁</mi><mi>𝔤</mi>
-									</msub>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝔥</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<a href="#ウェイト">ウェイト</a> <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup></math> の<a href="#ウェイトベクトル">ウェイトベクトル</a> <math><mi>𝑣</mi><mo>∈</mo><mrow><mi>𝑉</mi><mo>∖</mo><mn>0</mn></mrow></math> を持つ：
-							<math display="block">
-								<mrow>
+				<h3>冪零・可解Lie代数</h3>
+				<section>
+					<h4>Engelの定理</h4>
+					<article id="冪零変換のウェイトベクトルの存在" class="lem">
+						<h5>冪零変換のウェイトベクトルの存在</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝕂</mi></math>上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
+							<li>
+								<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>のみからなる<a href="#線型Lie代数">線型Lie代数</a>
+								<math>
 									<mi>𝔤</mi>
-									<mo>&af;</mo>
+									<mo>⊂</mo>
 									<mrow>
-										<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+										<mi>𝔤𝔩</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+										</mrow>
 									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与えると，以下が成り立つ：</p>
+						<ul>
+							<li>
+								<math><mi>𝔤</mi></math>の<a href="#部分Lie代数">真部分Lie代数</a>
+								<math><mi>𝔥</mi><mo>⊊</mo><mi>𝔤</mi></math>
+								に対し，その<a href="#正規化Lie代数">正規化Lie代数</a>は真に大きい：
+								<math>
+									<mi>𝔥</mi>
+									<mo>⊊</mo>
+									<mrow>
+										<msub>
+											<mi>𝑁</mi><mi>𝔤</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<a href="#ウェイト">ウェイト</a> <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup></math> の<a href="#ウェイトベクトル">ウェイトベクトル</a> <math><mi>𝑣</mi><mo>∈</mo><mrow><mi>𝑉</mi><mo>∖</mo><mn>0</mn></mrow></math> を持つ：
+								<math display="block">
+									<mrow>
+										<mi>𝔤</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</math>
+							</li>
+						</ul>
+					</article>
+					<article class="proof">
+						<h5>証明</h5>
+						<p>
+							<math>
+								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+							</math>
+							に関する数学的帰納法により2つの主張を同時に示す．
+							<math>
+								<mrow>
+									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
 								</mrow>
 								<mo>=</mo>
 								<mn>0</mn>
 							</math>
-						</li>
-					</ul>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p>
-						<math>
-							<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-						</math>
-						に関する数学的帰納法により2つの主張を同時に示す．
-						<math>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-							</mrow>
-							<mo>=</mo>
-							<mn>0</mn>
-						</math>
-						のときは，
-						<math>
-							<mi>𝔤</mi>
-							<mo>=</mo>
-							<mrow>
-								<mo>{</mo><mn>0</mn><mo>}</mo>
-							</mrow>
-						</math>
-						より，いずれの主張も自明．
-					</p>
-					<p>
-						次に，
-						<math>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-							</mrow>
-							<mo>&gt;</mo>
-							<mn>0</mn>
-						</math>
-						とする．
-					</p>
-					<ul>
-						<li>
-							<p>
-								<math>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
-									</mrow>
-								</math>
-								に対する<a href="#内部微分">内部微分</a>
-								<math>
-									<mrow>
-										<mi>ad</mi>
+							のときは，
+							<math>
+								<mi>𝔤</mi>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
+								</mrow>
+							</math>
+							より，いずれの主張も自明．
+						</p>
+						<p>
+							次に，
+							<math>
+								<mrow>
+									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+								</mrow>
+								<mo>&gt;</mo>
+								<mn>0</mn>
+							</math>
+							とする．
+						</p>
+						<ul>
+							<li>
+								<p>
+									<math>
+										<mo>∀</mo>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+											<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
 										</mrow>
-									</mrow>
-									<mo>:</mo>
-									<mrow>
-										<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
-									</mrow>
-								</math>
-								は<a href="#内部微分は微分">線型変換であり</a>，<math><mi>𝔥</mi></math> は <math><mi>𝔤</mi></math> の<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a>なので，商線型空間 <math><mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi></math> の普遍性より，一意な<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>
-								<math>
-									<mover>
+									</math>
+									に対する<a href="#内部微分">内部微分</a>
+									<math>
 										<mrow>
 											<mi>ad</mi>
 											<mo>&af;</mo>
@@ -22573,83 +22561,70 @@
 												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
 											</mrow>
 										</mrow>
-										<mo>‾</mo>
-									</mover>
-									<mo>:</mo>
-									<mrow>
+										<mo>:</mo>
 										<mrow>
-											<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
+											<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
 										</mrow>
-										<mo>→</mo>
-										<mi>𝔤</mi>
-									</mrow>
-								</math>
-								を誘導する．さらに標準射影
-								<math>
-									<mi>𝑝</mi>
-									<mo>:</mo>
-									<mrow>
-										<mi>𝔤</mi>
-										<mo>→</mo>
-										<mrow>
-											<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
-										</mrow>
-									</mrow>
-								</math>
-								も合成すると，
-								<math><mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi></math>
-								上の<a href="../../module/linear-algebra/index.html#線型変換">線型変換</a>が得られる．つまり，自然な<a href="#準同型">Lie代数準同型</a>
-								<math>
-									<mover>
-										<mi>ad</mi><mo>‾</mo>
-									</mover>
-									<mo>:</mo>
-									<mrow>
-										<mi>𝔤</mi>
-										<mo>→</mo>
-										<mrow>
-											<mi>𝔤𝔩</mi>
-											<mo>&af;</mo>
+									</math>
+									は<a href="#内部微分は微分">線型変換であり</a>，<math><mi>𝔥</mi></math> は <math><mi>𝔤</mi></math> の<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a>なので，商線型空間 <math><mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi></math> の普遍性より，一意な<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>
+									<math>
+										<mover>
 											<mrow>
-												<mo>(</mo>
+												<mi>ad</mi>
+												<mo>&af;</mo>
 												<mrow>
-													<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
+													<mo>(</mo><mi>𝑥</mi><mo>)</mo>
 												</mrow>
-												<mo>)</mo>
 											</mrow>
-										</mrow>
-									</mrow>
-								</math>
-								が定まる．<math><mi>𝔥</mi></math>は<a href="#部分Lie代数">部分Lie代数</a>なので，<math><mi>𝔥</mi></math> への制限
-								<math>
-									<msub>
+											<mo>‾</mo>
+										</mover>
+										<mo>:</mo>
 										<mrow>
-											<mover>
-												<mi>ad</mi><mo>‾</mo>
-											</mover>
-											<mo>|</mo>
-										</mrow>
-										<mi>𝔥</mi>
-									</msub>
-									<mo>:</mo>
-									<mrow>
-										<mi>𝔥</mi>
-										<mo>→</mo>
-										<mrow>
-											<mi>𝔤𝔩</mi>
-											<mo>&af;</mo>
 											<mrow>
-												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
+											</mrow>
+											<mo>→</mo>
+											<mi>𝔤</mi>
+										</mrow>
+									</math>
+									を誘導する．さらに標準射影
+									<math>
+										<mi>𝑝</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>→</mo>
+											<mrow>
+												<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
 											</mrow>
 										</mrow>
-									</mrow>
-								</math>
-								も<a href="#準同型">Lie代数準同型</a>となる．
-							</p>
-							<p>
-								<a href="#内部微分の冪零性">一般に，冪零変換の内部微分は冪零変換</a>なので，
-								<math>
-									<mrow>
+									</math>
+									も合成すると，
+									<math><mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi></math>
+									上の<a href="../../module/linear-algebra/index.html#線型変換">線型変換</a>が得られる．つまり，自然な<a href="#準同型">Lie代数準同型</a>
+									<math>
+										<mover>
+											<mi>ad</mi><mo>‾</mo>
+										</mover>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>→</mo>
+											<mrow>
+												<mi>𝔤𝔩</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+									が定まる．<math><mi>𝔥</mi></math>は<a href="#部分Lie代数">部分Lie代数</a>なので，<math><mi>𝔥</mi></math> への制限
+									<math>
 										<msub>
 											<mrow>
 												<mover>
@@ -22659,65 +22634,24 @@
 											</mrow>
 											<mi>𝔥</mi>
 										</msub>
-										<mo>&af;</mo>
+										<mo>:</mo>
 										<mrow>
-											<mo>(</mo><mi>𝔥</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>⊂</mo>
-									<mrow>
-										<mi>𝔤𝔩</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
+											<mi>𝔥</mi>
+											<mo>→</mo>
 											<mrow>
-												<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</math>
-								は全て<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>となる．
-								<math>
-									<mrow>
-										<mi>dim</mi><mo>&af;</mo><mi>𝔥</mi>
-									</mrow>
-									<mo>&lt;</mo>
-									<mrow>
-										<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-									</mrow>
-								</math>
-								より，帰納法の仮定から，
-								<math>
-									<mo>∃</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑣</mi><mo>+</mo><mi>𝔥</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mrow>
-											<mrow>
-												<mo>(</mo>
+												<mi>𝔤𝔩</mi>
+												<mo>&af;</mo>
 												<mrow>
-													<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
 												</mrow>
-												<mo>)</mo>
-											</mrow>
-											<mo>∖</mo>
-											<mrow>
-												<mo>{</mo>
-												<mrow>
-													<mn>0</mn><mo>+</mo><mi>𝔥</mi>
-												</mrow>
-												<mo>}</mo>
 											</mrow>
 										</mrow>
-									</mrow>
-								</math>
-								に対し，
-								<math>
-									<mrow>
+									</math>
+									も<a href="#準同型">Lie代数準同型</a>となる．
+								</p>
+								<p>
+									<a href="#内部微分の冪零性">一般に，冪零変換の内部微分は冪零変換</a>なので，
+									<math>
 										<mrow>
 											<msub>
 												<mrow>
@@ -22733,73 +22667,158 @@
 												<mo>(</mo><mi>𝔥</mi><mo>)</mo>
 											</mrow>
 										</mrow>
+										<mo>⊂</mo>
+										<mrow>
+											<mi>𝔤𝔩</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+									は全て<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>となる．
+									<math>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝔥</mi>
+										</mrow>
+										<mo>&lt;</mo>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+										</mrow>
+									</math>
+									より，帰納法の仮定から，
+									<math>
+										<mo>∃</mo>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo>
 											<mrow>
 												<mi>𝑣</mi><mo>+</mo><mi>𝔥</mi>
 											</mrow>
-											<mo>)</mo>
+											<mo>∈</mo>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝔤</mi><mo>∕</mo><mi>𝔥</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>∖</mo>
+												<mrow>
+													<mo>{</mo>
+													<mrow>
+														<mn>0</mn><mo>+</mo><mi>𝔥</mi>
+													</mrow>
+													<mo>}</mo>
+												</mrow>
+											</mrow>
 										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mi>𝔥</mi>
-								</math>
-								となる．つまり，
-								<math>
-									<mo>∃</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑣</mi>
-										<mo>∈</mo>
+									</math>
+									に対し，
+									<math>
 										<mrow>
-											<mi>𝔤</mi><mo>∖</mo><mi>𝔥</mi>
+											<mrow>
+												<msub>
+													<mrow>
+														<mover>
+															<mi>ad</mi><mo>‾</mo>
+														</mover>
+														<mo>|</mo>
+													</mrow>
+													<mi>𝔥</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑣</mi><mo>+</mo><mi>𝔥</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
 										</mrow>
-									</mrow>
-								</math>
-								に対し，
-								<math>
-									<mrow>
+										<mo>=</mo>
+										<mi>𝔥</mi>
+									</math>
+									となる．つまり，
+									<math>
+										<mo>∃</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑣</mi>
+											<mo>∈</mo>
+											<mrow>
+												<mi>𝔤</mi><mo>∖</mo><mi>𝔥</mi>
+											</mrow>
+										</mrow>
+									</math>
+									に対し，
+									<math>
+										<mrow>
+											<mrow>
+												<msub>
+													<mrow>
+														<mi>ad</mi><mo>|</mo>
+													</mrow>
+													<mi>𝔥</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝔥</mi><mo>,</mo><mi>𝑣</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>⊂</mo>
+										<mi>𝔥</mi>
+									</math>
+									となる．よって，
+									<math>
+										<mi>𝔥</mi>
+										<mo>⊊</mo>
+										<mrow>
+											<mi>𝔥</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝕂</mi><mo>&it;</mo><mi>𝑣</mi>
+											</mrow>
+										</mrow>
+										<mo>⊂</mo>
 										<mrow>
 											<msub>
-												<mrow>
-													<mi>ad</mi><mo>|</mo>
-												</mrow>
-												<mi>𝔥</mi>
+												<mi>𝑁</mi><mi>𝔤</mi>
 											</msub>
 											<mo>&af;</mo>
 											<mrow>
 												<mo>(</mo><mi>𝔥</mi><mo>)</mo>
 											</mrow>
 										</mrow>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑣</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<mi>𝔥</mi><mo>,</mo><mi>𝑣</mi>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-									<mo>⊂</mo>
-									<mi>𝔥</mi>
-								</math>
-								となる．よって，
+									</math>
+									となる．
+								</p>
+							</li>
+							<li>
+								<math><mi>𝔤</mi></math>の極大<a href="#部分Lie代数">部分Lie代数</a> <math><mi>𝔥</mi><mo>⊊</mo><mi>𝔤</mi></math> をとると，
 								<math>
-									<mi>𝔥</mi>
-									<mo>⊊</mo>
-									<mrow>
-										<mi>𝔥</mi>
-										<mo>+</mo>
-										<mrow>
-											<mi>𝕂</mi><mo>&it;</mo><mi>𝑣</mi>
-										</mrow>
-									</mrow>
-									<mo>⊂</mo>
 									<mrow>
 										<msub>
 											<mi>𝑁</mi><mi>𝔤</mi>
@@ -22809,75 +22828,42 @@
 											<mo>(</mo><mi>𝔥</mi><mo>)</mo>
 										</mrow>
 									</mrow>
+									<mo>=</mo>
+									<mi>𝔤</mi>
 								</math>
-								となる．
-							</p>
-						</li>
-						<li>
-							<math><mi>𝔤</mi></math>の極大<a href="#部分Lie代数">部分Lie代数</a> <math><mi>𝔥</mi><mo>⊊</mo><mi>𝔤</mi></math> をとると，
-							<math>
-								<mrow>
-									<msub>
-										<mi>𝑁</mi><mi>𝔤</mi>
-									</msub>
+								となる．<a href="#正規化Lie代数">正規化Lie代数の定義</a>より， <math><mi>𝔥</mi></math> は <math><mi>𝔤</mi></math> の<a href="#イデアル">イデアル</a>となる．<a href="#極大イデアルの商Lie代数">極大部分Lie代数の商Lie代数は1次元Lie代数</a>なので，
+								<math>
+									<mo>∃</mo>
 									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝔥</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mi>𝔤</mi>
-							</math>
-							となる．<a href="#正規化Lie代数">正規化Lie代数の定義</a>より， <math><mi>𝔥</mi></math> は <math><mi>𝔤</mi></math> の<a href="#イデアル">イデアル</a>となる．<a href="#極大イデアルの商Lie代数">極大部分Lie代数の商Lie代数は1次元Lie代数</a>なので，
-							<math>
-								<mo>∃</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝑧</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>𝔤</mi><mo>∖</mo><mi>𝔥</mi>
-									</mrow>
-								</mrow>
-							</math>
-							に対して，
-							<math>
-								<mi>𝔤</mi>
-								<mo>=</mo>
-								<mrow>
-									<mi>𝔥</mi>
-									<mo>+</mo>
-									<mrow>
-										<mi>𝕂</mi><mo>&it;</mo><mi>𝑧</mi>
-									</mrow>
-								</mrow>
-							</math>
-							となる．<math><mi>𝔥</mi></math> の<a href="#ウェイト">ウェイト <math><mn>0</mn><mo>∈</mo><msup><mi>𝔥</mi><mo>∗</mo></msup></math> のウェイト空間</a>を <math><mi>𝑊</mi></math> とすると，帰納法の仮定より，<math><mi>𝑊</mi><mo>≠</mo><mrow><mo>{</mo><mn>0</mn><mo>}</mo></mrow></math> となる．さらに，<math><mi>𝔥</mi></math> は<a href="#イデアル">イデアル</a>なので，
-							<math display="block">
-								<mrow>
-									<mi>𝔥</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑧</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mi>𝑊</mi><mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>⊂</mo>
-								<mrow>
 									<mrow>
 										<mi>𝑧</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>𝔤</mi><mo>∖</mo><mi>𝔥</mi>
+										</mrow>
+									</mrow>
+								</math>
+								に対して，
+								<math>
+									<mi>𝔤</mi>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝔥</mi>
+										<mo>+</mo>
+										<mrow>
+											<mi>𝕂</mi><mo>&it;</mo><mi>𝑧</mi>
+										</mrow>
+									</mrow>
+								</math>
+								となる．<math><mi>𝔥</mi></math> の<a href="#ウェイト">ウェイト <math><mn>0</mn><mo>∈</mo><msup><mi>𝔥</mi><mo>∗</mo></msup></math> のウェイト空間</a>を <math><mi>𝑊</mi></math> とすると，帰納法の仮定より，<math><mi>𝑊</mi><mo>≠</mo><mrow><mo>{</mo><mn>0</mn><mo>}</mo></mrow></math> となる．さらに，<math><mi>𝔥</mi></math> は<a href="#イデアル">イデアル</a>なので，
+								<math display="block">
+									<mrow>
+										<mi>𝔥</mi>
 										<mo>&af;</mo>
 										<mrow>
 											<mo>(</mo>
 											<mrow>
-												<mi>𝔥</mi>
+												<mi>𝑧</mi>
 												<mo>&af;</mo>
 												<mrow>
 													<mo>(</mo><mi>𝑊</mi><mo>)</mo>
@@ -22886,62 +22872,181 @@
 											<mo>)</mo>
 										</mrow>
 									</mrow>
-									<mo>−</mo>
+									<mo>⊂</mo>
 									<mrow>
 										<mrow>
-											<mo>[</mo>
+											<mi>𝑧</mi>
+											<mo>&af;</mo>
 											<mrow>
-												<mi>𝑧</mi><mo>,</mo><mi>𝔥</mi>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝔥</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑊</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
 											</mrow>
-											<mo>]</mo>
 										</mrow>
+										<mo>−</mo>
+										<mrow>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝑧</mi><mo>,</mo><mi>𝔥</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑊</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>⊂</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+								</math>
+								となる．<math><mi>𝑊</mi></math>は有限次元なので，<a href="#ウェイト">ウェイト</a> <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup><mo>=</mo><msup><mrow><mo>(</mo><mrow><mi>𝔥</mi><mo>+</mo><mrow><mi>𝕂</mi><mo>&it;</mo><mi>𝑧</mi></mrow></mrow><mo>)</mo></mrow><mo>∗</mo></msup></math> の<a href="#ウェイト">ウェイトベクトル</a>
+								<math>
+									<mi>𝑣</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>𝑊</mi>
+										<mo>∖</mo>
+										<mrow>
+											<mo>{</mo><mn>0</mn><mo>}</mo>
+										</mrow>
+									</mrow>
+								</math>
+								が存在する．<a href="../../module/linear-algebra/index.html#冪零性の基本性質">冪零変換の固有値は <math><mn>0</mn></math> に限られる</a>ので，
+								<math>
+									<mrow>
+										<mi>𝑧</mi>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo><mi>𝑊</mi><mo>)</mo>
+											<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</math>
+								．
+							</li>
+						</ul>
+					</article>
+					<article id="冪零変換で安定化される旗" class="cor">
+						<h5>冪零変換で安定化される旗</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝕂</mi></math>上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
+							<li>
+								<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>のみからなる<a href="#線型Lie代数">線型Lie代数</a>
+								<math>
+									<mi>𝔤</mi>
+									<mo>⊂</mo>
+									<mrow>
+										<mi>𝔤𝔩</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>
+							を与えると，
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
+								</mrow>
+							</math>
+							<a href="../../module/linear-algebra/index.html#旗">で安定化される <math><mi>𝑉</mi></math> の旗</a>が存在する．
+						</p>
+					</article>
+					<article class="proof">
+						<h5>証明</h5>
+						<p><math><mi>dim</mi><mo>&af;</mo><mi>𝑉</mi></math> に関する数学的帰納法により示す．<math><mi>dim</mi><mo>&af;</mo><mi>𝑉</mi></math> のときは自明．</p>
+						<p>
+							次に，
+							<math>
+								<mrow>
+									<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+								</mrow>
+								<mo>&gt;</mo>
+								<mn>0</mn>
+							</math>
+							とする．このとき<a href="#冪零変換のウェイトベクトルの存在">ウェイト <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup></math> のウェイトベクトルが存在する</a>：
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<msub>
+											<mi>𝑣</mi><mn>1</mn>
+										</msub>
+										<mo>∈</mo>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>∖</mo>
+											<mrow>
+												<mo>{</mo><mn>0</mn><mo>}</mo>
+											</mrow>
 										</mrow>
 									</mrow>
 								</mrow>
-								<mo>⊂</mo>
+								<mo>,</mo>
 								<mrow>
-									<mo>{</mo><mn>0</mn><mo>}</mo>
-								</mrow>
-							</math>
-							となる．<math><mi>𝑊</mi></math>は有限次元なので，<a href="#ウェイト">ウェイト</a> <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup><mo>=</mo><msup><mrow><mo>(</mo><mrow><mi>𝔥</mi><mo>+</mo><mrow><mi>𝕂</mi><mo>&it;</mo><mi>𝑧</mi></mrow></mrow><mo>)</mo></mrow><mo>∗</mo></msup></math> の<a href="#ウェイト">ウェイトベクトル</a>
-							<math>
-								<mi>𝑣</mi>
-								<mo>∈</mo>
-								<mrow>
-									<mi>𝑊</mi>
-									<mo>∖</mo>
+									<mrow>
+										<mi>𝔤</mi>
+										<mo>&af;</mo>
+										<msub>
+											<mi>𝑣</mi><mn>1</mn>
+										</msub>
+									</mrow>
+									<mo>=</mo>
 									<mrow>
 										<mo>{</mo><mn>0</mn><mo>}</mo>
 									</mrow>
 								</mrow>
 							</math>
-							が存在する．<a href="../../module/linear-algebra/index.html#冪零性の基本性質">冪零変換の固有値は <math><mn>0</mn></math> に限られる</a>ので，
+							ここで，
 							<math>
 								<mrow>
-									<mi>𝑧</mi>
-									<mo>&af;</mo>
+									<msub>
+										<mi>𝑉</mi><mn>1</mn>
+									</msub>
+									<mo>≔</mo>
 									<mrow>
-										<mo>(</mo><mi>𝑣</mi><mo>)</mo>
+										<mi>𝕂</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑣</mi><mn>1</mn>
+										</msub>
 									</mrow>
 								</mrow>
-								<mo>=</mo>
-								<mn>0</mn>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑊</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mi>𝑉</mi>
+										<mo>∕</mo>
+										<msub>
+											<mi>𝑉</mi><mn>1</mn>
+										</msub>
+									</mrow>
+								</mrow>
 							</math>
-							．
-						</li>
-					</ul>
-				</article>
-				<article id="冪零変換で安定化される旗" class="cor">
-					<h4>冪零変換で安定化される旗</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
-						<li>
-							<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>のみからなる<a href="#線型Lie代数">線型Lie代数</a>
+							とする．各
 							<math>
+								<mi>𝑥</mi>
+								<mo>∈</mo>
 								<mi>𝔤</mi>
 								<mo>⊂</mo>
 								<mrow>
@@ -22952,247 +23057,125 @@
 									</mrow>
 								</mrow>
 							</math>
-						</li>
-					</ul>
-					<p>
-						を与えると，
-						<math>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
-							</mrow>
-						</math>
-						<a href="../../module/linear-algebra/index.html#旗">で安定化される <math><mi>𝑉</mi></math> の旗</a>が存在する．
-					</p>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p><math><mi>dim</mi><mo>&af;</mo><mi>𝑉</mi></math> に関する数学的帰納法により示す．<math><mi>dim</mi><mo>&af;</mo><mi>𝑉</mi></math> のときは自明．</p>
-					<p>
-						次に，
-						<math>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
-							</mrow>
-							<mo>&gt;</mo>
-							<mn>0</mn>
-						</math>
-						とする．このとき<a href="#冪零変換のウェイトベクトルの存在">ウェイト <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup></math> のウェイトベクトルが存在する</a>：
-						<math display="block">
-							<mrow>
-								<mo>∃</mo>
-								<mo>&af;</mo>
+							に対し，商線型空間の普遍性が誘導する自然な線型変換
+							<math>
+								<mover>
+									<mi>𝑥</mi><mo>‾</mo>
+								</mover>
+								<mo>∈</mo>
 								<mrow>
-									<msub>
-										<mi>𝑣</mi><mn>1</mn>
-									</msub>
-									<mo>∈</mo>
+									<mi>𝔤𝔩</mi>
+									<mo>&af;</mo>
 									<mrow>
-										<mi>𝔤</mi>
-										<mo>∖</mo>
+										<mo>(</mo>
 										<mrow>
-											<mo>{</mo><mn>0</mn><mo>}</mo>
+											<mi>𝑉</mi>
+											<mo>∕</mo>
+											<msub>
+												<mi>𝑉</mi><mn>1</mn>
+											</msub>
 										</mrow>
+										<mo>)</mo>
 									</mrow>
 								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
+							</math>
+							は<a href="../../module/linear-algebra/index.html#冪零変換">冪零</a>．<a href="#部分Lie代数">部分Lie代数</a>
+							<math>
+								<mover>
+									<mi>𝔤</mi><mo>‾</mo>
+								</mover>
+								<mo>⊂</mo>
 								<mrow>
-									<mi>𝔤</mi>
+									<mi>𝔤𝔩</mi>
 									<mo>&af;</mo>
-									<msub>
-										<mi>𝑣</mi><mn>1</mn>
-									</msub>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑉</mi>
+											<mo>∕</mo>
+											<msub>
+												<mi>𝑉</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+							に対し，
+							<math>
+								<mrow>
+									<mi>dim</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑉</mi>
+											<mo>∕</mo>
+											<msub>
+												<mi>𝑉</mi><mn>1</mn>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
 								</mrow>
 								<mo>=</mo>
 								<mrow>
-									<mo>{</mo><mn>0</mn><mo>}</mo>
-								</mrow>
-							</mrow>
-						</math>
-						ここで，
-						<math>
-							<mrow>
-								<msub>
-									<mi>𝑉</mi><mn>1</mn>
-								</msub>
-								<mo>≔</mo>
-								<mrow>
-									<mi>𝕂</mi>
-									<mo>&it;</mo>
-									<msub>
-										<mi>𝑣</mi><mn>1</mn>
-									</msub>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mi>𝑊</mi>
-								<mo>≔</mo>
-								<mrow>
-									<mi>𝑉</mi>
-									<mo>∕</mo>
-									<msub>
-										<mi>𝑉</mi><mn>1</mn>
-									</msub>
-								</mrow>
-							</mrow>
-						</math>
-						とする．各
-						<math>
-							<mi>𝑥</mi>
-							<mo>∈</mo>
-							<mi>𝔤</mi>
-							<mo>⊂</mo>
-							<mrow>
-								<mi>𝔤𝔩</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝑉</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						に対し，商線型空間の普遍性が誘導する自然な線型変換
-						<math>
-							<mover>
-								<mi>𝑥</mi><mo>‾</mo>
-							</mover>
-							<mo>∈</mo>
-							<mrow>
-								<mi>𝔤𝔩</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
 									<mrow>
-										<mi>𝑉</mi>
-										<mo>∕</mo>
-										<msub>
-											<mi>𝑉</mi><mn>1</mn>
-										</msub>
+										<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
 									</mrow>
-									<mo>)</mo>
+									<mo>−</mo>
+									<mn>1</mn>
 								</mrow>
-							</mrow>
-						</math>
-						は<a href="../../module/linear-algebra/index.html#冪零変換">冪零</a>．<a href="#部分Lie代数">部分Lie代数</a>
-						<math>
-							<mover>
-								<mi>𝔤</mi><mo>‾</mo>
-							</mover>
-							<mo>⊂</mo>
-							<mrow>
-								<mi>𝔤𝔩</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝑉</mi>
-										<mo>∕</mo>
-										<msub>
-											<mi>𝑉</mi><mn>1</mn>
-										</msub>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						に対し，
-						<math>
-							<mrow>
-								<mi>dim</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝑉</mi>
-										<mo>∕</mo>
-										<msub>
-											<mi>𝑉</mi><mn>1</mn>
-										</msub>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
+								<mo>&lt;</mo>
 								<mrow>
 									<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
 								</mrow>
-								<mo>−</mo>
-								<mn>1</mn>
-							</mrow>
-							<mo>&lt;</mo>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
-							</mrow>
-						</math>
-						なので，帰納法の仮定から，<a href="../../module/linear-algebra/index.html#旗"><math><mover><mi>𝔤</mi><mo>‾</mo></mover></math> で安定化される <math><mi>𝑊</mi></math> の旗</a>
-						<math display="block">
-							<mrow>
+							</math>
+							なので，帰納法の仮定から，<a href="../../module/linear-algebra/index.html#旗"><math><mover><mi>𝔤</mi><mo>‾</mo></mover></math> で安定化される <math><mi>𝑊</mi></math> の旗</a>
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑊</mi><mn>0</mn>
+									</msub>
+								</mrow>
+								<mo>⊂</mo>
+								<msub>
+									<mi>𝑊</mi><mn>1</mn>
+								</msub>
+								<mo>⊂</mo>
+								<mo>⋯</mo>
+								<mo>⊂</mo>
+								<mrow>
+									<msub>
+										<mi>𝑊</mi>
+										<mrow>
+											<mrow>
+												<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+											</mrow>
+											<mo>−</mo>
+											<mn>1</mn>
+										</mrow>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑉</mi>
+										<mo>∕</mo>
+										<msub>
+											<mi>𝑉</mi><mn>1</mn>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							が存在する．これより定まる<math><mi>𝑉</mi></math> の<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a>の増大列
+							<math display="block">
 								<mrow>
 									<mo>{</mo><mn>0</mn><mo>}</mo>
 								</mrow>
-								<mo>=</mo>
-								<msub>
-									<mi>𝑊</mi><mn>0</mn>
-								</msub>
-							</mrow>
-							<mo>⊂</mo>
-							<msub>
-								<mi>𝑊</mi><mn>1</mn>
-							</msub>
-							<mo>⊂</mo>
-							<mo>⋯</mo>
-							<mo>⊂</mo>
-							<mrow>
-								<msub>
-									<mi>𝑊</mi>
-									<mrow>
-										<mrow>
-											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
-										</mrow>
-										<mo>−</mo>
-										<mn>1</mn>
-									</mrow>
-								</msub>
-								<mo>=</mo>
-								<mrow>
-									<mi>𝑉</mi>
-									<mo>∕</mo>
-									<msub>
-										<mi>𝑉</mi><mn>1</mn>
-									</msub>
-								</mrow>
-							</mrow>
-						</math>
-						が存在する．これより定まる<math><mi>𝑉</mi></math> の<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a>の増大列
-						<math display="block">
-							<mrow>
-								<mo>{</mo><mn>0</mn><mo>}</mo>
-							</mrow>
-							<mo>⊂</mo>
-							<mrow>
-								<msup>
-									<mi>𝑝</mi>
-									<mrow>
-										<mo>−</mo><mn>1</mn>
-									</mrow>
-								</msup>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<msub>
-										<mi>𝑊</mi><mn>1</mn>
-									</msub>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>⊂</mo>
-							<mo>⋯</mo>
-							<mo>⊂</mo>
-							<mrow>
+								<mo>⊂</mo>
 								<mrow>
 									<msup>
 										<mi>𝑝</mi>
@@ -23204,7 +23187,53 @@
 									<mrow>
 										<mo>(</mo>
 										<msub>
-											<mi>𝑊</mi>
+											<mi>𝑊</mi><mn>1</mn>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⊂</mo>
+								<mo>⋯</mo>
+								<mo>⊂</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mi>𝑝</mi>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑊</mi>
+												<mrow>
+													<mrow>
+														<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+													</mrow>
+													<mo>−</mo>
+													<mn>1</mn>
+												</mrow>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑉</mi>
+								</mrow>
+							</math>
+							は<a href="../../module/linear-algebra/index.html#旗"> <math><mi>𝑉</mi></math> の旗</a>となる．さらに，
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑗</mi>
+									<mo>∈</mo>
+									<msub>
+										<mi>ℕ</mi>
+										<mrow>
+											<mo>≤</mo>
 											<mrow>
 												<mrow>
 													<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
@@ -23212,156 +23241,153 @@
 												<mo>−</mo>
 												<mn>1</mn>
 											</mrow>
-										</msub>
+										</mrow>
+									</msub>
+								</mrow>
+							</math>
+							に対し，
+							<math display="block">
+								<mrow>
+									<mi>𝑝</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝑝</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑊</mi><mi>𝑗</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
 										<mo>)</mo>
 									</mrow>
 								</mrow>
 								<mo>=</mo>
-								<mi>𝑉</mi>
-							</mrow>
-						</math>
-						は<a href="../../module/linear-algebra/index.html#旗"> <math><mi>𝑉</mi></math> の旗</a>となる．さらに，
-						<math>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mi>𝑗</mi>
-								<mo>∈</mo>
+								<mrow>
+									<mover>
+										<mi>𝑥</mi><mo>‾</mo>
+									</mover>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑝</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝑝</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑊</mi><mi>𝑗</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mover>
+										<mi>𝑥</mi><mo>‾</mo>
+									</mover>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mi>𝑊</mi><mi>𝑗</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⊂</mo>
 								<msub>
-									<mi>ℕ</mi>
-									<mrow>
-										<mo>≤</mo>
-										<mrow>
-											<mrow>
-												<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
-											</mrow>
-											<mo>−</mo>
-											<mn>1</mn>
-										</mrow>
-									</mrow>
+									<mi>𝑊</mi><mi>𝑗</mi>
 								</msub>
-							</mrow>
-						</math>
-						に対し，
-						<math display="block">
-							<mrow>
-								<mi>𝑝</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
+							</math>
+							より，<a href="../../module/linear-algebra/index.html#旗"><math><mi>𝔤</mi></math> で安定化される</a>．
+						</p>
+					</article>
+					<article id="冪零Lie代数のイデアルと中心の共通部分" class="cor">
+						<h5>冪零Lie代数のイデアルと中心の共通部分</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#冪零">冪零Lie代数</a> <math><mi>𝔤</mi></math></li>
+							<li><math><mi>𝔤</mi></math> の<a href="#イデアル">イデアル</a> <math><mi>𝔦</mi></math></li>
+							<li>
+								<math><mi>𝔤</mi></math>の<a href="#中心">中心</a>
+								<math>
+									<mi>𝑍</mi>
+									<mo>&af;</mo>
 									<mrow>
-										<mi>𝑥</mi>
-										<mo>&af;</mo>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与えると，以下は同値：</p>
+						<ul>
+							<li>
+								<math>
+									<mi>𝔦</mi>
+									<mo>≠</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mrow>
+										<mi>𝔦</mi>
+										<mo>∩</mo>
 										<mrow>
-											<mo>(</mo>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
 											<mrow>
-												<msup>
-													<mi>𝑝</mi>
-													<mrow>
-														<mo>−</mo><mn>1</mn>
-													</mrow>
-												</msup>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<msub>
-														<mi>𝑊</mi><mi>𝑗</mi>
-													</msub>
-													<mo>)</mo>
-												</mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
 											</mrow>
-											<mo>)</mo>
 										</mrow>
 									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mover>
-									<mi>𝑥</mi><mo>‾</mo>
-								</mover>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
+									<mo>≠</mo>
 									<mrow>
-										<mi>𝑝</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<msup>
-													<mi>𝑝</mi>
-													<mrow>
-														<mo>−</mo><mn>1</mn>
-													</mrow>
-												</msup>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<msub>
-														<mi>𝑊</mi><mi>𝑗</mi>
-													</msub>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
 									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mover>
-									<mi>𝑥</mi><mo>‾</mo>
-								</mover>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<msub>
-										<mi>𝑊</mi><mi>𝑗</mi>
-									</msub>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>⊂</mo>
-							<msub>
-								<mi>𝑊</mi><mi>𝑗</mi>
-							</msub>
-						</math>
-						より，<a href="../../module/linear-algebra/index.html#旗"><math><mi>𝔤</mi></math> で安定化される</a>．
-					</p>
-				</article>
-				<article id="冪零Lie代数のイデアルと中心の共通部分" class="cor">
-					<h4>冪零Lie代数のイデアルと中心の共通部分</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><a href="#冪零">冪零Lie代数</a> <math><mi>𝔤</mi></math></li>
-						<li><math><mi>𝔤</mi></math> の<a href="#イデアル">イデアル</a> <math><mi>𝔦</mi></math></li>
-						<li>
-							<math><mi>𝔤</mi></math>の<a href="#中心">中心</a>
-							<math>
-								<mi>𝑍</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-					<p>を与えると，以下は同値：</p>
-					<ul>
-						<li>
-							<math>
-								<mi>𝔦</mi>
-								<mo>≠</mo>
-								<mrow>
-									<mo>{</mo><mn>0</mn><mo>}</mo>
-								</mrow>
-							</math>
-						</li>
-						<li>
+								</math>
+							</li>
+						</ul>
+					</article>
+					<article class="proof">
+						<h5>証明</h5>
+						<p>
 							<math>
 								<mrow>
 									<mi>𝔦</mi>
@@ -23379,76 +23405,26 @@
 									<mo>{</mo><mn>0</mn><mo>}</mo>
 								</mrow>
 							</math>
-						</li>
-					</ul>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p>
-						<math>
-							<mrow>
+							のとき，
+							<math>
 								<mi>𝔦</mi>
-								<mo>∩</mo>
+								<mo>≠</mo>
 								<mrow>
-									<mi>𝑍</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-									</mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
 								</mrow>
-							</mrow>
-							<mo>≠</mo>
-							<mrow>
-								<mo>{</mo><mn>0</mn><mo>}</mo>
-							</mrow>
-						</math>
-						のとき，
-						<math>
-							<mi>𝔦</mi>
-							<mo>≠</mo>
-							<mrow>
-								<mo>{</mo><mn>0</mn><mo>}</mo>
-							</mrow>
-						</math>
-						となるのは自明．逆を示す．
-					</p>
-					<p>
-						<math>
-							<mi>𝔦</mi>
-							<mo>≠</mo>
-							<mrow>
-								<mo>{</mo><mn>0</mn><mo>}</mo>
-							</mrow>
-						</math>
-						のとき，<a href="#イデアル">イデアルの定義</a>より，
-						<math>
-							<mrow>
+							</math>
+							となるのは自明．逆を示す．
+						</p>
+						<p>
+							<math>
+								<mi>𝔦</mi>
+								<mo>≠</mo>
 								<mrow>
-									<mi>ad</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-									</mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
 								</mrow>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔦</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝔤</mi><mo>,</mo><mi>𝔦</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>⊂</mo>
-							<mi>𝔦</mi>
-						</math>
-						を満たす．よって，
-						<math>
-							<msub>
+							</math>
+							のとき，<a href="#イデアル">イデアルの定義</a>より，
+							<math>
 								<mrow>
 									<mrow>
 										<mi>ad</mi>
@@ -23457,66 +23433,24 @@
 											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
 										</mrow>
 									</mrow>
-									<mo>|</mo>
-								</mrow>
-								<mi>𝔦</mi>
-							</msub>
-							<mo>&af;</mo>
-							<mrow>
-								<mo>(</mo><mi>𝔦</mi><mo>)</mo>
-							</mrow>
-						</math>
-						は
-						<math>
-							<mi>𝔤𝔩</mi>
-							<mo>&af;</mo>
-							<mrow>
-								<mo>(</mo><mi>𝔦</mi><mo>)</mo>
-							</mrow>
-						</math>
-						の<a href="#部分Lie代数">部分Lie代数</a>と見做せる．<math><mi>𝔤</mi></math> が<a href="#冪零">冪零Lie代数</a>だったから，
-						<math>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
-							</mrow>
-						</math>
-						に対し，
-						<math>
-							<msub>
-								<mrow>
+									<mo>&af;</mo>
 									<mrow>
-										<mi>ad</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑥</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>|</mo>
-								</mrow>
-								<mi>𝔦</mi>
-							</msub>
-						</math>
-						は<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>となる．よって，<a href="#冪零変換のウェイトベクトルの存在"><math><mi>𝔤</mi></math> のウェイト <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup></math> のウェイトベクトルが存在</a>し，
-						<math display="block">
-							<mrow>
-								<mo>∃</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝑥</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>𝔦</mi>
-										<mo>∖</mo>
-										<mrow>
-											<mo>{</mo><mn>0</mn><mo>}</mo>
-										</mrow>
+										<mo>(</mo><mi>𝔦</mi><mo>)</mo>
 									</mrow>
 								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔦</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>⊂</mo>
+								<mi>𝔦</mi>
+							</math>
+							を満たす．よって，
+							<math>
 								<msub>
 									<mrow>
 										<mrow>
@@ -23532,48 +23466,142 @@
 								</msub>
 								<mo>&af;</mo>
 								<mrow>
-									<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									<mo>(</mo><mi>𝔦</mi><mo>)</mo>
 								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mo>[</mo>
+							</math>
+							は
+							<math>
+								<mi>𝔤𝔩</mi>
+								<mo>&af;</mo>
 								<mrow>
-									<mi>𝔤</mi><mo>,</mo><mi>𝑥</mi>
+									<mo>(</mo><mi>𝔦</mi><mo>)</mo>
 								</mrow>
-								<mo>]</mo>
-							</mrow>
-							<mo>=</mo>
-							<mn>0</mn>
-						</math>
-						となる．つまり，
-						<math>
-							<mi>𝑥</mi>
-							<mo>∈</mo>
-							<mrow>
-								<mi>𝔦</mi>
-								<mo>∩</mo>
+							</math>
+							の<a href="#部分Lie代数">部分Lie代数</a>と見做せる．<math><mi>𝔤</mi></math> が<a href="#冪零">冪零Lie代数</a>だったから，
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
 								<mrow>
-									<mi>𝑍</mi>
+									<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
+								</mrow>
+							</math>
+							に対し，
+							<math>
+								<msub>
+									<mrow>
+										<mrow>
+											<mi>ad</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>|</mo>
+									</mrow>
+									<mi>𝔦</mi>
+								</msub>
+							</math>
+							は<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>となる．よって，<a href="#冪零変換のウェイトベクトルの存在"><math><mi>𝔤</mi></math> のウェイト <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup></math> のウェイトベクトルが存在</a>し，
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
 									<mo>&af;</mo>
 									<mrow>
-										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										<mi>𝑥</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>𝔦</mi>
+											<mo>∖</mo>
+											<mrow>
+												<mo>{</mo><mn>0</mn><mo>}</mo>
+											</mrow>
+										</mrow>
 									</mrow>
 								</mrow>
-							</mrow>
-						</math>
-					</p>
-				</article>
-				<article id="Engelの定理" class="thm">
-					<h4>Engelの定理</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の有限次元<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
-					</ul>
-					<p>を与えると，以下は同値：</p>
-					<ul>
-						<li><math><mi>𝔤</mi></math>は<a href="#冪零">冪零Lie代数</a></li>
-						<li>
+								<mo>,</mo>
+								<mrow>
+									<msub>
+										<mrow>
+											<mrow>
+												<mi>ad</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mi>𝔦</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math>
+							となる．つまり，
+							<math>
+								<mi>𝑥</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>𝔦</mi>
+									<mo>∩</mo>
+									<mrow>
+										<mi>𝑍</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</p>
+					</article>
+					<article id="Engelの定理" class="thm">
+						<h5>Engelの定理</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝕂</mi></math>上の有限次元<a href="#Lie代数">Lie代数</a><math><mi>𝔤</mi></math></li>
+						</ul>
+						<p>を与えると，以下は同値：</p>
+						<ul>
+							<li><math><mi>𝔤</mi></math>は<a href="#冪零">冪零Lie代数</a></li>
+							<li>
+								<math>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
+									</mrow>
+								</math>
+								に対し，
+								<math>
+									<mrow>
+										<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mrow>
+										<mi>𝔤𝔩</mi><mo>&af;</mo><mi>𝔤</mi>
+									</mrow>
+								</math>
+								が<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>．
+							</li>
+						</ul>
+					</article>
+					<article class="proof">
+						<h5>証明</h5>
+						<p>
+							<a href="#冪零">冪零Lie代数の定義</a>より，<math><mi>𝔤</mi></math>が<a href="#冪零">冪零Lie代数</a>ならば，
 							<math>
 								<mo>∀</mo>
 								<mo>&af;</mo>
@@ -23591,57 +23619,68 @@
 									<mi>𝔤𝔩</mi><mo>&af;</mo><mi>𝔤</mi>
 								</mrow>
 							</math>
-							が<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>．
-						</li>
-					</ul>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p>
-						<a href="#冪零">冪零Lie代数の定義</a>より，<math><mi>𝔤</mi></math>が<a href="#冪零">冪零Lie代数</a>ならば，
-						<math>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
-							</mrow>
-						</math>
-						に対し，
-						<math>
-							<mrow>
-								<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
-							</mrow>
-							<mo>∈</mo>
-							<mrow>
-								<mi>𝔤𝔩</mi><mo>&af;</mo><mi>𝔤</mi>
-							</mrow>
-						</math>
-						が<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>となることは自明．逆を<math><mi>dim</mi><mo>&af;</mo><mi>𝔤</mi></math>に関する数学的帰納法により示す．
-						<math>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-							</mrow>
-							<mo>=</mo>
-							<mn>0</mn>
-						</math>
-						のときは自明．
-					</p>
-					<p>
-						次に，
-						<math>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-							</mrow>
-							<mo>&gt;</mo>
-							<mn>1</mn>
-						</math>
-						とする．このとき<a href="#冪零Lie代数のイデアルと中心の共通部分"> <math><mi>𝔤</mi></math> の中心 <math><mi>𝑍</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> は非零</a>．よって，
-						<math>
-							<mrow>
-								<mi>dim</mi>
+							が<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>となることは自明．逆を<math><mi>dim</mi><mo>&af;</mo><mi>𝔤</mi></math>に関する数学的帰納法により示す．
+							<math>
+								<mrow>
+									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math>
+							のときは自明．
+						</p>
+						<p>
+							次に，
+							<math>
+								<mrow>
+									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+								</mrow>
+								<mo>&gt;</mo>
+								<mn>1</mn>
+							</math>
+							とする．このとき<a href="#冪零Lie代数のイデアルと中心の共通部分"> <math><mi>𝔤</mi></math> の中心 <math><mi>𝑍</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> は非零</a>．よって，
+							<math>
+								<mrow>
+									<mi>dim</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>∕</mo>
+											<mrow>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&lt;</mo>
+								<mrow>
+									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+								</mrow>
+							</math>
+							であり，かつ
+							<math>
+								<mo>∀</mo>
 								<mo>&af;</mo>
 								<mrow>
-									<mo>(</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>+</mo>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>∈</mo>
 									<mrow>
 										<mi>𝔤</mi>
 										<mo>∕</mo>
@@ -23653,317 +23692,233 @@
 											</mrow>
 										</mrow>
 									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>&lt;</mo>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-							</mrow>
-						</math>
-						であり，かつ
-						<math>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑥</mi>
-									<mo>+</mo>
-									<mrow>
-										<mi>𝑍</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>∈</mo>
-								<mrow>
-									<mi>𝔤</mi>
-									<mo>∕</mo>
-									<mrow>
-										<mi>𝑍</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-						に対し，
-						<math>
-							<mi>ad</mi>
-							<mo>&af;</mo>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝑥</mi>
-									<mo>+</mo>
-									<mrow>
-										<mi>𝑍</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-						</math>
-						は<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>となるから，帰納法の仮定より，
-						<math>
-							<mi>𝔤</mi>
-							<mo>∕</mo>
-							<mrow>
-								<mi>𝑍</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-						</math>
-						は<a href="#冪零">冪零Lie代数</a>である．<a href="#冪零性の基本性質">一般に，このとき <math><mi>𝔤</mi></math> 自身も冪零Lie代数となる</a>．
-					</p>
-				</article>
-			</section>
-			<section>
-				<h3>Lieの定理</h3>
-				<article id="可解線型Lie代数のウェイトベクトルの存在" class="lem">
-					<h4>可解線型Lie代数のウェイトベクトルの存在</h4>
-					<ul>
-						<li>代数閉体<math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
-						<li>
-							<a href="#可解">可解</a>な<a href="#線型Lie代数">線型Lie代数</a>
-							<math>
-								<mi>𝔤</mi>
-								<mo>⊂</mo>
-								<mrow>
-									<mi>𝔤𝔩</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝑉</mi><mo>)</mo>
-									</mrow>
 								</mrow>
 							</math>
-						</li>
-					</ul>
-					<p>を与える．<math><mi>𝕂</mi></math>の標数について，</p>
-					<ul>
-						<li>
+							に対し，
 							<math>
-								<mrow>
-									<mi>char</mi><mo>&af;</mo><mi>𝕂</mi>
-								</mrow>
-								<mo>=</mo>
-								<mn>0</mn>
-							</math>
-						</li>
-						<li>
-							<math>
-								<mrow>
-									<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
-								</mrow>
-								<mo>&lt;</mo>
-								<mrow>
-									<mi>char</mi><mo>&af;</mo><mi>𝕂</mi>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-					<p>
-						のいずれかを満たすとき，<a href="#ウェイト">ウェイト</a>
-						<math>
-							<mi>𝜆</mi>
-							<mo>∈</mo>
-							<msup>
-								<mi>𝔤</mi><mo>∗</mo>
-							</msup>
-						</math>
-						の<a href="#ウェイト">ウェイトベクトル</a> <math><mi>𝑣</mi><mo>∈</mo><mrow><mi>𝑉</mi><mo>∖</mo><mn>0</mn></mrow></math> を持つ．
-					</p>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p>
-						<math>
-							<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-						</math>
-						に関する数学的帰納法により示す．
-						<math>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-							</mrow>
-							<mo>=</mo>
-							<mn>0</mn>
-						</math>
-						のときは，
-						<math>
-							<mi>𝔤</mi>
-							<mo>=</mo>
-							<mrow>
-								<mo>{</mo><mn>0</mn><mo>}</mo>
-							</mrow>
-						</math>
-						より自明．
-					</p>
-					<p>
-						次に，
-						<math>
-							<mrow>
-								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-							</mrow>
-							<mo>&gt;</mo>
-							<mn>0</mn>
-						</math>
-						とする．<a href="#可解">可解性の定義</a>より，<a href="#導来Lie代数">導来Lie代数</a>
-						<math>
-							<mo>[</mo>
-							<mrow>
-								<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-							</mrow>
-							<mo>]</mo>
-						</math>
-						の商Lie代数
-						<math>
-							<mi>𝔤</mi>
-							<mo>∕</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-						</math>
-						は非零．さらに，<a href="#導来Lie代数の基本性質">その商Lie代数<math><mi>𝔤</mi><mo>∕</mo><mrow><mo>[</mo><mrow><mi>𝔤</mi><mo>,</mo><mi>𝔤</mi></mrow><mo>]</mo></mrow></math>は可換</a>．よって，極大<a href="#イデアル">イデアル</a>
-						<math>
-							<mi>𝔦</mi>
-							<mo>⊃</mo>
-							<mrow>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-								</mrow>
-								<mo>]</mo>
-							</mrow>
-						</math>
-						を取ると，
-						<math>
-							<mo>∃</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mi>𝑧</mi>
-								<mo>∈</mo>
-								<mrow>
-									<mi>𝔤</mi><mo>∖</mo><mi>𝔦</mi>
-								</mrow>
-							</mrow>
-						</math>
-						に対し，
-						<math>
-							<mi>𝔤</mi>
-							<mo>=</mo>
-							<mrow>
-								<mi>𝔦</mi>
-								<mo>+</mo>
-								<mrow>
-									<mi>𝕂</mi><mo>&it;</mo><mi>𝑧</mi>
-								</mrow>
-							</mrow>
-						</math>
-						となる．
-					</p>
-					<p>
-						帰納法の仮定より，<a href="#ウェイト">ウェイト</a>
-						<math>
-							<mi>𝜆</mi>
-							<mo>∈</mo>
-							<msup>
-								<mi>𝔦</mi><mo>∗</mo>
-							</msup>
-						</math>
-						の<a href="#ウェイト">ウェイトベクトル</a> <math><mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi></math> が存在する．その<a href="#ウェイト">ウェイト空間</a>を <math><mi>𝑊</mi><mo>⊂</mo><mi>𝑉</mi></math> とすると，
-						<math>
-							<mrow>
-								<mi>𝑥</mi><mo>∈</mo><mi>𝔦</mi>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mi>𝑧</mi><mo>∈</mo><mi>𝔤</mi>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mi>𝑤</mi><mo>∈</mo><mi>𝑊</mi>
-							</mrow>
-						</math>
-						<math display="block">
-							<mrow>
-								<mi>𝑥</mi>
+								<mi>ad</mi>
 								<mo>&af;</mo>
 								<mrow>
 									<mo>(</mo>
 									<mrow>
-										<msup>
-											<mi>𝑧</mi><mi>𝑛</mi>
-										</msup>
-										<mo>&af;</mo>
+										<mi>𝑥</mi>
+										<mo>+</mo>
 										<mrow>
-											<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
 										</mrow>
 									</mrow>
 									<mo>)</mo>
 								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
+							</math>
+							は<a href="../../module/linear-algebra/index.html#冪零変換">冪零変換</a>となるから，帰納法の仮定より，
+							<math>
+								<mi>𝔤</mi>
+								<mo>∕</mo>
 								<mrow>
-									<mi>𝑧</mi>
+									<mi>𝑍</mi>
 									<mo>&af;</mo>
 									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑥</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<msup>
-														<mi>𝑧</mi>
-														<mrow>
-															<mi>𝑛</mi><mo>−</mo><mn>1</mn>
-														</mrow>
-													</msup>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo><mi>𝑤</mi><mo>)</mo>
-													</mrow>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>)</mo>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
 									</mrow>
 								</mrow>
-								<mo>−</mo>
-								<mrow>
+							</math>
+							は<a href="#冪零">冪零Lie代数</a>である．<a href="#冪零性の基本性質">一般に，このとき <math><mi>𝔤</mi></math> 自身も冪零Lie代数となる</a>．
+						</p>
+					</article>
+				</section>
+				<section>
+					<h4>Lieの定理</h4>
+					<article id="可解線型Lie代数のウェイトベクトルの存在" class="lem">
+						<h5>可解線型Lie代数のウェイトベクトルの存在</h5>
+						<ul>
+							<li>代数閉体 <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝕂</mi></math> 上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a> <math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
+							<li>
+								<a href="#可解">可解</a>な<a href="#線型Lie代数">線型Lie代数</a>
+								<math>
+									<mi>𝔤</mi>
+									<mo>⊂</mo>
 									<mrow>
-										<mo>[</mo>
+										<mi>𝔤𝔩</mi>
+										<mo>&af;</mo>
 										<mrow>
-											<mi>𝑧</mi><mo>,</mo><mi>𝑥</mi>
+											<mo>(</mo><mi>𝑉</mi><mo>)</mo>
 										</mrow>
-										<mo>]</mo>
 									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与える．<math><mi>𝕂</mi></math>の標数について，</p>
+						<ul>
+							<li>
+								<math>
+									<mrow>
+										<mi>char</mi><mo>&af;</mo><mi>𝕂</mi>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mrow>
+										<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+									</mrow>
+									<mo>&lt;</mo>
+									<mrow>
+										<mi>char</mi><mo>&af;</mo><mi>𝕂</mi>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>
+							のいずれかを満たすとき，<a href="#ウェイト">ウェイト</a>
+							<math>
+								<mi>𝜆</mi>
+								<mo>∈</mo>
+								<msup>
+									<mi>𝔤</mi><mo>∗</mo>
+								</msup>
+							</math>
+							の<a href="#ウェイト">ウェイトベクトル</a> <math><mi>𝑣</mi><mo>∈</mo><mrow><mi>𝑉</mi><mo>∖</mo><mn>0</mn></mrow></math> を持つ．
+						</p>
+					</article>
+					<article class="proof">
+						<h5>証明</h5>
+						<p>
+							<math>
+								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+							</math>
+							に関する数学的帰納法により示す．
+							<math>
+								<mrow>
+									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math>
+							のときは，
+							<math>
+								<mi>𝔤</mi>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
+								</mrow>
+							</math>
+							より自明．
+						</p>
+						<p>
+							次に，
+							<math>
+								<mrow>
+									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+								</mrow>
+								<mo>&gt;</mo>
+								<mn>0</mn>
+							</math>
+							とする．<a href="#可解">可解性の定義</a>より，<math><mi>𝔤</mi></math> の<a href="#導来Lie代数">導来Lie代数</a>は <math><mi>𝔤</mi></math> より真に小さい：
+							<math>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>⊊</mo>
+								<mi>𝔤</mi>
+							</math> ．よってその<a href="#商Lie代数">商Lie代数</a>
+							<math>
+								<mi>𝔤</mi>
+								<mo>∕</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</math>
+							は非<a href="#零Lie代数">零</a>．さらに，<a href="#導来Lie代数の基本性質">その商Lie代数<math><mi>𝔤</mi><mo>∕</mo><mrow><mo>[</mo><mrow><mi>𝔤</mi><mo>,</mo><mi>𝔤</mi></mrow><mo>]</mo></mrow></math>は可換</a>．よって，極大<a href="#イデアル">イデアル</a>
+							<math>
+								<mi>𝔦</mi>
+								<mo>⊃</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</math>
+							を取ると，
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑧</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mrow>
+											<mi>𝔤</mi><mo>∖</mo><mi>𝔦</mi>
+										</mrow>
+										<mo>≠</mo>
+										<mrow>
+											<mo>{</mo><mn>0</mn><mo>}</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							に対し，
+							<math>
+								<mi>𝔤</mi>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝔦</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝕂</mi><mo>&it;</mo><mi>𝑧</mi>
+									</mrow>
+								</mrow>
+							</math>
+							となる．
+						</p>
+						<p>
+							帰納法の仮定より，<a href="#ウェイト">ウェイト</a>
+							<math>
+								<mi>𝜆</mi>
+								<mo>∈</mo>
+								<msup>
+									<mi>𝔦</mi><mo>∗</mo>
+								</msup>
+							</math>
+							の<a href="#ウェイト">ウェイトベクトル</a> <math><mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi></math> が存在する．その<a href="#ウェイト">ウェイト空間</a>を <math><mi>𝑊</mi><mo>⊂</mo><mi>𝑉</mi></math> とすると，
+							<math>
+								<mrow>
+									<mi>𝑥</mi><mo>∈</mo><mi>𝔦</mi>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑧</mi><mo>∈</mo><mi>𝔤</mi>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑤</mi><mo>∈</mo><mi>𝑊</mi>
+								</mrow>
+							</math>
+							<math display="block">
+								<mrow>
+									<mi>𝑥</mi>
 									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo>
 										<mrow>
 											<msup>
-												<mi>𝑧</mi>
-												<mrow>
-													<mi>𝑛</mi><mo>−</mo><mn>1</mn>
-												</mrow>
+												<mi>𝑧</mi><mi>𝑛</mi>
 											</msup>
 											<mo>&af;</mo>
 											<mrow>
@@ -23973,175 +23928,233 @@
 										<mo>)</mo>
 									</mrow>
 								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<munderover intent=":largeop">
-									<mo>∑</mo>
-									<mrow>
-										<mi>𝑗</mi><mo>=</mo><mn>0</mn>
-									</mrow>
-									<mi>𝑛</mi>
-								</munderover>
+								<mo>=</mo>
 								<mrow>
 									<mrow>
-										<mo>(</mo>
-										<mtable intent=":matrix">
-											<mtr><mtd><mi>𝑛</mi></mtd></mtr>
-											<mtr><mtd><mi>𝑗</mi></mtd></mtr>
-										</mtable>
-										<mo>)</mo>
-									</mrow>
-									<mrow>
-										<mi>𝜆</mi>
+										<mi>𝑧</mi>
 										<mo>&af;</mo>
 										<mrow>
 											<mo>(</mo>
 											<mrow>
-												<msup>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mo>−</mo>
-															<mrow>
-																<mi>ad</mi><mo>&af;</mo><mi>𝑧</mi>
-															</mrow>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-													<mi>𝑗</mi>
-												</msup>
+												<mi>𝑥</mi>
 												<mo>&af;</mo>
 												<mrow>
-													<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+													<mo>(</mo>
+													<mrow>
+														<msup>
+															<mi>𝑧</mi>
+															<mrow>
+																<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+															</mrow>
+														</msup>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
 												</mrow>
 											</mrow>
 											<mo>)</mo>
 										</mrow>
 									</mrow>
-									<mo>&it;</mo>
+									<mo>−</mo>
 									<mrow>
-										<msup>
-											<mi>𝑧</mi>
+										<mrow>
+											<mo>[</mo>
 											<mrow>
-												<mi>𝑛</mi><mo>−</mo><mi>𝑗</mi>
+												<mi>𝑧</mi><mo>,</mo><mi>𝑥</mi>
 											</mrow>
-										</msup>
+											<mo>]</mo>
+										</mrow>
 										<mo>&af;</mo>
 										<mrow>
-											<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+											<mo>(</mo>
+											<mrow>
+												<msup>
+													<mi>𝑧</mi>
+													<mrow>
+														<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+													</mrow>
+												</msup>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
 										</mrow>
 									</mrow>
 								</mrow>
-							</mrow>
-						</math>
-						<math>
-							<mrow>
-								<mi>tr</mi>
-								<mo>&af;</mo>
+								<mo>=</mo>
 								<mrow>
-									<mo>(</mo>
-									<msub>
+									<munderover intent=":largeop">
+										<mo>∑</mo>
 										<mrow>
-											<mi>𝑥</mi><mo>|</mo>
+											<mi>𝑗</mi><mo>=</mo><mn>0</mn>
 										</mrow>
-										<mi>𝑈</mi>
-									</msub>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mo>(</mo>
+										<mi>𝑛</mi>
+									</munderover>
 									<mrow>
-										<mi>dim</mi><mo>&af;</mo><mi>𝑈</mi>
+										<mrow>
+											<mo>(</mo>
+											<mtable intent=":matrix">
+												<mtr><mtd><mi>𝑛</mi></mtd></mtr>
+												<mtr><mtd><mi>𝑗</mi></mtd></mtr>
+											</mtable>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mo>−</mo>
+																<mrow>
+																	<mi>ad</mi><mo>&af;</mo><mi>𝑧</mi>
+																</mrow>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mi>𝑗</mi>
+													</msup>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<msup>
+												<mi>𝑧</mi>
+												<mrow>
+													<mi>𝑛</mi><mo>−</mo><mi>𝑗</mi>
+												</mrow>
+											</msup>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
 									</mrow>
-									<mo>)</mo>
 								</mrow>
-								<mo>&it;</mo>
+							</math>
+							<math>
 								<mrow>
-									<mi>𝜆</mi>
+									<mi>tr</mi>
 									<mo>&af;</mo>
 									<mrow>
-										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+										<mo>(</mo>
+										<msub>
+											<mrow>
+												<mi>𝑥</mi><mo>|</mo>
+											</mrow>
+											<mi>𝑈</mi>
+										</msub>
+										<mo>)</mo>
 									</mrow>
 								</mrow>
-							</mrow>
-						</math>
-					</p>
-					<p>
-						<math><mi>𝑊</mi></math>は有限次元なので，<a href="#ウェイト">ウェイト</a> <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup><mo>=</mo><msup><mrow><mo>(</mo><mrow><mi>𝔥</mi><mo>+</mo><mrow><mi>𝕂</mi><mo>&it;</mo><mi>𝑧</mi></mrow></mrow><mo>)</mo></mrow><mo>∗</mo></msup></math> の<a href="#ウェイト">ウェイトベクトル</a>
-						<math>
-							<mi>𝑣</mi>
-							<mo>∈</mo>
-							<mrow>
-								<mi>𝑉</mi>
-								<mo>∖</mo>
+								<mo>=</mo>
 								<mrow>
-									<mo>{</mo><mn>0</mn><mo>}</mo>
-								</mrow>
-							</mrow>
-						</math>
-						が存在する．
-					</p>
-				</article>
-				<article id="Lieの定理" class="thm">
-					<h4>Lieの定理</h4>
-					<ul>
-						<li>標数<math><mn>0</mn></math>の代数閉体<math><mi>𝕂</mi></math></li>
-						<li><a href="#可解">可解</a>な有限次元<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a><math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
-					</ul>
-					<p>
-						を与えると，
-						<math>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
-							</mrow>
-						</math>
-						<a href="../../module/linear-algebra/index.html#旗">で安定化される <math><mi>𝑉</mi></math> の旗</a>
-						<math display="block">
-							<mrow>
-								<msub>
-									<mi>𝑉</mi><mn>0</mn>
-								</msub>
-								<mo>≔</mo>
-								<mrow>
-									<mo>{</mo><mn>0</mn><mo>}</mo>
-								</mrow>
-							</mrow>
-							<mo>⊂</mo>
-							<msub>
-								<mi>𝑉</mi><mn>1</mn>
-							</msub>
-							<mo>⊂</mo>
-							<mo>⋯</mo>
-							<mo>⊂</mo>
-							<mrow>
-								<msub>
-									<mi>𝑉</mi>
 									<mrow>
-										<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+										<mo>(</mo>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝑈</mi>
+										</mrow>
+										<mo>)</mo>
 									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>𝜆</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</p>
+						<p>
+							<math><mi>𝑊</mi></math>は有限次元なので，<a href="#ウェイト">ウェイト</a> <math><mn>0</mn><mo>∈</mo><msup><mi>𝔤</mi><mo>∗</mo></msup><mo>=</mo><msup><mrow><mo>(</mo><mrow><mi>𝔥</mi><mo>+</mo><mrow><mi>𝕂</mi><mo>&it;</mo><mi>𝑧</mi></mrow></mrow><mo>)</mo></mrow><mo>∗</mo></msup></math> の<a href="#ウェイト">ウェイトベクトル</a>
+							<math>
+								<mi>𝑣</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>𝑉</mi>
+									<mo>∖</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+								</mrow>
+							</math>
+							が存在する．
+						</p>
+					</article>
+					<article id="Lieの定理" class="thm">
+						<h5>Lieの定理</h5>
+						<ul>
+							<li>標数<math><mn>0</mn></math>の代数閉体<math><mi>𝕂</mi></math></li>
+							<li><a href="#可解">可解</a>な有限次元<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+							<li><math><mi>𝕂</mi></math> 上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a> <math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
+						</ul>
+						<p>
+							を与えると，
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
+								</mrow>
+							</math>
+							<a href="../../module/linear-algebra/index.html#旗">で安定化される <math><mi>𝑉</mi></math> の旗</a>
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝑉</mi><mn>0</mn>
+									</msub>
+									<mo>≔</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+								</mrow>
+								<mo>⊂</mo>
+								<msub>
+									<mi>𝑉</mi><mn>1</mn>
 								</msub>
-								<mo>≔</mo>
-								<mi>𝑉</mi>
-							</mrow>
-						</math>
-						が存在する．
-					</p>
-				</article>
-				<article id="根基の存在" class="thm">
-					<h4>根基の存在</h4>
-					<p>任意の有限次元<a href="#Lie代数">Lie代数</a>は，<a href="#根基">根基</a>を持つ．</p>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p><a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math> が有限次元のとき，全ての<a href="#可解イデアル">可解イデアル</a>の和<math><mi>𝔯</mi></math>は高々有限次元なので，<a href="#同型定理">同型定理</a>より<a href="#イデアル">イデアル</a>となる．<a href="#可解性の基本性質">可解イデアルの和は可解</a>だったから，<math><mi>𝔯</mi></math>は<a href="#可解">可解</a>．任意の<a href="#可解イデアル">可解イデアル</a> <math><mi>𝔦</mi></math> に対し，<math><mi>𝔦</mi><mo>+</mo><mi>𝔯</mi><mo>=</mo><mi>𝔯</mi></math>より，<math><mi>𝔯</mi></math>は<a href="#根基">根基</a>となる．</p>
-				</article>
+								<mo>⊂</mo>
+								<mo>⋯</mo>
+								<mo>⊂</mo>
+								<mrow>
+									<msub>
+										<mi>𝑉</mi>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+										</mrow>
+									</msub>
+									<mo>≔</mo>
+									<mi>𝑉</mi>
+								</mrow>
+							</math>
+							が存在する．
+						</p>
+					</article>
+					<article id="根基の存在" class="thm">
+						<h5>根基の存在</h5>
+						<p>任意の有限次元<a href="#Lie代数">Lie代数</a>は，<a href="#根基">根基</a>を持つ．</p>
+					</article>
+					<article class="proof">
+						<h5>証明</h5>
+						<p><a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math> が有限次元のとき，全ての<a href="#可解">可解イデアル</a>の和 <math><mi>𝔯</mi></math> は高々有限次元なので，<a href="#同型定理">同型定理</a>より<a href="#イデアル">イデアル</a>となる．<a href="#可解性の基本性質">可解イデアルの和は可解</a>だったから，<math><mi>𝔯</mi></math>は<a href="#可解">可解</a>．任意の<a href="#可解">可解イデアル</a> <math><mi>𝔦</mi></math> に対し，<math><mi>𝔦</mi><mo>+</mo><mi>𝔯</mi><mo>=</mo><mi>𝔯</mi></math>より，<math><mi>𝔯</mi></math>は<a href="#根基">根基</a>となる．</p>
+					</article>
+				</section>
 			</section>
 			<section>
 				<h3>包絡代数の中心</h3>
@@ -24490,14 +24503,23 @@
 				<h3>無中心半単純Lie代数</h3>
 				<article id="有限次元無中心半単純Lie代数" class="thm">
 					<h4>有限次元無中心半単純Lie代数</h4>
-					<p>標数<math><mn>0</mn></math>の（代数閉?）<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math>を与えると，<math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math>に対し，以下は同値：</p>
+					<p>標数<math><mn>0</mn></math>の（代数閉?）<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math>を与えると，<math><mi>𝕂</mi></math> 上の有限次元<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math> に対し，以下は同値：</p>
 					<ul>
-						<li><math><mi>𝔤</mi></math> は<a href="#中心">無中心</a>かつ<a href="#無中心単純Lie代数">半単純</a></li>
+						<li><math><mi>𝔤</mi></math> は<a href="#無中心単純Lie代数">無中心半単純Lie代数</a></li>
 						<li><math><mi>𝔤</mi></math> の<a href="#Killing形式">Killing形式</a>が非退化</li>
-						<li><math><mi>𝔤</mi></math> の<a href="#可換">可換イデアル</a>は<math><mo>{</mo><mn>0</mn><mo>}</mo></math>のみ</li>
-						<li><math><mi>𝔤</mi></math> の<a href="#中心">中心</a>は<math><mo>{</mo><mn>0</mn><mo>}</mo></math></li>
-						<li><math><mi>𝔤</mi></math> の<a href="#可解">可解イデアル</a>は<math><mo>{</mo><mn>0</mn><mo>}</mo></math>のみ</li>
-						<li><math><mi>𝔤</mi></math> の<a href="#根基">根基</a>は <math><mn>0</mn></math></li>
+						<li><math><mi>𝔤</mi></math> の<a href="#可換">可換イデアル</a>は<a href="#零Lie代数">零</a>のみ</li>
+						<li><math><mi>𝔤</mi></math> の<a href="#中心">中心</a>は<a href="#零Lie代数">零</a></li>
+						<li><math><mi>𝔤</mi></math> の<a href="#可解">可解イデアル</a>は<a href="#零Lie代数">零</a>のみ</li>
+						<li><math><mi>𝔤</mi></math> の<a href="#根基">根基</a>は<a href="#零Lie代数">零</a></li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li><a href="#無中心単純Lie代数">無中心半単純Lie代数</a>⇒<a href="#中心">無中心</a>⇔「<a href="#可換">可換イデアル</a>は<a href="#零Lie代数">零</a>のみ」は明らか．</li>
+						<li><a href="#中心">無中心</a>であること，「<a href="#可換">可換イデアル</a>は<a href="#零Lie代数">零</a>のみ」であること，「<a href="#可解">可解イデアル</a>は<a href="#零Lie代数">零</a>のみ」であること，は同値．
+						</li>
+						<li><a href="#根基の存在">任意の有限次元Lie代数は根基を持つ</a>ので，<a href="#根基">根基</a>が<a href="#零Lie代数">零</a>であることと，<a href="#可解">可解イデアル</a>が<a href="#零Lie代数">零</a>のみであることは同値．</li>
 					</ul>
 				</article>
 				<article id="有限次元無中心単純Lie代数の分類" class="thm">
@@ -25260,7 +25282,7 @@
 							</math>
 						</li>
 						<li>
-							<math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> に対する <dfn><math><msub><mi>𝐸</mi><mi>𝑙</mi></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐸</mi><mi>𝑙</mi></msub></math>)</span>とは，以下で定義される<a href="#Cartan行列">Cartan行列</a>のこと：
+							<math><mi>𝑙</mi><mo>∈</mo><msub><mi>ℕ</mi><mrow><mo>≥</mo><mn>3</mn></mrow></msub></math> に対する <dfn><math><msub><mi>𝐸</mi><mi>𝑙</mi></msub></math> 型Cartan行列</dfn><span lang="en">(type <math><msub><mi>𝐸</mi><mi>𝑙</mi></msub></math>)</span>とは，以下で定義される<a href="#Cartan行列">Cartan行列</a>のこと：
 							<math display="block">
 								<mi>𝐴</mi>
 								<mo>≔</mo>
@@ -25518,10 +25540,6 @@
 									<mo>=</mo>
 									<msub>
 										<mi>𝐷</mi><mn>1</mn>
-									</msub>
-									<mo>=</mo>
-									<msub>
-										<mi>𝐸</mi><mn>1</mn>
 									</msub>
 								</math>
 							</li>
