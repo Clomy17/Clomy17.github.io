@@ -94,6 +94,9 @@ ol[role="list"] {
 a {
 	text-decoration: none;
 }
+a:hover {
+	text-decoration: underline;
+}
 
 :any-link {
 	color: #88a3e8;
