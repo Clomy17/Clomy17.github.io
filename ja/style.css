@@ -116,7 +116,7 @@ picture {
 
 table {
 	border-collapse: collapse;
-	text-indent: center;
+	/*text-indent: center;*/
 	margin: 0 auto;
 }
 

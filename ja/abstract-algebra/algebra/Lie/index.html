@@ -4497,7 +4497,7 @@
 							<a href="../../module/linear-algebra/index.html#冪零">冪零性の定義</a>よりこれは実際は有限和となり，<math><mi>𝔤</mi></math> 上の<a href="#自己同型">自己同型</a>をなす．
 						</li>
 						<li><math><mi>𝔤</mi></math> の内部自己同型の集合を <math><mi>inn</mi><mo>&af;</mo><mi>𝔤</mi></math> と表すと，これは<math><mi>aut</mi><mo>&af;</mo><mi>𝔤</mi></math> の<a href="../../magma/group/index.html#正規部分群">正規部分群</a>となる</li>
-						<li><a href="../../magma/group/index.html#商群">商群</a> <math><mrow><mi>out</mi><mo>&af;</mo><mi>𝔤</mi></mrow><mo>≔</mo><mrow><mi>aut</mi><mo>&af;</mo><mi>𝔤</mi></mrow><mo>∕</mo><mrow><mi>inn</mi><mo>&af;</mo><mi>𝔤</mi></mrow></math> の元のことを<dfn>外部自己同型</dfn><span lang="en">(outer automorphism)</span></li>
+						<li><a href="../../magma/group/index.html#商群">商群</a> <math><mrow><mi>out</mi><mo>&af;</mo><mi>𝔤</mi></mrow><mo>≔</mo><mrow><mi>aut</mi><mo>&af;</mo><mi>𝔤</mi></mrow><mo>∕</mo><mrow><mi>inn</mi><mo>&af;</mo><mi>𝔤</mi></mrow></math> の元のことを<dfn>外部自己同型</dfn><span lang="en">(outer automorphism)</span>と呼ぶ．</li>
 					</ul>
 				</article>
 				<article class="proof">
@@ -6421,8 +6421,7 @@
 						<h5>条件の同値性の証明</h5>
 						<p>最初の2条件の同値性は明らか．さらにこのとき，最後の条件を満たすのも明らか．逆を示す．</p>
 						<p>
-							<math><mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi></math> を任意に一つとり，<math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝜇</mi><mo>∈</mo><mi>𝕂</mi></math> の 非零な<a href="../../module/linear-algebra/index.html#固有ベクトル">固有ベクトル</a> <math><mi>𝑦</mi><mo>∈</mo><mrow><mi>𝔤</mi><mo>∖</mo><mrow><mo>{</mo><mn>0</mn><mo>}</mo></mrow></mrow></math> を任意に一つとる．仮定より有限集合 <math><mi>𝛬</mi><mo>⊆</mo><mi>𝕂</mi></math> が存在し，<math><mi>𝑥</mi></math> は <math><mi>ad</mi><mo>&af;</mo><mi>𝑦</mi></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有ベクトル</a>の有限和で書ける：
-							<math>
+							<math><mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi></math> を任意に一つとり，<math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝜇</mi><mo>∈</mo><mi>𝕂</mi></math> の 非零な<a href="../../module/linear-algebra/index.html#固有ベクトル">固有ベクトル</a> <math><mi>𝑦</mi><mo>∈</mo><mrow><mi>𝔤</mi><mo>∖</mo><mrow><mo>{</mo><mn>0</mn><mo>}</mo></mrow></mrow></math> を任意に一つとる．仮定より有限集合 <math><mi>𝛬</mi><mo>⊆</mo><mi>𝕂</mi></math> が存在し，<math><mi>𝑥</mi></math> は <math><mi>ad</mi><mo>&af;</mo><mi>𝑦</mi></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有ベクトル</a>の有限和で <math>
 								<mi>𝑥</mi>
 								<mo>=</mo>
 								<mrow>
@@ -6438,7 +6437,7 @@
 									</msub>
 								</mrow>
 							</math>
-							すると，
+							と書ける．すると，
 							<math display="block">
 								<mrow>
 									<mo>−</mo>
@@ -6476,7 +6475,7 @@
 							</math>
 							となるから，
 							<math display="block">
-								<mo>0</mo>
+								<mn>0</mn>
 								<mo>=</mo>
 								<mrow>
 									<mrow>
@@ -7206,18 +7205,18 @@
 						<p><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えると，以下が成り立つ：</p>
 						<ul>
 							<li>
-								<math><mi>𝕂</mi></math>上の<a href="#単純Lie代数">単純Lie代数</a> <math><mi>𝔤</mi></math>に対し，以下は同値：
+								<math><mi>𝕂</mi></math> 上の<a href="#単純Lie代数">単純Lie代数</a> <math><mi>𝔤</mi></math> に対し，以下は同値：
 								<ul>
-									<li><math><mi>𝔤</mi></math>は<a href="#中心">無中心</a></li>
-									<li><math><mi>𝔤</mi></math>は<a href="#可換">可換</a></li>
-									<li><math><mi>𝔤</mi></math>は<a href="#1次元Lie代数">1次元</a>でない</li>
+									<li><math><mi>𝔤</mi></math> は<a href="#中心">無中心</a></li>
+									<li><math><mi>𝔤</mi></math> は<a href="#可換">可換</a></li>
+									<li><math><mi>𝔤</mi></math> は<a href="#1次元Lie代数">1次元</a>でない</li>
 								</ul>
 							</li>
 							<li>
-								<math><mi>𝕂</mi></math>上の<a href="#単純Lie代数">半単純Lie代数</a> <math><mi>𝔤</mi></math>に対し，以下は同値：
+								<math><mi>𝕂</mi></math> 上の<a href="#単純Lie代数">半単純Lie代数</a> <math><mi>𝔤</mi></math> に対し，以下は同値：
 								<ul>
-									<li><math><mi>𝔤</mi></math>は<a href="#中心">無中心</a></li>
-									<li><math><mi>𝔤</mi></math>は<a href="#中心">無中心</a>な<a href="#単純Lie代数">単純Lie代数</a>の<a href="#直和">直和</a>．</li>
+									<li><math><mi>𝔤</mi></math> は<a href="#中心">無中心</a></li>
+									<li><math><mi>𝔤</mi></math> は<a href="#中心">無中心</a>な<a href="#単純Lie代数">単純Lie代数</a>の<a href="#直和">直和</a>．</li>
 								</ul>
 							</li>
 						</ul>
@@ -11933,6 +11932,42 @@
 									</mrow>
 								</mrow>
 							</math>
+							特に，
+							<math>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<msub>
+										<mn>1</mn><mi>𝕂</mi>
+									</msub>
+								</mrow>
+								<mo>≠</mo>
+								<mn>0</mn>
+							</math> ならば，
+							<math>
+								<mi>𝑓</mi>
+								<mo>=</mo>
+								<mrow>
+									<mfrac>
+										<mrow>
+											<mi>tr</mi><mo>&af;</mo><mi>𝑓</mi>
+										</mrow>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+										</mrow>
+									</mfrac>
+									<mo>&it;</mo>
+									<msub>
+										<mi>id</mi><mi>𝑉</mi>
+									</msub>
+								</mrow>
+							</math>
 						</p>
 					</article>
 					<article class="proof">
@@ -12007,7 +12042,20 @@
 										</msub>
 									</mrow>
 								</mrow>
-							</math>
+							</math> ．両辺の跡を取ると，
+							<math>
+								<mrow>
+									<mi>tr</mi><mo>&af;</mo><mi>𝑓</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝜆</mi>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+									</mrow>
+								</mrow>
+							</math> となる．
 						</p>
 					</article>
 					<article id="代数閉体上の可換Lie代数上の有限次元単純表現" class="thm">
@@ -14702,7 +14750,98 @@
 				<article class="proof">
 					<h4>証明</h4>
 					<ul>
-						<li><math><mi>𝕂</mi></math> 上<a href="../../module/linear-algebra/index.html#固有ベクトル">対角化可能</a>ならば，<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>，つまり <math><mi>𝕂</mi></math> の代数閉包上<a href="../../module/linear-algebra/index.html#固有ベクトル">対角化可能</a>となるのは明らか．また，<a href="#可換">可換Lie代数</a>の定義の一つより，<a href="#トーラス">分裂トーラス</a>は<a href="#可換">可換</a>．</li>
+						<li><math><mi>𝕂</mi></math> 上<a href="../../module/linear-algebra/index.html#固有ベクトル">対角化可能</a>ならば，<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>，つまり <math><mi>𝕂</mi></math> の代数閉包上<a href="../../module/linear-algebra/index.html#固有ベクトル">対角化可能</a>となるのは明らか．<math><mi>𝔥</mi></math> を <math><mi>𝔤</mi></math> の<a href="#分裂トーラス">分裂トーラス</a> とすると，<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝔥</mi>
+								</mrow>
+							</math> に対し，有限集合 <math><mi>𝛬</mi><mo>⊆</mo><mi>𝕂</mi></math> が存在し，<math><mi>𝑦</mi></math> は <math>
+								<msub>
+									<mi>ad</mi><mi>𝔤</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mi>𝑥</mi>
+							</math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有ベクトル</a>の有限和で <math>
+								<mi>𝑦</mi>
+								<mo>=</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∑</mo>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</munder>
+									<mo>&af;</mo>
+									<msub>
+										<mi>𝑣</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+							</math> と書ける．ところで，<math><mi>𝔥</mi></math> は<a href="#部分Lie代数">部分Lie代数</a>だから，<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑛</mi>
+									<mo>∈</mo>
+									<msub>
+										<mi>ℕ</mi><mn>0</mn>
+									</msub>
+								</mrow>
+							</math> に対し，<math>
+								<mrow>
+									<mrow>
+										<msup>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mi>𝑛</mi>
+										</msup>
+										<mo>&af;</mo>
+										<mi>𝑦</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+											</mrow>
+										</munder>
+										<mo>&af;</mo>
+										<mrow>
+											<msup>
+												<mi>𝜆</mi><mi>𝑛</mi>
+											</msup>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑣</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝔥</mi>
+							</math> を満たすから，<math>
+								<msub>
+									<mi>𝑣</mi><mi>𝜆</mi>
+								</msub>
+								<mo>∈</mo>
+								<mi>𝔥</mi>
+							</math> となる．つまり，<math>
+								<msub>
+									<mi>ad</mi><mi>𝔥</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mi>𝑥</mi>
+							</math> は<a href="../../module/linear-algebra/index.html#固有ベクトル">対角化可能</a>．<a href="#可換">可換Lie代数の定義</a>の一つより，<a href="#トーラス">分裂トーラス</a>は<a href="#可換">可換</a>．</li>
 						<li><a href="../../module/linear-algebra/index.html#半単純">半単純変換の定義（の一つ）</a>より明らか．</li>
 					</ul>
 				</article>
@@ -15445,23 +15584,54 @@
 								</mrow>
 								<mo>=</mo>
 								<mrow>
-									<msub>
-										<mrow>
-											<mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow>
-										</mrow>
-										<mrow>
-											<mo>−</mo><mn>2</mn>
-										</mrow>
-									</msub>
-									<mo>⊕</mo>
-									<mi>𝔥</mi>
-									<mo>⊕</mo>
-									<msub>
-										<mrow>
-											<mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow>
-										</mrow>
-										<mn>2</mn>
-									</msub>
+									<mo>{</mo>
+									<mtable intent=":piecewise">
+										<mtr>
+											<mtd>
+												<msub>
+													<mrow>
+														<mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow>
+													</mrow>
+													<mrow>
+														<mo>−</mo><mn>2</mn>
+													</mrow>
+												</msub>
+												<mo>⊕</mo>
+												<mi>𝔥</mi>
+												<mo>⊕</mo>
+												<msub>
+													<mrow>
+														<mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow>
+													</mrow>
+													<mn>2</mn>
+												</msub>
+											</mtd>
+											<mtd>
+												<mrow>
+													<mi>char</mi><mo>&af;</mo><mi>𝕂</mi>
+												</mrow>
+												<mo>≠</mo>
+												<mn>2</mn>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<msub>
+													<mrow>
+														<mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow>
+													</mrow>
+													<mn>0</mn>
+												</msub>
+											</mtd>
+											<mtd>
+												<mrow>
+													<mi>char</mi><mo>&af;</mo><mi>𝕂</mi>
+												</mrow>
+												<mo>=</mo>
+												<mn>2</mn>
+											</mtd>
+										</mtr>
+									</mtable>
 								</mrow>
 							</math>
 							ただし，
@@ -15535,7 +15705,7 @@
 							を線型に拡張したものとして定義すると，<math><mi>𝜃</mi></math> は<a href="#自己同型">Lie代数自己同型</a>
 						</li>
 						<li>
-							<math>
+							<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑛</mi><mo>∈</mo><msub><mi>ℕ</mi><mn>0</mn></msub></mrow></math>に対し，<math>
 								<mrow>
 									<msub>
 										<mi>ℎ</mi><mi>+</mi>
@@ -15680,6 +15850,36 @@
 										</msub>
 									</mrow>
 								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<mi>ℎ</mi><mn>2</mn>
+									</msup>
+									<mo>+</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>+</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>−</mi>
+										</msub>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>−</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>+</mi>
+										</msub>
+									</mrow>
+								</mrow>
 								<mo>∈</mo>
 								<mrow>
 									<mi>𝑍</mi>
@@ -15701,6 +15901,981 @@
 									</mrow>
 								</mrow>
 							</math>
+						</li>
+						<li><math><mi>𝕂</mi></math> の標数が <math><mn>2</mn></math> でないならば，<math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math> は<a href="#単純Lie代数">単純Lie代数</a>．</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>ほぼ自明な計算</li>
+						<li>明らか．</li>
+						<li>
+							<math>
+								<mtable intent=":system-of-equations">
+									<mtr>
+										<mtd>
+											<mo>[</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>ℎ</mi><mi>±</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<mo>[</mo>
+											<mrow>
+												<mrow>
+													<mo>−</mo><mi>ℎ</mi>
+												</mrow>
+												<mo>,</mo>
+												<msub>
+													<mi>ℎ</mi><mi>∓</mi>
+												</msub>
+											</mrow>
+											<mo>]</mo>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<mo>±</mo>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<msub>
+													<mi>ℎ</mi><mi>∓</mi>
+												</msub>
+											</mrow>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<mi>ℎ</mi>
+														<mo>,</mo>
+														<msub>
+															<mi>ℎ</mi><mi>±</mi>
+														</msub>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd>
+											<mo>[</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>ℎ</mi><mi>+</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>ℎ</mi><mi>−</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<mo>[</mo>
+											<mrow>
+												<msub>
+													<mi>ℎ</mi><mi>−</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>ℎ</mi><mi>+</mi>
+												</msub>
+											</mrow>
+											<mo>]</mo>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<mo>−</mo><mi>ℎ</mi>
+										</mtd>
+										<mtd><mo>=</mo></mtd>
+										<mtd>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<msub>
+															<mi>ℎ</mi><mi>+</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mi>ℎ</mi><mi>−</mi>
+														</msub>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mtd>
+									</mtr>
+								</mtable>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝑛</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></math> は明らか．
+							<math display="block">
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<msub>
+											<mi>ℎ</mi><mi>+</mi>
+										</msub>
+										<mo>,</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mi>𝑛</mi>
+										</msup>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>ℎ</mi>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<msub>
+											<mi>ℎ</mi><mi>−</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<msub>
+													<mi>ℎ</mi><mi>+</mi>
+												</msub>
+												<mo>,</mo>
+												<msup>
+													<msub>
+														<mi>ℎ</mi><mi>−</mi>
+													</msub>
+													<mrow>
+														<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+													</mrow>
+												</msup>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>ℎ</mi>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<msub>
+											<mi>ℎ</mi><mi>−</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>ℎ</mi><mo>+</mo><mi>𝑛</mi><mo>−</mo><mn>2</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>2</mn>
+											</mrow>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>ℎ</mi>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>ℎ</mi><mo>+</mo><mn>2</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>2</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>&it;</mo>
+										<mi>ℎ</mi>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mi>𝑛</mi>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>ℎ</mi><mo>+</mo><mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>−</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+								</mrow>
+							</math> より最初の等号は一般に成り立つ．また，
+							<math display="block">
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>ℎ</mi>
+										<mo>,</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>±</mi>
+											</msub>
+											<mi>𝑛</mi>
+										</msup>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∑</mo>
+										<mrow>
+											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+										</mrow>
+									</munder>
+									<mo>&af;</mo>
+									<mrow>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>±</mi>
+											</msub>
+											<mi>𝑖</mi>
+										</msup>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>ℎ</mi>
+												<mo>,</mo>
+												<msub>
+													<mi>ℎ</mi><mi>±</mi>
+												</msub>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>±</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn><mo>−</mo><mi>𝑖</mi>
+											</mrow>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>±</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<msup>
+												<msub>
+													<mi>ℎ</mi><mi>±</mi>
+												</msub>
+												<mrow>
+													<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>±</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msup>
+											<msub>
+												<mi>ℎ</mi><mi>±</mi>
+											</msub>
+											<mrow>
+												<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+								</mrow>
+							</math> より後ろの等号も成り立つ．
+						</li>
+						<li>
+							<math display="block">
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>ℎ</mi>
+										<mo>,</mo>
+										<msub>
+											<mi>𝛺</mi><mn>2</mn>
+										</msub>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mn>4</mn>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>ℎ</mi>
+												<mo>&it;</mo>
+												<msub>
+													<mi>ℎ</mi><mi>−</mi>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>ℎ</mi><mi>+</mi>
+												</msub>
+											</mrow>
+											<mo>−</mo>
+											<mrow>
+												<msub>
+													<mi>ℎ</mi><mi>−</mi>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>ℎ</mi><mi>+</mi>
+												</msub>
+												<mo>&it;</mo>
+												<mi>ℎ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mn>4</mn>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<msub>
+															<mi>ℎ</mi><mi>−</mi>
+														</msub>
+														<mo>&it;</mo>
+														<mi>ℎ</mi>
+														<mo>&it;</mo>
+														<msub>
+															<mi>ℎ</mi><mi>+</mi>
+														</msub>
+													</mrow>
+													<mo>−</mo>
+													<mrow>
+														<mn>2</mn>
+														<mo>&it;</mo>
+														<msub>
+															<mi>ℎ</mi><mi>−</mi>
+														</msub>
+														<mo>&it;</mo>
+														<msub>
+															<mi>ℎ</mi><mi>+</mi>
+														</msub>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>−</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<msub>
+															<mi>ℎ</mi><mi>−</mi>
+														</msub>
+														<mo>&it;</mo>
+														<mi>ℎ</mi>
+														<mo>&it;</mo>
+														<msub>
+															<mi>ℎ</mi><mi>+</mi>
+														</msub>
+													</mrow>
+													<mo>−</mo>
+													<mrow>
+														<mn>2</mn>
+														<mo>&it;</mo>
+														<msub>
+															<mi>ℎ</mi><mi>−</mi>
+														</msub>
+														<mo>&it;</mo>
+														<msub>
+															<mi>ℎ</mi><mi>+</mi>
+														</msub>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math>
+							<math display="block">
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<msub>
+											<mi>ℎ</mi><mi>±</mi>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝛺</mi><mn>2</mn>
+										</msub>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<msub>
+															<mi>ℎ</mi><mi>±</mi>
+														</msub>
+														<mo>,</mo>
+														<mi>ℎ</mi>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+												<mo>&it;</mo>
+												<mi>ℎ</mi>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>ℎ</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<msub>
+															<mi>ℎ</mi><mi>±</mi>
+														</msub>
+														<mo>,</mo>
+														<mi>ℎ</mi>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mrow>
+											<msub>
+												<mi>ℎ</mi><mi>±</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<msub>
+														<mi>ℎ</mi><mi>±</mi>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>ℎ</mi><mi>∓</mi>
+													</msub>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mrow>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<msub>
+														<mi>ℎ</mi><mi>±</mi>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>ℎ</mi><mi>∓</mi>
+													</msub>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<msub>
+												<mi>ℎ</mi><mi>±</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mo>−</mo>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mrow>
+													<msub>
+														<mi>ℎ</mi><mi>+</mi>
+													</msub>
+													<mo>&it;</mo>
+													<mi>ℎ</mi>
+												</mrow>
+											</mrow>
+											<mo>−</mo>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mrow>
+													<mi>ℎ</mi>
+													<mo>&it;</mo>
+													<msub>
+														<mi>ℎ</mi><mi>+</mi>
+													</msub>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mrow>
+											<msub>
+												<mi>ℎ</mi><mi>±</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mi>ℎ</mi>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mrow>
+											<mi>ℎ</mi>
+											<mo>&it;</mo>
+											<msub>
+												<mi>ℎ</mi><mi>±</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mi>𝔰𝔩</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mn>2</mn><mo>,</mo><mi>𝕂</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math> の任意の非<a href="#零Lie代数">零</a>な<a href="#イデアル">イデアル</a> <math><mi>𝔦</mi></math> を一つとる．<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑥</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>𝔦</mi>
+										<mo>∖</mo>
+										<mrow>
+											<mo>{</mo><mn>0</mn><mo>}</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> に対し，<a href="../../module/linear-algebra/index.html#基底">基底</a>で展開する：
+							<math display="block">
+								<mi>𝑥</mi>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>+</mi>
+										</msub>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑏</mi><mo>&it;</mo><mi>ℎ</mi>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑐</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>−</mi>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							<math><mi>𝑥</mi><mo>≠</mo><mn>0</mn></math> より，<math><mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑐</mi></math> のいずれかは <math><mn>0</mn></math> でない．ゆえに，よって<a href="#イデアル">イデアル</a>の定義より，
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>+</mi>
+										</msub>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<msub>
+													<mi>ℎ</mi><mi>+</mi>
+												</msub>
+												<mo>,</mo>
+												<mi>𝑥</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>−</mo>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mi>𝑏</mi>
+												<mo>&it;</mo>
+												<msub>
+													<mi>ℎ</mi><mi>+</mi>
+												</msub>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<msub>
+													<mi>ℎ</mi><mi>+</mi>
+												</msub>
+												<mo>,</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<msub>
+															<mi>ℎ</mi><mi>+</mi>
+														</msub>
+														<mo>,</mo>
+														<mi>𝑥</mi>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mo>−</mo>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mi>𝑐</mi>
+												<mo>&it;</mo>
+												<msub>
+													<mi>ℎ</mi><mi>+</mi>
+												</msub>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝔦</mi>
+							</math>
+							の少なくともいずれかが成り立つ． <math><mi>𝕂</mi></math> の標数は奇素数または <math><mn>0</mn></math> なので，<math>
+								<msub>
+									<mi>ℎ</mi><mi>+</mi>
+								</msub>
+								<mo>∈</mo>
+								<mi>𝔦</mi>
+							</math> となる．ゆえに，
+							<math>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>−</mo>
+											<mrow>
+												<mfrac>
+													<mn>1</mn><mn>2</mn>
+												</mfrac>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<msub>
+															<mi>ℎ</mi><mi>−</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mi>ℎ</mi><mo>+</mo>
+														</msub>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mi>ℎ</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mfrac>
+												<mn>1</mn><mn>2</mn>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<msub>
+														<mi>ℎ</mi><mi>−</mi>
+													</msub>
+													<mo>,</mo>
+													<mi>ℎ</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<msub>
+											<mi>ℎ</mi><mi>−</mi>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝔦</mi>
+							</math> となるから，<math><mi>𝔦</mi><mo>=</mo><mi>𝔤</mi></math>．よって<a href="#単純Lie代数">単純Lie代数</a>となる．
 						</li>
 					</ul>
 				</article>
@@ -21005,7 +22180,7 @@
 						<li><math><mi>𝔥</mi></math>の双対線型空間 <math><msup><mi>𝔥</mi><mo>∗</mo></msup></math></li>
 					</ul>
 					<p>を与える．</p>
-					<p><dfn><abbr>BGG</abbr>（Bernstein-Gel’fand-Gel’fand）圏</dfn><span lang="en">(<abbr>BGG</abbr> category)</span> <math><mi>𝒪</mi></math> とは，<a href="#../../../../category/index.html圏">対象</a> を <a href="#加群"><math><mi>𝔤</mi></math>-加群</a> であって，以下の全てを満たすものの集まりとする，<math><mi>𝔤</mi></math>-加群の圏の<a href="../../../../category/index.html#部分圏">充満部分圏</a>のこと：</p>
+					<p><dfn><abbr>BGG</abbr>（Bernstein-Gel’fand-Gel’fand）圏</dfn><span lang="en">(<abbr>BGG</abbr> category)</span> <math><mi>𝒪</mi></math> とは，<a href="../../../../category/index.html#圏">対象</a> を <a href="#加群"><math><mi>𝔤</mi></math>-加群</a> であって，以下の全てを満たすものの集まりとする，<math><mi>𝔤</mi></math>-加群の圏の<a href="../../../../category/index.html#部分圏">充満部分圏</a>のこと：</p>
 					<ul>
 						<li><math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math>に関して有限生成</li>
 						<li><math><mi>𝔥</mi></math> に関する<a href="#ウェイト">ウェイト加群</a></li>
@@ -31581,7 +32756,7 @@
 							</math>
 						</li>
 						<li>
-							<math><mi>𝔤</mi></math> の基底 <math>
+							<math><mi>𝔤</mi></math> の<a href="../../module/linear-algebra/index.html#基底">基底</a> <math>
 								<msub>
 									<mrow>
 										<mo>{</mo>
@@ -31747,7 +32922,7 @@
 								</math>
 							</li>
 							<li>
-								<math><mi>𝔤</mi></math> の基底 <math>
+								<math><mi>𝔤</mi></math> の<a href="../../module/linear-algebra/index.html#基底">基底</a> <math>
 									<msub>
 										<mrow>
 											<mo>{</mo>
@@ -31809,30 +32984,51 @@
 									</mrow>
 									<mo>=</mo>
 									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
 										<msub>
 											<mn>1</mn><mi>𝕂</mi>
 										</msub>
-										<mo>&it;</mo>
-										<mrow>
-											<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-										</mrow>
 									</mrow>
 								</math>
 							</li>
 							<li>
-								<math><mi>𝕂</mi></math> が代数閉体で，<math><mi>𝜌</mi></math> が<a href="#忠実表現">忠実</a>かつ<a href="#単純加群">単純</a> で，<math>
+								<math><mi>𝕂</mi></math> が代数閉体で，<math><mi>𝜌</mi></math> が<a href="#忠実表現">忠実</a>かつ<a href="#単純加群">単純</a>ならば，<math><mo>∃</mo><mo>&af;</mo><mrow><mi>𝜆</mi><mo>∈</mo><mi>𝕂</mi></mrow></math> に対し，<math><mi>𝜌</mi></math> の誘導する<a href="#前Casimir元">前Casimir元</a> <math><msub><mi>𝑐</mi><mi>𝜌</mi></msub></math> は
+								<math>
+									<msub>
+										<mi>𝑐</mi><mi>𝜌</mi>
+									</msub>
+									<mo>=</mo>
 									<mrow>
+										<mi>𝜆</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>id</mi><mi>𝑉</mi>
+										</msub>
+									</mrow>
+								</math> と書ける．特に <math>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
 										<msub>
 											<mn>1</mn><mi>𝕂</mi>
 										</msub>
-										<mo>&it;</mo>
-										<mrow>
-											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
-										</mrow>
 									</mrow>
 									<mo>≠</mo>
 									<mn>0</mn>
-								</math> ならば，<math><mi>𝜌</mi></math> の誘導する<a href="#前Casimir元">前Casimir元</a> <math><msub><mi>𝑐</mi><mi>𝜌</mi></msub></math> は，<math>
+								</math> ならば，<math>
 									<msub>
 										<mi>𝑐</mi><mi>𝜌</mi>
 									</msub>
@@ -32454,61 +33650,21 @@
 								</mrow>
 								<mo>=</mo>
 								<mrow>
-									<msub>
-										<mn>1</mn><mi>𝕂</mi>
-									</msub>
-									<mo>&it;</mo>
 									<mrow>
-										<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<a href="#代数閉体上のSchurの補題">代数閉体上のSchurの補題</a>より，<math>
-								<msub>
-									<mi>𝑐</mi><mi>𝜌</mi>
-								</msub>
-								<mo>=</mo>
-								<mrow>
-									<mfrac>
-										<mrow>
-											<mi>tr</mi>
-											<mo>&af;</mo>
-											<msub>
-												<mi>𝑐</mi><mi>𝜌</mi>
-											</msub>
-										</mrow>
-										<mrow>
-											<mi>tr</mi>
-											<mo>&af;</mo>
-											<msub>
-												<mi>id</mi><mi>𝑉</mi>
-											</msub>
-										</mrow>
-									</mfrac>
-									<mo>&it;</mo>
-									<msub>
-										<mi>id</mi><mi>𝑉</mi>
-									</msub>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mfrac>
+										<mo>(</mo>
 										<mrow>
 											<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
 										</mrow>
-										<mrow>
-											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
-										</mrow>
-									</mfrac>
+										<mo>)</mo>
+									</mrow>
 									<mo>&it;</mo>
 									<msub>
-										<mi>id</mi><mi>𝑉</mi>
+										<mn>1</mn><mi>𝕂</mi>
 									</msub>
 								</mrow>
-							</math> となる．
+							</math>
 						</li>
+						<li><a href="#代数閉体上のSchurの補題">代数閉体上のSchurの補題</a>より明らか．</li>
 					</ul>
 				</article>
 				<article id="忠実加群の根跡形式の根基は可解" class="lem">
@@ -32832,7 +33988,7 @@
 								</msub>
 							</mrow>
 						</math>
-						<math><mi>𝜌</mi></math> の<a href="#跡形式">跡形式</a> を <math>
+						<math><mi>𝜌</mi></math> の<a href="#跡形式">跡形式</a>を <math>
 							<mi>𝛽</mi>
 							<mo>:</mo>
 							<mrow>
@@ -34195,6 +35351,88 @@
 							<ul>
 								<li>
 									<p>
+										<math><mi>𝕂</mi></math> の代数閉包を <math><mover><mi>𝕂</mi><mo>‾</mo></mover></math> とすると，<math><mi>𝔤</mi></math> のスカラー拡大 <math>
+											<mover>
+												<mi>𝔤</mi><mo>‾</mo>
+											</mover>
+											<mo>≔</mo>
+											<mrow>
+												<mi>𝔤</mi>
+												<msub>
+													<mo>⊗</mo><mi>𝕂</mi>
+												</msub>
+												<mover>
+													<mi>𝕂</mi><mo>‾</mo>
+												</mover>
+											</mrow>
+										</math> も<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>．また，<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>も保たれるから，<math>
+											<mrow>
+												<mrow>
+													<msub>
+														<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+													</msub>
+													<msub>
+														<mo>⊗</mo><mi>𝕂</mi>
+													</msub>
+													<msub>
+														<mn>1</mn>
+														<mover>
+															<mi>𝕂</mi><mo>‾</mo>
+														</mover>
+													</msub>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<msub>
+														<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+													</msub>
+													<msub>
+														<mo>⊗</mo><mi>𝕂</mi>
+													</msub>
+													<msub>
+														<mn>1</mn>
+														<mover>
+															<mi>𝕂</mi><mo>‾</mo>
+														</mover>
+													</msub>
+												</mrow>
+											</mrow>
+											<mo>∈</mo>
+											<mover>
+												<mi>𝔤</mi><mo>‾</mo>
+											</mover>
+										</math> を満たすならば，
+										<math>
+											<mrow>
+												<msub>
+													<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+												</msub>
+											</mrow>
+											<mo>∈</mo>
+											<mrow>
+												<mrow>
+													<mrow>
+														<mi>𝔤𝔩</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>∩</mo>
+													<mover>
+														<mi>𝔤</mi><mo>‾</mo>
+													</mover>
+												</mrow>
+												<mo>=</mo>
+												<mi>𝔤</mi>
+											</mrow>
+										</math> も言える．ゆえに，<math><mi>𝕂</mi></math> が代数閉体の場合のみ示せばよい．
+									</p>
+									<p>
 										<math><mi>𝔤</mi></math> の<a href="#正規化Lie代数">正規化Lie代数</a>を <math>
 											<mi>𝑁</mi>
 											<mo>≔</mo>
@@ -34478,13 +35716,419 @@
 											<mrow>
 												<mi>𝔤</mi><mo>⊕</mo><mi>𝔥</mi>
 											</mrow>
-										</math> が成り立つ．
+										</math> が成り立つ．<a href="#部分加群">部分 <math><mi>𝔤</mi></math>-加群</a>の定義と <math>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔤</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝔤</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔤</mi><mo>,</mo><mi>𝑁</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>⊆</mo>
+											<mi>𝔤</mi>
+										</math> より
+										<math>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑖</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mi>𝔥</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔤</mi><mo>,</mo><mi>𝔥</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mi>𝔤</mi><mo>∩</mo><mi>𝔥</mi>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mo>{</mo><mn>0</mn><mo>}</mo>
+											</mrow>
+										</math> となる．ゆえに，<math><mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>𝑦</mi><mo>∈</mo><mi>𝔥</mi>
+											</mrow>
+										</math> は <math><mi>𝑉</mi></math> 上の<a href="#加群準同型">加群準同型</a>．<a href="#代数閉体上のSchurの補題">代数閉体上のSchurの補題</a>より，<math><mi>𝑉</mi></math> の任意の<a href="#単純加群">単純</a><a href="#部分加群">部分 <math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑊</mi></math> に対し，<math>
+											<msub>
+												<mrow>
+													<mi>𝑦</mi><mo>|</mo>
+												</mrow>
+												<mi>𝑊</mi>
+											</msub>
+											<mo>=</mo>
+											<mrow>
+												<mrow>
+													<mrow>
+														<mi>tr</mi>
+														<mo>&af;</mo>
+														<msub>
+															<mrow>
+																<mi>𝑦</mi><mo>|</mo>
+															</mrow>
+															<mi>𝑊</mi>
+														</msub>
+													</mrow>
+													<mrow>
+														<mi>dim</mi><mo>&af;</mo><mi>𝑊</mi>
+													</mrow>
+												</mrow>
+												<mo>&it;</mo>
+												<msub>
+													<mi>id</mi><mi>𝑊</mi>
+												</msub>
+											</mrow>
+										</math> となる．<math><msub><mi>𝐿</mi><mi>𝑊</mi></msub></math> より，<math>
+											<msub>
+												<mrow>
+													<mi>𝑦</mi><mo>|</mo>
+												</mrow>
+												<mi>𝑊</mi>
+											</msub>
+											<mo>=</mo>
+											<mn>0</mn>
+										</math> となる．<a href="#Weylの定理">半単純性に関するWeylの定理</a>より <math><mi>𝑉</mi></math> は<a href="#単純加群">単純</a><a href="#部分加群">部分 <math><mi>𝔤</mi></math>-加群</a>の<a href="#加群の直和">直和</a>なので，<math><mi>𝑦</mi><mo>=</mo><mn>0</mn></math> となる．つまり，<math>
+											<mrow>
+												<msub>
+													<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+												</msub>
+											</mrow>
+											<mo>∈</mo>
+											<mrow>
+												<msup>
+													<mi>𝔤</mi><mo>′</mo>
+												</msup>
+												<mo>=</mo>
+												<mrow>
+													<mi>𝔤</mi><mo>⊕</mo><mi>𝔥</mi>
+												</mrow>
+												<mo>=</mo>
+												<mi>𝔤</mi>
+											</mrow>
+										</math> が示された．
 									</p>
 								</li>
 								<li><a href="#有限次元無中心半単純Lie代数の随伴表現の性質">抽象Jordan分解の一意性</a>より明らか．</li>
 							</ul>
 						</li>
-						<li class="future-work">
+						<li>
+							<a href="#抽象Jordan分解">抽象Jordan分解の定義</a>より，<math>
+								<mrow>
+									<msub>
+										<mi>ad</mi><mi>𝔤</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>ad</mi><mi>𝔤</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<msub>
+											<mi>ad</mi><mi>𝔤</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> は<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>となる．<math><mi>𝕂</mi></math> の代数閉包を <math><mover><mi>𝕂</mi><mo>‾</mo></mover></math> とすると，<math>
+								<mi>𝑦</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>𝔤</mi>
+									<msub>
+										<mo>⊗</mo><mi>𝕂</mi>
+									</msub>
+									<mover>
+										<mi>𝕂</mi><mo>‾</mo>
+									</mover>
+								</mrow>
+							</math> が <math>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>ad</mi>
+										<mo>&af;</mo>
+										<msub>
+											<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<msub>
+									<mo>⊗</mo><mi>𝕂</mi>
+								</msub>
+								<msub>
+									<mn>1</mn>
+									<mover>
+										<mi>𝕂</mi><mo>‾</mo>
+									</mover>
+								</msub>
+							</math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mover><mi>𝕂</mi><mo>‾</mo></mover></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有ベクトル</a>ならば，<math>
+								<mrow>
+									<mi>𝜌</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑦</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>𝜌</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝔤</mi>
+											<msub>
+												<mo>⊗</mo><mi>𝕂</mi>
+											</msub>
+											<mover>
+												<mi>𝕂</mi><mo>‾</mo>
+											</mover>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math> は <math>
+								<mrow>
+									<msub>
+										<mi>ad</mi>
+										<mrow>
+											<mi>𝜌</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝔤</mi>
+													<msub>
+														<mo>⊗</mo><mi>𝕂</mi>
+													</msub>
+													<mover>
+														<mi>𝕂</mi><mo>‾</mo>
+													</mover>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜌</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<msub>
+									<mo>⊗</mo><mi>𝕂</mi>
+								</msub>
+								<msub>
+									<mn>1</mn>
+									<mover>
+										<mi>𝕂</mi><mo>‾</mo>
+									</mover>
+								</msub>
+							</math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mover><mi>𝕂</mi><mo>‾</mo></mover></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有ベクトル</a>となる．つまり<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>．同様に，<math>
+								<msub>
+									<mi>ad</mi>
+									<mrow>
+										<mi>𝜌</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝜌</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math> は<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>なので，<math>
+								<mrow>
+									<msub>
+										<mi>ad</mi>
+										<mrow>
+											<mi>𝜌</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝜌</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>ad</mi>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<msub>
+											<mi>ad</mi>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> は <math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> における<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>となる．ゆえに，<math>
+								<mrow>
+									<mi>𝜌</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝜌</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜌</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> は<a href="#抽象Jordan分解">抽象Jordan分解</a>となるので，これは<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>に等しい．
 						</li>
 					</ul>
 				</article>
@@ -34506,11 +36150,56 @@
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
+					<p>
+						<math><mi>𝔥</mi></math> の<a href="#中心">中心化Lie代数</a>を <math>
+							<msub>
+								<mi>𝑍</mi><mi>𝔤</mi>
+							</msub>
+							<mo>&af;</mo>
+							<mrow>
+								<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+							</mrow>
+						</math>，<a href="#正規化Lie代数">正規化Lie代数</a>を <math>
+							<msub>
+								<mi>𝑁</mi><mi>𝔤</mi>
+							</msub>
+							<mo>&af;</mo>
+							<mrow>
+								<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+							</mrow>
+						</math> とする．
+					</p>
 					<ul>
 						<li>
-							<a href="#正規化Lie代数">正規化Lie代数</a>
 						</li>
 						<li>
+							<p>
+								<a href="#中心化Lie代数の性質">中心化Lie代数の性質</a>より <math>
+									<mi>𝔥</mi>
+									<mo>⊆</mo>
+									<mrow>
+										<msub>
+											<mi>𝑍</mi><mi>𝔤</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>⊆</mo>
+									<mrow>
+										<msub>
+											<mi>𝑁</mi><mi>𝔤</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝔥</mi>
+								</math> を満たすから，<math><mi>𝔥</mi></math> は<a href="#可換">可換</a>．
+							</p>
 							<p>
 								<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝔥</mi></mrow></math> を取り，その<a href="#抽象Jordan分解">抽象Jordan分解</a>が<a href="#有限次元無中心半単純Lie代数の随伴表現の性質">一意的に存在する</a>からそれを <math><mi>𝑥</mi><mo>=</mo><mrow><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> とする．このとき <a href="../../module/linear-algebra/index.html#有限次元Jordan-Chevalley分解"><math><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub></mrow><mo>,</mo><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> は <math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> の多項式で書ける</a>から，
 								<math display="block">
@@ -34601,8 +36290,7 @@
 										<mn>0</mn>
 									</mrow>
 								</math>
-								を取ると，
-								<math>
+								を取ると，<math>
 									<mrow>
 										<msub>
 											<mi>ad</mi><mi>𝔥</mi>
@@ -34617,7 +36305,21 @@
 								</math>
 								である．
 								<math display="block">
-									<mn>0</mn>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝜅</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mn>0</mn><mo>,</mo><mi>𝔤</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
 									<mo>=</mo>
 									<mrow>
 										<mi>𝜅</mi>
@@ -34659,8 +36361,7 @@
 										</mrow>
 									</mrow>
 								</math>
-								だが，<a href="#有限次元無中心半単純Lie代数">有限次元無中心半単純Lie代数のKilling形式は非退化</a>なので，
-								<math>
+								だが，<a href="#有限次元無中心半単純Lie代数">有限次元無中心半単純Lie代数のKilling形式は非退化</a>なので，<math>
 									<mrow>
 										<mo>[</mo>
 										<mrow>
@@ -34674,14 +36375,25 @@
 									</mrow>
 									<mo>=</mo>
 									<mn>0</mn>
-								</math> ．<math><mi>𝔤</mi></math> は<a href="#中心">無中心</a>なので，
-								<math>
+								</math> ．<math><mi>𝔤</mi></math> は<a href="#中心">無中心</a>なので，<math>
 									<msub>
 										<mi>𝑥</mi><mi mathvariant="normal">n</mi>
 									</msub>
 									<mo>=</mo>
 									<mn>0</mn>
-								</math>
+								</math> ．ゆえに，<math>
+									<mrow>
+										<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>ad</mi>
+										<mo>&af;</mo>
+										<msub>
+											<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+										</msub>
+									</mrow>
+								</math> は<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>となり，<math><mi>𝔥</mi></math> は<a href="#トーラス">トーラス</a>となる．
 							</p>
 							<p>
 								<math>
@@ -34780,7 +36492,7 @@
 										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
 									</mrow>
 								</mrow>
-							</math> は<a href="#../../module/linear-algebra/index.html冪零">冪零変換</a>．
+							</math> は<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>．
 						</li>
 						<li>
 							<math>

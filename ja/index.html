@@ -6,11 +6,10 @@
 		<meta name="description" content="メインページ"/>
 		<title>メインページ</title>
 		<style>
-			h2::before {
-				content: counter(h2)". ";
-			}
-			h3::before, h4::before, h5::before, h6::before {
-				content: "";
+			section:not([class]) {
+				> h2::before {
+					content: counter(h2)". ";
+				}
 			}
 		</style>
 	</head>
