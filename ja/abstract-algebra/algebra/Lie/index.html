@@ -6821,10 +6821,20 @@
 								<li>
 									<math>
 										<mrow>
-											<mi>𝑍</mi>
-											<mo>&af;</mo>
 											<mrow>
-												<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
 											</mrow>
 										</mrow>
 										<mo>⊆</mo>
@@ -7059,8 +7069,7 @@
 										</math> も言える．
 									</li>
 									<li>
-										<math><mi>𝔥</mi></math> は <math><mi>𝔤</mi></math> の<a href="#部分Lie代数">部分Lie代数</a>なので，
-										<math>
+										<math><mi>𝔥</mi></math> は <math><mi>𝔤</mi></math> の<a href="#部分Lie代数">部分Lie代数</a>なので，<math>
 											<mrow>
 												<mi>𝑍</mi>
 												<mo>&af;</mo>
@@ -7098,7 +7107,35 @@
 													<mo>(</mo><mi>𝑋</mi><mo>)</mo>
 												</mrow>
 											</mrow>
-										</math> となる．また，<a href="#中心">中心化Lie代数</a>の定義より
+										</math> となる．<a href="#中心">中心</a>の定義より，<math>
+											<mrow>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<msub>
+													<mi>𝑍</mi><mi>𝔤</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<msub>
+													<mi>𝑍</mi><mi>𝔤</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑋</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</math> は明らか．最後に，<a href="#中心">中心化Lie代数</a>の定義より
 										<math>
 											<mrow>
 												<mo>[</mo>
@@ -27635,7 +27672,7 @@
 						<li>任意の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li>任意の <math><mi>𝕂</mi></math> 上の有限次元<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
 					</ul>
-					<p>に対し，<math><mi>𝔤</mi></math> はある有限次元<a href="#線型Lie代数">線型Lie代数</a>と<a href="#同型">同型</a>．同じことだが，<a href="#忠実表現">忠実</a>な<a href="#加群"> <math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> が存在する．</p>
+					<p>に対し，<a href="#忠実表現">忠実</a>な<a href="#加群"> <math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> が存在する．同じことだが，<math><mi>𝔤</mi></math> はある有限次元<a href="#線型Lie代数">線型Lie代数</a>と<a href="#同型">同型</a>．</p>
 				</article>
 			</section>
 			<section>
@@ -27648,7 +27685,7 @@
 						<li>有限次元 <a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math></li>
 					</ul>
 					<p>
-						を与えると，<math><mi>𝑉</mi></math> と <math><mi>𝑉</mi></math> の任意の<a href="#商加群">商加群</a>が非零な<a href="#ウェイトベクトル">ウェイトベクトル</a>を持つとき，
+						を与えると，<math><mi>𝑉</mi></math> と <math><mi>𝑉</mi></math> の任意の<a href="#商加群">商加群</a>が非零な<a href="#ウェイト">ウェイトベクトル</a>を持つとき，
 						<math>
 							<mo>∀</mo>
 							<mo>&af;</mo>
@@ -29182,7 +29219,7 @@
 										</mrow>
 									</mrow>
 								</mrow>
-							</math>
+							</math> ．
 						</p>
 					</article>
 					<article id="Engelの定理" class="thm">
@@ -29193,7 +29230,7 @@
 						</ul>
 						<p>を与えると，以下は同値：</p>
 						<ul>
-							<li><math><mi>𝔤</mi></math>は<a href="#冪零">冪零Lie代数</a></li>
+							<li><math><mi>𝔤</mi></math> は<a href="#冪零">冪零Lie代数</a></li>
 							<li>
 								<math>
 									<mo>∀</mo>
@@ -29201,9 +29238,7 @@
 									<mrow>
 										<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
 									</mrow>
-								</math>
-								に対し，
-								<math>
+								</math> に対し，<a href="#内部微分">内部微分</a> <math>
 									<mrow>
 										<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
 									</mrow>
@@ -29212,7 +29247,7 @@
 										<mi>𝔤𝔩</mi><mo>&af;</mo><mi>𝔤</mi>
 									</mrow>
 								</math>
-								が<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>．
+								は<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>．
 							</li>
 						</ul>
 					</article>
@@ -29237,15 +29272,24 @@
 									<mi>𝔤𝔩</mi><mo>&af;</mo><mi>𝔤</mi>
 								</mrow>
 							</math>
-							が<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>となることは自明．逆を <math><mi>dim</mi><mo>&af;</mo><mi>𝔤</mi></math> に関する数学的帰納法により示す．
-							<math>
+							が<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>となることは自明．逆を <math><mi>dim</mi><mo>&af;</mo><mi>𝔤</mi></math> に関する数学的帰納法により示す．<math>
 								<mrow>
 									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
 								</mrow>
 								<mo>=</mo>
-								<mn>0</mn>
+								<mrow>
+									<mn>0</mn><mo>,</mo><mn>1</mn>
+								</mrow>
 							</math>
-							のときは自明．
+							のとき，一般に <math><mi>𝔤</mi></math> は<a href="#可換">可換</a>なので，<a href="#冪零">冪零Lie代数</a>で，<math>
+								<mrow>
+									<mi>ad</mi><mo>&af;</mo><mi>𝔤</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
+								</mrow>
+							</math> である．
 						</p>
 						<p>
 							次に，
@@ -29555,10 +29599,9 @@
 							<li>体 <math><mi>𝕂</mi></math></li>
 							<li><math><mi>𝕂</mi></math> 上の有限次元<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a> <math><mi>𝑉</mi><mo>≠</mo><mn>0</mn></math></li>
 							<li>
-								<a href="#線型Lie代数">線型Lie代数</a>
-								<math>
+								<a href="#線型Lie代数">線型Lie代数</a> <math>
 									<mi>𝔤</mi>
-									<mo>⊂</mo>
+									<mo>⊆</mo>
 									<mrow>
 										<mi>𝔤𝔩</mi>
 										<mo>&af;</mo>
@@ -36135,18 +36178,23 @@
 			</section>
 			<section>
 				<h3>有限型Kac-Moody代数</h3>
+				<p>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a>上の性質の良い<a href="#有限次元無中心単純Lie代数">有限次元無中心半単純Lie代数</a>が，実は<a href="#Kac-Moody代数">Kac-Moody代数</a></p>
 				<article id="有限次元無中心半単純Lie代数の極大トーラス" class="thm">
 					<h4>有限次元無中心半単純Lie代数の極大トーラス</h4>
 					<ul>
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math> 上の有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a> <math><mi>𝔤</mi></math></li>
 					</ul>
-					<p>を与えると，<math><mi>𝔤</mi></math> の<a href="#部分Lie代数">部分Lie代数</a>に対し，以下は同値：</p>
+					<p>を与えると，以下が成り立つ：</p>
 					<ul>
-						<li><math><mi>𝔥</mi></math> は<a href="#トーラス">極大トーラス</a></li>
-						<li><math><mi>𝔥</mi></math> は<a href="#Cartan部分代数">Cartan部分代数</a></li>
+						<li><math><mi>𝔤</mi></math> の<a href="#部分Lie代数">部分Lie代数</a> <math><mi>𝔥</mi></math> に対し，以下は同値：
+							<ul>
+								<li><math><mi>𝔥</mi></math> は<a href="#Cartan部分代数">Cartan部分代数</a></li>
+								<li><math><mi>𝔥</mi></math> は<a href="#トーラス">極大トーラス</a></li>
+							</ul>
+							特に，<math><mi>𝕂</mi></math> が代数閉体であれば，<math><mi>𝔥</mi></math> は<a href="#トーラス">極大分裂トーラス</a>．</li>
+						<li><a href="#トーラス">極大トーラス</a>の<a href="#中心化">中心化Lie代数</a>，<a href="#正規化Lie代数">正規化Lie代数</a>は自分自身．</li>
 					</ul>
-					<p>特に，<math><mi>𝕂</mi></math> が代数閉体であれば，<math><mi>𝔥</mi></math> は<a href="#トーラス">極大分裂トーラス</a>．</p>
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
@@ -36171,40 +36219,194 @@
 					</p>
 					<ul>
 						<li>
-						</li>
-						<li>
-							<p>
-								<a href="#中心化Lie代数の性質">中心化Lie代数の性質</a>より <math>
-									<mi>𝔥</mi>
-									<mo>⊆</mo>
-									<mrow>
-										<msub>
-											<mi>𝑍</mi><mi>𝔤</mi>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝔥</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>⊆</mo>
-									<mrow>
-										<msub>
-											<mi>𝑁</mi><mi>𝔤</mi>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝔥</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mi>𝔥</mi>
-								</math> を満たすから，<math><mi>𝔥</mi></math> は<a href="#可換">可換</a>．
-							</p>
-							<p>
-								<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝔥</mi></mrow></math> を取り，その<a href="#抽象Jordan分解">抽象Jordan分解</a>が<a href="#有限次元無中心半単純Lie代数の随伴表現の性質">一意的に存在する</a>からそれを <math><mi>𝑥</mi><mo>=</mo><mrow><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> とする．このとき <a href="../../module/linear-algebra/index.html#有限次元Jordan-Chevalley分解"><math><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub></mrow><mo>,</mo><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> は <math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> の多項式で書ける</a>から，
-								<math display="block">
-									<mrow>
-										<mrow>
+							<ul>
+								<li class="future-work">
+									<p>
+										<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝔥</mi></mrow></math> を取り，その<a href="#抽象Jordan分解">抽象Jordan分解</a>が<a href="#有限次元無中心半単純Lie代数の随伴表現の性質">一意的に存在する</a>からそれを <math><mi>𝑥</mi><mo>=</mo><mrow><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> とする．このとき <a href="../../module/linear-algebra/index.html#有限次元Jordan-Chevalley分解"><math><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub></mrow><mo>,</mo><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> は <math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> の多項式で書ける</a>から，
+										<math display="block">
+											<mrow>
+												<mrow>
+													<mrow>
+														<mi>ad</mi>
+														<mo>&af;</mo>
+														<msub>
+															<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+														</msub>
+													</mrow>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mrow>
+														<mi>ad</mi>
+														<mo>&af;</mo>
+														<msub>
+															<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+														</msub>
+													</mrow>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔥</mi><mo>,</mo><mi>𝔥</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>⊆</mo>
+											<mi>𝔥</mi>
+										</math>
+										を満たす．ゆえに，
+										<math>
+											<mrow>
+												<msub>
+													<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+												</msub>
+											</mrow>
+											<mo>∈</mo>
+											<mrow>
+												<mrow>
+													<msub>
+														<mi>𝑁</mi><mi>𝔤</mi>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>=</mo>
+												<mi>𝔥</mi>
+											</mrow>
+										</math>
+										となる．
+									</p>
+									<p>
+										<math><mi>𝔥</mi></math> は<a href="#冪零">冪零</a>なので，<a href="#冪零性の基本性質">非零な中心 <math><msub><mi>𝑍</mi><mi>𝔥</mi></msub><mo>&af;</mo><mrow><mo>(</mo><mi>𝔥</mi><mo>)</mo></mrow></math> を持つ</a>．
+										<math>
+											<mi>𝑧</mi>
+											<mo>∈</mo>
+											<mrow>
+												<mrow>
+													<msub>
+														<mi>𝑍</mi><mi>𝔥</mi>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>∖</mo>
+												<mn>0</mn>
+											</mrow>
+										</math>
+										を取ると，<math>
+											<mrow>
+												<msub>
+													<mi>ad</mi><mi>𝔥</mi>
+												</msub>
+												<mo>&af;</mo>
+												<msub>
+													<mi>𝑥</mi><mi mathvariant="normal">s</mi>
+												</msub>
+											</mrow>
+											<mo>=</mo>
+											<mn>0</mn>
+										</math>
+										である．
+										<math display="block">
+											<mrow>
+												<mo>{</mo><mn>0</mn><mo>}</mo>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mi>𝜅</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mn>0</mn><mo>,</mo><mi>𝔤</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mi>𝜅</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mrow>
+															<mo>[</mo>
+															<mrow>
+																<mi>𝑧</mi><mo>,</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub>
+															</mrow>
+															<mo>]</mo>
+														</mrow>
+														<mo>,</mo>
+														<mi>𝔤</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mi>𝜅</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑧</mi>
+														<mo>,</mo>
+														<mrow>
+															<mo>[</mo>
+															<mrow>
+																<msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub><mo>,</mo><mi>𝔤</mi>
+															</mrow>
+															<mo>]</mo>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</math>
+										だが，<a href="#有限次元無中心半単純Lie代数">有限次元無中心半単純Lie代数のKilling形式は非退化</a>なので，<math>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<msub>
+														<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+													</msub>
+													<mo>,</mo>
+													<mi>𝔤</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>=</mo>
+											<mn>0</mn>
+										</math> ．<math><mi>𝔤</mi></math> は<a href="#中心">無中心</a>なので，<math>
+											<msub>
+												<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+											</msub>
+											<mo>=</mo>
+											<mn>0</mn>
+										</math> ．ゆえに，<math>
+											<mrow>
+												<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
+											</mrow>
+											<mo>=</mo>
 											<mrow>
 												<mi>ad</mi>
 												<mo>&af;</mo>
@@ -36212,235 +36414,444 @@
 													<mi>𝑥</mi><mi mathvariant="normal">s</mi>
 												</msub>
 											</mrow>
-											<mo>&af;</mo>
+										</math> は<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>となり，<math><mi>𝔥</mi></math> は<a href="#トーラス">トーラス</a>となる．
+									</p>
+									<p>
+										<math>
+											<mi>𝑡</mi><mo>∈</mo><mi>𝔤</mi>
+										</math>
+										であって，<a href="#抽象Jordan分解">抽象Jordan分解</a>が
+										<math>
+											<mo>(</mo>
 											<mrow>
-												<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												<mi>𝑡</mi><mo>,</mo><mn>0</mn>
 											</mrow>
-										</mrow>
-										<mo>,</mo>
-										<mrow>
+											<mo>)</mo>
+										</math>
+										であるようなものを一つとる．
+										<math display="block">
+											<mi>𝔥</mi>
+											<mo>⊆</mo>
 											<mrow>
-												<mi>ad</mi>
-												<mo>&af;</mo>
+												<mi>𝔥</mi>
+												<mo>+</mo>
+												<mrow>
+													<mi>𝕂</mi><mo>&it;</mo><mi>𝑡</mi>
+												</mrow>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
 												<msub>
-													<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+													<mi>𝑁</mi><mi>𝔤</mi>
 												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
 											</mrow>
+											<mo>=</mo>
+											<mi>𝔥</mi>
+										</math>
+										より <math><mi>𝑡</mi><mo>∈</mo><mi>𝔥</mi></math>．
+									</p>
+								</li>
+								<li>
+									<p><math><mi>𝔥</mi></math> が<a href="#トーラス">極大トーラス</a>のとき，<math><mi>𝔥</mi></math> を含む<a href="#Cartan部分代数">Cartan部分代数</a>が存在することを示せば，それも<a href="#トーラス">（極大）トーラス</a>となるので，それは <math><mi>𝔥</mi></math> に等しいとわかる．</p>
+									<p>
+										<math><msup><mi>𝔥</mi><mo>′</mo></msup></math> を <math>
+											<msub>
+												<mi>𝑍</mi><mi>𝔤</mi>
+											</msub>
 											<mo>&af;</mo>
 											<mrow>
 												<mo>(</mo><mi>𝔥</mi><mo>)</mo>
 											</mrow>
-										</mrow>
-									</mrow>
-									<mo>⊆</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<mi>𝔥</mi><mo>,</mo><mi>𝔥</mi>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-									<mo>⊆</mo>
-									<mi>𝔥</mi>
-								</math>
-								を満たす．ゆえに，
-								<math>
-									<mrow>
-										<msub>
-											<mi>𝑥</mi><mi mathvariant="normal">s</mi>
-										</msub>
-										<mo>,</mo>
-										<msub>
-											<mi>𝑥</mi><mi mathvariant="normal">n</mi>
-										</msub>
-									</mrow>
-									<mo>∈</mo>
-									<mrow>
-										<mrow>
+										</math> の<a href="#Cartan部分代数">Cartan部分代数</a>とする．<math><mi>𝔥</mi></math> は<a href="#可換">可換</a>であることと，<a href="#中心化Lie代数の性質">中心化Lie代数の性質</a>より
+										<math display="block">
+											<mi>𝔥</mi>
+											<mo>⊆</mo>
+											<mrow>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝑍</mi><mi>𝔤</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<msub>
+													<mi>𝑁</mi>
+													<mrow>
+														<msub>
+															<mi>𝑍</mi><mi>𝔤</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msup>
+														<mi>𝔥</mi><mo>′</mo>
+													</msup>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<msup>
+												<mi>𝔥</mi><mo>′</mo>
+											</msup>
+										</math>
+										となる．<msup>
+											<mi>𝔥</mi><mo>′</mo>
+										</msup> の <math><mi>𝔤</mi></math> における<a href="#正規化Lie代数">正規化Lie代数</a> <math>
 											<msub>
 												<mi>𝑁</mi><mi>𝔤</mi>
 											</msub>
 											<mo>&af;</mo>
 											<mrow>
-												<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												<mo>(</mo>
+												<msup>
+													<mi>𝔥</mi><mo>′</mo>
+												</msup>
+												<mo>)</mo>
 											</mrow>
-										</mrow>
-										<mo>=</mo>
-										<mi>𝔥</mi>
-									</mrow>
-								</math>
-								となる．
-							</p>
-							<p>
-								<math><mi>𝔥</mi></math> は<a href="#冪零">冪零</a>なので，<a href="#冪零性の基本性質">非零な中心 <math><msub><mi>𝑍</mi><mi>𝔥</mi></msub><mo>&af;</mo><mrow><mo>(</mo><mi>𝔥</mi><mo>)</mo></mrow></math> を持つ</a>．
-								<math>
-									<mi>𝑧</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mrow>
-											<msub>
-												<mi>𝑍</mi><mi>𝔥</mi>
-											</msub>
+										</math> に対し，
+										<math display="block">
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔥</mi>
+													<mo>,</mo>
+													<mrow>
+														<msub>
+															<mi>𝑁</mi><mi>𝔤</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<msup>
+																<mi>𝔥</mi><mo>′</mo>
+															</msup>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<msup>
+														<mi>𝔥</mi><mo>′</mo>
+													</msup>
+													<mo>,</mo>
+													<mrow>
+														<msub>
+															<mi>𝑁</mi><mi>𝔤</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<msup>
+																<mi>𝔥</mi><mo>′</mo>
+															</msup>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>⊆</mo>
+											<msup>
+												<mi>𝔥</mi><mo>′</mo>
+											</msup>
+										</math>
+										となるから，
+										<math display="block">
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔥</mi>
+													<mo>,</mo>
+													<mrow>
+														<mo>[</mo>
+														<mrow>
+															<mi>𝔥</mi>
+															<mo>,</mo>
+															<mrow>
+																<msub>
+																	<mi>𝑁</mi><mi>𝔤</mi>
+																</msub>
+																<mo>&af;</mo>
+																<mrow>
+																	<mo>(</mo>
+																	<msup>
+																		<mi>𝔥</mi><mo>′</mo>
+																	</msup>
+																	<mo>)</mo>
+																</mrow>
+															</mrow>
+														</mrow>
+														<mo>]</mo>
+													</mrow>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔥</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝔥</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔥</mi>
+													<mo>,</mo>
+													<mrow>
+														<msub>
+															<mi>𝑍</mi><mi>𝔤</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mo>{</mo><mn>0</mn><mo>}</mo>
+											</mrow>
+										</math>
+										となる．<a href="#トーラス">トーラスの定義</a>より，<math>
+											<mo>∀</mo>
 											<mo>&af;</mo>
 											<mrow>
-												<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												<mi>ℎ</mi><mo>∈</mo><mi>𝔥</mi>
 											</mrow>
-										</mrow>
-										<mo>∖</mo>
-										<mn>0</mn>
-									</mrow>
-								</math>
-								を取ると，<math>
-									<mrow>
-										<msub>
-											<mi>ad</mi><mi>𝔥</mi>
-										</msub>
-										<mo>&af;</mo>
-										<msub>
-											<mi>𝑥</mi><mi mathvariant="normal">s</mi>
-										</msub>
-									</mrow>
-									<mo>=</mo>
-									<mn>0</mn>
-								</math>
-								である．
-								<math display="block">
-									<mrow>
-										<mo>{</mo><mn>0</mn><mo>}</mo>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<mi>𝜅</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
+										</math> に対する <math><mi>ad</mi><mo>&af;</mo><mi>ℎ</mi></math> は<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>なので，<math>
 											<mrow>
-												<mn>0</mn><mo>,</mo><mi>𝔤</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<mi>𝜅</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mrow>
-													<mo>[</mo>
+												<mi>ker</mi>
+												<mo>&af;</mo>
+												<msup>
 													<mrow>
-														<mi>𝑧</mi><mo>,</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub>
+														<mo>(</mo>
+														<mrow>
+															<mi>ad</mi><mo>&af;</mo><mi>ℎ</mi>
+														</mrow>
+														<mo>)</mo>
 													</mrow>
-													<mo>]</mo>
-												</mrow>
-												<mo>,</mo>
-												<mi>𝔤</mi>
+													<mn>2</mn>
+												</msup>
 											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<mi>𝜅</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
+											<mo>=</mo>
 											<mrow>
-												<mi>𝑧</mi>
-												<mo>,</mo>
+												<mi>ker</mi>
+												<mo>&af;</mo>
 												<mrow>
-													<mo>[</mo>
+													<mo>(</mo>
 													<mrow>
-														<msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub><mo>,</mo><mi>𝔤</mi>
+														<mi>ad</mi><mo>&af;</mo><mi>ℎ</mi>
 													</mrow>
-													<mo>]</mo>
+													<mo>)</mo>
 												</mrow>
 											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</math>
-								だが，<a href="#有限次元無中心半単純Lie代数">有限次元無中心半単純Lie代数のKilling形式は非退化</a>なので，<math>
+										</math> となる．ゆえに，<math>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔥</mi>
+													<mo>,</mo>
+													<mrow>
+														<msub>
+															<mi>𝑁</mi><mi>𝔤</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<msup>
+																<mi>𝔥</mi><mo>′</mo>
+															</msup>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mo>{</mo><mn>0</mn><mo>}</mo>
+											</mrow>
+										</math>，つまり，<math>
+											<mrow>
+												<msub>
+													<mi>𝑁</mi><mi>𝔤</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msup>
+														<mi>𝔥</mi><mo>′</mo>
+													</msup>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<msub>
+													<mi>𝑍</mi><mi>𝔤</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</math> なので，
+										<math display="block">
+											<msup>
+												<mi>𝔥</mi><mo>′</mo>
+											</msup>
+											<mo>⊆</mo>
+											<mrow>
+												<msub>
+													<mi>𝑁</mi><mi>𝔤</mi>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msup>
+														<mi>𝔥</mi><mo>′</mo>
+													</msup>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<msub>
+													<mi>𝑁</mi>
+													<mrow>
+														<msub>
+															<mi>𝑁</mi><mi>𝔤</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo>
+															<msup>
+																<mi>𝔥</mi><mo>′</mo>
+															</msup>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msup>
+														<mi>𝔥</mi><mo>′</mo>
+													</msup>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>⊆</mo>
+											<mrow>
+												<msub>
+													<mi>𝑁</mi>
+													<mrow>
+														<msub>
+															<mi>𝑍</mi><mi>𝔤</mi>
+														</msub>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</msub>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<msup>
+												<mi>𝔥</mi><mo>′</mo>
+											</msup>
+										</math>
+										となる．<math><msup><mi>𝔥</mi><mo>′</mo></msup></math> が<a href="#冪零">冪零</a>であることと合わせて，<math><msup><mi>𝔥</mi><mo>′</mo></msup></math> は <math><mi>𝔤</mi></math> の<a href="#Cartan部分代数">Cartan部分代数</a>となる．
+									</p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#トーラス">トーラス</a>は定義より<a href="#可換">可換</a>なので，<a href="#中心化Lie代数の性質">中心化Lie代数の性質</a>より，<math>
+								<mi>𝔥</mi>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑍</mi>
+									<mo>&af;</mo>
 									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<msub>
-												<mi>𝑥</mi><mi mathvariant="normal">n</mi>
-											</msub>
-											<mo>,</mo>
-											<mi>𝔤</mi>
-										</mrow>
-										<mo>]</mo>
+										<mo>(</mo><mi>𝔥</mi><mo>)</mo>
 									</mrow>
-									<mo>=</mo>
-									<mn>0</mn>
-								</math> ．<math><mi>𝔤</mi></math> は<a href="#中心">無中心</a>なので，<math>
+								</mrow>
+								<mo>⊆</mo>
+								<mrow>
 									<msub>
-										<mi>𝑥</mi><mi mathvariant="normal">n</mi>
+										<mi>𝑍</mi><mi>𝔤</mi>
 									</msub>
-									<mo>=</mo>
-									<mn>0</mn>
-								</math> ．ゆえに，<math>
+									<mo>&af;</mo>
 									<mrow>
-										<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
+										<mo>(</mo><mi>𝔥</mi><mo>)</mo>
 									</mrow>
-									<mo>=</mo>
+								</mrow>
+								<mo>⊆</mo>
+								<mrow>
+									<msub>
+										<mi>𝑁</mi><mi>𝔤</mi>
+									</msub>
+									<mo>&af;</mo>
 									<mrow>
-										<mi>ad</mi>
-										<mo>&af;</mo>
-										<msub>
-											<mi>𝑥</mi><mi mathvariant="normal">s</mi>
-										</msub>
+										<mo>(</mo><mi>𝔥</mi><mo>)</mo>
 									</mrow>
-								</math> は<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>となり，<math><mi>𝔥</mi></math> は<a href="#トーラス">トーラス</a>となる．
-							</p>
-							<p>
-								<math>
-									<mi>𝑡</mi><mo>∈</mo><mi>𝔤</mi>
-								</math>
-								であって，<a href="#抽象Jordan分解">抽象Jordan分解</a>が
-								<math>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝑡</mi><mo>,</mo><mn>0</mn>
-									</mrow>
-									<mo>)</mo>
-								</math>
-								であるようなものを一つとる．
-								<math display="block">
-									<mi>𝔥</mi>
-									<mo>⊆</mo>
-									<mrow>
-										<mi>𝔥</mi>
-										<mo>+</mo>
-										<mrow>
-											<mi>𝕂</mi><mo>&it;</mo><mi>𝑡</mi>
-										</mrow>
-									</mrow>
-									<mo>⊆</mo>
-									<mrow>
-										<msub>
-											<mi>𝑁</mi><mi>𝔤</mi>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝔥</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mi>𝔥</mi>
-								</math>
-								より <math><mi>𝑡</mi><mo>∈</mo><mi>𝔥</mi></math>．
-							</p>
+								</mrow>
+							</math> だが，<a href="#Cartan部分代数">Cartan部分代数の定義</a>より全ての等号が成り立つ．
 						</li>
 					</ul>
 				</article>
+				<ul>
+					<li>ルート空間分解</li>
+					<li>単純ルート</li>
+					<li>生成系</li>
+					<li><a href="#Chevalley関係式">Chevalley関係式</a></li>
+					<li><a href="#Serre関係式">Serre関係式</a></li>
+				</ul>
 				<article id="有限次元無中心半単純Lie代数のルート空間分解" class="thm">
 					<h4>有限次元無中心半単純Lie代数のルート空間分解</h4>
 					<ul>
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math> 上の有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a> <math><mi>𝔤</mi></math>であって，<a href="#トーラス">極大分裂トーラス</a> <math><mi>𝔥</mi></math> を持つもの</li>
+						<li><math><mi>𝕂</mi></math> 上の有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a> <math><mi>𝔤</mi></math>であって，<a href="#極大トーラス">極大トーラス</a> <math><mi>𝔥</mi></math> であって，<a href="#トーラス">極大分裂トーラス</a> となるものを持つもの．</li>
 						<li><math><mi>𝔥</mi></math> に関する <math><mi>𝔤</mi></math> の<a href="#ルート">ルート</a>の集合 <math><mi>𝛷</mi></math></li>
 						<li>
 							<math><mi>𝔤</mi></math> の<a href="#ルート">ルート空間分解</a>
@@ -36905,10 +37316,6 @@
 							</math> となる．
 						</li>
 					</ul>
-				</article>
-				<article id="有限次元無中心単純Lie代数の分類" class="thm">
-					<h4>有限次元無中心単純Lie代数の分類</h4>
-					<p>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えると，任意の <math><mi>𝕂</mi></math> 上の有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>であって<a href="#トーラス">極大分裂トーラス</a> <math><mi>𝔥</mi></math> を持つものに対し，<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math> が存在し，<math><mi>𝐴</mi></math> に対する<a href="#Kac-Moody代数">Kac-Moody代数</a>と<a href="#同型">Lie代数同型</a>．</p>
 				</article>
 				<article id="有限次元Kac-Moody代数" class="thm">
 					<h4>有限型対称化可能Cartan行列・有限次元Kac-Moody代数</h4>
@@ -37549,6 +37956,10 @@
 							となる．よって，<math><mi>𝐴</mi></math> が既約ならば，<math><mi>𝔦</mi></math> は <math><mi>𝔤</mi></math> の生成系を全て含むから，<math><mi>𝔦</mi><mo>=</mo><mi>𝔤</mi></math> となり，<math><mi>𝔤</mi></math> は<a href="#無中心単純Lie代数">無中心単純Lie代数</a>となる．一般の <math><mi>𝐴</mi></math> に対しては，<math><mi>𝔦</mi></math> は<a href="#無中心単純Lie代数">無中心単純Lie代数</a>の直和となるから，有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>となる．逆にこのとき，<math><mi>𝔤</mi></math> が有限次元となることは明らか．
 						</li>
 					</ul>
+				</article>
+				<article id="有限次元無中心単純Lie代数の分類" class="thm">
+					<h4>有限次元無中心単純Lie代数の分類</h4>
+					<p>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えると，任意の <math><mi>𝕂</mi></math> 上の有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>であって<a href="#トーラス">極大トーラス</a>かつ<a href="#トーラス">極大分裂トーラス</a>となるもの <math><mi>𝔥</mi></math> を持つものに対し，<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math> が存在し，<math><mi>𝐴</mi></math> に対する<a href="#Kac-Moody代数">Kac-Moody代数</a>と<a href="#同型">Lie代数同型</a>．</p>
 				</article>
 				<article id="X型Cartan行列" class="dfn">
 					<h4><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</h4>
