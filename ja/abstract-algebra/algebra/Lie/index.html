@@ -26869,8 +26869,8 @@
 					</ul>
 					<p>を与えると，<a href="#Kac-Moody代数">2種類のKac-Moody代数</a> <math><msub><mi>𝔤</mi><mi>min</mi></msub><mo>,</mo><msub><mi>𝔤</mi><mi>max</mi></msub></math> は相等しい．</p>
 				</article>
-				<article id="Kac-Moody代数の実ルート" class="thm">
-					<h4>Kac-Moody代数の実ルート・虚ルート</h4>
+				<article id="Kac-Moody代数のWeyl群" class="thm">
+					<h4>Kac-Moody代数のWeyl群，実ルート・虚ルート</h4>
 					<ul>
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
@@ -26918,6 +26918,65 @@
 						</li>
 						<li><math><mi>𝛷</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
 						<li><math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a> <math><mo>(</mo><mo>,</mo><mo>)</mo></math></li>
+						<li>
+							<math><mi>𝔤</mi></math> の<a href="#Weyl群">Weyl群</a> <math>
+								<mi>𝑊</mi>
+								<mo>≔</mo>
+								<mrow>
+									<mo>⟨</mo>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<mrow>
+												<msub>
+													<mi>𝜎</mi><mi>𝛼</mi>
+												</msub>
+												<mo>:</mo>
+												<mrow>
+													<mi>𝜆</mi>
+													<mo>↦</mo>
+													<mrow>
+														<mi>𝜆</mi>
+														<mo>−</mo>
+														<mrow>
+															<mn>2</mn>
+															<mo>&it;</mo>
+															<mfrac>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<mi>𝜆</mi><mo>,</mo><mi>𝛼</mi>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+																<mrow>
+																	<mo>(</mo>
+																	<mrow>
+																		<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
+																	</mrow>
+																	<mo>)</mo>
+																</mrow>
+															</mfrac>
+															<mo>&it;</mo>
+															<mi>𝛼</mi>
+														</mrow>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝛼</mi>
+											<mo>∈</mo>
+											<msub>
+												<mi>𝛥</mi><mi>re</mi>
+											</msub>
+										</mrow>
+									</msub>
+									<mo>⟩</mo>
+								</mrow>
+							</math>
+						</li>
 					</ul>
 					<p>を与えると，以下が成り立つ：</p>
 					<ul>
@@ -26947,6 +27006,19 @@
 									<mi>ℚ</mi>
 								</mrow>
 							</math>
+						</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+								</mrow>
+							</math> に対し，<math>
+								<msub>
+									<mi>𝛼</mi><mi>𝑖</mi>
+								</msub>
+							</math> は<a href="#標準形式">実ルート</a>
 						</li>
 						<li>
 							<math>
@@ -27027,13 +27099,169 @@
 								</li>
 							</ul>
 						</li>
+						<li>
+							任意の<a href="#標準形式">実ルート</a> <math><mi>𝛼</mi><mo>∈</mo><msub><mi>𝛥</mi><mi>re</mi></msub></math> と <math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑤</mi><mo>∈</mo><mi>𝑊</mi></mrow></math> に対し，<math>
+								<mrow>
+									<mi>𝑤</mi>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝜎</mi><mi>𝛼</mi>
+									</msub>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝑤</mi>
+										<mrow>
+											<mo>−</mo><mn>1</mn>
+										</mrow>
+									</msup>
+								</mrow>
+								<mo>=</mo>
+								<msub>
+									<mi>𝜎</mi>
+									<mrow>
+										<mi>𝑤</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+						<li>
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝜎</mi>
+											<msub>
+												<mi>𝛼</mi><mi>𝑖</mi>
+											</msub>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+									</mrow>
+								</msub>
+							</math> は <math><mi>𝑊</mi></math> の<a href="../../magma/group/index.html#生成系">生成系</a>．
+						</li>
 					</ul>
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
 					<ul>
-						<li class="future-work">
-							いろいろな定義より明らか．
+						<li>
+							<math>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝛼</mi><mo>,</mo><mi>𝛽</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>ℤ</mi>
+												<mo>&it;</mo>
+												<msub>
+													<mrow>
+														<mo>{</mo>
+														<msub>
+															<mi>𝛼</mi><mi>𝑖</mi>
+														</msub>
+														<mo>}</mo>
+													</mrow>
+													<mrow>
+														<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+													</mrow>
+												</msub>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>ℤ</mi>
+												<mo>&it;</mo>
+												<msub>
+													<mrow>
+														<mo>{</mo>
+														<msub>
+															<mi>𝛼</mi><mi>𝑗</mi>
+														</msub>
+														<mo>}</mo>
+													</mrow>
+													<mrow>
+														<mi>𝑗</mi><mo>∈</mo><mi>𝑛</mi>
+													</mrow>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>ℤ</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msub>
+															<mi>𝛼</mi><mi>𝑖</mi>
+														</msub>
+														<mo>,</mo>
+														<msub>
+															<mi>𝛼</mi><mi>𝑗</mi>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+												</mrow>
+												<mo>∈</mo>
+												<mi>𝑛</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>⊆</mo>
+									<mi>ℚ</mi>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a> の定義より
+							<math>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝛼</mi><mi>𝑖</mi>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝛼</mi><mi>𝑖</mi>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>∈</mo>
+								<msub>
+									<mi>ℚ</mi>
+									<mrow>
+										<mo>&gt;</mo><mn>0</mn>
+									</mrow>
+								</msub>
+							</math>
 						</li>
 						<li>
 							<a href="#標準形式">標準形式</a>は <a href="#Weyl群の性質"><math><mi>𝑊</mi></math> 不変なので</a>，
@@ -27112,8 +27340,421 @@
 										<mo>)</mo>
 									</mrow>
 								</mrow>
+							</math> のとき，まず，<math><mi>𝑤</mi><mo>∈</mo><mi>𝑊</mi></math> を <math><mi>𝑤</mi><mo>&af;</mo><mi>𝛼</mi></math> の<a href="../../module/linear-algebra/index.html#基底">基底</a>での展開
+							<math display="block">
+								<mrow>
+									<mi>𝑤</mi><mo>&it;</mo><mi>𝛼</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∑</mo>
+										<mrow>
+											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+										</mrow>
+									</munder>
+									<mo>&af;</mo>
+									<mrow>
+										<msub>
+											<mi>𝑛</mi><mi>𝑖</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝛼</mi><mi>𝑖</mi>
+										</msub>
+									</mrow>
+								</mrow>
 							</math>
-							のとき，
+							のうち，
+							<math>
+								<munder intent=":largeop">
+									<mo>∑</mo>
+									<mrow>
+										<mi>𝑖</mi><mo>=</mo><mn></mn>
+									</mrow>
+								</munder>
+								<mo>&af;</mo>
+								<msub>
+									<mi>𝑛</mi><mi>𝑖</mi>
+								</msub>
+							</math> が，<math><mi>𝛼</mi><mo>∈</mo><msub><mi>𝛥</mi><mi>+</mi></msub></math> ならば最小，<math><mi>𝛼</mi><mo>∈</mo><msub><mi>𝛥</mi><mo>−</mo></msub></math> ならば最大のものとする．すると，<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi></mrow></math> に対し，
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>𝑠</mi><mi>𝑖</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑤</mi><mo>&af;</mo><mi>𝛼</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑤</mi><mo>&af;</mo><mi>𝛼</mi>
+									</mrow>
+									<mo>−</mo>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mfrac>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑤</mi><mo>&af;</mo><mi>𝛼</mi>
+													</mrow>
+													<mo>,</mo>
+													<msub>
+														<mi>𝛼</mi><mi>𝑖</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝛼</mi><mi>𝑖</mi>
+													</msub>
+													<mo>,</mo>
+													<msub>
+														<mi>𝛼</mi><mi>𝑖</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mfrac>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝛼</mi><mi>𝑖</mi>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+							より最小（最大）性から <math>
+								<mrow>
+									<msub>
+										<mi>𝑛</mi><mi>𝑖</mi>
+									</msub>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑤</mi>
+												<mo>&af;</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>,</mo>
+											<msub>
+												<mi>𝛼</mi><mi>𝑖</mi>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≤</mo>
+								<mn>0</mn>
+							</math> となる．よって，
+							<math display="block">
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑤</mi><mo>&af;</mo><mi>𝛼</mi>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝑤</mi><mo>&af;</mo><mi>𝛼</mi>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>∑</mo>
+										<mrow>
+											<mi>𝑖</mi><mo>=</mo><mn>1</mn>
+										</mrow>
+									</munder>
+									<mo>&af;</mo>
+									<mrow>
+										<msub>
+											<mi>𝑛</mi><mi>𝑖</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑤</mi><mo>&af;</mo><mi>𝛼</mi>
+												</mrow>
+												<mo>,</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>≤</mo>
+								<mn>0</mn>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mrow>
+									<mrow>
+										<mi>𝑤</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝜎</mi><mi>𝛼</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝑤</mi>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝜆</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑤</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<msup>
+													<mi>𝑤</mi>
+													<mrow>
+														<mo>−</mo><mn>1</mn>
+													</mrow>
+												</msup>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝜆</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>−</mo>
+											<mrow>
+												<mfrac>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mrow>
+																<msup>
+																	<mi>𝑤</mi>
+																	<mrow>
+																		<mo>−</mo><mn>1</mn>
+																	</mrow>
+																</msup>
+																<mo>&af;</mo>
+																<mrow>
+																	<mo>(</mo><mi>𝜆</mi><mo>)</mo>
+																</mrow>
+															</mrow>
+															<mo>,</mo>
+															<mi>𝛼</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mfrac>
+												<mo>&it;</mo>
+												<mi>𝛼</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝜆</mi>
+									<mo>−</mo>
+									<mrow>
+										<mfrac>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝜆</mi>
+													<mo>,</mo>
+													<mrow>
+														<mi>𝑤</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑤</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mi>𝑤</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mfrac>
+										<mo>&it;</mo>
+										<mrow>
+											<mi>𝑤</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝜎</mi>
+										<mrow>
+											<mi>𝑤</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝜆</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							上で示した<a href="#標準形式">実ルート</a>の条件の同値性は，<math><mi>𝑊</mi></math> を <a href="../../magma/group/index.html#生成系"><math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝜎</mi>
+											<msub>
+												<mi>𝛼</mi><mi>𝑖</mi>
+											</msub>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+									</mrow>
+								</msub>
+							</math> で生成される <math><mi>𝑊</mi></math> の部分群 <math><msup><mi>𝑊</mi><mo>′</mo></msup></math></a> に直しても成り立つ．つまり，<math><mi>𝛼</mi></math> が<a href="#標準形式">実ルート</a>ならば，<math>
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑤</mi>
+										<mo>∈</mo>
+										<msup>
+											<mi>𝑊</mi><mo>′</mo>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∃</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝛼</mi>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑤</mi>
+											<mo>&af;</mo>
+											<msub>
+												<mi>𝛼</mi><mi>𝑖</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							となる．このとき，<math>
+								<msub>
+									<mi>𝜎</mi>
+									<mrow>
+										<mi>𝑤</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝛼</mi><mi>𝑖</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</msub>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑤</mi>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝜎</mi>
+										<msub>
+											<mi>𝛼</mi><mi>𝑖</mi>
+										</msub>
+									</msub>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝑤</mi>
+										<mrow>
+											<mo>−</mo><mn>1</mn>
+										</mrow>
+									</msup>
+								</mrow>
+							</math> であった．
 						</li>
 					</ul>
 				</article>
@@ -37405,7 +38046,7 @@
 								</mrow>
 							</math>
 						</li>
-						<li><math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数の実ルート">虚ルート</a>を持たない．</li>
+						<li><math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たない．</li>
 						<li><math><mi>𝔤</mi></math> の<a href="#Kac-Moody代数の基本性質">ルートの集合</a> <math><mi>𝛥</mi></math> は有限集合．</li>
 						<li><a href="#Weyl群">Weyl群</a> <math><mi>𝑊</mi></math> は有限集合．</li>
 					</ul>
@@ -37507,9 +38148,9 @@
 							</math>
 							とすると，これは <math><mi>𝑊</mi></math>-不変な正定値対称双線型形式．ところで，<math><mi>𝔼</mi></math> 上の <math><mi>𝑊</mi></math>-不変な対称双線型形式は既約成分の同型を除いて一意なので，<math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a>は正定値．
 						</li>
-						<li><math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a>は正定値であることと，<math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数の実ルート">虚ルート</a>を持たないことは明らかに同値．</li>
+						<li><math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a>は正定値であることと，<math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たないことは明らかに同値．</li>
 						<li>
-							<a href="#Kac-Moody代数の実ルート">虚ルート</a>を持たないとき，標準形式の <math><mi>𝑊</mi></math>-不変性と，<a href="#Kac-Moody代数の実ルート">Kac-Moody代数における実ルートの条件</a>より，
+							<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たないとき，標準形式の <math><mi>𝑊</mi></math>-不変性と，<a href="#Kac-Moody代数のWeyl群">Kac-Moody代数における実ルートの条件</a>より，
 							<math>
 								<mo>∀</mo>
 								<mo>&af;</mo>
