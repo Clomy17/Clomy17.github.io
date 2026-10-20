@@ -12641,7 +12641,7 @@
 							</mrow>
 						</mrow>
 					</math>
-					が以下のように分解することと考えられる：
+					が以下のように分解の直積になることと考えられる：
 					<math display="block">
 						<mi>𝔤</mi>
 						<mo>→</mo>
@@ -12651,11 +12651,11 @@
 							<mi>𝔤𝔩</mi>
 							<mo>&af;</mo>
 							<mrow>
-								<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+								<mo>(</mo><msub><mi>𝑉</mi><mi>𝜆</mi></msub><mo>)</mo>
 							</mrow>
 						</mrow>
 					</math>
-					この分解は<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>としての分解だが，より性質の良い<a href="#準同型">Lie代数準同型</a>としての分解となる場合を考える（所謂「同時対角化」）．
+					この分解は<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>としての分解だが，より性質の良い<a href="#準同型">Lie代数準同型</a>としての分解となる場合を考える（所謂「同時対角化」）：
 				</p>
 				<article id="1次元Lie代数への準同型" class="thm">
 					<h4>1次元Lie代数への準同型</h4>
@@ -12763,7 +12763,7 @@
 							<mi>𝔤𝔩</mi>
 							<mo>&af;</mo>
 							<mrow>
-								<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+								<mo>(</mo><msub><mi>𝑉</mi><mi>𝜆</mi></msub><mo>)</mo>
 							</mrow>
 						</mrow>
 					</math>
@@ -17256,6 +17256,44 @@
 									</math>
 									に対し，<math><mi>𝑉</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑛</mi><mo>)</mo></mrow></math> は<a href="#単純加群">単純 <math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math>-加群</a>
 								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝛺</mi><mn>2</mn>
+										</msub>
+									</math> の <math><mi>𝑉</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑛</mi><mo>)</mo></mrow></math> 上の作用は <math>
+										<msub>
+											<mi>𝛺</mi><mn>2</mn>
+										</msub>
+										<mo>=</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝑛</mi><mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<mrow>
+														<mn>2</mn><mo>&it;</mo><mi>𝑛</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<msub>
+												<mi>id</mi>
+												<mrow>
+													<mi>𝑉</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑛</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</msub>
+										</mrow>
+									</math>
+								</li>
 							</ul>
 						</li>
 						<li>
@@ -17892,6 +17930,124 @@
 										</mrow>
 									</math>
 								</li>
+								<li>
+									<math>
+										<mrow>
+											<msub>
+												<mi>𝛺</mi><mn>2</mn>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝑥</mi><mi>𝑖</mi>
+													</msup>
+													<msup>
+														<mi>𝑦</mi>
+														<mrow>
+															<mi>𝑛</mi><mo>−</mo><mi>𝑖</mi>
+														</mrow>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mi>𝑛</mi>
+																<mo>−</mo>
+																<mrow>
+																	<mn>2</mn><mo>&it;</mo><mi>𝑖</mi>
+																</mrow>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<mrow>
+														<mn>2</mn>
+														<mo>&it;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mi>𝑛</mi>
+																<mo>−</mo>
+																<mrow>
+																	<mn>2</mn><mo>&it;</mo><mi>𝑖</mi>
+																</mrow>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>+</mo>
+													<mrow>
+														<mn>4</mn>
+														<mo>&it;</mo>
+														<mi>𝑖</mi>
+														<mo>&it;</mo>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<mi>𝑛</mi><mo>−</mo><mi>𝑖</mi><mo>+</mo><mn>1</mn>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<msup>
+													<mi>𝑥</mi><mi>𝑖</mi>
+												</msup>
+												<msup>
+													<mi>𝑦</mi>
+													<mrow>
+														<mi>𝑛</mi><mo>−</mo><mi>𝑖</mi>
+													</mrow>
+												</msup>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msup>
+														<mi>𝑛</mi><mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<mrow>
+														<mn>2</mn><mo>&it;</mo><mi>𝑛</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<msup>
+													<mi>𝑥</mi><mi>𝑖</mi>
+												</msup>
+												<msup>
+													<mi>𝑦</mi>
+													<mrow>
+														<mi>𝑛</mi><mo>−</mo><mi>𝑖</mi>
+													</mrow>
+												</msup>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
 							</ul>
 						</li>
 						<li>
@@ -18497,7 +18653,11 @@
 							</math>
 						</li>
 					</ul>
-					<p>を与えると，任意の有限次元 <a href="#加群"><math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math>-加群</a> <math><mi>𝑊</mi></math> に対し，<math><mi>ℎ</mi></math> の作用の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a>は整数．</p>
+					<p>を与えると，任意の有限次元 <a href="#加群"><math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math>-加群</a> <math><mi>𝑊</mi></math> に対し，</p>
+					<ul>
+						<li><math><mi>ℎ</mi></math> の作用の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a>は整数．</li>
+						<li>特に，その最大値は非負整数．</li>
+					</ul>
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
@@ -19125,7 +19285,7 @@
 					<h4>証明</h4>
 					<ul>
 						<li>
-							<a href="#標数0の体上の2次元特殊線型Lie代数の有限次元加群に関する補題">先の補題</a>より，有限次元
+							<a href="#標数0の体上の2次元特殊線型Lie代数の有限次元加群に関する補題">先の補題</a>より，有限次元<a href="#単純加群">単純 <math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math>-加群</a>は，<math><mi>ℎ</mi></math> の作用に関する<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a>を持つが，有限次元ゆえに高々有限個．よって，最大値 <math><mi>𝑛</mi><mo>∈</mo><msub><mi>ℕ</mi><mn>0</mn></msub></math> を持つ．
 						</li>
 						<li>
 							<p>
@@ -19427,7 +19587,7 @@
 											<mi>𝔤</mi><mn>0</mn>
 										</msub>
 									</math>
-									は <math><mi>𝔤</mi></math> の<a href="#トーラス">トーラス</a>．つまり，有限次元<a href="#可換">可換</a>な<a href="#部分Lie代数">部分Lie代数</a>．
+									は <math><mi>𝔤</mi></math> の<a href="#トーラス">極大分裂トーラス</a>．
 								</li>
 								<li>
 									<math>
@@ -19481,7 +19641,7 @@
 											<mi>𝔤</mi><mn>0</mn>
 										</msub>
 									</math>
-									に関する<math><mi>𝛼</mi><mo>≁</mo><mn>0</mn></math>の<a href="#ルート格子">ルート空間分解</a>を持ち，そのルートを集めたものは
+									に関する<a href="#ルート">ルート空間分解</a>を持ち，そのルートの集合は
 									<math>
 										<munder intent=":largeop">
 											<mo>⨁</mo>
@@ -21870,19 +22030,16 @@
 										</mrow>
 									</msub>
 									<mo>,</mo>
-									<mi>𝛬</mi>
-									<mo>,</mo>
 									<mi>𝜎</mi>
 								</mrow>
 								<mo>)</mo>
 							</math>
 						</li>
-						<li>
-						</li>
 					</ul>
 					<p>を与える．</p>
+					<span class="future-work">定義の修正が必要</span>
 					<p>
-						<math><mi>𝔤</mi></math>-<a href="#加群">加群</a> <math><mi>𝑉</mi></math> が<dfn>可積分</dfn><span lang="en">(interable)</span>とは，
+						<math><msub><mi>𝔤</mi><mn>0</mn></msub></math> に関する <a href="#ウェイト">ウェイト <math><mi>𝔤</mi></math>-加群</a>であって，全ての<a href="#ウェイト">ウェイト空間</a>が有限次元なもの <math><mi>𝑉</mi></math> が<dfn>可積分</dfn><span lang="en">(interable)</span>であるとは，
 						<math>
 							<mo>∀</mo>
 							<mo>&af;</mo>
@@ -21890,7 +22047,7 @@
 								<mi>𝑗</mi><mo>∈</mo><mi>𝐽</mi>
 							</mrow>
 						</math>
-						と
+						に対し，
 						<math>
 							<mo>∀</mo>
 							<mo>&af;</mo>
@@ -21913,46 +22070,53 @@
 								</mrow>
 							</mrow>
 						</math>
-						に対し，
+						であって，
 						<math display="block">
+							<mo>{</mo>
 							<mrow>
-								<msup>
-									<mi>ℎ</mi><mo>−</mo>
-								</msup>
-								<mo>≔</mo>
+								<msub>
+									<mi>ℎ</mi><mi>+</mi>
+								</msub>
+								<mo>,</mo>
 								<mrow>
-									<mi>𝜎</mi>
-									<mo>&af;</mo>
+									<msup>
+										<mi>ℎ</mi><mi>−</mi>
+									</msup>
+									<mo>≔</mo>
 									<mrow>
-										<mo>(</mo>
-										<msup>
-											<mi>ℎ</mi><mo>+</mo>
-										</msup>
-										<mo>)</mo>
+										<mi>𝜎</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msup>
+												<mi>ℎ</mi><mo>+</mo>
+											</msup>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>ℎ</mi>
+									<mo>≔</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msup>
+												<mi>ℎ</mi><mo>+</mo>
+											</msup>
+											<mo>,</mo>
+											<msup>
+												<mi>ℎ</mi><mo>−</mo>
+											</msup>
+										</mrow>
+										<mo>]</mo>
 									</mrow>
 								</mrow>
 							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mi>ℎ</mi>
-								<mo>≔</mo>
-								<mrow>
-									<mo>[</mo>
-									<mrow>
-										<msup>
-											<mi>ℎ</mi><mo>+</mo>
-										</msup>
-										<mo>,</mo>
-										<msup>
-											<mi>ℎ</mi><mo>−</mo>
-										</msup>
-									</mrow>
-									<mo>]</mo>
-								</mrow>
-							</mrow>
+							<mo>}</mo>
 						</math>
-						とする．（<math><mi>ℎ</mi></math>零になり得ない? これ）
-						これより定まる<a href="#部分Lie代数">部分Lie代数</a>
+						が <a href="#2次元特殊線型Lie代数の性質"><math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math> の標準基底</a>となるならば，これより定まる<a href="#部分Lie代数">部分Lie代数</a>
 						<math>
 							<mi>𝔞</mi>
 							<mo>≔</mo>
@@ -21986,31 +22150,24 @@
 								<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
 							</mrow>
 						</math>
-						に対して，
-						<math>
-							<mrow>
-								<mi>𝑈</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝛼</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>&af;</mo>
-							<mi>𝑣</mi>
-						</math>
-						が有限次元となることを言う．
+						に対して，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
 					</p>
-				</article>
-				<article id="可積分表現の基本性質" class="thm">
-					<h4>可積分表現の基本性質</h4>
-					<p>を与える．</p>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
 					<ul>
 						<li>
-							<math><mi>𝑉</mi></math> の<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a>を
-							<math>
+							<math><mi>𝑉</mi></math> の<a href="#ウェイト">ウェイト</a> <math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝜆</mi>
+									<mo>∈</mo>
+									<msup>
+										<msub>
+											<mi>𝔤</mi><mn>0</mn>
+										</msub>
+										<mo>∗</mo>
+									</msup>
+								</mrow>
+							</math> に対し，<math><mi>𝑉</mi></math> の<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a> <math>
 								<mi>𝑊</mi>
 								<mo>≔</mo>
 								<mrow>
@@ -22027,17 +22184,122 @@
 											<mi>𝜆</mi>
 											<mo>+</mo>
 											<mrow>
-												<mi>𝑘</mi>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝛼</mi><mi>𝑗</mi>
-												</msub>
+												<mi>𝑘</mi><mo>&it;</mo><mi>𝛼</mi>
 											</mrow>
 										</mrow>
 									</msub>
 								</mrow>
-							</math>
-							とすると，これは<a href="#部分加群">部分 <math><mi>𝔞</mi></math>-加群</a>となる．ここで，<a href="#部分加群">部分 <math><mi>𝔞</mi></math>-加群</a>の昇鎖
+							</math> は有限次元
+						</li>
+						<li>
+							<math><mi>𝑉</mi></math> の<a href="#ウェイト">ウェイト</a> <math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝜆</mi>
+									<mo>∈</mo>
+									<msup>
+										<msub>
+											<mi>𝔤</mi><mn>0</mn>
+										</msub>
+										<mo>∗</mo>
+									</msup>
+								</mrow>
+							</math> の <a href="#ウェイト">ウェイト空間</a> <math>
+								<msub>
+									<mi>𝑉</mi><mi>𝜆</mi>
+								</msub>
+							</math> に対し，<math>
+								<mrow>
+									<mi>𝑈</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔞</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&af;</mo>
+								<msub>
+									<mi>𝑉</mi><mi>𝜆</mi>
+								</msub>
+							</math> は有限次元
+						</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+								</mrow>
+							</math> に対し，<math>
+								<mrow>
+									<mi>𝑈</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔞</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&af;</mo>
+								<mi>𝑣</mi>
+							</math> は有限次元
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>条件の同値性の証明</h4>
+					<ul>
+						<li>
+							<a href="#ルートの性質">ルートの性質</a>より <math>
+								<mrow>
+									<mrow>
+										<mi>𝑈</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&af;</mo>
+									<msub>
+										<mi>𝑉</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+								<mo>⊆</mo>
+								<mi>𝑊</mi>
+							</math> ．
+						</li>
+						<li>
+							<a href="#ウェイト">ウェイト加群</a>の定義より，
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+								</mrow>
+							</math> は<a href="#ウェイト">ウェイトベクトル</a>の有限和なので，<math>
+								<mrow>
+									<mi>𝑈</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&af;</mo>
+								<msub>
+									<mi>𝑉</mi><mi>𝜆</mi>
+								</msub>
+							</math> が有限次元ならば，<math>
+								<mrow>
+									<mi>𝑈</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝛼</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&af;</mo>
+								<mi>𝑣</mi>
+							</math> も有限次元．
+						</li>
+						<li>
+							<math><mi>𝑊</mi></math> は明らかに<a href="#部分加群">部分 <math><mi>𝔞</mi></math>-加群</a>となる．ここで，<a href="#部分加群">部分 <math><mi>𝔞</mi></math>-加群</a>の<a href="../../../set/index.html#昇鎖">昇鎖</a>
 							<math>
 								<mo>{</mo>
 								<msup>
@@ -22121,8 +22383,13 @@
 								<mo>=</mo>
 								<mn>1</mn>
 							</math>
-							となる．ゆえに昇鎖は
-							<math>
+							となる．ゆえに <math>
+								<mo>{</mo>
+								<msup>
+									<mi>𝑊</mi><mi>𝑖</mi>
+								</msup>
+								<mo>}</mo>
+							</math> は <math>
 								<mrow>
 									<mn>0</mn>
 									<mo>=</mo>
@@ -22162,8 +22429,226 @@
 									<mi>𝑊</mi>
 								</mrow>
 							</math>
-							なる有限鎖となるから，<math><mi>𝑊</mi></math> は有限次元．
+							なる<a href="../../../set/index.html#鎖">有限鎖</a>となるから，<math><mi>𝑊</mi></math> は有限次元．
 						</li>
+					</ul>
+				</article>
+				<article id="可積分表現の基本性質" class="thm">
+					<h4>可積分表現の基本性質</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+						<li>
+							<math><mi>𝔤</mi></math> の<a href="#三角分解">三角分解</a>
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝔤</mi><mo>−</mo>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝔤</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝔤</mi><mo>+</mo>
+										</msub>
+									</mrow>
+									<mo>,</mo>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝛼</mi><mi>𝑗</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝑗</mi><mo>∈</mo><mi>𝐽</mi>
+										</mrow>
+									</msub>
+									<mo>,</mo>
+									<mi>𝜎</mi>
+								</mrow>
+								<mo>)</mo>
+							</math>
+						</li>
+						<li><a href="#可積分表現">可積分 <math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math></li>
+						<li><math><mi>𝑉</mi></math> の<a href="#ウェイト">ウェイト</a>の集合 <math><mi>wt</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑉</mi><mo>)</mo></mrow></math></li>
+						<li>
+							<a href="#2次元特殊線型Lie代数の性質"><math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math></a> と<a href="#同型">同型</a>な <math><mi>𝔤</mi></math> <a href="#部分Lie代数">部分Lie代数</a>
+							<math>
+								<mi>𝔞</mi>
+								<mo>≔</mo>
+								<mrow>
+									<mrow>
+										<mi>𝕂</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>−</mi>
+										</msub>
+									</mrow>
+									<mo>⊕</mo>
+									<mrow>
+										<mi>𝕂</mi><mo>&it;</mo><mi>ℎ</mi>
+									</mrow>
+									<mo>⊕</mo>
+									<mrow>
+										<mi>𝕂</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℎ</mi><mi>+</mi>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与えると，以下が成り立つ：</p>
+					<ul>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝜆</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>wt</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> に対し，<math>
+								<mi>𝜆</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+								</mrow>
+							</math> は整数．
+						</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝜆</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>wt</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> に対し，非負整数 <math><mi>𝑝</mi><mo>,</mo><mi>𝑞</mi></math> が存在し，
+							<ul>
+								<li>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>𝑘</mi><mo>∈</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mrow>
+														<mi>𝜆</mi>
+														<mo>+</mo>
+														<mrow>
+															<mi>𝑘</mi><mo>&it;</mo><mi>𝛼</mi>
+														</mrow>
+													</mrow>
+													<mo>∈</mo>
+													<mrow>
+														<mi>wt</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑀</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>⇔</mo>
+												<mrow>
+													<mrow>
+														<mo>−</mo><mi>𝑝</mi>
+													</mrow>
+													<mo>≤</mo>
+													<mi>𝑘</mi>
+													<mo>≤</mo>
+													<mi>𝑞</mi>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mi>𝑝</mi><mo>−</mo><mi>𝑞</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝜆</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<math>
+								<mrow>
+									<mi>dim</mi>
+									<mo>&af;</mo>
+									<msub>
+										<mi>𝑉</mi><mi>𝜆</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>dim</mi>
+									<mo>&af;</mo>
+									<msub>
+										<mi>𝑉</mi>
+										<mrow>
+											<mi>𝜆</mi>
+											<mo>−</mo>
+											<mrow>
+												<mrow>
+													<mi>𝜆</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>&it;</mo>
+												<mi>𝛼</mi>
+											</mrow>
+										</mrow>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
 						<li>
 							<math>
 								<mo>{</mo>
@@ -22369,133 +22854,183 @@
 		</section>
 		<section>
 			<h2>Kac-Moody代数</h2>
-			<p><a href="#基本関係式">生成系と基本関係式</a>を使った定義されるため，抽象的に感じるかもしれないが，有限次元半単純Lie代数の一般化になっている．</p>
+			<p><a href="#基本関係式">生成系と基本関係式</a>を使って定義されるため，抽象的に感じるかもしれないが，有限次元半単純Lie代数の一般化になっている．</p>
 			<section>
 				<h3>Cartan行列とKac-Moddy代数の定義</h3>
 				<article id="Cartan行列" class="dfn">
 					<h4>Cartan行列</h4>
 					<p><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> を与える．</p>
-					<p>
-						<math><mi>𝑛</mi></math> 次の<dfn>Cartan行列</dfn><span lang="en">(Cartan matrix)</span>とは，整数成分の <math><mi>𝑛</mi></math> 次正方行列
-						<math>
-							<mrow>
-								<mi>𝐴</mi>
-								<mo>=</mo>
-								<msub>
-									<mrow>
-										<mo>(</mo>
-										<msub>
-											<mi>𝑎</mi>
-											<mrow>
-												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
-											</mrow>
-										</msub>
-										<mo>)</mo>
-									</mrow>
-									<mrow>
-										<mrow>
-											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝑛</mi>
-									</mrow>
-								</msub>
-							</mrow>
-						</math>
-						であって，以下を満たすものを言う：
-					</p>
 					<ul>
 						<li>
+							<math><mi>𝑛</mi></math> 次の<dfn>Cartan行列</dfn><span lang="en">(Cartan matrix)</span>とは，整数成分の <math><mi>𝑛</mi></math> 次正方行列
 							<math>
 								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<msub>
-										<mi>𝑎</mi>
-										<mrow>
-											<mi>𝑖</mi><mo>,</mo><mi>𝑖</mi>
-										</mrow>
-									</msub>
+									<mi>𝐴</mi>
 									<mo>=</mo>
-									<mn>2</mn>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑖</mi><mo>≠</mo><mi>𝑗</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝑛</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
 									<msub>
-										<mi>𝑎</mi>
 										<mrow>
-											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+												</mrow>
+											</msub>
+											<mo>)</mo>
 										</mrow>
-									</msub>
-									<mo>∈</mo>
-									<mrow>
-										<mo>−</mo>
-										<msub>
-											<mi>ℕ</mi><mn>0</mn>
-										</msub>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
 										<mrow>
-											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝑛</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<msub>
-											<mi>𝑎</mi>
 											<mrow>
 												<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
 											</mrow>
-										</msub>
-										<mo>=</mo>
-										<mn>0</mn>
-									</mrow>
-									<mo>⇔</mo>
-									<mrow>
-										<msub>
-											<mi>𝑎</mi>
-											<mrow>
-												<mi>𝑗</mi><mo>,</mo><mi>𝑖</mi>
-											</mrow>
-										</msub>
-										<mo>=</mo>
-										<mn>0</mn>
-									</mrow>
+											<mo>∈</mo>
+											<mi>𝑛</mi>
+										</mrow>
+									</msub>
 								</mrow>
 							</math>
+							であって，以下を満たすものを言う：
+							<ul>
+								<li>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑖</mi>
+												</mrow>
+											</msub>
+											<mo>=</mo>
+											<mn>2</mn>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑖</mi><mo>≠</mo><mi>𝑗</mi>
+												</mrow>
+												<mo>∈</mo>
+												<mi>𝑛</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+												</mrow>
+											</msub>
+											<mo>∈</mo>
+											<mrow>
+												<mo>−</mo>
+												<msub>
+													<mi>ℕ</mi><mn>0</mn>
+												</msub>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+												</mrow>
+												<mo>∈</mo>
+												<mi>𝑛</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+													</mrow>
+												</msub>
+												<mo>=</mo>
+												<mn>0</mn>
+											</mrow>
+											<mo>⇔</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑗</mi><mo>,</mo><mi>𝑖</mi>
+													</mrow>
+												</msub>
+												<mo>=</mo>
+												<mn>0</mn>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<math><mi>𝑛</mi></math> 次のCartan行列に対し，<dfn>Dynkin図形</dfn><span lang="en">(Dynkin daigram)</span>とは，以下で描いたもの：
+							<ul>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+										</mrow>
+									</math> に対し，頂点 ○ を書き，その上に <math><mi>𝑖</mi></math> と書く．
+								</li>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>≠</mo><mi>𝑗</mi>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝑛</mi>
+										</mrow>
+									</math> に対し，<math>
+										<mrow>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑗</mi><mo>,</mo><mi>𝑖</mi>
+												</mrow>
+											</msub>
+										</mrow>
+										<mo>≠</mo>
+										<mn>0</mn>
+									</math> ならば，頂点 <math><mi>𝑖</mi><mo>,</mo><mi>𝑗</mi></math> を線分で結び，その線分の <math><mi>𝑖</mi></math> 側に <math><mo>−</mo><msub><mi>𝑎</mi><mrow><mi>𝑖</mi><mo>,</mo><mi>𝑗</mi></mrow></msub></math>と書き，<math><mi>𝑗</mi></math> 側に <math><mo>−</mo><msub><mi>𝑎</mi><mrow><mi>𝑗</mi><mo>,</mo><mi>𝑖</mi></mrow></msub></math> と書く：
+									<svg class="future-work" viewbox="0 0 140 40" width="140" height="40" fill="white">
+										<text x="0" y="35">Dynkin図形の例</text>
+									</svg>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</article>
@@ -23831,11 +24366,55 @@
 							</li>
 							<li>
 								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝔤</mi><mi>−</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝔤</mi><mn>0</mn>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝔤</mi><mi>+</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<msub>
+														<mi>𝛼</mi><mi>𝑖</mi>
+													</msub>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<mover>
+											<mi>𝜃</mi><mo>∼</mo>
+										</mover>
+									</mrow>
+									<mo>)</mo>
+								</math>
+								は <math><mover><mi>𝔤</mi><mo>∼</mo></mover></math> の<a href="#三角分解">三角分解</a>．
+							</li>
+							<li>
+								ゆえに，<math>
 									<mover>
 										<mi>𝔤</mi><mo>∼</mo>
 									</mover>
-								</math>
-								は<a href="#ルート">ルート空間分解</a>を持つ．特に，
+								</math> は <math><msub><mi>𝔤</mi><mn>0</mn></msub></math> に関する<a href="#ルート">ルート空間分解</a>を持つ．特に，
 								<math display="block">
 									<msub>
 										<mi>𝑄</mi><mo>+</mo>
