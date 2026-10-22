@@ -9785,36 +9785,40 @@
 							<mo>,</mo>
 							<mrow>
 								<mrow>
-									<mo>(</mo>
 									<mrow>
+										<mo>(</mo>
 										<mrow>
-											<mo>[</mo>
 											<mrow>
-												<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+												</mrow>
+												<mo>]</mo>
 											</mrow>
-											<mo>]</mo>
+											<mo>,</mo>
+											<mi>𝑧</mi>
 										</mrow>
-										<mo>,</mo>
-										<mi>𝑧</mi>
+										<mo>)</mo>
 									</mrow>
-									<mo>)</mo>
+									<mo>+</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑦</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝑥</mi><mo>,</mo><mi>𝑧</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
 								</mrow>
 								<mo>=</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝑥</mi>
-										<mo>,</mo>
-										<mrow>
-											<mo>[</mo>
-											<mrow>
-												<mi>𝑦</mi><mo>,</mo><mi>𝑧</mi>
-											</mrow>
-											<mo>]</mo>
-										</mrow>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
+								<mn>0</mn>
 							</mrow>
 						</math>
 					</p>
@@ -10627,7 +10631,7 @@
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-						<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a><math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
+						<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
 						<li><math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math> それぞれに対応する<a href="#加群">表現</a> <math><msub><mi>𝜌</mi><mi>𝑉</mi></msub><mo>,</mo><msub><mi>𝜌</mi><mi>𝑊</mi></msub></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -10745,67 +10749,6 @@
 						</li>
 						<li>全単射な準同型を<dfn>同型</dfn><span lang="en">(isomorphism)</span>と呼ぶ．</li>
 					</ul>
-				</article>
-				<article id="Killing形式" class="dfn">
-					<h4>Killing形式</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-					</ul>
-					<p>を与える．</p>
-					<p>
-						<math><mi>𝔤</mi></math> の<dfn>Killing形式</dfn><span lang="en">(Killing form)</span>とは，以下の対称な双線型形式のこと：
-						<math display="block">
-							<mi>𝜅</mi>
-							<mo>:</mo>
-							<mrow>
-								<mrow>
-									<mrow>
-										<mi>𝔤</mi><mo>Π</mo><mi>𝔤</mi>
-									</mrow>
-									<mo>→</mo>
-									<mi>𝕂</mi>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-									<mo>↦</mo>
-									<mrow>
-										<mi>tr</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mrow>
-													<mi>ad</mi>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo><mi>𝑥</mi><mo>)</mo>
-													</mrow>
-												</mrow>
-												<mo>∘</mo>
-												<mrow>
-													<mi>ad</mi>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo><mi>𝑦</mi><mo>)</mo>
-													</mrow>
-												</mrow>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</mrow>
-						</math>
-					</p>
-					<aside class="future-work">無限次元でも上手く定義できる場合もあるが，その詳しい条件の確認．</aside>
 				</article>
 				<article id="部分Lie代数上の加群" class="dfn">
 					<h4>部分Lie代数上の加群・商Lie代数上の加群</h4>
@@ -11110,7 +11053,7 @@
 				</article>
 			</section>
 			<section>
-				<h3>加群の圏の極限</h3>
+				<h3>加群の圏の極限とか</h3>
 				<article id="加群の直和" class="dfn">
 					<h4><math><mi>𝔤</mi></math>-加群の直和</h4>
 					<ul>
@@ -11547,6 +11490,221 @@
 						</p>
 					</article>
 				</article>
+				<article id="加群のテンソル積" class="dfn">
+					<h4><math><mi>𝔤</mi></math>-加群のテンソル積</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝔤</mi></math> の<a href="#包絡代数">包絡代数</a> <math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> とその<a href="#包絡代数は余可換三角Hopf代数">余積</a> <math><mi>𝛥</mi></math></li>
+						<li>
+							<a href="#加群"><math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math>-加群</a> <math>
+								<msub>
+									<mi>𝑉</mi><mn>1</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑉</mi><mn>2</mn>
+								</msub>
+							</math> とそれぞれの<a href="#加群">表現</a>
+							<math>
+								<msub>
+									<mi>𝜌</mi><mn>1</mn>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝜌</mi><mn>2</mn>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p><math><mi>𝔤</mi></math>-加群 <math>
+						<msub>
+							<mi>𝑉</mi><mn>1</mn>
+						</msub>
+						<mo>,</mo>
+						<msub>
+							<mi>𝑉</mi><mn>2</mn>
+						</msub>
+					</math> の<dfn>テンソル積</dfn><span lang="en">(tensor product)</span>とは，以下で定まる <a href="#加群"><math><mi>𝔤</mi></math>-加群</a>のこと：</p>
+					<ul>
+						<li>
+							線型空間のテンソル積 <math>
+								<msub>
+									<mi>𝑉</mi><mn>1</mn>
+								</msub>
+								<mo>⊗</mo>
+								<msub>
+									<mi>𝑉</mi><mn>2</mn>
+								</msub>
+							</math>
+						</li>
+						<li>
+							<a href="#加群"><math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> の表現</a> <math>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝜌</mi><mn>1</mn>
+										</msub>
+										<mo>⊗</mo>
+										<msub>
+											<mi>𝜌</mi><mn>2</mn>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>∘</mo>
+								<mi>𝛥</mi>
+							</math> ．つまり，<math><mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi></math> に対して以下で定める：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<msub>
+											<mi>𝑣</mi><mn>1</mn>
+										</msub>
+										<mo>∈</mo>
+										<msub>
+											<mi>𝑉</mi><mn>1</mn>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<msub>
+												<mi>𝑣</mi><mn>2</mn>
+											</msub>
+											<mo>∈</mo>
+											<msub>
+												<mi>𝑉</mi><mn>2</mn>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑣</mi><mn>1</mn>
+													</msub>
+													<mo>⊗</mo>
+													<msub>
+														<mi>𝑣</mi><mn>2</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>≔</mo>
+										<mrow>
+											<mrow>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>&af;</mo>
+														<msub>
+															<mi>𝑣</mi><mn>1</mn>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>⊗</mo>
+												<msub>
+													<mi>𝑣</mi><mn>2</mn>
+												</msub>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<msub>
+													<mi>𝑣</mi><mn>1</mn>
+												</msub>
+												<mo>⊗</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>&af;</mo>
+														<msub>
+															<mi>𝑣</mi><mn>2</mn>
+														</msub>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="加群の双対" class="dfn">
+					<h4><math><mi>𝔤</mi></math>-加群の双対</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+						<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> と対応する<a href="#加群">表現</a><math><mi>𝜌</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> の<dfn>双対</dfn><span lang="en">(dual)</span>とは，<math><mi>𝕂</mi></math> に<a href="#零加群">零加群</a>を定めたときの <a href="#加群のhomの加群"><math><mi>𝔤</mi></math>-加群 <math><msub><mi>hom</mi><mi>𝕂</mi></msub><mo>&af;</mo><mrow><mo>(</mo><mrow><mi>𝑉</mi><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math></a> のこと．つまり以下で定まる <a href="#加群"><math><mi>𝔤</mi></math>-加群</a>のこと：</p>
+					<ul>
+						<li>
+							双対線型空間 <math>
+								<msup>
+									<mi>𝑉</mi><mo>∗</mo>
+								</msup>
+								<mo>≔</mo>
+								<mrow>
+									<msub>
+										<mi>hom</mi><mi>𝕂</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑉</mi><mo>,</mo><mi>𝕂</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<a href="#加群"><math><mi>𝔤</mi></math> の <math><msup><mi>𝑉</mi><mo>∗</mo></msup></math> への左作用</a>
+							<math>
+								<mrow>
+									<mi>𝑥</mi><mo>&af;</mo><mi>𝑓</mi>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mo>−</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>∘</mo>
+										<mrow>
+											<mi>𝜌</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
 			</section>
 			<section>
 				<h3>同型定理</h3>
@@ -11557,7 +11715,7 @@
 						<ul>
 							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-							<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a><math><mi>𝑉</mi></math></li>
+							<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math></li>
 							<li><math><mi>𝑉</mi></math> に<a href="#加群">対応する表現</a> <math><mi>𝜌</mi></math></li>
 						</ul>
 						<p>を与える．</p>
@@ -11600,7 +11758,7 @@
 						<ul>
 							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-							<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a><math><mi>𝑉</mi></math></li>
+							<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math></li>
 							<li><math><mi>𝑉</mi></math> の <a href="#部分加群">部分<math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑊</mi></math> と<a href="#加群">対応する表現</a> <math><mi>𝜌</mi></math></li>
 						</ul>
 						<p>を与える．</p>
@@ -11676,7 +11834,7 @@
 							<ul>
 								<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 								<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-								<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a><math><mi>𝑉</mi></math></li>
+								<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math></li>
 								<li><math><mi>𝑉</mi></math> の <a href="#部分加群">部分<math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑊</mi></math> とその<a href="#商加群">商<math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi><mo>∕</mo><mi>𝑊</mi></math></li>
 							</ul>
 							<p>を与えると，</p>
@@ -12615,6 +12773,67 @@
 									</mtd>
 								</mtr>
 							</mtable>
+						</math>
+						より<a href="#不変形式">不変形式</a>となる．
+					</p>
+				</article>
+				<article id="Killing形式" class="dfn">
+					<h4>Killing形式</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math> 上の有限次元<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mi>𝔤</mi></math> の<dfn>Killing形式</dfn><span lang="en">(Killing form)</span>とは，<a href="#随伴表現">随伴表現</a>に関する<a href="#跡形式">跡形式</a>のこと：
+						<math display="block">
+							<mi>𝜅</mi>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝔤</mi><mo>Π</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝕂</mi>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑥</mi><mo>,</mo><mi>𝑦</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>↦</mo>
+									<mrow>
+										<mi>tr</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mi>ad</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>∘</mo>
+												<mrow>
+													<mi>ad</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑦</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
 						</math>
 					</p>
 				</article>
@@ -41142,209 +41361,325 @@
 			</section>
 			<section>
 				<h3>包絡代数の中心</h3>
-				<p>
-					<a href="#PBW定理">PBW定理</a>
-					における写像
-					<math>
-						<msub>
-							<mi>𝐼</mi><mi>PBW</mi>
-						</msub>
-						<mo>:</mo>
-						<mrow>
-							<mrow>
-								<mi>𝑆</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>→</mo>
-							<mrow>
-								<mi>𝑈</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-						</mrow>
-					</math>
-					は，<a href="../../module/linear-algebra/index.html#線型同型">線型同型</a>だが，<math><mi>𝔤</mi></math> が<a href="#可換">可換</a>でない限り<a href="../index.html#準同型">（結合）代数同型</a>ではない．
-				</p>
-				<p>
-					ここで，<math><mi>𝔤</mi></math> の<a href="#内部微分">内部微分</a> は <math><mi>𝔤</mi></math> 上の作用なので，<a href="../index.html#微分代数">微分</a>となるように
-					<math>
-						<mi>𝑆</mi>
-						<mo>&af;</mo>
-						<mrow>
-							<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-						</mrow>
-					</math>
-					および
-					<math>
-						<mi>𝑈</mi>
-						<mo>&af;</mo>
-						<mrow>
-							<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-						</mrow>
-					</math>
-					に自然に拡張される．この作用に関して <math><mn>0</mn></math> となる<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a>をそれぞれ
-					<math>
-						<msup>
-							<mrow>
-								<mi>𝑆</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mi>𝔤</mi>
-						</msup>
-						<mo>,</mo>
-						<msup>
-							<mrow>
-								<mi>𝑈</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mi>𝔤</mi>
-						</msup>
-					</math>
-					とすると，定義より自明に
-					<math>
-						<msup>
-							<mrow>
-								<mi>𝑈</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mi>𝔤</mi>
-						</msup>
-						<mo>=</mo>
-						<mrow>
-							<mi>𝑍</mi>
-							<mo>&af;</mo>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
+				<section>
+					<h4>Duflo同型（余裕の未整理）</h4>
+					<article id="Duflo同型" class="dfn">
+						<h4>Duflo同型</h4>
+						<ul class="future-work">
+							<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+							<li>
+								<math><mi>𝔤</mi></math> 上の<a href="#包絡代数">包絡代数</a>
+								<math>
 									<mi>𝑈</mi>
 									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
 									</mrow>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-						</mrow>
-					</math>
-					である．また，
-					<math>
-						<msub>
-							<mi>𝐼</mi>
-							<mrow>
-								<mi>PBW</mi>
-							</mrow>
-						</msub>
-					</math>
-					が誘導する写像
-					<math>
-						<msup>
-							<mrow>
-								<mi>𝑆</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mi>𝔤</mi>
-						</msup>
-						<mo>→</mo>
-						<msup>
-							<mrow>
-								<mi>𝑈</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mi>𝔤</mi>
-						</msup>
-					</math>
-					は<a href="../../module/linear-algebra/index.html#線型同型">線型同型</a>となる．
-				</p>
-				<p>
-					<math><mi>𝕂</mi></math> が標数<math><mn>0</mn> で，</math><math><mi>𝔤</mi></math> が有限次元の場合，うまい
-					<math>
-						<mi>𝐽</mi>
-						<mo>:</mo>
-						<mrow>
-							<msup>
-								<mrow>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝔤</mi></math> 上の<a href="../unital/index.html#対称代数">対称代数</a>
+								<math>
 									<mi>𝑆</mi>
 									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
 									</mrow>
-								</mrow>
-								<mi>𝔤</mi>
-							</msup>
-							<mo>→</mo>
-							<msup>
-								<mrow>
-									<mi>𝑆</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-								<mi>𝔤</mi>
-							</msup>
-						</mrow>
-					</math>
-					を取ってくると，
-					<math>
-						<mrow>
-							<msub>
-								<mi>𝐼</mi><mi>PBW</mi>
-							</msub>
-							<mo>∘</mo>
-							<msup>
-								<mi>𝐽</mi>
-								<mfrac>
-									<mn>1</mn><mn>2</mn>
-								</mfrac>
-							</msup>
-						</mrow>
-						<mo>:</mo>
-						<mrow>
-							<msup>
-								<mrow>
-									<mi>𝑆</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-									</mrow>
-								</mrow>
-								<mi>𝔤</mi>
-							</msup>
-							<mo>→</mo>
-							<msup>
-								<mrow>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝔤</mi></math> の<a href="#内部微分">内部微分</a> <math><mi>ad</mi></math> を<a href="../index.html#微分代数">微分</a>となるように <math>
 									<mi>𝑈</mi>
 									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
 									</mrow>
-								</mrow>
-								<mi>𝔤</mi>
-							</msup>
-						</mrow>
-					</math>
-					が可換代数同型を与えることが知られている（Duflo同型）．
-				</p>
+								</math> および <math>
+									<mi>𝑆</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</math> に拡張したもの．
+							</li>
+							<li>
+								対称化写像
+								<math>
+									<msub>
+										<mi>𝐼</mi><mi>PBW</mi>
+									</msub>
+									<mo>:</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑆</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>→</mo>
+										<mrow>
+											<mi>𝑈</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math> （
+								<math>
+									<mrow>
+										<mi>sym</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑥</mi><mn>1</mn>
+												</msub>
+												<mo>&it;</mo>
+												<mo>⋯</mo>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑥</mi><mi>𝑛</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>≔</mo>
+									<mrow>
+										<mfrac>
+											<mn>1</mn>
+											<mrow>
+												<mi>𝑛</mi><mi>!</mi>
+											</mrow>
+										</mfrac>
+										<mo>&it;</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝜎</mi>
+													<mo>∈</mo>
+													<msub>
+														<mi>𝑆</mi><mi>𝑛</mi>
+													</msub>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<mrow>
+												<msub>
+													<mi>𝑥</mi>
+													<mrow>
+														<mi>𝜎</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mn>1</mn><mo>)</mo>
+														</mrow>
+													</mrow>
+												</msub>
+												<mo>&it;</mo>
+												<mo>⋯</mo>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑥</mi>
+													<mrow>
+														<mi>𝜎</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑛</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</msub>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math>
+								）
+							</li>
+							<li>
+								<a href="#包絡代数">包絡代数</a>の<a href="#中心">中心</a>
+								<math>
+									<mi>𝑍</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑈</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math> （<math><mi>ad</mi></math> で不変な<a href="../index.html#部分代数">部分（結合）代数</a>に等しい）．
+							</li>
+							<li>
+								<math>
+									<mi>𝑆</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</math> の <math><mi>ad</mi></math> で不変な元全体のなす<a href="../index.html#部分代数">部分（結合）代数</a> <math>
+									<msup>
+										<mrow>
+											<mi>𝑆</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mi>𝔤</mi>
+									</msup>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi></math> に対する形式的冪級数 <math>
+									<mrow>
+										<mi>𝑗</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>≔</mo>
+									<mrow>
+										<munder>
+											<mi>det</mi><mi>𝔤</mi>
+										</munder>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mfrac>
+												<mrow>
+													<mi>sinh</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mfrac>
+															<mrow>
+																<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
+															</mrow>
+															<mn>2</mn>
+														</mfrac>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mfrac>
+													<mrow>
+														<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
+													</mrow>
+													<mn>2</mn>
+												</mfrac>
+											</mfrac>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</math> の平方根 <math>
+									<msup>
+										<mi>𝑗</mi>
+										<mfrac>
+											<mn>1</mn><mn>2</mn>
+										</mfrac>
+									</msup>
+								</math>
+							</li>
+						</ul>
+						<p>を与える．</p>
+						<ul>
+							<li>
+								<dfn>Duflo写像</dfn><span lang="en">(Duflo map)</span>とは，<a href="../../module/linear-algebra/index.html#線型写像"><math><mi>𝕂</mi></math>-線型写像</a> <math>
+									<mrow>
+										<msub>
+											<mi>𝐼</mi><mi>PBW</mi>
+										</msub>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑗</mi>
+											<mfrac>
+												<mn>1</mn><mn>2</mn>
+											</mfrac>
+										</msup>
+									</mrow>
+									<mo>:</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑆</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>→</mo>
+										<mrow>
+											<mi>𝑈</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math> のこと．
+							</li>
+							<li>
+								<dfn>Duflo同型</dfn><span lang="en">(Duflo isomorphism)</span>とは，Duflo写像の制限 <math>
+									<mrow>
+										<msub>
+											<mi>𝐼</mi><mi>PBW</mi>
+										</msub>
+										<mo>∘</mo>
+										<msup>
+											<mi>𝑗</mi>
+											<mfrac>
+												<mn>1</mn><mn>2</mn>
+											</mfrac>
+										</msup>
+									</mrow>
+									<mo>:</mo>
+									<mrow>
+										<msup>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mi>𝔤</mi>
+										</msup>
+										<mo>→</mo>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑈</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math> のこと．
+							</li>
+						</ul>
+						<article id="Duflo同型は代数同型" class="thm">
+							<h5>Duflo同型は代数同型</h5>
+							<p><a href="#Duflo同型">Duflo同型</a>は<a href="../index.html#準同型">（可換結合）代数同型</a></p>
+						</article>
+					</article>
+				</section>
+				<section>
+					<h4>Harish-Chandra同型</h4>
+				</section>
 			</section>
 		</section>
 		<section>
