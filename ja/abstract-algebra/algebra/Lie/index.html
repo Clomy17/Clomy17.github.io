@@ -6614,6 +6614,25 @@
 						<ul>
 							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+							<li>
+								<math><mi>𝔤</mi></math> の<a href="#導来Lie代数">導来Lie代数</a> <math>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>]</mo>
+								</math> とそれによる<a href="#商Lie代数">商Lie代数</a> <math>
+									<mi>𝔤</mi>
+									<mo>∕</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</math>
+							</li>
 							<li><math><mi>𝕂</mi></math>上の<a href="#可換">可換Lie代数</a> <math><mi>𝔥</mi></math></li>
 							<li>
 								<a href="../../module/linear-algebra/index.html#線型写像"><math><mi>𝕂</mi></math>-線型写像</a>
@@ -6629,28 +6648,49 @@
 						<p>を与えると，以下が成り立つ：</p>
 						<ul>
 							<li>
-								<math>
+								<math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a> <math>
+									<mi>𝑓</mi>
+									<mo>:</mo>
 									<mrow>
-										<mi>𝑓</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mo>[</mo>
-												<mrow>
-													<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-												</mrow>
-												<mo>]</mo>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
+										<mi>𝔤</mi><mo>→</mo><mi>𝔥</mi>
 									</mrow>
-									<mo>=</mo>
-									<mn>0</mn>
-								</math>
-								を満たすならば，<a href="#準同型">Lie代数準同型</a>．
+								</math> に対し，以下は同値：
+								<ul>
+									<li><math><mi>𝑓</mi></math> は<a href="#準同型">Lie代数準同型</a></li>
+									<li>
+										<math>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mo>[</mo>
+														<mrow>
+															<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+														</mrow>
+														<mo>]</mo>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mo>{</mo><mn>0</mn><mo>}</mo>
+											</mrow>
+										</math>
+									</li>
+								</ul>
+								特に，<math><mi>𝔤</mi></math> も<a href="#可換">可換</a>ならば，<math><mi>𝑓</mi></math> は<a href="#準同型">Lie代数準同型</a>．
 							</li>
-							<li><math><mi>𝔤</mi></math> も<a href="#可換">可換</a> ならば，<math><mi>𝑓</mi></math> は<a href="#準同型">Lie代数準同型</a>．</li>
+							<li><a href="#準同型">Lie代数準同型</a> <math><mi>𝔤</mi><mo>→</mo><mi>𝔥</mi></math> と，<math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a> <math><mrow><mi>𝔤</mi><mo>∕</mo><mrow><mo>[</mo><mrow><mi>𝔤</mi><mo>,</mo><mi>𝔤</mi></mrow><mo>]</mo></mrow></mrow><mo>→</mo><mi>𝔥</mi></math> は一対一対応．</li>
+						</ul>
+					</article>
+					<article class="proof">
+						<h5>証明</h5>
+						<ul>
+							<li><a href="#準同型">Lie代数準同型の定義</a>より明らか．</li>
+							<li><a href="#導来Lie代数の基本性質">導来Lie代数の基本性質</a>と商Lie代数の普遍性より明らか．</li>
 						</ul>
 					</article>
 					<article class="proof">
@@ -9112,7 +9152,7 @@
 										</math>
 										が<a href="#冪零">冪零Lie代数</a>ならば，<math><mi>𝔤</mi></math>も冪零Lie代数．
 									</li>
-									<li><math><mi>𝔤</mi></math>が<a href="#零Lie代数">非零</a>な<a href="#冪零">冪零Lie代数</a>ならば，<math><mi>𝑍</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> も非零．</li>
+									<li><math><mi>𝔤</mi></math>が非<a href="#零Lie代数">零</a>な<a href="#冪零">冪零Lie代数</a>ならば，<math><mi>𝑍</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> も非零．</li>
 								</ul>
 							</li>
 						</ul>
@@ -10404,26 +10444,6 @@
 						となっているので<a href="../../../set/index.html#全単射">全単射</a>．
 					</p>
 				</article>
-				<article id="零加群" class="dfn">
-					<h4>零加群</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-					</ul>
-					<p>を与える．</p>
-					<p>
-						<dfn>零加群</dfn><span lang="en">(zero module)</span>とは，<math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a> <math><mi>𝑉</mi></math> に，<math><mi>𝔤</mi></math> の作用を恒等的に零として定めた <a href="#加群"><math><mi>𝔤</mi></math>-加群</a>のこと：
-						<math display="block">
-							<mrow>
-								<mi>𝔤</mi><mo>&af;</mo><mi>𝑉</mi>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mo>{</mo><mn>0</mn><mo>}</mo>
-							</mrow>
-						</math>
-					</p>
-				</article>
 				<article id="加群の双対" class="dfn">
 					<h4>Lie代数上の加群の双対</h4>
 					<ul>
@@ -10625,6 +10645,241 @@
 				<article id="忠実表現" class="dfn">
 					<h4>忠実表現</h4>
 					<p>単射な<a href="#加群">表現</a>のことを<dfn>忠実</dfn><span lang="en">(faithful)</span>と呼ぶ．</p>
+				</article>
+				<article id="局所有限加群" class="dfn">
+					<h4>局所有限 <math><mi>𝔤</mi></math>-加群</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝔤</mi></math> の<a href="#包絡代数">包絡代数</a> <math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> が<dfn>局所有限</dfn><span lang="en">(locally finite)</span>であるとは，<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi></mrow></math> に対し，<math><mrow><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></mrow><mo>&af;</mo><mi>𝑣</mi></math> が有限次元となることを言う．</p>
+					<article id="局所有限加群の性質" class="thm">
+						<h5>局所有限 <math><mi>𝔤</mi></math>-加群の性質</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+							<li><math><mi>𝔤</mi></math> の<a href="#包絡代数">包絡代数</a> <math><mi>𝑈</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math></li>
+							<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> と<a href="#加群">対応する表現</a> <math><mi>𝜌</mi></math></li>
+						</ul>
+						<p>を与えると，以下が成り立つ：</p>
+						<ul>
+							<li><math><mi>𝑉</mi></math> が<a href="#局所有限加群">局所有限</a>（特に，<math><mi>𝔤</mi></math> または <math><mi>𝑉</mi></math> が有限次元のとき）ならば，<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi></mrow></math> に対する <math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></math> は局所有限．</li>
+							<li>
+								<math>
+									<mi>𝜌</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</math> が有限次元ならば，以下は同値：
+								<ul>
+									<li><math><mi>𝑉</mi></math> は<a href="#局所有限加群">局所有限 <math><mi>𝔤</mi></math>-加群</a></li>
+									<li><math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi></mrow></math> に対する <math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></math> は局所有限．</li>
+								</ul>
+							</li>
+						</ul>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>明らか．</li>
+						<li>
+							仮定より <math>
+								<mrow>
+									<mi>𝔤</mi>
+									<mo>∕</mo>
+									<mrow>
+										<mi>ker</mi><mo>&af;</mo><mi>𝜌</mi>
+									</mrow>
+								</mrow>
+								<mo>≃</mo>
+								<mrow>
+									<mi>𝜌</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math> は有限次元．その基底を
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝑥</mi><mi>𝑖</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑖</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+										</mrow>
+									</mrow>
+								</msub>
+							</math> と取ると，<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+								</mrow>
+							</math> に対し，
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mi>𝑈</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&af;</mo>
+									<mi>𝑣</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑈</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝔤</mi>
+												<mo>∕</mo>
+												<mrow>
+													<mi>ker</mi><mo>&af;</mo><mi>𝜌</mi>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&af;</mo>
+									<mi>𝑣</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<munderover intent=":largeop">
+											<mo>∏</mo>
+											<mrow>
+												<mi>𝑖</mi><mo>=</mo><mn>0</mn>
+											</mrow>
+											<mrow>
+												<mrow>
+													<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+												</mrow>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+										</munderover>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝕂</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝜌</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>𝑥</mi><mi>𝑖</mi>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>&af;</mo>
+									<mi>𝑣</mi>
+								</mrow>
+							</math>
+							を満たす．仮定より<math>
+								<mrow>
+									<mi>𝕂</mi>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝜌</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>𝑥</mi><mn>0</mn>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+								<mo>&af;</mo>
+								<mi>𝑣</mi>
+							</math> は有限次元．よって，<math>
+								<mrow>
+									<mrow>
+										<mi>𝕂</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑥</mi><mn>1</mn>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>𝕂</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>𝑥</mi><mn>0</mn>
+													</msub>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>&af;</mo>
+								<mi>𝑣</mi>
+							</math> も有限次元．帰納的に<math>
+								<mrow>
+									<mi>𝑈</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>&af;</mo>
+								<mi>𝑣</mi>
+							</math> は有限次元とわかる．つまり，<math><mi>𝑉</mi></math> は<a href="#局所有限加群">局所有限 <math><mi>𝔤</mi></math>-加群</a>．
+						</li>
+					</ul>
 				</article>
 				<article id="加群準同型" class="dfn">
 					<h4><math><mi>𝔤</mi></math>-加群・表現準同型</h4>
@@ -10836,6 +11091,29 @@
 							</math>
 							のこと．
 						</li>
+					</ul>
+				</article>
+				<article id="零加群" class="dfn">
+					<h4>零加群</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<dfn>零加群</dfn><span lang="en">(zero module)</span>とは，<math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a> <math><mi>𝑉</mi></math> に，<math><mi>𝔤</mi></math> の作用を恒等的に零として定めた <a href="#加群"><math><mi>𝔤</mi></math>-加群</a>のこと：
+							<math display="block">
+								<mrow>
+									<mi>𝔤</mi><mo>&af;</mo><mi>𝑉</mi>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
+								</mrow>
+							</math>
+						</li>
+						<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> から <math><mi>𝑊</mi></math> への<dfn>加群零準同型</dfn><span lang="en">(zero homomorphism of <math><mi>𝔤</mi></math>-module)</span>とは，零線型写像 <math><mi>𝑉</mi><mo>→</mo><mi>𝑊</mi></math> のこと．</li>
 					</ul>
 				</article>
 				<article id="随伴表現の加群準同型" class="thm">
@@ -12064,7 +12342,7 @@
 							<li><math><mi>𝕂</mi></math>上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
 							<li><a href="#加群"><math><mi>𝔤</mi>-</math>加群</a> <math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
 							<li>
-								非零な<a href="#加群準同型"><math><mi>𝔤</mi></math>-加群準同型</a>
+								非<a href="#零加群">零</a>な<a href="#加群準同型"><math><mi>𝔤</mi></math>-加群準同型</a>
 								<math>
 									<mi>𝑓</mi>
 									<mo>:</mo>
@@ -12428,7 +12706,7 @@
 									</mrow>
 								</mrow>
 							</math>
-							となる．<a href="#単純加群">単純 <math><mi>𝔤</mi></math>-加群は定義</a>より非零なので，
+							となる．<a href="#単純加群">単純 <math><mi>𝔤</mi></math>-加群は定義</a>より非<a href="#零加群">零</a>なので，
 							<math>
 								<mrow>
 									<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
@@ -12842,7 +13120,7 @@
 		<section>
 			<h2>三角分解を持つLie代数</h2>
 			<section>
-				<h3>可換Lie代数のウェイト加群</h3>
+				<h3>可換Lie代数上のウェイト加群</h3>
 				<p>
 					<a href="#加群">Lie代数 <math><mi>𝔤</mi></math> 上の加群</a> <math><mi>𝑉</mi></math> に対し，<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi></mrow></math> の作用が<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間分解</a>できるとは，対応する<a href="#加群">表現</a>
 					<math>
@@ -12860,7 +13138,7 @@
 							</mrow>
 						</mrow>
 					</math>
-					が以下のように分解の直積になることと考えられる：
+					が以下のような分解の直積になることと考えられる：
 					<math display="block">
 						<mi>𝔤</mi>
 						<mo>→</mo>
@@ -12874,93 +13152,7 @@
 							</mrow>
 						</mrow>
 					</math>
-					この分解は<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>としての分解だが，より性質の良い<a href="#準同型">Lie代数準同型</a>としての分解となる場合を考える（所謂「同時対角化」）：
-				</p>
-				<article id="1次元Lie代数への準同型" class="thm">
-					<h4>1次元Lie代数への準同型</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math> 上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-						<li>
-							<a href="#準同型">Lie代数準同型</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>𝔤</mi><mo>→</mo><mi>𝕂</mi>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math><mi>𝔤</mi></math> の<a href="#導来Lie代数">導来Lie代数</a>
-							<math>
-								<mo>[</mo>
-								<mrow>
-									<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-								</mrow>
-								<mo>]</mo>
-							</math>
-						</li>
-					</ul>
-					<p>を与えると，以下が成り立つ：</p>
-					<ul>
-						<li>
-							任意の<a href="#準同型">Lie代数準同型</a>
-							<math>
-								<mi>𝑓</mi>
-								<mo>:</mo>
-								<mrow>
-									<mi>𝔤</mi><mo>→</mo><mi>𝕂</mi>
-								</mrow>
-							</math> は以下を満たす：
-							<math>
-								<mrow>
-									<mi>𝑓</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mo>[</mo>
-											<mrow>
-												<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-											</mrow>
-											<mo>]</mo>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mn>0</mn>
-							</math>
-						</li>
-						<li><a href="#準同型">Lie代数準同型</a> <math><mi>𝔤</mi><mo>→</mo><mi>𝕂</mi></math> と，<a href="#可換Lie代数準同型">可換Lie代数準同型</a> <math><mrow><mi>𝔤</mi><mo>∕</mo><mrow><mo>[</mo><mrow><mi>𝔤</mi><mo>,</mo><mi>𝔤</mi></mrow><mo>]</mo></mrow></mrow><mo>→</mo><mi>𝕂</mi></math> は一対一対応．</li>
-					</ul>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<ul>
-						<li><a href="#準同型">Lie代数準同型</a>の定義と，<a href="#1次元Lie代数">1次元Lie代数</a>が<a href="#可換">可換</a>であることから明らか．</li>
-						<li><a href="#導来Lie代数の基本性質">導来Lie代数の基本性質</a>と商Lie代数の普遍性より明らか．</li>
-					</ul>
-				</article>
-				<p>
-					つまり，<a href="#加群">Lie代数 <math><mi>𝔤</mi></math> 上の加群</a> <math><mi>𝑉</mi></math> と対応する<a href="#加群">表現</a>
-					<math>
-						<mi>𝜌</mi>
-						<mo>:</mo>
-						<mrow>
-							<mi>𝔤</mi>
-							<mo>→</mo>
-							<mrow>
-								<mi>𝔤𝔩</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝑉</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-						</mrow>
-					</math>
-					は以下のように分解する：
+					この分解は<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>としての分解だが，より性質の良い<a href="#準同型">Lie代数準同型</a>としての分解となる場合を考える（所謂「同時対角化」に近いものだが，それよりも条件が強いことがあとで分かる）．<a href="#1次元Lie代数">1次元Lie代数</a> <math><mi>𝕂</mi></math> は<a href="#可換">可換</a>なので，さらに<a href="#可換Lie代数準同型">可換Lie代数への準同型の分解</a>が考えられる：
 					<math display="block">
 						<mi>𝔤</mi>
 						<mo>↠</mo>
@@ -12986,8 +13178,7 @@
 							</mrow>
 						</mrow>
 					</math>
-					特に，
-					<math>
+					特に，<math>
 						<mrow>
 							<mi>𝔤</mi>
 							<mo>∕</mo>
@@ -13022,7 +13213,7 @@
 					<h4>可換Lie代数のウェイト</h4>
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の<a href="#可換">可換Lie代数</a> <math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝕂</mi></math> 上の<a href="#可換">可換Lie代数</a> <math><mi>𝔤</mi></math></li>
 						<li><math><mi>𝔤</mi></math>の<a href="#加群">表現</a> <math><mrow><mo>(</mo><mrow><mi>𝑉</mi><mo>,</mo><mi>𝜌</mi></mrow><mo>)</mo></mrow></math></li>
 						<li><math><mi>𝔤</mi></math>の双対線型空間 <math><msup><mi>𝔤</mi><mo>∗</mo></msup></math></li>
 					</ul>
@@ -13135,7 +13326,7 @@
 					<h4>可換Lie代数のウェイト空間の基本性質</h4>
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の<a href="#可換">可換Lie代数</a> <math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝕂</mi></math> 上の<a href="#可換">可換Lie代数</a> <math><mi>𝔤</mi></math></li>
 						<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> と対応する<a href="#加群">表現</a> <math><mi>𝜌</mi></math></li>
 					</ul>
 					<p>を与えると，以下が成り立つ：</p>
@@ -14042,7 +14233,7 @@
 					<h4>可換Lie代数上のウェイト加群準同型</h4>
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の<a href="#可換">可換Lie代数</a> <math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝕂</mi></math> 上の<a href="#可換">可換Lie代数</a> <math><mi>𝔤</mi></math></li>
 						<li><a href="#可換Lie代数のウェイト">ウェイト <math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
 						<li>
 							<a href="../../module/linear-algebra/index.html#線型写像">線型写像</a>
@@ -14262,41 +14453,114 @@
 						が成り立つならば，<math><mi>𝑓</mi></math> は<a href="#加群準同型">加群 <math><mi>𝔤</mi></math>-準同型</a>．
 					</p>
 				</article>
-				<article id="可換Lie代数上の有限次元ウェイト加群" class="thm">
-					<h4>可換Lie代数上の有限次元ウェイト加群</h4>
+				<article id="可換Lie代数上の局所有限ウェイト加群" class="thm">
+					<h4>可換Lie代数上の局所有限ウェイト加群</h4>
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝕂</mi></math>上の有限次元<a href="#可換">可換Lie代数</a> <math><mi>𝔤</mi></math></li>
-						<li><math><mi>𝔤</mi></math> の<a href="../../module/linear-algebra/index.html#基底">基底</a> <math><mi>𝑋</mi></math></li>
-						<li><math><mi>𝔤</mi></math> の有限次元<a href="#加群">表現</a> <math><mrow><mo>(</mo><mrow><mi>𝑉</mi><mo>,</mo><mi>𝜌</mi></mrow><mo>)</mo></mrow></math></li>
+						<li><math><mi>𝕂</mi></math>上の<a href="#可換">可換Lie代数</a> <math><mi>𝔤</mi></math></li>
+						<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑉</mi></math> と<a href="#加群">対応する表現</a> <math><mi>𝜌</mi></math></li>
 					</ul>
-					<p>を与えると，以下は同値：</p>
+					<p>を与えると，以下が成り立つ：</p>
 					<ul>
-						<li><math><mi>𝑉</mi></math> は<a href="#可換Lie代数のウェイト">ウェイト加群</a></li>
-						<li><math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝑋</mi></mrow></math> に対し，<math><mi>𝑥</mi></math> の <math><mi>𝑉</mi></math> への作用 <math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></math> は対角化可能で，その<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a>は全て <math><mi>𝕂</mi></math> に含まれる．</li>
+						<li>
+							<math><mi>𝑉</mi></math> が<a href="#可換Lie代数のウェイト">ウェイト加群</a>ならば，<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝑋</mi></mrow></math> に対し，<math><mi>𝑥</mi></math> の <math><mi>𝑉</mi></math> への作用 <math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></math> は <math><mi>𝕂</mi></math> 上<a href="../../module/linear-algebra/index.html#固有ベクトル">対角化可能</a>．
+						</li>
+						<li>
+							<math><mi>𝑉</mi></math> が<a href="#局所有限加群">局所有限 <math><mi>𝔤</mi></math>-加群</a>ならば，以下は同値：
+							<ul>
+								<li><math><mi>𝑉</mi></math> は<a href="#可換Lie代数のウェイト">ウェイト加群</a></li>
+								<li><math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝑋</mi></mrow></math> に対し，<math><mi>𝑥</mi></math> の <math><mi>𝑉</mi></math> への作用 <math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></math> は <math><mi>𝕂</mi></math> 上<a href="../../module/linear-algebra/index.html#固有ベクトル">対角化可能</a></li>
+							</ul>
+							特に，<math><mi>𝔤</mi></math> または <math><mi>𝑉</mi></math> が有限次元ならば，上の同値性が成り立つ．
+						</li>
 					</ul>
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
 					<ul>
-						<li><math><mi>𝜌</mi></math> が<a href="#可換Lie代数のウェイト">ウェイト加群</a>のとき，<math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></math> が対角化可能なのは明らか．</li>
+						<li>定義より明らか．</li>
 						<li>
-							逆に，<math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></math> が対角化可能なとき，<math><mi>𝜌</mi></math> が<a href="#可換Lie代数のウェイト">ウェイト加群</a>であることを <math><mi>dim</mi><mo>&af;</mo><mi>𝔤</mi></math> の帰納法で示す．
-							<ul>
-								<li>
-									<math>
+							<p>ゆえに，<math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></math> が<a href="../../module/linear-algebra/index.html#固有ベクトル">対角化可能</a>ならば <math><mi>𝑉</mi></math> は<a href="#ウェイト">ウェイト <math><mi>𝔤</mi>-</math>加群</a>となることを示せばよい．<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi></mrow></math> を一つ固定する．</p>
+							<p>
+								<a href="#局所有限加群">局所有限性の定義</a>より，<math><mi>𝑉</mi></math> の<a href="#部分加群">部分 <math><mi>𝔤</mi></math>-加群</a> <math>
+									<mi>𝑊</mi>
+									<mo>≔</mo>
+									<mrow>
 										<mrow>
-											<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+											<mi>𝑈</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
 										</mrow>
-										<mo>=</mo>
-										<mn>1</mn>
-									</math>
-									のときは明らか．
-								</li>
+										<mo>&af;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+								</math> は有限次元だから，<math>
+									<msub>
+										<mrow>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mi>𝑊</mi>
+									</msub>
+								</math> も高々 <math><msup><mrow><mo>(</mo><mrow><mi>dim</mi><mo>&af;</mo><mi>𝑊</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup></math> 次元．ゆえに有限次元（<a href="#可換">可換</a>）<a href="#部分Lie代数">部分Lie代数
+								</a> <math><msup><mi>𝔥</mi></msup><mo>⊆</mo><mi>𝔤</mi></math> であって，<math>
+									<msub>
+										<mrow>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mi>𝑊</mi>
+									</msub>
+									<mo>=</mo>
+									<msub>
+										<mrow>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mi>𝑊</mi>
+									</msub>
+								</math> を満たすものが存在する．<math><mi>𝑊</mi></math> が<a href="#可換Lie代数のウェイト">ウェイト <math><mi>𝔥</mi></math>-加群</a>となることを <math><mi>dim</mi><mo>&af;</mo><mi>𝔥</mi></math> の数学的帰納法で示す：
+							</p>
+							<ul>
+								<li><math><mrow><mi>dim</mi><mo>&af;</mo><mi>𝔥</mi></mrow><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></math> のときは明らか．</li>
 								<li>
-									一般の <math><mi>dim</mi><mo>&af;</mo><mi>𝔤</mi></math> に対し，<math><mi>𝑥</mi><mo>∈</mo><mi>𝑋</mi></math> を固定し，その<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝑐</mi><mo>∈</mo><mi>𝕂</mi></math> の <a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間</a>を <math><msub><mi>𝑉</mi><mi>𝑐</mi></msub></math> とすると，仮定より <math><mi>𝑉</mi></math> は<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間分解</a>を持つ：
+									一般の <math><mi>dim</mi><mo>&af;</mo><mi>𝔥</mi></math> に対し，<math><mi>𝔥</mi></math> の基底 <math><mi>𝑋</mi></math> を一つ与え，<math><mi>𝑥</mi><mo>∈</mo><mi>𝑋</mi></math> を固定し，<math>
+										<msub>
+											<mrow>
+												<mrow>
+													<mi>𝜌</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑥</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>|</mo>
+											</mrow>
+											<mi>𝑊</mi>
+										</msub>
+									</math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝑐</mi><mo>∈</mo><mi>𝕂</mi></math> の <a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間</a>を <math><msub><mi>𝑊</mi><mi>𝑐</mi></msub></math> とすると，仮定より <math><mi>𝑊</mi></math> は<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間分解</a>を持つ：
 									<math display="block">
-										<mi>𝑉</mi>
+										<mi>𝑊</mi>
 										<mo>=</mo>
 										<mrow>
 											<munder intent=":largeop">
@@ -14307,14 +14571,13 @@
 											</munder>
 											<mo>&af;</mo>
 											<msub>
-												<mi>𝑉</mi><mi>𝑐</mi>
+												<mi>𝑊</mi><mi>𝑐</mi>
 											</msub>
 										</mrow>
 									</math>
-									を満たす．
 									<math>
 										<msup>
-											<mi>𝔤</mi><mo>′</mo>
+											<mi>𝔥</mi><mo>′</mo>
 										</msup>
 										<mo>≔</mo>
 										<mrow>
@@ -14353,10 +14616,10 @@
 												<mo>∀</mo>
 												<mo>&af;</mo>
 												<mrow>
-													<mi>𝑣</mi>
+													<mi>𝑤</mi>
 													<mo>∈</mo>
 													<msub>
-														<mi>𝑉</mi><mi>𝑐</mi>
+														<mi>𝑊</mi><mi>𝑐</mi>
 													</msub>
 												</mrow>
 											</mrow>
@@ -14369,7 +14632,7 @@
 														<mi>𝑦</mi>
 														<mo>∈</mo>
 														<msup>
-															<mi>𝔤</mi><mo>′</mo>
+															<mi>𝔥</mi><mo>′</mo>
 														</msup>
 													</mrow>
 												</mrow>
@@ -14379,7 +14642,7 @@
 														<mi>𝑥</mi>
 														<mo>&af;</mo>
 														<mrow>
-															<mi>𝑦</mi><mo>&af;</mo><mi>𝑣</mi>
+															<mi>𝑦</mi><mo>&af;</mo><mi>𝑤</mi>
 														</mrow>
 													</mrow>
 													<mo>=</mo>
@@ -14387,7 +14650,7 @@
 														<mi>𝑦</mi>
 														<mo>&af;</mo>
 														<mrow>
-															<mi>𝑥</mi><mo>&af;</mo><mi>𝑣</mi>
+															<mi>𝑥</mi><mo>&af;</mo><mi>𝑤</mi>
 														</mrow>
 													</mrow>
 													<mo>=</mo>
@@ -14395,26 +14658,26 @@
 														<mi>𝑐</mi>
 														<mo>&it;</mo>
 														<mrow>
-															<mi>𝑦</mi><mo>&af;</mo><mi>𝑣</mi>
+															<mi>𝑦</mi><mo>&af;</mo><mi>𝑤</mi>
 														</mrow>
 													</mrow>
 												</mrow>
 											</mrow>
 										</mrow>
 									</math>
-									なので，各<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間</a> <math><msub><mi>𝑉</mi><mi>𝑐</mi></msub></math> は<a href="#部分加群">部分 <math><msup><mi>𝔤</mi><mo>′</mo></msup></math>-加群</a>である．
+									なので，各<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間</a> <math><msub><mi>𝑊</mi><mi>𝑐</mi></msub></math> は<a href="#部分加群">部分 <math><msup><mi>𝔥</mi><mo>′</mo></msup></math>-加群</a>である．
 									<math>
 										<mrow>
 											<mi>dim</mi>
 											<mo>&af;</mo>
 											<msup>
-												<mi>𝔤</mi><mo>′</mo>
+												<mi>𝔥</mi><mo>′</mo>
 											</msup>
 										</mrow>
 										<mo>=</mo>
 										<mrow>
 											<mrow>
-												<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+												<mi>dim</mi><mo>&af;</mo><mi>𝔥</mi>
 											</mrow>
 											<mo>−</mo>
 											<mn>1</mn>
@@ -14423,7 +14686,7 @@
 									なので，帰納法の仮定より<a href="#可換Lie代数のウェイト">ウェイト空間分解</a>を持つ：
 									<math display="block">
 										<msub>
-											<mi>𝑉</mi><mi>𝑐</mi>
+											<mi>𝑊</mi><mi>𝑐</mi>
 										</msub>
 										<mo>=</mo>
 										<mrow>
@@ -14434,7 +14697,7 @@
 													<mo>∈</mo>
 													<msup>
 														<msup>
-															<mi>𝔤</mi><mo>′</mo>
+															<mi>𝔥</mi><mo>′</mo>
 														</msup>
 														<mo>∗</mo>
 													</msup>
@@ -14442,23 +14705,20 @@
 											</munder>
 											<mo>&af;</mo>
 											<msub>
-												<mi>𝑉</mi>
+												<mi>𝑊</mi>
 												<mrow>
 													<mi>𝑐</mi><mo>,</mo><mi>𝜇</mi>
 												</mrow>
 											</msub>
 										</mrow>
 									</math>
-									よって，
-									<math>
+									よって，<math>
 										<mi>𝜆</mi>
 										<mo>∈</mo>
 										<msup>
-											<mi>𝔤</mi><mo>∗</mo>
+											<mi>𝔥</mi><mo>∗</mo>
 										</msup>
-									</math>
-									を
-									<math>
+									</math> を <math>
 										<mrow>
 											<mrow>
 												<mi>𝜆</mi>
@@ -14477,22 +14737,20 @@
 													<mi>𝜆</mi><mo>|</mo>
 												</mrow>
 												<msup>
-													<mi>𝔤</mi><mo>′</mo>
+													<mi>𝔥</mi><mo>′</mo>
 												</msup>
 											</msub>
 											<mo>=</mo>
 											<mi>𝜇</mi>
 										</mrow>
-									</math>
-									を線型に拡張したものとして定義できることに注意すると，
-									<math>
+									</math> を線型に拡張したものとして定義できることに注意すると，<math>
 										<msub>
-											<mi>𝑉</mi><mi>𝜆</mi>
+											<mi>𝑊</mi><mi>𝜆</mi>
 										</msub>
 										<mo>≔</mo>
 										<mrow>
 											<msub>
-												<mi>𝑉</mi>
+												<mi>𝑊</mi>
 												<mrow>
 													<mrow>
 														<mi>𝜆</mi>
@@ -14507,16 +14765,48 @@
 															<mi>𝜆</mi><mo>|</mo>
 														</mrow>
 														<msup>
-															<mi>𝔤</mi><mo>′</mo>
+															<mi>𝔥</mi><mo>′</mo>
 														</msup>
 													</msub>
 												</mrow>
 											</msub>
 										</mrow>
-									</math>
-									によって <math><mi>𝑉</mi></math> は<a href="#可換Lie代数のウェイト">ウェイト空間分解</a>される．
+									</math> によって <math><mi>𝑊</mi></math> は<a href="#可換Lie代数のウェイト">ウェイト空間分解</a>される．
 								</li>
 							</ul>
+							<p>
+								<math>
+									<msub>
+										<mrow>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔥</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mi>𝑊</mi>
+									</msub>
+								</math> は <math>
+									<msub>
+										<mrow>
+											<mrow>
+												<mi>𝜌</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mi>𝑊</mi>
+									</msub>
+								</math> を張るから，<math><mi>𝑊</mi></math> は<a href="#可換Lie代数のウェイト">ウェイト <math><mi>𝔤</mi></math>-加群</a>にもなる．よって，<math><mi>𝑣</mi><mo>∈</mo><mi>𝑊</mi><mo>⊂</mo><mi>𝑉</mi></math> は <math><mi>𝑊</mi></math> の<a href="#可換Lie代数のウェイト">ウェイトベクトル</a>の線型結合で表せるが，<a href="#可換Lie代数のウェイト空間の性質">これは <math><mi>𝑉</mi></math> のウェイトベクトルでもある</a>．つまり，<math><mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi></math> は <math><mi>𝑉</mi></math> の<a href="#可換Lie代数のウェイト">ウェイトベクトル</a>の線型結合で表せる．以上が <math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi></mrow></math> に対して成り立つので，<math><mi>𝑉</mi></math> は<a href="#可換Lie代数のウェイト">ウェイト <math><mi>𝔤</mi></math>-加群</a>
+							</p>
+							<p><math><mi>𝔤</mi></math> が有限次元のとき，対角化可能ならば局所有限であることに注意すると，<a href="#局所有限加群の性質"><math><mi>𝑉</mi></math> は局所有限 <math><mi>𝔤</mi></math>-加群</a>となる．</p>
+							<p><math><mi>𝑉</mi></math> が有限次元のときは明らかに，<a href="#局所有限加群">局所有限 <math><mi>𝔤</mi></math>-加群</a>となる．</p>
 						</li>
 					</ul>
 				</article>
@@ -17969,7 +18259,7 @@
 											<mo>(</mo><mi>𝑛</mi><mo>)</mo>
 										</mrow>
 									</math>
-									の非零な <a href="#部分加群">部分 <math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math>-加群</a> <math><mi>𝑊</mi></math> の非零なベクトル <math><mi>𝑣</mi><mo>∈</mo><mrow><mi>𝑊</mi><mo>∖</mo><mn>0</mn></mrow></math> を取り，これを
+									の非<a href="#零加群">零</a>な<a href="#部分加群">部分 <math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math>-加群</a> <math><mi>𝑊</mi></math> の非零なベクトル <math><mi>𝑣</mi><mo>∈</mo><mrow><mi>𝑊</mi><mo>∖</mo><mn>0</mn></mrow></math> を取り，これを
 									<math>
 										<mi>𝑉</mi>
 										<mo>&af;</mo>
