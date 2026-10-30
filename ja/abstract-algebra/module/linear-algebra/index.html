@@ -13,10 +13,10 @@
 			<h2>定義</h2>
 			<article id="線型空間" class="ax">
 				<h3>線型空間</h3>
-				<p><a href="../../ring/field/index.html#体">体</a> <math><mi>𝕂</mi></math>を与える．</p>
-				<p><dfn class="ax"><math><mi>𝕂</mi></math> 上の線型空間</dfn><span lang="en">(<math><mi>𝕂</mi></math>-linear space)</span>とは，<a href="../over-ring/index.html#左加群">環上の左 <math><mi>𝕂</mi></math>-加群</a>のこと．つまり以下のデータからなる：</p>
+				<p><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与える．</p>
+				<p><dfn class="ax"><math><mi>𝕂</mi></math> 上の線型空間</dfn><span lang="en">(<math><mi>𝕂</mi></math>-linear space)</span>（または <dfn class="ax"><math><mi>𝕂</mi></math>-ベクトル空間</dfn><span lang="en">(<math><mi>𝕂</mi></math>-vector space)</span>）とは，<a href="../over-ring/index.html#加群">環上の左 <math><mi>𝕂</mi></math>-加群</a>のこと．つまり以下のデータからなる：</p>
 				<ul>
-					<li><a href="#../../magma/group/index.html#可換群">可換群</a> <math><mi>𝑉</mi></math></li>
+					<li><a href="../../magma/group/index.html#可換群">可換群</a> <math><mi>𝑉</mi></math></li>
 					<li>
 						<dfn>スカラー乗法</dfn>と呼ばれる演算
 						<math>
@@ -28,10 +28,10 @@
 						</math>
 					</li>
 				</ul>
-				<p>これらは以下の条件を満たす：</p>
+				<p>これらは以下を満たす：</p>
 				<ul>
 					<li>
-						<math display="block">
+						<math>
 							<mrow>
 								<mo>∀</mo>
 								<mo>&af;</mo>
@@ -80,7 +80,7 @@
 						</math>
 					</li>
 					<li>
-						<math display="block">
+						<math>
 							<mrow>
 								<mo>∀</mo>
 								<mo>&af;</mo>
@@ -129,7 +129,7 @@
 						</math>
 					</li>
 					<li>
-						<math display="block">
+						<math>
 							<mrow>
 								<mo>∀</mo>
 								<mo>&af;</mo>
@@ -180,7 +180,7 @@
 						</math>
 					</li>
 					<li>
-						<math display="block">
+						<math>
 							<mrow>
 								<mo>∀</mo>
 								<mo>&af;</mo>
@@ -207,8 +207,8 @@
 			<article id="線型写像" class="dfn">
 				<h3>線型写像</h3>
 				<ul>
-					<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-					<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
+					<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+					<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
 				</ul>
 				<p>を与える．</p>
 				<p>
@@ -310,24 +310,26 @@
 			</article>
 			<article id="線型同型" class="dfn">
 				<h3>線型同型</h3>
-				<p>全単射な<a href="#線型写像">線型写像</a>を<dfn>線型同型</dfn><span lang="en">(linear isomorphism)</span>と呼ぶ．</p>
-				<p>線型同型の<a href="../../../set/index.html#写像">始域</a>と<a href="../../../set/index.html#写像">終域</a>のことも互いに<dfn>同型</dfn><span lang="en">(linear isomorphic)</span>呼ぶ．</p>
+				<ul>
+					<li>全単射な<a href="#線型写像">線型写像</a>を<dfn>線型同型</dfn><span lang="en">(linear isomorphism)</span>と呼ぶ．</li>
+					<li>線型同型の<a href="../../../set/index.html#写像">始域</a>と<a href="../../../set/index.html#写像">終域</a>のことも互いに<dfn>同型</dfn><span lang="en">(linear isomorphic)</span>呼ぶ．</li>
+				</ul>
 			</article>
 			<article id="線型空間の圏" class="dfn">
 				<h3>線型空間の圏</h3>
-				<p><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math>を与える．</p>
+				<p><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math>を与える．</p>
 				<ul>
-					<li>全ての<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>の集まりを<a href="../../../category/index.html#圏">対象</a></li>
-					<li>全ての<a href="#線型写像"><math><mi>𝕂</mi></math>-線型写像</a>の集まりを<a href="../../../category/index.html#圏">射</a></li>
+					<li>全ての <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>の集まりを<a href="../../../category/index.html#圏">対象</a></li>
+					<li>全ての <a href="#線型写像"><math><mi>𝕂</mi></math>-線型写像</a>の集まりを<a href="../../../category/index.html#圏">射</a></li>
 				</ul>
-				<p>とする<a href="../../../category/index.html#圏">圏</a>を<dfn><math><mi>𝕂</mi></math>-線型空間の圏</dfn>と呼び，<math><mi>𝕂-𝐕𝐞𝐜𝐭</mi></math>と書く．</p>
+				<p>とする <a href="../../../category/index.html#圏">圏</a>を<dfn><math><mi>𝕂</mi></math>-線型空間の圏</dfn><span lang="en">(the category of <math><mi>𝕂</mi></math>-linear spaces)</span>と呼び，<math><mi>𝕂-𝐕𝐞𝐜𝐭</mi></math>と書く．</p>
 			</article>
 			<article id="線型独立" class="dfn">
 				<h3>線型独立</h3>
 				<ul>
-					<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-					<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
-					<li>ベクトルの集合 <math><mi>𝑆</mi><mo>⊂</mo><mi>𝑉</mi></math></li>
+					<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+					<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+					<li>ベクトルの集合 <math><mi>𝑆</mi><mo>⊆</mo><mi>𝑉</mi></math></li>
 				</ul>
 				<p>を与える．</p>
 				<ul>
@@ -349,7 +351,7 @@
 								</mrow>
 								<mo>}</mo>
 							</mrow>
-							<mo>⊂</mo>
+							<mo>⊆</mo>
 							<mi>𝑆</mi>
 						</math>
 						に対し，以下を満たすことを言う：
@@ -433,7 +435,7 @@
 				<article id="直積" class="dfn">
 					<h4>直積</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li>集合<math><mi>𝛬</mi></math></li>
 						<li>
 							<a href="#線型空間">線型空間</a>の集合
@@ -669,7 +671,7 @@
 					<article id="直積の普遍性" class="thm">
 						<h5>直積の普遍性</h5>
 						<ul>
-							<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li>集合<math><mi>𝛬</mi></math></li>
 							<li>
 								<math><mi>𝕂</mi></math>上の<a href="#線型空間">線型空間</a>の集合
@@ -851,7 +853,7 @@
 				<article id="直和" class="dfn">
 					<h4>直和</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li>集合<math><mi>𝛬</mi></math></li>
 						<li>
 							<a href="#線型空間">線型空間</a>の集合
@@ -1169,7 +1171,7 @@
 					<article id="直和の普遍性" class="thm">
 						<h5>直和の普遍性</h5>
 						<ul>
-							<li><a href="../../ring-like/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li>集合<math><mi>𝛬</mi></math></li>
 							<li>
 								<math><mi>𝕂</mi></math>上の<a href="#線型空間">線型空間</a>の集合
@@ -1352,7 +1354,7 @@
 				<article id="双積" class="dfn">
 					<h4>双積</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li>有限集合<math><mi>𝛬</mi></math></li>
 						<li>
 							<a href="#線型空間">線型空間</a>の集合
@@ -1557,7 +1559,7 @@
 					<article id="双積の基本性質" class="thm">
 						<h5>双積の基本性質</h5>
 						<ul>
-							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li>有限集合<math><mi>𝛬</mi></math></li>
 							<li>
 								<a href="#線型空間">線型空間</a>の集合
@@ -1670,19 +1672,323 @@
 						</p>
 					</article>
 				</article>
+				<article id="テンソル積" class="dfn">
+					<h4>テンソル積</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li>有限集合 <math><mi>𝛬</mi></math></li>
+						<li>
+							<a href="#線型空間">線型空間</a>の有限集合
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math>
+							<msub>
+								<mrow>
+									<mo>{</mo>
+									<msub>
+										<mi>𝑉</mi><mi>𝜆</mi>
+									</msub>
+									<mo>}</mo>
+								</mrow>
+								<mrow>
+									<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+								</mrow>
+							</msub>
+						</math> の<dfn>テンソル積</dfn><span lang="en">(tensor product)</span>とは，以下のデータの組のこと：
+					</p>
+					<ul>
+						<li></li>
+						<li></li>
+					</ul>
+					<article id="テンソル積の普遍性" class="thm">
+						<h5>テンソル積の普遍性</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li>有限集合 <math><mi>𝛬</mi></math></li>
+							<li>
+								<a href="#線型空間">線型空間</a>の有限集合
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<msub>
+										<mrow>
+											<mo>{</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+											<mo>}</mo>
+										</mrow>
+										<mrow>
+											<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+										</mrow>
+									</msub>
+								</math> の<a href="#テンソル積">テンソル積</a>
+								<math>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>⨂</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>,</mo>
+										<mi>𝜑</mi>
+									</mrow>
+									<mo>)</mo>
+								</math>
+							</li>
+							<li>
+								<a href="#線型空間">線型空間</a> <math><mi>𝑊</mi></math> を<a href="../../../set/index.html#写像">終域</a>とする<a href="../../../set/index.html#写像">写像</a> <math>
+									<mi>𝑓</mi>
+									<mo>:</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>⨂</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<msub>
+												<mi>𝑉</mi><mi>𝜆</mi>
+											</msub>
+										</mrow>
+										<mo>→</mo>
+										<mi>𝑊</mi>
+									</mrow>
+								</math> であって，<math>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</math> と各 <math>
+									<msup>
+										<mi>𝜆</mi><mo>′</mo>
+									</msup>
+									<mo>∈</mo>
+									<mrow>
+										<mi>𝛬</mi>
+										<mo>∖</mo>
+										<mrow>
+											<mo>{</mo><mi>𝜆</mi><mo>}</mo>
+										</mrow>
+									</mrow>
+								</math> に対する <math>
+									<msub>
+										<mi>𝑣</mi>
+										<msup>
+											<mi>𝜆</mi><mo>′</mo>
+										</msup>
+									</msub>
+									<mo>∈</mo>
+									<msub>
+										<mi>𝑉</mi>
+										<msup>
+											<mi>𝜆</mi><mo>′</mo>
+										</msup>
+									</msub>
+								</math> に対し，
+								<math>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑣</mi>
+													<msup>
+														<mi>𝜆</mi><mo>′</mo>
+													</msup>
+												</msub>
+												<mo>,</mo>
+												<mi>-</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>:</mo>
+									<mrow>
+										<msub>
+											<mi>𝑉</mi><mi>𝜆</mi>
+										</msub>
+										<mo>→</mo>
+										<mi>𝑊</mi>
+									</mrow>
+								</math> が<a href="#線型写像">線型写像</a>となるもの：
+							</li>
+						</ul>
+						<p>を与えると，．</p>
+					</article>
+				</article>
+				<article id="双線型写像" class="dfn">
+					<h4>双線型写像</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li>有限集合 <math><mi>𝛬</mi></math></li>
+						<li><a href="#線型空間">線型空間</a> <math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>,</mo><msub><mi>𝑉</mi><mn>1</mn></msub><mo>,</mo><mi>𝑊</mi></math></li>
+						<li><a href="#双積">双積線型空間</a> <math><msub> <mi>𝑉</mi><mn>0</mn></msub><mo>⊕</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math></li>
+						<li><a href="#テンソル積">テンソル積</a> <math><mrow><mo>(</mo><mrow><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊗</mo><msub><mi>𝑉</mi><mn>1</mn></msub><mo>,</mo><mi>𝜑</mi></mrow><mo>)</mo></mrow></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>,</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math> から <math><mi>𝑊</mi></math> への<dfn>双線型写像</dfn><span lang="en">(bilinear map)</span>とは，本質的に等価な以下のいずれかのデータのことを指す：
+							<ul>
+								<li>
+									<a href="../../../set/index.html#写像">写像</a> <math>
+										<mi>𝑓</mi>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<msub>
+													<mi>𝑉</mi><mn>0</mn>
+												</msub>
+												<mo>⊕</mo>
+												<msub>
+													<mi>𝑉</mi><mn>1</mn>
+												</msub>
+											</mrow>
+											<mo>→</mo>
+											<mi>𝑊</mi>
+										</mrow>
+									</math> であって，以下を満たすもののこと：
+									<ul>
+										<li>
+											<math>
+												<mo>∀</mo>
+												<mo>&af;</mo>
+												<mrow>
+													<mi>𝑣</mi>
+													<mo>∈</mo>
+													<msub>
+														<mi>𝑉</mi><mn>1</mn>
+													</msub>
+												</mrow>
+											</math> に対し，
+											<math>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>-</mi><mo>,</mo><mi>𝑣</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>:</mo>
+												<mrow>
+													<msub>
+														<mi>𝑉</mi><mn>0</mn>
+													</msub>
+													<mo>→</mo>
+													<mi>𝑊</mi>
+												</mrow>
+											</math> は<a href="#線型写像">線型写像</a>．
+										</li>
+										<li>
+											<math>
+												<mo>∀</mo>
+												<mo>&af;</mo>
+												<mrow>
+													<mi>𝑣</mi>
+													<mo>∈</mo>
+													<msub>
+														<mi>𝑉</mi><mn>0</mn>
+													</msub>
+												</mrow>
+											</math> に対し，
+											<math>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<mi>𝑣</mi><mo>,</mo><mi>-</mi>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>:</mo>
+												<mrow>
+													<msub>
+														<mi>𝑉</mi><mn>1</mn>
+													</msub>
+													<mo>→</mo>
+													<mi>𝑊</mi>
+												</mrow>
+											</math> は<a href="#線型写像">線型写像</a>．
+										</li>
+									</ul>
+								</li>
+								<li><math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊗</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math> から <math><mi>𝑊</mi></math> への<a href="#線型写像">線型写像</a> <math><mi>𝑔</mi></math></li>
+							</ul>
+							<a href="#テンソル積の普遍性">テンソル積の普遍性</a>より，これらは <math>
+								<mi>𝑓</mi>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝜑</mi><mo>∘</mo><mi>𝑔</mi>
+								</mrow>
+							</math> を満たすように一対一に対応する．
+						</li>
+						<li><math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>,</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math> から <math><mi>𝑊</mi></math> への<dfn>余双線型写像</dfn><span lang="en">()</span>とは，<math><mi>𝑊</mi></math> から <math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊗</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math> への<a href="#線型写像">線型写像</a>のこと．</li>
+					</ul>
+				</article>
 			</section>
 			<section>
 				<h3>同型定理</h3>
 				<article id="部分線型空間" class="dfn">
 					<h4>部分線型空間</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与える．</p>
-					<p><math><mi>𝑊</mi><mo>⊂</mo><mi>𝑉</mi></math>が<dfn>部分線型空間</dfn><span lang="en">(linear subspace)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
+					<p><math><mi>𝑊</mi><mo>⊆</mo><mi>𝑉</mi></math> が<dfn>部分線型空間</dfn><span lang="en">(linear subspace)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
 					<ul>
-						<li><math><mi>𝑉</mi></math>と同じ演算で<a href="#線型空間">線型空間</a>となる</li>
+						<li><math><mi>𝑉</mi></math> と同じ演算で<a href="#線型空間">線型空間</a>となる</li>
 						<li>
 							<math>
 								<mrow>
@@ -1694,7 +2000,7 @@
 										<mi>𝕂</mi><mo>&it;</mo><mi>𝑊</mi>
 									</mrow>
 								</mrow>
-								<mo>⊂</mo>
+								<mo>⊆</mo>
 								<mi>𝑊</mi>
 							</math>
 						</li>
@@ -1703,9 +2009,9 @@
 				<article id="基底" class="dfn">
 					<h4>生成系・基底</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
-						<li>ベクトルの集合 <math><mi>𝑆</mi><mo>⊂</mo><mi>𝑉</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+						<li>ベクトルの集合 <math><mi>𝑆</mi><mo>⊆</mo><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与える．</p>
 					<ul>
@@ -1724,16 +2030,36 @@
 						<li><math><mi>𝑆</mi></math>で生成される部分線型空間が<math><mi>𝑉</mi></math>に等しいとき，これを<dfn><math><mi>𝑉</mi></math>の生成系</dfn><span lang="en">(generator)</span>と呼ぶ．</li>
 						<li><a href="#線型独立">線型独立</a>な生成系を<dfn>基底</dfn><span lang="en">(basis)</span>と呼ぶ．</li>
 					</ul>
+					<article id="基底の存在" class="thm">
+						<h5>基底の存在</h5>
+						<p>以下は同値：</p>
+						<ul>
+							<li><a href="../../../set/index.html#選択公理">選択公理</a></li>
+							<li>ある<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> に対し，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
+							<li>ある<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> に対し，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>は整列可能な<a href="#基底">基底</a>が存在する．</li>
+							<li>任意の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
+						</ul>
+					</article>
 				</article>
-				<article id="基底の存在" class="thm">
-					<h4>基底の存在</h4>
-					<p>以下は同値：</p>
+				<article id="補空間" class="dfn">
+					<h4>補空間</h4>
 					<ul>
-						<li><a href="../../../set/index.html#選択公理">選択公理</a></li>
-						<li>任意の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
-						<li>任意の<a href="#線型空間">線型空間</a>は整列可能な<a href="#基底">基底</a>が存在する．</li>
-						<li>任意の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a> <math><mi>𝑊</mi></math> の<dfn>補空間</dfn><span lang="en">(complementary space)</span>とは，<math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a> <math><msup><mi>𝑊</mi><mi mathvariant="normal">c</mi></msup></math> であって，<math><mi>𝑊</mi><mo>+</mo><msup><mi>𝑊</mi><mi mathvariant="normal">c</mi></msup></math> が直和であり，それが<math><mi>𝑉</mi></math> に等しいものを言う．
+					</p>
+					<article id="補空間の存在" class="thm">
+						<h5>補空間の存在</h5>
+						<p>以下は同値：</p>
+						<ul>
+							<li><a href="../../../set/index.html#選択公理">選択公理</a></li>
+							<li>ある<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> と，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math> に対し，任意の <math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a>は<a href="#補空間">補空間</a>を持つ．</li>
+							<li>ある<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> と，任意の <math><mi>𝑉</mi></math> の<a href="#基底">基底</a>付き <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math> に対し，任意の <math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a>は<a href="#補空間">補空間</a>を持つ．</li>
+						</ul>
+					</article>
 				</article>
 			</section>
 			<section>
@@ -1741,8 +2067,8 @@
 				<article id="線型変換" class="dfn">
 					<h4>線型変換</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与える．</p>
 					<ul>
@@ -1777,8 +2103,8 @@
 				<article id="可逆変換" class="dfn">
 					<h4>可逆変換</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与える．</p>
 					<p><a href="#線型変換">線型変換</a> <math><mi>𝑓</mi></math> が<dfn>可逆</dfn><span lang="en">(invertible)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
@@ -1792,8 +2118,8 @@
 				<article id="不変部分空間" class="dfn">
 					<h4>不変部分空間</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 						<li>
 							<a href="#線型変換">線型変換</a>
 							<math>
@@ -1811,7 +2137,7 @@
 					</ul>
 					<p>を与える．</p>
 					<p>
-						<math><mi>𝑉</mi></math>の<a href="#部分線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑊</mi><mo>⊂</mo><mi>𝑉</mi></math> が <math><mi>𝑓</mi></math> の<dfn>不変部分空間</dfn><span lang="en">(invariant subspace)</span>であるとは，以下を満たすことを言う：
+						<math><mi>𝑉</mi></math> の <a href="#部分線型空間"><math><mi>𝕂</mi></math>-部分線型空間</a> <math><mi>𝑊</mi><mo>⊆</mo><mi>𝑉</mi></math> が <math><mi>𝑓</mi></math> の<dfn>不変部分空間</dfn><span lang="en">(invariant subspace)</span>であるとは，以下を満たすことを言う：
 						<math display="block">
 							<mrow>
 								<mi>𝑓</mi>
@@ -1820,7 +2146,7 @@
 									<mo>(</mo><mi>𝑊</mi><mo>)</mo>
 								</mrow>
 							</mrow>
-							<mo>⊂</mo>
+							<mo>⊆</mo>
 							<mi>𝑊</mi>
 						</math>
 					</p>
@@ -1830,9 +2156,9 @@
 					<article id="固有ベクトル" class="dfn">
 						<h5>固有ベクトル</h5>
 						<ul>
-							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
-							<li><a href="#線型変換">線型変換</a><math><mi>𝑓</mi><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></mrow></math></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+							<li><a href="#線型変換">線型変換</a> <math><mi>𝑓</mi><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></mrow></math></li>
 						</ul>
 						<p>を与える．</p>
 						<ul>
@@ -1911,8 +2237,8 @@
 					<article id="半単純" class="dfn">
 						<h5>半単純</h5>
 						<ul>
-							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 						</ul>
 						<p>を与える．</p>
 						<p>
@@ -1927,7 +2253,7 @@
 							が<dfn>半単純</dfn><span lang="en">(seimisimple)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
 						</p>
 						<ul>
-							<li>任意の <math><mi>𝑓</mi></math>-不変部分空間に対し，<math><mi>𝑓</mi></math>-不変な補空間が存在する．</li>
+							<li>任意の <a href="#不変部分空間"><math><mi>𝑓</mi></math>-不変部分空間</a>に対し，<math><mi>𝑓</mi></math>-不変な<a href="#補空間">補空間</a>が存在する．</li>
 							<li>最小多項式が既約多項式の積で書ける．</li>
 							<li><math><mi>𝕂</mi></math> の代数閉包上<a href="#固有ベクトル">対角化可能</a>．</li>
 						</ul>
@@ -1935,8 +2261,8 @@
 					<article id="冪零" class="dfn">
 						<h5>冪零</h5>
 						<ul>
-							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 						</ul>
 						<p>を与える．</p>
 						<p>
@@ -1952,7 +2278,7 @@
 									</mrow>
 								</mrow>
 							</math>
-							が<dfn>冪零</dfn><span lang="en">(nilpotent)</span>であるとは，それが（単位的）<a href="../../algebra/associative/index.html#結合代数">結合代数</a>としての<a href="../../algebra/associative/index.html#冪零">冪零元</a>であることを言う．つまり，以下を満たす：
+							が<dfn>冪零</dfn><span lang="en">(nilpotent)</span>であるとは，それが（単位的）<a href="../../algebra/index.html#結合代数">結合代数</a>としての<a href="../../algebra/index.html#冪零">冪零元</a>であることを言う．つまり，以下を満たす：
 							<math display="block">
 								<mrow>
 									<mo>∃</mo>
@@ -1987,7 +2313,7 @@
 					<article id="冪零性の基本性質" class="thm">
 						<h5>冪零性の基本性質</h5>
 						<ul>
-							<li><a href="../../ring/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 							<li><a href="#冪零">冪零変換</a> <math><mi>𝑓</mi><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></mrow></math></li>
 						</ul>
@@ -2016,7 +2342,7 @@
 									<munderover intent=":largeop">
 										<mo>∑</mo>
 										<mrow>
-											<mi>𝑗</mi><mo>=</mo><mn>1</mn>
+											<mi>𝑗</mi><mo>=</mo><mn>0</mn>
 										</mrow>
 										<mi>∞</mi>
 									</munderover>
@@ -2024,7 +2350,7 @@
 										<mrow>
 											<mo>(</mo>
 											<mrow>
-												<mi>𝑡</mi><mo>&it;</mo><mi>𝑁</mi>
+												<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
 											</mrow>
 											<mo>)</mo>
 										</mrow>
@@ -2038,8 +2364,8 @@
 					<article id="Jordan-Chevalley分解" class="dfn">
 						<h5>Jordan-Chevalley分解</h5>
 						<ul>
-							<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 							<li>
 								<a href="#線型変換">線型変換</a>
 								<math>
@@ -2135,8 +2461,8 @@
 				<article id="旗" class="dfn">
 					<h4>旗</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-						<li>有限次元<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li>有限次元<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与える．</p>
 					<ul>
@@ -2244,7 +2570,7 @@
 											<mo>)</mo>
 										</mrow>
 									</mrow>
-									<mo>⊂</mo>
+									<mo>⊆</mo>
 									<msub>
 										<mi>𝑉</mi><mi>𝑗</mi>
 									</msub>
@@ -2256,8 +2582,8 @@
 				<article id="有限次元Jordan-Chevalley分解" class="thm">
 					<h4>有限次元におけるJordan-Chevalley分解の存在条件</h4>
 					<ul>
-						<li><a href="../../ring/field/index.html#体">体</a><math><mi>𝕂</mi></math></li>
-						<li>有限次元<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a><math><mi>𝑉</mi></math></li>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li>有限次元<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与えると，以下が成り立つ：</p>
 					<ul>

@@ -13739,7 +13739,7 @@
 									<li><math><mi>𝑉</mi></math> が<a href="../../module/linear-algebra/index.html#基底">基底</a>を持つ</li>
 									<li><math><mi>𝑉</mi></math> の任意の<a href="../../module/linear-algebra/index.html#部分線型空間">部分線型空間</a>が補空間を持つ</li>
 								</ul>
-								を持つことが同値となる．<span class="future-work">あとで</span>
+								を持つことが同値となる．<a href="../../module/linear-algebra/index.html#補空間の存在">一般に，任意の基底付き線型空間の任意の部分線型空間が補空間を持つならば，選択公理が成り立つ</a>．
 							</li>
 						</ul>
 					</article>
@@ -40618,11 +40618,139 @@
 				</article>
 				<ul>
 					<li>ルート空間分解：明らか</li>
-					<li>単純ルート：適当に取る</li>
-					<li>生成系：まずは，単純ルートのルート空間が1次元であることを確認．生成されることはどうすれば……?</li>
-					<li>Cartan行列：ここが鬼門かも</li>
+					<li><math><msup><mi>𝔥</mi><mo>∗</mo></msup><mo>=</mo><mrow><mi>span</mi><mo>&af;</mo><mi>𝛷</mi></mrow></math></li>
+					<li>多分 <math><mi>𝛷</mi><mo>=</mo><mrow><mo>−</mo><mi>𝛷</mi></mrow></math> を示す</li>
+					<li>正ルートと負ルートに分割</li>
+					<li>単純ルート：正ルートの和で書けない正ルート．あとはこれが基底となることを示す．定義より正ルートは単純ルートの正係数線型結合．</li>
+					<li>
+						<math>
+							<mrow>
+								<msub>
+									<mi>𝛼</mi><mi>𝑗</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msub>
+										<mi>ℎ</mi><mi>𝑖</mi>
+									</msub>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mo>(</mo>
+								<mrow>
+									<msub>
+										<mi>𝛼</mi><mi>𝑗</mi>
+									</msub>
+									<msubsup>
+										<mi>𝛼</mi><mi>𝑖</mi><mi>∨</mi>
+									</msubsup>
+								</mrow>
+								<mo>)</mo>
+							</mrow>
+						</math>
+						とし，これがCartan行列となることを示す．対角成分は自明．非対角成分は𝛼-string through 𝛽 の話から，整数となり，<math>
+							<mrow>
+								<msub>
+									<mi>𝛼</mi><mi>𝑖</mi>
+								</msub>
+								<mo>−</mo>
+								<msub>
+									<mi>𝛼</mi><mi>𝑗</mi>
+								</msub>
+							</mrow>
+							<mo>∉</mo>
+							<mrow>
+								<mo>−</mo><mi>𝛷</mi>
+							</mrow>
+						</math> より非正整数となる．
+					</li>
+					<li>生成系：まずは，単純ルートのルート空間が1次元であることを確認．単純ルート系からなる．生成されることは<math>
+						<mrow>
+							<mo>[</mo>
+							<mrow>
+								<msub>
+									<mi>𝔤</mi><mi>𝛼</mi>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝔤</mi><mi>𝛽</mi>
+								</msub>
+							</mrow>
+							<mo>]</mo>
+						</mrow>
+						<mo>=</mo>
+						<msub>
+							<mi>𝔤</mi>
+							<mrow>
+								<mi>𝛼</mi><mo>+</mo><mi>𝛽</mi>
+							</mrow>
+						</msub>
+					</math></li>
 					<li><a href="#Chevalley関係式">Chevalley関係式</a>：最初と最後の式は明らか．残りはCartan行列そのもの</li>
 					<li><a href="#Serre関係式">Serre関係式</a>：𝛼-string through 𝛽</li>
+					<li>都合よく標準形式がいるので，対称化可能だとわかる．</li>
+					<li>Kac-Moody代数の非零な商Lie代数となるが，単純成分それぞれ考えれば，Kac-Moody代数そのものになる．</li>
+				</ul>
+				<p>以上より必要な補題は，</p>
+				<ul>
+					<li>
+						<math>
+							<mrow>
+								<mi>dim</mi>
+								<mo>&af;</mo>
+								<msub>
+									<mi>𝔤</mi><mi>𝛼</mi>
+								</msub>
+							</mrow>
+							<mo>=</mo>
+							<mn>1</mn>
+						</math>
+					</li>
+					<li><math><mi>𝛷</mi><mo>=</mo><mrow><mo>−</mo><mi>𝛷</mi></mrow></math></li>
+					<li><math><msup><mi>𝔥</mi><mo>∗</mo></msup><mo>=</mo><mrow><mi>span</mi><mo>&af;</mo><mi>𝛷</mi></mrow></math></li>
+					<li>
+						<math>
+							<msub>
+								<mi>𝔤</mi><mi>𝛼</mi>
+							</msub>
+							<mo>⊕</mo>
+							<msub>
+								<mi>𝔤</mi>
+								<mrow>
+									<mo>−</mo><mi>𝛼</mi>
+								</mrow>
+							</msub>
+							<mo>⊕</mo>
+							<mrow>
+								<mi>𝕂</mi>
+								<mo>&it;</mo>
+								<msub>
+									<mi>𝑡</mi><mi>𝛼</mi>
+								</msub>
+							</mrow>
+						</math> が <math><mi>𝔰𝔩</mi><mo>&af;</mo><mrow><mo>(</mo><mrow><mn>2</mn><mo>,</mo><mi>𝕂</mi></mrow><mo>)</mo></mrow></math>と同型．
+					</li>
+					<li>𝛼-string through 𝛽</li>
+					<li>
+						<math>
+							<mrow>
+								<mi>𝛽</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<msub>
+										<mi>ℎ</mi><mi>𝛼</mi>
+									</msub>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>∈</mo>
+							<mi>ℤ</mi>
+						</math>
+					</li>
 				</ul>
 				<article id="有限次元無中心半単純Lie代数のルート空間分解" class="thm">
 					<h4>有限次元無中心半単純Lie代数のルート空間分解</h4>
