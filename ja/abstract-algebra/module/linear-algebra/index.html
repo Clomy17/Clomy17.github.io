@@ -33,7 +33,7 @@
 					<li>
 						<math>
 							<mrow>
-								<mo>∀</mo>
+								<mo>∀</mo>を満たす．
 								<mo>&af;</mo>
 								<mrow>
 									<mi>𝑎</mi><mo>∈</mo><mi>𝕂</mi>
@@ -1672,6 +1672,209 @@
 						</p>
 					</article>
 				</article>
+			</section>
+			<section>
+				<h3>同型定理</h3>
+				<article id="部分線型空間" class="dfn">
+					<h4>部分線型空間</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p><math><mi>𝑊</mi><mo>⊆</mo><mi>𝑉</mi></math> が<dfn>部分線型空間</dfn><span lang="en">(linear subspace)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
+					<ul>
+						<li><math><mi>𝑉</mi></math> と同じ演算で<a href="#線型空間">線型空間</a>となる</li>
+						<li>
+							<math>
+								<mrow>
+									<mrow>
+										<mi>𝑊</mi><mo>+</mo><mi>𝑊</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝕂</mi><mo>&it;</mo><mi>𝑊</mi>
+									</mrow>
+								</mrow>
+								<mo>⊆</mo>
+								<mi>𝑊</mi>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="基底" class="dfn">
+					<h4>生成系・基底</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+						<li>ベクトルの集合 <math><mi>𝑆</mi><mo>⊆</mo><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math>
+								<mrow>
+									<mi>𝕂</mi><mo>&it;</mo><mi>𝑆</mi>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝕂</mi><mo>&it;</mo><mi>𝑆</mi>
+								</mrow>
+							</math>
+							は<math><mi>𝑆</mi></math>を含む最小の<a href="#部分線型空間">部分線型空間</a>となる．これを<dfn><math><mi>𝑆</mi></math>で生成される部分線型空間</dfn><span lang="en">()</span>と呼ぶ．
+						</li>
+						<li><math><mi>𝑆</mi></math>で生成される部分線型空間が<math><mi>𝑉</mi></math>に等しいとき，これを<dfn><math><mi>𝑉</mi></math>の生成系</dfn><span lang="en">(generator)</span>と呼ぶ．</li>
+						<li><a href="#線型独立">線型独立</a>な生成系を<dfn>基底</dfn><span lang="en">(basis)</span>と呼ぶ．</li>
+						<li><math><mi>𝑉</mi></math> の任意の基底の濃度は等しい．その濃度を<dfn>次元</dfn><span lang="en">(dimension)</span>と呼ぶ．</li>
+					</ul>
+					<article id="基底の存在" class="thm">
+						<h5>基底の存在</h5>
+						<p>以下は同値：</p>
+						<ul>
+							<li><a href="../../../set/index.html#選択公理">選択公理</a></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えたとき，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math>  を与えたとき，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>は整列可能な<a href="#基底">基底</a>が存在する．</li>
+						</ul>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>基底数一定性の証明</h4>
+					<p>
+					</p>
+				</article>
+				<article class="proof">
+					<h4><a href="#基底の存在">基底の存在</a>の証明</h4>
+					<ul>
+						<li>
+							<math><mi>𝑉</mi></math> の<a href="#線型独立">線型独立</a>な<a href="../../../set/index.html#部分集合">部分集合</a>の<a href="../../../set/index.html#集合">集合</a>を <math><mi>𝑆</mi></math> とする．<math><mi>𝑆</mi></math> の任意の元の任意の有限部分集合は <math><mi>𝑆</mi></math> の元なので，<a href="../../../set/index.html#Zornの補題">Tukeyの補題</a>より <math><mi>𝑆</mi></math> は<a href="#極小元">極大元</a> <math><mi>𝑋</mi></math> を持つ．<math><mi>𝑋</mi></math> が <math><mi>𝑉</mi></math> を<a href="#基底">生成</a>しないと仮定すると，<math><mo>∃</mo><mo>&af;</mo><mrow><mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi></mrow></math> に対し，<math><mi>𝑋</mi></math> の線型結合で表せない．しかし，<math>
+								<mi>𝑋</mi>
+								<mo>⊂</mo>
+								<mrow>
+									<mi>𝑋</mi>
+									<mo>∩</mo>
+									<mrow>
+										<mo>{</mo><mi>𝑣</mi><mo>}</mo>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝑆</mi>
+							</math> より，<math><mi>𝑋</mi></math> の<a href="#極大性">極大性</a>に矛盾．よって，<math><mi>𝑋</mi></math> は <math><mi>𝑉</mi></math> の<a href="#基底">基底</a>となる．また，<a href="../../../set/index.html#Zornの補題">整列可能定理</a>より，<math><mi>𝑋</mi></math> は整列可能．
+						</li>
+						<li class="future-work"></li>
+					</ul>
+				</article>
+				<article id="補空間" class="dfn">
+					<h4>補空間</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a> <math><mi>𝑊</mi></math> の<dfn>補空間</dfn><span lang="en">(complementary space)</span>とは，<math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a> <math><msup><mi>𝑊</mi><mi mathvariant="normal">c</mi></msup></math> であって，<math><mi>𝑊</mi><mo>+</mo><msup><mi>𝑊</mi><mi mathvariant="normal">c</mi></msup></math> が直和であり，それが<math><mi>𝑉</mi></math> に等しいものを言う．
+					</p>
+					<article id="補空間の存在" class="thm">
+						<h5>補空間の存在</h5>
+						<p>以下は同値：</p>
+						<ul>
+							<li><a href="../../../set/index.html#選択公理">選択公理</a></li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えたとき，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math> に対し，任意の <math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a>は<a href="#補空間">補空間</a>を持つ．</li>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えたとき，任意の <math><mi>𝑉</mi></math> の<a href="#基底">基底</a>付き <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math> に対し，任意の <math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a>は<a href="#補空間">補空間</a>を持つ．</li>
+						</ul>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>
+							<math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a> <math><mi>𝑊</mi></math> に対し，<a href="#部分線型空間">部分線型空間</a> <math><mi>𝑈</mi></math> で，<math><mrow><mi>𝑊</mi><mo>∩</mo><mi>𝑈</mi></mrow><mo>=</mo><mn>0</mn></math> となるものの集合を <math><mi>𝑆</mi></math> とする．<math><mi>𝑆</mi></math> の任意の<a href="../../../set/index.html#鎖">鎖</a> <math><msup><mi>𝑆</mi><mo>′</mo></msup></math> に対し，<math>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>⋃</mo>
+										<mrow>
+											<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
+										</mrow>
+									</munder>
+									<mo>&af;</mo><mi>𝑠</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝑆</mi>
+							</math> は <math><msup><mi>𝑆</mi><mo>′</mo></msup></math> の<a href="../../../set/index.html#下限">上界</a>となる．ゆえに<a href="../../../set/index.html#Zornの補題">Zornの補題</a>より，<math><mi>𝑆</mi></math> は<a href="../../../set/index.html#極小元">極大元</a> <math><msup><mi>𝑊</mi><mo>′</mo></msup></math> を持つ．ここで，<math>
+								<mrow>
+									<mi>𝑊</mi>
+									<mo>⊕</mo>
+									<msup>
+										<mi>𝑊</mi><mo>′</mo>
+									</msup>
+								</mrow>
+								<mo>⊂</mo>
+								<mi>𝑉</mi>
+							</math> を仮定すると，<a href="#部分線型空間">部分線型空間</a> <math><mi>𝑇</mi></math> が存在し，
+							<math display="block">
+								<mrow>
+									<mi>𝑇</mi>
+									<mo>⊕</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑊</mi>
+											<mo>⊕</mo>
+											<msup>
+												<mi>𝑊</mi><mo>′</mo>
+											</msup>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑊</mi>
+									<mo>⊕</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑇</mi>
+											<mo>⊕</mo>
+											<msup>
+												<mi>𝑊</mi><mo>′</mo>
+											</msup>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+							を満たすが，これは <math><msup><mi>𝑊</mi><mo>′</mo></msup></math> の<a href="../../../set/index.html#極小元">極大性</a>に矛盾．ゆえに，<math>
+								<mrow>
+									<mi>𝑊</mi>
+									<mo>⊕</mo>
+									<msup>
+										<mi>𝑊</mi><mo>′</mo>
+									</msup>
+								</mrow>
+								<mo>=</mo>
+								<mi>𝑉</mi>
+							</math>
+						</li>
+						<li class="future-work"></li>
+					</ul>
+				</article>
+				<article id="零線型空間" class="dfn">
+					<h4>零線型空間</h4>
+					<p><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与える．</p>
+					<p><dfn>零線型空間</dfn><span lang="en">(zero linear space)</span>とは，零群 <math><mo>{</mo><mn>0</mn><mo>}</mo></math> に自明な<a href="#線型空間">スカラー倍</a> <math><mrow><mi>𝕂</mi><mo>&it;</mo><mn>0</mn></mrow><mo>=</mo><mn>0</mn></math>を定義することによる<a href="#線型空間">線型空間</a>のこと．</p>
+				</article>
+				<article id="線型写像の階数" class="dfn">
+					<h4>線型写像の階数</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi><mo>,</mo><mi>𝑊</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p><a href="#線型写像">線型写像</a> <math><mi>𝑓</mi><mo>:</mo><mrow><mi>𝑉</mi><mo>→</mo><mi>𝑊</mi></mrow></math> の<dfn>階数</dfn><span lang="en">(rank)</span>とは，<math><mi>𝑊</mi></math> の<a href="#部分線型空間">部分線型空間</a>である <math><mi>𝑓</mi></math> の像 <math><mi>𝑓</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑉</mi><mo>)</mo></mrow></math> の<a href="#基底">次元</a>のこと．</p>
+				</article>
+			</section>
+			<section>
+				<h3>テンソル積</h3>
 				<article id="テンソル積" class="dfn">
 					<h4>テンソル積</h4>
 					<ul>
@@ -1854,7 +2057,7 @@
 										<mo>→</mo>
 										<mi>𝑊</mi>
 									</mrow>
-								</math> が<a href="#線型写像">線型写像</a>となるもの：
+								</math> が<a href="#線型写像">線型写像</a>となるもの
 							</li>
 						</ul>
 						<p>を与えると，．</p>
@@ -1866,7 +2069,7 @@
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li>有限集合 <math><mi>𝛬</mi></math></li>
 						<li><a href="#線型空間">線型空間</a> <math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>,</mo><msub><mi>𝑉</mi><mn>1</mn></msub><mo>,</mo><mi>𝑊</mi></math></li>
-						<li><a href="#双積">双積線型空間</a> <math><msub> <mi>𝑉</mi><mn>0</mn></msub><mo>⊕</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math></li>
+						<li><a href="#双積">双積線型空間</a> <math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊕</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math></li>
 						<li><a href="#テンソル積">テンソル積</a> <math><mrow><mo>(</mo><mrow><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊗</mo><msub><mi>𝑉</mi><mn>1</mn></msub><mo>,</mo><mi>𝜑</mi></mrow><mo>)</mo></mrow></math></li>
 					</ul>
 					<p>を与える．</p>
@@ -1963,7 +2166,7 @@
 										</li>
 									</ul>
 								</li>
-								<li><math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊗</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math> から <math><mi>𝑊</mi></math> への<a href="#線型写像">線型写像</a> <math><mi>𝑔</mi></math></li>
+								<li><math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊗</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math> から <math><mi>𝑊</mi></math> への<a href="#線型写像">線型写像</a> <math><mi>𝑔</mi><mo>:</mo><mrow><mrow><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊗</mo><msub><mi>𝑉</mi><mn>1</mn></msub></mrow><mo>→</mo><mi>𝑊</mi></mrow></math></li>
 							</ul>
 							<a href="#テンソル積の普遍性">テンソル積の普遍性</a>より，これらは <math>
 								<mi>𝑓</mi>
@@ -1973,93 +2176,240 @@
 								</mrow>
 							</math> を満たすように一対一に対応する．
 						</li>
+						<li><math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>,</mo><msub><mi>𝑉</mi><mn>0</mn></msub></math> から <math><msub><mi>𝑉</mi><mn>0</mn></msub></math> への双線型写像のことを単に <math><msub><mi>𝑉</mi><mn>0</mn></msub></math> 上の双線型写像と呼ぶ．</li>
 						<li><math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>,</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math> から <math><mi>𝑊</mi></math> への<dfn>余双線型写像</dfn><span lang="en">()</span>とは，<math><mi>𝑊</mi></math> から <math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>⊗</mo><msub><mi>𝑉</mi><mn>1</mn></msub></math> への<a href="#線型写像">線型写像</a>のこと．</li>
+						<li><math><msub><mi>𝑉</mi><mn>0</mn></msub><mo>,</mo><msub><mi>𝑉</mi><mn>0</mn></msub></math> から <math><msub><mi>𝑉</mi><mn>0</mn></msub></math> への余双線型写像のことを単に <math><msub><mi>𝑉</mi><mn>0</mn></msub></math> 上の余双線型写像と呼ぶ．</li>
 					</ul>
 				</article>
-			</section>
-			<section>
-				<h3>同型定理</h3>
-				<article id="部分線型空間" class="dfn">
-					<h4>部分線型空間</h4>
+				<article id="双線型形式" class="dfn">
+					<h4>双線型形式</h4>
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
-					</ul>
-					<p>を与える．</p>
-					<p><math><mi>𝑊</mi><mo>⊆</mo><mi>𝑉</mi></math> が<dfn>部分線型空間</dfn><span lang="en">(linear subspace)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
-					<ul>
-						<li><math><mi>𝑉</mi></math> と同じ演算で<a href="#線型空間">線型空間</a>となる</li>
-						<li>
-							<math>
-								<mrow>
-									<mrow>
-										<mi>𝑊</mi><mo>+</mo><mi>𝑊</mi>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mi>𝕂</mi><mo>&it;</mo><mi>𝑊</mi>
-									</mrow>
-								</mrow>
-								<mo>⊆</mo>
-								<mi>𝑊</mi>
-							</math>
-						</li>
-					</ul>
-				</article>
-				<article id="基底" class="dfn">
-					<h4>生成系・基底</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
-						<li>ベクトルの集合 <math><mi>𝑆</mi><mo>⊆</mo><mi>𝑉</mi></math></li>
+						<li><a href="#線型空間">線型空間</a> <math><mi>𝑉</mi></math></li>
+						<li><a href="#テンソル積">テンソル積</a> <math><mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与える．</p>
 					<ul>
 						<li>
-							<math>
+							<math><mi>𝑉</mi></math> 上の<dfn>双線型形式</dfn><span lang="en">(bilinear form)</span>とは，<a href="#双線型写像">双線型写像</a> <math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
 								<mrow>
-									<mi>𝕂</mi><mo>&it;</mo><mi>𝑆</mi>
+									<mrow>
+										<mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝕂</mi>
 								</mrow>
-								<mo>+</mo>
-								<mrow>
-									<mi>𝕂</mi><mo>&it;</mo><mi>𝑆</mi>
-								</mrow>
-							</math>
-							は<math><mi>𝑆</mi></math>を含む最小の<a href="#部分線型空間">部分線型空間</a>となる．これを<dfn><math><mi>𝑆</mi></math>で生成される部分線型空間</dfn><span lang="en">()</span>と呼ぶ．
+							</math> のこと．
 						</li>
-						<li><math><mi>𝑆</mi></math>で生成される部分線型空間が<math><mi>𝑉</mi></math>に等しいとき，これを<dfn><math><mi>𝑉</mi></math>の生成系</dfn><span lang="en">(generator)</span>と呼ぶ．</li>
-						<li><a href="#線型独立">線型独立</a>な生成系を<dfn>基底</dfn><span lang="en">(basis)</span>と呼ぶ．</li>
+						<li>
+							<math><mi>𝑉</mi></math> 上の<dfn>余双線型形式</dfn><span lang="en">(bilinear form)</span>とは，<a href="#双線型写像">余双線型写像</a> <math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝕂</mi>
+									<mo>→</mo>
+									<mrow>
+										<mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi>
+									</mrow>
+								</mrow>
+							</math> のこと．
+						</li>
 					</ul>
-					<article id="基底の存在" class="thm">
-						<h5>基底の存在</h5>
-						<p>以下は同値：</p>
-						<ul>
-							<li><a href="../../../set/index.html#選択公理">選択公理</a></li>
-							<li>ある<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> に対し，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
-							<li>ある<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> に対し，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a>は整列可能な<a href="#基底">基底</a>が存在する．</li>
-							<li>任意の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
-						</ul>
-					</article>
 				</article>
-				<article id="補空間" class="dfn">
-					<h4>補空間</h4>
+				<article id="根基" class="dfn">
+					<h4>根基</h4>
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+						<li><a href="#線型空間">線型空間</a> <math><mi>𝑉</mi></math></li>
+						<li><a href="#テンソル積">テンソル積</a> <math><mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝑉</mi></math> 上の<a href="#双線型形式">双線型形式</a> <math>
+								<mi>𝛽</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝕂</mi>
+								</mrow>
+							</math> の<dfn>左根基</dfn><span lang="en">(left radical)</span>とは，以下のデータのこと：
+							<math display="block">
+								<msub>
+									<mi>rad</mi>
+									<mrow>
+										<mi mathvariant="normal">L</mi><mo>,</mo><mi>𝛽</mi>
+									</mrow>
+								</msub>
+								<mo>≔</mo>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+										</mrow>
+										<mo>|</mo>
+										<mrow>
+											<mrow>
+												<mi>𝛽</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑣</mi><mo>,</mo><mi>𝑉</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mn>0</mn>
+										</mrow>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝑉</mi></math> 上の<a href="#双線型形式">双線型形式</a> <math>
+								<mi>𝛽</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝕂</mi>
+								</mrow>
+							</math> の<dfn>右根基</dfn><span lang="en">(right radical)</span>とは，以下のデータのこと：
+							<math display="block">
+								<msub>
+									<mi>rad</mi>
+									<mrow>
+										<mi mathvariant="normal">R</mi><mo>,</mo><mi>𝛽</mi>
+									</mrow>
+								</msub>
+								<mo>≔</mo>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+										</mrow>
+										<mo>|</mo>
+										<mrow>
+											<mrow>
+												<mi>𝛽</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑉</mi><mo>,</mo><mi>𝑣</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mn>0</mn>
+										</mrow>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝑉</mi></math> 上の対称双線型形式 <math>
+								<mi>𝛽</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝕂</mi>
+								</mrow>
+							</math> の左根基と右根基は等しい．これを単に <math><mi>𝛽</mi></math> の<dfn>根基</dfn><span lang="en">(radical)</span>と呼ぶ．
+						</li>
+					</ul>
+				</article>
+				<article id="非退化形式" class="dfn">
+					<h4>非退化形式</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間">線型空間</a> <math><mi>𝑉</mi></math></li>
+						<li><a href="#テンソル積">テンソル積</a> <math><mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi></math></li>
 					</ul>
 					<p>を与える．</p>
 					<p>
-						<math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a> <math><mi>𝑊</mi></math> の<dfn>補空間</dfn><span lang="en">(complementary space)</span>とは，<math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a> <math><msup><mi>𝑊</mi><mi mathvariant="normal">c</mi></msup></math> であって，<math><mi>𝑊</mi><mo>+</mo><msup><mi>𝑊</mi><mi mathvariant="normal">c</mi></msup></math> が直和であり，それが<math><mi>𝑉</mi></math> に等しいものを言う．
+						<math><mi>𝑉</mi></math> 上の<a href="#双線型形式">双線型形式</a> <math>
+							<mi>𝛽</mi>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝕂</mi>
+							</mrow>
+						</math> が<dfn>非退化</dfn><span lang="en">(nondegenerate)</span>であるとは，<a href="#根基">左根基</a>と<a href="#根基">右根基</a>が<a href="#零線型空間">零</a>であることを言う．つまり，以下を満たす：
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mo>{</mo>
+								<mtable intent=":system-of-equations">
+									<mtr>
+										<mtd>
+											<mrow>
+												<mi>𝛽</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑣</mi><mo>,</mo><mi>𝑉</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mn>0</mn>
+										</mtd>
+										<mtd><mo>⇒</mo></mtd>
+										<mtd><mi>𝑣</mi><mo>=</mo><mn>0</mn></mtd>
+									</mtr>
+									<mtr>
+										<mtd>
+											<mrow>
+												<mi>𝛽</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑉</mi><mo>,</mo><mi>𝑣</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mn>0</mn>
+										</mtd>
+										<mtd><mo>⇒</mo></mtd>
+										<mtd><mi>𝑣</mi><mo>=</mo><mn>0</mn></mtd>
+									</mtr>
+								</mtable>
+							</mrow>
+						</math>
 					</p>
-					<article id="補空間の存在" class="thm">
-						<h5>補空間の存在</h5>
-						<p>以下は同値：</p>
-						<ul>
-							<li><a href="../../../set/index.html#選択公理">選択公理</a></li>
-							<li>ある<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> と，任意の <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math> に対し，任意の <math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a>は<a href="#補空間">補空間</a>を持つ．</li>
-							<li>ある<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> と，任意の <math><mi>𝑉</mi></math> の<a href="#基底">基底</a>付き <a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math> に対し，任意の <math><mi>𝑉</mi></math> の<a href="#部分線型空間">部分線型空間</a>は<a href="#補空間">補空間</a>を持つ．</li>
-						</ul>
-					</article>
 				</article>
 			</section>
 			<section>
@@ -2099,21 +2449,6 @@
 						<h4>線型変換の集合は単位的結合代数</h4>
 						<p><a href="#線型変換">線型変換</a>の集合は恒等変換を単位元とする単位的結合代数</p>
 					</article>
-				</article>
-				<article id="可逆変換" class="dfn">
-					<h4>可逆変換</h4>
-					<ul>
-						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
-					</ul>
-					<p>を与える．</p>
-					<p><a href="#線型変換">線型変換</a> <math><mi>𝑓</mi></math> が<dfn>可逆</dfn><span lang="en">(invertible)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
-					<ul>
-						<li><math><mi>𝑓</mi></math>が全単射．</li>
-						<li><math><mi>𝑓</mi></math>が単射．</li>
-						<li><math><mi>𝑓</mi></math>が分裂全射．</li>
-						<li>基底の像は基底．</li>
-					</ul>
 				</article>
 				<article id="不変部分空間" class="dfn">
 					<h4>不変部分空間</h4>
@@ -2214,7 +2549,7 @@
 								</math>
 							</li>
 							<li>
-								<math><mi>𝑓</mi></math> が<dfn>対角化可能</dfn><span lang="en">(diagonalizable)</span>であるとは，<math><mi>𝑉</mi></math> が 全ての固有空間の<a href="#直和">直和</a>が <math><mi>𝑉</mi></math> に等しいことを言う：
+								<math><mi>𝑓</mi></math> が<dfn>対角化可能</dfn><span lang="en">(diagonalizable)</span>であるとは，<math><mi>𝑉</mi></math> が全ての固有空間の<a href="#直和">直和</a>が <math><mi>𝑉</mi></math> に等しいことを言う：
 								<math>
 									<mi>𝑉</mi>
 									<mo>=</mo>
@@ -2309,55 +2644,201 @@
 								</mrow>
 							</math>
 						</p>
+						<article id="冪零性の基本性質" class="thm">
+							<h6>冪零性の基本性質</h6>
+							<ul>
+								<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+								<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+								<li><a href="#冪零">冪零変換</a> <math><mi>𝑓</mi><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></mrow></math></li>
+							</ul>
+							<p>を与えると，以下が成り立つ：</p>
+							<ul>
+								<li><math><mi>𝑓</mi></math> の取り得る<a href="#固有値">固有値</a>は <math><mn>0</mn></math> のみ．</li>
+								<li><math><mi>𝑓</mi></math> は可逆でない．</li>
+								<li>
+									<math>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑡</mi><mo>∈</mo><mi>𝕂</mi>
+										</mrow>
+									</math>
+									に対し，
+									<math>
+										<mi>id</mi>
+										<mo>−</mo>
+										<mrow>
+											<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
+										</mrow>
+									</math>
+									は可逆で，その逆変換は
+									<math>
+										<munderover intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑗</mi><mo>=</mo><mn>0</mn>
+											</mrow>
+											<mi>∞</mi>
+										</munderover>
+										<msup>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mi>𝑗</mi>
+										</msup>
+									</math>
+									．
+								</li>
+							</ul>
+						</article>
 					</article>
-					<article id="冪零性の基本性質" class="thm">
-						<h5>冪零性の基本性質</h5>
+					<article class="proof">
+						<h5>証明</h5>
+						<p><a href="#冪零">冪零性の定義</a>より，<math><mo>∃</mo><mo>&af;</mo><mrow><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></mrow></math> に対し，<math><msup><mi>𝑓</mi><mi>𝑛</mi></msup><mo>=</mo><mn>0</mn></math> を満たす．</p>
 						<ul>
-							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
-							<li><a href="#冪零">冪零変換</a> <math><mi>𝑓</mi><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></mrow></math></li>
-						</ul>
-						<p>を与えると，以下が成り立つ：</p>
-						<ul>
-							<li><math><mi>𝑓</mi></math> の取り得る<a href="#固有値">固有値</a>は <math><mn>0</mn></math> のみ．</li>
-							<li><math><mi>𝑓</mi></math> は可逆でない．</li>
+							<li>
+								<a href="#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mi>𝕂</mi></math> の<a href="#固有ベクトル">固有ベクトル</a> <math><mi>𝑣</mi><mo>∈</mo><mrow><mi>𝑉</mi><mo>∖</mo><mn>0</mn></mrow></math> に対し，<math>
+									<mn>0</mn>
+									<mo>=</mo>
+									<mrow>
+										<msup>
+											<mi>𝑓</mi><mi>𝑛</mi>
+										</msup>
+										<mo>&af;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<msup>
+											<mi>𝜆</mi><mi>𝑛</mi>
+										</msup>
+										<mo>&it;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+								</math> より，<math>
+									<msup>
+										<mi>𝜆</mi><mi>𝑛</mi>
+									</msup>
+									<mo>=</mo>
+									<mn>0</mn>
+								</math>．体は整域なので，<math><mi>𝜆</mi><mo>=</mo><mn>0</mn></math>．
+							</li>
+							<li>
+								<math><mi>𝑓</mi></math> が自己同型と仮定し，逆変換を <math><msup><mi>𝑓</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></math> とする．<a href="#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mi>𝕂</mi></math> の<a href="#固有ベクトル">固有ベクトル</a> <math><mi>𝑣</mi><mo>∈</mo><mrow><mi>𝑉</mi><mo>∖</mo><mn>0</mn></mrow></math> に対し，<math>
+									<mi>𝑣</mi>
+									<mo>=</mo>
+									<mrow>
+										<mrow>
+											<msup>
+												<mi>𝑓</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>∘</mo>
+											<mi>𝑓</mi>
+										</mrow>
+										<mo>&af;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</math>  より，矛盾．ゆえに，自己同型でない．
+							</li>
 							<li>
 								<math>
-									<mo>∀</mo>
-									<mo>&af;</mo>
 									<mrow>
-										<mi>𝑡</mi><mo>∈</mo><mi>𝕂</mi>
-									</mrow>
-								</math>
-								に対し，
-								<math>
-									<mi>id</mi>
-									<mo>−</mo>
-									<mrow>
-										<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
-									</mrow>
-								</math>
-								は可逆で，その逆変換は
-								<math>
-									<munderover intent=":largeop">
-										<mo>∑</mo>
-										<mrow>
-											<mi>𝑗</mi><mo>=</mo><mn>0</mn>
-										</mrow>
-										<mi>∞</mi>
-									</munderover>
-									<msup>
 										<mrow>
 											<mo>(</mo>
 											<mrow>
-												<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
+												<mi>id</mi>
+												<mo>−</mo>
+												<mrow>
+													<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
+												</mrow>
 											</mrow>
 											<mo>)</mo>
 										</mrow>
-										<mi>𝑗</mi>
-									</msup>
+										<mo>∘</mo>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑗</mi><mo>=</mo><mn>0</mn>
+												</mrow>
+												<mi>∞</mi>
+											</munderover>
+											<mo>&af;</mo>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mi>𝑗</mi>
+											</msup>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>id</mi>
+												<mo>−</mo>
+												<mrow>
+													<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>∘</mo>
+										<mrow>
+											<munderover intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑗</mi><mo>=</mo><mn>0</mn>
+												</mrow>
+												<mrow>
+													<mi>𝑛</mi><mo>−</mo><mn>1</mn>
+												</mrow>
+											</munderover>
+											<mo>&af;</mo>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑡</mi><mo>&it;</mo><mi>𝑓</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mi>𝑗</mi>
+											</msup>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>id</mi>
+										<mo>−</mo>
+										<mrow>
+											<msup>
+												<mi>𝑡</mi><mi>𝑛</mi>
+											</msup>
+											<mo>&it;</mo>
+											<msup>
+												<mi>𝑓</mi><mi>𝑛</mi>
+											</msup>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mi>id</mi>
 								</math>
-								．
 							</li>
 						</ul>
 					</article>
@@ -2456,6 +2937,24 @@
 		</section>
 		<section>
 			<h2>有限次元線型空間</h2>
+			<article id="有限次元" class="dfn">
+				<h3>有限次元線型空間</h3>
+				<p><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与える．</p>
+				<p><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math> が<dfn>有限次元</dfn><span lang="en">(finite-dimensional)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
+				<ul>
+					<li><a href="#次元">次元</a>が有限．つまり，有限濃度の<a href="#基底">基底</a>を持つ．</li>
+					<li>有限濃度の<a href="#基底">生成系</a>を持つ．</li>
+					<li>任意の <math><mi>𝑉</mi></math> の<a href="#線型独立">線型独立</a>な部分集合は有限．</li>
+					<li><a href="#部分線型空間">部分線型空間</a>の集合が<a href="../../../set/index.html#昇鎖条件">昇鎖条件</a>を満たす．</li>
+					<li><a href="#部分線型空間">部分線型空間</a>の集合が<a href="../../../set/index.html#昇鎖条件">降鎖条件</a>を満たす．</li>
+					<li><math><mi>𝑉</mi></math> 上の任意の<a href="#線型変換">線型変換</a>が，単射ならば全射．</li>
+					<li><math><mi>𝑉</mi></math> 上の任意の<a href="#線型変換">線型変換</a>が，全射ならば単射．</li>
+					<li><math><mi>𝑉</mi></math> 上の任意の<a href="#線型変換">線型変換</a> <math><mi>𝑓</mi></math> に対し，多項式 <math><mrow><mi>𝑝</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow></mrow><mo>∈</mo><mrow><mi>𝕂</mi><mo>&af;</mo><mrow><mo>[</mo><mi>𝑥</mi><mo>]</mo></mrow></mrow></math> が存在し，<math><mrow><mi>𝑝</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑓</mi><mo>)</mo></mrow></mrow><mo>=</mo><mn>0</mn></math> を満たす．</li>
+					<li><math><msup><mi>𝑉</mi><mo>∗</mo></msup><mo>⊗</mo><mi>𝑉</mi></math> と<a href="#線型変換">線型変換の集合</a> <math><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></math> は<a href="#線型同型">線型同型</a>．</li>
+					<li><math><mi>𝑉</mi></math> は二重双対 <math><msup><mi>𝑉</mi><mrow><mo>∗∗</mo></mrow></msup></math> と<a href="#線型同型">同型</a>．</li>
+					<li><math><mi>𝑉</mi></math> は双対可能対象．</li>
+				</ul>
+			</article>
 			<section>
 				<h3>自己準同型</h3>
 				<article id="旗" class="dfn">
@@ -2603,6 +3102,205 @@
 					</ul>
 				</article>
 			</section>
+			<section>
+				<h3>テンソル積</h3>
+				<article id="有限次元の非退化形式" class="thm">
+					<h4>非退化形式</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#有限次元">有限次元線型空間</a> <math><mi>𝑉</mi></math></li>
+						<li><a href="#テンソル積">テンソル積</a> <math><mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<math><mi>𝑉</mi></math> 上の<a href="#双線型形式">双線型形式</a> <math>
+							<mi>𝛽</mi>
+							<mo>:</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑉</mi><mo>⊗</mo><mi>𝑉</mi>
+								</mrow>
+								<mo>→</mo>
+								<mi>𝕂</mi>
+							</mrow>
+						</math> に対し，以下は同値：
+					</p>
+					<ul>
+						<li><math><mi>𝛽</mi></math> は<a href="#非退化形式">非退化形式</a></li>
+						<li><math><mi>𝛽</mi></math> の<a href="#根基">左根基</a>が<a href="#零線型空間">零</a></li>
+						<li>
+							<math>
+								<mrow>
+									<mi>𝑉</mi>
+									<mo>→</mo>
+									<msup>
+										<mi>𝑉</mi><mo>∗</mo>
+									</msup>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑣</mi>
+									<mo>↦</mo>
+									<mrow>
+										<mi>𝛽</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑣</mi><mo>,</mo><mi>-</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> は<a href="#線型同型">線型同型</a>．
+						</li>
+						<li><math><mi>𝛽</mi></math> の<a href="#根基">右根基</a>が<a href="#零線型空間">零</a></li>
+						<li>
+							<math>
+								<mrow>
+									<mi>𝑉</mi>
+									<mo>→</mo>
+									<msup>
+										<mi>𝑉</mi><mo>∗</mo>
+									</msup>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑣</mi>
+									<mo>↦</mo>
+									<mrow>
+										<mi>𝛽</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>-</mi><mo>,</mo><mi>𝑣</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> は<a href="#線型同型">線型同型</a>．
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li><a href="#非退化形式">非退化形式</a>は定義より，<a href="#根基">左根基</a>・<a href="#根基">右根基</a>が<a href="#零線型空間">零</a>．</li>
+						<li>
+							<a href="#根基">左根基</a>が<a href="#零線型空間">零</a>ならば，<math>
+								<mrow>
+									<mi>𝑉</mi>
+									<mo>→</mo>
+									<msup>
+										<mi>𝑉</mi><mo>∗</mo>
+									</msup>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑣</mi>
+									<mo>↦</mo>
+									<mrow>
+										<mi>𝛽</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑣</mi><mo>,</mo><mi>-</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> は単射だが，<math><mi>𝑉</mi></math> は<a href="#有限次元">有限次元</a>なので<math><msup><mi>𝑉</mi><mo>∗</mo></msup></math> と次元が等しい．ゆえに<a href="#線型同型">線型同型</a>．逆にこのとき，明らかに<a href="#根基">左根基</a>が<a href="#零線型空間">零</a>．
+						</li>
+						<li>
+							<math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑉</mi>
+										<mo>→</mo>
+										<msup>
+											<mi>𝑉</mi><mo>∗</mo>
+										</msup>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑣</mi>
+										<mo>↦</mo>
+										<mrow>
+											<mi>𝛽</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑣</mi><mo>,</mo><mi>-</mi>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> が<a href="#線型同型">線型同型</a>ならば，
+							<math display="block">
+								<msub>
+									<mi>rad</mi>
+									<mrow>
+										<mi mathvariant="normal">R</mi><mo>,</mo><mi>𝛽</mi>
+									</mrow>
+								</msub>
+								<mo>=</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>⋂</mo>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>∈</mo>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</munder>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>ker</mi><mo>&af;</mo><mi>𝑔</mi>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>⋂</mo>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>∈</mo>
+											<msup>
+												<mi>𝑉</mi><mo>∗</mo>
+											</msup>
+										</mrow>
+									</munder>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>ker</mi><mo>&af;</mo><mi>𝑔</mi>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
+								</mrow>
+							</math>
+							より，<a href="#根基">右根基</a>は<a href="#零線型空間">零</a>．
+						</li>
+					</ul>
+				</article>
+			</section>
 		</section>
 		<section>
 			<h2>初学時のメモ</h2>
@@ -2612,7 +3310,6 @@
 				<li>双対空間</li>
 				<li>基底の取替</li>
 				<li>線型写像・変換の行列表示</li>
-				<li>線型写像のrank</li>
 				<li>正規直交系</li>
 				<li>Schmidtの直交化法</li>
 				<li>不変部分空間</li>
@@ -2636,8 +3333,7 @@
 		<section class="references">
 			<h2>参考文献</h2>
 			<ul>
-				<li>James Edward Humphreys, "<cite>Introduction to Lie Algebras and Representation Theory</cite>", <a href="https://doi.org/10.1007/978-1-4612-6398-2">doi:10.1007/978-1-4612-6398-2</a></li>
-				<li>高間俊至，奥山竜司，<a href="https://github.com/T2sp/rep">過去に書いた表言論のノート</a></li>
+				<li>高間俊至，奥山竜司，<a href="https://github.com/T2sp/rep">過去に書いた表現論のノート</a></li>
 			</ul>
 		</section>
 	</main></body>
