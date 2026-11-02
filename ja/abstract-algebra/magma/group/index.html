@@ -14,349 +14,199 @@
 		</hgroup>
 		<section>
 			<h2>定義</h2>
-			<article id="群" class="ax">
-				<h3>群</h3>
-				<p><dfn class="ax">群</dfn>(group)とは，以下の4つのデータからなる．</p>
-				<ul class="ax">
-					<li><a href="../../../set/index.html#集合">集合</a><math><mi>𝐺</mi></math></li>
-					<li>
-						<dfn>積</dfn>と呼ばれる<math><mi>𝐺</mi></math>の2項演算
-						<math>
-							<mo>⋅</mo>
-							<mo>:</mo>
-							<mrow>
+			<section>
+				<h3>群と準同型</h3>
+				<article id="群" class="ax">
+					<h4>群</h4>
+					<p><dfn class="ax">群</dfn>(group)とは<a href="../../../set/index.html#集合の圏">集合の圏</a>の群対象のこと．つまり，以下の4つのデータからなる．</p>
+					<ul class="ax">
+						<li><a href="../../../set/index.html#集合">集合</a><math><mi>𝐺</mi></math></li>
+						<li>
+							<dfn>積</dfn><span lang="en">()</span>と呼ばれる <math><mi>𝐺</mi></math> の二項演算
+							<math>
+								<mo>⋅</mo>
+								<mo>:</mo>
 								<mrow>
-									<mi>𝐺</mi>
-									<mo>×</mo>
-									<mi>𝐺</mi>
-								</mrow>
-								<mo>→</mo>
-								<mi>𝐺</mi>
-							</mrow>
-						</math>
-					</li>
-					<li>
-						<dfn>単位元</dfn>
-						<math>
-							<mi>𝑒</mi>
-							<mo>∈</mo>
-							<mi>𝐺</mi>
-						</math>
-					</li>
-					<li>
-						<dfn>逆元</dfn>を取る操作（<math><mi>𝐺</mi></math>上の変換
-						<math>
-							<msup>
-								<mi>-</mi>
-								<mrow>
-									<mo>−</mo>
-									<mn>1</mn>
-								</mrow>
-							</msup>
-							<mo>:</mo>
-							<mrow>
-								<mrow>
-									<mi>𝐺</mi>
+									<mrow>
+										<mi>𝐺</mi><mo>Π</mo><mi>𝐺</mi>
+									</mrow>
 									<mo>→</mo>
 									<mi>𝐺</mi>
 								</mrow>
+							</math>
+						</li>
+						<li><dfn>単位元</dfn><span lang="en">(identity element)</span> <math><mi>𝑒</mi><mo>∈</mo><mi>𝐺</mi></math></li>
+						<li>
+							<dfn>逆元</dfn><span lang="en">(inverse element)</span>を取る操作（<math><mi>𝐺</mi></math>上の変換
+							<math>
+								<msup>
+									<mi>-</mi>
+									<mrow>
+										<mo>−</mo><mn>1</mn>
+									</mrow>
+								</msup>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝐺</mi><mo>→</mo><mi>𝐺</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑔</mi>
+										<mo>↦</mo>
+										<msup>
+											<mi>𝑔</mi>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+								</mrow>
+							</math>
+							）
+						</li>
+					</ul>
+					<p>これらは以下の条件を満たす．</p>
+					<ul>
+						<li>
+							積は<a href="../index.html#結合則">結合的</a>．つまり，
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑔</mi><mo>,</mo><mi>ℎ</mi><mo>,</mo><mi>𝑖</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝐺</mi>
+									</mrow>
+								</mrow>
 								<mo>,</mo>
 								<mrow>
-									<mi>𝑔</mi>
-									<mo>↦</mo>
-									<msup>
-										<mi>𝑔</mi>
-										<mrow>
-											<mo>−</mo>
-											<mn>1</mn>
-										</mrow>
-									</msup>
-								</mrow>
-							</mrow>
-						</math>
-						）
-					</li>
-				</ul>
-				<p>これらは以下の条件を満たす．</p>
-				<ul>
-					<li>
-						積は<a href="../index.html#結合則">結合的</a>．つまり，
-						<math display="block">
-							<mrow>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑔</mi>
-										<mo>,</mo>
-										<mi>ℎ</mi>
-										<mo>,</mo>
-										<mi>𝑖</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝐺</mi>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>ℎ</mi>
-											<mo>&it;</mo>
-											<mi>𝑖</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<mi>𝑔</mi>
-											<mo>&it;</mo>
-											<mi>ℎ</mi>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-									<mo>&it;</mo>
-									<mi>𝑖</mi>
-								</mrow>
-							</mrow>
-						</math>
-					</li>
-					<li>
-						<math><mi>𝑒</mi><mo>∈</mo><mi>𝐺</mi></math>は<math><mi>𝐺</mi></math>の<a href="../index.html#単位元">両側単位元</a>．つまり，
-						<math display="block">
-							<mrow>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>∈</mo>
-									<mi>𝐺</mi>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑒</mi>
-									<mo>&it;</mo>
-									<mi>𝑔</mi>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<mi>𝑒</mi>
-								</mrow>
-								<mo>=</mo>
-								<mi>𝑔</mi>
-							</mrow>
-						</math>
-					</li>
-					<li>
-						<math>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mi>𝑔</mi>
-								<mo>∈</mo>
-								<mi>𝐺</mi>
-							</mrow>
-						</math>
-						に対し，
-						<math>
-							<msup>
-								<mi>𝑔</mi>
-								<mrow>
-									<mo>−</mo>
-									<mn>1</mn>
-								</mrow>
-							</msup>
-						</math>
-						は<math><mi>𝑔</mi></math>の<a href="../index.html#逆元">両側逆元</a>．つまり，
-						<math display="block">
-							<mrow>
-								<mo>∃</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>ℎ</mi>
-									<mo>∈</mo>
-									<mi>𝐺</mi>
-								</mrow>
-							</mrow>
-							<mo>,</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<mi>ℎ</mi>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mi>ℎ</mi>
-									<mo>&it;</mo>
-									<mi>𝑔</mi>
-								</mrow>
-								<mo>=</mo>
-								<mi>𝑒</mi>
-							</mrow>
-						</math>
-					</li>
-				</ul>
-			</article>
-			<article id="準同型" class="dfn">
-				<h3>準同型</h3>
-				<p>
-					<a href="#群">群</a>
-					<math>
-						<mi>𝐺</mi>
-						<mo>,</mo>
-						<msup>
-							<mi>𝐺</mi>
-							<mo>′</mo>
-						</msup>
-					</math>
-					を与える．
-				</p>
-				<p>
-					写像
-					<math>
-						<mi>𝑓</mi>
-						<mo>:</mo>
-						<mrow>
-							<mi>𝐺</mi>
-							<mo>→</mo>
-							<msup>
-								<mi>𝐺</mi>
-								<mo>′</mo>
-							</msup>
-						</mrow>
-					</math>
-					が以下を満たすとき，<dfn>（群）準同型</dfn>と呼ぶ：
-					<math display="block">
-						<mrow>
-							<mo>∀</mo>
-							<mo>&af;</mo>
-							<mrow>
-								<mrow>
-									<mi>𝑔</mi>
-									<mo>,</mo>
-									<mi>ℎ</mi>
-								</mrow>
-								<mo>∈</mo>
-								<mi>𝐺</mi>
-							</mrow>
-						</mrow>
-						<mo>,</mo>
-						<mrow>
-							<mrow>
-								<mi>𝑓</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
 									<mrow>
 										<mi>𝑔</mi>
 										<mo>&it;</mo>
-										<mi>ℎ</mi>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>ℎ</mi><mo>&it;</mo><mi>𝑖</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
 									</mrow>
-									<mo>)</mo>
+									<mo>=</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑔</mi><mo>&it;</mo><mi>ℎ</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mi>𝑖</mi>
+									</mrow>
 								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝑒</mi><mo>∈</mo><mi>𝐺</mi></math>は<math><mi>𝐺</mi></math>の<a href="../index.html#単位元">両側単位元</a>．つまり，
+							<math display="block">
 								<mrow>
-									<mi>𝑓</mi>
+									<mo>∀</mo>
 									<mo>&af;</mo>
 									<mrow>
-										<mo>(</mo>
-										<mi>𝑔</mi>
-										<mo>)</mo>
+										<mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi>
 									</mrow>
 								</mrow>
-								<mo>&it;</mo>
+								<mo>,</mo>
 								<mrow>
-									<mi>𝑓</mi>
+									<mrow>
+										<mi>𝑒</mi><mo>&it;</mo><mi>𝑔</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>𝑔</mi><mo>&it;</mo><mi>𝑒</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑔</mi>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi>
+								</mrow>
+							</math>
+							に対し，
+							<math>
+								<msup>
+									<mi>𝑔</mi>
+									<mrow>
+										<mo>−</mo><mn>1</mn>
+									</mrow>
+								</msup>
+							</math>
+							は<math><mi>𝑔</mi></math>の<a href="../index.html#逆元">両側逆元</a>．つまり，
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
 									<mo>&af;</mo>
 									<mrow>
-										<mo>(</mo>
-										<mi>ℎ</mi>
-										<mo>)</mo>
+										<mi>ℎ</mi><mo>∈</mo><mi>𝐺</mi>
 									</mrow>
 								</mrow>
-							</mrow>
-						</mrow>
-					</math>
-				</p>
-			</article>
-			<article id="準同型が暗に示す公理" class="thm">
-				<h3>準同型が暗に示す公理</h3>
-				<ul>
-					<li>
-						<a href="#群">群</a>
-						<math>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑔</mi><mo>&it;</mo><mi>ℎ</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mi>ℎ</mi><mo>&it;</mo><mi>𝑔</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>𝑒</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article id="準同型" class="dfn">
+					<h4>準同型</h4>
+					<p>
+						<a href="#群">群</a> <math>
 							<mi>𝐺</mi>
 							<mo>,</mo>
 							<msup>
-								<mi>𝐺</mi>
-								<mo>′</mo>
+								<mi>𝐺</mi><mo>′</mo>
 							</msup>
-						</math>
-					</li>
-					<li>
-						<a href="#準同型">準同型</a>
-						<math>
+						</math> を与える．
+					</p>
+					<p>
+						写像 <math>
 							<mi>𝑓</mi>
 							<mo>:</mo>
 							<mrow>
 								<mi>𝐺</mi>
 								<mo>→</mo>
 								<msup>
-									<mi>𝐺</mi>
-									<mo>′</mo>
+									<mi>𝐺</mi><mo>′</mo>
 								</msup>
 							</mrow>
-						</math>
-					</li>
-				</ul>
-				<p>を与えると，以下を満たす．</p>
-				<ul>
-					<li>
-						<math display="block">
-							<mrow>
-								<mi>𝑓</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<msub>
-										<mn>1</mn>
-										<mi>𝐺</mi>
-									</msub>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<msub>
-								<mn>1</mn>
-								<msup>
-									<mi>𝐺</mi>
-									<mo>′</mo>
-								</msup>
-							</msub>
-						</math>
-					</li>
-					<li>
+						</math> が以下を満たすとき，<dfn>（群）準同型</dfn>と呼ぶ：
 						<math display="block">
 							<mrow>
 								<mo>∀</mo>
 								<mo>&af;</mo>
 								<mrow>
-									<mi>𝑔</mi>
+									<mrow>
+										<mi>𝑔</mi><mo>,</mo><mi>ℎ</mi>
+									</mrow>
 									<mo>∈</mo>
 									<mi>𝐺</mi>
 								</mrow>
@@ -368,52 +218,304 @@
 									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo>
-										<msup>
-											<mi>𝑔</mi>
-											<mrow>
-												<mo>−</mo>
-												<mn>1</mn>
-											</mrow>
-										</msup>
+										<mrow>
+											<mi>𝑔</mi><mo>&it;</mo><mi>ℎ</mi>
+										</mrow>
 										<mo>)</mo>
 									</mrow>
 								</mrow>
 								<mo>=</mo>
-								<msup>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+					<article id="準同型が暗に示す公理" class="thm">
+						<h5>準同型が暗に示す公理</h5>
+						<ul>
+							<li>
+								<a href="#群">群</a>
+								<math>
+									<mi>𝐺</mi>
+									<mo>,</mo>
+									<msup>
+										<mi>𝐺</mi><mo>′</mo>
+									</msup>
+								</math>
+							</li>
+							<li>
+								<a href="#準同型">準同型</a>
+								<math>
+									<mi>𝑓</mi>
+									<mo>:</mo>
+									<mrow>
+										<mi>𝐺</mi>
+										<mo>→</mo>
+										<msup>
+											<mi>𝐺</mi><mo>′</mo>
+										</msup>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与えると，以下を満たす．</p>
+						<ul>
+							<li>
+								<math>
 									<mrow>
 										<mi>𝑓</mi>
 										<mo>&af;</mo>
 										<mrow>
 											<mo>(</mo>
-											<mi>𝑔</mi>
+											<msub>
+												<mn>1</mn><mi>𝐺</mi>
+											</msub>
 											<mo>)</mo>
 										</mrow>
 									</mrow>
-									<mrow>
-										<mo>−</mo>
+									<mo>=</mo>
+									<msub>
 										<mn>1</mn>
+										<msup>
+											<mi>𝐺</mi><mo>′</mo>
+										</msup>
+									</msub>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi>
+										</mrow>
 									</mrow>
-								</msup>
-							</mrow>
-						</math>
-					</li>
-				</ul>
-			</article>
-			<article class="proof">
-				<h3>証明</h3>
-				<p>
-					<math display="block">
-						<mrow>
-							<mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msup>
+													<mi>𝑔</mi>
+													<mrow>
+														<mo>−</mo><mn>1</mn>
+													</mrow>
+												</msup>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<msup>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi>
+								</mrow>
+							</math> に対し，
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mn>1</mn><mi>𝐺</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>&it;</mo>
+											<msub>
+												<mn>1</mn><mi>𝐺</mi>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<msub>
+										<mn>1</mn>
+										<msup>
+											<mi>𝐺</mi><mo>′</mo>
+										</msup>
+									</msub>
+								</mrow>
+							</math>
+							となり，<math>
 								<mi>𝑓</mi>
 								<mo>&af;</mo>
 								<mrow>
-									<mo>(</mo>
-									<mi>𝑔</mi>
-									<mo>)</mo>
+									<mo>(</mo><mi>𝑔</mi><mo>)</mo>
 								</mrow>
-							</mrow>
-							<mrow>
+							</math> の<a href="#群">逆元</a> <math>
+								<msup>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mrow>
+										<mo>−</mo><mn>1</mn>
+									</mrow>
+								</msup>
+							</math>
+							をかけると，<math>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mn>1</mn><mi>𝐺</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<msub>
+									<mn>1</mn>
+									<msup>
+										<mi>𝐺</mi><mo>′</mo>
+									</msup>
+								</msub>
+							</math> となる．
+						</li>
+						<li>
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msup>
+												<mi>𝑔</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mn>1</mn><mi>𝐺</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mn>1</mn><mi>𝐺</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<msub>
+									<mn>1</mn>
+									<msup>
+										<mi>𝐺</mi><mo>′</mo>
+									</msup>
+								</msub>
+							</math>
+							を満たすので，<a href="#群">逆元</a>の一意性より，<math>
 								<mi>𝑓</mi>
 								<mo>&af;</mo>
 								<mrow>
@@ -421,131 +523,51 @@
 									<msup>
 										<mi>𝑔</mi>
 										<mrow>
-											<mo>−</mo>
-											<mn>1</mn>
+											<mo>−</mo><mn>1</mn>
 										</mrow>
 									</msup>
 									<mo>)</mo>
 								</mrow>
-							</mrow>
-						</mrow>
-						<mo>=</mo>
-						<mrow>
-							<mi>𝑓</mi>
+							</math> は <math>
+								<mi>𝑓</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+								</mrow>
+							</math>
+							の<a href="#群">逆元</a>．
+						</li>
+					</ul>
+				</article>
+				<article id="同型" class="dfn">
+					<h4>同型</h4>
+					<p>全単射な<a href="#準同型">準同型</a>を<dfn>同型</dfn>と呼ぶ．</p>
+				</article>
+				<article id="群の圏" class="dfn">
+					<h4>群の圏</h4>
+					<p><a href="../../../category/index.html#圏">対象</a>を全ての<a href="#群">群</a>，<a href="../../../category/index.html#圏">射</a>を全ての<a href="#準同型">準同型</a>とする<a href="../../../category/index.html#圏">圏</a>を<dfn>群の圏</dfn>と呼び，<math><mi>𝐆𝐫𝐩</mi></math>と表す．</p>
+				</article>
+				<article id="群と単一対象圏" class="thm">
+					<h4>群と対象が単一の圏</h4>
+					<p>
+						<a href="../../../category/index.html#圏">対象</a>が一つだけ（<math><mi>𝐴</mi></math>とする）の小圏（つまり<a href="../../../category/index.html#圏">射</a>が集合となる圏）を与える．すると全ての<a href="../../../category/index.html#圏">射</a>は
+						<math>
+							<mi>hom</mi>
 							<mo>&af;</mo>
 							<mrow>
 								<mo>(</mo>
 								<mrow>
-									<mi>𝑔</mi>
-									<mo>&it;</mo>
-									<msup>
-										<mi>𝑔</mi>
-										<mrow>
-											<mo>−</mo>
-											<mn>1</mn>
-										</mrow>
-									</msup>
+									<mi>𝐴</mi>
+									<mo>,</mo>
+									<mi>𝐴</mi>
 								</mrow>
 								<mo>)</mo>
 							</mrow>
-						</mrow>
-						<mo>=</mo>
-						<msub>
-							<mn>1</mn>
-							<msup>
-								<mi>𝐺</mi>
-								<mo>′</mo>
-							</msup>
-						</msub>
-					</math>
-					を満たすので，<a href="#群">逆元</a>の一意性より，
-					<math>
-						<mi>𝑓</mi>
-						<mo>&af;</mo>
-						<mrow>
-							<mo>(</mo>
-							<msup>
-								<mi>𝑔</mi>
-								<mrow>
-									<mo>−</mo>
-									<mn>1</mn>
-								</mrow>
-							</msup>
-							<mo>)</mo>
-						</mrow>
-					</math>
-					は
-					<math>
-						<mi>𝑓</mi>
-						<mo>&af;</mo>
-						<mrow>
-							<mo>(</mo>
-							<mi>𝑔</mi>
-							<mo>)</mo>
-						</mrow>
-					</math>
-					の<a href="#群">逆元</a>．
-					<math>
-						<mi>𝑔</mi>
-						<mo>=</mo>
-						<msub>
-							<mn>1</mn>
-							<mi>𝐺</mi>
-						</msub>
-					</math>
-					とすると，<a href="#群">単位元</a>の<a href="#群">逆元</a>は<a href="#群">単位元</a>であったから，
-					<math>
-						<mi>𝑓</mi>
-						<mo>&af;</mo>
-						<mrow>
-							<mo>(</mo>
-							<msub>
-								<mn>1</mn>
-								<mi>𝐺</mi>
-							</msub>
-							<mo>)</mo>
-						</mrow>
-					</math>
-					は
-					<math>
-						<msup>
-							<mi>𝐺</mi>
-							<mo>′</mo>
-						</msup>
-					</math>
-					の<a href="#群">単位元</a>．
-				</p>
-			</article>
-			<article id="同型" class="dfn">
-				<h3>同型</h3>
-				<p>全単射な<a href="#準同型">準同型</a>を<dfn>同型</dfn>と呼ぶ．</p>
-			</article>
-			<article id="群の圏" class="dfn">
-				<h3>群の圏</h3>
-				<p><a href="../../../category/index.html#圏">対象</a>を全ての<a href="#群">群</a>，<a href="../../../category/index.html#圏">射</a>を全ての<a href="#準同型">準同型</a>とする<a href="../../../category/index.html#圏">圏</a>を<dfn>群の圏</dfn>と呼び，<math><mi>𝐆𝐫𝐩</mi></math>と表す．</p>
-			</article>
-	
-
-			<article id="群と単一対象圏" class="thm">
-				<h3>群と対象が単一の圏</h3>
-				<p>
-					<a href="../../../category/index.html#圏">対象</a>が一つだけ（<math><mi>𝐴</mi></math>とする）の小圏（つまり<a href="../../../category/index.html#圏">射</a>が集合となる圏）を与える．すると全ての<a href="../../../category/index.html#圏">射</a>は
-					<math>
-						<mi>hom</mi>
-						<mo>&af;</mo>
-						<mrow>
-							<mo>(</mo>
-							<mrow>
-								<mi>𝐴</mi>
-								<mo>,</mo>
-								<mi>𝐴</mi>
-							</mrow>
-							<mo>)</mo>
-						</mrow>
-					</math>
-					の元しかない．
-				</p>
-			</article>
+						</math>
+						の元しかない．
+					</p>
+				</article>
+			</section>
 			<section>
 				<h3>群の演算</h3>
 				<article id="直積" class="dfn">
@@ -1825,7 +1847,823 @@
 			</section>
 			<section>
 				<h3>自由・忘却随伴と群の表示</h3>
-				<p>群の考え方として見通しが良かったり悪かったりするのが，群の表示の方法．</p>
+				<p>群の考え方として見通しが良かったり悪かったりするのが，群の表示の方法．の前に一つ準備</p>
+				<article id="語の長さ" class="dfn">
+					<h4>語の長さ</h4>
+					<p><a href="#群">群</a> <math><mi>𝐺</mi></math> を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝐺</mi></math> の<dfn>長さ函数</dfn><span lang="en">(length function)</span>とは，<a href="../../../set/index.html#写像">写像</a> <math>
+								<mi>𝑙</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝐺</mi>
+									<mo>→</mo>
+									<msub>
+										<mi>ℝ</mi>
+										<mrow>
+											<mo>&gt;</mo><mn>0</mn>
+										</mrow>
+									</msub>
+								</mrow>
+							</math> であって，以下を満たすものを言う：
+							<ul>
+								<li>
+									<math>
+										<mrow>
+											<mi>𝑙</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mn>1</mn><mi>𝐺</mi>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mn>0</mn>
+									</math>
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑙</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msup>
+														<mi>𝑔</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mi>𝑙</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑔</mi>
+													<mo>,</mo>
+													<msup>
+														<mi>𝑔</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>∈</mo>
+												<mi>𝐺</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑙</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑔</mi>
+														<mo>&it;</mo>
+														<msup>
+															<mi>𝑔</mi><mo>′</mo>
+														</msup>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>≤</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑙</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>+</mo>
+												<mrow>
+													<mi>𝑙</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msup>
+															<mi>𝑔</mi><mo>′</mo>
+														</msup>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<math><mi>𝐺</mi></math> の<a href="#生成系">生成系</a> <math><mi>𝑆</mi></math> を与える．
+							<ul>
+								<li>
+									<math><mi>𝑆</mi></math> に関する<dfn>長さ函数</dfn><span lang="en">(length function)</span>とは，<math><mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi></math> に対し，<math>
+										<mi>𝑔</mi>
+										<mo>=</mo>
+										<mrow>
+											<msub>
+												<mi>𝑠</mi><mn>1</mn>
+											</msub>
+											<mo>&it;</mo>
+											<mo>⋯</mo>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑠</mi><mi>𝑛</mi>
+											</msub>
+										</mrow>
+									</math> と書ける
+									<math>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑠</mi><mi>𝑗</mi>
+													</msub>
+													<mo>∈</mo>
+													<mrow>
+														<mi>𝑆</mi>
+														<mo>∪</mo>
+														<msup>
+															<mi>𝑆</mi>
+															<mrow>
+																<mo>−</mo><mn>1</mn>
+															</mrow>
+														</msup>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑗</mi>
+												<mo>∈</mo>
+												<msub>
+													<mi>ℕ</mi>
+													<mrow>
+														<mo>≤</mo><mi>𝑛</mi>
+													</mrow>
+												</msub>
+											</mrow>
+										</msub>
+									</math> が存在するような最小の <math><mi>𝑛</mi><mo>∈</mo><msub><mi>ℕ</mi><mn>0</mn></msub></math> を返す<a href="../../../set/index.html#写像">写像</a> <math>
+										<mi>𝑙</mi>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝐺</mi>
+											<mo>→</mo>
+											<msub>
+												<mi>ℕ</mi><mn>0</mn>
+											</msub>
+										</mrow>
+									</math> のこと：
+								</li>
+								<li>
+									<math><mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi></math> の <math><mi>𝑆</mi></math> に関する<dfn>簡約表示</dfn><span lang="en">()</span>とは，列 <math>
+										<msub>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mi>𝑠</mi><mi>𝑗</mi>
+													</msub>
+													<mo>∈</mo>
+													<mrow>
+														<mi>𝑆</mi>
+														<mo>∪</mo>
+														<msup>
+															<mi>𝑆</mi>
+															<mrow>
+																<mo>−</mo><mn>1</mn>
+															</mrow>
+														</msup>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑗</mi>
+												<mo>∈</mo>
+												<msub>
+													<mi>ℕ</mi>
+													<mrow>
+														<mo>≤</mo>
+														<mrow>
+															<mi>𝑙</mi>
+															<mo>&af;</mo>
+															<mrow>
+																<mo>(</mo><mi>𝑤</mi><mo>)</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+												</msub>
+											</mrow>
+										</msub>
+									</math> であって，<math>
+										<mi>𝑔</mi>
+										<mo>=</mo>
+										<mrow>
+											<msub>
+												<mi>𝑠</mi><mn>1</mn>
+											</msub>
+											<mo>&it;</mo>
+											<mo>⋯</mo>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑠</mi><mi>𝑛</mi>
+											</msub>
+										</mrow>
+									</math> を満たすものを言う．
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<article id="語の長さの性質" class="thm">
+						<h5>語の長さの性質</h5>
+						<ul>
+							<li><a href="#群">群</a> <math><mi>𝐺</mi></math></li>
+							<li><a href="#生成系">生成系</a> <math><mi>𝑆</mi></math></li>
+							<li><math><mi>𝑆</mi></math> に関する<a href="#語の長さ">長さ函数</a> <math><mi>𝑙</mi><mo>:</mo><mrow><mi>𝐺</mi><mo>→</mo><msub><mi>ℕ</mi><mn>0</mn></msub></mrow></math></li>
+						</ul>
+						<p>を与えると，以下が成り立つ．</p>
+						<ul>
+							<li>
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mrow>
+												<mi>𝑙</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mn>1</mn>
+										</mrow>
+										<mo>⇔</mo>
+										<mrow>
+											<mi>𝑔</mi><mo>∈</mo><mi>𝑆</mi>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑔</mi><mo>∈</mo><mi>𝐺</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mo>∀</mo>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mrow>
+												<mo>|</mo>
+												<mrow>
+													<mrow>
+														<mi>𝑙</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>−</mo>
+													<mn>1</mn>
+												</mrow>
+												<mo>|</mo>
+											</mrow>
+											<mo>≤</mo>
+											<mrow>
+												<mi>𝑙</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑔</mi><mo>&it;</mo><mi>𝑠</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>≤</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑙</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>+</mo>
+												<mn>1</mn>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑔</mi>
+												<mo>,</mo>
+												<msup>
+													<mi>𝑔</mi><mo>′</mo>
+												</msup>
+											</mrow>
+											<mo>∈</mo>
+											<mi>𝐺</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mo>|</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑙</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>−</mo>
+												<mrow>
+													<mi>𝑙</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msup>
+															<mi>𝑔</mi><mo>′</mo>
+														</msup>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>|</mo>
+										</mrow>
+										<mo>≤</mo>
+										<mrow>
+											<mi>𝑙</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑔</mi>
+													<mo>&it;</mo>
+													<msup>
+														<mi>𝑔</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>≤</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑙</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑙</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<msup>
+														<mi>𝑔</mi><mo>′</mo>
+													</msup>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>長さ函数となることの証明</h4>
+					<ul>
+						<li>
+							<math>
+								<mrow>
+									<mi>𝑙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mn>1</mn><mi>𝐺</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math> は明らか．
+						</li>
+						<li>
+							<math>
+								<mi>𝑔</mi>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑠</mi><mn>1</mn>
+									</msub>
+									<mo>&it;</mo>
+									<mo>⋯</mo>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑠</mi><mi>𝑛</mi>
+									</msub>
+								</mrow>
+							</math> を満たすならば，
+							<math>
+								<msup>
+									<mi>𝑔</mi>
+									<mrow>
+										<mo>−</mo><mn>1</mn>
+									</mrow>
+								</msup>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<msub>
+											<mi>𝑠</mi><mi>𝑛</mi>
+										</msub>
+										<mrow>
+											<mo>−</mo><mn>1</mn>
+										</mrow>
+									</msup>
+									<mo>&it;</mo>
+									<mo>⋯</mo>
+									<mo>&it;</mo>
+									<msup>
+										<msub>
+											<mi>𝑠</mi><mn>1</mn>
+										</msub>
+										<mrow>
+											<mo>−</mo><mn>1</mn>
+										</mrow>
+									</msup>
+								</mrow>
+							</math> を満たし，これは一対一対応．ゆえに，<a href="#語の長さ">簡約表示</a>も一対一対応だから，<a href="#語の長さ">長さ</a>は等しい．
+						</li>
+						<li>
+							<math>
+								<mi>𝑔</mi>
+								<mo>,</mo>
+								<msup>
+									<mi>𝑔</mi><mo>′</mo>
+								</msup>
+							</math> の<a href="#語の長さ">簡約表示</a> <math>
+								<msub>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑠</mi><mi>𝑗</mi>
+											</msub>
+											<mo>∈</mo>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>∪</mo>
+												<msup>
+													<mi>𝑆</mi>
+													<mrow>
+														<mo>−</mo><mn>1</mn>
+													</mrow>
+												</msup>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑗</mi>
+										<mo>∈</mo>
+										<msub>
+											<mi>ℕ</mi>
+											<mrow>
+												<mo>≤</mo>
+												<mrow>
+													<mi>𝑙</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</msub>
+									</mrow>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msubsup>
+												<mi>𝑠</mi><mi>𝑗</mi><mo>′</mo>
+											</msubsup>
+											<mo>∈</mo>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>∪</mo>
+												<msup>
+													<mi>𝑆</mi>
+													<mrow>
+														<mo>−</mo><mn>1</mn>
+													</mrow>
+												</msup>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑗</mi>
+										<mo>∈</mo>
+										<msub>
+											<mi>ℕ</mi>
+											<mrow>
+												<mo>≤</mo>
+												<mrow>
+													<mi>𝑙</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<msup>
+															<mi>𝑔</mi><mo>′</mo>
+														</msup>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+										</msub>
+									</mrow>
+								</msub>
+							</math> を与えると，<math>
+								<mrow>
+									<mi>𝑔</mi>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝑔</mi><mo>′</mo>
+									</msup>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑠</mi><mn>1</mn>
+									</msub>
+									<mo>&it;</mo>
+									<mo>⋯</mo>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑠</mi>
+										<mrow>
+											<mi>𝑙</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑠</mi><mn>1</mn>
+									</msub>
+									<mo>&it;</mo>
+									<mo>⋯</mo>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑠</mi>
+										<mrow>
+											<mi>𝑙</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msup>
+													<mi>𝑔</mi><mo>′</mo>
+												</msup>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</msub>
+								</mrow>
+							</math> を満たすから，<a href="#語の長さ">長さ</a>の定義より，
+							<math>
+								<mrow>
+									<mi>𝑙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>&it;</mo>
+											<msup>
+												<mi>𝑔</mi><mo>′</mo>
+											</msup>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≤</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑙</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑙</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msup>
+												<mi>𝑔</mi><mo>′</mo>
+											</msup>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> となる．
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>明らか．</li>
+						<li>
+							<a href="#語の長さ">長さの定義</a>より明らかに <math>
+								<mrow>
+									<mi>𝑙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑔</mi><mo>&it;</mo><mi>𝑠</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≤</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑙</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mn>1</mn>
+								</mrow>
+							</math> となる．よって，<math>
+								<mrow>
+									<mi>𝑙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑔</mi>
+											<mo>&it;</mo>
+											<mi>𝑠</mi>
+											<mo>&it;</mo>
+											<msup>
+												<mi>𝑠</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≤</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑙</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑔</mi><mo>&it;</mo><mi>𝑠</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mn>1</mn>
+								</mrow>
+							</math> も満たすから，
+							<math>
+								<mrow>
+									<mo>|</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑙</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>−</mo>
+										<mn>1</mn>
+									</mrow>
+									<mo>|</mo>
+								</mrow>
+								<mo>≤</mo>
+								<mrow>
+									<mi>𝑙</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑔</mi><mo>&it;</mo><mi>𝑠</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≤</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑙</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑔</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mn>1</mn>
+								</mrow>
+							</math>
+						</li>
+						<li><math><msup><mi>𝑔</mi><mo>′</mo></msup></math> の<a href="#語の長さ">簡約表示</a> に関してこれを繰り返せばよい．</li>
+					</ul>
+				</article>
 				<article id="自由群" class="ax">
 					<h4>自由群</h4>
 					<ul>
@@ -2153,33 +2991,9 @@
 						）を逆元とする<a href="#群">群</a>をなす．
 					</p>
 				</article>
-				<article id="簡約表示" class="dfn">
-					<h4>簡約表示</h4>
-					<p>
-						<a href="../../../set/index.html#集合">集合</a><math><mi>𝐴</mi></math>，<math><mi>𝐴</mi></math>上の<a href="#自由群">自由群</a>
-						<math>
-							<msub>
-								<mi>𝐹</mi>
-								<mi>𝐴</mi>
-							</msub>
-						</math>
-						を与える．
-					</p>
-					<p>
-						<math>
-							<mi>𝑤</mi>
-							<mo>∈</mo>
-							<msub>
-								<mi>𝐹</mi>
-								<mi>𝐴</mi>
-							</msub>
-						</math>
-						は，<math><mi>𝐴</mi></math>の<a href="#群">積</a>としての表示を複数持つが，このうち<math><mi>𝐴</mi></math>の<a href="#群">積</a>の個数として最も少ないものを，<math><mi>𝑤</mi></math>の<dfn>簡約表示</dfn>と呼ぶ．
-					</p>
-				</article>
 				<article id="簡約表示の一意性" class="thm">
 					<h4>簡約表示の一意性</h4>
-					<p><a href="#自由群">自由群</a>の<a href="#簡約表示">簡約表示</a>は一意．</p>
+					<p><a href="#自由群">自由群</a>の<a href="#語の長さ">簡約表示</a>は一意．</p>
 				</article>
 				<article id="群の表示" class="dfn">
 					<h4>群の表示</h4>
@@ -2348,254 +3162,6 @@
 					</math>
 					を持つ．
 				</p>
-				<article id="長さ函数の性質" class="thm">
-					<h4>長さ函数の性質</h4>
-					<p><math><mi>𝑊</mi></math>を<a href="#群">群</a>，<math><mi>𝑆</mi></math>をその<a href="#生成系">生成系</a>とすると，長さ函数に関して以下が成り立つ．</p>
-					<ul>
-						<li>
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑤</mi>
-										<mo>∈</mo>
-										<mi>𝑊</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑙</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mi>𝑤</mi>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<mi>𝑙</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<msup>
-												<mi>𝑤</mi>
-												<mrow>
-													<mo>−</mo>
-													<mn>1</mn>
-												</mrow>
-											</msup>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑤</mi>
-										<mo>∈</mo>
-										<mi>𝑊</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mrow>
-											<mi>𝑙</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝑤</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>=</mo>
-										<mn>1</mn>
-									</mrow>
-									<mo>⇔</mo>
-									<mrow>
-										<mi>𝑤</mi>
-										<mo>∈</mo>
-										<mi>𝑆</mi>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math display="block">
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑤</mi>
-											<mo>,</mo>
-											<msup>
-												<mi>𝑤</mi>
-												<mo>′</mo>
-											</msup>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝑊</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>|</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑙</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mi>𝑤</mi>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>−</mo>
-											<mrow>
-												<mi>𝑙</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<msup>
-														<mi>𝑤</mi>
-														<mo>′</mo>
-													</msup>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>|</mo>
-									</mrow>
-									<mo>≤</mo>
-									<mrow>
-										<mi>𝑙</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝑤</mi>
-												<mo>&it;</mo>
-												<msup>
-													<mi>𝑤</mi>
-													<mo>′</mo>
-												</msup>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>≤</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑙</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝑤</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>+</mo>
-										<mrow>
-											<mi>𝑙</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<msup>
-													<mi>𝑤</mi>
-													<mo>′</mo>
-												</msup>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-						<li>
-							<math display="block">
-								<mrow>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mi>𝑤</mi>
-											<mo>∈</mo>
-											<mi>𝑊</mi>
-										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mo>∀</mo>
-										<mo>&af;</mo>
-										<mrow>
-											<mi>𝑠</mi>
-											<mo>∈</mo>
-											<mi>𝑆</mi>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mo>|</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑙</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mi>𝑤</mi>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>−</mo>
-											<mn>1</mn>
-										</mrow>
-										<mo>|</mo>
-									</mrow>
-									<mo>≤</mo>
-									<mrow>
-										<mi>𝑙</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝑤</mi>
-												<mo>&it;</mo>
-												<mi>𝑠</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>≤</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑙</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<mi>𝑤</mi>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>+</mo>
-										<mn>1</mn>
-									</mrow>
-								</mrow>
-							</math>
-						</li>
-					</ul>
-				</article>
 			</section>
 		</section>
 		<section>
