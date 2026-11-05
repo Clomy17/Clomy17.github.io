@@ -1525,7 +1525,7 @@
 							</math> の<a href="../unital/index.html#部分単位的代数">部分単位的代数</a>（と<a href="../unital/index.html#準同型">同型</a>）．
 						</li>
 						<li>
-							<math><mi>𝔤</mi></math> が<a href="#直和">直和分解</a>
+							<math><mi>𝔤</mi></math> が<a href="#双積">双積分解</a>
 							<math>
 								<mi>𝔤</mi>
 								<mo>=</mo>
@@ -1541,7 +1541,7 @@
 										<mi>𝔤</mi><mi>𝜆</mi>
 									</msub>
 								</mrow>
-							</math> を持つならば，その<a href="#包絡代数">包絡代数</a>はそれらのテンソル積（と<a href="../unital/index.html#準同型">同型</a>）：
+							</math> を持つならば，その<a href="#包絡代数">包絡代数</a> はそれらのテンソル積（と<a href="../unital/index.html#準同型">同型</a>）：
 							<math display="block">
 								<mrow>
 									<mi>𝑈</mi>
@@ -6693,9 +6693,108 @@
 							<li><a href="#導来Lie代数の基本性質">導来Lie代数の基本性質</a>と商Lie代数の普遍性より明らか．</li>
 						</ul>
 					</article>
-					<article class="proof">
-						<h5>証明</h5>
-						<p><a href="#準同型">Lie代数準同型の定義</a>より明らか．</p>
+					<article id="transvection" class="dfn">
+						<h5>transvection</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝕂</mi></math> 上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+							<li>
+								<math><mi>𝔤</mi></math> の<a href="#導来Lie代数">導来Lie代数</a> <math>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>]</mo>
+								</math> とそれによる<a href="#商Lie代数">商Lie代数</a> <math>
+									<mi>𝔤</mi>
+									<mo>∕</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝔤</mi></math> の<a href="#中心">中心</a> <math>
+									<mi>𝑍</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与える．</p>
+						<p>
+							<dfn>transvection</dfn><span lang="en">(transvection)</span>とは，任意の<a href="#可換Lie代数準同型">可換Lie代数準同型</a> <math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝔤</mi>
+										<mo>∕</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>→</mo>
+									<mrow>
+										<mi>𝑍</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> が誘導する <math><mi>𝔤</mi></math> 上の<a href="#自己同型">自己同型</a>
+							<math display="block">
+								<msub>
+									<mi>𝜎</mi><mi>𝑓</mi>
+								</msub>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>↦</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>+</mo>
+														<mrow>
+															<mo>[</mo>
+															<mrow>
+																<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+															</mrow>
+															<mo>]</mo>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							のこと．
+						</p>
 					</article>
 					<article id="可換Lie代数の普遍性" class="thm">
 						<h5>可換Lie代数の普遍性</h5>
@@ -14786,7 +14885,7 @@
 					</ul>
 					<p>を与えると，以下が成り立つ：</p>
 					<ul>
-						<li><a href="#可換Lie代数のウェイト">ウェイト空間</a>の和は直和．</li>
+						<li><a href="#可換Lie代数のウェイト">ウェイト空間</a>の和は<a href="#加群の直和">直和</a>．</li>
 						<li>
 							<ul>
 								<li><a href="#加群"><math><mi>𝔤</mi></math>-加群</a> <math><mi>𝑊</mi></math></li>
@@ -21294,7 +21393,7 @@
 									<mo>=</mo>
 									<mn>0</mn>
 								</math>
-								は（<math><mn>0</mn></math>個の<a href="#単純加群">単純加群</a>の直和なので）<a href="#単純加群">半単純</a>．
+								は（<math><mn>0</mn></math>個の<a href="#単純加群">単純加群</a>の<a href="#加群の直和">直和</a>なので）<a href="#単純加群">半単純</a>．
 							</p>
 							<p>
 								次に，
@@ -26707,7 +26806,7 @@
 			<h2>Kac-Moody代数</h2>
 			<p><a href="#基本関係式">生成系と基本関係式</a>を使って定義されるため，抽象的に感じるかもしれないが，有限次元半単純Lie代数の一般化になっている．</p>
 			<section>
-				<h3>Cartan行列とKac-Moddy代数の定義</h3>
+				<h3>Cartan行列とKac-Moody代数の定義</h3>
 				<article id="Cartan行列" class="dfn">
 					<h4>Cartan行列</h4>
 					<p><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> を与える．</p>
@@ -26885,150 +26984,131 @@
 						</li>
 					</ul>
 				</article>
-				<article id="基本ルート系" class="dfn">
-					<h4>基本ルート系</h4>
+				<article id="基本ルートデータ" class="dfn">
+					<h4>基本ルートデータ</h4>
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 						<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 					</ul>
 					<p>を与える．</p>
+					<p>
+						<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<dfn>基本ルートデータ</dfn><span lang="en">(fundamental root data)</span> <math><mi>𝛷</mi></math> とは，以下のデータからなる：
+					</p>
 					<ul>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<dfn>基本ルート系</dfn><span lang="en">(fundamental root system)</span> <math><mi>𝛷</mi></math>とは，以下のデータからなる：
-							<ul>
-								<li>
-									<a href="#可換">可換Lie代数</a>
-									<math>
-										<msub>
-											<mi>𝔤</mi><mn>0</mn>
-										</msub>
-									</math>
-								</li>
-								<li>
-									<a href="../../module/linear-algebra/index.html#線型独立">線型独立</a>な部分集合
-									<math>
-										<msub>
-											<mrow>
-												<mo>{</mo>
-												<msub>
-													<mi>ℎ</mi><mi>𝑖</mi>
-												</msub>
-												<mo>}</mo>
-											</mrow>
-											<mrow>
-												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-											</mrow>
-										</msub>
-										<mo>⊆</mo>
-										<msub>
-											<mi>𝔤</mi><mn>0</mn>
-										</msub>
-									</math>
-								</li>
-								<li>
-									<math><msub><mi>𝔤</mi><mn>0</mn></msub></math> の双対空間
-									<math>
-										<msup>
-											<msub>
-												<mi>𝔤</mi><mn>0</mn>
-											</msub>
-											<mo>∗</mo>
-										</msup>
-									</math>
-									の<a href="../../module/linear-algebra/index.html#線型独立">線型独立</a>な部分集合
-									<math>
-										<msub>
-											<mrow>
-												<mo>{</mo>
-												<msub>
-													<mi>𝛼</mi><mi>𝑖</mi>
-												</msub>
-												<mo>}</mo>
-											</mrow>
-											<mrow>
-												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-											</mrow>
-										</msub>
-										<mo>⊆</mo>
-										<msup>
-											<mi>𝔥</mi><mo>∗</mo>
-										</msup>
-									</math>
-								</li>
-							</ul>
-							これらは以下を満たす：
-							<math display="block">
+							<math>
+								<mrow>
+									<mn>2</mn><mo>&it;</mo><mi>𝑛</mi>
+								</mrow>
+								<mo>−</mo>
+								<mrow>
+									<mi>rank</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math> 次元<a href="#可換">可換Lie代数</a>
+							<math>
 								<msub>
-									<mrow>
-										<mo>(</mo>
-										<mrow>
-											<msub>
-												<mi>𝛼</mi><mi>𝑗</mi>
-											</msub>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo>
-												<msub>
-													<mi>ℎ</mi><mi>𝑖</mi>
-												</msub>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>)</mo>
-									</mrow>
-									<mrow>
-										<mrow>
-											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
-										</mrow>
-										<mo>∈</mo>
-										<mi>𝑛</mi>
-									</mrow>
+									<mi>𝔤</mi><mn>0</mn>
 								</msub>
-								<mo>=</mo>
-								<mi>𝐴</mi>
 							</math>
 						</li>
 						<li>
-							基本ルート系が<dfn>既約</dfn><span lang="en">(irreducible)</span>であるとは，以下を満たすことを言う：
-							<ul>
-								<li><a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math> がCartan行列の直和で表されない</li>
-								<li>
-									<math>
-										<mrow>
-											<mi>dim</mi>
-											<mo>&af;</mo>
-											<msub>
-												<mi>𝔤</mi><mn>0</mn>
-											</msub>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mrow>
-												<mn>2</mn><mo>&it;</mo><mi>𝑛</mi>
-											</mrow>
-											<mo>−</mo>
-											<mrow>
-												<mi>rank</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>𝐴</mi><mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-									</math>
-								</li>
-							</ul>
+							<a href="../../module/linear-algebra/index.html#線型独立">線型独立</a>な部分集合
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>ℎ</mi><mi>𝑖</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+									</mrow>
+								</msub>
+								<mo>⊆</mo>
+								<msub>
+									<mi>𝔤</mi><mn>0</mn>
+								</msub>
+							</math>
+						</li>
+						<li>
+							<math><msub><mi>𝔤</mi><mn>0</mn></msub></math> の双対空間
+							<math>
+								<msup>
+									<msub>
+										<mi>𝔤</mi><mn>0</mn>
+									</msub>
+									<mo>∗</mo>
+								</msup>
+							</math>
+							の<a href="../../module/linear-algebra/index.html#線型独立">線型独立</a>な部分集合
+							<math>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝛼</mi><mi>𝑖</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+									</mrow>
+								</msub>
+								<mo>⊆</mo>
+								<msup>
+									<mi>𝔥</mi><mo>∗</mo>
+								</msup>
+							</math>
 						</li>
 					</ul>
-					<article id="基本ルート系の基本性質" class="thm">
-						<h5>基本ルート系の基本性質</h5>
+					<p>
+						これらは以下を満たす：
+						<math display="block">
+							<msub>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝛼</mi><mi>𝑗</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>ℎ</mi><mi>𝑖</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑛</mi>
+								</mrow>
+							</msub>
+							<mo>=</mo>
+							<mi>𝐴</mi>
+						</math>
+					</p>
+					<article id="基本ルートデータの基本性質" class="thm">
+						<h5>基本ルートデータの基本性質</h5>
 						<ul>
 							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 							<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 							<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 							<li>
-								<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+								<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 								<math>
 									<mrow>
 										<mo>(</mo>
@@ -27119,7 +27199,7 @@
 										</mrow>
 									</mrow>
 								</math>
-								を満たす<a href="#基本ルート系">基本ルート系</a>は同型を除いて一意的に存在する．
+								を満たす<a href="#基本ルートデータ">基本ルートデータ</a>は同型を除いて一意的に存在する．
 							</li>
 							<li>
 								<math>
@@ -27188,7 +27268,7 @@
 										</msub>
 									</mrow>
 									<mo>)</mo>
-								</math> が<a href="#基本ルート系">基本ルート系</a>となるものが存在する．
+								</math> が<a href="#基本ルートデータ">基本ルートデータ</a>となるものが存在する．
 							</li>
 						</ul>
 					</article>
@@ -27353,7 +27433,7 @@
 									</msub>
 								</mrow>
 								<mo>)</mo>
-							</math> も<a href="#基本ルート系">基本ルート系</a>であるとする．直和分解
+							</math> も<a href="#基本ルートデータ">基本ルートデータ</a>であるとする．<a href="#直和">直和分解</a>
 							<math>
 								<msub>
 									<mi>𝔤</mi><mn>0</mn>
@@ -27602,7 +27682,7 @@
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 						<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mrow>
 									<mo>(</mo>
@@ -27912,7 +27992,7 @@
 							<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 							<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 							<li>
-								<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+								<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 								<math>
 									<mi>𝛷</mi>
 									<mo>=</mo>
@@ -27978,9 +28058,7 @@
 									<mover>
 										<mi>𝔤</mi><mo>∼</mo>
 									</mover>
-								</math>
-								上の<a href="#自己同型">自己同型</a>
-								<math>
+								</math> 上の<a href="#自己同型">自己同型</a> <math>
 									<mover>
 										<mi>𝜃</mi><mo>∼</mo>
 									</mover>
@@ -27994,8 +28072,7 @@
 											<mi>𝔤</mi><mo>∼</mo>
 										</mover>
 									</mrow>
-								</math>
-								が，以下をLie代数的に拡張したものとして定義される：
+								</math> が，以下をLie代数的に拡張したものとして定義される：
 								<ul>
 									<li>
 										<math>
@@ -28094,16 +28171,16 @@
 										</math>
 									</li>
 								</ul>
-								特に，
-								<math>
-									<msup>
+								特に，<math>
+									<mrow>
 										<mover>
 											<mi>𝜃</mi><mo>∼</mo>
 										</mover>
-										<mrow>
-											<mo>∘</mo><mn>2</mn>
-										</mrow>
-									</msup>
+										<mo>∘</mo>
+										<mover>
+											<mi>𝜃</mi><mo>∼</mo>
+										</mover>
+									</mrow>
 									<mo>=</mo>
 									<msub>
 										<mi>id</mi>
@@ -28140,7 +28217,7 @@
 								で生成される <math><mover><mi>𝔤</mi><mo>∼</mo></mover></math> の<a href="#部分Lie代数">部分Lie代数</a>とすると，以下が成り立つ：
 								<ul>
 									<li>
-										<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a>として以下の<a href="../../module/linear-algebra/index.html#直和">直和</a>分解を持つ：
+										<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a>として以下の<a href="../../module/linear-algebra/index.html#双積">双積</a>分解を持つ：
 										<math>
 											<mover>
 												<mi>𝔤</mi><mo>∼</mo>
@@ -28243,6 +28320,21 @@
 												<mrow>
 													<msub>
 														<mi>𝛼</mi><mi>𝑖</mi>
+													</msub>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<msub>
+														<mi>ℎ</mi><mi>𝑖</mi>
 													</msub>
 												</mrow>
 												<mo>}</mo>
@@ -28526,6 +28618,58 @@
 												</msub>
 											</mrow>
 										</math>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul>
+									<li>
+										<math><mover><mi>𝔤</mi><mo>∼</mo></mover></math> の<a href="#中心">中心</a>は <math>
+											<mrow>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mover>
+														<mi>𝔤</mi><mo>∼</mo>
+													</mover>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>⋂</mo>
+													<mrow>
+														<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+													</mrow>
+												</munder>
+												<mo>&af;</mo>
+												<mrow>
+													<mi>ker</mi>
+													<mo>&af;</mo>
+													<msub>
+														<mi>𝛼</mi><mi>𝑖</mi>
+													</msub>
+												</mrow>
+											</mrow>
+										</math> ．
+									</li>
+									<li>
+										<math><mover><mi>𝔤</mi><mo>∼</mo></mover></math> の<a href="#中心">中心</a>の次元は <math>
+											<mi>𝑛</mi>
+											<mo>−</mo>
+											<mrow>
+												<mi>rank</mi><mo>&af;</mo><mi>𝐴</mi>
+											</mrow>
+										</math> ．
+									</li>
+									<li>
+										以下は同値：
+										<ul>
+											<li><math><mover><mi>𝔤</mi><mo>∼</mo></mover></math> が<a href="#無中心">無中心</a></li>
+											<li><math><mi>𝐴</mi></math> が正則</li>
+										</ul>
 									</li>
 								</ul>
 							</li>
@@ -28955,15 +29099,22 @@
 						<li>
 							<span class="future-work">atode</span>
 						</li>
+						<li>
+							<ul>
+								<li><a href="#ルートの性質">ルート空間分解の性質</a>より直ちに成り立つ．</li>
+								<li><a href="#基本ルートデータ">基本ルートデータの定義</a>より明らか</li>
+								<li>正則性の定義の一つより明らか．</li>
+							</ul>
+						</li>
 					</ul>
 				</article>
-				<article id="Chevalley関係式のイデアル𝔯" class="thm">
-					<h4>Chevalley関係式によるLie代数のイデアル <math><mi>𝔯</mi></math></h4>
+				<article id="Chevalley関係式上の分裂トーラスを割らない最大のイデアル" class="thm">
+					<h4>Chevalley関係式によるLie代数の分裂トーラスを割らない最大のイデアル <math><mi>𝔯</mi></math></h4>
 					<ul>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 						<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -29627,7 +29778,7 @@
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 						<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mrow>
 									<mo>(</mo>
@@ -29836,7 +29987,7 @@
 							<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 							<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 							<li>
-								<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+								<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 								<math>
 									<mi>𝛷</mi>
 									<mo>=</mo>
@@ -29878,7 +30029,7 @@
 								</math>
 							</li>
 							<li><math><mi>𝛷</mi></math> に関する<a href="#Chevalley関係式">Chevalley関係式</a>を<a href="#基本関係式">基本関係式</a>とする<a href="#Lie代数">Lie代数</a> <math><mover><mi>𝔤</mi><mo>∼</mo></mover></math></li>
-							<li><a href="#Chevalley関係式のイデアル𝔯"><math><mrow><mi>𝔯</mi><mo>∩</mo><msub><mover><mi>𝔤</mi><mo>∼</mo></mover></msub></mrow><mo>=</mo><mn>0</mn></math> を満たす最大のイデアル <math><mi>𝔯</mi></math></a></li>
+							<li><a href="#Chevalley関係式上の分裂トーラスを割らない最大のイデアル"><math><mrow><mi>𝔯</mi><mo>∩</mo><msub><mover><mi>𝔤</mi><mo>∼</mo></mover><mn>0</mn></msub></mrow><mo>=</mo><mn>0</mn></math> を満たす最大のイデアル <math><mi>𝔯</mi></math></a></li>
 							<li>
 								<a href="#Serre関係式">Serre関係式</a>の<a href="#正規閉包">正規閉包</a>（を標準射影で
 								<math>
@@ -29897,6 +30048,11 @@
 						<p>を与えると，<math><msub><mi>𝔯</mi><mn>0</mn></msub><mo>⊆</mo><mi>𝔯</mi></math> ．</p>
 					</article>
 				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+					</p>
+				</article>
 				<article id="Kac-Moody代数" class="dfn">
 					<h4>Kac-Moody代数</h4>
 					<ul>
@@ -29904,7 +30060,7 @@
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 						<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -29946,7 +30102,7 @@
 							</math>
 						</li>
 						<li><math><mi>𝛷</mi></math> に関する<a href="#Chevalley関係式">Chevalley関係式</a>を<a href="#基本関係式">基本関係式</a>とする<a href="#Lie代数">Lie代数</a> <math><mover><mi>𝔤</mi><mo>∼</mo></mover></math></li>
-						<li><a href="#Chevalley関係式のイデアル𝔯"><math><mrow><mi>𝔯</mi><mo>∩</mo><msub><mover><mi>𝔤</mi><mo>∼</mo></mover></msub></mrow><mo>=</mo><mn>0</mn></math> を満たす最大のイデアル <math><mi>𝔯</mi></math></a></li>
+						<li><a href="#Chevalley関係式上の分裂トーラスを割らない最大のイデアル"><math><mrow><mi>𝔯</mi><mo>∩</mo><msub><mover><mi>𝔤</mi><mo>∼</mo></mover><mn>0</mn></msub></mrow><mo>=</mo><mn>0</mn></math> を満たす最大のイデアル <math><mi>𝔯</mi></math></a></li>
 						<li>
 							<a href="#Serre関係式">Serre関係式</a>の<a href="#正規閉包">正規閉包</a>（を標準射影で
 							<math>
@@ -30008,7 +30164,7 @@
 							<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 							<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 							<li>
-								<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+								<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 								<math>
 									<mi>𝛷</mi>
 									<mo>=</mo>
@@ -30155,12 +30311,9 @@
 								</ul>
 								特に，
 								<math>
-									<msup>
-										<mi>𝜃</mi>
-										<mrow>
-											<mo>∘</mo><mn>2</mn>
-										</mrow>
-									</msup>
+									<mrow>
+										<mi>𝜃</mi><mo>∘</mo><mi>𝜃</mi>
+									</mrow>
 									<mo>=</mo>
 									<msub>
 										<mi>id</mi><mi>𝔤</mi>
@@ -30198,7 +30351,7 @@
 												</mrow>
 											</msub>
 										</math>
-										で生成される <math><mover><mi>𝔤</mi><mo>∼</mo></mover></math> の<a href="#部分Lie代数">部分Lie代数</a>とすると，<math><mi>𝔤</mi></math> は<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a>として<a href="../../module/linear-algebra/index.html#直和">直和</a>分解を持つ：
+										で生成される <math><math><mi>𝔤</mi></math></math> の<a href="#部分Lie代数">部分Lie代数</a>とすると，<math><mi>𝔤</mi></math> は<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a>として<a href="../../module/linear-algebra/index.html#直和">直和</a>分解を持つ：
 										<math>
 											<mi>𝔤</mi>
 											<mo>=</mo>
@@ -30574,8 +30727,538 @@
 									</mrow>
 								</math>
 							</li>
+							<li>
+								<ul>
+									<li>
+										<math><mi>𝔤</mi><mo>,</mo><mi>𝔞</mi></math> の<a href="#中心">中心</a> は <math>
+											<mrow>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔞</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<munder intent=":largeop">
+													<mo>⋂</mo>
+													<mrow>
+														<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+													</mrow>
+												</munder>
+												<mo>&af;</mo>
+												<mrow>
+													<mi>ker</mi>
+													<mo>&af;</mo>
+													<msub>
+														<mi>𝛼</mi><mi>𝑖</mi>
+													</msub>
+												</mrow>
+											</mrow>
+										</math> ．
+									</li>
+									<li>
+										<math><mi>𝔤</mi><mo>,</mo><mi>𝔞</mi></math> の<a href="#中心">中心</a>の<a href="../../module/linear-algebra/index.html#基底">次元</a>は <math>
+											<mi>𝑛</mi>
+											<mo>−</mo>
+											<mrow>
+												<mi>rank</mi><mo>&af;</mo><mi>𝐴</mi>
+											</mrow>
+										</math> ．
+									</li>
+									<li>
+										以下は同値：
+										<ul>
+											<li><math><mi>𝔤</mi></math> が<a href="#無中心">無中心</a></li>
+											<li><math><mi>𝐴</mi></math> が正則</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li class="future-work"></li>
+						<li>
+							<ul>
+								<li><math><msub><mover><mi>𝔤</mi></mover><mn>0</mn></msub><mo>≃</mo><msub><mi>𝔤</mi><mn>0</mn></msub></math> より明らか．</li>
+								<li>
+									<math>
+										<mi>𝔤</mi>
+										<mo>=</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mover>
+															<mi>𝔤</mi><mo>∼</mo>
+														</mover>
+														<mi>−</mi>
+													</msub>
+													<mo>⊕</mo>
+													<msub>
+														<mover>
+															<mi>𝔤</mi><mo>∼</mo>
+														</mover>
+														<mn>0</mn>
+													</msub>
+													<mo>⊕</mo>
+													<msub>
+														<mover>
+															<mi>𝔤</mi><mo>∼</mo>
+														</mover>
+														<mi>+</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>∕</mo>
+											<mi>𝜏</mi>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mover>
+															<mi>𝔤</mi><mo>∼</mo>
+														</mover>
+														<mi>−</mi>
+													</msub>
+													<mo>∕</mo>
+													<msub>
+														<mi>𝜏</mi><mi>−</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>⊕</mo>
+											<msub>
+												<mi>𝔤</mi><mn>0</mn>
+											</msub>
+											<mo>⊕</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<msub>
+														<mover>
+															<mi>𝔤</mi><mo>∼</mo>
+														</mover>
+														<mi>+</mi>
+													</msub>
+													<mo>∕</mo>
+													<msub>
+														<mi>𝜏</mi><mi>+</mi>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<msub>
+												<mi>𝔤</mi><mi>−</mi>
+											</msub>
+											<mo>⊕</mo>
+											<msub>
+												<mi>𝔤</mi><mn>0</mn>
+											</msub>
+											<mo>⊕</mo>
+											<msub>
+												<mi>𝔤</mi><mi>+</mi>
+											</msub>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+						<li class="future-work"></li>
+						<li class="future-work"></li>
+						<li class="future-work"></li>
+						<li>
+							<ul>
+								<li>
+									<a href="#ルートの性質">ルート空間分解の性質</a>より直ちに <math>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>⋂</mo>
+												<mrow>
+													<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>ker</mi>
+												<mo>&af;</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+										</mrow>
+									</math> が成り立つ．<a href="#基本ルートデータ">基本ルートデータの定義</a>より <math>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔞</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</math> も明らか．
+								</li>
+								<li><a href="#基本ルートデータ">基本ルートデータの定義</a>より明らか</li>
+								<li>正則性の定義の一つより明らか．</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article id="単純Kac-Moody代数" class="thm">
+					<h4>単純Kac-Moody代数</h4>
+					<ul>
+						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
+						<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
+						<li>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
+							<math>
+								<mi>𝛷</mi>
+								<mo>=</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝔤</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>ℎ</mi><mi>𝑖</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math>
+						</li>
+						<li><math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><msub><mi>𝔤</mi><mi>min</mi></msub></math></li>
+					</ul>
+					<p>を与えると，以下が成り立つ：</p>
+					<ul>
+						<li>
+							以下は同値：
+							<ul>
+								<li><math><mi>𝔤</mi></math> が（<a href="#中心">無中心</a>）<a href="#単純Lie代数">単純Lie代数</a>．</li>
+								<li><math><mi>𝐴</mi></math> が既約かつ正則．</li>
+							</ul>
+						</li>
+						<li>
+							以下は同値：
+							<ul>
+								<li><math><mi>𝔤</mi></math> が（<a href="#中心">無中心</a>）<a href="#単純Lie代数">半単純Lie代数</a>．</li>
+								<li><math><mi>𝐴</mi></math> が正則．</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>
+							<math><mi>𝔤</mi></math> は非<a href="#可換">可換</a>だから，<a href="#単純Lie代数">単純Lie代数</a>ならば，<a href="#中心">中心</a>は<a href="#零Lie代数">零</a>．<a href="#Kac-Moody代数の基本性質">これは <math><mi>𝐴</mi></math> が正則であることと同値であった</a>．
+						</li>
+						<li>
+							<math><mi>𝐴</mi></math> が正則のとき，<math><msub><mi>𝔤</mi><mi>min</mi></msub></math> の非<a href="#零Lie代数">零</a>な<a href="#イデアル">イデアル</a> <math><mi>𝔦</mi></math> に対し，<a href="#Kac-Moody代数">Kac-Moody代数の定義</a>より <math>
+								<mrow>
+									<mi>𝔦</mi><mo>∩</mo><mi>𝔥</mi>
+								</mrow>
+								<mo>≠</mo>
+								<mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
+								</mrow>
+							</math> となる．よって <math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>ℎ</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mrow>
+											<mi>𝔦</mi>
+											<mo>∩</mo>
+											<msub>
+												<mi>𝔤</mi><mn>0</mn>
+											</msub>
+										</mrow>
+										<mo>∖</mo>
+										<mrow>
+											<mo>{</mo><mn>0</mn <mo>}</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> に対し，<math>
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝛼</mi><mi>𝑖</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>≠</mo>
+									<mn>0</mn>
+								</mrow>
+							</math> を満たす．この <math><mi>𝑖</mi></math> に対し，
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>ℎ</mi>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>±</mi>
+										</mrow>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>ℎ</mi>
+											<mo>,</mo>
+											<mrow>
+												<mo>±</mo>
+												<mrow>
+													<msup>
+														<mrow>
+															<mo>(</mo>
+															<mrow>
+																<msub>
+																	<mi>𝛼</mi><mi>𝑖</mi>
+																</msub>
+																<mo>&af;</mo>
+																<mrow>
+																	<mo>(</mo><mi>ℎ</mi><mo>)</mo>
+																</mrow>
+															</mrow>
+															<mo>)</mo>
+														</mrow>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<msub>
+														<mi>ℎ</mi>
+														<mrow>
+															<mi>𝑖</mi><mo>,</mo><mi>±</mi>
+														</mrow>
+													</msub>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝔦</mi>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<msub>
+										<mi>ℎ</mi><mi>𝑖</mi>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msub>
+												<mi>ℎ</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>+</mi>
+												</mrow>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>ℎ</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>−</mi>
+												</mrow>
+											</msub>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝔦</mi>
+								</mrow>
+							</math>
+							となる．さらに，<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝑛</mi>
+								</mrow>
+							</math> に対し，
+							<math>
+								<mrow>
+									<msub>
+										<mi>ℎ</mi>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>±</mi>
+										</mrow>
+									</msub>
+									<mo>,</mo>
+									<msub>
+										<mi>ℎ</mi><mi>𝑖</mi>
+									</msub>
+								</mrow>
+								<mo>∈</mo>
+								<mi>𝔦</mi>
+							</math> かつ
+							<math>
+								<msub>
+									<mi>𝑎</mi>
+									<mrow>
+										<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+									</mrow>
+								</msub>
+								<mo>≠</mo>
+								<mn>0</mn>
+							</math> ならば，
+							<math display="block">
+								<mrow>
+									<msub>
+										<mi>ℎ</mi>
+										<mrow>
+											<mi>𝑗</mi><mo>,</mo><mi>±</mi>
+										</mrow>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msub>
+												<mi>ℎ</mi><mi>𝑖</mi>
+											</msub>
+											<mo>,</mo>
+											<mrow>
+												<mo>±</mo>
+												<mrow>
+													<msup>
+														<msub>
+															<mi>𝑎</mi>
+															<mrow>
+																<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+															</mrow>
+														</msub>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msup>
+													<mo>&it;</mo>
+													<msub>
+														<mi>ℎ</mi>
+														<mrow>
+															<mi>𝑗</mi><mo>,</mo><mi>±</mi>
+														</mrow>
+													</msub>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝔦</mi>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<msub>
+										<mi>ℎ</mi><mi>𝑗</mi>
+									</msub>
+									<mo>=</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<msub>
+												<mi>ℎ</mi>
+												<mrow>
+													<mi>𝑗</mi><mo>,</mo><mi>+</mi>
+												</mrow>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>ℎ</mi>
+												<mrow>
+													<mi>𝑗</mi><mo>,</mo><mi>−</mi>
+												</mrow>
+											</msub>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+									<mo>∈</mo>
+									<mi>𝔦</mi>
+								</mrow>
+							</math>
+							となる．よって，<math><mi>𝐴</mi></math> が既約ならば，<math><mi>𝔦</mi></math> は <math><mi>𝔤</mi></math> の生成系を全て含むから，<math><mi>𝔦</mi><mo>=</mo><mi>𝔤</mi></math> となり，<math><mi>𝔤</mi></math> は<a href="#無中心単純Lie代数">無中心単純Lie代数</a>となる．一般の <math><mi>𝐴</mi></math> に対しては，<math><mi>𝔦</mi></math> は無中心単純Lie代数の直和となるから，<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>となる．
+						</li>
+					</ul>
 				</article>
 			</section>
 			<section>
@@ -30596,7 +31279,7 @@
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math></li>
 						<li><math><mi>𝑛</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -31177,7 +31860,7 @@
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -31843,7 +32526,7 @@
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -31893,7 +32576,7 @@
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -32776,7 +33459,922 @@
 						</li>
 					</ul>
 				</article>
+				<article id="有限次元Kac-Moody代数" class="thm">
+					<h4>有限型対称化可能Cartan行列・有限次元Kac-Moody代数</h4>
+					<ul>
+						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
+						<li>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
+							<math>
+								<mi>𝛷</mi>
+								<mo>=</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝔤</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>ℎ</mi><mi>𝑖</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math>
+						</li>
+						<li><math><mi>𝛷</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
+						<li><math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a> <math><mo>(</mo><mo>,</mo><mo>)</mo></math></li>
+					</ul>
+					<p>を与えると，以下は同値：</p>
+					<ul>
+						<li><math><mi>𝔤</mi></math> が有限次元．</li>
+						<li><a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math> が<a href="#対称化可能Cartan行列">有限型</a>．</li>
+						<li>
+							<math>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑢</mi>
+										<mo>∈</mo>
+										<msup>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>ℝ</mi>
+													<mrow>
+														<mo>&gt;</mo><mn>0</mn>
+													</mrow>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+											<mi>𝑛</mi>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝐴</mi><mo>&it;</mo><mi>𝑢</mi>
+									</mrow>
+									<mo>&gt;</mo>
+									<mn>0</mn>
+								</mrow>
+							</math>
+						</li>
+						<li><math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たない．</li>
+						<li><math><mi>𝔤</mi></math> の<a href="#Kac-Moody代数の基本性質">ルートの集合</a> <math><mi>𝛥</mi></math> は有限集合．</li>
+						<li><a href="#Weyl群">Weyl群</a> <math><mi>𝑊</mi></math> は有限集合．</li>
+					</ul>
+					<p>さらに，これらの条件を満たすとき，以下が成り立つ：</p>
+					<ul>
+						<li><math><mi>𝐴</mi></math> は正則．</li>
+						<li>
+							<math>
+								<mi>𝔥</mi>
+								<mo>≔</mo>
+								<mrow>
+									<munder intent=":largeop">
+										<mo>⨁</mo>
+										<mrow>
+											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+										</mrow>
+									</munder>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝕂</mi><mo>&it;</mo><msub><mi>ℎ</mi><mi>𝑖</mi></msub>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<msub>
+									<mi>𝔤</mi><mn>0</mn>
+								</msub>
+							</math>
+						</li>
+						<li><math><mi>𝔤</mi></math> が有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>．</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>まずは，有限次元性以外の同値性を示す：</p>
+					<ul>
+						<li><math><mi>𝛥</mi></math> が有限⇒<math><mi>𝑊</mi></math> が有限は明らか．</li>
+						<li>
+							<math><mi>𝑊</mi></math> が有限のとき，<math><mi>𝔼</mi></math> は有限次元なので，内積
+							<math>
+								<msup>
+									<mrow>
+										<mo>(</mo><mo>,</mo><mo>)</mo>
+									</mrow>
+									<mo>′</mo>
+								</msup>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝔼</mi><mo>⊗</mo><mi>𝔼</mi>
+									</mrow>
+									<mo>→</mo>
+									<mi>ℝ</mi>
+								</mrow>
+							</math>
+							が定義できる．それを任意に一つ取り，新たな双線型形式を
+							<math display="block">
+								<mrow>
+									<mo>(</mo><mo>,</mo><mo>)</mo>
+								</mrow>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mi>𝔼</mi><mo>⊗</mo><mi>𝔼</mi>
+										</mrow>
+										<mo>→</mo>
+										<mi>ℝ</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝜆</mi><mo>,</mo><mi>𝜇</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>≔</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑤</mi><mo>∈</mo><mi>𝑊</mi>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝜆</mi><mo>,</mo><mi>𝜇</mi>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>′</mo>
+											</msup>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							とすると，これは <math><mi>𝑊</mi></math>-不変な正定値対称双線型形式．ところで，<math><mi>𝔼</mi></math> 上の <math><mi>𝑊</mi></math>-不変な対称双線型形式は既約成分の同型を除いて一意なので，<math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a>は正定値．
+						</li>
+						<li><math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a>は正定値であることと，<math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たないことは明らかに同値．</li>
+						<li>
+							<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たないとき，標準形式の <math><mi>𝑊</mi></math>-不変性と，<a href="#Kac-Moody代数のWeyl群">Kac-Moody代数における実ルートの条件</a>より，
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝛼</mi><mo>∈</mo><mi>𝛥</mi>
+								</mrow>
+							</math> に対し，
+							<math display="block">
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>|</mo>
+										<mrow>
+											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+										</mrow>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+							</math>
+							となり，つまり
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
+								</mrow>
+								<mo>)</mo>
+							</math>
+							の取り得る値は高々有限個となる．これらの最大値を <math><mi>𝑁</mi><mo>∈</mo><mi>ℚ</mi></math> とすると，
+							<math display="block">
+								<mo>{</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>≤</mo>
+										<mi>𝑁</mi>
+									</mrow>
+									<mo>|</mo>
+									<mrow>
+										<mi>𝛼</mi>
+										<mo>∈</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<mrow>
+												<mi>ℤ</mi>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>}</mo>
+							</math>
+							は離散コンパクト集合なので有限．<math><mi>𝛥</mi></math> はこれに含まれるので，有限集合．
+						</li>
+					</ul>
+					<p>
+						残りの条件との同値性を示す．「<math><mi>𝔤</mi></math> が有限次元⇒<math><mi>𝛥</mi></math> が有限」は明らか．逆に下の5条件が成り立つとき，<math>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+							</mrow>
+						</math> に対し，<math>
+							<mrow>
+								<mi>dim</mi>
+								<mo>&af;</mo>
+								<msub>
+									<mi>𝔤</mi>
+									<msub>
+										<mi>𝛼</mi><mi>𝑖</mi>
+									</msub>
+								</msub>
+							</mrow>
+							<mo>=</mo>
+							<mn>1</mn>
+						</math> なので，<math>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mi>𝛼</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>𝛥</mi>
+									<mo>=</mo>
+									<msub>
+										<mi>𝛥</mi><mi>re</mi>
+									</msub>
+								</mrow>
+							</mrow>
+						</math> に対し，<math>
+							<mrow>
+								<mi>dim</mi>
+								<mo>&af;</mo>
+								<msub>
+									<mi>𝔤</mi><mi>𝛼</mi>
+								</msub>
+							</mrow>
+							<mo>=</mo>
+							<mn>1</mn>
+						</math> となる．ゆえに，
+						<math display="block">
+							<mrow>
+								<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑛</mi>
+								<mo>+</mo>
+								<mrow>
+									<mo>|</mo><mi>𝛥</mi><mo>|</mo>
+								</mrow>
+							</mrow>
+							<mo>&lt;</mo>
+							<mi>∞</mi>
+						</math>
+						を満たし，<math><mi>𝔤</mi></math> は有限次元．
+					</p>
+					<p>最後に有限次元Kac-Moody代数の性質を示す：</p>
+					<ul>
+						<li>
+							<math>
+								<mrow>
+									<mi>det</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>det</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<msup>
+												<mi>𝐷</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msup>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>det</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mrow><mi>𝐷</mi><mo>&it;</mo><mi>𝐴</mi></mrow><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>&gt;</mo>
+								<mn>0</mn>
+							</math> なので，<math><mi>𝐴</mi></math> は正則．
+						</li>
+						<li><a href="#基本ルートデータ">基本ルートデータの定義</a>より，<math><mi>𝔥</mi><mo>=</mo><msub><mi>𝔤</mi><mn>0</mn></msub></math> は <math><mi>𝐴</mi></math> が正則であることと同値．</li>
+						<li>一般に，<a href="#単純Kac-Moody代数"><math><mi>𝐴</mi></math> が正則であることと，無中心半単純であることは同値</a>．</li>
+					</ul>
+				</article>
 				<p><a href="#対称化可能Cartan行列">対称化可能Cartan行列</a>，ひいてはその上の<a href="#Kac-Moody代数">Kac-Moody代数</a>の分類は，有限型，アフィン型，双曲型の場合で終わっている．その出発点となる有限型の場合について，有限次元Lie代数のテクニックを用いるので，次章は有限次元Lie代数を扱う．</p>
+			</section>
+			<section>
+				<h3>自己同型の分類</h3>
+				<article id="Kac-Moody代数の内部自己同型" class="dfn">
+					<h4>対角自己同型・内部自己同型</h4>
+					<ul>
+						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
+						<li><math><mi>𝐴</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
+						<li>
+							<a href="#内部自己同型">内部微分による自己同型</a> <math>
+								<mi>exp</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>𝕂</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mi>ad</mi>
+											<mo>&af;</mo>
+											<msub>
+												<mi>ℎ</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>±</mi>
+												</mrow>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math> が生成するKac-Moody群 <math><mi>𝐺</mi></math>
+						</li>
+						<li>
+							<a href="#transvection">transvection</a>の集合
+							<math>
+								<msub>
+									<mi>hom</mi><mi>𝕂</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>∕</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<math><mi>𝔤</mi></math> の<dfn>対角自己同型</dfn><span lang="en">(diagnoal automorphism)</span>とは，<math>
+								<msub>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mi>𝜆</mi><mi>𝑖</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+									</mrow>
+								</msub>
+								<mo>∈</mo>
+								<msup>
+									<mrow>
+										<mo>(</mo>
+										<msup>
+											<mi>𝕂</mi><mo>×</mo>
+										</msup>
+										<mo>)</mo>
+									</mrow>
+									<mi>𝑛</mi>
+								</msup>
+							</math> に対し，
+							<math display="block">
+								<mtable intent=":system-of-equations">
+									<mtr>
+										<mtd>
+											<msub>
+												<mi>𝐷</mi><mi>𝜆</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>ℎ</mi>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>±</mi>
+													</mrow>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mtd>
+										<mtd><mo>≔</mo></mtd>
+										<mtd>
+											<msubsup>
+												<mi>𝜆</mi>
+												<mi>𝑖</mi>
+												<mrow>
+													<mo>±</mo><mn>1</mn>
+												</mrow>
+											</msubsup>
+											<mo>&it;</mo>
+											<msub>
+												<mi>ℎ</mi>
+												<mo>,</mo>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>±</mi>
+												</mrow>
+											</msub>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd>
+											<msub>
+												<mrow>
+													<msub>
+														<mi>𝐷</mi><mi>𝜆</mi>
+													</msub>
+													<mo>|</mo>
+												</mrow>
+												<mi>𝔥</mi>
+											</msub>
+										</mtd>
+										<mtd><mo>≔</mo></mtd>
+										<mtd>
+											<msub>
+												<mi>id</mi><mi>𝔥</mi>
+											</msub>
+										</mtd>
+									</mtr>
+								</mtable>
+							</math>
+							をLie代数的に拡張することで定義される<a href="#自己同型">自己同型</a> <math>
+								<msub>
+									<mi>𝐷</mi><mi>𝜆</mi>
+								</msub>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
+								</mrow>
+							</math> のこと．
+						</li>
+						<li>
+							<a href="#Kac-Moody代数の対角自己同型">Kac-Moody代数の対角自己同型</a> の集合 <math>
+								<mrow>
+									<mi>hom</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑄</mi>
+											<mo>,</mo>
+											<msup>
+												<mi>𝕂</mi><mi>×</mi>
+											</msup>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≃</mo>
+								<msup>
+									<mrow>
+										<mo>(</mo>
+										<msup>
+											<mi>𝕂</mi><mo>×</mo>
+										</msup>
+										<mo>)</mo>
+									</mrow>
+									<mi>𝑛</mi>
+								</msup>
+							</math> に対し，<math><mi>𝔤</mi></math> の<a href="#自己同型">自己同型群</a>の<a href="../../magma/group/index.html#部分群">部分群</a>
+							<math display="block">
+								<mrow>
+									<mi>inn</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>hom</mi><mi>𝕂</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mi>𝔤</mi>
+													<mo>∕</mo>
+													<mrow>
+														<mo>[</mo>
+														<mrow>
+															<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+														</mrow>
+														<mo>]</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mi>𝑍</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>×</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>hom</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑄</mi>
+														<mo>,</mo>
+														<msup>
+															<mi>𝕂</mi><mi>×</mi>
+														</msup>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>⋉</mo>
+											<mi>𝐺</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+							の元のことを <math><mi>𝔤</mi></math> の<dfn>内部自己同型</dfn><span lang="en">(inner automorphism)</span>と呼ぶ．<math>
+						</li>
+					</ul>
+				</article>
+				<article id="Dynkin図形の自己同型" class="dfn">
+					<h4>Dynkin図形の自己同型</h4>
+					<ul>
+						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
+						<li>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
+							<math>
+								<mi>𝛷</mi>
+								<mo>=</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<msub>
+											<mi>𝔤</mi><mn>0</mn>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>ℎ</mi><mi>𝑖</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<msub>
+													<mi>𝛼</mi><mi>𝑖</mi>
+												</msub>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math>
+						</li>
+						<li><math><mi>𝛷</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<ul>
+						<li>
+							<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math> の<dfn>Dynkin図形の自己同型</dfn><span lang="en">(diagram automorphism)</span>とは，置換 <math><mi>𝜏</mi><mo>:</mo><mrow><mi>𝑛</mi><mo>→</mo><mi>𝑛</mi></mrow></math> であって，以下を満たすものを言う：
+							<math display="block">
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>𝑛</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mrow>
+												<mi>𝜏</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑖</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝜏</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑗</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</msub>
+									<mo>=</mo>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+										</mrow>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝔤</mi></math> の<dfn>Dynkin図形の自己同型</dfn><span lang="en">(diagram automorphism)</span>とは，<math><mi>𝐴</mi></math> のDynkin図形の自己同型 <math><mi>𝜏</mi><mo>:</mo><mrow><mi>𝑛</mi><mo>→</mo><mi>𝑛</mi></mrow></math> に対し，
+							<math display="block">
+								<mtable intent=":system-of-equations">
+									<mtr>
+										<mtd>
+											<mi>𝜏</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>ℎ</mi>
+													<mrow>
+														<mi>𝑖</mi><mo>,</mo><mi>±</mi>
+													</mrow>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mtd>
+										<mtd><mo>≔</mo></mtd>
+										<mtd>
+											<msub>
+												<mi>ℎ</mi>
+												<mrow>
+													<mrow>
+														<mi>𝜏</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝑖</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mi>±</mi>
+												</mrow>
+											</msub>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd>
+											<mi>𝜏</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>ℎ</mi><mi>𝑖</mi>
+												</msub>
+												<mo>)</mo>
+											</mrow>
+										</mtd>
+										<mtd><mo>≔</mo></mtd>
+										<mtd>
+											<msub>
+												<mi>ℎ</mi>
+												<mrow>
+													<mi>𝜏</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝑖</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</msub>
+										</mtd>
+									</mtr>
+								</mtable>
+							</math>
+							を <math><mi>𝔥</mi></math> へ適切に拡大したうえで，<math><mi>𝔤</mi></math> 全体へLie代数的に拡張した<a href="#自己同型">自己同型</a> <math>
+								<mi>𝜏</mi>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
+								</mrow>
+							</math> のこと（記号の濫用）．
+						</li>
+						<li>Dynkin図形の自己同型のなす集合を <math><mi>aut</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝐴</mi><mo>)</mo></mrow></math> と表す．置換が<a href="../../../set/index.html#全単射">全単射</a>であることから，写像の合成に関して<a href="../../magma/group/index.html#群">群</a>をなす．</li>
+					</ul>
+				</article>
+				<article id="対称化可能Cartan行列上のKac-Moody代数の自己同型の分類" class="thm">
+					<h4>対称化可能Cartan行列上のKac-Moody代数の自己同型の分類</h4>
+					<ul>
+						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
+						<li><math><mi>𝐴</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
+						<li><a href="#Kac-Moody代数の内部自己同型"><math><mi>𝔤</mi></math> の内部自己同型</a>の集合 <math><mi>inn</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math></li>
+						<li><a href="#Dynkin図形の自己同型">Dynkin図形の自己同型のなす群</a> <math><mi>aut</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝐴</mi><mo>)</mo></mrow></math></li>
+						<li><math><mi>𝜔</mi></math></li>
+						<li>
+							<math>
+								<mrow>
+									<mi>out</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>≔</mo>
+								<mrow>
+									<mo>{</mo>
+									<mtable intent=":piecewise">
+										<mtr>
+											<mtd>
+												<mi>aut</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+												</mrow>
+											</mtd>
+											<mtd><mi>𝐴</mi> <mtext> が有限型</mtext></mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mrow>
+													<mi>aut</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>×</mo>
+												<mrow>
+													<mo>{</mo>
+													<mrow>
+														<mi>id</mi><mo>,</mo><mi>𝜔</mi>
+													</mrow>
+													<mo>}</mo>
+												</mrow>
+											</mtd>
+											<mtd><mtext>他</mtext></mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>
+						を与えると，<math><mi>𝔤</mi></math> の<a href="#自己同型">自己同型群</a> <math><mi>aut</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> に関して以下が成り立つ：
+						<math display="block">
+							<mrow>
+								<mi>aut</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>out</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝐴</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⋉</mo>
+								<mrow>
+									<mi>inn</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+				</article>
 			</section>
 			<section>
 				<h3>表現論</h3>
@@ -32786,7 +34384,7 @@
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -32985,7 +34583,7 @@
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -33037,7 +34635,7 @@
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -33112,7 +34710,7 @@
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
 						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -43223,646 +44821,6 @@
 						</li>
 					</ul>
 				</article>
-				<article id="有限次元Kac-Moody代数" class="thm">
-					<h4>有限型対称化可能Cartan行列・有限次元Kac-Moody代数</h4>
-					<ul>
-						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
-						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
-							<math>
-								<mi>𝛷</mi>
-								<mo>=</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<msub>
-											<mi>𝔤</mi><mn>0</mn>
-										</msub>
-										<mo>,</mo>
-										<msub>
-											<mrow>
-												<mo>{</mo>
-												<msub>
-													<mi>ℎ</mi><mi>𝑖</mi>
-												</msub>
-												<mo>}</mo>
-											</mrow>
-											<mrow>
-												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-											</mrow>
-										</msub>
-										<mo>,</mo>
-										<msub>
-											<mrow>
-												<mo>{</mo>
-												<msub>
-													<mi>𝛼</mi><mi>𝑖</mi>
-												</msub>
-												<mo>}</mo>
-											</mrow>
-											<mrow>
-												<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-											</mrow>
-										</msub>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</math>
-						</li>
-						<li><math><mi>𝛷</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
-						<li><math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a> <math><mo>(</mo><mo>,</mo><mo>)</mo></math></li>
-					</ul>
-					<p>を与えると，以下は同値：</p>
-					<ul>
-						<li><math><mi>𝔤</mi></math> が有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>．</li>
-						<li><math><mi>𝔤</mi></math> が有限次元．</li>
-						<li><a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math> が<a href="#対称化可能Cartan行列">有限型</a>．</li>
-						<li>
-							<math>
-								<mrow>
-									<mo>∀</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑢</mi>
-										<mo>∈</mo>
-										<msup>
-											<mrow>
-												<mo>(</mo>
-												<msub>
-													<mi>ℝ</mi>
-													<mrow>
-														<mo>&gt;</mo><mn>0</mn>
-													</mrow>
-												</msub>
-												<mo>)</mo>
-											</mrow>
-											<mi>𝑛</mi>
-										</msup>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<mi>𝐴</mi><mo>&it;</mo><mi>𝑢</mi>
-									</mrow>
-									<mo>&gt;</mo>
-									<mn>0</mn>
-								</mrow>
-							</math>
-						</li>
-						<li><math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たない．</li>
-						<li><math><mi>𝔤</mi></math> の<a href="#Kac-Moody代数の基本性質">ルートの集合</a> <math><mi>𝛥</mi></math> は有限集合．</li>
-						<li><a href="#Weyl群">Weyl群</a> <math><mi>𝑊</mi></math> は有限集合．</li>
-					</ul>
-					<p>さらに，これらの条件を満たすとき，以下が成り立つ：</p>
-					<ul>
-						<li><math><mi>𝐴</mi></math> は正則．</li>
-						<li>
-							<math>
-								<mi>𝔥</mi>
-								<mo>≔</mo>
-								<mrow>
-									<munder intent=":largeop">
-										<mo>⨁</mo>
-										<mrow>
-											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-										</mrow>
-									</munder>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝕂</mi><mo>&it;</mo><msub><mi>ℎ</mi><mi>𝑖</mi></msub>
-									</mrow>
-								</mrow>
-								<mo>=</mo>
-								<msub>
-									<mi>𝔤</mi><mn>0</mn>
-								</msub>
-							</math>
-						</li>
-					</ul>
-				</article>
-				<article class="proof">
-					<h4>証明</h4>
-					<p>まずは，最初の2条件以外の同値性を示す：</p>
-					<ul>
-						<li><math><mi>𝛥</mi></math> が有限⇒<math><mi>𝑊</mi></math> が有限は明らか．</li>
-						<li>
-							<math><mi>𝑊</mi></math> が有限のとき，<math><mi>𝔼</mi></math> は有限次元なので，内積
-							<math>
-								<msup>
-									<mrow>
-										<mo>(</mo><mo>,</mo><mo>)</mo>
-									</mrow>
-									<mo>′</mo>
-								</msup>
-								<mo>:</mo>
-								<mrow>
-									<mrow>
-										<mi>𝔼</mi><mo>⊗</mo><mi>𝔼</mi>
-									</mrow>
-									<mo>→</mo>
-									<mi>ℝ</mi>
-								</mrow>
-							</math>
-							が定義できる．それを任意に一つ取り，新たな双線型形式を
-							<math display="block">
-								<mrow>
-									<mo>(</mo><mo>,</mo><mo>)</mo>
-								</mrow>
-								<mo>:</mo>
-								<mrow>
-									<mrow>
-										<mrow>
-											<mi>𝔼</mi><mo>⊗</mo><mi>𝔼</mi>
-										</mrow>
-										<mo>→</mo>
-										<mi>ℝ</mi>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝜆</mi><mo>,</mo><mi>𝜇</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>≔</mo>
-										<mrow>
-											<munder intent=":largeop">
-												<mo>∑</mo>
-												<mrow>
-													<mi>𝑤</mi><mo>∈</mo><mi>𝑊</mi>
-												</mrow>
-											</munder>
-											<mo>&af;</mo>
-											<msup>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝜆</mi><mo>,</mo><mi>𝜇</mi>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-												<mo>′</mo>
-											</msup>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-							とすると，これは <math><mi>𝑊</mi></math>-不変な正定値対称双線型形式．ところで，<math><mi>𝔼</mi></math> 上の <math><mi>𝑊</mi></math>-不変な対称双線型形式は既約成分の同型を除いて一意なので，<math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a>は正定値．
-						</li>
-						<li><math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a>は正定値であることと，<math><mi>𝔤</mi></math> が <math><mo>(</mo><mo>,</mo><mo>)</mo></math> に関する<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たないことは明らかに同値．</li>
-						<li>
-							<a href="#Kac-Moody代数のWeyl群">虚ルート</a>を持たないとき，標準形式の <math><mi>𝑊</mi></math>-不変性と，<a href="#Kac-Moody代数のWeyl群">Kac-Moody代数における実ルートの条件</a>より，
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝛼</mi><mo>∈</mo><mi>𝛥</mi>
-								</mrow>
-							</math> に対し，
-							<math display="block">
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-								<mo>∈</mo>
-								<mrow>
-									<mo>{</mo>
-									<mrow>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<msub>
-													<mi>𝛼</mi><mi>𝑖</mi>
-												</msub>
-												<mo>,</mo>
-												<msub>
-													<mi>𝛼</mi><mi>𝑖</mi>
-												</msub>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>|</mo>
-										<mrow>
-											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-										</mrow>
-									</mrow>
-									<mo>}</mo>
-								</mrow>
-							</math>
-							となり，つまり
-							<math>
-								<mo>(</mo>
-								<mrow>
-									<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
-								</mrow>
-								<mo>)</mo>
-							</math>
-							の取り得る値は高々有限個となる．これらの最大値を <math><mi>𝑁</mi><mo>∈</mo><mi>ℚ</mi></math> とすると，
-							<math display="block">
-								<mo>{</mo>
-								<mrow>
-									<mrow>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝛼</mi><mo>,</mo><mi>𝛼</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-										<mo>≤</mo>
-										<mi>𝑁</mi>
-									</mrow>
-									<mo>|</mo>
-									<mrow>
-										<mi>𝛼</mi>
-										<mo>∈</mo>
-										<mrow>
-											<munder intent=":largeop">
-												<mo>∑</mo>
-												<mrow>
-													<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-												</mrow>
-											</munder>
-											<mo>&af;</mo>
-											<mrow>
-												<mi>ℤ</mi>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝛼</mi><mi>𝑖</mi>
-												</msub>
-											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
-								<mo>}</mo>
-							</math>
-							は離散コンパクト集合なので有限．<math><mi>𝛥</mi></math> はこれに含まれるので，有限集合．
-						</li>
-					</ul>
-					<p>
-						以上の条件において，
-						<math>
-							<mrow>
-								<mi>det</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo><mi>𝐴</mi><mo>)</mo>
-								</mrow>
-							</mrow>
-							<mo>=</mo>
-							<mrow>
-								<mrow>
-									<mi>det</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo>
-										<msup>
-											<mi>𝐷</mi>
-											<mrow>
-												<mo>−</mo><mn>1</mn>
-											</mrow>
-										</msup>
-										<mo>)</mo>
-									</mrow>
-								</mrow>
-								<mo>&it;</mo>
-								<mrow>
-									<mi>det</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mrow><mi>𝐷</mi><mo>&it;</mo><mi>𝐴</mi></mrow><mo>)</mo>
-									</mrow>
-								</mrow>
-							</mrow>
-							<mo>&gt;</mo>
-							<mn>0</mn>
-						</math> なので，<math><mi>𝐴</mi></math> は正則．ゆえに，<math><mi>𝔥</mi><mo>=</mo><msub><mi>𝔤</mi><mn>0</mn></msub></math> となる．
-					</p>
-					<p>残りの条件の同値性を示す：</p>
-					<ul>
-						<li>
-							<math><mi>𝔤</mi></math> が有限次元⇒<math><mi>𝛥</mi></math> が有限は明らか．逆に <math><mi>𝛥</mi></math> が有限なとき，
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-								</mrow>
-							</math> に対し，
-							<math>
-								<mrow>
-									<mi>dim</mi>
-									<mo>&af;</mo>
-									<msub>
-										<mi>𝔤</mi>
-										<msub>
-											<mi>𝛼</mi><mi>𝑖</mi>
-										</msub>
-									</msub>
-								</mrow>
-								<mo>=</mo>
-								<mn>1</mn>
-							</math> なので，
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>𝛼</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>𝛥</mi>
-										<mo>=</mo>
-										<msub>
-											<mi>𝛥</mi><mi>re</mi>
-										</msub>
-									</mrow>
-								</mrow>
-							</math> に対し，
-							<math>
-								<mrow>
-									<mi>dim</mi>
-									<mo>&af;</mo>
-									<msub>
-										<mi>𝔤</mi><mi>𝛼</mi>
-									</msub>
-								</mrow>
-								<mo>=</mo>
-								<mn>1</mn>
-							</math> となる．ゆえに，
-							<math display="block">
-								<mrow>
-									<mi>dim</mi><mo>&af;</mo><mi>𝔤</mi>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mi>𝑛</mi>
-									<mo>+</mo>
-									<mrow>
-										<mo>|</mo><mi>𝛥</mi><mo>|</mo>
-									</mrow>
-								</mrow>
-								<mo>&lt;</mo>
-								<mi>∞</mi>
-							</math>
-							を満たし，<math><mi>𝔤</mi></math> は有限次元．
-						</li>
-						<li>
-							<math><mi>𝔤</mi></math> が有限次元のとき，<math><mi>𝔤</mi></math> の非<a href="#零Lie代数">零</a>な<a href="#イデアル">イデアル</a> <math><mi>𝔦</mi></math> に対し，<a href="#Kac-Moody代数">Kac-Moody代数の定義</a>より，
-							<math>
-								<mrow>
-									<mi>𝔦</mi><mo>∩</mo><mi>𝔥</mi>
-								</mrow>
-								<mo>≠</mo>
-								<mrow>
-									<mo>{</mo><mn>0</mn><mo>}</mo>
-								</mrow>
-							</math> となる．
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mi>ℎ</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mrow>
-											<mi>𝔦</mi>
-											<mo>∩</mo>
-											<msub>
-												<mi>𝔤</mi><mn>0</mn>
-											</msub>
-										</mrow>
-										<mo>∖</mo>
-										<mrow>
-											<mo>{</mo><mn>0</mn <mo>}</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math> に対し，
-							<math>
-								<mrow>
-									<mo>∃</mo>
-									<mo>&af;</mo>
-									<mrow>
-										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
-									</mrow>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<mrow>
-										<msub>
-											<mi>𝛼</mi><mi>𝑖</mi>
-										</msub>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>ℎ</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>≠</mo>
-									<mn>0</mn>
-								</mrow>
-							</math> を満たす．この <math><mi>𝑖</mi></math> に対し，
-							<math display="block">
-								<mrow>
-									<msub>
-										<mi>ℎ</mi>
-										<mrow>
-											<mi>𝑖</mi><mo>,</mo><mi>±</mi>
-										</mrow>
-									</msub>
-									<mo>=</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<mi>ℎ</mi>
-											<mo>,</mo>
-											<mrow>
-												<mo>±</mo>
-												<mrow>
-													<msup>
-														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<msub>
-																	<mi>𝛼</mi><mi>𝑖</mi>
-																</msub>
-																<mo>&af;</mo>
-																<mrow>
-																	<mo>(</mo><mi>ℎ</mi><mo>)</mo>
-																</mrow>
-															</mrow>
-															<mo>)</mo>
-														</mrow>
-														<mrow>
-															<mo>−</mo><mn>1</mn>
-														</mrow>
-													</msup>
-													<mo>&it;</mo>
-													<msub>
-														<mi>ℎ</mi>
-														<mrow>
-															<mi>𝑖</mi><mo>,</mo><mi>±</mi>
-														</mrow>
-													</msub>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝔦</mi>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<msub>
-										<mi>ℎ</mi><mi>𝑖</mi>
-									</msub>
-									<mo>=</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<msub>
-												<mi>ℎ</mi>
-												<mrow>
-													<mi>𝑖</mi><mo>,</mo><mi>+</mi>
-												</mrow>
-											</msub>
-											<mo>,</mo>
-											<msub>
-												<mi>ℎ</mi>
-												<mrow>
-													<mi>𝑖</mi><mo>,</mo><mi>−</mi>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝔦</mi>
-								</mrow>
-							</math>
-							となる．さらに，
-							<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝑛</mi>
-								</mrow>
-							</math> に対し，
-							<math>
-								<mrow>
-									<msub>
-										<mi>ℎ</mi>
-										<mrow>
-											<mi>𝑖</mi><mo>,</mo><mi>±</mi>
-										</mrow>
-									</msub>
-									<mo>,</mo>
-									<msub>
-										<mi>ℎ</mi><mi>𝑖</mi>
-									</msub>
-								</mrow>
-								<mo>∈</mo>
-								<mi>𝔦</mi>
-							</math> かつ
-							<math>
-								<msub>
-									<mi>𝑎</mi>
-									<mrow>
-										<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
-									</mrow>
-								</msub>
-								<mo>≠</mo>
-								<mn>0</mn>
-							</math> ならば，
-							<math display="block">
-								<mrow>
-									<msub>
-										<mi>ℎ</mi>
-										<mrow>
-											<mi>𝑗</mi><mo>,</mo><mi>±</mi>
-										</mrow>
-									</msub>
-									<mo>=</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<msub>
-												<mi>ℎ</mi><mi>𝑖</mi>
-											</msub>
-											<mo>,</mo>
-											<mrow>
-												<mo>±</mo>
-												<mrow>
-													<msup>
-														<msub>
-															<mi>𝑎</mi>
-															<mrow>
-																<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
-															</mrow>
-														</msub>
-														<mrow>
-															<mo>−</mo><mn>1</mn>
-														</mrow>
-													</msup>
-													<mo>&it;</mo>
-													<msub>
-														<mi>ℎ</mi>
-														<mrow>
-															<mi>𝑗</mi><mo>,</mo><mi>±</mi>
-														</mrow>
-													</msub>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝔦</mi>
-								</mrow>
-								<mo>,</mo>
-								<mrow>
-									<msub>
-										<mi>ℎ</mi><mi>𝑗</mi>
-									</msub>
-									<mo>=</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<msub>
-												<mi>ℎ</mi>
-												<mrow>
-													<mi>𝑗</mi><mo>,</mo><mi>+</mi>
-												</mrow>
-											</msub>
-											<mo>,</mo>
-											<msub>
-												<mi>ℎ</mi>
-												<mrow>
-													<mi>𝑗</mi><mo>,</mo><mi>−</mi>
-												</mrow>
-											</msub>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-									<mo>∈</mo>
-									<mi>𝔦</mi>
-								</mrow>
-							</math>
-							となる．よって，<math><mi>𝐴</mi></math> が既約ならば，<math><mi>𝔦</mi></math> は <math><mi>𝔤</mi></math> の生成系を全て含むから，<math><mi>𝔦</mi><mo>=</mo><mi>𝔤</mi></math> となり，<math><mi>𝔤</mi></math> は<a href="#無中心単純Lie代数">無中心単純Lie代数</a>となる．一般の <math><mi>𝐴</mi></math> に対しては，<math><mi>𝔦</mi></math> は<a href="#無中心単純Lie代数">無中心単純Lie代数</a>の直和となるから，有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>となる．逆にこのとき，<math><mi>𝔤</mi></math> が有限次元となることは明らか．
-						</li>
-					</ul>
-				</article>
 				<article id="有限次元無中心単純Lie代数の分類" class="thm">
 					<h4>有限次元無中心単純Lie代数の分類</h4>
 					<p>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えると，任意の <math><mi>𝕂</mi></math> 上の有限次元<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>であって<a href="#トーラス">極大トーラス</a>かつ<a href="#トーラス">極大分裂トーラス</a>となるもの <math><mi>𝔥</mi></math> を持つものに対し，<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math> が存在し，<math><mi>𝐴</mi></math> に対する<a href="#Kac-Moody代数">Kac-Moody代数</a>と<a href="#同型">Lie代数同型</a>．</p>
@@ -46100,7 +47058,7 @@
 					<p><dfn>整基本ルートデータ</dfn><span lang="en">(integral fundamental root data)</span>とは，以下のデータのこと：</p>
 					<ul>
 						<li>
-							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルート系">基本ルート系</a>
+							<math><mi>𝐴</mi></math> を<a href="#Cartan行列">Cartan行列</a>とする<a href="#基本ルートデータ">基本ルートデータ</a>
 							<math>
 								<mi>𝛷</mi>
 								<mo>=</mo>
@@ -49312,6 +50270,7 @@
 				<li lang="en">Robert Vaughan Moody, Arturo Pianzola, "<cite>Lie Algebras with Triangular Decompositions</cite>", ISBN 978-0471633044</li>
 				<li>谷崎 俊之「<cite>リー代数と量子群 </cite>」ISBN 978-4320016927</li>
 				<li lang="en">Pavel Etingof, Shlomo Gelaki, Dmitri Nikshych, Victor Ostrik, "<cite>Tensor Categories</cite>", ISBN 978-1-4704-2349-0</li>
+				<li lang="en">Vidas Regelskis, Bart Vlaar, "<cite>Pseudo-symmetric pairs for Kac-Moody algebras</cite>", <a href="https://doi.org/10.48550/arXiv.2108.00260">doi:10.48550/arXiv.2108.00260</a></li>
 				<li>高間俊至，奥山竜司，<a href="https://github.com/T2sp/rep">表現論 ノート</a></li>
 			</ul>
 		</section>
