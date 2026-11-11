@@ -18,84 +18,27 @@
 	<body><main>
 		<h1>使えそうな何かの置き場</h1>
 		<section>
-			<h2>SVG</h2>
+			<h2>軌道体</h2>
 			<section>
 				<h3><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> のメモ</h3>
-				<p>
-					<math>
-						<mrow>
-							<mi>𝑁</mi>
-							<mo>∈</mo>
-							<msub>
-								<mi>ℕ</mi>
+				<article id="𝑇2上の準同型" class="thm">
+					<h4><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上の準同型</h4>
+					<ul>
+						<li>
+							<math>
+								<mi>𝜏</mi>
+								<mo>∈</mo>
 								<mrow>
-									<mo>≥</mo><mn>2</mn>
+									<mi>ℂ</mi><mo>∖</mo><mi>ℝ</mi>
 								</mrow>
-							</msub>
-						</mrow>
-						<mo>,</mo>
-						<mrow>
-							<mi>𝜔</mi>
-							<mo>≔</mo>
-							<msup>
-								<mi>𝑒</mi>
-								<mfrac>
-									<mrow>
-										<mn>2</mn><mo>&it;</mo><mi>𝜋</mi><mo>&it;</mo><mi>𝑖</mi>
-									</mrow>
-									<mi>𝑁</mi>
-								</mfrac>
-							</msup>
-						</mrow>
-					</math> とし，<math>
-						<mrow>
-							<mi>𝜏</mi>
-							<mo>∈</mo>
-							<mrow>
-								<mi>ℂ</mi><mo>∖</mo><mi>ℝ</mi>
-							</mrow>
-						</mrow>
-					</math> を与える．<math>
-						<msup>
-							<mi>𝑇</mi><mn>2</mn>
-						</msup>
-						<mo>≃</mo>
-						<mrow>
-							<mi>ℂ</mi>
-							<mo>∕</mo>
-							<mrow>
-								<mo>(</mo>
-								<mrow>
-									<mi>ℤ</mi>
-									<mo>+</mo>
-									<mrow>
-										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
-									</mrow>
-								</mrow>
-								<mo>)</mo>
-							</mrow>
-						</mrow>
-					</math> にさらに，原点周りでの回転 <math>
-						<mi>𝑧</mi>
-						<mo>↦</mo>
-						<mrow>
-							<mi>𝜔</mi><mo>&it;</mo><mi>𝑧</mi>
-						</mrow>
-					</math> での同一視をする：
-					<math display="block">
-						<mrow>
-							<msup>
-								<mi>𝑇</mi><mn>2</mn>
-							</msup>
-							<mo>∕</mo>
-							<msub>
-								<mi>ℤ</mi><mi>𝑁</mi>
-							</msub>
-						</mrow>
-						<mo>≃</mo>
-						<mrow>
-							<mrow>
-								<mo>(</mo>
+							</math>
+						</li>
+						<li>
+							<math>
+								<msup>
+									<mi>𝑇</mi><mn>2</mn>
+								</msup>
+								<mo>≃</mo>
 								<mrow>
 									<mi>ℂ</mi>
 									<mo>∕</mo>
@@ -111,41 +54,124 @@
 										<mo>)</mo>
 									</mrow>
 								</mrow>
-								<mo>)</mo>
-							</mrow>
-							<mo>∕</mo>
+							</math>
+						</li>
+					</ul>
+					<p>
+						を与えると，<math><mi>𝜔</mi><mo>∈</mo><mi>ℂ</mi></math> が
+						<math display="block">
 							<mrow>
-								<mo>{</mo>
+								<mi>ℂ</mi><mo>→</mo><mi>ℂ</mi>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mi>𝑧</mi>
+								<mo>↦</mo>
 								<mrow>
-									<mn>1</mn>
-									<mo>,</mo>
-									<mi>𝜔</mi>
-									<mo>,</mo>
-									<mo>…</mo>
-									<mo>,</mo>
-									<msup>
-										<mi>𝜔</mi>
-										<mrow>
-											<mi>𝑁</mi><mo>−</mo><mn>1</mn>
-										</mrow>
-									</msup>
+									<mi>𝜔</mi><mo>&it;</mo><mi>𝑧</mi>
 								</mrow>
-								<mo>}</mo>
 							</mrow>
-						</mrow>
-					</math>
-					この回転がwell-definedであるには，格子 <math>
-						<mi>ℤ</mi>
-						<mo>+</mo>
-						<mrow>
-							<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
-						</mrow>
-					</math> がこの回転で不変である，つまり <math>
-						<mrow>
-							<mi>𝜔</mi>
-							<mo>&af;</mo>
+						</math>
+						が <math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上well-definedになる，つまり <math>
 							<mrow>
-								<mo>(</mo>
+								<mi>𝜔</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mi>ℤ</mi>
+										<mo>+</mo>
+										<mrow>
+											<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</mrow>
+							<mo>⊆</mo>
+							<mrow>
+								<mi>ℤ</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+								</mrow>
+							</mrow>
+						</math> となる必要十分条件は，
+					</p>
+					<ul>
+						<li><math><mi>𝜏</mi></math> が虚二次数でないならば，<math><mi>𝜔</mi><mo>∈</mo><mi>ℤ</mi></math></li>
+						<li>
+							<math><mi>𝜏</mi></math> が虚二次数，つまり，互いに素な整数組 <math>
+								<mrow>
+									<mi>𝐴</mi><mo>,</mo><mi>𝐵</mi><mo>,</mo><mi>𝐶</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mi>ℤ</mi>
+							</math> が存在し，<math>
+								<mrow>
+									<mrow>
+										<mi>𝐴</mi>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝜏</mi><mn>2</mn>
+										</msup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝐵</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+									<mo>+</mo>
+									<mi>𝐶</mi>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math> を満たすならば，<math>
+								<mi>𝜔</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝐴</mi><mo>&it;</mo><mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝐴</mi><mo>&it;</mo><mi>𝜏</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						まず，<math>
+							<mrow>
+								<mrow>
+									<mi>𝜔</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⊆</mo>
 								<mrow>
 									<mi>ℤ</mi>
 									<mo>+</mo>
@@ -153,105 +179,537 @@
 										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
 									</mrow>
 								</mrow>
-								<mo>)</mo>
 							</mrow>
-						</mrow>
-						<mo>⊆</mo>
-						<mrow>
-							<mi>ℤ</mi>
-							<mo>+</mo>
+							<mo>⇔</mo>
 							<mrow>
-								<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
-							</mrow>
-						</mrow>
-					</math> が必要十分．特に，<math>
-						<mrow>
-							<mi>𝜔</mi>
-							<mo>+</mo>
-							<msup>
-								<mi>𝜔</mi>
 								<mrow>
-									<mo>−</mo><mn>1</mn>
-								</mrow>
-							</msup>
-						</mrow>
-						<mo>=</mo>
-						<mrow>
-							<mn>2</mn>
-							<mo>&it;</mo>
-							<mrow>
-								<mi>cos</mi>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mfrac>
-										<mrow>
-											<mn>2</mn><mo>&it;</mo><mi>𝜋</mi>
-										</mrow>
-										<mi>𝑁</mi>
-									</mfrac>
-									<mo>)</mo>
-								</mrow>
-							</mrow>
-						</mrow>
-						<mo>∈</mo>
-						<mi>ℤ</mi>
-					</math> を満たすから，<math><mi>𝑁</mi><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>6</mn></mrow></math> に限られる．また，<math><mi>𝑁</mi><mo>=</mo><mn>2</mn></math> なら <math><mi>𝜏</mi></math> は任意．一方，<math><mi>𝑁</mi><mo>&gt;</mo><mn>3</mn></math> のときは
-					<math display="block">
-						<mrow>
-							<mi>𝜏</mi>
-							<mo>=</mo>
-							<mfrac>
-								<mrow>
+									<mi>𝜔</mi>
+									<mo>,</mo>
 									<mrow>
-										<mi>𝑎</mi><mo>&it;</mo><mi>𝜔</mi>
+										<mi>𝜔</mi><mo>&it;</mo><mi>𝜏</mi>
 									</mrow>
-									<mo>+</mo>
-									<mi>𝑏</mi>
-								</mrow>
-								<mrow>
-									<mrow>
-										<mi>𝑐</mi><mo>&it;</mo><mi>𝜔</mi>
-									</mrow>
-									<mo>+</mo>
-									<mi>𝑑</mi>
-								</mrow>
-							</mfrac>
-						</mrow>
-						<mo>,</mo>
-						<mrow>
-							<mo>(</mo>
-							<mrow>
-								<mrow>
-									<mo>(</mo>
-									<mtable intent=":matrix">
-										<mtr>
-											<mtd><mi>𝑎</mi></mtd> <mtd><mi>𝑏</mi></mtd>
-										</mtr>
-										<mtr>
-											<mtd><mi>𝑐</mi></mtd> <mtd><mi>𝑑</mi></mtd>
-										</mtr>
-									</mtable>
-									<mo>)</mo>
 								</mrow>
 								<mo>∈</mo>
 								<mrow>
-									<mi>SL</mi>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math> である．
+					</p>
+					<p>
+						<math>
+							<mrow>
+								<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+							</mrow>
+							<mo>∈</mo>
+							<mi>ℤ</mi>
+						</math> に対して，<math>
+							<mi>𝜔</mi>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑎</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝑏</mi><mo>&it;</mo><mi>𝜏</mi>
+								</mrow>
+							</mrow>
+						</math> とする．このとき，<math>
+							<mrow>
+								<mi>𝑐</mi><mo>,</mo><mi>𝑑</mi>
+							</mrow>
+							<mo>∈</mo>
+							<mi>ℤ</mi>
+						</math> が <math>
+							<mrow>
+								<mi>𝜔</mi><mo>&it;</mo><mi>𝜏</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑐</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝑑</mi><mo>&it;</mo><mi>𝜏</mi>
+								</mrow>
+							</mrow>
+						</math> を満たすとすると，
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑏</mi>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝜏</mi><mn>2</mn>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑐</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑑</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>⇔</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑏</mi>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝜏</mi><mn>2</mn>
+										</msup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>−</mo><mi>𝑑</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mi>𝜏</mi>
+									</mrow>
+									<mo>−</mo>
+									<mi>𝑐</mi>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</mrow>
+						</math>
+						となる．
+					</p>
+					<p><math><mi>𝜏</mi></math> が虚二次数でないならば，<math><mi>𝜔</mi><mo>=</mo><mi>𝑎</mi><mo>=</mo><mi>𝑑</mi></math> より，<math><mi>𝜔</mi><mo>∈</mo><mi>ℤ</mi></math>．このとき <math><mrow><mi>𝜔</mi><mo>&it;</mo><mi>𝜏</mi></mrow><mo>∈</mo><mrow><mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi></mrow></math> も成り立つ．</p>
+					<p>
+						<math><mi>𝜏</mi></math> が虚二次数のとき，
+						<math>
+							<mrow>
+								<mi>𝜔</mi><mo>&it;</mo><mi>𝜏</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑎</mi><mo>&it;</mo><mi>𝜏</mi>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝑏</mi>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝜏</mi><mn>2</mn>
+									</msup>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mo>−</mo>
+								<mfrac>
+									<mrow>
+										<mi>𝑏</mi><mo>&it;</mo><mi>𝐶</mi>
+									</mrow>
+									<mi>𝐴</mi>
+								</mfrac>
+								<mo>+</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>−</mo>
+											<mfrac>
+												<mrow>
+													<mi>𝑏</mi><mo>&it;</mo><mi>𝐵</mi>
+												</mrow>
+												<mi>𝐴</mi>
+											</mfrac>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<mi>𝜏</mi>
+								</mrow>
+							</mrow>
+							<mo>∈</mo>
+							<mrow>
+								<mi>ℤ</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+								</mrow>
+							</mrow>
+						</math> であり，<math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi><mo>,</mo><mi>𝐶</mi></math> は互いに素なので，<math>
+							<mi>𝑏</mi>
+							<mo>∈</mo>
+							<mrow>
+								<mi>𝐴</mi><mo>&it;</mo><mi>ℤ</mi>
+							</mrow>
+						</math> となる．つまり，<math><mi>𝜔</mi><mo>∈</mo><mrow><mi>ℤ</mi><mo>+</mo><mrow><mi>𝐴</mi><mo>&it;</mo><mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi></mrow></mrow></math>．
+					</p>
+				</article>
+				<article id="𝑇2上の回転" class="thm">
+					<h4><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上の回転</h4>
+					<ul>
+						<li>
+							<math>
+								<mi>𝜏</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ℂ</mi><mo>∖</mo><mi>ℝ</mi>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<msup>
+									<mi>𝑇</mi><mn>2</mn>
+								</msup>
+								<mo>≃</mo>
+								<mrow>
+									<mi>ℂ</mi>
+									<mo>∕</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>
+						を与えると，<math><mi>𝜔</mi><mo>∈</mo><mi>ℂ</mi></math> が
+						<math display="block">
+							<mrow>
+								<mi>ℂ</mi><mo>→</mo><mi>ℂ</mi>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mi>𝑧</mi>
+								<mo>↦</mo>
+								<mrow>
+									<mi>𝜔</mi><mo>&it;</mo><mi>𝑧</mi>
+								</mrow>
+							</mrow>
+						</math>
+						が <math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上well-definedかつ可逆，つまり <math>
+							<mrow>
+								<mrow>
+									<mi>𝜔</mi>
 									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo>
 										<mrow>
-											<mn>2</mn><mo>,</mo><mi>ℤ</mi>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<msup>
+										<mi>𝜔</mi>
+										<mrow>
+											<mo>−</mo><mn>1</mn>
+										</mrow>
+									</msup>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
 										</mrow>
 										<mo>)</mo>
 									</mrow>
 								</mrow>
 							</mrow>
-							<mo>)</mo>
-						</mrow>
-					</math>
-					に限られる．これらはモジュラー同値なので，普通 <math><mi>𝜏</mi><mo>=</mo><mi>𝜔</mi></math> を考える．
-				</p>
+							<mo>⊆</mo>
+							<mrow>
+								<mi>ℤ</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+								</mrow>
+							</mrow>
+						</math> となる必要十分条件は，
+					</p>
+					<ul>
+						<li><math><mi>𝜏</mi></math> が虚二次数でないならば，<math><mi>𝜔</mi><mo>∈</mo><mrow><mo>{</mo><mrow><mo>±</mo><mn>1</mn></mrow><mo>}</mo></mrow></math></li>
+						<li>
+							<math><mi>𝜏</mi></math> が虚二次数，つまり，互いに素な整数組 <math>
+								<mrow>
+									<mi>𝐵</mi><mo>,</mo><mi>𝐶</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mi>ℤ</mi>
+							</math> が存在し，<math>
+								<mrow>
+									<msup>
+										<mi>𝜏</mi><mn>2</mn>
+									</msup>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝐵</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+									<mo>+</mo>
+									<mi>𝐶</mi>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math> を満たすならば，<math>
+								<mi>𝜔</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>[</mo><mi>𝜏</mi><mo>]</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						まず，<math>
+							<mrow>
+								<mrow>
+									<mi>𝜔</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⊆</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>⇔</mo>
+							<mrow>
+								<mrow>
+									<mi>𝜔</mi>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝜔</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math> である．
+					</p>
+					<p>
+						<math>
+							<mrow>
+								<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+							</mrow>
+							<mo>∈</mo>
+							<mi>ℤ</mi>
+						</math> に対して，<math>
+							<mi>𝜔</mi>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑎</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝑏</mi><mo>&it;</mo><mi>𝜏</mi>
+								</mrow>
+							</mrow>
+						</math> とする．このとき，<math>
+							<mrow>
+								<mi>𝑐</mi><mo>,</mo><mi>𝑑</mi>
+							</mrow>
+							<mo>∈</mo>
+							<mi>ℤ</mi>
+						</math> が <math>
+							<mrow>
+								<mi>𝜔</mi><mo>&it;</mo><mi>𝜏</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mi>𝑐</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝑑</mi><mo>&it;</mo><mi>𝜏</mi>
+								</mrow>
+							</mrow>
+						</math> を満たすとすると，
+						<math display="block">
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑎</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑏</mi>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝜏</mi><mn>2</mn>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑐</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑑</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>⇔</mo>
+							<mrow>
+								<mrow>
+									<mrow>
+										<mi>𝑏</mi>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝜏</mi><mn>2</mn>
+										</msup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑎</mi><mo>−</mo><mi>𝑑</mi>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mi>𝜏</mi>
+									</mrow>
+									<mo>−</mo>
+									<mi>𝑐</mi>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</mrow>
+						</math>
+						となる．
+					</p>
+					<p><math><mi>𝜏</mi></math> が虚二次数でないならば，<math><mi>𝜔</mi><mo>=</mo><mi>𝑎</mi><mo>=</mo><mi>𝑑</mi></math> より，<math><mi>𝜔</mi><mo>∈</mo><mi>ℤ</mi></math>．このとき <math><mrow><mi>𝜔</mi><mo>&it;</mo><mi>𝜏</mi></mrow><mo>∈</mo><mrow><mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi></mrow></math> も成り立つ．</p>
+					<p>
+						<math><mi>𝜏</mi></math> が虚二次数のとき，
+						<math>
+							<mrow>
+								<mi>𝜔</mi><mo>&it;</mo><mi>𝜏</mi>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mrow>
+									<mi>𝑎</mi><mo>&it;</mo><mi>𝜏</mi>
+								</mrow>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝑏</mi>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝜏</mi><mn>2</mn>
+									</msup>
+								</mrow>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<mo>−</mo>
+								<mfrac>
+									<mrow>
+										<mi>𝑏</mi><mo>&it;</mo><mi>𝐶</mi>
+									</mrow>
+									<mi>𝐴</mi>
+								</mfrac>
+								<mo>+</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑎</mi>
+											<mo>−</mo>
+											<mfrac>
+												<mrow>
+													<mi>𝑏</mi><mo>&it;</mo><mi>𝐵</mi>
+												</mrow>
+												<mi>𝐴</mi>
+											</mfrac>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<mi>𝜏</mi>
+								</mrow>
+							</mrow>
+							<mo>∈</mo>
+							<mrow>
+								<mi>ℤ</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+								</mrow>
+							</mrow>
+						</math> であり，<math><mi>𝐴</mi><mo>,</mo><mi>𝐵</mi><mo>,</mo><mi>𝐶</mi></math> は互いに素なので，<math>
+							<mi>𝑏</mi>
+							<mo>∈</mo>
+							<mrow>
+								<mi>𝐴</mi><mo>&it;</mo><mi>ℤ</mi>
+							</mrow>
+						</math> となる．つまり，<math><mi>𝜔</mi><mo>∈</mo><mrow><mi>ℤ</mi><mo>+</mo><mrow><mi>𝐴</mi><mo>&it;</mo><mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi></mrow></mrow></math>．
+					</p>
+				</article>
 				<article id="𝑇2∕ℤ𝑁軌道体" class="dfn">
 					<h4><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> 軌道体</h4>
 					<ul>
