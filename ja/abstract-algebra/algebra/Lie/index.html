@@ -4930,7 +4930,7 @@
 					<p>を与えると，以下が成り立つ：</p>
 					<ul>
 						<li>
-							<math><mi>𝑥</mi></math> が<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>で，その代数閉包上の固有値が有限個ならば，その<a href="#内部微分">内部微分</a>
+							<math><mi>𝑥</mi></math> が<a href="../../module/linear-algebra/index.html#半単純">半単純変換</a>ならば，その<a href="#内部微分">内部微分</a>
 							<math>
 								<mrow>
 									<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
@@ -4964,7 +4964,7 @@
 							も冪零．
 						</li>
 						<li>
-							<math><mi>𝑥</mi></math> が<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>
+							<math><mi>𝑥</mi></math> が<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>
 							<math>
 								<mi>𝑥</mi>
 								<mo>=</mo>
@@ -4978,8 +4978,7 @@
 									</msub>
 								</mrow>
 							</math>
-							を持ち，<math><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub></math> の代数閉包上の固有値が有限個ならば，
-							<math>
+							を持つならば，<math>
 								<mrow>
 									<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
 								</mrow>
@@ -4999,9 +4998,7 @@
 										<mo>)</mo>
 									</mrow>
 								</mrow>
-							</math>
-							において，
-							<math>
+							</math> において，<math>
 								<mrow>
 									<mi>ad</mi><mo>&af;</mo><mi>𝑥</mi>
 								</mrow>
@@ -5023,8 +5020,7 @@
 										</msub>
 									</mrow>
 								</mrow>
-							</math>
-							は<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>となる．
+							</math> は<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限元Jordan-Chevalley分解</a>となる．
 						</li>
 					</ul>
 				</article>
@@ -5047,7 +5043,7 @@
 									</mover>
 								</mrow>
 							</math>
-							とすると，<math><mover><mi>𝑥</mi><mo>‾</mo></mover><mo>≔</mo><mrow><mi>𝑥</mi><mo>⊗</mo><mn>1</mn></mrow><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mrow><mo>(</mo><mover><mi>𝑉</mi><mo>‾</mo></mover><mo>)</mo></mrow></mrow></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a>の集合 <math><mi>𝛬</mi><mo>⊆</mo><mover><mi>𝕂</mi><mo>‾</mo></mover></math> は仮定より有限．<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間</a> を <math><msub><mover><mi>𝑉</mi><mo>‾</mo></mover><mi>𝜆</mi></msub></math> とすると，
+							とすると，<a href="../../module/linear-algebra/index.html#半単純">半単純性</a>の定義より，<math><mover><mi>𝑥</mi><mo>‾</mo></mover><mo>≔</mo><mrow><mi>𝑥</mi><mo>⊗</mo><mn>1</mn></mrow><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mrow><mo>(</mo><mover><mi>𝑉</mi><mo>‾</mo></mover><mo>)</mo></mrow></mrow></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a>の集合 <math><mi>𝛬</mi><mo>⊆</mo><mover><mi>𝕂</mi><mo>‾</mo></mover></math> は有限．<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間</a> を <math><msub><mover><mi>𝑉</mi><mo>‾</mo></mover><mi>𝜆</mi></msub></math> とすると，
 							<math>
 								<mi>end</mi>
 								<mo>&af;</mo>
@@ -5711,7 +5707,7 @@
 									</mrow>
 								</mrow>
 							</math>
-							は<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>となる．
+							は<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>となる．
 						</li>
 					</ul>
 				</article>
@@ -6871,109 +6867,6 @@
 							<li><a href="#準同型">Lie代数準同型の定義</a>より明らか．</li>
 							<li><a href="#導来Lie代数の基本性質">導来Lie代数の基本性質</a>と商Lie代数の普遍性より明らか．</li>
 						</ul>
-					</article>
-					<article id="transvection" class="dfn">
-						<h5>transvection</h5>
-						<ul>
-							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-							<li><math><mi>𝕂</mi></math> 上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
-							<li>
-								<math><mi>𝔤</mi></math> の<a href="#導来Lie代数">導来Lie代数</a> <math>
-									<mo>[</mo>
-									<mrow>
-										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-									</mrow>
-									<mo>]</mo>
-								</math> とそれによる<a href="#商Lie代数">商Lie代数</a> <math>
-									<mi>𝔤</mi>
-									<mo>∕</mo>
-									<mrow>
-										<mo>[</mo>
-										<mrow>
-											<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-										</mrow>
-										<mo>]</mo>
-									</mrow>
-								</math>
-							</li>
-							<li>
-								<math><mi>𝔤</mi></math> の<a href="#中心">中心</a> <math>
-									<mi>𝑍</mi>
-									<mo>&af;</mo>
-									<mrow>
-										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-									</mrow>
-								</math>
-							</li>
-						</ul>
-						<p>を与える．</p>
-						<p>
-							<dfn>transvection</dfn><span lang="en">(transvection)</span>とは，任意の<a href="#可換Lie代数準同型">可換Lie代数準同型</a> <math>
-								<mi>𝑓</mi>
-								<mo>:</mo>
-								<mrow>
-									<mrow>
-										<mi>𝔤</mi>
-										<mo>∕</mo>
-										<mrow>
-											<mo>[</mo>
-											<mrow>
-												<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-											</mrow>
-											<mo>]</mo>
-										</mrow>
-									</mrow>
-									<mo>→</mo>
-									<mrow>
-										<mi>𝑍</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math> が誘導する <math><mi>𝔤</mi></math> 上の<a href="#自己同型">自己同型</a>
-							<math display="block">
-								<msub>
-									<mi>𝜎</mi><mi>𝑓</mi>
-								</msub>
-								<mo>:</mo>
-								<mrow>
-									<mrow>
-										<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mi>𝑥</mi>
-										<mo>↦</mo>
-										<mrow>
-											<mi>𝑥</mi>
-											<mo>+</mo>
-											<mrow>
-												<mi>𝑓</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝑥</mi>
-														<mo>+</mo>
-														<mrow>
-															<mo>[</mo>
-															<mrow>
-																<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-															</mrow>
-															<mo>]</mo>
-														</mrow>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-									</mrow>
-								</mrow>
-							</math>
-							のこと．
-						</p>
 					</article>
 					<article id="可換Lie代数の普遍性" class="thm">
 						<h5>可換Lie代数の普遍性</h5>
@@ -8717,6 +8610,311 @@
 									</mrow>
 								</math>
 								より<a href="#可換">可換</a>．
+							</li>
+						</ul>
+					</article>
+					<article id="transvection" class="dfn">
+						<h5>transvection</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝕂</mi></math> 上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+							<li>
+								<math><mi>𝔤</mi></math> の<a href="#導来Lie代数">導来Lie代数</a> <math>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>]</mo>
+								</math> とそれによる<a href="#商Lie代数">商Lie代数</a> <math>
+									<mi>𝔤</mi>
+									<mo>∕</mo>
+									<mrow>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+										</mrow>
+										<mo>]</mo>
+									</mrow>
+								</math>
+							</li>
+							<li>
+								<math><mi>𝔤</mi></math> の<a href="#中心">中心</a> <math>
+									<mi>𝑍</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与える．</p>
+						<p>
+							<dfn>transvection</dfn><span lang="en">(transvection)</span>とは，任意の<a href="#可換Lie代数準同型">可換Lie代数準同型</a> <math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝔤</mi>
+										<mo>∕</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>→</mo>
+									<mrow>
+										<mi>𝑍</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> が誘導する <math><mi>𝔤</mi></math> 上の<a href="#自己同型">自己同型</a>
+							<math display="block">
+								<msub>
+									<mi>𝜎</mi><mi>𝑓</mi>
+								</msub>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑥</mi>
+										<mo>↦</mo>
+										<mrow>
+											<mi>𝑥</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑥</mi>
+														<mo>+</mo>
+														<mrow>
+															<mo>[</mo>
+															<mrow>
+																<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+															</mrow>
+															<mo>]</mo>
+														</mrow>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							のこと．
+						</p>
+						<article id="transvectionの性質" class="thm">
+							<h6>transvectionの性質</h6>
+							<ul>
+								<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+								<li><math><mi>𝕂</mi></math> 上の<a href="#Lie代数">Lie代数</a> <math><mi>𝔤</mi></math></li>
+								<li>
+									<math><mi>𝔤</mi></math> の<a href="#導来Lie代数">導来Lie代数</a> <math>
+										<mo>[</mo>
+										<mrow>
+											<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+										</mrow>
+										<mo>]</mo>
+									</math> とそれによる<a href="#商Lie代数">商Lie代数</a> <math>
+										<mi>𝔤</mi>
+										<mo>∕</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math><mi>𝔤</mi></math> の<a href="#中心">中心</a> <math>
+										<mi>𝑍</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<a href="#可換Lie代数準同型">可換Lie代数準同型</a> <math>
+										<mi>𝑓</mi>
+										<mo>:</mo>
+										<mrow>
+											<mrow>
+												<mi>𝔤</mi>
+												<mo>∕</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+											</mrow>
+											<mo>→</mo>
+											<mrow>
+												<mi>𝑍</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+									</math> 
+								</li>
+								<li>
+									<math><mi>𝑓</mi></math> が誘導する<a href="#transvection">transvection</a> <math>
+										<msub>
+											<mi>𝜎</mi><mi>𝑓</mi>
+										</msub>
+										<mo>:</mo>
+										<mrow>
+											<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math>
+										<msub>
+											<mi>𝐷</mi><mi>𝑓</mi>
+										</msub>
+										<mo>≔</mo>
+										<mrow>
+											<msub>
+												<mi>id</mi><mi>𝔤</mi>
+											</msub>
+											<mo>−</mo>
+											<msub>
+												<mi>𝜎</mi><mi>𝑓</mi>
+											</msub>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							<p>を与えると，以下が成り立つ：</p>
+							<ul>
+								<li><math><msub><mi>𝐷</mi><mi>𝑓</mi></msub></math> は<a href="../index.html#微分代数">微分</a>．</li>
+							</ul>
+						</article>
+					</article>
+					<article class="proof">
+						<h5>証明</h5>
+						<ul>
+							<li>
+								<math>
+									<mrow>
+										<msub>
+											<mi>𝐷</mi><mi>𝑓</mi>
+										</msub>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+								</math> は明らか．また，
+								<math display="block">
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mrow>
+													<msub>
+														<mi>𝐷</mi><mi>𝑓</mi>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mi>𝔤</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝔤</mi>
+												<mo>,</mo>
+												<mrow>
+													<msub>
+														<mi>𝐷</mi><mi>𝑓</mi>
+													</msub>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>⊆</mo>
+									<mrow>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑍</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mi>𝔤</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>+</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝔤</mi>
+												<mo>,</mo>
+												<mrow>
+													<mi>𝑍</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+								</math>
+								より，<a href="../index.html#微分代数">微分</a>となる．
 							</li>
 						</ul>
 					</article>
@@ -31818,22 +32016,20 @@
 							<ul>
 								<li><math><mi>𝑛</mi></math> 次の正有理数成分の対角行列 <math><mi>𝐷</mi></math> が存在し，<math><mi>𝐷</mi><mo>&it;</mo><mi>𝐴</mi></math> は対称行列．</li>
 								<li>
-									<math><mi>𝔼</mi></math> 上の<a href="../../module/linear-algebra/index.html#非退化形式">非退化</a>対称双線型形式
-									<math>
+									<math><mi>𝔼</mi></math> 上の<a href="../../module/linear-algebra/index.html#非退化形式">非退化</a>対称双線型形式 <math>
 										<mrow>
 											<mo>(</mo><mo>,</mo><mo>)</mo>
 										</mrow>
 										<mo>:</mo>
 										<mrow>
 											<mrow>
-												<mi>𝐸</mi><mo>⊗</mo><mi>𝐸</mi>
+												<mi>𝔼</mi><mo>⊗</mo><mi>𝔼</mi>
 											</mrow>
 											<mo>→</mo>
 											<mi>𝕂</mi>
 										</mrow>
 									</math>
-									が存在し，<math><mi>𝑊</mi></math>-不変かつ
-									<math>
+									が存在し，<math><mi>𝑊</mi></math>-不変かつ <math>
 										<mrow>
 											<mo>∀</mo>
 											<mo>&af;</mo>
@@ -31864,26 +32060,22 @@
 												</mrow>
 											</msub>
 										</mrow>
-									</math>
-									を満たす．
+									</math> を満たす．
 								</li>
 								<li>
-									<math><mi>𝐸</mi></math> 上の<a href="../../module/linear-algebra/index.html#非退化形式">非退化</a>対称双線型形式
-									<math>
+									<math><mi>𝔼</mi></math> 上の<a href="../../module/linear-algebra/index.html#非退化形式">非退化</a>対称双線型形式 <math>
 										<mrow>
 											<mo>(</mo><mo>,</mo><mo>)</mo>
 										</mrow>
 										<mo>:</mo>
 										<mrow>
 											<mrow>
-												<mi>𝐸</mi><mo>⊗</mo><mi>𝐸</mi>
+												<mi>𝔼</mi><mo>⊗</mo><mi>𝔼</mi>
 											</mrow>
 											<mo>→</mo>
 											<mi>𝕂</mi>
 										</mrow>
-									</math>
-									が存在し，
-									<math>
+									</math> が存在し，<math><mi>𝑊</mi></math>-不変かつ <math>
 										<mrow>
 											<mo>∀</mo>
 											<mo>&af;</mo>
@@ -31909,20 +32101,59 @@
 											<mo>≠</mo>
 											<mn>0</mn>
 										</mrow>
-									</math>
-									を満たす．
+									</math> を満たす．
 								</li>
 								<li><math><mi>𝔤</mi></math> 上の<a href="#不変形式">不変形式</a> <math><mi>𝜅</mi><mo>:</mo><mrow><mrow><mi>𝔤</mi><mo>⊗</mo><mi>𝔤</mi></mrow><mo>→</mo><mi>𝕂</mi></mrow></math> が存在する．</li>
 							</ul>
 						</li>
 						<li>
-							対称化可能Cartan行列 <math><mi>𝐴</mi></math> の<dfn>標準形式</dfn><span lang="en">()</span>とは，
-							<math>
-							</math>
+							対称化可能Cartan行列 <math><mi>𝐴</mi></math> の<dfn>標準形式</dfn><span lang="en">()</span>とは，<math><mi>𝔼</mi></math> 上の<a href="../../module/linear-algebra/index.html#非退化形式">非退化</a>対称双線型形式 <math>
+								<mrow>
+									<mo>(</mo><mo>,</mo><mo>)</mo>
+								</mrow>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝔼</mi><mo>⊗</mo><mi>𝔼</mi>
+									</mrow>
+									<mo>→</mo>
+									<mi>𝕂</mi>
+								</mrow>
+							</math> であって，<math><mi>𝑊</mi></math>-不変かつ <math>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝛼</mi><mi>𝑖</mi>
+											</msub>
+											<mo>,</mo>
+											<msub>
+												<mi>𝛼</mi><mi>𝑖</mi>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>∈</mo>
+									<msub>
+										<mi>ℚ</mi>
+										<mrow>
+											<mo>&gt;</mo><mn>0</mn>
+										</mrow>
+									</msub>
+								</mrow>
+							</math> を満たすものを言う．
 						</li>
 						<li>
-							対称化可能Cartan行列 <math><mi>𝐴</mi></math> の<dfn>標準不変形式</dfn><span lang="en">()</span>とは，
-							<math>
+							対称化可能Cartan行列 <math><mi>𝐴</mi></math> の<dfn>標準不変形式</dfn><span lang="en">()</span>とは，<math><mi>𝔤</mi></math> 上の<a href="#不変形式">不変形式</a> <math>
 								<mi>𝜅</mi>
 								<mo>:</mo>
 								<mrow>
@@ -31932,29 +32163,42 @@
 									<mo>→</mo>
 									<mi>𝕂</mi>
 								</mrow>
-							</math>
-						</li>
-						<li>
-							<math><mi>𝜅</mi></math> の誘導する（線型）同型とは，
-							<math>
+							</math> であって，<math>
 								<mrow>
-									<msubsup>
-										<mi>𝔤</mi><mn>0</mn><mo>∗</mo>
-									</msubsup>
-									<mo>→</mo>
-									<msub>
-										<mi>𝔤</mi><mn>0</mn>
-									</msub>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+									</mrow>
 								</mrow>
 								<mo>,</mo>
 								<mrow>
-									<mi>𝜆</mi>
-									<mo>↦</mo>
+									<mrow>
+										<mi>𝜅</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>ℎ</mi><mi>𝑖</mi>
+												</msub>
+												<mo>,</mo>
+												<msub>
+													<mi>ℎ</mi><mi>𝑖</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>∈</mo>
 									<msub>
-										<mi>𝑡</mi><mi>𝜆</mi>
+										<mi>ℚ</mi>
+										<mrow>
+											<mo>&gt;</mo><mn>0</mn>
+										</mrow>
 									</msub>
 								</mrow>
-							</math> のこと．
+							</math> を満たすものを言う．
 						</li>
 						<li>
 							特に，<math><mi>𝐷</mi><mo>&it;</mo><mi>𝐴</mi></math> が
@@ -34250,7 +34494,13 @@
 								<mi>𝛼</mi>
 								<mo>∈</mo>
 								<mrow>
-									<mi>𝛥</mi>
+									<mrow>
+										<mi>𝛥</mi>
+										<mo>∖</mo>
+										<mrow>
+											<mo>{</mo><mn>0</mn><mo>}</mo>
+										</mrow>
+									</mrow>
 									<mo>=</mo>
 									<msub>
 										<mi>𝛥</mi><mi>re</mi>
@@ -34277,7 +34527,11 @@
 								<mi>𝑛</mi>
 								<mo>+</mo>
 								<mrow>
-									<mo>|</mo><mi>𝛥</mi><mo>|</mo>
+									<mo>|</mo>
+									<msub>
+										<mi>𝛥</mi><mi>re</mi>
+									</msub>
+									<mo>|</mo>
 								</mrow>
 							</mrow>
 							<mo>&lt;</mo>
@@ -34362,40 +34616,6 @@
 									<mo>)</mo>
 								</mrow>
 							</math> が生成するKac-Moody群 <math><mi>𝐺</mi></math>
-						</li>
-						<li>
-							<a href="#transvection">transvection</a>の集合
-							<math>
-								<msub>
-									<mi>hom</mi><mi>𝕂</mi>
-								</msub>
-								<mo>&af;</mo>
-								<mrow>
-									<mo>(</mo>
-									<mrow>
-										<mrow>
-											<mi>𝔤</mi>
-											<mo>∕</mo>
-											<mrow>
-												<mo>[</mo>
-												<mrow>
-													<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-												</mrow>
-												<mo>]</mo>
-											</mrow>
-										</mrow>
-										<mo>,</mo>
-										<mrow>
-											<mi>𝑍</mi>
-											<mo>&af;</mo>
-											<mrow>
-												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-											</mrow>
-										</mrow>
-									</mrow>
-									<mo>)</mo>
-								</mrow>
-							</math>
 						</li>
 					</ul>
 					<p>を与える．</p>
@@ -34534,63 +34754,266 @@
 								<mo>≔</mo>
 								<mrow>
 									<mrow>
-										<msub>
-											<mi>hom</mi><mi>𝕂</mi>
-										</msub>
+										<mi>hom</mi>
 										<mo>&af;</mo>
 										<mrow>
 											<mo>(</mo>
 											<mrow>
-												<mrow>
-													<mi>𝔤</mi>
-													<mo>∕</mo>
-													<mrow>
-														<mo>[</mo>
-														<mrow>
-															<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
-														</mrow>
-														<mo>]</mo>
-													</mrow>
-												</mrow>
+												<mi>𝑄</mi>
 												<mo>,</mo>
-												<mrow>
-													<mi>𝑍</mi>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo><mi>𝔤</mi><mo>)</mo>
-													</mrow>
-												</mrow>
+												<msup>
+													<mi>𝕂</mi><mi>×</mi>
+												</msup>
 											</mrow>
 											<mo>)</mo>
 										</mrow>
 									</mrow>
-									<mo>×</mo>
+									<mo>⋉</mo>
+									<mi>𝐺</mi>
+								</mrow>
+							</math>
+							の元のことを <math><mi>𝔤</mi></math> の<dfn>内部自己同型</dfn><span lang="en">(inner automorphism)</span>と呼ぶ．<math>
+						</li>
+					</ul>
+				</article>
+				<article id="Kac-Moody代数のtransvectionの性質" class="thm">
+					<h4>Kac-Moody代数のtransvection</h4>
+					<ul>
+						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
+						<li><math><mi>𝐴</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
+						<li>
+							<math><mi>𝔤</mi></math> の<a href="#導来Lie代数">導来Lie代数</a> <math>
+								<mo>[</mo>
+								<mrow>
+									<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+								</mrow>
+								<mo>]</mo>
+							</math> とそれによる<a href="#商Lie代数">商Lie代数</a> <math>
+								<mi>𝔤</mi>
+								<mo>∕</mo>
+								<mrow>
+									<mo>[</mo>
+									<mrow>
+										<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+									</mrow>
+									<mo>]</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝔤</mi></math> の<a href="#中心">中心</a> <math>
+								<mi>𝑍</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<a href="#可換Lie代数準同型">可換Lie代数準同型</a> <math>
+								<mi>𝑓</mi>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝔤</mi>
+										<mo>∕</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+									</mrow>
+									<mo>→</mo>
+									<mrow>
+										<mi>𝑍</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> 
+						</li>
+						<li>
+							<math><mi>𝑓</mi></math> が誘導する<a href="#transvection">transvection</a> <math>
+								<msub>
+									<mi>𝜎</mi><mi>𝑓</mi>
+								</msub>
+								<mo>:</mo>
+								<mrow>
+									<mi>𝔤</mi><mo>→</mo><mi>𝔤</mi>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<msub>
+									<mi>𝐷</mi><mi>𝑓</mi>
+								</msub>
+								<mo>≔</mo>
+								<mrow>
+									<msub>
+										<mi>id</mi><mi>𝔤</mi>
+									</msub>
+									<mo>−</mo>
+									<msub>
+										<mi>𝜎</mi><mi>𝑓</mi>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与えると，以下が成り立つ：</p>
+					<ul>
+						<li>
+							<math>
+								<msup>
+									<msub>
+										<mi>𝐷</mi><mi>𝑓</mi>
+									</msub>
+									<mn>2</mn>
+								</msup>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math> ．ゆえに<a href="../../module/linear-algebra/index.html#冪零">冪零変換</a>．
+						</li>
+						<li>
+							<math>
+								<msub>
+									<mi>𝜎</mi><mi>𝑓</mi>
+								</msub>
+								<mo>=</mo>
+								<mrow>
+									<mi>exp</mi>
+									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo>
-										<mrow>
-											<mrow>
-												<mi>hom</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝑄</mi>
-														<mo>,</mo>
-														<msup>
-															<mi>𝕂</mi><mi>×</mi>
-														</msup>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>⋉</mo>
-											<mi>𝐺</mi>
-										</mrow>
+										<msub>
+											<mi>𝐷</mi><mi>𝑓</mi>
+										</msub>
 										<mo>)</mo>
 									</mrow>
 								</mrow>
 							</math>
-							の元のことを <math><mi>𝔤</mi></math> の<dfn>内部自己同型</dfn><span lang="en">(inner automorphism)</span>と呼ぶ．<math>
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>
+							<a href="#Kac-Moody代数の基本性質"><math><mi>𝔤</mi></math> の中心と <math><mo>[</mo><mrow><mi>𝔤</mi><mo>,</mo><mi>𝔤</mi></mrow><mo>]</mo></math>の中心は等しい</a>ので，<math>
+								<mrow>
+									<msup>
+										<msub>
+											<mi>𝐷</mi><mi>𝑓</mi>
+										</msub>
+										<mn>2</mn>
+									</msup>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⊆</mo>
+								<mrow>
+									<msub>
+										<mi>𝐷</mi><mi>𝑓</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝐷</mi><mi>𝑓</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mo>[</mo>
+													<mrow>
+														<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+													</mrow>
+													<mo>]</mo>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⊆</mo>
+								<mrow>
+									<msub>
+										<mi>𝐷</mi><mi>𝑓</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mo>[</mo>
+											<mrow>
+												<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+											</mrow>
+											<mo>]</mo>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
+								</mrow>
+							</math> となる．
+						</li>
+						<li>
+							<math>
+								<msub>
+									<mi>𝜎</mi><mi>𝑓</mi>
+								</msub>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>id</mi><mi>𝔤</mi>
+									</msub>
+									<mo>+</mo>
+									<msub>
+										<mi>𝐷</mi><mi>𝑓</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>exp</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<msub>
+											<mi>𝐷</mi><mi>𝑓</mi>
+										</msub>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
 						</li>
 					</ul>
 				</article>
@@ -34771,9 +35194,43 @@
 					<h4>対称化可能Cartan行列上のKac-Moody代数の自己同型の分類</h4>
 					<ul>
 						<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
+						<li><math><mi>𝑛</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#対称化可能Cartan行列">対称化可能Cartan行列</a> <math><mi>𝐴</mi></math></li>
 						<li><math><mi>𝐴</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
 						<li><a href="#Kac-Moody代数の内部自己同型"><math><mi>𝔤</mi></math> の内部自己同型</a>の集合 <math><mi>inn</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math></li>
+						<li>
+							<a href="#transvection">transvection</a>の集合
+							<math>
+								<msub>
+									<mi>hom</mi><mi>𝕂</mi>
+								</msub>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mi>𝔤</mi>
+											<mo>∕</mo>
+											<mrow>
+												<mo>[</mo>
+												<mrow>
+													<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+												</mrow>
+												<mo>]</mo>
+											</mrow>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<mi>𝑍</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+							</math>
+						</li>
 						<li><a href="#Dynkin図形の自己同型">Dynkin図形の自己同型のなす群</a> <math><mi>aut</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝐴</mi><mo>)</mo></mrow></math></li>
 						<li><math><mi>𝜔</mi></math></li>
 						<li>
@@ -34845,11 +35302,49 @@
 								</mrow>
 								<mo>⋉</mo>
 								<mrow>
-									<mi>inn</mi>
-									<mo>&af;</mo>
+									<mo>(</mo>
 									<mrow>
-										<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+										<mrow>
+											<msub>
+												<mi>hom</mi><mi>𝕂</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mi>𝔤</mi>
+														<mo>∕</mo>
+														<mrow>
+															<mo>[</mo>
+															<mrow>
+																<mi>𝔤</mi><mo>,</mo><mi>𝔤</mi>
+															</mrow>
+															<mo>]</mo>
+														</mrow>
+													</mrow>
+													<mo>,</mo>
+													<mrow>
+														<mi>𝑍</mi>
+														<mo>&af;</mo>
+														<mrow>
+															<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>×</mo>
+										<mrow>
+											<mi>inn</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝔤</mi><mo>)</mo>
+											</mrow>
+										</mrow>
 									</mrow>
+									<mo>)</mo>
 								</mrow>
 							</mrow>
 						</math>
@@ -39014,7 +39509,7 @@
 					<article class="proof">
 						<h5>証明</h5>
 						<p>
-							<span class="future-work">標数 <math><mn>0</mn></math> の体は完全体</span>なので，<math><mi>𝑥</mi></math> は<a href="../../module/linear-algebra/index.html#有限次元Jordan-Chevalley分解">Jordan-Chevalley分解 <math><mi>𝑥</mi><mo>=</mo><mrow><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math>を持つ</a>．<span class="future-work">跡や冪零性は代数閉で保たれる</span>ので，<math><mi>𝕂</mi></math> が代数閉体の場合を考えれればよい．<math><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a>の集合を <math><mi>𝛬</mi><mo>⊂</mo><mi>𝕂</mi></math> とし，<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間</a>を <math><msub><mi>𝑉</mi><mi>𝜆</mi></msub></math> とする．このとき，
+							<span class="future-work">標数 <math><mn>0</mn></math> の体は完全体</span>なので，<math><mi>𝑥</mi></math> は<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解の一意的存在">有限Jordan-Chevalley分解 <math><mi>𝑥</mi><mo>=</mo><mrow><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math>を持つ</a>．<span class="future-work">跡や冪零性は代数閉で保たれる</span>ので，<math><mi>𝕂</mi></math> が代数閉体の場合を考えれればよい．<math><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a>の集合を <math><mi>𝛬</mi><mo>⊂</mo><mi>𝕂</mi></math> とし，<a href="../../module/linear-algebra/index.html#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></math> の<a href="../../module/linear-algebra/index.html#固有ベクトル">固有空間</a>を <math><msub><mi>𝑉</mi><mi>𝜆</mi></msub></math> とする．このとき，
 							<math>
 								<mrow>
 									<mi>end</mi>
@@ -40476,7 +40971,7 @@
 							</math>
 						</li>
 						<li>
-							標数 <math><mn>0</mn></math> の体は完全体なので <a href="../../module/linear-algebra/index.html#有限次元Jordan-Chevalley分解"><math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> はJordan分解 <math><mrow><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></mrow><mo>=</mo><mrow><msub><mrow><mo>(</mo><mrow><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></mrow><mo>)</mo></mrow><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mrow><mo>(</mo><mrow><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></mrow><mo>)</mo></mrow><mi mathvariant="normal">n</mi></msub></mrow></math> が可能</a>．<a href="../index.html#微分代数の性質">微分代数の性質</a>より，
+							標数 <math><mn>0</mn></math> の体は完全体なので <a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解の一意的存在"><math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> はJordan分解 <math><mrow><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></mrow><mo>=</mo><mrow><msub><mrow><mo>(</mo><mrow><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></mrow><mo>)</mo></mrow><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mrow><mo>(</mo><mrow><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></mrow><mo>)</mo></mrow><mi mathvariant="normal">n</mi></msub></mrow></math> が可能</a>．<a href="../index.html#微分代数の性質">微分代数の性質</a>より，
 							<math>
 								<mrow>
 									<msub>
@@ -43040,7 +43535,7 @@
 					<ul>
 						<li>
 							<ul>
-								<li><math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a> <math><mi>𝑉</mi></math></li>
+								<li><a href="../../module/linear-algebra/index.html#有限次元">有限次元</a> <math><mi>𝕂</mi></math>-<a href="../../module/linear-algebra/index.html#線型空間">線型空間</a> <math><mi>𝑉</mi></math></li>
 								<li>
 									<a href="#無中心単純Lie代数">無中心半単純</a>な <math><mi>𝑉</mi></math> 上の<a href="#線型Lie代数">線型Lie代数</a>
 									<math>
@@ -43065,7 +43560,7 @@
 										<mrow>
 											<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
 										</mrow>
-									</math> の<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a> <math>
+									</math> の<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a> <math>
 										<mi>𝑥</mi>
 										<mo>=</mo>
 										<mrow>
@@ -43099,7 +43594,7 @@
 										<mrow>
 											<mi>𝑥</mi><mo>∈</mo><mi>𝔤</mi>
 										</mrow>
-									</math> の<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>は，<a href="#抽象Jordan分解">抽象Jordan分解</a>に等しい．
+									</math> の<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>は，<a href="#抽象Jordan分解">抽象Jordan分解</a>に等しい．
 								</li>
 							</ul>
 						</li>
@@ -43162,7 +43657,7 @@
 										</mrow>
 									</mrow>
 								</mrow>
-							</math> は<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>．
+							</math> は<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>．
 						</li>
 					</ul>
 				</article>
@@ -43187,7 +43682,7 @@
 													<mi>𝕂</mi><mo>‾</mo>
 												</mover>
 											</mrow>
-										</math> も<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>．また，<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>も保たれるから，<math>
+										</math> も<a href="#無中心単純Lie代数">無中心半単純Lie代数</a>．また，<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>も保たれるから，<math>
 											<mrow>
 												<mrow>
 													<msub>
@@ -43705,7 +44200,7 @@
 										</mrow>
 									</mrow>
 								</mrow>
-							</math> は<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>となる．<math><mi>𝕂</mi></math> の代数閉包を <math><mover><mi>𝕂</mi><mo>‾</mo></mover></math> とすると，<math>
+							</math> は<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>となる．<math><mi>𝕂</mi></math> の代数閉包を <math><mover><mi>𝕂</mi><mo>‾</mo></mover></math> とすると，<math>
 								<mi>𝑦</mi>
 								<mo>∈</mo>
 								<mrow>
@@ -43916,7 +44411,7 @@
 										</mrow>
 									</mrow>
 								</mrow>
-							</math> は <math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> における<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>となる．ゆえに，<math>
+							</math> は <math><mi>𝜌</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝔤</mi><mo>)</mo></mrow></math> における<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>となる．ゆえに，<math>
 								<mrow>
 									<mi>𝜌</mi>
 									<mo>&af;</mo>
@@ -43950,7 +44445,7 @@
 										</mrow>
 									</mrow>
 								</mrow>
-							</math> は<a href="#抽象Jordan分解">抽象Jordan分解</a>となるので，これは<a href="../../module/linear-algebra/index.html#Jordan-Chevalley分解">Jordan-Chevalley分解</a>に等しい．
+							</math> は<a href="#抽象Jordan分解">抽象Jordan分解</a>となるので，これは<a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>に等しい．
 						</li>
 					</ul>
 				</article>
@@ -44001,7 +44496,7 @@
 							<ul>
 								<li class="future-work">
 									<p>
-										<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝔥</mi></mrow></math> を取り，その<a href="#抽象Jordan分解">抽象Jordan分解</a>が<a href="#有限次元無中心半単純Lie代数の随伴表現の性質">一意的に存在する</a>からそれを <math><mi>𝑥</mi><mo>=</mo><mrow><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> とする．このとき <a href="../../module/linear-algebra/index.html#有限次元Jordan-Chevalley分解"><math><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub></mrow><mo>,</mo><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> は <math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> の多項式で書ける</a>から，
+										<math><mo>∀</mo><mo>&af;</mo><mrow><mi>𝑥</mi><mo>∈</mo><mi>𝔥</mi></mrow></math> を取り，その<a href="#抽象Jordan分解">抽象Jordan分解</a>が<a href="#有限次元無中心半単純Lie代数の随伴表現の性質">一意的に存在する</a>からそれを <math><mi>𝑥</mi><mo>=</mo><mrow><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub><mo>+</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> とする．このとき <a href="../../module/linear-algebra/index.html#有限Jordan-Chevalley分解"><math><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">s</mi></msub></mrow><mo>,</mo><mrow><mi>ad</mi><mo>&af;</mo><msub><mi>𝑥</mi><mi mathvariant="normal">n</mi></msub></mrow></math> は <math><mi>ad</mi><mo>&af;</mo><mi>𝑥</mi></math> の多項式で書ける</a>から，
 										<math display="block">
 											<mrow>
 												<mrow>

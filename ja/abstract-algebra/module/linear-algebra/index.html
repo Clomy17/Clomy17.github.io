@@ -1735,7 +1735,7 @@
 							<li>任意の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> 上の<a href="#線型空間">線型空間</a>は整列可能な<a href="#基底">基底</a>を持つ．</li>
 							<li>任意の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> 上の<a href="#線型空間">線型空間</a>は<a href="#基底">基底</a>を持つ．</li>
 							<li>標数 <math><mn>0</mn></math> の素体 <math><mi>ℚ</mi></math> 上の <a href="#線型空間">線型空間</a>は整列可能な<a href="#基底">基底</a>を持つ．</li>
-							<li>標数 <math><mn>0</mn></math> の素体 <math><msub><mi>𝔽</mi><mn>2</mn></msub></math> 上の <a href="#線型空間">線型空間</a>は整列可能な<a href="#基底">基底</a>を持つ．</li>
+							<li>標数 <math><mn>2</mn></math> の素体 <math><msub><mi>𝔽</mi><mn>2</mn></msub></math> 上の <a href="#線型空間">線型空間</a>は整列可能な<a href="#基底">基底</a>を持つ．</li>
 						</ul>
 					</article>
 				</article>
@@ -2571,6 +2571,28 @@
 							</li>
 						</ul>
 					</article>
+					<article id="最小多項式" class="dfn">
+						<h5>最小多項式</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+							<li><a href="#線型変換">線型変換</a> <math><mi>𝑓</mi><mo>∈</mo><mrow><mi>end</mi><mo>&af;</mo><mi>𝑉</mi></mrow></math></li>
+						</ul>
+						<p>を与える．</p>
+						<p>
+							<math><mi>𝑓</mi></math> の<dfn>最小多項式</dfn><span lang="en">(minimal polynomial)</span>とは，モニック多項式 <math><mi>𝑝</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><mo>∈</mo><mrow><mi>𝕂</mi><mo>&af;</mo><mrow><mo>[</mo><mi>𝑥</mi><mo>]</mo></mrow></mrow></math> であって，<math>
+								<mrow>
+									<mi>𝑝</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑓</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math> を満たすもののうち，次数が最小のものを言う．
+						</p>
+					</article>
 					<article id="半単純" class="dfn">
 						<h5>半単純</h5>
 						<ul>
@@ -2587,12 +2609,11 @@
 									<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
 								</mrow>
 							</math>
-							が<dfn>半単純</dfn><span lang="en">(seimisimple)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+							が<dfn>半単純</dfn><span lang="en">(semisimple)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
 						</p>
 						<ul>
-							<li>任意の <a href="#不変部分空間"><math><mi>𝑓</mi></math>-不変部分空間</a>に対し，<math><mi>𝑓</mi></math>-不変な<a href="#補空間">補空間</a>が存在する．</li>
-							<li>最小多項式が既約多項式の積で書ける．</li>
-							<li><math><mi>𝕂</mi></math> の代数閉包上<a href="#固有ベクトル">対角化可能</a>．</li>
+							<li><math><mi>𝑓</mi></math> の<a href="#最小多項式">最小多項式</a>が存在し，それが既約多項式の積で書ける．</li>
+							<li><math><mi>𝕂</mi></math> の代数閉包上<a href="#固有ベクトル">対角化可能</a>で，<a href="#固有ベクトル">固有空間</a>が有限個．</li>
 						</ul>
 					</article>
 					<article id="冪零" class="dfn">
@@ -2738,11 +2759,13 @@
 											<msup>
 												<mi>𝑓</mi>
 												<mrow>
-													<mo>−</mo><mn>1</mn>
+													<mo>−</mo><mi>𝑛</mi>
 												</mrow>
 											</msup>
 											<mo>∘</mo>
-											<mi>𝑓</mi>
+											<msup>
+												<mi>𝑓</mi><mi>𝑛</mi>
+											</msup>
 										</mrow>
 										<mo>&af;</mo>
 										<mi>𝑣</mi>
@@ -2840,96 +2863,6 @@
 									</mrow>
 									<mo>=</mo>
 									<mi>id</mi>
-								</math>
-							</li>
-						</ul>
-					</article>
-					<article id="Jordan-Chevalley分解" class="dfn">
-						<h5>Jordan-Chevalley分解</h5>
-						<ul>
-							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
-							<li>
-								<a href="#線型変換">線型変換</a>
-								<math>
-									<mi>𝑓</mi>
-									<mo>∈</mo>
-									<mrow>
-										<mi>end</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo><mi>𝑉</mi><mo>)</mo>
-										</mrow>
-									</mrow>
-								</math>
-							</li>
-						</ul>
-						<p>を与える．</p>
-						<p><math><mi>𝑓</mi></math>の<dfn>Jordan-Chevalley分解</dfn><span lang="en">(Jordan–Chevalley decomposition)</span>とは，以下のデータからなる：</p>
-						<ul>
-							<li>
-								<a href="#半単純">半単純</a>な<a href="#線型変換">線型変換</a>
-								<math>
-									<msub>
-										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
-									</msub>
-									<mo>∈</mo>
-									<mrow>
-										<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
-									</mrow>
-								</math>
-							</li>
-							<li>
-								<a href="#冪零">冪零</a>な<a href="#線型変換">線型変換</a>
-								<math>
-									<msub>
-										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
-									</msub>
-									<mo>∈</mo>
-									<mrow>
-										<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
-									</mrow>
-								</math>
-							</li>
-						</ul>
-						<p>これらは以下を満たす：</p>
-						<ul>
-							<li>
-								<math>
-									<mi>𝑓</mi>
-									<mo>=</mo>
-									<mrow>
-										<msub>
-											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
-										</msub>
-										<mo>+</mo>
-										<msub>
-											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
-										</msub>
-									</mrow>
-								</math>
-							</li>
-							<li>
-								<math>
-									<mrow>
-										<msub>
-											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
-										</msub>
-										<mo>&it;</mo>
-										<msub>
-											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
-										</msub>
-									</mrow>
-									<mo>=</mo>
-									<mrow>
-										<msub>
-											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
-										</msub>
-										<mo>&it;</mo>
-										<msub>
-											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
-										</msub>
-									</mrow>
 								</math>
 							</li>
 						</ul>
@@ -3080,27 +3013,385 @@
 						</li>
 					</ul>
 				</article>
-				<article id="有限次元Jordan-Chevalley分解" class="thm">
-					<h4>有限次元におけるJordan-Chevalley分解の存在条件</h4>
+				<article id="有限Jordan-Chevalley分解" class="dfn">
+					<h4>有限Jordan-Chevalley分解</h4>
 					<ul>
 						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-						<li>有限次元<a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
-					</ul>
-					<p>を与えると，以下が成り立つ：</p>
-					<ul>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
 						<li>
 							<a href="#線型変換">線型変換</a>
 							<math>
 								<mi>𝑓</mi>
 								<mo>∈</mo>
 								<mrow>
+									<mi>end</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p><math><mi>𝑓</mi></math>の<dfn>Jordan-Chevalley分解</dfn><span lang="en">(Jordan–Chevalley decomposition)</span>とは，以下のデータからなる：</p>
+					<ul>
+						<li>
+							<a href="#半単純">半単純</a>な<a href="#線型変換">線型変換</a>
+							<math>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+								</msub>
+								<mo>∈</mo>
+								<mrow>
 									<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
 								</mrow>
 							</math>
-							が<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>を持つ必要十分条件は <math><mi>𝑓</mi></math> の最小多項式が分離的であること．
 						</li>
-						<li>このとき，<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>は一意．</li>
-						<li>特に <math><mi>𝕂</mi></math> が完全体のとき，任意の<a href="#線型変換">線型変換</a>は<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>を持つ．</li>
+						<li>
+							<a href="#冪零">冪零</a>な<a href="#線型変換">線型変換</a>
+							<math>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+								</msub>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>これらは以下を満たす：</p>
+					<ul>
+						<li>
+							<math>
+								<mi>𝑓</mi>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>+</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<article id="有限Jordan-Chevalley分解の一意的存在" class="thm">
+						<h5>有限Jordan-Chevalley分解の一意的存在</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#有限次元">有限次元</a><a href="#線型空間"> <math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+							<li>
+								<a href="#線型変換">線型変換</a>
+								<math>
+									<mi>𝑓</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>end</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与えると，以下は同値：</p>
+						<ul>
+							<li><math><mi>𝑓</mi></math> が<a href="#有限Jordan-Chevalley分解">Jordan-Chevalley分解</a>を一意的に持つ．</li>
+							<li><math><mi>𝑓</mi></math> が<a href="#有限Jordan-Chevalley分解">Jordan-Chevalley分解</a>を持つ．</li>
+							<li><math><mi>𝑓</mi></math> の<a href="#最小多項式">最小多項式</a>が分離的．</li>
+						</ul>
+						<p>特に <math><mi>𝕂</mi></math> が完全体のとき，任意の<a href="#線型変換">線型変換</a>は<a href="#有限Jordan-Chevalley分解">Jordan-Chevalley分解</a>を一意的に持つ．</p>
+					</article>
+				</article>
+				<article id="有限Jordan-Chevalley分解の一意的存在の証明" class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>明らか．</li>
+						<li class="future-work">
+							<math>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+								</msub>
+							</math> の<a href="#最小多項式">最小多項式</a>を <math><mi>𝑝</mi></math> とすると，<math><msub><mi>𝑓</mi><mi mathvariant="normal">s</mi></msub><mo>,</mo><msub><mi>𝑓</mi><mi mathvariant="normal">n</mi></msub></math> の多項式 <math><mi>𝑞</mi></math> が存在し，<math>
+								<mrow>
+									<mi>𝑝</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+											</msub>
+											<mo>+</mo>
+											<msub>
+												<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+									<mo>&it;</mo>
+									<mi>𝑞</mi>
+								</mrow>
+							</math> と書ける．<a href="#冪零">冪零性の定義</a>より，<math>
+								<mo>∃</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑛</mi>
+									<mo>∈</mo>
+									<msub>
+										<mi>ℕ</mi><mn>0</mn>
+									</msub>
+								</mrow>
+							</math> に対し，<math>
+								<msup>
+									<mrow>
+										<mi>𝑝</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+												</msub>
+												<mo>+</mo>
+												<msub>
+													<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mi>𝑛</mi>
+								</msup>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+										</msub>
+										<mi>𝑛</mi>
+									</msup>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝑞</mi><mi>𝑛</mi>
+									</msup>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+							</math> となる．
+						</li>
+						<li class="future-work">
+							<math>
+								<mo>(</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>,</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+								<mo>)</mo>
+							</math> を <math><mi>𝑓</mi></math> <a href="#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>とし，<math>
+								<mo>(</mo>
+								<mrow>
+									<msubsup>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi><mo>′</mo>
+									</msubsup>
+									<mo>,</mo>
+									<msubsup>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi><mo>′</mo>
+									</msubsup>
+								</mrow>
+								<mo>)</mo>
+							</math> を?????とする．まず，<math>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+										</msub>
+										<mn>2</mn>
+									</msup>
+									<mo>+</mo>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msup>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+										</msub>
+										<mn>2</mn>
+									</msup>
+									<mo>+</mo>
+									<mrow>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>&it;</mo>
+									<mi>𝑓</mi>
+								</mrow>
+							</math> となる．同様に，<math>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+									<mo>&it;</mo>
+									<mi>𝑓</mi>
+								</mrow>
+							</math> だから，<math>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+								</msub>
+								<mo>,</mo>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+								</msub>
+								<mo>,</mo>
+								<msubsup>
+									<mi>𝑓</mi><mi mathvariant="normal">s</mi><mo>′</mo>
+								</msubsup>
+								<mo>,</mo>
+								<msubsup>
+									<mi>𝑓</mi><mi mathvariant="normal">n</mi><mo>′</mo>
+								</msubsup>
+							</math> は互いに可換．<math>
+								<mi>𝑓</mi>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>+</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msubsup>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi><mo>′</mo>
+									</msubsup>
+									<mo>+</mo>
+									<msubsup>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi><mo>′</mo>
+									</msubsup>
+								</mrow>
+							</math> より，<math>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>−</mo>
+									<msubsup>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi><mo>′</mo>
+									</msubsup>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msubsup>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi><mo>′</mo>
+									</msubsup>
+									<mo>−</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+							</math> となる．左辺より<a href="#半単純">これは <math><mi>𝕂</mi></math> の代数閉包上対角化可能</a>だが，右辺より<a href="#冪零性の基本性質">その固有値は <math><mn>0</mn></math> に限られる</a>．ゆえに，
+							<math>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>−</mo>
+									<msubsup>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi><mo>′</mo>
+									</msubsup>
+								</mrow>
+								<mo>=</mo>
+								<mn>0</mn>
+								<mo>=</mo>
+								<mrow>
+									<msubsup>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi><mo>′</mo>
+									</msubsup>
+									<mo>−</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+							</math> となる．
+						</li>
 					</ul>
 				</article>
 			</section>
@@ -3301,6 +3592,635 @@
 							より，<a href="#根基">右根基</a>は<a href="#零線型空間">零</a>．
 						</li>
 					</ul>
+				</article>
+			</section>
+			<section>
+				<h3>局所有限線型変換</h3>
+				<article id="局所有限" class="dfn">
+					<h4>局所有限</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<a href="#線型変換">線型変換</a>
+						<math>
+							<mi>𝑓</mi>
+							<mo>∈</mo>
+							<mrow>
+								<mi>end</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+						が<dfn>局所有限</dfn><span lang="en">(locally finite)</span>であるとは，<math>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+							</mrow>
+						</math> に対し，<math>
+							<msub>
+								<mi>span</mi><mi>𝕂</mi>
+							</msub>
+							<mo>&af;</mo>
+							<msub>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<msup>
+											<mi>𝑓</mi><mi>𝑛</mi>
+										</msup>
+										<mo>&af;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+								<mrow>
+									<mi>𝑛</mi>
+									<mo>∈</mo>
+									<msub>
+										<mi>ℕ</mi><mn>0</mn>
+									</msub>
+								</mrow>
+							</msub>
+						</math>
+						が<a href="#有限次元">有限次元</a>となることを言う．
+					</p>
+				</article>
+				<article id="局所半単純" class="dfn">
+					<h4>局所半単純</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<a href="#線型変換">線型変換</a>
+						<math>
+							<mi>𝑓</mi>
+							<mo>∈</mo>
+							<mrow>
+								<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+							</mrow>
+						</math>
+						が<dfn>局所半単純</dfn><span lang="en">(locally semisimple)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：
+					</p>
+					<ul>
+						<li>任意の <a href="#不変部分空間"><math><mi>𝑓</mi></math>-不変部分空間</a>に対し，<math><mi>𝑓</mi></math>-不変な<a href="#補空間">補空間</a>が存在する．</li>
+						<li><math><mi>𝕂</mi></math> の代数閉包上<a href="#固有ベクトル">対角化可能</a>．</li>
+					</ul>
+					<article id="局所半単純は局所有限" class="thm">
+						<h5>局所半単純は局所有限</h5>
+						<p>任意の<a href="#局所半単純">局所半単純</a><a href="#線型変換">線型変換</a>は<a href="#局所有限">局所有限</a>．</p>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> 上の<a href="#線型空間">線型空間</a> <math><mi>𝑉</mi></math> の<a href="#線型変換">線型変換</a> <math><mi>𝑓</mi></math> を与える．<math><mi>𝕂</mi></math> の代数閉包を <math><mover><mi>𝕂</mi><mo>‾</mo></mover></math> とし，<math>
+							<mover>
+								<mi>𝑉</mi><mo>‾</mo>
+							</mover>
+							<mo>≔</mo>
+							<mrow>
+								<mover>
+									<mi>𝕂</mi><mo>‾</mo>
+								</mover>
+								<msub>
+									<mo>⊗</mo><mi>𝕂</mi>
+								</msub>
+								<mi>𝑉</mi>
+							</mrow>
+						</math> とする．<math><mi>𝑓</mi></math> が<a href="#局所半単純">局所半単純</a>，つまり<math><mover><mi>𝑉</mi><mo>‾</mo></mover></math> は <math>
+							<mover>
+								<mi>𝑓</mi><mo>‾</mo>
+							</mover>
+							<mo>≔</mo>
+							<mrow>
+								<msub>
+									<mi>id</mi>
+									<mover>
+										<mi>𝕂</mi><mo>‾</mo>
+									</mover>
+								</msub>
+								<msub>
+									<mo>⊗</mo><mi>𝕂</mi>
+								</msub>
+								<mi>𝑓</mi>
+							</mrow>
+						</math> の<a href="#対角化可能">対角化可能</a>とする：
+						<math display="block">
+							<mi>𝑉</mi>
+							<mo>=</mo>
+							<mrow>
+								<munder intent=":largeop">
+									<mo>⨁</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝕂</mi>
+									</mrow>
+								</munder>
+								<mo>&af;</mo>
+								<msub>
+									<mi>𝑉</mi><mi>𝜆</mi>
+								</msub>
+							</mrow>
+						</math>
+						<a href="#直和">直和</a>の定義より，<math>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+							</mrow>
+						</math> に対し，有限集合 <math><mi>𝛬</mi><mo>⊆</mo><mover><mi>𝕂</mi><mo>‾</mo></mover></math> が存在し，<a href="#固有ベクトル">固有値</a> <math><mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi></math> の<a href="#固有ベクトル">固有ベクトル</a> <math><msub><mi>𝑣</mi><mi>𝜆</mi></msub></math> の線型結合で <math>
+							<mi>𝑣</mi>
+							<mo>=</mo>
+							<mrow>
+								<munder intent=":largeop">
+									<mo>∑</mo>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</munder>
+								<mo>&af;</mo>
+								<msub>
+									<mi>𝑣</mi><mi>𝜆</mi>
+								</msub>
+							</mrow>
+						</math> と表せる．すると，
+						<math display="block">
+							<mrow>
+								<msub>
+									<mi>span</mi>
+									<mover>
+										<mi>𝕂</mi><mo>‾</mo>
+									</mover>
+								</msub>
+								<mo>&af;</mo>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<msup>
+												<mover>
+													<mi>𝑓</mi><mo>‾</mo>
+												</mover>
+												<mi>𝑛</mi>
+											</msup>
+											<mo>&af;</mo>
+											<mi>𝑣</mi>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>∈</mo>
+										<msub>
+											<mi>ℕ</mi><mn>0</mn>
+										</msub>
+									</mrow>
+								</msub>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>span</mi>
+									<mover>
+										<mi>𝕂</mi><mo>‾</mo>
+									</mover>
+								</msub>
+								<mo>&af;</mo>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<mrow>
+												<msup>
+													<mi>𝜆</mi><mi>𝑛</mi>
+												</msup>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑣</mi><mi>𝜆</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>∈</mo>
+										<msub>
+											<mi>ℕ</mi><mn>0</mn>
+										</msub>
+									</mrow>
+								</msub>
+							</mrow>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>span</mi>
+									<mover>
+										<mi>𝕂</mi><mo>‾</mo>
+									</mover>
+								</msub>
+								<mo>&af;</mo>
+								<msub>
+									<mrow>
+										<mo>{</mo>
+										<msub>
+											<mi>𝑣</mi><mi>𝜆</mi>
+										</msub>
+										<mo>}</mo>
+									</mrow>
+									<mrow>
+										<mi>𝜆</mi><mo>∈</mo><mi>𝛬</mi>
+									</mrow>
+								</msub>
+							</mrow>
+						</math>
+						より，これは<a href="#有限次元">有限次元</a>となる．体の拡大で線型独立性は保存されるから，<math>
+							<msub>
+								<mi>span</mi><mi>𝕂</mi>
+							</msub>
+							<mo>&af;</mo>
+							<msub>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<msup>
+											<mi>𝑓</mi><mi>𝑛</mi>
+										</msup>
+										<mo>&af;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+								<mrow>
+									<mi>𝑛</mi>
+									<mo>∈</mo>
+									<msub>
+										<mi>ℕ</mi><mn>0</mn>
+									</msub>
+								</mrow>
+							</msub>
+						</math> と <math>
+							<msub>
+								<mi>span</mi>
+								<mover>
+									<mi>𝕂</mi><mo>‾</mo>
+								</mover>
+							</msub>
+							<mo>&af;</mo>
+							<msub>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<msup>
+											<mover>
+												<mi>𝑓</mi><mo>‾</mo>
+											</mover>
+											<mi>𝑛</mi>
+										</msup>
+										<mo>&af;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+								<mrow>
+									<mi>𝑛</mi>
+									<mo>∈</mo>
+									<msub>
+										<mi>ℕ</mi><mn>0</mn>
+									</msub>
+								</mrow>
+							</msub>
+						</math> の<a href="#基底">次元</a>は等しい．よって，<math><mi>𝑓</mi></math> は<a href="#局所有限">局所有限</a>．
+					</p>
+				</article>
+				<article id="局所冪零" class="dfn">
+					<h4>局所冪零</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+					</ul>
+					<p>を与える．</p>
+					<p>
+						<a href="#線型変換">線型変換</a>
+						<math>
+							<mi>𝑓</mi>
+							<mo>∈</mo>
+							<mrow>
+								<mi>end</mi>
+								<mo>&af;</mo>
+								<mrow>
+									<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+								</mrow>
+							</mrow>
+						</math>
+						が<dfn>局所冪零</dfn><span lang="en">(locally nilpotent)</span>であるとは，以下を満たすことを言う：
+						<math display="block">
+							<mrow>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑛</mi>
+										<mo>∈</mo>
+										<msub>
+											<mi>ℕ</mi><mn>0</mn>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<msup>
+											<mi>𝑓</mi><mi>𝑛</mi>
+										</msup>
+										<mo>&af;</mo>
+										<mi>𝑣</mi>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</mrow>
+							</mrow>
+						</math>
+					</p>
+					<article id="局所冪零は局所有限" class="thm">
+						<h5>局所冪零は局所有限</h5>
+						<p>任意の<a href="#局所冪零">局所冪零</a><a href="#線型変換">線型変換</a>は<a href="#局所有限">局所有限</a>．</p>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>それぞれの定義より明らか．</p>
+				</article>
+				<article id="Jordan-Chevalley分解" class="dfn">
+					<h4>Jordan-Chevalley分解</h4>
+					<ul>
+						<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+						<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+						<li>
+							（<a href="#局所有限">局所有限</a>）<a href="#線型変換">線型変換</a>
+							<math>
+								<mi>𝑓</mi>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与える．</p>
+					<p><math><mi>𝑓</mi></math>の<dfn>Jordan-Chevalley分解</dfn><span lang="en">(Jordan–Chevalley decomposition)</span>とは，以下のデータからなる：</p>
+					<ul>
+						<li>
+							<a href="#局所半単純">局所半単純</a>な<a href="#線型変換">線型変換</a>
+							<math>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+								</msub>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<a href="#局所冪零">局所冪零</a>な<a href="#線型変換">線型変換</a>
+							<math>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+								</msub>
+								<mo>∈</mo>
+								<mrow>
+									<mi>end</mi><mo>&af;</mo><mi>𝑉</mi>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>これらは以下を満たす：</p>
+					<ul>
+						<li>
+							<math>
+								<mi>𝑓</mi>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>+</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+									</msub>
+									<mo>&it;</mo>
+									<msub>
+										<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+									</msub>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<article id="Jordan-Chevalley分解の一意的存在" class="thm">
+						<h5>Jordan-Chevalley分解の一意的存在</h5>
+						<ul>
+							<li><a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><a href="#線型空間"><math><mi>𝕂</mi></math>-線型空間</a> <math><mi>𝑉</mi></math></li>
+							<li>
+								<a href="#線型変換">線型変換</a>
+								<math>
+									<mi>𝑓</mi>
+									<mo>∈</mo>
+									<mrow>
+										<mi>end</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑉</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+						<p>を与えると，以下は同値：</p>
+						<ul>
+							<li><math><mi>𝑓</mi></math> が<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>を一意的に持つ．</li>
+							<li><math><mi>𝑓</mi></math> が<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>を持つ．</li>
+							<li>
+								<math><mi>𝑓</mi></math> は<a href="#局所有限">局所有限</a>かつ，<math>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi>
+									</mrow>
+								</math> に対し，<math>
+									<msub>
+										<mi>𝑉</mi><mi>𝑣</mi>
+									</msub>
+									<mo>≔</mo>
+									<mrow>
+										<msub>
+											<mi>span</mi><mi>𝕂</mi>
+										</msub>
+										<mo>&af;</mo>
+										<msub>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<msup>
+														<mi>𝑓</mi><mi>𝑛</mi>
+													</msup>
+													<mo>&af;</mo>
+													<mi>𝑣</mi>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mrow>
+												<mi>𝑛</mi>
+												<mo>∈</mo>
+												<msub>
+													<mi>ℕ</mi><mn>0</mn>
+												</msub>
+											</mrow>
+										</msub>
+									</mrow>
+								</math> に対する <math>
+									<msub>
+										<mrow>
+											<mi>𝑓</mi><mo>|</mo>
+										</mrow>
+										<msub>
+											<mi>𝑉</mi><mi>𝑣</mi>
+										</msub>
+									</msub>
+								</math> の<a href="#最小多項式">最小多項式</a>が分離的．
+							</li>
+						</ul>
+						<p>特に <math><mi>𝕂</mi></math> が完全体のとき，任意の<a href="#局所有限">局所有限</a><a href="#線型変換">線型変換</a>は<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>を持つ．</p>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>一意性については，<a href="#有限Jordan-Chevalley分解の一意的存在の証明">有限次元のとき</a>と同様．</p>
+					<p>
+						各 <math><mi>𝑣</mi><mo>∈</mo><mi>𝑉</mi></math> に対する，<math>
+							<msub>
+								<mrow>
+									<mi>𝑓</mi><mo>|</mo>
+								</mrow>
+								<msub>
+									<mi>𝑉</mi><mi>𝑣</mi>
+								</msub>
+							</msub>
+						</math> の<a href="#有限Jordan-Chevalley分解">有限Jordan-Chevalley分解</a>を <math>
+							<msub>
+								<mrow>
+									<mi>𝑓</mi><mo>|</mo>
+								</mrow>
+								<msub>
+									<mi>𝑉</mi><mi>𝑣</mi>
+								</msub>
+							</msub>
+							<mo>=</mo>
+							<mrow>
+								<msub>
+									<mi>𝑆</mi><mi>𝑣</mi>
+								</msub>
+								<mo>+</mo>
+								<msub>
+									<mi>𝑁</mi><mi>𝑣</mi>
+								</msub>
+							</mrow>
+						</math> とし，<math>
+							<mrow>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">s</mi>
+								</msub>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑉</mi><mo>→</mo><mi>𝑉</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑣</mi>
+										<mo>↦</mo>
+										<mrow>
+											<msub>
+												<mi>𝑆</mi><mi>𝑣</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mi>𝑣</mi>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>,</mo>
+							<mrow>
+								<msub>
+									<mi>𝑓</mi><mi mathvariant="normal">n</mi>
+								</msub>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑉</mi><mo>→</mo><mi>𝑉</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑣</mi>
+										<mo>↦</mo>
+										<mrow>
+											<msub>
+												<mi>𝑁</mi><mi>𝑣</mi>
+											</msub>
+											<mo>&af;</mo>
+											<mi>𝑣</mi>
+										</mrow>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math> と定義すると，これは <math><mi>𝑓</mi></math> の<a href="#Jordan-Chevalley分解">Jordan-Chevalley分解</a>を与える．
+					</p>
 				</article>
 			</section>
 		</section>
