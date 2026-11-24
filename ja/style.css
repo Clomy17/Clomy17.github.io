@@ -155,9 +155,9 @@ svg {
 		fill: #eee;
 	}
 }
-svg.inline {
+svg.inline-text {
 	display: inline;
-	margin: 0;
+	vertical-align: bottom;
 }
 
 line, polyline {

@@ -23483,6 +23483,283 @@
 							</ul>
 						</li>
 					</ul>
+					<article id="Cartan行列の性質" class="thm">
+						<h5>Cartan行列の性質</h5>
+						<p><math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math> を与えると，以下が成り立つ：</p>
+						<ul>
+							<li><math><mi>𝐴</mi></math> が単純であることと，既約であることは同値</li>
+							<li>
+								<math><mi>𝐴</mi></math> が既約ならば，<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑢</mi>
+											<mo>∈</mo>
+											<msubsup>
+												<mi>ℝ</mi>
+												<mrow>
+													<mo>≥</mo><mn>0</mn>
+												</mrow>
+												<mi>𝑙</mi>
+											</msubsup>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mrow>
+													<mi>𝐴</mi><mo>&it;</mo><mi>𝑢</mi>
+												</mrow>
+												<mo>∈</mo>
+												<msubsup>
+													<mi>ℝ</mi>
+													<mrow>
+														<mo>≥</mo><mn>0</mn>
+													</mrow>
+													<mi>𝑙</mi>
+												</msubsup>
+											</mrow>
+											<mo>⇒</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑢</mi>
+													<mo>∈</mo>
+													<msubsup>
+														<mi>ℝ</mi>
+														<mrow>
+															<mo>&gt;</mo><mn>0</mn>
+														</mrow>
+														<mi>𝑙</mi>
+													</msubsup>
+												</mrow>
+												<mo>∪</mo>
+												<mrow>
+													<mi>𝑢</mi><mo>=</mo><mn>0</mn>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</math>
+							</li>
+						</ul>
+					</article>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<ul>
+						<li>
+							一般の行列に対して単純ならば既約．逆を示す．<math><mi>𝐴</mi></math> が既約なとき，<math><mi>𝑆</mi><mo>⊆</mo><mi>𝑙</mi></math> に関する <math><mi>𝐴</mi></math> の小行列を <math><msub><mi>𝐴</mi><mi>𝑆</mi></msub></math> とすると，既約性の定義より，
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mo>∃</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑖</mi>
+											<mo>∈</mo>
+											<mrow>
+												<mi>𝑙</mi><mo>∖</mo><mi>𝑆</mi>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑠</mi><mo>,</mo><mi>𝑖</mi>
+												</mrow>
+											</msub>
+											<mo>≠</mo>
+											<mn>0</mn>
+										</mrow>
+										<mo>∪</mo>
+										<mrow>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑠</mi>
+												</mrow>
+											</msub>
+											<mo>≠</mo>
+											<mn>0</mn>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+							となるが，<a href="#Cartan行列">Cartan行列の定義</a>より，<math>
+								<mrow>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝑠</mi><mo>,</mo><mi>𝑖</mi>
+										</mrow>
+									</msub>
+									<mo>,</mo>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝑖</mi><mo>,</mo><mi>𝑠</mi>
+										</mrow>
+									</msub>
+								</mrow>
+								<mo>≠</mo>
+								<mn>0</mn>
+							</math> が言える．
+						</li>
+						<li>
+							<math>
+								<mo>∀</mo>
+								<mo>&af;</mo>
+								<mrow>
+									<mi>𝑢</mi>
+									<mo>≠</mo>
+									<msubsup>
+										<mi>ℝ</mi>
+										<mrow>
+											<mo>&gt;</mo><mn>0</mn>
+										</mrow>
+										<mi>𝑙</mi>
+									</msubsup>
+								</mrow>
+							</math> のとき，<math>
+								<mi>𝐼</mi>
+								<mo>≔</mo>
+								<mrow>
+									<mo>{</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑖</mi><mo>∈</mo><mi>𝑙</mi>
+										</mrow>
+										<mo>|</mo>
+										<mrow>
+											<msub>
+												<mi>𝑢</mi><mi>𝑖</mi>
+											</msub>
+											<mo>=</mo>
+											<mn>0</mn>
+										</mrow>
+									</mrow>
+									<mo>}</mo>
+								</mrow>
+							</math> とすると，<math>
+								<mrow>
+									<mo>∀</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑖</mi><mo>∈</mo><mi>𝐼</mi>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑗</mi>
+												<mo>∈</mo>
+												<mrow>
+													<mi>𝑙</mi><mo>∖</mo><mi>𝐼</mi>
+												</mrow>
+											</mrow>
+										</munder>
+										<mo>&af;</mo>
+										<mrow>
+											<msub>
+												<mi>𝑎</mi>
+												<mrow>
+													<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+												</mrow>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑢</mi><mi>𝑗</mi>
+											</msub>
+										</mrow>
+									</mrow>
+									<mo>∈</mo>
+									<msub>
+										<mi>ℝ</mi>
+										<mrow>
+											<mo>≥</mo><mn>0</mn>
+										</mrow>
+									</msub>
+								</mrow>
+							</math> となるが，<a href="#Cartan行列">Cartan行列の定義</a>より <math>
+								<mrow>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mi>𝐼</mi>
+											<mo>,</mo>
+											<mrow>
+												<mi>𝑙</mi><mo>∖</mo><mi>𝐼</mi>
+											</mrow>
+										</mrow>
+									</msub>
+									<mo>,</mo>
+									<msub>
+										<mi>𝑎</mi>
+										<mrow>
+											<mrow>
+												<mi>𝑙</mi><mo>∖</mo><mi>𝐼</mi>
+											</mrow>
+											<mo>,</mo>
+											<mi>𝐼</mi>
+										</mrow>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mo>{</mo><mn>0</mn><mo>}</mo>
+								</mrow>
+							</math> となる．つまり，<math>
+								<mi>𝐴</mi>
+								<mo>=</mo>
+								<mrow>
+									<msub>
+										<mi>𝐴</mi><mi>𝐼</mi>
+									</msub>
+									<mo>⊕</mo>
+									<msub>
+										<mi>𝐴</mi>
+										<mrow>
+											<mi>𝑙</mi><mo>∖</mo><mi>𝐼</mi>
+										</mrow>
+									</msub>
+								</mrow>
+							</math> と書けるが，<math><mi>𝐴</mi></math> は仮定より既約だったから，<math>
+								<mrow>
+									<mrow>
+										<mi>𝑙</mi><mo>∖</mo><mi>𝐼</mi>
+									</mrow>
+									<mo>=</mo>
+									<mi>∅</mi>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mi>𝐼</mi><mo>=</mo><mi>𝑙</mi>
+								</mrow>
+								<mo>⇔</mo>
+								<mrow>
+									<mi>𝑢</mi><mo>=</mo><mn>0</mn>
+								</mrow>
+							</math>
+						</li>
+					</ul>
 				</article>
 				<article id="基本ルートデータ" class="dfn">
 					<h4>基本ルートデータ</h4>
@@ -35050,7 +35327,7 @@
 							<dfn>整ウェイト</dfn><span lang="en">(integral weight)</span>とは，以下の集合の元のこと：
 							<math display="block">
 								<msub>
-									<mi>𝛥</mi><mi mathvariant="normal">w</mi>
+									<mi>𝛷</mi><mi mathvariant="normal">w</mi>
 								</msub>
 								<mo>≔</mo>
 								<mrow>
@@ -35098,7 +35375,7 @@
 							<dfn>優整ウェイト</dfn><span lang="en">(dominant integral weight)</span>とは，以下の集合の元のこと：
 							<math display="block">
 								<msubsup>
-									<mi>𝛥</mi><mi mathvariant="normal">w</mi><mo>≥</mo>
+									<mi>𝛷</mi><mi mathvariant="normal">w</mi><mo>≥</mo>
 								</msubsup>
 								<mo>≔</mo>
 								<mrow>
@@ -35148,7 +35425,7 @@
 							<dfn>強い優整ウェイト</dfn><span lang="en">(strongly dominant integral weight)</span>とは，以下の集合の元のこと：
 							<math display="block">
 								<msubsup>
-									<mi>𝛥</mi><mi mathvariant="normal">w</mi><mi>+</mi>
+									<mi>𝛷</mi><mi mathvariant="normal">w</mi><mi>+</mi>
 								</msubsup>
 								<mo>≔</mo>
 								<mrow>
@@ -35550,7 +35827,7 @@
 						<p>を与えると，以下は同値：</p>
 						<ul>
 							<li><math><mi>𝔤</mi></math> が<a href="../../module/linear-algebra/index.html#有限次元">有限次元</a>．</li>
-							<li><math><mi>𝔤</mi></math> の<a href="#Kac-Moody代数の基本性質">ルートの集合</a> <math><mi>𝛥</mi></math> は有限集合．</li>
+							<li><math><mi>𝔤</mi></math> の<a href="#Kac-Moody代数の基本性質">ルートの集合</a> <math><mi>𝛷</mi></math> は有限集合．</li>
 							<li><a href="#Weyl群">Weyl群</a> <math><mi>𝑊</mi></math> は有限集合．</li>
 							<li><math><mi>𝐴</mi></math> が<a href="#対称化可能Cartan行列">対称化可能</a>かつ<a href="#対称化可能Cartan行列">標準形式</a>が正定値．</li>
 							<li><math><mi>𝐴</mi></math> が<a href="#対称化可能Cartan行列">対称化可能</a>かつ <math><mi>𝔤</mi></math> が<a href="#Weyl群">虚ルート</a>を持たない．</li>
@@ -35587,7 +35864,7 @@
 						<h5>証明</h5>
 						<p>まずは，<a href="../../module/linear-algebra/index.html#有限次元">有限次元性</a>以外の同値性を示す：</p>
 						<ul>
-							<li><math><mi>𝛥</mi></math> が有限ならば，<math><mi>𝑊</mi></math> が有限となるのは明らか．</li>
+							<li><math><mi>𝛷</mi></math> が有限ならば，<math><mi>𝑊</mi></math> が有限となるのは明らか．</li>
 							<li>
 								<math><mi>𝑊</mi></math> が有限のとき，<math><mi>𝔼</mi></math> は<a href="../../module/linear-algebra/index.html#有限次元">有限次元</a>なので，内積
 								<math>
@@ -35664,7 +35941,7 @@
 										<mi>𝛼</mi>
 										<mo>∈</mo>
 										<msub>
-											<mi>𝛥</mi><mi>re</mi>
+											<mi>𝛷</mi><mi>re</mi>
 										</msub>
 									</mrow>
 								</math> に対し，
@@ -35748,11 +36025,11 @@
 									</mrow>
 									<mo>}</mo>
 								</math>
-								は離散コンパクト集合なので有限．<math><msub><mi>𝛥</mi><mi>re</mi></msub></math> はこれに含まれるので，有限集合．
+								は離散コンパクト集合なので有限．<math><msub><mi>𝛷</mi><mi>re</mi></msub></math> はこれに含まれるので，有限集合．
 							</li>
 						</ul>
 						<p>
-							残りの条件と<a href="../../module/linear-algebra/index.html#有限次元">有限次元性</a>の同値性を示す．「<math><mi>𝔤</mi></math> が<a href="../../module/linear-algebra/index.html#有限次元">有限次元</a>⇒<math><mi>𝛥</mi></math> が有限」は明らか．逆に下の5条件が成り立つとき，<math>
+							残りの条件と<a href="../../module/linear-algebra/index.html#有限次元">有限次元性</a>の同値性を示す．「<math><mi>𝔤</mi></math> が<a href="../../module/linear-algebra/index.html#有限次元">有限次元</a>⇒<math><mi>𝛷</mi></math> が有限」は明らか．逆に下の5条件が成り立つとき，<math>
 								<mo>∀</mo>
 								<mo>&af;</mo>
 								<mrow>
@@ -35779,7 +36056,7 @@
 									<mo>∈</mo>
 									<mrow>
 										<mrow>
-											<mi>𝛥</mi>
+											<mi>𝛷</mi>
 											<mo>∖</mo>
 											<mrow>
 												<mo>{</mo><mn>0</mn><mo>}</mo>
@@ -35787,7 +36064,7 @@
 										</mrow>
 										<mo>=</mo>
 										<msub>
-											<mi>𝛥</mi><mi>re</mi>
+											<mi>𝛷</mi><mi>re</mi>
 										</msub>
 									</mrow>
 								</mrow>
@@ -35813,7 +36090,7 @@
 									<mrow>
 										<mo>|</mo>
 										<msub>
-											<mi>𝛥</mi><mi>re</mi>
+											<mi>𝛷</mi><mi>re</mi>
 										</msub>
 										<mo>|</mo>
 									</mrow>
@@ -36305,12 +36582,21 @@
 							<p>逆に，これら以外の <a href="#X型Cartan行列"><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</a>は互いに相異なる．</p>
 						</article>
 					</article>
-					<article id="有限次元Kac-Moody代数の分類" class="thm">
-						<h5>有限次元Kac-Moody代数の分類</h5>
-						<p>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えると，以下が成り立つ：</p>
+					<article id="有限型Kac-Moody代数" class="dfn">
+						<h5>有限型Kac-Moody代数</h5>
 						<ul>
+							<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
+							<li><math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> 次の<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
+							<li><math><mi>𝐴</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
+							<li><math><mi>𝔤</mi></math> の<a href="#Weyl群">Weyl群</a> <math><mi>𝑊</mi></math></li>
+							<li><math><mi>𝔤</mi></math> の<a href="#Kac-Moody代数の基本性質">ルートの集合</a> <math><mi>𝛷</mi></math></li>
+						</ul>
+						<p>を与える．</p>
+						<p><math><mi>𝐴</mi><mo>,</mo><mi>𝔤</mi></math> が<dfn>有限型</dfn><span lang="en">(finite type)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
+						<ul>
+							<li><math><mi>𝐴</mi></math> が既約かつ <math><mi>𝔤</mi></math> が<a href="#有限次元Kac-Moody代数">有限次元（無中心単純）</a></li>
 							<li>
-								<math><mi>𝕂</mi></math> 上の<a href="#単純Lie代数">単純</a>な<a href="#有限次元Kac-Moody代数">有限次元Kac-Moody代数</a>は以下の <a href="#X型Cartan行列"><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</a>に対する<a href="#Kac-Moody代数">Kac-Moody代数</a>の内，いずれかに等しい：
+								<math><mi>𝐴</mi></math> が <a href="#X型Cartan行列"><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</a> のうち，以下のいずれかに（行・列の入れ替えを許して）等しい：
 								<ul>
 									<li>
 										<math>
@@ -36418,13 +36704,11 @@
 									</li>
 								</ul>
 							</li>
-							<li>任意の<a href="#有限次元Kac-Moody代数">有限次元Kac-Moody代数</a>は，以上の <a href="#X型Cartan行列"><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</a>に対する<a href="#Kac-Moody代数">Kac-Moody代数</a>の<a href="#直和">直和</a>に<a href="#同型">同型</a>．</li>
 						</ul>
 					</article>
-					<article class="proof">
-						<h5>証明</h5>
-						<p>
-						</p>
+					<article id="有限次元Kac-Moody代数の分類" class="thm">
+						<h5>有限次元Kac-Moody代数の分類</h5>
+						<p>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math> を与えると，任意の<a href="#有限次元Kac-Moody代数">有限次元Kac-Moody代数</a>は，<a href="#有限型Kac-Moody代数">有限型Kac-Moody代数</a>に対する<a href="#Kac-Moody代数">Kac-Moody代数</a>の<a href="#直和">直和</a>に<a href="#同型">同型</a>．</p>
 					</article>
 				</section>
 				<section>
@@ -36433,13 +36717,15 @@
 						<h5>アフィン型Kac-Moody代数</h5>
 						<ul>
 							<li>標数 <math><mn>0</mn></math> の<a href="../../ring-like/field/index.html#体">体</a> <math><mi>𝕂</mi></math></li>
-							<li><math><mrow><mi>𝑙</mi><mo>+</mo><mn>1</mn></mrow><mo>∈</mo><mi>ℕ</mi></math> 次の既約な<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
+							<li><math><mi>𝑙</mi><mo>∈</mo><mi>ℕ</mi></math> 次の既約な<a href="#Cartan行列">Cartan行列</a> <math><mi>𝐴</mi></math></li>
 							<li><math><mi>𝐴</mi></math> に関する<a href="#Kac-Moody代数">Kac-Moody代数</a> <math><mi>𝔤</mi></math></li>
-							<li><math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a> <math><mo>(</mo><mo>,</mo><mo>)</mo></math></li>
+							<li><math><mi>𝔤</mi></math> の<a href="#Weyl群">Weyl群</a> <math><mi>𝑊</mi></math></li>
+							<li><math><mi>𝔤</mi></math> の<a href="#Kac-Moody代数の基本性質">ルートの集合</a> <math><mi>𝛷</mi></math></li>
 						</ul>
 						<p>を与える．</p>
 						<p><math><mi>𝐴</mi><mo>,</mo><mi>𝔤</mi></math> が<dfn>アフィン型</dfn><span lang="en">(affine type)</span>であるとは，以下の同値な条件のいずれか（ゆえに全て）を満たすことを言う：</p>
 						<ul>
+							<li><math><mi>𝔤</mi></math> の<a href="#Kac-Moody代数">ルート</a> <math><mi>𝛿</mi><mo>∈</mo><mi>𝛷</mi></math> が存在し，<a href="#整ウェイト">強い優</a>かつ <math><mi>𝑊</mi></math>-不変．</li>
 							<li>
 								<math>
 									<mrow>
@@ -36453,9 +36739,7 @@
 												<mrow>
 													<mo>&gt;</mo><mn>0</mn>
 												</mrow>
-												<mrow>
-													<mi>𝑙</mi><mo>+</mo><mn>1</mn>
-												</mrow>
+												<mi>𝑙</mi>
 											</msubsup>
 										</mrow>
 									</mrow>
@@ -36469,8 +36753,7 @@
 									</mrow>
 								</math>
 							</li>
-							<li><math><mi>𝔤</mi></math> のルート <math><mi>𝛿</mi><mo>∈</mo><mi>𝛥</mi></math> が存在し，<a href="#整ウェイト">強い優</a>かつ <math><mi>𝑊</mi></math> 不変．</li>
-							<li><math><mi>𝐴</mi></math> は正則でなく，かつ全ての主小行列が <a href="#X型Cartan行列"><math><msub><mi>𝑋</mi><mi>𝑙</mi></msub></math> 型Cartan行列</a>に（行・列の入れ替えで）等しい．</li>
+							<li><math><mi>𝐴</mi></math> は正則でなく，かつ全ての（主）小行列が<a href="#有限型Kac-Moody代数">有限型</a>の直和．</li>
 							<li>
 								<math><mi>𝐴</mi></math> が<a href="#対称化可能Cartan行列">対称化可能</a>かつ以下のいずれか（実際は全て）を満たす：
 								<ul>
@@ -36478,18 +36761,18 @@
 									<li>
 										<math><mi>𝔤</mi></math> の<a href="#対称化可能Cartan行列">標準形式</a> <math><mo>(</mo><mo>,</mo><mo>)</mo></math> と<a href="#Weyl群">虚ルートの集合</a> <math>
 											<msub>
-												<mi>𝛥</mi><mi>im</mi>
+												<mi>𝛷</mi><mi>im</mi>
 											</msub>
 										</math> に対し，<math>
 											<mrow>
 												<mo>(</mo>
 												<mrow>
 													<msub>
-														<mi>𝛥</mi><mi>im</mi>
+														<mi>𝛷</mi><mi>im</mi>
 													</msub>
 													<mo>,</mo>
 													<msub>
-														<mi>𝛥</mi><mi>im</mi>
+														<mi>𝛷</mi><mi>im</mi>
 													</msub>
 												</mrow>
 												<mo>)</mo>
@@ -36506,7 +36789,7 @@
 												<munder>
 													<mi>sup</mi>
 													<mrow>
-														<mi>𝛼</mi><mo>∈</mo><mi>𝛥</mi>
+														<mi>𝛼</mi><mo>∈</mo><mi>𝛷</mi>
 													</mrow>
 												</munder>
 												<mo>&af;</mo>
@@ -36530,7 +36813,280 @@
 						<h5>条件の同値性の証明</h5>
 						<ul>
 							<li>
-								<math><mi>𝛿</mi></math> が<a href="#整ウェイト">強い優</a>ルートである，つまり，
+								<math><mi>𝛿</mi><mo>∈</mo><mi>𝛷</mi></math> の<a href="#Kac-Moody代数">単純ルート</a>での展開 <math>
+									<mi>𝛿</mi>
+									<mo>=</mo>
+									<mrow>
+										<munder intent=":largeop">
+											<mo>∑</mo>
+											<mrow>
+												<mi>𝑖</mi><mo>∈</mo><mi>𝑙</mi>
+											</mrow>
+										</munder>
+										<mo>&af;</mo>
+										<mrow>
+											<msub>
+												<mi>𝑢</mi><mi>𝑖</mi>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝛼</mi><mi>𝑖</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</math> に対し，<math>
+									<mrow>
+										<mrow>
+											<msub>
+												<mi>𝜎</mi>
+												<msub>
+													<mi>𝛼</mi><mi>𝑗</mi>
+												</msub>
+											</msub>
+											<mo>&af;</mo>
+											<mi>𝛿</mi>
+										</mrow>
+										<mo>−</mo>
+										<mi>𝛿</mi>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>−</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<munder intent=":largeop">
+														<mo>∑</mo>
+														<mrow>
+															<mi>𝑖</mi><mo>∈</mo><mi>𝑙</mi>
+														</mrow>
+													</munder>
+													<mo>&af;</mo>
+													<mrow>
+														<msub>
+															<mi>𝑢</mi><mi>𝑖</mi>
+														</msub>
+														<mo>&it;</mo>
+														<msub>
+															<mi>𝑎</mi>
+															<mrow>
+																<mi>𝑖</mi><mo>,</mo><mi>𝑗</mi>
+															</mrow>
+														</msub>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝛼</mi><mi>𝑗</mi>
+											</msub>
+										</mrow>
+									</mrow>
+								</math> となる．ゆえに，<math><mi>𝛿</mi></math> が<a href="#整ウェイト">強い優</a>かつ <math><mi>𝑊</mi></math>-不変ならば，<math>
+									<mi>𝑢</mi>
+									<mo>≔</mo>
+									<msub>
+										<mrow>
+											<mo>(</mo>
+											<msub>
+												<mi>𝑢</mi><mi>𝑖</mi>
+											</msub>
+											<mo>)</mo>
+										</mrow>
+										<mrow>
+											<mi>𝑖</mi><mo>∈</mo><mi>𝑛</mi>
+										</mrow>
+									</msub>
+									<mo>∈</mo>
+									<msup>
+										<mi>ℕ</mi><mi>𝑙</mi>
+									</msup>
+									<mo>⊂</mo>
+									<msubsup>
+										<mi>ℝ</mi>
+										<mrow>
+											<mo>&gt;</mo><mn>0</mn>
+										</mrow>
+										<mi>𝑙</mi>
+									</msubsup>
+								</math> であり，かつ <math>
+									<mrow>
+										<mi>𝐴</mi><mo>&it;</mo><mi>𝑢</mi>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</math> を満たす．
+							</li>
+							<li>
+								<math><mi>𝐴</mi></math> が正則ならば，<math>
+									<mi>𝑢</mi>
+									<mo>=</mo>
+									<mrow>
+										<msup>
+											<mi>𝐴</mi>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&it;</mo>
+										<mi>𝑢</mi>
+									</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+								</math> となって矛盾するから，<math><mi>𝐴</mi></math> は正則でない．また，<math><mi>𝑆</mi><mo>⊂</mo><mi>𝑙</mi></math> とし，<math><msub><mi>𝐴</mi><mi>𝑆</mi></msub></math> を <math><mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi></math> の行・列を抜き出した小行列，<math><msub><mi>𝑢</mi><mi>𝑆</mi></msub></math> を <math><mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi></math> 成分のみ取り出した数ベクトルとすると，明らかに，<math>
+									<mrow>
+										<msub>
+											<mi>𝐴</mi><mi>𝑆</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑢</mi><mi>𝑆</mi>
+										</msub>
+									</mrow>
+									<mo>∈</mo>
+									<msubsup>
+										<mi>ℝ</mi>
+										<mrow>
+											<mo>≥</mo><mn>0</mn>
+										</mrow>
+										<mi>𝑆</mi>
+									</msubsup>
+								</math> となる．特に，<math>
+									<mrow>
+										<mrow>
+											<msub>
+												<mi>𝐴</mi><mi>𝑆</mi>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑢</mi><mi>𝑆</mi>
+											</msub>
+										</mrow>
+										<mo>∉</mo>
+										<msubsup>
+											<mi>ℝ</mi>
+											<mrow>
+												<mo>&gt;</mo><mn>0</mn>
+											</mrow>
+											<mi>𝑆</mi>
+										</msubsup>
+									</mrow>
+									<mo>⇔</mo>
+									<mrow>
+										<mrow>
+											<msub>
+												<mi>𝐴</mi><mi>𝑆</mi>
+											</msub>
+											<mo>&it;</mo>
+											<msub>
+												<mi>𝑢</mi><mi>𝑆</mi>
+											</msub>
+										</mrow>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+								</math> ならば，<math>
+									<mrow>
+										<mo>∀</mo>
+										<mo>&af;</mo>
+										<mrow>
+											<mi>𝑠</mi><mo>∈</mo><mi>𝑆</mi>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mrow>
+											<munder intent=":largeop">
+												<mo>∑</mo>
+												<mrow>
+													<mi>𝑗</mi>
+													<mo>∈</mo>
+													<mrow>
+														<mi>𝑙</mi><mo>∖</mo><mi>𝑆</mi>
+													</mrow>
+												</mrow>
+											</munder>
+											<mo>&af;</mo>
+											<mrow>
+												<msub>
+													<mi>𝑎</mi>
+													<mrow>
+														<mi>𝑠</mi><mo>,</mo><mi>𝑗</mi>
+													</mrow>
+												</msub>
+												<mo>&it;</mo>
+												<msub>
+													<mi>𝑢</mi><mi>𝑗</mi>
+												</msub>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mrow>
+								</math> となる．<a href="#Cartan行列">Cartan行列の定義</a>より，<math>
+									<mrow>
+										<msub>
+											<mi>𝑎</mi>
+											<mrow>
+												<mi>𝑆</mi>
+												<mo>,</mo>
+												<mrow>
+													<mi>𝑙</mi><mo>∖</mo><mi>𝑆</mi>
+												</mrow>
+											</mrow>
+										</msub>
+										<mo>,</mo>
+										<msub>
+											<mi>𝑎</mi>
+											<mrow>
+												<mrow>
+													<mi>𝑙</mi><mo>∖</mo><mi>𝑆</mi>
+												</mrow>
+												<mo>,</mo>
+												<mi>𝑆</mi>
+											</mrow>
+										</msub>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mo>{</mo><mn>0</mn><mo>}</mo>
+									</mrow>
+								</math> が言えるから，<math>
+									<mi>𝐴</mi>
+									<mo>=</mo>
+									<mrow>
+										<msub>
+											<mi>𝐴</mi><mi>𝑆</mi>
+										</msub>
+										<mo>⊕</mo>
+										<msub>
+											<mi>𝐴</mi>
+											<mrow>
+												<mi>𝑙</mi><mo>∖</mo><mi>𝑆</mi>
+											</mrow>
+										</msub>
+									</mrow>
+								</math> となり，<math><mi>𝐴</mi></math> の既約性に矛盾．ゆえに，<math>
+									<mrow>
+										<msub>
+											<mi>𝐴</mi><mi>𝑆</mi>
+										</msub>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝑢</mi><mi>𝑆</mi>
+										</msub>
+									</mrow>
+									<mo>∈</mo>
+									<msubsup>
+										<mi>ℝ</mi>
+										<mrow>
+											<mo>&gt;</mo><mn>0</mn>
+										</mrow>
+										<mi>𝑆</mi>
+									</msubsup>
+								</math> となる．<a href="#有限次元Kac-Moody代数">Kac-Moody代数が有限次元となる条件の一つ</a>より，<math><msub><mi>𝐴</mi><mi>𝑆</mi></msub></math> は<a href="#有限型Kac-Moody代数">有限型Cartan行列</a>の直和．
 							</li>
 						</ul>
 						<p>
@@ -51989,6 +52545,7 @@
 				<li lang="en">James Edward Humphreys, "<cite>Introduction to Lie Algebras and Representation Theory</cite>", <a href="https://doi.org/10.1007/978-1-4612-6398-2">doi:10.1007/978-1-4612-6398-2</a></li>
 				<li lang="en">James Edward Humphreys, "<cite>Representations of Semisimple Lie Algebras in the <abbr>BGG</abbr> Category <math><mi>𝒪</mi></math></cite>, <a href="https://doi.org/10.1090/gsm/094">doi:10.1090/gsm/094</a></li>
 				<li lang="en">Robert Vaughan Moody, Arturo Pianzola, "<cite>Lie Algebras with Triangular Decompositions</cite>", ISBN 978-0471633044</li>
+				<li lang="en">Victor Gershevich Kac, "<cite>Infinite-Dimensional Lie Algebras</cite>", <a href="https://doi.org/10.1017/CBO9780511626234">doi:10.1017/CBO9780511626234</a></li>
 				<li>谷崎 俊之「<cite>リー代数と量子群 </cite>」ISBN 978-4320016927</li>
 				<li lang="en">Pavel Etingof, Shlomo Gelaki, Dmitri Nikshych, Victor Ostrik, "<cite>Tensor Categories</cite>", ISBN 978-1-4704-2349-0</li>
 				<li lang="en">Vidas Regelskis, Bart Vlaar, "<cite>Pseudo-symmetric pairs for Kac-Moody algebras</cite>", <a href="https://doi.org/10.48550/arXiv.2108.00260">doi:10.48550/arXiv.2108.00260</a></li>
