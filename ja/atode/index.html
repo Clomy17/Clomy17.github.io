@@ -104,7 +104,7 @@
 		<section>
 			<h2>軌道体</h2>
 			<section>
-				<h3><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> のメモ</h3>
+				<h3><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> のメモ</h3>
 				<article id="トーラス上の実線型変換" class="thm">
 					<h4><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上の <math><mi>ℝ</mi></math>-線型変換</h4>
 					<ul>
@@ -1037,7 +1037,7 @@
 									</mrow>
 									<mo>∈</mo>
 									<mi>ℤ</mi>
-								</math> となる．つまり，<math><mi>𝜔</mi><mo>∈</mo><mrow><mi>ℤ</mi><mo>+</mo><mrow><mi>𝐴</mi><mo>&it;</mo><mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi></mrow></mrow><mo>⊆</mo><mrow><mi>ℤ</mi><mo>+</mo><mrow><mi>𝐴</mi><mo>&it;</mo><mi>ℤ</mi></mrow></mrow></math>．
+								</math> となる．つまり，<math><mi>𝜔</mi><mo>∈</mo><mrow><mi>ℤ</mi><mo>+</mo><mrow><mi>𝐴</mi><mo>&it;</mo><mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi></mrow></mrow><mo>⊆</mo><mrow><mi>ℤ</mi><mo>+</mo><mrow><mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi></mrow></mrow></math>．
 							</p>
 						</li>
 						<li>
@@ -1305,6 +1305,736 @@
 						</li>
 					</ul>
 				</article>
+				<article id="トーラス上の複素反線型変換" class="thm">
+					<h4><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上の <math><mi>ℂ</mi></math>-反線型変換</h4>
+					<ul>
+						<li>
+							<math>
+								<mi>𝜏</mi>
+								<mo>∈</mo>
+								<mi>ℍ</mi>
+								<mo>≔</mo>
+								<mrow>
+									<mi>ℝ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑖</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℝ</mi>
+											<mrow>
+												<mo>&gt;</mo><mn>0</mn>
+											</mrow>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<msup>
+									<mi>𝑇</mi><mn>2</mn>
+								</msup>
+								<mo>≃</mo>
+								<mrow>
+									<mi>ℂ</mi>
+									<mo>∕</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝜔</mi><mo>∈</mo><mi>ℂ</mi></math> が誘導する <math><mi>ℂ</mi></math>-反線型変換
+							<math>
+								<mrow>
+									<mi>𝜔</mi>
+									<mo>&it;</mo>
+									<msup>
+										<mrow>
+											<mo>(</mo><mi>-</mi><mo>)</mo>
+										</mrow>
+										<mo>∗</mo>
+									</msup>
+								</mrow>
+								<mo>:</mo>
+								<mrow>
+									<mrow>
+										<mi>ℂ</mi><mo>→</mo><mi>ℂ</mi>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝑧</mi>
+										<mo>↦</mo>
+										<mrow>
+											<mi>𝜔</mi>
+											<mo>&it;</mo>
+											<msup>
+												<mi>𝑧</mi><mo>∗</mo>
+											</msup>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+					</ul>
+					<p>を与えると，以下が成り立つ：</p>
+					<ul>
+						<li>
+							<math>
+								<mi>𝜔</mi>
+								<mo>&it;</mo>
+								<msup>
+									<mrow>
+										<mo>(</mo><mi>-</mi><mo>)</mo>
+									</mrow>
+									<mo>∗</mo>
+								</msup>
+							</math>
+							が <math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上well-definedになる，つまり <math>
+								<mrow>
+									<mi>𝜔</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<msup>
+													<mi>𝜏</mi><mo>∗</mo>
+												</msup>
+												<mo>&it;</mo>
+												<mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⊆</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+							</math> となる必要十分条件は，
+							<ul>
+								<li>
+									<math><mi>𝜏</mi></math> が虚二次無理数ならば，
+								</li>
+								<li>
+									<math><mi>𝜏</mi></math> が虚二次無理数でないが，<math>
+										<mi>ℚ</mi>
+										<mo>⊂</mo>
+										<mrow>
+											<mrow>
+												<mi>ℚ</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mi>Re</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>ℚ</mi>
+												<mo>&it;</mo>
+												<msup>
+													<mrow>
+														<mo>|</mo><mi>𝜏</mi><mo>|</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+										</mrow>
+									</math> となるつまり，互いに素な整数組 <math>
+										<mrow>
+											<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑐</mi>
+										</mrow>
+										<mo>∈</mo>
+										<mi>ℤ</mi>
+									</math> が存在し，<math>
+										<mrow>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mi>𝑎</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mi>Re</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑏</mi>
+												<mo>&it;</mo>
+												<msup>
+													<mrow>
+														<mo>|</mo><mi>𝜏</mi><mo>|</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑐</mi>
+									</math> を満たすならば，<math>
+										<mi>𝜔</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi>
+													<mo>+</mo>
+													<mrow>
+														<mi>𝑏</mi><mo>&it;</mo><mi>𝜏</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<mi>ℤ</mi>
+										</mrow>
+									</math>
+								</li>
+								<li>それ以外ならば，<math><mi>𝜔</mi><mo>=</mo><mn>0</mn></math></li>
+							</ul>
+						</li>
+						<li>
+							<math>
+								<mi>𝜔</mi>
+								<mo>&it;</mo>
+								<msup>
+									<mrow>
+										<mo>(</mo><mi>-</mi><mo>)</mo>
+									</mrow>
+									<mo>∗</mo>
+								</msup>
+							</math>
+							が <math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上well-definedかつ可逆になる，つまり <math>
+								<mrow>
+									<mrow>
+										<mi>𝜔</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>ℤ</mi>
+												<mo>+</mo>
+												<mrow>
+													<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>,</mo>
+									<mrow>
+										<msup>
+											<mi>𝜔</mi>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msup>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>ℤ</mi>
+												<mo>+</mo>
+												<mrow>
+													<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>⊆</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+							</math> となる必要十分条件は，
+						</li>
+					</ul>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>
+						線型性より，<math>
+							<mrow>
+								<mrow>
+									<mi>𝜔</mi>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<msup>
+													<mi>𝜏</mi><mo>∗</mo>
+												</msup>
+												<mo>&it;</mo>
+												<mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>⊆</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+							<mo>⇔</mo>
+							<mrow>
+								<mrow>
+									<mi>𝜔</mi>
+									<mo>,</mo>
+									<mrow>
+										<mi>𝜔</mi>
+										<mo>&it;</mo>
+										<msup>
+											<mi>𝜏</mi><mo>∗</mo>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+							</mrow>
+						</math> である．
+					</p>
+					<ul>
+						<li>
+							<math>
+								<mrow>
+									<mi>𝑎</mi><mo>,</mo><mi>𝑏</mi>
+								</mrow>
+								<mo>∈</mo>
+								<mi>ℤ</mi>
+							</math> に対して，<math>
+								<mi>𝜔</mi>
+								<mo>=</mo>
+								<mrow>
+									<mi>𝑎</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑏</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+								</mrow>
+							</math> とすると，<math>
+								<mrow>
+									<mi>𝜔</mi>
+									<mo>&it;</mo>
+									<msup>
+										<mi>𝜏</mi><mo>∗</mo>
+									</msup>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mi>𝑎</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mi>Re</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑏</mi>
+										<mo>&it;</mo>
+										<msup>
+											<mrow>
+												<mo>|</mo><mi>𝜏</mi><mo>|</mo>
+											</mrow>
+											<mn>2</mn>
+										</msup>
+									</mrow>
+									<mo>−</mo>
+									<mrow>
+										<mi>𝑎</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+								</mrow>
+							</math> となるから，必要十分条件は，<math>
+								<mrow>
+									<mrow>
+										<mn>2</mn>
+										<mo>&it;</mo>
+										<mi>𝑎</mi>
+										<mo>&it;</mo>
+										<mrow>
+											<mi>Re</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑏</mi>
+										<mo>&it;</mo>
+										<msup>
+											<mrow>
+												<mo>|</mo><mi>𝜏</mi><mo>|</mo>
+											</mrow>
+											<mn>2</mn>
+										</msup>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mi>ℤ</mi>
+							</math> となる．ここで，
+							<math display="block">
+								<mi>𝑉</mi>
+								<mo>≔</mo>
+								<mrow>
+									<msub>
+										<mi>span</mi><mi>ℚ</mi>
+									</msub>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>{</mo>
+										<mrow>
+											<mn>1</mn>
+											<mo>,</mo>
+											<mrow>
+												<mi>Re</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<msup>
+												<mrow>
+													<mo>|</mo><mi>𝜏</mi><mo>|</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+										</mrow>
+										<mo>}</mo>
+									</mrow>
+								</mrow>
+							</math>
+							とする．
+							<ul>
+								<li>
+									<math>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+										</mrow>
+										<mo>=</mo>
+										<mn>3</mn>
+									</math> となるとき，<math><mi>𝜔</mi><mo>=</mo><mn>0</mn></math> ．
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+										</mrow>
+										<mo>=</mo>
+										<mn>2</mn>
+									</math> となるとき，互いに素な整数組 <math><mi>𝑎</mi><mo>,</mo><mi>𝑏</mi><mo>,</mo><mi>𝑐</mi></math> で，<math>
+										<mrow>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mi>𝑎</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mi>Re</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑏</mi>
+												<mo>&it;</mo>
+												<msup>
+													<mrow>
+														<mo>|</mo><mi>𝜏</mi><mo>|</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mi>𝑐</mi>
+									</math> かつ <math><mi>𝑏</mi><mo>&gt;</mo><mn>0</mn></math> となるものが唯一つ存在する．これに対し，<math>
+										<mi>𝜔</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>𝑎</mi>
+													<mo>+</mo>
+													<mrow>
+														<mi>𝑏</mi><mo>&it;</mo><mi>𝜏</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mi>ℤ</mi>
+										</mrow>
+									</math> となる．
+								</li>
+								<li>
+									<math>
+										<mrow>
+											<mi>dim</mi><mo>&af;</mo><mi>𝑉</mi>
+										</mrow>
+										<mo>=</mo>
+										<mn>1</mn>
+									</math> となるとき，<math>
+										<mrow>
+											<mrow>
+												<mi>Re</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>,</mo>
+											<msup>
+												<mrow>
+													<mo>|</mo><mi>𝜏</mi><mo>|</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+										</mrow>
+										<mo>∈</mo>
+										<mi>ℚ</mi>
+									</math> となる．ゆえに，互いに素な整数組 <math>
+										<mi>𝑝</mi><mo>,</mo><mi>𝑞</mi>
+									</math> と <math>
+										<mi>𝑟</mi><mo>,</mo><mi>𝑠</mi>
+									</math> を用いて，<math>
+										<mrow>
+											<mrow>
+												<mn>2</mn>
+												<mo>&it;</mo>
+												<mrow>
+													<mi>Re</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+													</mrow>
+												</mrow>
+											</mrow>
+											<mo>=</mo>
+											<mfrac>
+												<mi>𝑝</mi><mi>𝑞</mi>
+											</mfrac>
+										</mrow>
+										<mo>,</mo>
+										<mrow>
+											<msup>
+												<mrow>
+													<mo>|</mo><mi>𝜏</mi><mo>|</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+											<mo>=</mo>
+											<mfrac>
+												<mi>𝑟</mi><mi>𝑠</mi>
+											</mfrac>
+										</mrow>
+									</math> と表せる．<math><mi>𝑞</mi><mo>,</mo><mi>𝑠</mi></math> の最大公約数を <math><mi>𝑡</mi></math> とすると，<math>
+										<mi>𝜔</mi>
+										<mo>∈</mo>
+										<mrow>
+											<mi>𝑡</mi>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mrow>
+														<mfrac>
+															<mi>𝑞</mi><mi>𝑡</mi>
+														</mfrac>
+														<mo>&it;</mo>
+														<mi>ℤ</mi>
+													</mrow>
+													<mo>+</mo>
+													<mrow>
+														<mfrac>
+															<mi>𝑠</mi><mi>𝑡</mi>
+														</mfrac>
+														<mo>&it;</mo>
+														<mi>ℤ</mi>
+														<mo>&it;</mo>
+														<mi>𝜏</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<p>
+						まず，複素共役を取る操作が <math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上well-definedになる必要十分条件は，<math>
+							<msup>
+								<mi>𝜏</mi><mo>∗</mo>
+							</msup>
+							<mo>∈</mo>
+							<mrow>
+								<mi>ℤ</mi>
+								<mo>+</mo>
+								<mrow>
+									<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+								</mrow>
+							</mrow>
+						</math> だが，虚部を考えると <math>
+							<mrow>
+								<msup>
+									<mi>𝜏</mi><mo>∗</mo>
+								</msup>
+								<mo>∈</mo>
+								<mrow>
+									<mi>ℤ</mi><mo>−</mo><mi>𝜏</mi>
+								</mrow>
+							</mrow>
+							<mo>⇔</mo>
+							<mrow>
+								<mrow>
+									<mi>Re</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mi>𝜏</mi><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mfrac>
+										<mn>1</mn><mn>2</mn>
+									</mfrac>
+									<mo>&it;</mo>
+									<mi>ℤ</mi>
+								</mrow>
+							</mrow>
+						</math> となり，<math>
+							
+						</math>
+					</p>
+				</article>
+				<article id="トーラス上の鏡映" class="thm">
+					<h4><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上の鏡映</h4>
+					<ul>
+						<li>
+							<math>
+								<mi>𝜏</mi>
+								<mo>∈</mo>
+								<mi>ℍ</mi>
+								<mo>≔</mo>
+								<mrow>
+									<mi>ℝ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑖</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>ℝ</mi>
+											<mrow>
+												<mo>&gt;</mo><mn>0</mn>
+											</mrow>
+										</msub>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math>
+								<msup>
+									<mi>𝑇</mi><mn>2</mn>
+								</msup>
+								<mo>≃</mo>
+								<mrow>
+									<mi>ℂ</mi>
+									<mo>∕</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							<math><mi>𝜔</mi><mo>∈</mo><mrow><mi>ℍ</mi><mo>∪</mo><mrow><mo>{</mo><mn>1</mn><mo>}</mo></mrow></mrow></math> であって，<math>
+								<mrow>
+									<mo>|</mo><mi>𝜔</mi><mo>|</mo>
+								</mrow>
+								<mo>=</mo>
+								<mn>1</mn>
+							</math> を満たすもの
+						</li>
+					</ul>
+					<p>を与えると，以下が成り立つ：</p>
+					<p>
+						<math><mi>ℝ</mi><mo>&it;</mo><mi>𝜔</mi></math> に関する鏡映 <math><mi>𝑧</mi><mo>↦</mo><mrow><msup><mi>𝜔</mi><mn>2</mn></msup><mo>&it;</mo><mover><mi>𝑧</mi><mo>‾</mo></mover></mrow></math> が <math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上well-definedになる必要十分条件は，
+					</p>
+				</article>
+				<article class="proof">
+					<h4>証明</h4>
+					<p>鏡映は可逆な反 <math><mi>ℂ</mi></math>-線型変換．</p>
+				</article>
+			</section>
+			<section>
+				<h3><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> のメモ</h3>
 				<article id="𝑇2∕ℤ𝑁軌道体" class="dfn">
 					<h4><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> 軌道体</h4>
 					<ul>
@@ -1518,6 +2248,762 @@
 						をしたものを <dfn><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> 軌道体</dfn><span lang="en">(<math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> orbifold)</span>と呼ぶ．
 					</p>
 				</article>
+				<figure class="z2-figure">
+					<div class="tau-controls">
+						<label><math><mrow><mi>Re</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝜏</mi><mo>)</mo></mrow></mrow><mo form="infix">=</mo></math> <input class="tau-re" type="number" value="0" step="0.1"aria-label="τの実部"/></label>
+						<label><math><mrow><mi>Im</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝜏</mi><mo>)</mo></mrow></mrow><mo form="infix">=</mo></math> <input class="tau-im" type="number" min="0.1" value="1" step="0.1" placeholder="正の実数" aria-label="τの虚部"/></label>
+						<small class="tau-warning" aria-live="polite"></small>
+					</div>
+					<svg class="orbifold" viewBox="0 0 420 340" width="600" data-n="2" role="img" aria-label="𝑇2∕ℤ2 の格子、可動点と固定点。τを変更できます">
+						<defs>
+							<clipPath id="clip2"><polygon points="80,300 340,300 340,40 80,40"/></clipPath>
+							<marker id="arrow2" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
+								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
+							</marker>
+						</defs>
+						<g class="lattice" transform="matrix(130 0 0 -130 145 235)">
+							<path class="fundamental-domain" d="M0 0H1L0,1Z" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
+							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
+							<path class="outer-border" d="M-.5 -.5H1.5V1.5H-.5Z" fill="none" stroke="#eee" stroke-opacity=".55" stroke-width=".014"/>
+							<path class="auxiliary-line" d="M-.5 .5L.5 -.5M-.5 1.5L0 1M1 0L1.5 -.5M.5 1.5L1.5 .5" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
+						</g>
+						<line data-arrow="one" x1="145" y1="235" x2="275" y2="235" stroke="#eee" stroke-width="2" marker-end="url(#arrow2)"/>
+						<line data-arrow="tau" x1="145" y1="235" x2="145" y2="105" stroke="#eee" stroke-width="2" marker-end="url(#arrow2)"/>
+						<text data-label="zero" class="vertex" x="133" y="252">0</text>
+						<text data-label="one" class="vertex" x="282" y="252">1</text>
+						<text data-label="tau" class="vertex" x="131" y="94">𝜏</text>
+						<g class="points" clip-path="url(#clip2)">
+							<g class="point-original" fill="#eee">
+								<circle data-k="0" data-m="-1" data-n="-1" cx="47.500" cy="348.750" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="0" cx="47.500" cy="218.750" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="1" cx="47.500" cy="88.750" r="4"/>
+								<circle data-k="0" data-m="0" data-n="-1" cx="177.500" cy="348.750" r="4"/>
+								<circle data-k="0" data-m="0" data-n="0" cx="177.500" cy="218.750" r="4"/>
+								<circle data-k="0" data-m="0" data-n="1" cx="177.500" cy="88.750" r="4"/>
+								<circle data-k="0" data-m="1" data-n="-1" cx="307.500" cy="348.750" r="4"/>
+								<circle data-k="0" data-m="1" data-n="0" cx="307.500" cy="218.750" r="4"/>
+								<circle data-k="0" data-m="1" data-n="1" cx="307.500" cy="88.750" r="4"/>
+							</g>
+							<g class="point-orbit" fill="#eee">
+								<circle data-k="1" data-m="-1" data-n="-1" cx="112.500" cy="251.250" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="0" cx="112.500" cy="121.250" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="1" cx="112.500" cy="-8.750" r="4"/>
+								<circle data-k="1" data-m="0" data-n="-1" cx="242.500" cy="251.250" r="4"/>
+								<circle data-k="1" data-m="0" data-n="0" cx="242.500" cy="121.250" r="4"/>
+								<circle data-k="1" data-m="0" data-n="1" cx="242.500" cy="-8.750" r="4"/>
+								<circle data-k="1" data-m="1" data-n="-1" cx="372.500" cy="251.250" r="4"/>
+								<circle data-k="1" data-m="1" data-n="0" cx="372.500" cy="121.250" r="4"/>
+								<circle data-k="1" data-m="1" data-n="1" cx="372.500" cy="-8.750" r="4"/>
+							</g>
+						</g>
+						<g class="fixed-points" clip-path="url(#clip2)" pointer-events="none">
+							<g class="fixed-z2" fill="#ff7979">
+								<circle data-u="-0.5" data-v="-0.5" cx="80.000" cy="300.000" r="4"/>
+								<circle data-u="-0.5" data-v="0" cx="80.000" cy="235.000" r="4"/>
+								<circle data-u="-0.5" data-v="0.5" cx="80.000" cy="170.000" r="4"/>
+								<circle data-u="-0.5" data-v="1" cx="80.000" cy="105.000" r="4"/>
+								<circle data-u="-0.5" data-v="1.5" cx="80.000" cy="40.000" r="4"/>
+								<circle data-u="0" data-v="-0.5" cx="145.000" cy="300.000" r="4"/>
+								<circle data-u="0" data-v="0" cx="145.000" cy="235.000" r="4"/>
+								<circle data-u="0" data-v="0.5" cx="145.000" cy="170.000" r="4"/>
+								<circle data-u="0" data-v="1" cx="145.000" cy="105.000" r="4"/>
+								<circle data-u="0" data-v="1.5" cx="145.000" cy="40.000" r="4"/>
+								<circle data-u="0.5" data-v="-0.5" cx="210.000" cy="300.000" r="4"/>
+								<circle data-u="0.5" data-v="0" cx="210.000" cy="235.000" r="4"/>
+								<circle data-u="0.5" data-v="0.5" cx="210.000" cy="170.000" r="4"/>
+								<circle data-u="0.5" data-v="1" cx="210.000" cy="105.000" r="4"/>
+								<circle data-u="0.5" data-v="1.5" cx="210.000" cy="40.000" r="4"/>
+								<circle data-u="1" data-v="-0.5" cx="275.000" cy="300.000" r="4"/>
+								<circle data-u="1" data-v="0" cx="275.000" cy="235.000" r="4"/>
+								<circle data-u="1" data-v="0.5" cx="275.000" cy="170.000" r="4"/>
+								<circle data-u="1" data-v="1" cx="275.000" cy="105.000" r="4"/>
+								<circle data-u="1" data-v="1.5" cx="275.000" cy="40.000" r="4"/>
+								<circle data-u="1.5" data-v="-0.5" cx="340.000" cy="300.000" r="4"/>
+								<circle data-u="1.5" data-v="0" cx="340.000" cy="235.000" r="4"/>
+								<circle data-u="1.5" data-v="0.5" cx="340.000" cy="170.000" r="4"/>
+								<circle data-u="1.5" data-v="1" cx="340.000" cy="105.000" r="4"/>
+								<circle data-u="1.5" data-v="1.5" cx="340.000" cy="40.000" r="4"/>
+							</g>
+						</g>
+					</svg>
+					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>2</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viewBox="0 0 10 24" width="10" height="24"><circle class="fixed-z2" cx="5" cy="12" r="4" fill="#ff7979"/></svg> は <math><msub><mi>ℤ</mi><mn>2</mn></msub></math> 固定点．</figcaption>
+				</figure>
+				<figure>
+					<svg class="orbifold" viewBox="70 70 280 200" width="600" data-n="3" role="img" aria-label="𝑇2∕ℤ3 の縮小格子領域。各点をドラッグできます">
+						<defs>
+							<clipPath id="clip3"><polygon points="168.225,242.356 335.325,242.356 251.775,97.644 84.675,97.644"/></clipPath>
+							<marker id="arrow3" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
+								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
+							</marker>
+						</defs>
+						<g class="lattice" transform="matrix(83.55 0 -41.775 -72.356 189.112 206.178)">
+							<path class="fundamental-domain" d="M0 0H.5L.667 .333L.333 .667L0 .5Z" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
+							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
+							<path class="auxiliary-line" d="M-.5 1.5L-.333 1.333L-.5 1M0 1.5L-.333 1.333M0 1L-.5 .5L-.333 .333L-.5 0M0 .5L-.333 .333M0 0L-.5 -.5M.333 -.333L0 -.5M.5 1.5L.667 1.333L.333 .667M.5 0L.333 -.333L.5 -.5L1 0M1 1L.5 .5M1 1.5L.667 1.333M1.333 .667L.667 .333M1.333 -.333L1 -.5M1.5 1L1.333 .667L1.5 .5M1.5 0L1.333 -.333L1.5 -.5" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
+						</g>
+						<line x1="189.112" y1="206.178" x2="272.662" y2="206.178" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow3)"/>
+						<line x1="189.112" y1="206.178" x2="147.338" y2="133.822" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow3)"/>
+						<text class="vertex" x="178.112" y="223.178">0</text>
+						<text class="vertex" x="279.662" y="223.178">1</text>
+						<text class="vertex" x="133.338" y="123.822">𝜏</text>
+						<g class="points" clip-path="url(#clip3)">
+							<g class="point-original" fill="#eee">
+								<circle data-k="0" data-m="-1" data-n="-1" cx="164.047" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="0" cx="122.272" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="1" cx="80.498" cy="110.668" r="4"/>
+								<circle data-k="0" data-m="0" data-n="-1" cx="247.597" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="0" data-n="0" cx="205.822" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="0" data-n="1" cx="164.048" cy="110.668" r="4"/>
+								<circle data-k="0" data-m="1" data-n="-1" cx="331.147" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="1" data-n="0" cx="289.372" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="1" data-n="1" cx="247.597" cy="110.668" r="4"/>
+							</g>
+							<g class="point-orbit" fill="#eee">
+								<circle data-k="1" data-m="-1" data-n="-1" cx="202.48" cy="275.64" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="0" cx="160.705" cy="203.284" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="1" cx="118.93" cy="130.928" r="4"/>
+								<circle data-k="1" data-m="0" data-n="-1" cx="286.03" cy="275.64" r="4"/>
+								<circle data-k="1" data-m="0" data-n="0" cx="244.255" cy="203.284" r="4"/>
+								<circle data-k="1" data-m="0" data-n="1" cx="202.481" cy="130.928" r="4"/>
+								<circle data-k="1" data-m="1" data-n="-1" cx="369.58" cy="275.64" r="4"/>
+								<circle data-k="1" data-m="1" data-n="0" cx="327.805" cy="203.284" r="4"/>
+								<circle data-k="1" data-m="1" data-n="1" cx="286.03" cy="130.928" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="-1" cx="200.809" cy="232.227" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="0" cx="159.034" cy="159.87" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="1" cx="117.26" cy="87.514" r="4"/>
+								<circle data-k="2" data-m="0" data-n="-1" cx="284.359" cy="232.227" r="4"/>
+								<circle data-k="2" data-m="0" data-n="0" cx="242.584" cy="159.87" r="4"/>
+								<circle data-k="2" data-m="0" data-n="1" cx="200.81" cy="87.514" r="4"/>
+								<circle data-k="2" data-m="1" data-n="-1" cx="367.909" cy="232.227" r="4"/>
+								<circle data-k="2" data-m="1" data-n="0" cx="326.135" cy="159.87" r="4"/>
+								<circle data-k="2" data-m="1" data-n="1" cx="284.36" cy="87.514" r="4"/>
+							</g>
+						</g>
+						<g class="fixed-points" clip-path="url(#clip3)">
+							<g class="fixed-z3" fill="#55c8ff">
+								<circle cx="147.337" cy="278.534" r="4"/>
+								<circle cx="105.562" cy="206.178" r="4"/>
+								<circle cx="63.787" cy="133.822" r="4"/>
+								<circle cx="22.012" cy="61.466" r="4"/>
+								<circle cx="230.887" cy="278.534" r="4"/>
+								<circle cx="189.112" cy="206.178" r="4"/>
+								<circle cx="147.337" cy="133.822" r="4"/>
+								<circle cx="105.562" cy="61.466" r="4"/>
+								<circle cx="314.437" cy="278.534" r="4"/>
+								<circle cx="272.662" cy="206.178" r="4"/>
+								<circle cx="230.887" cy="133.822" r="4"/>
+								<circle cx="189.112" cy="61.466" r="4"/>
+								<circle cx="397.987" cy="278.534" r="4"/>
+								<circle cx="356.212" cy="206.178" r="4"/>
+								<circle cx="314.437" cy="133.822" r="4"/>
+								<circle cx="272.662" cy="61.466" r="4"/>
+								<circle cx="189.112" cy="254.415" r="4"/>
+								<circle cx="147.337" cy="182.059" r="4"/>
+								<circle cx="105.562" cy="109.703" r="4"/>
+								<circle cx="272.662" cy="254.415" r="4"/>
+								<circle cx="230.887" cy="182.059" r="4"/>
+								<circle cx="189.112" cy="109.703" r="4"/>
+								<circle cx="356.212" cy="254.415" r="4"/>
+								<circle cx="314.437" cy="182.059" r="4"/>
+								<circle cx="272.662" cy="109.703" r="4"/>
+								<circle cx="147.337" cy="230.297" r="4"/>
+								<circle cx="105.562" cy="157.941" r="4"/>
+								<circle cx="63.787" cy="85.585" r="4"/>
+								<circle cx="230.887" cy="230.297" r="4"/>
+								<circle cx="189.112" cy="157.941" r="4"/>
+								<circle cx="147.337" cy="85.585" r="4"/>
+								<circle cx="314.437" cy="230.297" r="4"/>
+								<circle cx="272.662" cy="157.941" r="4"/>
+								<circle cx="230.887" cy="85.585" r="4"/>
+							</g>
+						</g>
+					</svg>
+					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>3</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z3" cx="5" cy="12" r="4" fill="#55c8ff"/></svg> は <math><msub><mi>ℤ</mi><mn>3</mn></msub></math> 固定点．
+					</figcaption>
+				</figure>
+				<!--<figure>
+					<svg class="orbifold" viewBox="70 70 280 200" width="600" data-n="3" role="img" aria-label="𝑇2∕ℤ3 の縮小格子領域。各点をドラッグできます">
+						<defs>
+							<clipPath id="clip3"><polygon points="168.225,242.356 335.325,242.356 251.775,97.644 84.675,97.644"/></clipPath>
+							<marker id="arrow3" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
+								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
+							</marker>
+						</defs>
+						<g class="lattice" transform="matrix(83.55 0 -41.775 -72.356 189.112 206.178)">
+							<path class="fundamental-domain" d="M0 0L.667 .333L1 1L.333 .667Z" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
+							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
+							<path class="auxiliary-line" d="M-.25 1.5L-.333 1.333L.333 .667M0 0L-.25 -.5M.25 1.5L-.333 .333L.333 -.333L.25 -.5M.75 1.5L.667 1.333L1.333 .667L.75 -.5M1.25 1.5L1 1M.667 .333L1.333 -.333L1.25 -.5M-.5 1.25L-.333 1.333M-.5 .75L.667 1.333M-.5 .25L-.333 .333M-.5 -.25L0 0M1 1L1.5 1.25M.333 -.333L1.5 .25M1.333 .667L1.5 .75M1.333 -.333L1.5 -.25" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
+						</g>
+						<line x1="189.112" y1="206.178" x2="272.662" y2="206.178" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow3)"/>
+						<line x1="189.112" y1="206.178" x2="147.338" y2="133.822" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow3)"/>
+						<text class="vertex" x="178.112" y="223.178">0</text>
+						<text class="vertex" x="279.662" y="223.178">1</text>
+						<text class="vertex" x="133.338" y="123.822">𝜏</text>
+						<g class="points" clip-path="url(#clip3)">
+							<g class="point-original" fill="#eee">
+								<circle data-k="0" data-m="-1" data-n="-1" cx="164.047" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="0" cx="122.272" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="1" cx="80.498" cy="110.668" r="4"/>
+								<circle data-k="0" data-m="0" data-n="-1" cx="247.597" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="0" data-n="0" cx="205.822" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="0" data-n="1" cx="164.048" cy="110.668" r="4"/>
+								<circle data-k="0" data-m="1" data-n="-1" cx="331.147" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="1" data-n="0" cx="289.372" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="1" data-n="1" cx="247.597" cy="110.668" r="4"/>
+							</g>
+							<g class="point-orbit" fill="#eee">
+								<circle data-k="1" data-m="-1" data-n="-1" cx="202.48" cy="275.64" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="0" cx="160.705" cy="203.284" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="1" cx="118.93" cy="130.928" r="4"/>
+								<circle data-k="1" data-m="0" data-n="-1" cx="286.03" cy="275.64" r="4"/>
+								<circle data-k="1" data-m="0" data-n="0" cx="244.255" cy="203.284" r="4"/>
+								<circle data-k="1" data-m="0" data-n="1" cx="202.481" cy="130.928" r="4"/>
+								<circle data-k="1" data-m="1" data-n="-1" cx="369.58" cy="275.64" r="4"/>
+								<circle data-k="1" data-m="1" data-n="0" cx="327.805" cy="203.284" r="4"/>
+								<circle data-k="1" data-m="1" data-n="1" cx="286.03" cy="130.928" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="-1" cx="200.809" cy="232.227" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="0" cx="159.034" cy="159.87" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="1" cx="117.26" cy="87.514" r="4"/>
+								<circle data-k="2" data-m="0" data-n="-1" cx="284.359" cy="232.227" r="4"/>
+								<circle data-k="2" data-m="0" data-n="0" cx="242.584" cy="159.87" r="4"/>
+								<circle data-k="2" data-m="0" data-n="1" cx="200.81" cy="87.514" r="4"/>
+								<circle data-k="2" data-m="1" data-n="-1" cx="367.909" cy="232.227" r="4"/>
+								<circle data-k="2" data-m="1" data-n="0" cx="326.135" cy="159.87" r="4"/>
+								<circle data-k="2" data-m="1" data-n="1" cx="284.36" cy="87.514" r="4"/>
+							</g>
+						</g>
+						<g class="fixed-points" clip-path="url(#clip3)">
+							<g class="fixed-z3" fill="#55c8ff">
+								<circle cx="147.337" cy="278.534" r="4"/>
+								<circle cx="105.562" cy="206.178" r="4"/>
+								<circle cx="63.787" cy="133.822" r="4"/>
+								<circle cx="22.012" cy="61.466" r="4"/>
+								<circle cx="230.887" cy="278.534" r="4"/>
+								<circle cx="189.112" cy="206.178" r="4"/>
+								<circle cx="147.337" cy="133.822" r="4"/>
+								<circle cx="105.562" cy="61.466" r="4"/>
+								<circle cx="314.437" cy="278.534" r="4"/>
+								<circle cx="272.662" cy="206.178" r="4"/>
+								<circle cx="230.887" cy="133.822" r="4"/>
+								<circle cx="189.112" cy="61.466" r="4"/>
+								<circle cx="397.987" cy="278.534" r="4"/>
+								<circle cx="356.212" cy="206.178" r="4"/>
+								<circle cx="314.437" cy="133.822" r="4"/>
+								<circle cx="272.662" cy="61.466" r="4"/>
+								<circle cx="189.112" cy="254.415" r="4"/>
+								<circle cx="147.337" cy="182.059" r="4"/>
+								<circle cx="105.562" cy="109.703" r="4"/>
+								<circle cx="272.662" cy="254.415" r="4"/>
+								<circle cx="230.887" cy="182.059" r="4"/>
+								<circle cx="189.112" cy="109.703" r="4"/>
+								<circle cx="356.212" cy="254.415" r="4"/>
+								<circle cx="314.437" cy="182.059" r="4"/>
+								<circle cx="272.662" cy="109.703" r="4"/>
+								<circle cx="147.337" cy="230.297" r="4"/>
+								<circle cx="105.562" cy="157.941" r="4"/>
+								<circle cx="63.787" cy="85.585" r="4"/>
+								<circle cx="230.887" cy="230.297" r="4"/>
+								<circle cx="189.112" cy="157.941" r="4"/>
+								<circle cx="147.337" cy="85.585" r="4"/>
+								<circle cx="314.437" cy="230.297" r="4"/>
+								<circle cx="272.662" cy="157.941" r="4"/>
+								<circle cx="230.887" cy="85.585" r="4"/>
+							</g>
+						</g>
+					</svg>
+					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>3</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z3" cx="5" cy="12" r="4" fill="#55c8ff"/></svg> は <math><msub><mi>ℤ</mi><mn>3</mn></msub></math> 固定点．
+					</figcaption>
+				</figure>-->
+				<figure>
+					<svg class="orbifold" viewBox="70 56.667 280 226.667" width="600" data-n="4" role="img" aria-label="𝑇2∕ℤ4の縮小格子領域。各点をドラッグできます">
+						<defs>
+							<clipPath id="clip4"><polygon points="115.330,264.670 304.670,264.670 304.670,75.330 115.330,75.330"/></clipPath>
+							<marker id="arrow4" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
+								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
+							</marker>
+						</defs>
+						<g class="lattice" transform="matrix(94.67 0 0 -94.67 162.665 217.335)">
+							<rect class="fundamental-domain" width="0.5" height="0.5" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
+							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
+							<path class="auxiliary-line" d="M-.5 1.5H1.5M-.5 .5H0M.5 .5H1.5M-.5 -.5H1.5M-.5 1.5V-.5M.5 1.5V.5M.5 0V-.5M1.5 1.5V-.5" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
+						</g>
+						<line x1="162.665" y1="217.335" x2="257.335" y2="217.335" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow4)"/>
+						<line x1="162.665" y1="217.335" x2="162.665" y2="122.665" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow4)"/>
+						<text class="vertex" x="150.665" y="234.335">0</text>
+						<text class="vertex" x="264.335" y="234.335">1</text>
+						<text class="vertex" x="148.665" y="111.665">𝜏</text>
+						<g class="points" clip-path="url(#clip4)">
+							<g class="point-original" fill="#eee">
+								<circle data-k="0" data-m="-1" data-n="-1" cx="102.076" cy="281.711" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="0" cx="102.076" cy="187.041" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="1" cx="102.076" cy="92.371" r="4"/>
+								<circle data-k="0" data-m="0" data-n="-1" cx="196.746" cy="281.711" r="4"/>
+								<circle data-k="0" data-m="0" data-n="0" cx="196.746" cy="187.041" r="4"/>
+								<circle data-k="0" data-m="0" data-n="1" cx="196.746" cy="92.371" r="4"/>
+								<circle data-k="0" data-m="1" data-n="-1" cx="291.416" cy="281.711" r="4"/>
+								<circle data-k="0" data-m="1" data-n="0" cx="291.416" cy="187.041" r="4"/>
+								<circle data-k="0" data-m="1" data-n="1" cx="291.416" cy="92.371" r="4"/>
+							</g>
+							<g class="point-orbit" fill="#eee">
+								<circle data-k="1" data-m="-1" data-n="-1" cx="132.371" cy="277.924" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="0" cx="132.371" cy="183.254" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="1" cx="132.371" cy="88.584" r="4"/>
+								<circle data-k="1" data-m="0" data-n="-1" cx="227.041" cy="277.924" r="4"/>
+								<circle data-k="1" data-m="0" data-n="0" cx="227.041" cy="183.254" r="4"/>
+								<circle data-k="1" data-m="0" data-n="1" cx="227.041" cy="88.584" r="4"/>
+								<circle data-k="1" data-m="1" data-n="-1" cx="321.711" cy="277.924" r="4"/>
+								<circle data-k="1" data-m="1" data-n="0" cx="321.711" cy="183.254" r="4"/>
+								<circle data-k="1" data-m="1" data-n="1" cx="321.711" cy="88.584" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="-1" cx="128.584" cy="247.629" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="0" cx="128.584" cy="152.959" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="1" cx="128.584" cy="58.289" r="4"/>
+								<circle data-k="2" data-m="0" data-n="-1" cx="223.254" cy="247.629" r="4"/>
+								<circle data-k="2" data-m="0" data-n="0" cx="223.254" cy="152.959" r="4"/>
+								<circle data-k="2" data-m="0" data-n="1" cx="223.254" cy="58.289" r="4"/>
+								<circle data-k="2" data-m="1" data-n="-1" cx="317.924" cy="247.629" r="4"/>
+								<circle data-k="2" data-m="1" data-n="0" cx="317.924" cy="152.959" r="4"/>
+								<circle data-k="2" data-m="1" data-n="1" cx="317.924" cy="58.289" r="4"/>
+								<circle data-k="3" data-m="-1" data-n="-1" cx="98.289" cy="251.416" r="4"/>
+								<circle data-k="3" data-m="-1" data-n="0" cx="98.289" cy="156.746" r="4"/>
+								<circle data-k="3" data-m="-1" data-n="1" cx="98.289" cy="62.076" r="4"/>
+								<circle data-k="3" data-m="0" data-n="-1" cx="192.959" cy="251.416" r="4"/>
+								<circle data-k="3" data-m="0" data-n="0" cx="192.959" cy="156.746" r="4"/>
+								<circle data-k="3" data-m="0" data-n="1" cx="192.959" cy="62.076" r="4"/>
+								<circle data-k="3" data-m="1" data-n="-1" cx="287.629" cy="251.416" r="4"/>
+								<circle data-k="3" data-m="1" data-n="0" cx="287.629" cy="156.746" r="4"/>
+								<circle data-k="3" data-m="1" data-n="1" cx="287.629" cy="62.076" r="4"/>
+							</g>
+						</g>
+						<g class="fixed-points" clip-path="url(#clip4)">
+							<g class="fixed-z2" fill="#ff7979">
+								<circle cx="115.330" cy="312.005" r="4"/>
+								<circle cx="115.330" cy="217.335" r="4"/>
+								<circle cx="115.330" cy="122.665" r="4"/>
+								<circle cx="115.330" cy="27.995" r="4"/>
+								<circle cx="210.000" cy="312.005" r="4"/>
+								<circle cx="210.000" cy="217.335" r="4"/>
+								<circle cx="210.000" cy="122.665" r="4"/>
+								<circle cx="210.000" cy="27.995" r="4"/>
+								<circle cx="304.670" cy="312.005" r="4"/>
+								<circle cx="304.670" cy="217.335" r="4"/>
+								<circle cx="304.670" cy="122.665" r="4"/>
+								<circle cx="304.670" cy="27.995" r="4"/>
+								<circle cx="67.995" cy="264.670" r="4"/>
+								<circle cx="67.995" cy="170.000" r="4"/>
+								<circle cx="67.995" cy="75.330" r="4"/>
+								<circle cx="162.665" cy="264.670" r="4"/>
+								<circle cx="162.665" cy="170.000" r="4"/>
+								<circle cx="162.665" cy="75.330" r="4"/>
+								<circle cx="257.335" cy="264.670" r="4"/>
+								<circle cx="257.335" cy="170.000" r="4"/>
+								<circle cx="257.335" cy="75.330" r="4"/>
+								<circle cx="352.005" cy="264.670" r="4"/>
+								<circle cx="352.005" cy="170.000" r="4"/>
+								<circle cx="352.005" cy="75.330" r="4"/>
+							</g>
+							<g class="fixed-z4" fill="#f9c74f">
+								<circle cx="67.995" cy="312.005" r="4"/>
+								<circle cx="67.995" cy="217.335" r="4"/>
+								<circle cx="67.995" cy="122.665" r="4"/>
+								<circle cx="67.995" cy="27.995" r="4"/>
+								<circle cx="162.665" cy="312.005" r="4"/>
+								<circle cx="162.665" cy="217.335" r="4"/>
+								<circle cx="162.665" cy="122.665" r="4"/>
+								<circle cx="162.665" cy="27.995" r="4"/>
+								<circle cx="257.335" cy="312.005" r="4"/>
+								<circle cx="257.335" cy="217.335" r="4"/>
+								<circle cx="257.335" cy="122.665" r="4"/>
+								<circle cx="257.335" cy="27.995" r="4"/>
+								<circle cx="352.005" cy="312.005" r="4"/>
+								<circle cx="352.005" cy="217.335" r="4"/>
+								<circle cx="352.005" cy="122.665" r="4"/>
+								<circle cx="352.005" cy="27.995" r="4"/>
+								<circle cx="115.330" cy="264.670" r="4"/>
+								<circle cx="115.330" cy="170.000" r="4"/>
+								<circle cx="115.330" cy="75.330" r="4"/>
+								<circle cx="210.000" cy="264.670" r="4"/>
+								<circle cx="210.000" cy="170.000" r="4"/>
+								<circle cx="210.000" cy="75.330" r="4"/>
+								<circle cx="304.670" cy="264.670" r="4"/>
+								<circle cx="304.670" cy="170.000" r="4"/>
+								<circle cx="304.670" cy="75.330" r="4"/>
+							</g>
+						</g>
+					</svg>
+					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>4</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z2" cx="5" cy="12" r="4" fill="#ff7979"/></svg> は <math><msub><mi>ℤ</mi><mn>2</mn></msub></math> 固定点．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z4" cx="5" cy="12" r="4" fill="#f9c74f"/></svg> は <math><msub><mi>ℤ</mi><mn>4</mn></msub></math> 固定点．
+					</figcaption>
+				</figure>
+				<figure>
+					<svg class="orbifold" viewBox="70 56.667 280 226.667" width="600" data-n="6" role="img" aria-label="𝑇2∕ℤ6の縮小格子領域。各点をドラッグできます">
+						<defs>
+							<clipPath id="clip6"><polygon points="84.675,242.356 251.775,242.356 335.325,97.644 168.225,97.644"/></clipPath>
+							<marker id="arrow6" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
+								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
+							</marker>
+						</defs>
+						<g class="lattice" transform="matrix(83.55 0 41.775 -72.356 147.338 206.178)">
+							<path class="fundamental-domain" d="M0 0H.5L.333 .333L0 .5Z" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
+							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
+							<path class="auxiliary-line" d="M-.5 -.5L-.333 -.333M-.5 0L-.333 -.333L0 -.5M-.333 .667L-.5 .5L.5 -.5L.667 -.333M-.5 1L-.333 .667L0 .5M.5 0L.667 -.333L1 -.5M-.5 1.5L1.5 -.5M.333 .333L.667 .667M0 1.5L.333 1.333L.667 .667L1.333.333L1.5 0M0.333 1.333L0.5 1.5L1.5 0.5L1.333 0.333M1.5 1.5L1.333 1.333M1 1.5L1.333 1.333L1.5 1" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
+						</g>
+						<line x1="147.338" y1="206.178" x2="230.887" y2="206.178" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow6)"/>
+						<line x1="147.338" y1="206.178" x2="189.113" y2="133.822" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow6)"/>
+						<text class="vertex" x="136.338" y="223.178">0</text>
+						<text class="vertex" x="237.887" y="223.178">1</text>
+						<text class="vertex" x="177.113" y="123.822">𝜏</text>
+						<g class="points" clip-path="url(#clip6)">
+							<g class="point-original" fill="#eee">
+								<circle data-k="0" data-m="-1" data-n="-1" cx="65.459" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="0" cx="107.234" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="-1" data-n="1" cx="149.009" cy="110.668" r="4"/>
+								<circle data-k="0" data-m="0" data-n="-1" cx="149.008" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="0" data-n="0" cx="190.784" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="0" data-n="1" cx="232.559" cy="110.668" r="4"/>
+								<circle data-k="0" data-m="1" data-n="-1" cx="232.558" cy="255.381" r="4"/>
+								<circle data-k="0" data-m="1" data-n="0" cx="274.334" cy="183.024" r="4"/>
+								<circle data-k="0" data-m="1" data-n="1" cx="316.108" cy="110.668" r="4"/>
+							</g>
+							<g class="point-orbit" fill="#eee">
+								<circle data-k="1" data-m="-1" data-n="-1" cx="107.233" cy="229.332" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="0" cx="149.008" cy="156.976" r="4"/>
+								<circle data-k="1" data-m="-1" data-n="1" cx="190.784" cy="84.619" r="4"/>
+								<circle data-k="1" data-m="0" data-n="-1" cx="190.784" cy="229.332" r="4"/>
+								<circle data-k="1" data-m="0" data-n="0" cx="232.559" cy="156.976" r="4"/>
+								<circle data-k="1" data-m="0" data-n="1" cx="274.334" cy="84.619" r="4"/>
+								<circle data-k="1" data-m="1" data-n="-1" cx="274.333" cy="229.332" r="4"/>
+								<circle data-k="1" data-m="1" data-n="0" cx="316.108" cy="156.976" r="4"/>
+								<circle data-k="1" data-m="1" data-n="1" cx="357.884" cy="84.619" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="-1" cx="63.788" cy="252.486" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="0" cx="105.563" cy="180.13" r="4"/>
+								<circle data-k="2" data-m="-1" data-n="1" cx="147.338" cy="107.773" r="4"/>
+								<circle data-k="2" data-m="0" data-n="-1" cx="147.338" cy="252.486" r="4"/>
+								<circle data-k="2" data-m="0" data-n="0" cx="189.113" cy="180.13" r="4"/>
+								<circle data-k="2" data-m="0" data-n="1" cx="230.887" cy="107.773" r="4"/>
+								<circle data-k="2" data-m="1" data-n="-1" cx="230.887" cy="252.486" r="4"/>
+								<circle data-k="2" data-m="1" data-n="0" cx="272.663" cy="180.13" r="4"/>
+								<circle data-k="2" data-m="1" data-n="1" cx="314.438" cy="107.773" r="4"/>
+								<circle data-k="3" data-m="-1" data-n="-1" cx="103.892" cy="229.332" r="4"/>
+								<circle data-k="3" data-m="-1" data-n="0" cx="145.667" cy="156.976" r="4"/>
+								<circle data-k="3" data-m="-1" data-n="1" cx="187.442" cy="84.619" r="4"/>
+								<circle data-k="3" data-m="0" data-n="-1" cx="187.442" cy="229.332" r="4"/>
+								<circle data-k="3" data-m="0" data-n="0" cx="229.217" cy="156.976" r="4"/>
+								<circle data-k="3" data-m="0" data-n="1" cx="270.992" cy="84.619" r="4"/>
+								<circle data-k="3" data-m="1" data-n="-1" cx="270.991" cy="229.332" r="4"/>
+								<circle data-k="3" data-m="1" data-n="0" cx="312.767" cy="156.976" r="4"/>
+								<circle data-k="3" data-m="1" data-n="1" cx="354.542" cy="84.619" r="4"/>
+								<circle data-k="4" data-m="-1" data-n="-1" cx="62.117" cy="255.381" r="4"/>
+								<circle data-k="4" data-m="-1" data-n="0" cx="103.892" cy="183.024" r="4"/>
+								<circle data-k="4" data-m="-1" data-n="1" cx="145.667" cy="110.668" r="4"/>
+								<circle data-k="4" data-m="0" data-n="-1" cx="145.667" cy="255.381" r="4"/>
+								<circle data-k="4" data-m="0" data-n="0" cx="187.442" cy="183.024" r="4"/>
+								<circle data-k="4" data-m="0" data-n="1" cx="229.217" cy="110.668" r="4"/>
+								<circle data-k="4" data-m="1" data-n="-1" cx="229.216" cy="255.381" r="4"/>
+								<circle data-k="4" data-m="1" data-n="0" cx="270.992" cy="183.024" r="4"/>
+								<circle data-k="4" data-m="1" data-n="1" cx="312.767" cy="110.668" r="4"/>
+								<circle data-k="5" data-m="-1" data-n="-1" cx="105.562" cy="232.227" r="4"/>
+								<circle data-k="5" data-m="-1" data-n="0" cx="147.338" cy="159.87" r="4"/>
+								<circle data-k="5" data-m="-1" data-n="1" cx="189.113" cy="87.514" r="4"/>
+								<circle data-k="5" data-m="0" data-n="-1" cx="189.113" cy="232.227" r="4"/>
+								<circle data-k="5" data-m="0" data-n="0" cx="230.887" cy="159.87" r="4"/>
+								<circle data-k="5" data-m="0" data-n="1" cx="272.663" cy="87.514" r="4"/>
+								<circle data-k="5" data-m="1" data-n="-1" cx="272.663" cy="232.227" r="4"/>
+								<circle data-k="5" data-m="1" data-n="0" cx="314.438" cy="159.87" r="4"/>
+								<circle data-k="5" data-m="1" data-n="1" cx="356.212" cy="87.514" r="4"/>
+							</g>
+						</g>
+						<g class="fixed-points" clip-path="url(#clip6)">
+							<g class="fixed-z2" fill="#ff7979">
+								<circle cx="63.788" cy="278.534" r="4"/>
+								<circle cx="105.563" cy="206.178" r="4"/>
+								<circle cx="147.338" cy="133.822" r="4"/>
+								<circle cx="189.113" cy="61.466" r="4"/>
+								<circle cx="147.338" cy="278.534" r="4"/>
+								<circle cx="189.113" cy="206.178" r="4"/>
+								<circle cx="230.888" cy="133.822" r="4"/>
+								<circle cx="272.663" cy="61.466" r="4"/>
+								<circle cx="230.888" cy="278.534" r="4"/>
+								<circle cx="272.663" cy="206.178" r="4"/>
+								<circle cx="314.438" cy="133.822" r="4"/>
+								<circle cx="356.213" cy="61.466" r="4"/>
+								<circle cx="42.900" cy="242.356" r="4"/>
+								<circle cx="84.675" cy="170.000" r="4"/>
+								<circle cx="126.450" cy="97.644" r="4"/>
+								<circle cx="126.450" cy="242.356" r="4"/>
+								<circle cx="168.225" cy="170.000" r="4"/>
+								<circle cx="210.000" cy="97.644" r="4"/>
+								<circle cx="210.000" cy="242.356" r="4"/>
+								<circle cx="251.775" cy="170.000" r="4"/>
+								<circle cx="293.550" cy="97.644" r="4"/>
+								<circle cx="293.550" cy="242.356" r="4"/>
+								<circle cx="335.325" cy="170.000" r="4"/>
+								<circle cx="377.101" cy="97.644" r="4"/>
+								<circle cx="84.675" cy="242.356" r="4"/>
+								<circle cx="126.450" cy="170.000" r="4"/>
+								<circle cx="168.225" cy="97.644" r="4"/>
+								<circle cx="168.225" cy="242.356" r="4"/>
+								<circle cx="210.000" cy="170.000" r="4"/>
+								<circle cx="251.775" cy="97.644" r="4"/>
+								<circle cx="251.775" cy="242.356" r="4"/>
+								<circle cx="293.550" cy="170.000" r="4"/>
+								<circle cx="335.325" cy="97.644" r="4"/>
+							</g>
+							<g class="fixed-z3" fill="#55c8ff">
+								<circle cx="63.788" cy="254.415" r="4"/>
+								<circle cx="105.563" cy="182.059" r="4"/>
+								<circle cx="147.338" cy="109.703" r="4"/>
+								<circle cx="147.338" cy="254.415" r="4"/>
+								<circle cx="189.113" cy="182.059" r="4"/>
+								<circle cx="230.888" cy="109.703" r="4"/>
+								<circle cx="230.888" cy="254.415" r="4"/>
+								<circle cx="272.663" cy="182.059" r="4"/>
+								<circle cx="314.438" cy="109.703" r="4"/>
+								<circle cx="105.563" cy="230.297" r="4"/>
+								<circle cx="147.338" cy="157.941" r="4"/>
+								<circle cx="189.113" cy="85.585" r="4"/>
+								<circle cx="189.113" cy="230.297" r="4"/>
+								<circle cx="230.888" cy="157.941" r="4"/>
+								<circle cx="272.663" cy="85.585" r="4"/>
+								<circle cx="272.663" cy="230.297" r="4"/>
+								<circle cx="314.438" cy="157.941" r="4"/>
+								<circle cx="356.213" cy="85.585" r="4"/>
+							</g>
+							<g class="fixed-z6" fill="#bb9af7">
+								<circle cx="22.013" cy="278.534" r="4"/>
+								<circle cx="63.788" cy="206.178" r="4"/>
+								<circle cx="105.563" cy="133.822" r="4"/>
+								<circle cx="147.338" cy="61.466" r="4"/>
+								<circle cx="105.563" cy="278.534" r="4"/>
+								<circle cx="147.338" cy="206.178" r="4"/>
+								<circle cx="189.113" cy="133.822" r="4"/>
+								<circle cx="230.888" cy="61.466" r="4"/>
+								<circle cx="189.113" cy="278.534" r="4"/>
+								<circle cx="230.888" cy="206.178" r="4"/>
+								<circle cx="272.663" cy="133.822" r="4"/>
+								<circle cx="314.438" cy="61.466" r="4"/>
+								<circle cx="272.663" cy="278.534" r="4"/>
+								<circle cx="314.438" cy="206.178" r="4"/>
+								<circle cx="356.213" cy="133.822" r="4"/>
+								<circle cx="397.988" cy="61.466" r="4"/>
+							</g>
+						</g>
+					</svg>
+					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>6</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z2" cx="5" cy="12" r="4" fill="#ff7979"/></svg> は <math><msub><mi>ℤ</mi><mn>2</mn></msub></math> 固定点．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z3" cx="5" cy="12" r="4" fill="#55c8ff"/></svg> は <math><msub><mi>ℤ</mi><mn>3</mn></msub></math> 固定点．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z6" cx="5" cy="12" r="4" fill="#bb9af7"/></svg> は <math><msub><mi>ℤ</mi><mn>6</mn></msub></math> 固定点．</figcaption>
+				</figure>
+				<script>
+					const rotate = (p, k, c) => {
+						for (let i = 0; i < k; i++) p = { u: -p.v, v: p.u + c * p.v };
+						return p;
+					};
+					const inverseRotate = (p, k, c) => {
+						for (let i = 0; i < k; i++) p = { u: p.v + c * p.u, v: -p.u };
+						return p;
+					};
+					const clamp = x => Math.max(-0.5 + 1e-8, Math.min(1.5 - 1e-8, x));
+					const frac = x => x - Math.floor(x);
+					
+					for (const svg of document.querySelectorAll('svg.orbifold:not([data-n="2"])')) {
+						const N = Number(svg.dataset.n);
+						const c = { 3: -1, 4: 0, 6: 1 }[N];
+						const lattice = svg.querySelector('.lattice');
+						const circles = [...svg.querySelectorAll('.points circle')];
+						let z = { 3: {u: 1/4, v: 1/6}, 4: {u: 1/4, v: 1/8}, 6: {u: 1/4, v: 1/8} }[N];
+						let drag = null;
+					
+						const position = el => {
+							const q = rotate(z, Number(el.dataset.k), c);
+							return {
+								u: frac(q.u) + Number(el.dataset.m),
+								v: frac(q.v) + Number(el.dataset.n)
+							};
+						};
+						const mouseToLattice = e =>
+							new DOMPoint(e.clientX, e.clientY).matrixTransform(lattice.getScreenCTM().inverse());
+					
+						function updatePoints() {
+							const transform = svg.getScreenCTM().inverse().multiply(lattice.getScreenCTM());
+							for (const el of circles) {
+								const k = Number(el.dataset.k);
+								const m = Number(el.dataset.m);
+								const n = Number(el.dataset.n);
+								const q = rotate(z, k, c);
+								const p = { u: frac(q.u) + m, v: frac(q.v) + n };
+								const screen = new DOMPoint(p.u, p.v).matrixTransform(transform);
+								el.setAttribute('cx', screen.x);
+								el.setAttribute('cy', screen.y);
+							}
+						}
+					
+						svg.addEventListener('pointerdown', e => {
+							const el = e.target.closest('.points circle');
+							if (!el || drag || (e.pointerType === 'mouse' && e.button !== 0)) return;
+							const mouse = mouseToLattice(e);
+							const p = position(el);
+							drag = {
+								id: e.pointerId,
+								k: Number(el.dataset.k),
+								m: Number(el.dataset.m),
+								n: Number(el.dataset.n),
+								du: p.u - mouse.x, dv: p.v - mouse.y, // クリック位置のずれ
+								shiftU: Number(el.dataset.m) - Math.floor(rotate(z, Number(el.dataset.k), c).u),
+								shiftV: Number(el.dataset.n) - Math.floor(rotate(z, Number(el.dataset.k), c).v)
+							};
+							svg.setPointerCapture(e.pointerId);
+							e.preventDefault();
+						});
+					
+						svg.addEventListener('pointermove', e => {
+							if (!drag || e.pointerId !== drag.id) return;
+							const mouse = mouseToLattice(e);
+							const p = { u: clamp(mouse.x + drag.du), v: clamp(mouse.y + drag.dv) };
+							const unwrapped = inverseRotate({ u: p.u - drag.shiftU,
+																								v: p.v - drag.shiftV }, drag.k, c);
+							z = { u: frac(unwrapped.u), v: frac(unwrapped.v) };
+							updatePoints();
+						});
+					
+						function endDrag(e) {
+							if (drag && e.pointerId === drag.id) drag = null;
+						}
+						svg.addEventListener('pointerup', endDrag);
+						svg.addEventListener('pointercancel', endDrag);
+						svg.addEventListener('lostpointercapture', endDrag);
+					updatePoints();
+					}
+				</script>
+				<script>
+					(() => {
+						const figure = document.querySelector('.z2-figure');
+						const svg = figure.querySelector('svg.orbifold');
+						const lattice = svg.querySelector('.lattice');
+						const clip = svg.querySelector('#clip2 polygon');
+						const points = [...svg.querySelectorAll('.points circle')];
+						const fixed = [...svg.querySelectorAll('.fixed-points circle')];
+						const inputRe = figure.querySelector('.tau-re');
+						const inputIm = figure.querySelector('.tau-im');
+						const warning = figure.querySelector('.tau-warning');
+						const frac = x => x - Math.floor(x);
+						const clamp = x => Math.max(-.5 + 1e-8, Math.min(1.5 - 1e-8, x));
+						let tau = { re: 0, im: 1 };
+						let targetTau = { ...tau };
+						let z = { u: 1/4, v: 1/8 };
+						let drag = null, frame = null, debounce = null;
+
+						const getTransform = () => {
+							const scale = Math.min(330 / (2 * (1 + Math.abs(tau.re))), 260 / (2 * tau.im));
+							return {
+								a: scale, c: scale * tau.re, d: -scale * tau.im,
+								e: 210 - scale * (1 + tau.re) / 2,
+								f: 170 + scale * tau.im / 2
+							};
+						};
+
+						function update() {
+							const t = getTransform();
+							const project = (u, v) => ({ x: t.a * u + t.c * v + t.e, y: t.d * v + t.f });
+							const place = (el, u, v) => {
+								const p = project(u, v);
+								el.setAttribute('cx', p.x);
+								el.setAttribute('cy', p.y);
+							};
+							lattice.setAttribute('transform', `matrix(${t.a} 0 ${t.c} ${t.d} ${t.e} ${t.f})`);
+							clip.setAttribute('points', [[-.5,-.5],[1.5,-.5],[1.5,1.5],[-.5,1.5]]
+								.map(([u,v]) => { const p = project(u,v); return `${p.x},${p.y}`; }).join(' '));
+							const origin = project(0,0);
+							for (const [kind, u, v] of [['one',1,0], ['tau',0,1]]) {
+								const el = svg.querySelector(`[data-arrow="${kind}"]`);
+								const end = project(u,v);
+								el.setAttribute('x1', origin.x);
+								el.setAttribute('y1', origin.y);
+								el.setAttribute('x2', end.x);
+								el.setAttribute('y2', end.y);
+							}
+							for (const [kind, u, v, dx, dy] of [['zero',0,0,-12,17], ['one',1,0,7,17], ['tau',0,1,-14,-11]]) {
+								const el = svg.querySelector(`[data-label="${kind}"]`);
+								const p = project(u,v);
+								el.setAttribute('x',p.x + dx);
+								el.setAttribute('y',p.y + dy);
+							}
+							for (const el of points) {
+								const sign = Number(el.dataset.k) ? -1 : 1;
+								place(el, frac(sign * z.u) + Number(el.dataset.m),
+									frac(sign * z.v) + Number(el.dataset.n));
+							}
+							for (const el of fixed) place(el, Number(el.dataset.u), Number(el.dataset.v));
+						}
+
+						function animateTo(next) {
+							if (frame !== null) cancelAnimationFrame(frame);
+							targetTau = { ...next };
+							const start = { ...tau };
+							const begun = performance.now();
+							const duration = 250;
+							function tick(now) {
+								const x = Math.min(1, Math.max(0, (now - begun) / duration));
+								const ease = x * x * (3 - 2 * x);
+								tau = {
+									re: start.re + (next.re - start.re) * ease,
+									im: start.im + (next.im - start.im) * ease
+								};
+								update();
+								frame = x < 1 ? requestAnimationFrame(tick) : null;
+							}
+							frame = requestAnimationFrame(tick);
+						}
+
+						function applyInputs() {
+							clearTimeout(debounce);
+							const re = inputRe.valueAsNumber;
+							const im = inputIm.valueAsNumber;
+							if (!Number.isFinite(re) || !Number.isFinite(im) || im <= 0) {
+								warning.textContent = ' > 0';
+								return;
+							}
+							warning.textContent = '';
+							if (re !== targetTau.re || im !== targetTau.im) animateTo({ re, im });
+						}
+						for (const input of [inputRe, inputIm]) {
+							input.addEventListener('input', () => { clearTimeout(debounce); debounce = setTimeout(applyInputs, 300); });
+							input.addEventListener('change', applyInputs);
+						}
+
+						const mouseToLattice = e =>
+							new DOMPoint(e.clientX, e.clientY).matrixTransform(lattice.getScreenCTM().inverse());
+						svg.addEventListener('pointerdown', e => {
+							const el = e.target.closest('.points circle');
+							if (!el || drag || (e.pointerType === 'mouse' && e.button !== 0)) return;
+							if (frame !== null) {
+								cancelAnimationFrame(frame);
+								frame = null;
+								tau = { ...targetTau };
+								update();
+							}
+							const mouse = mouseToLattice(e);
+							const sign = Number(el.dataset.k) ? -1 : 1;
+							const m = Number(el.dataset.m), n = Number(el.dataset.n);
+							const u = sign * z.u, v = sign * z.v;
+							drag = {
+								id: e.pointerId, sign,
+								du: frac(u) + m - mouse.x, dv: frac(v) + n - mouse.y,
+								shiftU: m - Math.floor(u), shiftV: n - Math.floor(v)
+							};
+							svg.setPointerCapture(e.pointerId);
+							e.preventDefault();
+						});
+						svg.addEventListener('pointermove', e => {
+							if (!drag || e.pointerId !== drag.id) return;
+							const mouse = mouseToLattice(e);
+							const u = clamp(mouse.x + drag.du) - drag.shiftU;
+							const v = clamp(mouse.y + drag.dv) - drag.shiftV;
+							z = { u: frac(drag.sign * u), v: frac(drag.sign * v) };
+							update();
+						});
+						const endDrag = e => { if (drag && e.pointerId === drag.id) drag = null; };
+						for (const name of ['pointerup', 'pointercancel', 'lostpointercapture']) {
+							svg.addEventListener(name, endDrag);
+						}
+						update();
+					})();
+				</script>
 				<article id="トーラス上のℤ𝑁固定点" class="thm">
 					<h4><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上の <math><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math>の作用の固定点</h4>
 					<ul>
@@ -2288,152 +3774,8 @@
 					<ul>
 						<li>
 							<math><mi>ℂ</mi></math> 上の <math><mi>ℝ</mi></math>-線型変換 <math><mi>𝑓</mi><mo>:</mo><mrow><mi>ℂ</mi><mo>→</mo><mi>ℂ</mi></mrow></math> であって，<math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> 上well-definedになるものの集合は，
-							<math display="block">
-								<mrow>
-									<mo>{</mo>
-									<mrow>
-										<mrow>
-											<mi>𝑓</mi>
-											<mo>∈</mo>
-											<mrow>
-												<msub>
-													<mi>𝑀</mi><mn>2</mn>
-												</msub>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>ℤ</mi><mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>|</mo>
-										<mrow>
-											<mrow>
-												<mo>∃</mo>
-												<mo>&af;</mo>
-												<mrow>
-													<mi>𝑘</mi>
-													<mo>∈</mo>
-													<msub>
-														<mi>ℤ</mi><mi>𝑁</mi>
-													</msub>
-												</mrow>
-											</mrow>
-											<mo>,</mo>
-											<mrow>
-												<mrow>
-													<mi>𝑓</mi>
-													<mo>∘</mo>
-													<mrow>
-														<msub>
-															<mi>𝜔</mi><mi>𝑁</mi>
-														</msub>
-														<mo>&it;</mo>
-														<msub>
-															<mi>id</mi><mi>ℂ</mi>
-														</msub>
-													</mrow>
-												</mrow>
-												<mo>=</mo>
-												<mrow>
-													<mrow>
-														<msup>
-															<msub>
-																<mi>𝜔</mi><mi>𝑁</mi>
-															</msub>
-															<mi>𝑘</mi>
-														</msup>
-														<mo>&it;</mo>
-														<msub>
-															<mi>id</mi><mi>ℂ</mi>
-														</msub>
-													</mrow>
-													<mo>∘</mo>
-													<mi>𝑓</mi>
-												</mrow>
-											</mrow>
-										</mrow>
-									</mrow>
-									<mo>}</mo>
-								</mrow>
-								<mo>=</mo>
-								<mrow>
-									<mrow>
-										<mo>{</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑓</mi>
-												<mo>∈</mo>
-												<mrow>
-													<msub>
-														<mi>𝑀</mi><mn>2</mn>
-													</msub>
-													<mo>&af;</mo>
-													<mrow>
-														<mo>(</mo><mi>ℤ</mi><mo>)</mo>
-													</mrow>
-												</mrow>
-											</mrow>
-											<mo>|</mo>
-											<mrow>
-												<mrow>
-													<mo>∃</mo>
-													<mo>&af;</mo>
-													<mrow>
-														<mi>𝑘</mi>
-														<mo>∈</mo>
-														<msup>
-															<msub>
-																<mi>ℤ</mi><mi>𝑁</mi>
-															</msub>
-															<mo>×</mo>
-														</msup>
-													</mrow>
-												</mrow>
-												<mo>,</mo>
-												<mrow>
-													<mrow>
-														<mi>𝑓</mi>
-														<mo>∘</mo>
-														<mrow>
-															<msub>
-																<mi>𝜔</mi><mi>𝑁</mi>
-															</msub>
-															<mo>&it;</mo>
-															<msub>
-																<mi>id</mi><mi>ℂ</mi>
-															</msub>
-														</mrow>
-													</mrow>
-													<mo>=</mo>
-													<mrow>
-														<mrow>
-															<msup>
-																<msub>
-																	<mi>𝜔</mi><mi>𝑁</mi>
-																</msub>
-																<mi>𝑘</mi>
-															</msup>
-															<mo>&it;</mo>
-															<msub>
-																<mi>id</mi><mi>ℂ</mi>
-															</msub>
-														</mrow>
-														<mo>∘</mo>
-														<mi>𝑓</mi>
-													</mrow>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>}</mo>
-									</mrow>
-									<mo>∪</mo>
-									<mrow>
-										<mo>{</mo><mn>0</mn><mo>}</mo>
-									</mrow>
-								</mrow>
-							</math>
 							<ul>
-								<li><math><mi>𝑁</mi><mo>=</mo><mn>2</mn></math> のとき，<math><msub><mi>𝑀</mi><mn>2</mn></msub><mo>&af;</mo><mrow><mo>(</mo><mi>ℤ</mi><mo>)</mo></mrow></math>（と同型）．つまり<a href="#トーラス上の実線型変換"><math><msub><mi>𝑇</mi><mn>2</mn></msub></math>上の <math><mi>ℝ</mi></math>-線型変換全体に等しい</a>．</li>
+								<li><math><mi>𝑁</mi><mo>=</mo><mn>2</mn></math> のとき，<math><msub><mi>𝑀</mi><mn>2</mn></msub><mo>&af;</mo><mrow><mo>(</mo><mi>ℤ</mi><mo>)</mo></mrow></math>（と同型）．つまり<a href="#トーラス上の実線型変換"><math><msup><mi>𝑇</mi><mn>2</mn></msup></math>上の <math><mi>ℝ</mi></math>-線型変換全体に等しい</a>．</li>
 								<li>
 									<math><mi>𝑁</mi><mo>=</mo><mrow><mn>3</mn><mo>,</mo><mn>6</mn></mrow></math> のとき，<math>
 										<mrow>
@@ -2562,89 +3904,92 @@
 				</article>
 				<article class="proof">
 					<h4>証明</h4>
-					<ul>
-						<li>
-							<math><mi>𝑓</mi></math> が <math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> 上well-defined である必要十分条件は，<math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
+					<p>
+						一般の写像 <math><mi>𝑓</mi><mo>:</mo><mrow><mi>ℂ</mi><mo>→</mo><mi>ℂ</mi></mrow></mo></math> が <math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> 上well-defined である必要十分条件は，<math>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
+								<mi>𝑧</mi><mo>∈</mo><mi>ℂ</mi>
+							</mrow>
+						</math> と <math>
+							<mo>∀</mo>
+							<mo>&af;</mo>
+							<mrow>
 								<mrow>
-									<mi>𝑧</mi><mo>∈</mo><mi>ℂ</mi>
-								</mrow>
-							</math> と <math>
-								<mo>∀</mo>
-								<mo>&af;</mo>
-								<mrow>
-									<mrow>
-										<mi>𝑚</mi><mo>,</mo><mi>𝑛</mi>
-									</mrow>
-									<mo>∈</mo>
-									<mi>ℤ</mi>
-								</mrow>
-							</math> に対し，
-							<math display="block">
-								<mrow>
-									<mrow>
-										<mi>𝑓</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<msub>
-													<mi>𝜔</mi><mi>𝑁</mi>
-												</msub>
-												<mo>&it;</mo>
-												<mi>𝑧</mi>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
-									<mo>,</mo>
-									<mrow>
-										<mi>𝑓</mi>
-										<mo>&af;</mo>
-										<mrow>
-											<mo>(</mo>
-											<mrow>
-												<mi>𝑧</mi>
-												<mo>+</mo>
-												<mi>𝑚</mi>
-												<mo>+</mo>
-												<mrow>
-													<mi>𝑛</mi><mo>&it;</mo><mi>𝜏</mi>
-												</mrow>
-											</mrow>
-											<mo>)</mo>
-										</mrow>
-									</mrow>
+									<mi>𝑚</mi><mo>,</mo><mi>𝑛</mi>
 								</mrow>
 								<mo>∈</mo>
+								<mi>ℤ</mi>
+							</mrow>
+						</math> に対し，
+						<math display="block">
+							<mrow>
 								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
 									<mrow>
 										<mo>(</mo>
 										<mrow>
-											<mrow>
-												<mi>𝑓</mi>
-												<mo>&af;</mo>
-												<mrow>
-													<mo>(</mo><mi>𝑧</mi><mo>)</mo>
-												</mrow>
-											</mrow>
+											<msub>
+												<mi>𝜔</mi><mi>𝑁</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mi>𝑧</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑧</mi>
 											<mo>+</mo>
-											<mi>ℤ</mi>
+											<mi>𝑚</mi>
 											<mo>+</mo>
 											<mrow>
-												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+												<mi>𝑛</mi><mo>&it;</mo><mi>𝜏</mi>
 											</mrow>
 										</mrow>
 										<mo>)</mo>
 									</mrow>
-									<mo>&it;</mo>
-									<msub>
-										<mi>ℤ</mi><mi>𝑁</mi>
-									</msub>
 								</mrow>
-							</math>
-							を満たすこと．まず，<math>
+							</mrow>
+							<mo>∈</mo>
+							<mrow>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>+</mo>
+										<mi>ℤ</mi>
+										<mo>+</mo>
+										<mrow>
+											<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>&it;</mo>
+								<msub>
+									<mi>ℤ</mi><mi>𝑁</mi>
+								</msub>
+							</mrow>
+						</math>
+						を満たすこと．
+					</p>
+					<ul>
+						<li>
+							まず，<math>
 								<mi>𝑓</mi>
 								<mo>&af;</mo>
 								<mrow>
@@ -2726,7 +4071,328 @@
 									</msub>
 								</mrow>
 							</math>
-							であるから，十分条件にもなっている．
+							であるから，十分条件にもなっている．次に，<math><mi>𝑎</mi><mo>∈</mo><mi>ℝ</mi></math> を <math>
+										<mrow>
+											<mrow>
+												<mo>|</mo>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mrow>
+															<msub>
+																<mi>𝜔</mi><mi>𝑁</mi>
+															</msub>
+															<mo>&it;</mo>
+															<mfrac>
+																<mi>𝑧</mi><mi>𝑎</mi>
+															</mfrac>
+														</mrow>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>|</mo>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mo>|</mo>
+												<mrow>
+													<mi>𝑓</mi>
+													<mo>&af;</mo>
+													<mrow>
+														<mo>(</mo>
+														<mfrac>
+															<mi>𝑧</mi><mi>𝑎</mi>
+														</mfrac>
+														<mo>)</mo>
+													</mrow>
+												</mrow>
+												<mo>|</mo>
+											</mrow>
+										</mrow>
+										<mo>&lt;</mo>
+										<mrow>
+											<mi>min</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mrow>
+														<mo>|</mo><mi>𝜁</mi><mo>|</mo>
+													</mrow>
+													<mo>|</mo>
+													<mrow>
+														<mi>𝜁</mi>
+														<mo>∈</mo>
+														<mrow>
+															<mrow>
+																<mi>ℤ</mi>
+																<mo>+</mo>
+																<mrow>
+																	<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+																</mrow>
+															</mrow>
+															<mo>∖</mo>
+															<mrow>
+																<mo>{</mo><mn>0</mn><mo>}</mo>
+															</mrow>
+														</mrow>
+													</mrow>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+										</mrow>
+							</math> を満たすように取ると，
+							<math display="block">
+								<mrow>
+									<mo>∃</mo>
+									<mo>&af;</mo>
+									<mrow>
+										<mi>𝑘</mi>
+										<mo>∈</mo>
+										<msub>
+											<mi>ℤ</mi><mi>𝑁</mi>
+										</msub>
+									</mrow>
+								</mrow>
+								<mo>,</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<msub>
+													<mi>𝜔</mi><mi>𝑁</mi>
+												</msub>
+												<mo>&it;</mo>
+												<mfrac>
+													<mi>𝑧</mi><mi>𝑎</mi>
+												</mfrac>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>=</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mfrac>
+													<mi>𝑧</mi><mi>𝑎</mi>
+												</mfrac>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>&it;</mo>
+										<msubsup>
+											<mi>𝜔</mi><mi>𝑁</mi><mi>𝑘</mi>
+										</msubsup>
+									</mrow>
+								</mrow>
+							</math>
+							を満たす．<math><mi>𝑓</mi></math> は <math><mi>ℝ</mi></math>-線型だから，<math>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝜔</mi><mi>𝑁</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mi>𝑧</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>&it;</mo>
+									<msubsup>
+										<mi>𝜔</mi><mi>𝑁</mi><mi>𝑘</mi>
+									</msubsup>
+								</mrow>
+							</math> が必要十分となる．
+							<span class="future-work">この <math><mi>𝑘</mi></math> が全ての <math><mi>𝑧</mi></math> で共通に取れることの確認．</span>
+							<math display="block">
+								<mrow>
+									<mrow>
+										<mi>𝑢</mi>
+										<mo>&it;</mo>
+										<msub>
+											<mi>𝜔</mi><mi>𝑁</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mi>𝑧</mi>
+												<mo>+</mo>
+												<msup>
+													<mi>𝑧</mi><mo>′</mo>
+												</msup>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑣</mi>
+										<mo>&it;</mo>
+										<msubsup>
+											<mi>𝜔</mi>
+											<mi>𝑁</mi>
+											<mrow>
+												<mo>−</mo><mn>1</mn>
+											</mrow>
+										</msubsup>
+										<mo>&it;</mo>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mover>
+													<mi>𝑧</mi><mo>‾</mo>
+												</mover>
+												<mo>+</mo>
+												<mover>
+													<msup>
+														<mi>𝑧</mi><mo>′</mo>
+													</msup>
+													<mo>‾</mo>
+												</mover>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑢</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mi>𝑧</mi>
+														<mo>+</mo>
+														<msup>
+															<mi>𝑧</mi><mo>′</mo>
+														</msup>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑣</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<mover>
+															<mi>𝑧</mi><mo>‾</mo>
+														</mover>
+														<mo>+</mo>
+														<mover>
+															<msup>
+																<mi>𝑧</mi><mo>′</mo>
+															</msup>
+															<mo>‾</mo>
+														</mover>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<msubsup>
+										<mi>𝜔</mi>
+										<mi>𝑁</mi>
+										<msup>
+											<mi>𝑘</mi><mo>″</mo>
+										</msup>
+									</msubsup>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑢</mi><mo>&it;</mo><mi>𝑧</mi>
+												</mrow>
+												<mo>+</mo>
+												<mrow>
+													<mi>𝑣</mi>
+													<mo>&it;</mo>
+													<mover>
+														<mi>𝑧</mi><mo>‾</mo>
+													</mover>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msubsup>
+											<mi>𝜔</mi><mi>𝑁</mi><mi>𝑘</mi>
+										</msubsup>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑢</mi>
+													<mo>&it;</mo>
+													<msup>
+														<mi>𝑧</mi><mo>′</mo>
+													</msup>
+												</mrow>
+												<mo>+</mo>
+												<mrow>
+													<mi>𝑣</mi>
+													<mo>&it;</mo>
+													<mover>
+														<msup>
+															<mi>𝑧</mi><mo>′</mo>
+														</msup>
+														<mo>‾</mo>
+													</mover>
+												</mrow>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<msubsup>
+											<mi>𝜔</mi>
+											<mi>𝑁</mi>
+											<msup>
+												<mi>𝑘</mi><mo>′</mo>
+											</msup>
+										</msubsup>
+									</mrow>
+								</mrow>
+							</math>
 							<ul>
 								<li>
 									<math><mi>𝑁</mi><mo>=</mo><mn>2</mn></math> のとき，<math>
@@ -2868,389 +4534,37 @@
 											</mrow>
 										</mrow>
 									</math>
-									を満たす（つまり，<math><mi>𝑓</mi></math> は <math><mi>ℂ</mi></math>-線型変換と <math><mi>ℂ</mi></math>-反線型変換の和で一意的に書ける）ことに注意すると，<math>
+									を満たす（つまり，<math><mi>𝑓</mi></math> は <math><mi>ℂ</mi></math>-線型変換と <math><mi>ℂ</mi></math>-反線型変換の和で一意的に書ける）ことに注意すると，
+									<math display="block">
 										<mrow>
-											<mi>𝑓</mi>
-											<mo>&af;</mo>
 											<mrow>
-												<mo>(</mo>
 												<mrow>
+													<mi>𝑢</mi>
+													<mo>&it;</mo>
 													<msub>
 														<mi>𝜔</mi><mi>𝑁</mi>
 													</msub>
 													<mo>&it;</mo>
 													<mi>𝑧</mi>
 												</mrow>
-												<mo>)</mo>
-											</mrow>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑢</mi>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝜔</mi><mi>𝑁</mi>
-												</msub>
-												<mo>&it;</mo>
-												<mi>𝑧</mi>
-											</mrow>
-											<mo>+</mo>
-											<mrow>
-												<mi>𝑣</mi>
-												<mo>&it;</mo>
-												<msubsup>
-													<mi>𝜔</mi>
-													<mi>𝑁</mi>
-													<mrow>
-														<mo>−</mo><mn>1</mn>
-													</mrow>
-												</msubsup>
-												<mo>&it;</mo>
-												<mover>
-													<mi>𝑧</mi><mo>‾</mo>
-												</mover>
-											</mrow>
-										</mrow>
-									</math> となる．<math><mi>𝑓</mi><mo>=</mo><mn>0</mn></math> は明らかにwell-defined．<math>
-										<mrow>
-											<mi>𝑓</mi><mo>≠</mo><mn>0</mn>
-										</mrow>
-										<mo>⇔</mo>
-										<mrow>
-											<mrow>
-												<mi>𝑢</mi><mo>,</mo><mi>𝑣</mi>
-											</mrow>
-											<mo>≠</mo>
-											<mn>0</mn>
-										</mrow>
-									</math> のとき，十分小さい
-									<math>
-										<mrow>
-											<msup>
+												<mo>+</mo>
 												<mrow>
-													<mo>|</mo><mi>𝑢</mi><mo>|</mo>
-												</mrow>
-												<mn>2</mn>
-											</msup>
-											<mo>&it;</mo>
-											<msup>
-												<mrow>
-													<mo>|</mo><mi>𝑧</mi><mo>|</mo>
-												</mrow>
-												<mn>2</mn>
-											</msup>
-										</mrow>
-									</math>
-									<math display="block">
-										<mo>{</mo>
-										<mtable intent=":system-of-equations">
-											<mtr>
-												<mtd>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mrow>
-																<mi>𝑢</mi>
-																<mo>&it;</mo>
-																<msub>
-																	<mi>𝜔</mi><mi>𝑁</mi>
-																</msub>
-															</mrow>
-															<mo>+</mo>
-															<mrow>
-																<mi>𝑣</mi>
-																<mo>&it;</mo>
-																<msubsup>
-																	<mi>𝜔</mi>
-																	<mi>𝑁</mi>
-																	<mrow>
-																		<mo>−</mo><mn>1</mn>
-																	</mrow>
-																</msubsup>
-															</mrow>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-													<mo>&it;</mo>
-													<mi>𝑎</mi>
-												</mtd>
-												<mtd><mo>∈</mo></mtd>
-												<mtd>
-													<mrow>
-														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mi>𝑢</mi><mo>+</mo><mi>𝑣</mi>
-															</mrow>
-															<mo>)</mo>
-														</mrow>
-														<mo>&it;</mo>
-														<mi>𝑎</mi>
-													</mrow>
-													<mo>+</mo>
-													<mi>ℤ</mi>
-													<mo>+</mo>
-													<mrow>
-														<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
-													</mrow>
-												</mtd>
-											</mtr>
-											<mtr>
-												<mtd>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mrow>
-																<mi>𝑢</mi>
-																<mo>&it;</mo>
-																<msubsup>
-																	<mi>𝜔</mi><mi>𝑁</mi><mn>2</mn>
-																</msubsup>
-															</mrow>
-															<mo>+</mo>
-															<mrow>
-																<mi>𝑣</mi>
-																<mo>&it;</mo>
-																<msubsup>
-																	<mi>𝜔</mi>
-																	<mi>𝑁</mi>
-																	<mrow>
-																		<mo>−</mo><mn>2</mn>
-																	</mrow>
-																</msubsup>
-															</mrow>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
-													<mo>&it;</mo>
-													<mi>𝑎</mi>
-												</mtd>
-												<mtd><mo>∈</mo></mtd>
-												<mtd>
-													<mrow>
-														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mrow>
-																	<mi>𝑢</mi>
-																	<mo>&it;</mo>
-																	<msub>
-																		<mi>𝜔</mi><mi>𝑁</mi>
-																	</msub>
-																</mrow>
-																<mo>+</mo>
-																<mrow>
-																	<mi>𝑣</mi>
-																	<mo>&it;</mo>
-																	<msubsup>
-																		<mi>𝜔</mi>
-																		<mi>𝑁</mi>
-																		<mrow>
-																			<mo>−</mo><mn>1</mn>
-																		</mrow>
-																	</msubsup>
-																</mrow>
-															</mrow>
-															<mo>)</mo>
-														</mrow>
-														<mo>&it;</mo>
-														<mi>𝑎</mi>
-													</mrow>
-													<mo>+</mo>
-													<mi>ℤ</mi>
-													<mo>+</mo>
-													<mrow>
-														<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
-													</mrow>
-												</mtd>
-											</mtr>
-										</mtable>
-									</math>
-									<math display="block">
-										<mrow>
-											<mo>∀</mo>
-											<mo>&af;</mo>
-											<mrow>
-												<mi>𝑧</mi><mo>∈</mo><mi>ℂ</mi>
-											</mrow>
-										</mrow>
-										<mo>,</mo>
-										<mrow>
-											<mrow>
-												<mo>∃</mo>
-												<mo>&af;</mo>
-												<mrow>
-													<mi>𝑘</mi>
-													<mo>∈</mo>
-													<msub>
-														<mi>ℤ</mi><mi>𝑁</mi>
-													</msub>
-												</mrow>
-											</mrow>
-											<mo>,</mo>
-											<mrow>
-												<mrow>
-													<mrow>
-														<mi>𝑢</mi>
-														<mo>&it;</mo>
-														<msub>
-															<mi>𝜔</mi><mi>𝑁</mi>
-														</msub>
-														<mo>&it;</mo>
-														<mi>𝑧</mi>
-													</mrow>
-													<mo>+</mo>
-													<mrow>
-														<mi>𝑣</mi>
-														<mo>&it;</mo>
-														<msubsup>
-															<mi>𝜔</mi>
-															<mi>𝑁</mi>
-															<mrow>
-																<mo>−</mo><mn>1</mn>
-															</mrow>
-														</msubsup>
-														<mo>&it;</mo>
-														<mover>
-															<mi>𝑧</mi><mo>‾</mo>
-														</mover>
-													</mrow>
-												</mrow>
-												<mo>=</mo>
-												<mrow>
-													<mrow>
-														<mo>(</mo>
-														<mrow>
-															<mrow>
-																<mi>𝑢</mi><mo>&it;</mo><mi>𝑧</mi>
-															</mrow>
-															<mo>+</mo>
-															<mrow>
-																<mi>𝑣</mi>
-																<mo>&it;</mo>
-																<mover>
-																	<mi>𝑧</mi><mo>‾</mo>
-																</mover>
-															</mrow>
-														</mrow>
-														<mo>)</mo>
-													</mrow>
+													<mi>𝑣</mi>
 													<mo>&it;</mo>
 													<msubsup>
-														<mi>𝜔</mi><mi>𝑁</mi><mi>𝑘</mi>
+														<mi>𝜔</mi>
+														<mi>𝑁</mi>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
 													</msubsup>
+													<mo>&it;</mo>
+													<mover>
+														<mi>𝑧</mi><mo>‾</mo>
+													</mover>
 												</mrow>
 											</mrow>
-										</mrow>
-									</math>
-									を満たす．
-									<math display="block">
-										<mrow>
-											<mrow>
-												<mi>𝑢</mi>
-												<mo>&it;</mo>
-												<msub>
-													<mi>𝜔</mi><mi>𝑁</mi>
-												</msub>
-												<mo>&it;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mi>𝑧</mi>
-														<mo>+</mo>
-														<msup>
-															<mi>𝑧</mi><mo>′</mo>
-														</msup>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-											<mo>+</mo>
-											<mrow>
-												<mi>𝑣</mi>
-												<mo>&it;</mo>
-												<msubsup>
-													<mi>𝜔</mi>
-													<mi>𝑁</mi>
-													<mrow>
-														<mo>−</mo><mn>1</mn>
-													</mrow>
-												</msubsup>
-												<mo>&it;</mo>
-												<mrow>
-													<mo>(</mo>
-													<mrow>
-														<mover>
-															<mi>𝑧</mi><mo>‾</mo>
-														</mover>
-														<mo>+</mo>
-														<mover>
-															<msup>
-																<mi>𝑧</mi><mo>′</mo>
-															</msup>
-															<mo>‾</mo>
-														</mover>
-													</mrow>
-													<mo>)</mo>
-												</mrow>
-											</mrow>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
-											<mrow>
-												<mo>(</mo>
-												<mrow>
-													<mrow>
-														<mi>𝑢</mi>
-														<mo>&it;</mo>
-														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mi>𝑧</mi>
-																<mo>+</mo>
-																<msup>
-																	<mi>𝑧</mi><mo>′</mo>
-																</msup>
-															</mrow>
-															<mo>)</mo>
-														</mrow>
-													</mrow>
-													<mo>+</mo>
-													<mrow>
-														<mi>𝑣</mi>
-														<mo>&it;</mo>
-														<mrow>
-															<mo>(</mo>
-															<mrow>
-																<mover>
-																	<mi>𝑧</mi><mo>‾</mo>
-																</mover>
-																<mo>+</mo>
-																<mover>
-																	<msup>
-																		<mi>𝑧</mi><mo>′</mo>
-																	</msup>
-																	<mo>‾</mo>
-																</mover>
-															</mrow>
-															<mo>)</mo>
-														</mrow>
-													</mrow>
-												</mrow>
-												<mo>)</mo>
-											</mrow>
-											<mo>&it;</mo>
-											<msubsup>
-												<mi>𝜔</mi>
-												<mi>𝑁</mi>
-												<msup>
-													<mi>𝑘</mi><mo>″</mo>
-												</msup>
-											</msubsup>
-										</mrow>
-										<mo>=</mo>
-										<mrow>
+											<mo>=</mo>
 											<mrow>
 												<mrow>
 													<mo>(</mo>
@@ -3260,7 +4574,7 @@
 														</mrow>
 														<mo>+</mo>
 														<mrow>
-															<mi>𝑣</mi>
+															<mi>𝑢</mi>
 															<mo>&it;</mo>
 															<mover>
 																<mi>𝑧</mi><mo>‾</mo>
@@ -3274,47 +4588,85 @@
 													<mi>𝜔</mi><mi>𝑁</mi><mi>𝑘</mi>
 												</msubsup>
 											</mrow>
-											<mo>+</mo>
+										</mrow>
+										<mo>⇔</mo>
+										<mrow>
 											<mrow>
+												<mi>𝑢</mi>
+												<mo>&it;</mo>
 												<mrow>
 													<mo>(</mo>
 													<mrow>
-														<mrow>
-															<mi>𝑢</mi>
-															<mo>&it;</mo>
-															<msup>
-																<mi>𝑧</mi><mo>′</mo>
-															</msup>
-														</mrow>
-														<mo>+</mo>
-														<mrow>
-															<mi>𝑣</mi>
-															<mo>&it;</mo>
-															<mover>
-																<msup>
-																	<mi>𝑧</mi><mo>′</mo>
-																</msup>
-																<mo>‾</mo>
-															</mover>
-														</mrow>
+														<msub>
+															<mi>𝜔</mi><mi>𝑁</mi>
+														</msub>
+														<mo>−</mo>
+														<msubsup>
+															<mi>𝜔</mi><mi>𝑁</mi><mi>𝑘</mi>
+														</msubsup>
 													</mrow>
 													<mo>)</mo>
 												</mrow>
 												<mo>&it;</mo>
-												<msubsup>
-													<mi>𝜔</mi>
-													<mi>𝑁</mi>
-													<msup>
-														<mi>𝑘</mi><mo>′</mo>
-													</msup>
-												</msubsup>
+												<mi>𝑧</mi>
+											</mrow>
+											<mo>=</mo>
+											<mrow>
+												<mi>𝑣</mi>
+												<mo>&it;</mo>
+												<mrow>
+													<mo>(</mo>
+													<mrow>
+														<msubsup>
+															<mi>𝜔</mi>
+															<mi>𝑁</mi>
+															<mrow>
+																<mo>−</mo><mn>1</mn>
+															</mrow>
+														</msubsup>
+														<mo>−</mo>
+														<msubsup>
+															<mi>𝜔</mi><mi>𝑁</mi><mi>𝑘</mi>
+														</msubsup>
+													</mrow>
+													<mo>)</mo>
+												</mrow>
+												<mo>&it;</mo>
+												<mover>
+													<mi>𝑧</mi><mo>‾</mo>
+												</mover>
+											</mrow>
+											<mo>=</mo>
+											<mn>0</mn>
+										</mrow>
+										<mo>⇔</mo>
+										<mrow>
+											<mrow>
+												<mrow>
+													<mi>𝑘</mi><mo>=</mo><mn>1</mn>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mi>𝑣</mi><mo>=</mo><mn>0</mn>
+												</mrow>
+											</mrow>
+											<mo>∪</mo>
+											<mrow>
+												<mrow>
+													<mi>𝑘</mi>
+													<mo>=</mo>
+													<mrow>
+														<mo>−</mo><mn>1</mn>
+													</mrow>
+												</mrow>
+												<mo>,</mo>
+												<mrow>
+													<mi>𝑢</mi><mo>=</mo><mn>0</mn>
+												</mrow>
 											</mrow>
 										</mrow>
-									</math>
-								</li>
-								<li>
-									うまく示せそうにないが，
-									<math>
+									</math> ．
+									となる．つまり，<a href="#トーラス上の複素線型変換"><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上well-definedな <math><mi>ℂ</mi></math>-線型変換</a>か <math><mi>ℂ</mi></math>-反線型変換に限られる．ゆえに，<math>
 										<mi>𝑢</mi>
 										<mo>∈</mo>
 										<mrow>
@@ -3351,780 +4703,568 @@
 												</mover>
 											</mrow>
 										</mrow>
-									</math> に限られるらしい．
+									</math> に限られる．
 								</li>
 							</ul>
 						</li>
 						<li>
-							<math>
+							まず，<math>
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>𝑧</mi>
+											<mo>+</mo>
+											<mi>𝑚</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑛</mi><mo>&it;</mo><mi>𝜏</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mi>𝑚</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑛</mi><mo>&it;</mo><mi>𝜏</mi>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mo>(</mo>
+									<mrow>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>+</mo>
+										<mi>ℤ</mi>
+										<mo>+</mo>
+										<mrow>
+											<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+										</mrow>
+									</mrow>
+									<mo>)</mo>
+								</mrow>
+								<mo>⊂</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>+</mo>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<msub>
+										<mi>ℤ</mi><mi>𝑁</mi>
+									</msub>
+								</mrow>
+							</math> は常に成り立つ．次に，
+							<math display="block">
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<msub>
+												<mi>𝜔</mi><mi>𝑁</mi>
+											</msub>
+											<mo>&it;</mo>
+											<mi>𝑧</mi>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝜔</mi><mi>𝑁</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mi>𝑧</mi>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mn>0</mn><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mrow>
+										<msub>
+											<mi>𝜔</mi><mi>𝑁</mi>
+										</msub>
+										<mo>&it;</mo>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+									<mo>+</mo>
+									<mrow>
+										<mrow>
+											<mo>(</mo>
+											<mrow>
+												<mn>1</mn>
+												<mo>−</mo>
+												<msub>
+													<mi>𝜔</mi><mi>𝑁</mi>
+												</msub>
+											</mrow>
+											<mo>)</mo>
+										</mrow>
+										<mo>&it;</mo>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mn>0</mn><mo>)</mo>
+											</mrow>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mrow>
+												<mi>𝑓</mi>
+												<mo>&af;</mo>
+												<mrow>
+													<mo>(</mo><mi>𝑧</mi><mo>)</mo>
+												</mrow>
+											</mrow>
+											<mo>+</mo>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<msub>
+										<mi>ℤ</mi><mi>𝑁</mi>
+									</msub>
+								</mrow>
 							</math>
+							となる．<math>
+								<mi>𝑧</mi>
+								<mo>=</mo>
+								<mrow>
+									<mo>−</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mn>0</mn><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+							</math> を考えれば，<math>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mn>1</mn>
+											<mo>−</mo>
+											<msub>
+												<mi>𝜔</mi><mi>𝑁</mi>
+											</msub>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<mrow>
+										<mi>𝑓</mi>
+										<mo>&af;</mo>
+										<mrow>
+											<mo>(</mo><mn>0</mn><mo>)</mo>
+										</mrow>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+									<mo>&it;</mo>
+									<msub>
+										<mi>ℤ</mi><mi>𝑁</mi>
+									</msub>
+								</mrow>
+								<mo>=</mo>
+								<mrow>
+									<mi>ℤ</mi>
+									<mo>+</mo>
+									<mrow>
+										<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+									</mrow>
+								</mrow>
+							</math> ，つまり，
+							<math display="block">
+								<mrow>
+									<mi>𝑓</mi>
+									<mo>&af;</mo>
+									<mrow>
+										<mo>(</mo><mn>0</mn><mo>)</mo>
+									</mrow>
+								</mrow>
+								<mo>∈</mo>
+								<mrow>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+											<mo>−</mo>
+											<msubsup>
+												<mi>𝜔</mi>
+												<mi>𝑁</mi>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msubsup>
+										</mrow>
+										<msup>
+											<mrow>
+												<mo>|</mo>
+												<mrow>
+													<mn>1</mn>
+													<mo>−</mo>
+													<msub>
+														<mi>𝜔</mi><mi>𝑁</mi>
+													</msub>
+												</mrow>
+												<mo>|</mo>
+											</mrow>
+											<mn>2</mn>
+										</msup>
+									</mfrac>
+									<mo>&it;</mo>
+									<mrow>
+										<mo>(</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝜏</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+										<mo>)</mo>
+									</mrow>
+								</mrow>
+							</math>
+							が必要だが，明らかにこれは十分条件でもある．
+							<ul>
+								<li>
+									<math><mi>𝑁</mi><mo>=</mo><mn>2</mn></math> のとき，<math>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mn>0</mn><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mrow>
+												<mfrac>
+													<mn>1</mn><mn>2</mn>
+												</mfrac>
+												<mo>&it;</mo>
+												<mi>ℤ</mi>
+											</mrow>
+											<mo>+</mo>
+											<mrow>
+												<mfrac>
+													<mi>𝜏</mi><mn>2</mn>
+												</mfrac>
+												<mo>&it;</mo>
+												<mi>ℤ</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math><mi>𝑁</mi><mo>=</mo><mn>3</mn></math> のとき，<math>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mn>0</mn><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mfrac>
+												<mrow>
+													<mn>1</mn>
+													<mo>−</mo>
+													<msubsup>
+														<mi>𝜔</mi>
+														<mn>3</mn>
+														<mrow>
+															<mo>−</mo><mn>1</mn>
+														</mrow>
+													</msubsup>
+												</mrow>
+												<mn>3</mn>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>ℤ</mi>
+													<mo>+</mo>
+													<mrow>
+														<msub>
+															<mi>𝜔</mi><mn>3</mn>
+														</msub>
+														<mo>&it;</mo>
+														<mi>ℤ</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mn>0</mn>
+													<mo>,</mo>
+													<mfrac>
+														<mrow>
+															<mn>2</mn>
+															<mo>+</mo>
+															<msub>
+																<mi>𝜔</mi><mn>3</mn>
+															</msub>
+														</mrow>
+														<mn>3</mn>
+													</mfrac>
+													<mo>,</mo>
+													<mfrac>
+														<mrow>
+															<mn>1</mn>
+															<mo>+</mo>
+															<mrow>
+																<mn>2</mn>
+																<mo>&it;</mo>
+																<msub>
+																	<mi>𝜔</mi><mn>3</mn>
+																</msub>
+															</mrow>
+														</mrow>
+														<mn>3</mn>
+													</mfrac>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mo>+</mo>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<msub>
+													<mi>𝜔</mi><mn>3</mn>
+												</msub>
+												<mo>&it;</mo>
+												<mi>ℤ</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math><mi>𝑁</mi><mo>=</mo><mn>4</mn></math> のとき，<math>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mn>0</mn><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mfrac>
+												<mrow>
+													<mn>1</mn><mo>+</mo><mi>𝑖</mi>
+												</mrow>
+												<mn>2</mn>
+											</mfrac>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>ℤ</mi>
+													<mo>+</mo>
+													<mrow>
+														<mi>𝑖</mi><mo>&it;</mo><mi>ℤ</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mrow>
+												<mo>{</mo>
+												<mrow>
+													<mn>0</mn>
+													<mo>,</mo>
+													<mfrac>
+														<mrow>
+															<mn>1</mn><mo>+</mo><mi>𝑖</mi>
+														</mrow>
+														<mn>2</mn>
+													</mfrac>
+												</mrow>
+												<mo>}</mo>
+											</mrow>
+											<mo>+</mo>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<mi>𝑖</mi><mo>&it;</mo><mi>ℤ</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+								<li>
+									<math><mi>𝑁</mi><mo>=</mo><mn>6</mn></math> のとき，<math>
+										<mrow>
+											<mi>𝑓</mi>
+											<mo>&af;</mo>
+											<mrow>
+												<mo>(</mo><mn>0</mn><mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>∈</mo>
+										<mrow>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mn>1</mn>
+													<mo>−</mo>
+													<msub>
+														<mi>𝜔</mi><mn>6</mn>
+													</msub>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>ℤ</mi>
+													<mo>+</mo>
+													<mrow>
+														<msub>
+															<mi>𝜔</mi><mn>6</mn>
+														</msub>
+														<mo>&it;</mo>
+														<mi>ℤ</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<msubsup>
+												<mi>𝜔</mi>
+												<mn>6</mn>
+												<mrow>
+													<mo>−</mo><mn>1</mn>
+												</mrow>
+											</msubsup>
+											<mo>&it;</mo>
+											<mrow>
+												<mo>(</mo>
+												<mrow>
+													<mi>ℤ</mi>
+													<mo>+</mo>
+													<mrow>
+														<msub>
+															<mi>𝜔</mi><mn>6</mn>
+														</msub>
+														<mo>&it;</mo>
+														<mi>ℤ</mi>
+													</mrow>
+												</mrow>
+												<mo>)</mo>
+											</mrow>
+										</mrow>
+										<mo>=</mo>
+										<mrow>
+											<mi>ℤ</mi>
+											<mo>+</mo>
+											<mrow>
+												<msub>
+													<mi>𝜔</mi><mn>6</mn>
+												</msub>
+												<mo>&it;</mo>
+												<mi>ℤ</mi>
+											</mrow>
+										</mrow>
+									</math>
+								</li>
+							</ul>
+							何か，<a href="#トーラス上のℤ𝑁固定点"><math><msup><mi>𝑇</mi><mn>2</mn></msup></math> 上の <math><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> 固定点</a>になっている．
 						</li>
 						<li>
 						</li>
 					</ul>
 				</article>
 			</section>
-			<section>
-				<h3>マウスドラッグで動かせる <math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mi>𝑁</mi></msub></math> の可視化</h3>
-				<figure class="z2-figure">
-					<div class="tau-controls">
-						<label><math><mrow><mi>Re</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝜏</mi><mo>)</mo></mrow></mrow><mo form="infix">=</mo></math> <input class="tau-re" type="number" value="0" step="0.1"aria-label="τの実部"/></label>
-						<label><math><mrow><mi>Im</mi><mo>&af;</mo><mrow><mo>(</mo><mi>𝜏</mi><mo>)</mo></mrow></mrow><mo form="infix">=</mo></math> <input class="tau-im" type="number" min="0.1" value="1" step="0.1" placeholder="正の実数" aria-label="τの虚部"/></label>
-						<small class="tau-warning" aria-live="polite"></small>
-					</div>
-					<svg class="orbifold" viewBox="0 0 420 340" width="600" data-n="2" role="img" aria-label="𝑇2∕ℤ2 の格子、可動点と固定点。τを変更できます">
-						<defs>
-							<clipPath id="clip2"><polygon points="80,300 340,300 340,40 80,40"/></clipPath>
-							<marker id="arrow2" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
-								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
-							</marker>
-						</defs>
-						<g class="lattice" transform="matrix(130 0 0 -130 145 235)">
-							<path class="fundamental-domain" d="M0 0H1L0,1Z" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
-							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
-							<path class="outer-border" d="M-.5 -.5H1.5V1.5H-.5Z" fill="none" stroke="#eee" stroke-opacity=".55" stroke-width=".014"/>
-							<path class="auxiliary-line" d="M-.5 .5L.5 -.5M-.5 1.5L0 1M1 0L1.5 -.5M.5 1.5L1.5 .5" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
-						</g>
-						<line data-arrow="one" x1="145" y1="235" x2="275" y2="235" stroke="#eee" stroke-width="2" marker-end="url(#arrow2)"/>
-						<line data-arrow="tau" x1="145" y1="235" x2="145" y2="105" stroke="#eee" stroke-width="2" marker-end="url(#arrow2)"/>
-						<text data-label="zero" class="vertex" x="133" y="252">0</text>
-						<text data-label="one" class="vertex" x="282" y="252">1</text>
-						<text data-label="tau" class="vertex" x="131" y="94">𝜏</text>
-						<g class="points" clip-path="url(#clip2)">
-							<g class="point-original" fill="#eee">
-								<circle data-k="0" data-m="-1" data-n="-1" cx="47.500" cy="348.750" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="0" cx="47.500" cy="218.750" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="1" cx="47.500" cy="88.750" r="4"/>
-								<circle data-k="0" data-m="0" data-n="-1" cx="177.500" cy="348.750" r="4"/>
-								<circle data-k="0" data-m="0" data-n="0" cx="177.500" cy="218.750" r="4"/>
-								<circle data-k="0" data-m="0" data-n="1" cx="177.500" cy="88.750" r="4"/>
-								<circle data-k="0" data-m="1" data-n="-1" cx="307.500" cy="348.750" r="4"/>
-								<circle data-k="0" data-m="1" data-n="0" cx="307.500" cy="218.750" r="4"/>
-								<circle data-k="0" data-m="1" data-n="1" cx="307.500" cy="88.750" r="4"/>
-							</g>
-							<g class="point-orbit" fill="#eee">
-								<circle data-k="1" data-m="-1" data-n="-1" cx="112.500" cy="251.250" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="0" cx="112.500" cy="121.250" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="1" cx="112.500" cy="-8.750" r="4"/>
-								<circle data-k="1" data-m="0" data-n="-1" cx="242.500" cy="251.250" r="4"/>
-								<circle data-k="1" data-m="0" data-n="0" cx="242.500" cy="121.250" r="4"/>
-								<circle data-k="1" data-m="0" data-n="1" cx="242.500" cy="-8.750" r="4"/>
-								<circle data-k="1" data-m="1" data-n="-1" cx="372.500" cy="251.250" r="4"/>
-								<circle data-k="1" data-m="1" data-n="0" cx="372.500" cy="121.250" r="4"/>
-								<circle data-k="1" data-m="1" data-n="1" cx="372.500" cy="-8.750" r="4"/>
-							</g>
-						</g>
-						<g class="fixed-points" clip-path="url(#clip2)" pointer-events="none">
-							<g class="fixed-z2" fill="#ff7979">
-								<circle data-u="-0.5" data-v="-0.5" cx="80.000" cy="300.000" r="4"/>
-								<circle data-u="-0.5" data-v="0" cx="80.000" cy="235.000" r="4"/>
-								<circle data-u="-0.5" data-v="0.5" cx="80.000" cy="170.000" r="4"/>
-								<circle data-u="-0.5" data-v="1" cx="80.000" cy="105.000" r="4"/>
-								<circle data-u="-0.5" data-v="1.5" cx="80.000" cy="40.000" r="4"/>
-								<circle data-u="0" data-v="-0.5" cx="145.000" cy="300.000" r="4"/>
-								<circle data-u="0" data-v="0" cx="145.000" cy="235.000" r="4"/>
-								<circle data-u="0" data-v="0.5" cx="145.000" cy="170.000" r="4"/>
-								<circle data-u="0" data-v="1" cx="145.000" cy="105.000" r="4"/>
-								<circle data-u="0" data-v="1.5" cx="145.000" cy="40.000" r="4"/>
-								<circle data-u="0.5" data-v="-0.5" cx="210.000" cy="300.000" r="4"/>
-								<circle data-u="0.5" data-v="0" cx="210.000" cy="235.000" r="4"/>
-								<circle data-u="0.5" data-v="0.5" cx="210.000" cy="170.000" r="4"/>
-								<circle data-u="0.5" data-v="1" cx="210.000" cy="105.000" r="4"/>
-								<circle data-u="0.5" data-v="1.5" cx="210.000" cy="40.000" r="4"/>
-								<circle data-u="1" data-v="-0.5" cx="275.000" cy="300.000" r="4"/>
-								<circle data-u="1" data-v="0" cx="275.000" cy="235.000" r="4"/>
-								<circle data-u="1" data-v="0.5" cx="275.000" cy="170.000" r="4"/>
-								<circle data-u="1" data-v="1" cx="275.000" cy="105.000" r="4"/>
-								<circle data-u="1" data-v="1.5" cx="275.000" cy="40.000" r="4"/>
-								<circle data-u="1.5" data-v="-0.5" cx="340.000" cy="300.000" r="4"/>
-								<circle data-u="1.5" data-v="0" cx="340.000" cy="235.000" r="4"/>
-								<circle data-u="1.5" data-v="0.5" cx="340.000" cy="170.000" r="4"/>
-								<circle data-u="1.5" data-v="1" cx="340.000" cy="105.000" r="4"/>
-								<circle data-u="1.5" data-v="1.5" cx="340.000" cy="40.000" r="4"/>
-							</g>
-						</g>
-					</svg>
-					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>2</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viewBox="0 0 10 24" width="10" height="24"><circle class="fixed-z2" cx="5" cy="12" r="4" fill="#ff7979"/></svg> は <math><msub><mi>ℤ</mi><mn>2</mn></msub></math> 固定点．</figcaption>
-				</figure>
-				<figure>
-					<svg class="orbifold" viewBox="70 70 280 200" width="600" data-n="3" role="img" aria-label="𝑇2∕ℤ3 の縮小格子領域。各点をドラッグできます">
-						<defs>
-							<clipPath id="clip3"><polygon points="168.225,242.356 335.325,242.356 251.775,97.644 84.675,97.644"/></clipPath>
-							<marker id="arrow3" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
-								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
-							</marker>
-						</defs>
-						<g class="lattice" transform="matrix(83.55 0 -41.775 -72.356 189.112 206.178)">
-							<path class="fundamental-domain" d="M0 0H.5L.667 .333L.333 .667L0 .5Z" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
-							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
-							<path class="auxiliary-line" d="M-.5 1.5L-.333 1.333L-.5 1M0 1.5L-.333 1.333M0 1L-.5 .5L-.333 .333L-.5 0M0 .5L-.333 .333M0 0L-.5 -.5M.333 -.333L0 -.5M.5 1.5L.667 1.333L.333 .667M.5 0L.333 -.333L.5 -.5L1 0M1 1L.5 .5M1 1.5L.667 1.333M1.333 .667L.667 .333M1.333 -.333L1 -.5M1.5 1L1.333 .667L1.5 .5M1.5 0L1.333 -.333L1.5 -.5" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
-						</g>
-						<line x1="189.112" y1="206.178" x2="272.662" y2="206.178" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow3)"/>
-						<line x1="189.112" y1="206.178" x2="147.338" y2="133.822" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow3)"/>
-						<text class="vertex" x="178.112" y="223.178">0</text>
-						<text class="vertex" x="279.662" y="223.178">1</text>
-						<text class="vertex" x="133.338" y="123.822">𝜏</text>
-						<g class="points" clip-path="url(#clip3)">
-							<g class="point-original" fill="#eee">
-								<circle data-k="0" data-m="-1" data-n="-1" cx="164.047" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="0" cx="122.272" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="1" cx="80.498" cy="110.668" r="4"/>
-								<circle data-k="0" data-m="0" data-n="-1" cx="247.597" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="0" data-n="0" cx="205.822" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="0" data-n="1" cx="164.048" cy="110.668" r="4"/>
-								<circle data-k="0" data-m="1" data-n="-1" cx="331.147" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="1" data-n="0" cx="289.372" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="1" data-n="1" cx="247.597" cy="110.668" r="4"/>
-							</g>
-							<g class="point-orbit" fill="#eee">
-								<circle data-k="1" data-m="-1" data-n="-1" cx="202.48" cy="275.64" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="0" cx="160.705" cy="203.284" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="1" cx="118.93" cy="130.928" r="4"/>
-								<circle data-k="1" data-m="0" data-n="-1" cx="286.03" cy="275.64" r="4"/>
-								<circle data-k="1" data-m="0" data-n="0" cx="244.255" cy="203.284" r="4"/>
-								<circle data-k="1" data-m="0" data-n="1" cx="202.481" cy="130.928" r="4"/>
-								<circle data-k="1" data-m="1" data-n="-1" cx="369.58" cy="275.64" r="4"/>
-								<circle data-k="1" data-m="1" data-n="0" cx="327.805" cy="203.284" r="4"/>
-								<circle data-k="1" data-m="1" data-n="1" cx="286.03" cy="130.928" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="-1" cx="200.809" cy="232.227" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="0" cx="159.034" cy="159.87" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="1" cx="117.26" cy="87.514" r="4"/>
-								<circle data-k="2" data-m="0" data-n="-1" cx="284.359" cy="232.227" r="4"/>
-								<circle data-k="2" data-m="0" data-n="0" cx="242.584" cy="159.87" r="4"/>
-								<circle data-k="2" data-m="0" data-n="1" cx="200.81" cy="87.514" r="4"/>
-								<circle data-k="2" data-m="1" data-n="-1" cx="367.909" cy="232.227" r="4"/>
-								<circle data-k="2" data-m="1" data-n="0" cx="326.135" cy="159.87" r="4"/>
-								<circle data-k="2" data-m="1" data-n="1" cx="284.36" cy="87.514" r="4"/>
-							</g>
-						</g>
-						<g class="fixed-points" clip-path="url(#clip3)">
-							<g class="fixed-z3" fill="#55c8ff">
-								<circle cx="147.337" cy="278.534" r="4"/>
-								<circle cx="105.562" cy="206.178" r="4"/>
-								<circle cx="63.787" cy="133.822" r="4"/>
-								<circle cx="22.012" cy="61.466" r="4"/>
-								<circle cx="230.887" cy="278.534" r="4"/>
-								<circle cx="189.112" cy="206.178" r="4"/>
-								<circle cx="147.337" cy="133.822" r="4"/>
-								<circle cx="105.562" cy="61.466" r="4"/>
-								<circle cx="314.437" cy="278.534" r="4"/>
-								<circle cx="272.662" cy="206.178" r="4"/>
-								<circle cx="230.887" cy="133.822" r="4"/>
-								<circle cx="189.112" cy="61.466" r="4"/>
-								<circle cx="397.987" cy="278.534" r="4"/>
-								<circle cx="356.212" cy="206.178" r="4"/>
-								<circle cx="314.437" cy="133.822" r="4"/>
-								<circle cx="272.662" cy="61.466" r="4"/>
-								<circle cx="189.112" cy="254.415" r="4"/>
-								<circle cx="147.337" cy="182.059" r="4"/>
-								<circle cx="105.562" cy="109.703" r="4"/>
-								<circle cx="272.662" cy="254.415" r="4"/>
-								<circle cx="230.887" cy="182.059" r="4"/>
-								<circle cx="189.112" cy="109.703" r="4"/>
-								<circle cx="356.212" cy="254.415" r="4"/>
-								<circle cx="314.437" cy="182.059" r="4"/>
-								<circle cx="272.662" cy="109.703" r="4"/>
-								<circle cx="147.337" cy="230.297" r="4"/>
-								<circle cx="105.562" cy="157.941" r="4"/>
-								<circle cx="63.787" cy="85.585" r="4"/>
-								<circle cx="230.887" cy="230.297" r="4"/>
-								<circle cx="189.112" cy="157.941" r="4"/>
-								<circle cx="147.337" cy="85.585" r="4"/>
-								<circle cx="314.437" cy="230.297" r="4"/>
-								<circle cx="272.662" cy="157.941" r="4"/>
-								<circle cx="230.887" cy="85.585" r="4"/>
-							</g>
-						</g>
-					</svg>
-					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>3</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z3" cx="5" cy="12" r="4" fill="#55c8ff"/></svg> は <math><msub><mi>ℤ</mi><mn>3</mn></msub></math> 固定点．
-					</figcaption>
-				</figure>
-				<!--<figure>
-					<svg class="orbifold" viewBox="70 70 280 200" width="600" data-n="3" role="img" aria-label="𝑇2∕ℤ3 の縮小格子領域。各点をドラッグできます">
-						<defs>
-							<clipPath id="clip3"><polygon points="168.225,242.356 335.325,242.356 251.775,97.644 84.675,97.644"/></clipPath>
-							<marker id="arrow3" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
-								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
-							</marker>
-						</defs>
-						<g class="lattice" transform="matrix(83.55 0 -41.775 -72.356 189.112 206.178)">
-							<path class="fundamental-domain" d="M0 0L.667 .333L1 1L.333 .667Z" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
-							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
-							<path class="auxiliary-line" d="M-.25 1.5L-.333 1.333L.333 .667M0 0L-.25 -.5M.25 1.5L-.333 .333L.333 -.333L.25 -.5M.75 1.5L.667 1.333L1.333 .667L.75 -.5M1.25 1.5L1 1M.667 .333L1.333 -.333L1.25 -.5M-.5 1.25L-.333 1.333M-.5 .75L.667 1.333M-.5 .25L-.333 .333M-.5 -.25L0 0M1 1L1.5 1.25M.333 -.333L1.5 .25M1.333 .667L1.5 .75M1.333 -.333L1.5 -.25" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
-						</g>
-						<line x1="189.112" y1="206.178" x2="272.662" y2="206.178" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow3)"/>
-						<line x1="189.112" y1="206.178" x2="147.338" y2="133.822" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow3)"/>
-						<text class="vertex" x="178.112" y="223.178">0</text>
-						<text class="vertex" x="279.662" y="223.178">1</text>
-						<text class="vertex" x="133.338" y="123.822">𝜏</text>
-						<g class="points" clip-path="url(#clip3)">
-							<g class="point-original" fill="#eee">
-								<circle data-k="0" data-m="-1" data-n="-1" cx="164.047" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="0" cx="122.272" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="1" cx="80.498" cy="110.668" r="4"/>
-								<circle data-k="0" data-m="0" data-n="-1" cx="247.597" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="0" data-n="0" cx="205.822" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="0" data-n="1" cx="164.048" cy="110.668" r="4"/>
-								<circle data-k="0" data-m="1" data-n="-1" cx="331.147" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="1" data-n="0" cx="289.372" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="1" data-n="1" cx="247.597" cy="110.668" r="4"/>
-							</g>
-							<g class="point-orbit" fill="#eee">
-								<circle data-k="1" data-m="-1" data-n="-1" cx="202.48" cy="275.64" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="0" cx="160.705" cy="203.284" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="1" cx="118.93" cy="130.928" r="4"/>
-								<circle data-k="1" data-m="0" data-n="-1" cx="286.03" cy="275.64" r="4"/>
-								<circle data-k="1" data-m="0" data-n="0" cx="244.255" cy="203.284" r="4"/>
-								<circle data-k="1" data-m="0" data-n="1" cx="202.481" cy="130.928" r="4"/>
-								<circle data-k="1" data-m="1" data-n="-1" cx="369.58" cy="275.64" r="4"/>
-								<circle data-k="1" data-m="1" data-n="0" cx="327.805" cy="203.284" r="4"/>
-								<circle data-k="1" data-m="1" data-n="1" cx="286.03" cy="130.928" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="-1" cx="200.809" cy="232.227" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="0" cx="159.034" cy="159.87" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="1" cx="117.26" cy="87.514" r="4"/>
-								<circle data-k="2" data-m="0" data-n="-1" cx="284.359" cy="232.227" r="4"/>
-								<circle data-k="2" data-m="0" data-n="0" cx="242.584" cy="159.87" r="4"/>
-								<circle data-k="2" data-m="0" data-n="1" cx="200.81" cy="87.514" r="4"/>
-								<circle data-k="2" data-m="1" data-n="-1" cx="367.909" cy="232.227" r="4"/>
-								<circle data-k="2" data-m="1" data-n="0" cx="326.135" cy="159.87" r="4"/>
-								<circle data-k="2" data-m="1" data-n="1" cx="284.36" cy="87.514" r="4"/>
-							</g>
-						</g>
-						<g class="fixed-points" clip-path="url(#clip3)">
-							<g class="fixed-z3" fill="#55c8ff">
-								<circle cx="147.337" cy="278.534" r="4"/>
-								<circle cx="105.562" cy="206.178" r="4"/>
-								<circle cx="63.787" cy="133.822" r="4"/>
-								<circle cx="22.012" cy="61.466" r="4"/>
-								<circle cx="230.887" cy="278.534" r="4"/>
-								<circle cx="189.112" cy="206.178" r="4"/>
-								<circle cx="147.337" cy="133.822" r="4"/>
-								<circle cx="105.562" cy="61.466" r="4"/>
-								<circle cx="314.437" cy="278.534" r="4"/>
-								<circle cx="272.662" cy="206.178" r="4"/>
-								<circle cx="230.887" cy="133.822" r="4"/>
-								<circle cx="189.112" cy="61.466" r="4"/>
-								<circle cx="397.987" cy="278.534" r="4"/>
-								<circle cx="356.212" cy="206.178" r="4"/>
-								<circle cx="314.437" cy="133.822" r="4"/>
-								<circle cx="272.662" cy="61.466" r="4"/>
-								<circle cx="189.112" cy="254.415" r="4"/>
-								<circle cx="147.337" cy="182.059" r="4"/>
-								<circle cx="105.562" cy="109.703" r="4"/>
-								<circle cx="272.662" cy="254.415" r="4"/>
-								<circle cx="230.887" cy="182.059" r="4"/>
-								<circle cx="189.112" cy="109.703" r="4"/>
-								<circle cx="356.212" cy="254.415" r="4"/>
-								<circle cx="314.437" cy="182.059" r="4"/>
-								<circle cx="272.662" cy="109.703" r="4"/>
-								<circle cx="147.337" cy="230.297" r="4"/>
-								<circle cx="105.562" cy="157.941" r="4"/>
-								<circle cx="63.787" cy="85.585" r="4"/>
-								<circle cx="230.887" cy="230.297" r="4"/>
-								<circle cx="189.112" cy="157.941" r="4"/>
-								<circle cx="147.337" cy="85.585" r="4"/>
-								<circle cx="314.437" cy="230.297" r="4"/>
-								<circle cx="272.662" cy="157.941" r="4"/>
-								<circle cx="230.887" cy="85.585" r="4"/>
-							</g>
-						</g>
-					</svg>
-					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>3</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z3" cx="5" cy="12" r="4" fill="#55c8ff"/></svg> は <math><msub><mi>ℤ</mi><mn>3</mn></msub></math> 固定点．
-					</figcaption>
-				</figure>-->
-				<figure>
-					<svg class="orbifold" viewBox="70 56.667 280 226.667" width="600" data-n="4" role="img" aria-label="𝑇2∕ℤ4の縮小格子領域。各点をドラッグできます">
-						<defs>
-							<clipPath id="clip4"><polygon points="115.330,264.670 304.670,264.670 304.670,75.330 115.330,75.330"/></clipPath>
-							<marker id="arrow4" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
-								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
-							</marker>
-						</defs>
-						<g class="lattice" transform="matrix(94.67 0 0 -94.67 162.665 217.335)">
-							<rect class="fundamental-domain" width="0.5" height="0.5" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
-							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
-							<path class="auxiliary-line" d="M-.5 1.5H1.5M-.5 .5H0M.5 .5H1.5M-.5 -.5H1.5M-.5 1.5V-.5M.5 1.5V.5M.5 0V-.5M1.5 1.5V-.5" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
-						</g>
-						<line x1="162.665" y1="217.335" x2="257.335" y2="217.335" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow4)"/>
-						<line x1="162.665" y1="217.335" x2="162.665" y2="122.665" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow4)"/>
-						<text class="vertex" x="150.665" y="234.335">0</text>
-						<text class="vertex" x="264.335" y="234.335">1</text>
-						<text class="vertex" x="148.665" y="111.665">𝜏</text>
-						<g class="points" clip-path="url(#clip4)">
-							<g class="point-original" fill="#eee">
-								<circle data-k="0" data-m="-1" data-n="-1" cx="102.076" cy="281.711" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="0" cx="102.076" cy="187.041" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="1" cx="102.076" cy="92.371" r="4"/>
-								<circle data-k="0" data-m="0" data-n="-1" cx="196.746" cy="281.711" r="4"/>
-								<circle data-k="0" data-m="0" data-n="0" cx="196.746" cy="187.041" r="4"/>
-								<circle data-k="0" data-m="0" data-n="1" cx="196.746" cy="92.371" r="4"/>
-								<circle data-k="0" data-m="1" data-n="-1" cx="291.416" cy="281.711" r="4"/>
-								<circle data-k="0" data-m="1" data-n="0" cx="291.416" cy="187.041" r="4"/>
-								<circle data-k="0" data-m="1" data-n="1" cx="291.416" cy="92.371" r="4"/>
-							</g>
-							<g class="point-orbit" fill="#eee">
-								<circle data-k="1" data-m="-1" data-n="-1" cx="132.371" cy="277.924" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="0" cx="132.371" cy="183.254" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="1" cx="132.371" cy="88.584" r="4"/>
-								<circle data-k="1" data-m="0" data-n="-1" cx="227.041" cy="277.924" r="4"/>
-								<circle data-k="1" data-m="0" data-n="0" cx="227.041" cy="183.254" r="4"/>
-								<circle data-k="1" data-m="0" data-n="1" cx="227.041" cy="88.584" r="4"/>
-								<circle data-k="1" data-m="1" data-n="-1" cx="321.711" cy="277.924" r="4"/>
-								<circle data-k="1" data-m="1" data-n="0" cx="321.711" cy="183.254" r="4"/>
-								<circle data-k="1" data-m="1" data-n="1" cx="321.711" cy="88.584" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="-1" cx="128.584" cy="247.629" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="0" cx="128.584" cy="152.959" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="1" cx="128.584" cy="58.289" r="4"/>
-								<circle data-k="2" data-m="0" data-n="-1" cx="223.254" cy="247.629" r="4"/>
-								<circle data-k="2" data-m="0" data-n="0" cx="223.254" cy="152.959" r="4"/>
-								<circle data-k="2" data-m="0" data-n="1" cx="223.254" cy="58.289" r="4"/>
-								<circle data-k="2" data-m="1" data-n="-1" cx="317.924" cy="247.629" r="4"/>
-								<circle data-k="2" data-m="1" data-n="0" cx="317.924" cy="152.959" r="4"/>
-								<circle data-k="2" data-m="1" data-n="1" cx="317.924" cy="58.289" r="4"/>
-								<circle data-k="3" data-m="-1" data-n="-1" cx="98.289" cy="251.416" r="4"/>
-								<circle data-k="3" data-m="-1" data-n="0" cx="98.289" cy="156.746" r="4"/>
-								<circle data-k="3" data-m="-1" data-n="1" cx="98.289" cy="62.076" r="4"/>
-								<circle data-k="3" data-m="0" data-n="-1" cx="192.959" cy="251.416" r="4"/>
-								<circle data-k="3" data-m="0" data-n="0" cx="192.959" cy="156.746" r="4"/>
-								<circle data-k="3" data-m="0" data-n="1" cx="192.959" cy="62.076" r="4"/>
-								<circle data-k="3" data-m="1" data-n="-1" cx="287.629" cy="251.416" r="4"/>
-								<circle data-k="3" data-m="1" data-n="0" cx="287.629" cy="156.746" r="4"/>
-								<circle data-k="3" data-m="1" data-n="1" cx="287.629" cy="62.076" r="4"/>
-							</g>
-						</g>
-						<g class="fixed-points" clip-path="url(#clip4)">
-							<g class="fixed-z2" fill="#ff7979">
-								<circle cx="115.330" cy="312.005" r="4"/>
-								<circle cx="115.330" cy="217.335" r="4"/>
-								<circle cx="115.330" cy="122.665" r="4"/>
-								<circle cx="115.330" cy="27.995" r="4"/>
-								<circle cx="210.000" cy="312.005" r="4"/>
-								<circle cx="210.000" cy="217.335" r="4"/>
-								<circle cx="210.000" cy="122.665" r="4"/>
-								<circle cx="210.000" cy="27.995" r="4"/>
-								<circle cx="304.670" cy="312.005" r="4"/>
-								<circle cx="304.670" cy="217.335" r="4"/>
-								<circle cx="304.670" cy="122.665" r="4"/>
-								<circle cx="304.670" cy="27.995" r="4"/>
-								<circle cx="67.995" cy="264.670" r="4"/>
-								<circle cx="67.995" cy="170.000" r="4"/>
-								<circle cx="67.995" cy="75.330" r="4"/>
-								<circle cx="162.665" cy="264.670" r="4"/>
-								<circle cx="162.665" cy="170.000" r="4"/>
-								<circle cx="162.665" cy="75.330" r="4"/>
-								<circle cx="257.335" cy="264.670" r="4"/>
-								<circle cx="257.335" cy="170.000" r="4"/>
-								<circle cx="257.335" cy="75.330" r="4"/>
-								<circle cx="352.005" cy="264.670" r="4"/>
-								<circle cx="352.005" cy="170.000" r="4"/>
-								<circle cx="352.005" cy="75.330" r="4"/>
-							</g>
-							<g class="fixed-z4" fill="#f9c74f">
-								<circle cx="67.995" cy="312.005" r="4"/>
-								<circle cx="67.995" cy="217.335" r="4"/>
-								<circle cx="67.995" cy="122.665" r="4"/>
-								<circle cx="67.995" cy="27.995" r="4"/>
-								<circle cx="162.665" cy="312.005" r="4"/>
-								<circle cx="162.665" cy="217.335" r="4"/>
-								<circle cx="162.665" cy="122.665" r="4"/>
-								<circle cx="162.665" cy="27.995" r="4"/>
-								<circle cx="257.335" cy="312.005" r="4"/>
-								<circle cx="257.335" cy="217.335" r="4"/>
-								<circle cx="257.335" cy="122.665" r="4"/>
-								<circle cx="257.335" cy="27.995" r="4"/>
-								<circle cx="352.005" cy="312.005" r="4"/>
-								<circle cx="352.005" cy="217.335" r="4"/>
-								<circle cx="352.005" cy="122.665" r="4"/>
-								<circle cx="352.005" cy="27.995" r="4"/>
-								<circle cx="115.330" cy="264.670" r="4"/>
-								<circle cx="115.330" cy="170.000" r="4"/>
-								<circle cx="115.330" cy="75.330" r="4"/>
-								<circle cx="210.000" cy="264.670" r="4"/>
-								<circle cx="210.000" cy="170.000" r="4"/>
-								<circle cx="210.000" cy="75.330" r="4"/>
-								<circle cx="304.670" cy="264.670" r="4"/>
-								<circle cx="304.670" cy="170.000" r="4"/>
-								<circle cx="304.670" cy="75.330" r="4"/>
-							</g>
-						</g>
-					</svg>
-					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>4</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z2" cx="5" cy="12" r="4" fill="#ff7979"/></svg> は <math><msub><mi>ℤ</mi><mn>2</mn></msub></math> 固定点．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z4" cx="5" cy="12" r="4" fill="#f9c74f"/></svg> は <math><msub><mi>ℤ</mi><mn>4</mn></msub></math> 固定点．
-					</figcaption>
-				</figure>
-				<figure>
-					<svg class="orbifold" viewBox="70 56.667 280 226.667" width="600" data-n="6" role="img" aria-label="𝑇2∕ℤ6の縮小格子領域。各点をドラッグできます">
-						<defs>
-							<clipPath id="clip6"><polygon points="84.675,242.356 251.775,242.356 335.325,97.644 168.225,97.644"/></clipPath>
-							<marker id="arrow6" markerWidth="5" markerHeight="5" refX="4" refY="2" orient="auto">
-								<path d="M0 0L4 2L0 4Z" fill="#fff"/>
-							</marker>
-						</defs>
-						<g class="lattice" transform="matrix(83.55 0 41.775 -72.356 147.338 206.178)">
-							<path class="fundamental-domain" d="M0 0H.5L.333 .333L0 .5Z" fill="#444" stroke="#fff" stroke-width=".018" stroke-dasharray=".075 .05"/>
-							<path class="grid-line" d="M0 -.5V1.5 M1 -.5V1.5 M-.5 0H1.5 M-.5 1H1.5" fill="none" stroke="#eee" stroke-opacity=".64" stroke-width=".018"/>
-							<path class="auxiliary-line" d="M-.5 -.5L-.333 -.333M-.5 0L-.333 -.333L0 -.5M-.333 .667L-.5 .5L.5 -.5L.667 -.333M-.5 1L-.333 .667L0 .5M.5 0L.667 -.333L1 -.5M-.5 1.5L1.5 -.5M.333 .333L.667 .667M0 1.5L.333 1.333L.667 .667L1.333.333L1.5 0M0.333 1.333L0.5 1.5L1.5 0.5L1.333 0.333M1.5 1.5L1.333 1.333M1 1.5L1.333 1.333L1.5 1" fill="none" stroke="#fff" stroke-opacity=".64" stroke-width=".018" stroke-dasharray=".075 .05"/>
-						</g>
-						<line x1="147.338" y1="206.178" x2="230.887" y2="206.178" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow6)"/>
-						<line x1="147.338" y1="206.178" x2="189.113" y2="133.822" class="arrow" stroke="#eee" stroke-width="2" marker-end="url(#arrow6)"/>
-						<text class="vertex" x="136.338" y="223.178">0</text>
-						<text class="vertex" x="237.887" y="223.178">1</text>
-						<text class="vertex" x="177.113" y="123.822">𝜏</text>
-						<g class="points" clip-path="url(#clip6)">
-							<g class="point-original" fill="#eee">
-								<circle data-k="0" data-m="-1" data-n="-1" cx="65.459" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="0" cx="107.234" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="-1" data-n="1" cx="149.009" cy="110.668" r="4"/>
-								<circle data-k="0" data-m="0" data-n="-1" cx="149.008" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="0" data-n="0" cx="190.784" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="0" data-n="1" cx="232.559" cy="110.668" r="4"/>
-								<circle data-k="0" data-m="1" data-n="-1" cx="232.558" cy="255.381" r="4"/>
-								<circle data-k="0" data-m="1" data-n="0" cx="274.334" cy="183.024" r="4"/>
-								<circle data-k="0" data-m="1" data-n="1" cx="316.108" cy="110.668" r="4"/>
-							</g>
-							<g class="point-orbit" fill="#eee">
-								<circle data-k="1" data-m="-1" data-n="-1" cx="107.233" cy="229.332" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="0" cx="149.008" cy="156.976" r="4"/>
-								<circle data-k="1" data-m="-1" data-n="1" cx="190.784" cy="84.619" r="4"/>
-								<circle data-k="1" data-m="0" data-n="-1" cx="190.784" cy="229.332" r="4"/>
-								<circle data-k="1" data-m="0" data-n="0" cx="232.559" cy="156.976" r="4"/>
-								<circle data-k="1" data-m="0" data-n="1" cx="274.334" cy="84.619" r="4"/>
-								<circle data-k="1" data-m="1" data-n="-1" cx="274.333" cy="229.332" r="4"/>
-								<circle data-k="1" data-m="1" data-n="0" cx="316.108" cy="156.976" r="4"/>
-								<circle data-k="1" data-m="1" data-n="1" cx="357.884" cy="84.619" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="-1" cx="63.788" cy="252.486" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="0" cx="105.563" cy="180.13" r="4"/>
-								<circle data-k="2" data-m="-1" data-n="1" cx="147.338" cy="107.773" r="4"/>
-								<circle data-k="2" data-m="0" data-n="-1" cx="147.338" cy="252.486" r="4"/>
-								<circle data-k="2" data-m="0" data-n="0" cx="189.113" cy="180.13" r="4"/>
-								<circle data-k="2" data-m="0" data-n="1" cx="230.887" cy="107.773" r="4"/>
-								<circle data-k="2" data-m="1" data-n="-1" cx="230.887" cy="252.486" r="4"/>
-								<circle data-k="2" data-m="1" data-n="0" cx="272.663" cy="180.13" r="4"/>
-								<circle data-k="2" data-m="1" data-n="1" cx="314.438" cy="107.773" r="4"/>
-								<circle data-k="3" data-m="-1" data-n="-1" cx="103.892" cy="229.332" r="4"/>
-								<circle data-k="3" data-m="-1" data-n="0" cx="145.667" cy="156.976" r="4"/>
-								<circle data-k="3" data-m="-1" data-n="1" cx="187.442" cy="84.619" r="4"/>
-								<circle data-k="3" data-m="0" data-n="-1" cx="187.442" cy="229.332" r="4"/>
-								<circle data-k="3" data-m="0" data-n="0" cx="229.217" cy="156.976" r="4"/>
-								<circle data-k="3" data-m="0" data-n="1" cx="270.992" cy="84.619" r="4"/>
-								<circle data-k="3" data-m="1" data-n="-1" cx="270.991" cy="229.332" r="4"/>
-								<circle data-k="3" data-m="1" data-n="0" cx="312.767" cy="156.976" r="4"/>
-								<circle data-k="3" data-m="1" data-n="1" cx="354.542" cy="84.619" r="4"/>
-								<circle data-k="4" data-m="-1" data-n="-1" cx="62.117" cy="255.381" r="4"/>
-								<circle data-k="4" data-m="-1" data-n="0" cx="103.892" cy="183.024" r="4"/>
-								<circle data-k="4" data-m="-1" data-n="1" cx="145.667" cy="110.668" r="4"/>
-								<circle data-k="4" data-m="0" data-n="-1" cx="145.667" cy="255.381" r="4"/>
-								<circle data-k="4" data-m="0" data-n="0" cx="187.442" cy="183.024" r="4"/>
-								<circle data-k="4" data-m="0" data-n="1" cx="229.217" cy="110.668" r="4"/>
-								<circle data-k="4" data-m="1" data-n="-1" cx="229.216" cy="255.381" r="4"/>
-								<circle data-k="4" data-m="1" data-n="0" cx="270.992" cy="183.024" r="4"/>
-								<circle data-k="4" data-m="1" data-n="1" cx="312.767" cy="110.668" r="4"/>
-								<circle data-k="5" data-m="-1" data-n="-1" cx="105.562" cy="232.227" r="4"/>
-								<circle data-k="5" data-m="-1" data-n="0" cx="147.338" cy="159.87" r="4"/>
-								<circle data-k="5" data-m="-1" data-n="1" cx="189.113" cy="87.514" r="4"/>
-								<circle data-k="5" data-m="0" data-n="-1" cx="189.113" cy="232.227" r="4"/>
-								<circle data-k="5" data-m="0" data-n="0" cx="230.887" cy="159.87" r="4"/>
-								<circle data-k="5" data-m="0" data-n="1" cx="272.663" cy="87.514" r="4"/>
-								<circle data-k="5" data-m="1" data-n="-1" cx="272.663" cy="232.227" r="4"/>
-								<circle data-k="5" data-m="1" data-n="0" cx="314.438" cy="159.87" r="4"/>
-								<circle data-k="5" data-m="1" data-n="1" cx="356.212" cy="87.514" r="4"/>
-							</g>
-						</g>
-						<g class="fixed-points" clip-path="url(#clip6)">
-							<g class="fixed-z2" fill="#ff7979">
-								<circle cx="63.788" cy="278.534" r="4"/>
-								<circle cx="105.563" cy="206.178" r="4"/>
-								<circle cx="147.338" cy="133.822" r="4"/>
-								<circle cx="189.113" cy="61.466" r="4"/>
-								<circle cx="147.338" cy="278.534" r="4"/>
-								<circle cx="189.113" cy="206.178" r="4"/>
-								<circle cx="230.888" cy="133.822" r="4"/>
-								<circle cx="272.663" cy="61.466" r="4"/>
-								<circle cx="230.888" cy="278.534" r="4"/>
-								<circle cx="272.663" cy="206.178" r="4"/>
-								<circle cx="314.438" cy="133.822" r="4"/>
-								<circle cx="356.213" cy="61.466" r="4"/>
-								<circle cx="42.900" cy="242.356" r="4"/>
-								<circle cx="84.675" cy="170.000" r="4"/>
-								<circle cx="126.450" cy="97.644" r="4"/>
-								<circle cx="126.450" cy="242.356" r="4"/>
-								<circle cx="168.225" cy="170.000" r="4"/>
-								<circle cx="210.000" cy="97.644" r="4"/>
-								<circle cx="210.000" cy="242.356" r="4"/>
-								<circle cx="251.775" cy="170.000" r="4"/>
-								<circle cx="293.550" cy="97.644" r="4"/>
-								<circle cx="293.550" cy="242.356" r="4"/>
-								<circle cx="335.325" cy="170.000" r="4"/>
-								<circle cx="377.101" cy="97.644" r="4"/>
-								<circle cx="84.675" cy="242.356" r="4"/>
-								<circle cx="126.450" cy="170.000" r="4"/>
-								<circle cx="168.225" cy="97.644" r="4"/>
-								<circle cx="168.225" cy="242.356" r="4"/>
-								<circle cx="210.000" cy="170.000" r="4"/>
-								<circle cx="251.775" cy="97.644" r="4"/>
-								<circle cx="251.775" cy="242.356" r="4"/>
-								<circle cx="293.550" cy="170.000" r="4"/>
-								<circle cx="335.325" cy="97.644" r="4"/>
-							</g>
-							<g class="fixed-z3" fill="#55c8ff">
-								<circle cx="63.788" cy="254.415" r="4"/>
-								<circle cx="105.563" cy="182.059" r="4"/>
-								<circle cx="147.338" cy="109.703" r="4"/>
-								<circle cx="147.338" cy="254.415" r="4"/>
-								<circle cx="189.113" cy="182.059" r="4"/>
-								<circle cx="230.888" cy="109.703" r="4"/>
-								<circle cx="230.888" cy="254.415" r="4"/>
-								<circle cx="272.663" cy="182.059" r="4"/>
-								<circle cx="314.438" cy="109.703" r="4"/>
-								<circle cx="105.563" cy="230.297" r="4"/>
-								<circle cx="147.338" cy="157.941" r="4"/>
-								<circle cx="189.113" cy="85.585" r="4"/>
-								<circle cx="189.113" cy="230.297" r="4"/>
-								<circle cx="230.888" cy="157.941" r="4"/>
-								<circle cx="272.663" cy="85.585" r="4"/>
-								<circle cx="272.663" cy="230.297" r="4"/>
-								<circle cx="314.438" cy="157.941" r="4"/>
-								<circle cx="356.213" cy="85.585" r="4"/>
-							</g>
-							<g class="fixed-z6" fill="#bb9af7">
-								<circle cx="22.013" cy="278.534" r="4"/>
-								<circle cx="63.788" cy="206.178" r="4"/>
-								<circle cx="105.563" cy="133.822" r="4"/>
-								<circle cx="147.338" cy="61.466" r="4"/>
-								<circle cx="105.563" cy="278.534" r="4"/>
-								<circle cx="147.338" cy="206.178" r="4"/>
-								<circle cx="189.113" cy="133.822" r="4"/>
-								<circle cx="230.888" cy="61.466" r="4"/>
-								<circle cx="189.113" cy="278.534" r="4"/>
-								<circle cx="230.888" cy="206.178" r="4"/>
-								<circle cx="272.663" cy="133.822" r="4"/>
-								<circle cx="314.438" cy="61.466" r="4"/>
-								<circle cx="272.663" cy="278.534" r="4"/>
-								<circle cx="314.438" cy="206.178" r="4"/>
-								<circle cx="356.213" cy="133.822" r="4"/>
-								<circle cx="397.988" cy="61.466" r="4"/>
-							</g>
-						</g>
-					</svg>
-					<figcaption><math><msup><mi>𝑇</mi><mn>2</mn></msup><mo>∕</mo><msub><mi>ℤ</mi><mn>6</mn></msub></math> ．各点をドラッグできます．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z2" cx="5" cy="12" r="4" fill="#ff7979"/></svg> は <math><msub><mi>ℤ</mi><mn>2</mn></msub></math> 固定点．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z3" cx="5" cy="12" r="4" fill="#55c8ff"/></svg> は <math><msub><mi>ℤ</mi><mn>3</mn></msub></math> 固定点．<svg class="inline-text" viweBox="0 0 10 24" width="10" height="24"><circle class="fixed-z6" cx="5" cy="12" r="4" fill="#bb9af7"/></svg> は <math><msub><mi>ℤ</mi><mn>6</mn></msub></math> 固定点．</figcaption>
-				</figure>
-				<script>
-					const rotate = (p, k, c) => {
-						for (let i = 0; i < k; i++) p = { u: -p.v, v: p.u + c * p.v };
-						return p;
-					};
-					const inverseRotate = (p, k, c) => {
-						for (let i = 0; i < k; i++) p = { u: p.v + c * p.u, v: -p.u };
-						return p;
-					};
-					const clamp = x => Math.max(-0.5 + 1e-8, Math.min(1.5 - 1e-8, x));
-					const frac = x => x - Math.floor(x);
-					
-					for (const svg of document.querySelectorAll('svg.orbifold:not([data-n="2"])')) {
-						const N = Number(svg.dataset.n);
-						const c = { 3: -1, 4: 0, 6: 1 }[N];
-						const lattice = svg.querySelector('.lattice');
-						const circles = [...svg.querySelectorAll('.points circle')];
-						let z = { 3: {u: 1/4, v: 1/6}, 4: {u: 1/4, v: 1/8}, 6: {u: 1/4, v: 1/8} }[N];
-						let drag = null;
-					
-						const position = el => {
-							const q = rotate(z, Number(el.dataset.k), c);
-							return {
-								u: frac(q.u) + Number(el.dataset.m),
-								v: frac(q.v) + Number(el.dataset.n)
-							};
-						};
-						const mouseToLattice = e =>
-							new DOMPoint(e.clientX, e.clientY).matrixTransform(lattice.getScreenCTM().inverse());
-					
-						function updatePoints() {
-							const transform = svg.getScreenCTM().inverse().multiply(lattice.getScreenCTM());
-							for (const el of circles) {
-								const k = Number(el.dataset.k);
-								const m = Number(el.dataset.m);
-								const n = Number(el.dataset.n);
-								const q = rotate(z, k, c);
-								const p = { u: frac(q.u) + m, v: frac(q.v) + n };
-								const screen = new DOMPoint(p.u, p.v).matrixTransform(transform);
-								el.setAttribute('cx', screen.x);
-								el.setAttribute('cy', screen.y);
-							}
-						}
-					
-						svg.addEventListener('pointerdown', e => {
-							const el = e.target.closest('.points circle');
-							if (!el || drag || (e.pointerType === 'mouse' && e.button !== 0)) return;
-							const mouse = mouseToLattice(e);
-							const p = position(el);
-							drag = {
-								id: e.pointerId,
-								k: Number(el.dataset.k),
-								m: Number(el.dataset.m),
-								n: Number(el.dataset.n),
-								du: p.u - mouse.x, dv: p.v - mouse.y, // クリック位置のずれ
-								shiftU: Number(el.dataset.m) - Math.floor(rotate(z, Number(el.dataset.k), c).u),
-								shiftV: Number(el.dataset.n) - Math.floor(rotate(z, Number(el.dataset.k), c).v)
-							};
-							svg.setPointerCapture(e.pointerId);
-							e.preventDefault();
-						});
-					
-						svg.addEventListener('pointermove', e => {
-							if (!drag || e.pointerId !== drag.id) return;
-							const mouse = mouseToLattice(e);
-							const p = { u: clamp(mouse.x + drag.du), v: clamp(mouse.y + drag.dv) };
-							const unwrapped = inverseRotate({ u: p.u - drag.shiftU,
-																								v: p.v - drag.shiftV }, drag.k, c);
-							z = { u: frac(unwrapped.u), v: frac(unwrapped.v) };
-							updatePoints();
-						});
-					
-						function endDrag(e) {
-							if (drag && e.pointerId === drag.id) drag = null;
-						}
-						svg.addEventListener('pointerup', endDrag);
-						svg.addEventListener('pointercancel', endDrag);
-						svg.addEventListener('lostpointercapture', endDrag);
-					updatePoints();
-					}
-				</script>
-				<script>
-					(() => {
-						const figure = document.querySelector('.z2-figure');
-						const svg = figure.querySelector('svg.orbifold');
-						const lattice = svg.querySelector('.lattice');
-						const clip = svg.querySelector('#clip2 polygon');
-						const points = [...svg.querySelectorAll('.points circle')];
-						const fixed = [...svg.querySelectorAll('.fixed-points circle')];
-						const inputRe = figure.querySelector('.tau-re');
-						const inputIm = figure.querySelector('.tau-im');
-						const warning = figure.querySelector('.tau-warning');
-						const frac = x => x - Math.floor(x);
-						const clamp = x => Math.max(-.5 + 1e-8, Math.min(1.5 - 1e-8, x));
-						let tau = { re: 0, im: 1 };
-						let targetTau = { ...tau };
-						let z = { u: 1/4, v: 1/8 };
-						let drag = null, frame = null, debounce = null;
-
-						const getTransform = () => {
-							const scale = Math.min(330 / (2 * (1 + Math.abs(tau.re))), 260 / (2 * tau.im));
-							return {
-								a: scale, c: scale * tau.re, d: -scale * tau.im,
-								e: 210 - scale * (1 + tau.re) / 2,
-								f: 170 + scale * tau.im / 2
-							};
-						};
-
-						function update() {
-							const t = getTransform();
-							const project = (u, v) => ({ x: t.a * u + t.c * v + t.e, y: t.d * v + t.f });
-							const place = (el, u, v) => {
-								const p = project(u, v);
-								el.setAttribute('cx', p.x);
-								el.setAttribute('cy', p.y);
-							};
-							lattice.setAttribute('transform', `matrix(${t.a} 0 ${t.c} ${t.d} ${t.e} ${t.f})`);
-							clip.setAttribute('points', [[-.5,-.5],[1.5,-.5],[1.5,1.5],[-.5,1.5]]
-								.map(([u,v]) => { const p = project(u,v); return `${p.x},${p.y}`; }).join(' '));
-							const origin = project(0,0);
-							for (const [kind, u, v] of [['one',1,0], ['tau',0,1]]) {
-								const el = svg.querySelector(`[data-arrow="${kind}"]`);
-								const end = project(u,v);
-								el.setAttribute('x1', origin.x);
-								el.setAttribute('y1', origin.y);
-								el.setAttribute('x2', end.x);
-								el.setAttribute('y2', end.y);
-							}
-							for (const [kind, u, v, dx, dy] of [['zero',0,0,-12,17], ['one',1,0,7,17], ['tau',0,1,-14,-11]]) {
-								const el = svg.querySelector(`[data-label="${kind}"]`);
-								const p = project(u,v);
-								el.setAttribute('x',p.x + dx);
-								el.setAttribute('y',p.y + dy);
-							}
-							for (const el of points) {
-								const sign = Number(el.dataset.k) ? -1 : 1;
-								place(el, frac(sign * z.u) + Number(el.dataset.m),
-									frac(sign * z.v) + Number(el.dataset.n));
-							}
-							for (const el of fixed) place(el, Number(el.dataset.u), Number(el.dataset.v));
-						}
-
-						function animateTo(next) {
-							if (frame !== null) cancelAnimationFrame(frame);
-							targetTau = { ...next };
-							const start = { ...tau };
-							const begun = performance.now();
-							const duration = 250;
-							function tick(now) {
-								const x = Math.min(1, Math.max(0, (now - begun) / duration));
-								const ease = x * x * (3 - 2 * x);
-								tau = {
-									re: start.re + (next.re - start.re) * ease,
-									im: start.im + (next.im - start.im) * ease
-								};
-								update();
-								frame = x < 1 ? requestAnimationFrame(tick) : null;
-							}
-							frame = requestAnimationFrame(tick);
-						}
-
-						function applyInputs() {
-							clearTimeout(debounce);
-							const re = inputRe.valueAsNumber;
-							const im = inputIm.valueAsNumber;
-							if (!Number.isFinite(re) || !Number.isFinite(im) || im <= 0) {
-								warning.textContent = ' > 0';
-								return;
-							}
-							warning.textContent = '';
-							if (re !== targetTau.re || im !== targetTau.im) animateTo({ re, im });
-						}
-						for (const input of [inputRe, inputIm]) {
-							input.addEventListener('input', () => { clearTimeout(debounce); debounce = setTimeout(applyInputs, 300); });
-							input.addEventListener('change', applyInputs);
-						}
-
-						const mouseToLattice = e =>
-							new DOMPoint(e.clientX, e.clientY).matrixTransform(lattice.getScreenCTM().inverse());
-						svg.addEventListener('pointerdown', e => {
-							const el = e.target.closest('.points circle');
-							if (!el || drag || (e.pointerType === 'mouse' && e.button !== 0)) return;
-							if (frame !== null) {
-								cancelAnimationFrame(frame);
-								frame = null;
-								tau = { ...targetTau };
-								update();
-							}
-							const mouse = mouseToLattice(e);
-							const sign = Number(el.dataset.k) ? -1 : 1;
-							const m = Number(el.dataset.m), n = Number(el.dataset.n);
-							const u = sign * z.u, v = sign * z.v;
-							drag = {
-								id: e.pointerId, sign,
-								du: frac(u) + m - mouse.x, dv: frac(v) + n - mouse.y,
-								shiftU: m - Math.floor(u), shiftV: n - Math.floor(v)
-							};
-							svg.setPointerCapture(e.pointerId);
-							e.preventDefault();
-						});
-						svg.addEventListener('pointermove', e => {
-							if (!drag || e.pointerId !== drag.id) return;
-							const mouse = mouseToLattice(e);
-							const u = clamp(mouse.x + drag.du) - drag.shiftU;
-							const v = clamp(mouse.y + drag.dv) - drag.shiftV;
-							z = { u: frac(drag.sign * u), v: frac(drag.sign * v) };
-							update();
-						});
-						const endDrag = e => { if (drag && e.pointerId === drag.id) drag = null; };
-						for (const name of ['pointerup', 'pointercancel', 'lostpointercapture']) {
-							svg.addEventListener(name, endDrag);
-						}
-						update();
-					})();
-				</script>
-			</section>
 		</section>
-
 		<section class="references">
 			<h2>参考文献</h2>
 		</section>
